@@ -1,0 +1,9 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Project agent memory
+AGENT_MEMORY.md
