@@ -13,4 +13,5 @@ AGENTS.md
 # Ignore jsw output folders, but keep scripts and other files
 /EDA/jsw/*/
 !/EDA/jsw/scripts/
+!/EDA/jsw/reports/
 /EDA/jsw/AGENTS.md
