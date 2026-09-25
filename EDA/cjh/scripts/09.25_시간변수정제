@@ -1,0 +1,357 @@
+# ============================================================
+# 0. 라이브러리 불러오기
+# ============================================================
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+pd.set_option("display.max_columns", None)
+pd.set_option("display.float_format", lambda x: f"{x:,.3f}")
+
+
+# ============================================================
+# 1. 데이터 불러오기
+# ============================================================
+file_path = "okm_augumented_2021.csv"   # 본인 파일 경로에 맞게 수정
+
+df_raw = pd.read_csv(file_path)
+
+print("원본 데이터 크기:", df_raw.shape)
+display(df_raw.head())
+display(df_raw.info())
+1) 데이터 원본 보존 및 기본 점검
+
+
+# ============================================================
+# 2. 원본 보존 및 기본 데이터 점검
+# ============================================================
+
+# 원본 훼손 방지
+df = df_raw.copy()
+
+# 결측치 확인
+missing_summary = pd.DataFrame({
+    "결측치 수": df.isnull().sum(),
+    "결측치 비율(%)": (df.isnull().mean() * 100).round(2)
+}).sort_values("결측치 수", ascending=False)
+
+print("결측치 현황")
+display(missing_summary[missing_summary["결측치 수"] > 0])
+
+# 완전 중복 행 확인
+print("완전 중복 행 개수:", df.duplicated().sum())
+
+# 수치형 변수 기본 통계량
+display(df.describe().T)
+2) 시간 변수 오류 확인
+시간 변수는 일반적으로 0~23 사이여야 합니다.
+따라서 범위를 벗어난 값을 오류값으로 확인합니다.
+
+
+# ============================================================
+# 3. 시간 변수 오류 탐색
+# ============================================================
+
+# 시간값의 분포 확인
+print("시간 변수 고유값:")
+print(sorted(df["시간"].dropna().unique()))
+
+# 정상 시간 범위: 0~23시
+valid_time_mask = df["시간"].between(0, 23)
+
+# 범위를 벗어난 시간값 확인
+time_error_df = df.loc[
+    ~valid_time_mask,
+    ["날짜", "시간", "day", "d", "m", "생산량", "평균"]
+].copy()
+
+print(f"시간 범위 오류 행 수: {len(time_error_df)}")
+display(time_error_df.head(20))
+
+print("오류 시간값 목록:")
+print(sorted(time_error_df["시간"].unique()))
+3) 날짜별 관측치 수 확인
+시간값을 날짜별 행 순서로 복원하기 전에, 정말 각 날짜가 24개의 관측치를 가지고 있는지 확인해야 합니다.
+
+
+# ============================================================
+# 4. 날짜별 행 개수 확인
+# ============================================================
+
+# 날짜를 문자열로 통일
+df["날짜"] = df["날짜"].astype(str)
+
+# 날짜별 관측치 개수 확인
+daily_row_count = (
+    df.groupby("날짜")
+      .size()
+      .reset_index(name="행 개수")
+)
+
+print("날짜별 행 개수 분포")
+display(daily_row_count["행 개수"].value_counts().sort_index())
+
+# 24개 행이 아닌 날짜 확인
+abnormal_day_count = daily_row_count.query("`행 개수` != 24")
+
+print(f"24개 행이 아닌 날짜 수: {len(abnormal_day_count)}")
+display(abnormal_day_count.head(20))
+해석 기준
+모든 날짜가 24행이면: 각 날짜가 시간별 관측치로 구성되었다고 볼 수 있습니다.
+날짜별 행 수가 24개가 아니면: 해당 날짜는 시간 복원을 자동으로 적용하지 말고 별도로 확인해야 합니다.
+4) 시간 변수 정제: 원본 보존 + 날짜 내 순서 기반 복원
+이 단계에서는 다음을 수행합니다.
+기존 시간 변수는 시간_원본으로 보존
+날짜별 행 순서를 이용해 시간_정제 생성
+기존 시간이 정상 범위인 경우에는 원래 값과 복원값이 일치하는지 점검
+오류 시간만 정제 시간으로 대체
+
+
+# ============================================================
+# 5. 시간 변수 정제
+# ============================================================
+
+# 원본 시간 변수 보존
+df["시간_원본"] = df["시간"]
+
+# 날짜별 데이터가 파일에 저장된 순서를 유지한다고 가정
+# 각 날짜 내 행 순서에 따라 0, 1, 2, ..., 23을 새로 부여
+df["시간_정제"] = df.groupby("날짜").cumcount()
+
+# 날짜별 행 수가 정확히 24개인지 표시
+df["날짜_24행_여부"] = df["날짜"].map(
+    daily_row_count.set_index("날짜")["행 개수"]
+).eq(24)
+
+# 시간 정제가 가능한 행:
+# 1) 해당 날짜가 정확히 24행
+# 2) 새로 계산한 시간도 0~23
+repairable_mask = (
+    df["날짜_24행_여부"]
+    & df["시간_정제"].between(0, 23)
+)
+
+# 기존 시간값이 정상 범위인지 확인
+original_valid_mask = df["시간_원본"].between(0, 23)
+
+# 정상 시간값과 날짜 내 순서 기반 시간값의 일치 여부 확인
+time_validation = df.loc[
+    original_valid_mask & repairable_mask,
+    ["날짜", "시간_원본", "시간_정제"]
+].copy()
+
+time_match_rate = (
+    time_validation["시간_원본"]
+    == time_validation["시간_정제"]
+).mean()
+
+print(f"정상 시간값과 순서 기반 시간값의 일치 비율: {time_match_rate:.2%}")
+일치율 확인
+python
+
+# 기존 시간값과 새 시간값이 다른 정상 행 확인
+time_mismatch = time_validation.loc[
+    time_validation["시간_원본"] != time_validation["시간_정제"]
+]
+
+print("정상 시간값 중 순서 기반 시간과 불일치하는 행 수:", len(time_mismatch))
+display(time_mismatch.head(20))
+일치율이 거의 100% 라면, 날짜별 행 순서로 시간값을 복원하는 방식이 타당합니다.
+불일치가 많다면 파일 정렬 순서나 시간 기록 방식부터 다시 확인해야 합니다.
+5) 오류 시간값만 교정
+python
+
+# ============================================================
+# 6. 오류 시간값만 정제 시간으로 대체
+# ============================================================
+
+# 기본값: 기존 시간 사용
+df["시간_clean"] = df["시간_원본"]
+
+# 시간 범위 오류이면서 날짜별 24개 행이 보장된 경우에만 시간 정제값으로 교체
+replace_mask = (
+    ~df["시간_원본"].between(0, 23)
+    & repairable_mask
+)
+
+df.loc[replace_mask, "시간_clean"] = df.loc[replace_mask, "시간_정제"]
+
+print(f"정제된 시간 오류 행 수: {replace_mask.sum()}")
+
+# 정제 전후 비교
+time_cleaning_result = df.loc[
+    ~df["시간_원본"].between(0, 23),
+    ["날짜", "시간_원본", "시간_정제", "시간_clean", "날짜_24행_여부"]
+].copy()
+
+display(time_cleaning_result.head(30))
+6) 정제 결과 검증
+
+
+# ============================================================
+# 7. 정제 후 검증
+# ============================================================
+
+# 정제 후에도 0~23 범위를 벗어난 시간값이 있는지 확인
+remaining_time_errors = df.loc[
+    ~df["시간_clean"].between(0, 23),
+    ["날짜", "시간_원본", "시간_clean"]
+]
+
+print("정제 후 남은 시간 오류 행 수:", len(remaining_time_errors))
+display(remaining_time_errors.head())
+
+# 날짜별 시간값이 0~23을 모두 하나씩 가지는지 검증
+time_check = (
+    df.groupby("날짜")["시간_clean"]
+      .agg(
+          최소시간="min",
+          최대시간="max",
+          고유시간수="nunique",
+          행개수="count"
+      )
+)
+
+print("날짜별 시간 변수 검증")
+display(time_check.head())
+
+# 시간값이 0~23을 모두 포함하지 않는 날짜
+abnormal_time_days = time_check.query(
+    "`최소시간` != 0 or `최대시간` != 23 or `고유시간수` != 24"
+)
+
+print(f"시간값 구성이 비정상적인 날짜 수: {len(abnormal_time_days)}")
+display(abnormal_time_days.head(20))
+7) 날짜·시간을 합친 datetime 변수 생성
+시간 변수가 정제된 뒤에는 날짜와 시간을 결합하여 시계열 분석에 사용할 수 있습니다.
+
+
+# ============================================================
+# 8. datetime 변수 생성
+# ============================================================
+
+# 날짜를 datetime 형식으로 변환
+df["날짜_dt"] = pd.to_datetime(
+    df["날짜"],
+    format="%Y%m%d",
+    errors="coerce"
+)
+
+# 날짜 + 정제 시간 결합
+df["datetime"] = (
+    df["날짜_dt"]
+    + pd.to_timedelta(df["시간_clean"], unit="h")
+)
+
+# 결과 확인
+display(
+    df[
+        ["날짜", "시간_원본", "시간_clean", "날짜_dt", "datetime"]
+    ].head(30)
+)
+
+print("datetime 결측치 수:", df["datetime"].isna().sum())
+print("분석 시작 시점:", df["datetime"].min())
+print("분석 종료 시점:", df["datetime"].max())
+8) EDA용 최종 데이터셋 만들기
+
+
+# ============================================================
+# 9. EDA용 데이터셋 생성
+# ============================================================
+
+# 원본 변수는 보존하면서 EDA에 필요한 시간 파생변수 추가
+df_eda = df.copy()
+
+# 시간 관련 파생변수
+df_eda["월"] = df_eda["datetime"].dt.month
+df_eda["일"] = df_eda["datetime"].dt.day
+df_eda["요일번호"] = df_eda["datetime"].dt.dayofweek  # 월요일=0, 일요일=6
+
+weekday_map = {
+    0: "월요일",
+    1: "화요일",
+    2: "수요일",
+    3: "목요일",
+    4: "금요일",
+    5: "토요일",
+    6: "일요일"
+}
+
+df_eda["요일"] = df_eda["요일번호"].map(weekday_map)
+df_eda["주말여부"] = df_eda["요일번호"].isin([5, 6])
+
+# 가동 상태 파생변수
+conditions = [
+    (df_eda["생산량"] == 0) & (df_eda["공장인원"] == 0),
+    (df_eda["생산량"] > 0) & (df_eda["공장인원"] > 0),
+    (df_eda["생산량"] > 0) & (df_eda["공장인원"] == 0),
+    (df_eda["생산량"] == 0) & (df_eda["공장인원"] > 0)
+]
+
+operation_labels = [
+    "비가동",
+    "정상 가동",
+    "무인 가동 후보",
+    "비생산 인력 투입"
+]
+
+df_eda["가동상태"] = np.select(
+    conditions,
+    operation_labels,
+    default="기타"
+)
+
+# 최종 확인
+print("EDA용 데이터 크기:", df_eda.shape)
+display(df_eda.head())
+display(df_eda["가동상태"].value_counts())
+9) 정제 데이터 저장
+
+
+# ============================================================
+# 10. 정제 데이터 저장
+# ============================================================
+
+df_eda.to_csv(
+    "okm_augumented_2021_cleaned.csv",
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("정제 완료: okm_augumented_2021_cleaned.csv")
+EDA에는 어떤 시간 변수를 쓰면 되나요?
+이후 EDA에서는 기존 시간 대신 시간_clean 을 사용하면 됩니다.
+python
+
+# 시간대별 평균 전력수요
+hourly_demand = (
+    df_eda.groupby("시간_clean")["평균"]
+          .mean()
+          .reset_index()
+)
+
+display(hourly_demand)
+python
+
+# 시간대별 평균 전력수요 시각화
+plt.figure(figsize=(10, 5))
+
+sns.lineplot(
+    data=hourly_demand,
+    x="시간_clean",
+    y="평균",
+    marker="o",
+    color="#1751D0"
+)
+
+plt.title("시간대별 평균 전력수요")
+plt.xlabel("시간")
+plt.ylabel("평균 전력수요")
+plt.xticks(range(24))
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+
+이미 확인된 것처럼 시간에 70, 89, 188처럼 0~23 범위를 벗어난 값이 있습니다.
+핵심은 시간_원본은 남겨 두고, EDA·시계열 분석에는 검증된 시간_clean과 datetime 을 사용하는 것입니다.
