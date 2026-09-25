@@ -1,0 +1,388 @@
+2. 시간대별 전력수요 패턴
+2-1. 시간대별 기술통계량
+python
+
+# ============================================================
+# 시간대별 전력수요 요약
+# ============================================================
+
+hourly_demand = (
+    df_eda.groupby(time_col)[target]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std",
+        최솟값="min",
+        최댓값="max"
+    )
+    .reindex(range(24))  # 0시 ~ 23시 순서 유지
+    .round(2)
+)
+
+display(hourly_demand)
+2-2. 시간대별 평균 전력수요 선 그래프
+python
+
+# ============================================================
+# 시간대별 평균 전력수요 시각화
+# ============================================================
+
+plt.figure(figsize=(12, 5))
+
+sns.lineplot(
+    data=hourly_demand.reset_index(),
+    x=time_col,
+    y="평균",
+    marker="o",
+    linewidth=2.5,
+    color="#1751D0"
+)
+
+plt.title("시간대별 평균 전력수요", fontsize=15, fontweight="bold")
+plt.xlabel("시간")
+plt.ylabel("평균 전력수요")
+plt.xticks(range(24))
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+2-3. 최대·최소 수요 시간대 확인
+python
+
+# ============================================================
+# 전력수요가 가장 높은/낮은 시간대
+# ============================================================
+
+peak_hour = hourly_demand["평균"].idxmax()
+low_hour = hourly_demand["평균"].idxmin()
+
+print(f"전력수요가 가장 높은 시간: {peak_hour}시")
+print(f"해당 시간의 평균 전력수요: {hourly_demand.loc[peak_hour, '평균']:.2f}")
+
+print(f"\n전력수요가 가장 낮은 시간: {low_hour}시")
+print(f"해당 시간의 평균 전력수요: {hourly_demand.loc[low_hour, '평균']:.2f}")
+3. 요일별 전력수요 패턴
+3-1. 요일 변수 생성
+이미 요일 변수가 있으면 이 단계는 건너뛰어도 됩니다.
+python
+
+# ============================================================
+# 요일 변수 생성
+# ============================================================
+
+if "datetime" not in df_eda.columns:
+    raise ValueError("datetime 변수가 없습니다. 날짜와 시간 정제를 먼저 진행하세요.")
+
+df_eda["datetime"] = pd.to_datetime(df_eda["datetime"])
+
+weekday_map = {
+    0: "월요일",
+    1: "화요일",
+    2: "수요일",
+    3: "목요일",
+    4: "금요일",
+    5: "토요일",
+    6: "일요일"
+}
+
+df_eda["요일번호"] = df_eda["datetime"].dt.dayofweek
+df_eda["요일"] = df_eda["요일번호"].map(weekday_map)
+
+weekday_order = [
+    "월요일", "화요일", "수요일",
+    "목요일", "금요일", "토요일", "일요일"
+]
+3-2. 요일별 기술통계량
+python
+
+# ============================================================
+# 요일별 전력수요 요약
+# ============================================================
+
+weekday_demand = (
+    df_eda.groupby("요일")[target]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std",
+        최솟값="min",
+        최댓값="max"
+    )
+    .reindex(weekday_order)
+    .round(2)
+)
+
+display(weekday_demand)
+3-3. 요일별 평균 전력수요 막대그래프
+python
+
+# ============================================================
+# 요일별 평균 전력수요 시각화
+# ============================================================
+
+plt.figure(figsize=(11, 5))
+
+sns.barplot(
+    data=weekday_demand.reset_index(),
+    x="요일",
+    y="평균",
+    order=weekday_order,
+    color="#1751D0"
+)
+
+plt.title("요일별 평균 전력수요", fontsize=15, fontweight="bold")
+plt.xlabel("요일")
+plt.ylabel("평균 전력수요")
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+3-4. 평일과 주말 비교
+python
+
+# ============================================================
+# 평일·주말 전력수요 비교
+# ============================================================
+
+df_eda["주말여부"] = df_eda["요일번호"].isin([5, 6])
+
+weekend_demand = (
+    df_eda.groupby("주말여부")[target]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std"
+    )
+    .rename(index={False: "평일", True: "주말"})
+    .round(2)
+)
+
+display(weekend_demand)
+python
+
+plt.figure(figsize=(7, 5))
+
+sns.boxplot(
+    data=df_eda,
+    x="주말여부",
+    y=target,
+    palette=["#1751D0", "#E2661E"]
+)
+
+plt.title("평일과 주말의 전력수요 분포", fontsize=14, fontweight="bold")
+plt.xlabel("구분")
+plt.ylabel("평균 전력수요")
+
+plt.xticks([0, 1], ["평일", "주말"])
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+4. 월별 전력수요 패턴
+4-1. 월 변수 생성
+python
+
+# ============================================================
+# 월 변수 생성
+# ============================================================
+
+df_eda["월"] = df_eda["datetime"].dt.month
+4-2. 월별 전력수요 기술통계량
+python
+
+# ============================================================
+# 월별 전력수요 요약
+# ============================================================
+
+monthly_demand = (
+    df_eda.groupby("월")[target]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std",
+        최솟값="min",
+        최댓값="max"
+    )
+    .reindex(range(1, 13))
+    .round(2)
+)
+
+display(monthly_demand)
+데이터가 1~9월까지만 있다면 10~12월은 NaN으로 나타나는 것이 정상입니다.
+4-3. 월별 평균 전력수요 선 그래프
+python
+
+# ============================================================
+# 월별 평균 전력수요 시각화
+# ============================================================
+
+plt.figure(figsize=(11, 5))
+
+sns.lineplot(
+    data=monthly_demand.reset_index(),
+    x="월",
+    y="평균",
+    marker="o",
+    linewidth=2.5,
+    color="#E2661E"
+)
+
+plt.title("월별 평균 전력수요", fontsize=15, fontweight="bold")
+plt.xlabel("월")
+plt.ylabel("평균 전력수요")
+plt.xticks(range(1, 13))
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+4-4. 월별 총 전력수요
+시간별 평균을 그대로 더한 값입니다. 실제 전력량(kWh)인지 여부는 변수 단위를 확인한 뒤 해석해야 합니다.
+python
+
+# ============================================================
+# 월별 전력수요 합계
+# ============================================================
+
+monthly_total_demand = (
+    df_eda.groupby("월")[target]
+    .agg(
+        총합="sum",
+        평균="mean",
+        관측치수="count"
+    )
+    .round(2)
+)
+
+display(monthly_total_demand)
+python
+
+plt.figure(figsize=(11, 5))
+
+sns.barplot(
+    data=monthly_total_demand.reset_index(),
+    x="월",
+    y="총합",
+    color="#E2661E"
+)
+
+plt.title("월별 전력수요 합계", fontsize=15, fontweight="bold")
+plt.xlabel("월")
+plt.ylabel("전력수요 합계")
+plt.grid(axis="y", alpha=0.3)
+plt.show()
+5. 시간대 × 요일 패턴 분석
+요일별로 시간대 전력수요 패턴이 달라지는지 확인할 수 있습니다.
+python
+
+# ============================================================
+# 시간대 × 요일 평균 전력수요
+# ============================================================
+
+hour_weekday_demand = pd.pivot_table(
+    df_eda,
+    values=target,
+    index=time_col,
+    columns="요일",
+    aggfunc="mean"
+).reindex(
+    index=range(24),
+    columns=weekday_order
+)
+
+display(hour_weekday_demand.round(2))
+히트맵
+python
+
+plt.figure(figsize=(13, 8))
+
+sns.heatmap(
+    hour_weekday_demand,
+    cmap="YlOrRd",
+    annot=True,
+    fmt=".1f",
+    linewidths=0.3,
+    cbar_kws={"label": "평균 전력수요"}
+)
+
+plt.title("시간대·요일별 평균 전력수요", fontsize=15, fontweight="bold")
+plt.xlabel("요일")
+plt.ylabel("시간")
+plt.show()
+6. 시간대 × 월 패턴 분석
+python
+
+# ============================================================
+# 시간대 × 월 평균 전력수요
+# ============================================================
+
+hour_month_demand = pd.pivot_table(
+    df_eda,
+    values=target,
+    index=time_col,
+    columns="월",
+    aggfunc="mean"
+).reindex(index=range(24))
+
+display(hour_month_demand.round(2))
+python
+
+plt.figure(figsize=(12, 8))
+
+sns.heatmap(
+    hour_month_demand,
+    cmap="Blues",
+    annot=True,
+    fmt=".1f",
+    linewidths=0.3,
+    cbar_kws={"label": "평균 전력수요"}
+)
+
+plt.title("시간대·월별 평균 전력수요", fontsize=15, fontweight="bold")
+plt.xlabel("월")
+plt.ylabel("시간")
+plt.show()
+7. 패턴 분석 결과 자동 요약
+python
+
+# ============================================================
+# 핵심 패턴 자동 출력
+# ============================================================
+
+peak_hour = hourly_demand["평균"].idxmax()
+low_hour = hourly_demand["평균"].idxmin()
+
+peak_weekday = weekday_demand["평균"].idxmax()
+low_weekday = weekday_demand["평균"].idxmin()
+
+peak_month = monthly_demand["평균"].idxmax()
+low_month = monthly_demand["평균"].idxmin()
+
+print("=" * 55)
+print("전력수요 패턴 분석 요약")
+print("=" * 55)
+
+print(
+    f"1. 가장 높은 평균 전력수요 시간대: "
+    f"{peak_hour}시 ({hourly_demand.loc[peak_hour, '평균']:.2f})"
+)
+
+print(
+    f"2. 가장 낮은 평균 전력수요 시간대: "
+    f"{low_hour}시 ({hourly_demand.loc[low_hour, '평균']:.2f})"
+)
+
+print(
+    f"3. 평균 전력수요가 가장 높은 요일: "
+    f"{peak_weekday} ({weekday_demand.loc[peak_weekday, '평균']:.2f})"
+)
+
+print(
+    f"4. 평균 전력수요가 가장 낮은 요일: "
+    f"{low_weekday} ({weekday_demand.loc[low_weekday, '평균']:.2f})"
+)
+
+print(
+    f"5. 평균 전력수요가 가장 높은 월: "
+    f"{peak_month}월 ({monthly_demand.loc[peak_month, '평균']:.2f})"
+)
+
+print(
+    f"6. 평균 전력수요가 가장 낮은 월: "
+    f"{low_month}월 ({monthly_demand.loc[low_month, '평균']:.2f})"
+)
