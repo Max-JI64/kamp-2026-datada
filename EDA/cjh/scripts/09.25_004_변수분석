@@ -1,0 +1,472 @@
+아래 코드는 정제된 데이터프레임 df_eda를 기준으로 변수 분석(Variable Analysis) 을 수행하는 코드입니다.
+변수별로 자료형·결측치·고유값·0값·분포·이상치·평균 전력수요와의 관계를 한 번에 확인할 수 있게 구성했습니다.
+1. 라이브러리 및 데이터 확인
+python
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.rcParams["font.family"] = "Malgun Gothic"  # Windows
+plt.rcParams["axes.unicode_minus"] = False
+
+pd.set_option("display.max_columns", None)
+pd.set_option("display.float_format", lambda x: f"{x:,.3f}")
+
+# 이미 전처리한 df_eda가 있다면 이 부분은 생략해도 됩니다.
+# df_eda = pd.read_csv("okm_augumented_2021_cleaned.csv", encoding="utf-8-sig")
+# df_eda["datetime"] = pd.to_datetime(df_eda["datetime"])
+
+print("데이터 크기:", df_eda.shape)
+display(df_eda.head())
+2. 변수 역할 분류
+분석 전에 변수의 역할을 나눠두면 이후 EDA와 모델링이 훨씬 쉬워집니다.
+python
+
+# ============================================================
+# 1. 변수 역할 분류
+# ============================================================
+
+variable_groups = {
+    "식별·시간 변수": [
+        "날짜", "날짜_dt", "datetime",
+        "시간_원본", "시간_정제", "시간_clean",
+        "day", "d", "m", "월", "일", "요일번호", "요일", "주말여부"
+    ],
+    
+    "전력수요 변수": [
+        "15분", "30분", "45분", "60분", "평균"
+    ],
+    
+    "생산·운영 변수": [
+        "생산량", "공장인원", "인건비", "가동상태"
+    ],
+    
+    "기상 변수": [
+        "기온", "풍속", "습도", "강수량"
+    ],
+    
+    "요금 변수": [
+        "전기요금(계절)"
+    ]
+}
+
+# 실제 데이터에 존재하는 열만 남김
+variable_groups = {
+    group: [col for col in cols if col in df_eda.columns]
+    for group, cols in variable_groups.items()
+}
+
+for group, cols in variable_groups.items():
+    print(f"\n[{group}]")
+    print(cols)
+3. 전체 변수 요약표
+각 변수의 자료형, 결측치, 고유값 개수, 0값 비율, 최소·최대값을 확인합니다.
+python
+
+# ============================================================
+# 2. 변수별 기본 요약표
+# ============================================================
+
+variable_summary = pd.DataFrame({
+    "자료형": df_eda.dtypes.astype(str),
+    "관측치 수": df_eda.count(),
+    "결측치 수": df_eda.isna().sum(),
+    "결측치 비율(%)": (df_eda.isna().mean() * 100).round(2),
+    "고유값 수": df_eda.nunique(),
+})
+
+# 숫자형 변수만 0값 비율, 최소값, 최대값 추가
+numeric_cols = df_eda.select_dtypes(include=np.number).columns
+
+variable_summary["0값 수"] = np.nan
+variable_summary["0값 비율(%)"] = np.nan
+variable_summary["최솟값"] = np.nan
+variable_summary["최댓값"] = np.nan
+variable_summary["평균"] = np.nan
+variable_summary["중앙값"] = np.nan
+variable_summary["표준편차"] = np.nan
+
+variable_summary.loc[numeric_cols, "0값 수"] = (
+    df_eda[numeric_cols] == 0
+).sum()
+
+variable_summary.loc[numeric_cols, "0값 비율(%)"] = (
+    (df_eda[numeric_cols] == 0).mean() * 100
+).round(2)
+
+variable_summary.loc[numeric_cols, "최솟값"] = df_eda[numeric_cols].min()
+variable_summary.loc[numeric_cols, "최댓값"] = df_eda[numeric_cols].max()
+variable_summary.loc[numeric_cols, "평균"] = df_eda[numeric_cols].mean()
+variable_summary.loc[numeric_cols, "중앙값"] = df_eda[numeric_cols].median()
+variable_summary.loc[numeric_cols, "표준편차"] = df_eda[numeric_cols].std()
+
+variable_summary = variable_summary.round(3)
+
+display(variable_summary)
+4. 수치형 변수 분포 분석
+4-1. 히스토그램 + KDE
+전력수요·생산·기상·요금 변수의 분포를 확인합니다.
+python
+
+# ============================================================
+# 3. 수치형 변수 분포 시각화
+# ============================================================
+
+numeric_analysis_cols = (
+    variable_groups["전력수요 변수"]
+    + [col for col in variable_groups["생산·운영 변수"]
+       if col not in ["가동상태"]]
+    + variable_groups["기상 변수"]
+    + variable_groups["요금 변수"]
+)
+
+# 실제 숫자형 변수만 남김
+numeric_analysis_cols = [
+    col for col in numeric_analysis_cols
+    if col in df_eda.columns and pd.api.types.is_numeric_dtype(df_eda[col])
+]
+
+n_cols = 3
+n_rows = int(np.ceil(len(numeric_analysis_cols) / n_cols))
+
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, 4.5 * n_rows))
+axes = axes.flatten()
+
+for ax, col in zip(axes, numeric_analysis_cols):
+    sns.histplot(
+        data=df_eda,
+        x=col,
+        bins=30,
+        kde=True,
+        color="#1751D0",
+        ax=ax
+    )
+    ax.set_title(f"{col} 분포")
+    ax.set_xlabel(col)
+    ax.set_ylabel("빈도")
+
+# 남는 축 제거
+for ax in axes[len(numeric_analysis_cols):]:
+    ax.remove()
+
+plt.tight_layout()
+plt.show()
+4-2. 박스플롯
+python
+
+# ============================================================
+# 4. 수치형 변수 박스플롯
+# ============================================================
+
+n_cols = 3
+n_rows = int(np.ceil(len(numeric_analysis_cols) / n_cols))
+
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, 4 * n_rows))
+axes = axes.flatten()
+
+for ax, col in zip(axes, numeric_analysis_cols):
+    sns.boxplot(
+        data=df_eda,
+        y=col,
+        color="#72A5FF",
+        ax=ax
+    )
+    ax.set_title(f"{col} 박스플롯")
+    ax.set_ylabel(col)
+
+for ax in axes[len(numeric_analysis_cols):]:
+    ax.remove()
+
+plt.tight_layout()
+plt.show()
+5. 범주형 변수 분석
+가동상태, 요일, 주말여부 같은 범주형 변수의 빈도와 비율을 확인합니다.
+python
+
+# ============================================================
+# 5. 범주형 변수 빈도 분석
+# ============================================================
+
+categorical_cols = [
+    "가동상태",
+    "요일",
+    "주말여부"
+]
+
+categorical_cols = [
+    col for col in categorical_cols
+    if col in df_eda.columns
+]
+
+for col in categorical_cols:
+    print(f"\n{'=' * 50}")
+    print(f"[{col}] 빈도 및 비율")
+    
+    category_summary = pd.DataFrame({
+        "빈도": df_eda[col].value_counts(dropna=False),
+        "비율(%)": (
+            df_eda[col]
+            .value_counts(dropna=False, normalize=True)
+            .mul(100)
+            .round(2)
+        )
+    })
+    
+    display(category_summary)
+범주형 변수 막대그래프
+python
+
+# ============================================================
+# 6. 범주형 변수 시각화
+# ============================================================
+
+for col in categorical_cols:
+    plt.figure(figsize=(8, 4))
+    
+    order = df_eda[col].value_counts().index
+    
+    sns.countplot(
+        data=df_eda,
+        x=col,
+        order=order,
+        color="#1751D0"
+    )
+    
+    plt.title(f"{col} 분포")
+    plt.xlabel(col)
+    plt.ylabel("관측치 수")
+    plt.xticks(rotation=20)
+    plt.tight_layout()
+    plt.show()
+6. 전력수요(평균)와 각 변수의 관계
+6-1. 수치형 변수 상관계수
+평균과 수치형 변수의 Pearson 상관계수를 계산합니다.
+python
+
+# ============================================================
+# 7. 평균 전력수요와 수치형 변수의 상관관계
+# ============================================================
+
+target = "평균"
+
+correlation_cols = [
+    col for col in numeric_analysis_cols
+    if col != target
+]
+
+corr_with_target = (
+    df_eda[[target] + correlation_cols]
+    .corr(numeric_only=True)[target]
+    .drop(target)
+    .sort_values(ascending=False)
+    .to_frame(name=f"{target}과의 상관계수")
+)
+
+display(corr_with_target.round(3))
+15분, 30분, 45분, 60분은 평균과 직접 연산 관계일 가능성이 크므로, 상관계수는 확인하되 설명변수로 해석하거나 예측모형에 포함하지 않는 것이 안전합니다.
+6-2. 상관관계 히트맵
+python
+
+# ============================================================
+# 8. 상관관계 히트맵
+# ============================================================
+
+heatmap_cols = [target] + correlation_cols
+
+corr_matrix = df_eda[heatmap_cols].corr(numeric_only=True)
+
+plt.figure(figsize=(12, 9))
+
+sns.heatmap(
+    corr_matrix,
+    annot=True,
+    fmt=".2f",
+    cmap="RdBu_r",
+    center=0,
+    linewidths=0.5,
+    square=True
+)
+
+plt.title("수치형 변수 상관관계 히트맵")
+plt.tight_layout()
+plt.show()
+6-3. 주요 변수 산점도
+생산량·공장인원·기온·습도·요금과 전력수요의 관계를 확인합니다.
+python
+
+# ============================================================
+# 9. 주요 변수와 평균 전력수요의 산점도
+# ============================================================
+
+relationship_cols = [
+    "생산량",
+    "공장인원",
+    "인건비",
+    "기온",
+    "풍속",
+    "습도",
+    "강수량",
+    "전기요금(계절)"
+]
+
+relationship_cols = [
+    col for col in relationship_cols
+    if col in df_eda.columns
+]
+
+n_cols = 3
+n_rows = int(np.ceil(len(relationship_cols) / n_cols))
+
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, 5 * n_rows))
+axes = axes.flatten()
+
+for ax, col in zip(axes, relationship_cols):
+    sns.regplot(
+        data=df_eda,
+        x=col,
+        y=target,
+        scatter_kws={"alpha": 0.25, "s": 12},
+        line_kws={"color": "#E2661E"},
+        ax=ax
+    )
+    ax.set_title(f"{col}와 {target}의 관계")
+
+for ax in axes[len(relationship_cols):]:
+    ax.remove()
+
+plt.tight_layout()
+plt.show()
+7. 범주형 변수별 전력수요 비교
+7-1. 가동상태별 전력수요
+python
+
+# ============================================================
+# 10. 가동상태별 평균 전력수요 비교
+# ============================================================
+
+if "가동상태" in df_eda.columns:
+    operation_demand = (
+        df_eda.groupby("가동상태")[target]
+        .agg(["count", "mean", "median", "std", "min", "max"])
+        .rename(columns={
+            "count": "관측치 수",
+            "mean": "평균 전력수요",
+            "median": "중앙 전력수요",
+            "std": "표준편차",
+            "min": "최솟값",
+            "max": "최댓값"
+        })
+        .sort_values("평균 전력수요", ascending=False)
+        .round(3)
+    )
+
+    display(operation_demand)
+python
+
+if "가동상태" in df_eda.columns:
+    plt.figure(figsize=(10, 5))
+
+    order = (
+        df_eda.groupby("가동상태")[target]
+        .mean()
+        .sort_values(ascending=False)
+        .index
+    )
+
+    sns.boxplot(
+        data=df_eda,
+        x="가동상태",
+        y=target,
+        order=order,
+        palette="Blues"
+    )
+
+    plt.title("가동상태별 전력수요 분포")
+    plt.xlabel("가동상태")
+    plt.ylabel("평균 전력수요")
+    plt.xticks(rotation=20)
+    plt.tight_layout()
+    plt.show()
+7-2. 요일별 전력수요
+python
+
+# ============================================================
+# 11. 요일별 평균 전력수요 비교
+# ============================================================
+
+weekday_order = [
+    "월요일", "화요일", "수요일",
+    "목요일", "금요일", "토요일", "일요일"
+]
+
+if "요일" in df_eda.columns:
+    weekday_demand = (
+        df_eda.groupby("요일")[target]
+        .agg(["count", "mean", "median", "std"])
+        .reindex(weekday_order)
+        .rename(columns={
+            "count": "관측치 수",
+            "mean": "평균 전력수요",
+            "median": "중앙 전력수요",
+            "std": "표준편차"
+        })
+        .round(3)
+    )
+
+    display(weekday_demand)
+python
+
+if "요일" in df_eda.columns:
+    plt.figure(figsize=(10, 5))
+
+    sns.boxplot(
+        data=df_eda,
+        x="요일",
+        y=target,
+        order=weekday_order,
+        palette="Blues"
+    )
+
+    plt.title("요일별 전력수요 분포")
+    plt.xlabel("요일")
+    plt.ylabel("평균 전력수요")
+    plt.tight_layout()
+    plt.show()
+8. 변수별 이상치 요약
+python
+
+# ============================================================
+# 12. 변수별 IQR 이상치 분석
+# ============================================================
+
+outlier_summary = []
+
+for col in numeric_analysis_cols:
+    data = df_eda[col].dropna()
+
+    q1 = data.quantile(0.25)
+    q3 = data.quantile(0.75)
+    iqr = q3 - q1
+
+    lower = q1 - 1.5 * iqr
+    upper = q3 + 1.5 * iqr
+
+    outlier_mask = (data < lower) | (data > upper)
+
+    outlier_summary.append({
+        "변수": col,
+        "하한": lower,
+        "상한": upper,
+        "이상치 수": outlier_mask.sum(),
+        "이상치 비율(%)": outlier_mask.mean() * 100
+    })
+
+outlier_summary = (
+    pd.DataFrame(outlier_summary)
+    .sort_values("이상치 비율(%)", ascending=False)
+    .round(3)
+)
+
+display(outlier_summary)
