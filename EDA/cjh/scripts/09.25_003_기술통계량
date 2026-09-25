@@ -1,0 +1,278 @@
+2. 분석할 수치형 변수 지정
+날짜, 시간, day, d, m처럼 식별자 또는 시간 파생변수는 기본 기술통계량 분석에서 제외하고, 실제 측정값 중심으로 분석합니다.
+python# 전력수요 관련 변수
+power_cols = ["15분", "30분", "45분", "60분", "평균"]
+
+# 공장 운영 관련 변수
+operation_cols = ["생산량", "공장인원", "인건비"]
+
+# 기상 관련 변수
+weather_cols = ["기온", "풍속", "습도", "강수량"]
+
+# 요금 변수
+price_cols = ["전기요금(계절)"]
+
+# 기술통계량을 확인할 전체 변수
+analysis_cols = power_cols + operation_cols + weather_cols + price_cols
+
+# 실제 데이터프레임에 존재하는 변수만 유지
+analysis_cols = [col for col in analysis_cols if col in df_eda.columns]
+
+print("기술통계량 분석 변수:")
+print(analysis_cols)
+
+3. 기본 기술통계량
+평균, 중앙값, 표준편차, 최솟값, 최댓값, 사분위수, 왜도, 첨도를 한 번에 확인합니다.
+python# ============================================================
+# 기본 기술통계량 테이블
+# ============================================================
+
+descriptive_stats = pd.DataFrame({
+    "관측치 수": df_eda[analysis_cols].count(),
+    "결측치 수": df_eda[analysis_cols].isnull().sum(),
+    "결측치 비율(%)": (df_eda[analysis_cols].isnull().mean() * 100),
+    "평균": df_eda[analysis_cols].mean(),
+    "중앙값": df_eda[analysis_cols].median(),
+    "표준편차": df_eda[analysis_cols].std(),
+    "최솟값": df_eda[analysis_cols].min(),
+    "1사분위수(Q1)": df_eda[analysis_cols].quantile(0.25),
+    "3사분위수(Q3)": df_eda[analysis_cols].quantile(0.75),
+    "최댓값": df_eda[analysis_cols].max(),
+    "왜도": df_eda[analysis_cols].skew(),
+    "첨도": df_eda[analysis_cols].kurt()
+})
+
+descriptive_stats = descriptive_stats.round(3)
+
+display(descriptive_stats)
+원한다면 CSV로 저장할 수 있습니다.
+pythondescriptive_stats.to_csv(
+    "descriptive_statistics.csv",
+    encoding="utf-8-sig"
+)
+
+4. 변동계수(CV) 추가
+변동계수는 평균 대비 변동성을 의미합니다.
+$$CV = \frac{\text{표준편차}}{\text{평균}} \times 100$$
+서로 단위가 다른 변수의 변동성을 비교할 때 유용합니다.
+python# ============================================================
+# 변동계수(Coefficient of Variation)
+# ============================================================
+
+descriptive_stats["변동계수(CV, %)"] = (
+    descriptive_stats["표준편차"]
+    / descriptive_stats["평균"].replace(0, np.nan)
+    * 100
+).round(2)
+
+display(
+    descriptive_stats[
+        ["평균", "표준편차", "변동계수(CV, %)"]
+    ].sort_values("변동계수(CV, %)", ascending=False)
+)
+해석 기준
+
+CV가 작음: 값이 평균 주변에 비교적 안정적으로 분포
+CV가 큼: 시간별 값 변화가 크거나 0값·극단값이 많을 가능성
+평균이 0에 가까운 변수는 CV 해석에 주의
+
+
+5. 0값 현황 분석
+이 데이터에서는 생산량, 공장인원, 강수량, 전력수요의 0값을 따로 확인하는 것이 중요합니다.
+python# ============================================================
+# 0값 비율 분석
+# ============================================================
+
+zero_summary = pd.DataFrame({
+    "0값 개수": (df_eda[analysis_cols] == 0).sum(),
+    "0값 비율(%)": ((df_eda[analysis_cols] == 0).mean() * 100).round(2)
+}).sort_values("0값 비율(%)", ascending=False)
+
+display(zero_summary)
+특히 다음 변수에 집중해 해석하면 좋습니다.
+pythonkey_zero_cols = ["평균", "생산량", "공장인원", "강수량"]
+
+display(
+    zero_summary.loc[
+        [col for col in key_zero_cols if col in zero_summary.index]
+    ]
+)
+
+6. IQR 기준 이상치 탐색
+IQR 방식은 데이터 분포에서 지나치게 작거나 큰 값을 탐색할 때 많이 사용합니다.
+$$IQR = Q3 - Q1$$
+$$하한 = Q1 - 1.5 \times IQR$$
+$$상한 = Q3 + 1.5 \times IQR$$
+python# ============================================================
+# IQR 기반 이상치 요약
+# ============================================================
+
+outlier_result = []
+
+for col in analysis_cols:
+    series = df_eda[col].dropna()
+
+    q1 = series.quantile(0.25)
+    q3 = series.quantile(0.75)
+    iqr = q3 - q1
+
+    lower_bound = q1 - 1.5 * iqr
+    upper_bound = q3 + 1.5 * iqr
+
+    outlier_mask = (series < lower_bound) | (series > upper_bound)
+    outlier_count = outlier_mask.sum()
+
+    outlier_result.append({
+        "변수": col,
+        "Q1": q1,
+        "Q3": q3,
+        "IQR": iqr,
+        "하한값": lower_bound,
+        "상한값": upper_bound,
+        "이상치 수": outlier_count,
+        "이상치 비율(%)": outlier_count / len(series) * 100
+    })
+
+outlier_summary = (
+    pd.DataFrame(outlier_result)
+      .set_index("변수")
+      .round(3)
+      .sort_values("이상치 비율(%)", ascending=False)
+)
+
+display(outlier_summary)
+
+생산량과 강수량처럼 0값이 많고 오른쪽으로 치우친 변수는 IQR 이상치가 많이 검출될 수 있습니다. 이 경우 이상치를 곧바로 삭제하기보다 실제 생산 피크, 폭우, 특수 운영일 가능성을 먼저 확인해야 합니다.
+
+
+7. 전력수요(평균) 상세 기술통계량
+EDA에서 가장 중요한 타깃 변수인 평균 전력수요를 별도로 자세히 확인합니다.
+python# ============================================================
+# 전력수요(평균) 상세 기술통계량
+# ============================================================
+
+target = "평균"
+
+demand_stats = {
+    "관측치 수": df_eda[target].count(),
+    "결측치 수": df_eda[target].isnull().sum(),
+    "평균": df_eda[target].mean(),
+    "중앙값": df_eda[target].median(),
+    "표준편차": df_eda[target].std(),
+    "분산": df_eda[target].var(),
+    "최솟값": df_eda[target].min(),
+    "Q1": df_eda[target].quantile(0.25),
+    "Q3": df_eda[target].quantile(0.75),
+    "최댓값": df_eda[target].max(),
+    "왜도": df_eda[target].skew(),
+    "첨도": df_eda[target].kurt(),
+    "0값 개수": (df_eda[target] == 0).sum(),
+    "0값 비율(%)": (df_eda[target] == 0).mean() * 100
+}
+
+demand_stats = pd.DataFrame(
+    demand_stats.items(),
+    columns=["지표", "값"]
+)
+
+demand_stats["값"] = demand_stats["값"].round(3)
+
+display(demand_stats)
+
+8. 그룹별 기술통계량
+8-1. 시간대별 전력수요
+python# ============================================================
+# 시간대별 전력수요 기술통계량
+# ============================================================
+
+hourly_stats = (
+    df_eda.groupby("시간_clean")["평균"]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std",
+        최솟값="min",
+        최댓값="max"
+    )
+    .round(3)
+)
+
+display(hourly_stats)
+8-2. 요일별 전력수요
+python# ============================================================
+# 요일별 전력수요 기술통계량
+# ============================================================
+
+weekday_order = [
+    "월요일", "화요일", "수요일",
+    "목요일", "금요일", "토요일", "일요일"
+]
+
+weekday_stats = (
+    df_eda.groupby("요일")["평균"]
+    .agg(
+        관측치수="count",
+        평균="mean",
+        중앙값="median",
+        표준편차="std",
+        최솟값="min",
+        최댓값="max"
+    )
+    .reindex(weekday_order)
+    .round(3)
+)
+
+display(weekday_stats)
+8-3. 월별 전력수요·생산량
+python# ============================================================
+# 월별 주요 변수 기술통계량
+# ============================================================
+
+monthly_stats = (
+    df_eda.groupby("월")
+    .agg(
+        평균전력수요=("평균", "mean"),
+        중앙전력수요=("평균", "median"),
+        전력수요표준편차=("평균", "std"),
+        총생산량=("생산량", "sum"),
+        평균생산량=("생산량", "mean"),
+        평균공장인원=("공장인원", "mean"),
+        평균기온=("기온", "mean"),
+        평균습도=("습도", "mean"),
+        총강수량=("강수량", "sum")
+    )
+    .round(3)
+)
+
+display(monthly_stats)
+
+9. 가동상태별 기술통계량
+앞에서 만든 가동상태를 활용하면 공장 운영 조건별 전력수요 차이를 확인할 수 있습니다.
+python# ============================================================
+# 가동상태별 기술통계량
+# ============================================================
+
+operation_stats = (
+    df_eda.groupby("가동상태")
+    .agg(
+        관측치수=("평균", "count"),
+        평균전력수요=("평균", "mean"),
+        중앙전력수요=("평균", "median"),
+        전력수요표준편차=("평균", "std"),
+        평균생산량=("생산량", "mean"),
+        평균공장인원=("공장인원", "mean"),
+        평균인건비=("인건비", "mean")
+    )
+    .sort_values("평균전력수요", ascending=False)
+    .round(3)
+)
+
+# 상태별 전체 비율 추가
+operation_stats["비율(%)"] = (
+    operation_stats["관측치수"]
+    / len(df_eda)
+    * 100
+).round(2)
+
+display(operation_stats)
