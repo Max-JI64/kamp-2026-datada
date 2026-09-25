@@ -1,0 +1,503 @@
+아래 코드는 생산량과 공장인원을 기준으로 공장의 가동 상태를 분류하고, 상태별 전력수요·시간대·요일별 패턴을 분석하는 코드입니다.
+가동 상태는 다음처럼 정의합니다.
+가동상태	조건	해석
+비가동	생산량 = 0, 공장인원 = 0	휴무 또는 설비 정지 가능성
+정상 가동	생산량 > 0, 공장인원 > 0	생산과 인력 투입이 함께 있는 상태
+무인 가동 후보	생산량 > 0, 공장인원 = 0	자동화 설비 운전 또는 데이터 확인 필요
+비생산 인력 투입	생산량 = 0, 공장인원 > 0	정비·청소·관리 업무 가능성
+결측/확인 필요	생산량 또는 공장인원 결측	별도 확인 필요
+1. 라이브러리 및 기본 설정
+python
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.rcParams["font.family"] = "Malgun Gothic"  # Windows
+# plt.rcParams["font.family"] = "NanumGothic"  # Colab/Linux
+
+plt.rcParams["axes.unicode_minus"] = False
+pd.set_option("display.float_format", lambda x: f"{x:,.2f}")
+
+# 분석 대상 전력수요 변수
+target = "평균"
+
+# 필요한 변수 존재 여부 확인
+required_cols = ["생산량", "공장인원", target]
+
+missing_cols = [col for col in required_cols if col not in df_eda.columns]
+
+if missing_cols:
+    raise ValueError(f"다음 변수가 없습니다: {missing_cols}")
+
+print("분석 데이터 크기:", df_eda.shape)
+display(df_eda[required_cols].head())
+2. 생산량·공장인원 기본 현황 확인
+가동 상태를 만들기 전에 각 변수의 0값·결측치 현황을 확인합니다.
+python
+
+# ============================================================
+# 생산량·공장인원 데이터 품질 확인
+# ============================================================
+
+operation_base_summary = pd.DataFrame({
+    "관측치 수": df_eda[["생산량", "공장인원"]].count(),
+    "결측치 수": df_eda[["생산량", "공장인원"]].isna().sum(),
+    "0값 수": (df_eda[["생산량", "공장인원"]] == 0).sum(),
+    "0값 비율(%)": (
+        (df_eda[["생산량", "공장인원"]] == 0)
+        .mean() * 100
+    ),
+    "최솟값": df_eda[["생산량", "공장인원"]].min(),
+    "최댓값": df_eda[["생산량", "공장인원"]].max(),
+    "평균": df_eda[["생산량", "공장인원"]].mean(),
+    "중앙값": df_eda[["생산량", "공장인원"]].median()
+}).round(2)
+
+display(operation_base_summary)
+3. 생산·인력 기반 가동 상태 생성
+원본 데이터는 수정하지 않고 df_eda에 가동상태 열을 추가합니다.
+python
+
+# ============================================================
+# 가동 상태 변수 생성
+# ============================================================
+
+# 생산량 또는 공장인원이 결측인 경우를 먼저 분리
+conditions = [
+    df_eda["생산량"].isna() | df_eda["공장인원"].isna(),
+
+    (df_eda["생산량"] == 0) & (df_eda["공장인원"] == 0),
+
+    (df_eda["생산량"] > 0) & (df_eda["공장인원"] > 0),
+
+    (df_eda["생산량"] > 0) & (df_eda["공장인원"] == 0),
+
+    (df_eda["생산량"] == 0) & (df_eda["공장인원"] > 0)
+]
+
+operation_labels = [
+    "결측/확인 필요",
+    "비가동",
+    "정상 가동",
+    "무인 가동 후보",
+    "비생산 인력 투입"
+]
+
+df_eda["가동상태"] = np.select(
+    conditions,
+    operation_labels,
+    default="기타"
+)
+
+# 상태 순서 지정
+operation_order = [
+    "정상 가동",
+    "비가동",
+    "무인 가동 후보",
+    "비생산 인력 투입",
+    "결측/확인 필요",
+    "기타"
+]
+
+df_eda["가동상태"] = pd.Categorical(
+    df_eda["가동상태"],
+    categories=operation_order,
+    ordered=True
+)
+
+display(
+    df_eda[
+        ["생산량", "공장인원", "가동상태", target]
+    ].head(20)
+)
+4. 가동 상태별 빈도와 비율
+python
+
+# ============================================================
+# 가동 상태별 빈도 및 비율
+# ============================================================
+
+operation_count = (
+    df_eda["가동상태"]
+    .value_counts(dropna=False)
+    .reindex(operation_order)
+    .dropna()
+    .to_frame(name="관측치 수")
+)
+
+operation_count["비율(%)"] = (
+    operation_count["관측치 수"]
+    / len(df_eda)
+    * 100
+).round(2)
+
+display(operation_count)
+가동 상태별 빈도 그래프
+python
+
+plt.figure(figsize=(10, 5))
+
+sns.countplot(
+    data=df_eda,
+    x="가동상태",
+    order=operation_order,
+    color="#1751D0"
+)
+
+plt.title("생산·인력 기반 가동 상태 분포", fontsize=14, fontweight="bold")
+plt.xlabel("가동 상태")
+plt.ylabel("관측치 수")
+plt.xticks(rotation=20)
+plt.grid(axis="y", alpha=0.3)
+
+plt.tight_layout()
+plt.show()
+5. 가동 상태별 전력수요 분석
+가동 상태에 따라 전력수요가 실제로 차이 나는지 확인합니다.
+python
+
+# ============================================================
+# 가동 상태별 전력수요 기술통계량
+# ============================================================
+
+operation_demand_stats = (
+    df_eda.groupby("가동상태", observed=True)[target]
+    .agg(
+        관측치수="count",
+        평균전력수요="mean",
+        중앙전력수요="median",
+        표준편차="std",
+        최솟값="min",
+        Q1=lambda x: x.quantile(0.25),
+        Q3=lambda x: x.quantile(0.75),
+        최댓값="max"
+    )
+    .reindex(operation_order)
+    .dropna(how="all")
+    .round(2)
+)
+
+display(operation_demand_stats)
+상태별 평균 전력수요 막대그래프
+python
+
+plot_data = (
+    operation_demand_stats
+    .reset_index()
+    .dropna(subset=["평균전력수요"])
+)
+
+plt.figure(figsize=(10, 5))
+
+sns.barplot(
+    data=plot_data,
+    x="가동상태",
+    y="평균전력수요",
+    color="#E2661E"
+)
+
+plt.title("가동 상태별 평균 전력수요", fontsize=14, fontweight="bold")
+plt.xlabel("가동 상태")
+plt.ylabel("평균 전력수요")
+plt.xticks(rotation=20)
+plt.grid(axis="y", alpha=0.3)
+
+plt.tight_layout()
+plt.show()
+상태별 전력수요 분포 박스플롯
+python
+
+plt.figure(figsize=(11, 6))
+
+sns.boxplot(
+    data=df_eda,
+    x="가동상태",
+    y=target,
+    order=operation_order,
+    color="#8CB8FF",
+    showfliers=False  # 극단값이 많으면 상자 내부 분포가 안 보일 수 있어 제외
+)
+
+plt.title("가동 상태별 전력수요 분포", fontsize=14, fontweight="bold")
+plt.xlabel("가동 상태")
+plt.ylabel("평균 전력수요")
+plt.xticks(rotation=20)
+plt.grid(axis="y", alpha=0.3)
+
+plt.tight_layout()
+plt.show()
+showfliers=False는 이상치를 삭제한다는 뜻이 아닙니다. 그래프에 점만 표시하지 않고, 분포의 중심과 사분위 범위를 보기 쉽게 하는 옵션입니다.
+6. 상태별 생산량·인력·인건비 비교
+python
+
+# ============================================================
+# 가동 상태별 운영 변수 비교
+# ============================================================
+
+operation_variable_stats = (
+    df_eda.groupby("가동상태", observed=True)
+    .agg(
+        관측치수=(target, "count"),
+        평균생산량=("생산량", "mean"),
+        중앙생산량=("생산량", "median"),
+        평균공장인원=("공장인원", "mean"),
+        중앙공장인원=("공장인원", "median"),
+        평균인건비=("인건비", "mean"),
+        평균전력수요=(target, "mean")
+    )
+    .reindex(operation_order)
+    .dropna(how="all")
+    .round(2)
+)
+
+display(operation_variable_stats)
+7. 생산량·공장인원 조합표
+생산량과 공장인원의 0/양수 조합을 표로 직접 확인합니다.
+python
+
+# ============================================================
+# 생산량과 공장인원 조합 분석
+# ============================================================
+
+df_eda["생산여부"] = np.where(
+    df_eda["생산량"] > 0,
+    "생산 있음",
+    "생산 없음 또는 0"
+)
+
+df_eda["인력여부"] = np.where(
+    df_eda["공장인원"] > 0,
+    "인력 있음",
+    "인력 없음 또는 0"
+)
+
+operation_cross_table = pd.crosstab(
+    df_eda["생산여부"],
+    df_eda["인력여부"],
+    margins=True
+)
+
+display(operation_cross_table)
+비율 기준으로도 확인할 수 있습니다.
+python
+
+operation_cross_ratio = (
+    pd.crosstab(
+        df_eda["생산여부"],
+        df_eda["인력여부"],
+        normalize="all"
+    ) * 100
+).round(2)
+
+display(operation_cross_ratio)
+8. 시간대별 가동 상태 패턴
+시간대에 따라 정상 가동·비가동 상태가 어떻게 달라지는지 봅니다.
+시간_clean이 없다면 원본 시간을 쓰지 말고, 앞에서 시간 오류 정제를 먼저 진행하세요.
+python
+
+# ============================================================
+# 시간대별 가동 상태 비율
+# ============================================================
+
+time_col = "시간_clean"
+
+if time_col not in df_eda.columns:
+    raise ValueError(
+        "'시간_clean' 변수가 없습니다. "
+        "시간 오류 정제 후 시간_clean 변수를 생성하세요."
+    )
+
+hour_operation_count = pd.crosstab(
+    df_eda[time_col],
+    df_eda["가동상태"],
+    normalize="index"
+) * 100
+
+hour_operation_count = (
+    hour_operation_count
+    .reindex(index=range(24), columns=operation_order)
+    .fillna(0)
+    .round(2)
+)
+
+display(hour_operation_count)
+시간대별 가동 상태 비율 누적 막대그래프
+python
+
+color_map = {
+    "정상 가동": "#1751D0",
+    "비가동": "#9AA4B8",
+    "무인 가동 후보": "#E2661E",
+    "비생산 인력 투입": "#0E9E8F",
+    "결측/확인 필요": "#B23A48",
+    "기타": "#7A5AF8"
+}
+
+plot_cols = [
+    col for col in operation_order
+    if col in hour_operation_count.columns
+]
+
+hour_operation_count[plot_cols].plot(
+    kind="bar",
+    stacked=True,
+    figsize=(13, 6),
+    color=[color_map[col] for col in plot_cols],
+    width=0.85
+)
+
+plt.title("시간대별 가동 상태 구성비", fontsize=14, fontweight="bold")
+plt.xlabel("시간")
+plt.ylabel("비율(%)")
+plt.xticks(rotation=0)
+plt.legend(title="가동 상태", bbox_to_anchor=(1.02, 1), loc="upper left")
+plt.grid(axis="y", alpha=0.25)
+
+plt.tight_layout()
+plt.show()
+9. 요일별 가동 상태 패턴
+python
+
+# ============================================================
+# 요일별 가동 상태 비율
+# ============================================================
+
+if "요일" not in df_eda.columns:
+    # datetime이 있을 경우 요일 생성
+    df_eda["datetime"] = pd.to_datetime(df_eda["datetime"])
+
+    weekday_map = {
+        0: "월요일", 1: "화요일", 2: "수요일", 3: "목요일",
+        4: "금요일", 5: "토요일", 6: "일요일"
+    }
+
+    df_eda["요일"] = (
+        df_eda["datetime"]
+        .dt.dayofweek
+        .map(weekday_map)
+    )
+
+weekday_order = [
+    "월요일", "화요일", "수요일", "목요일",
+    "금요일", "토요일", "일요일"
+]
+
+weekday_operation_ratio = pd.crosstab(
+    df_eda["요일"],
+    df_eda["가동상태"],
+    normalize="index"
+) * 100
+
+weekday_operation_ratio = (
+    weekday_operation_ratio
+    .reindex(index=weekday_order, columns=operation_order)
+    .fillna(0)
+    .round(2)
+)
+
+display(weekday_operation_ratio)
+python
+
+weekday_operation_ratio[plot_cols].plot(
+    kind="bar",
+    stacked=True,
+    figsize=(12, 6),
+    color=[color_map[col] for col in plot_cols],
+    width=0.8
+)
+
+plt.title("요일별 가동 상태 구성비", fontsize=14, fontweight="bold")
+plt.xlabel("요일")
+plt.ylabel("비율(%)")
+plt.xticks(rotation=0)
+plt.legend(title="가동 상태", bbox_to_anchor=(1.02, 1), loc="upper left")
+plt.grid(axis="y", alpha=0.25)
+
+plt.tight_layout()
+plt.show()
+10. 운영상 확인이 필요한 사례 추출
+무인 가동 후보와 비생산 인력 투입 상태는 오류라고 단정하지 말고, 실제 운영 기록과 비교해 확인하는 것이 좋습니다.
+python
+
+# ============================================================
+# 운영상 확인이 필요한 행 추출
+# ============================================================
+
+check_cols = [
+    col for col in [
+        "날짜", "datetime", "시간_clean",
+        "생산량", "공장인원", "인건비",
+        "평균", "기온", "전기요금(계절)", "가동상태"
+    ]
+    if col in df_eda.columns
+]
+
+operation_check = (
+    df_eda[
+        df_eda["가동상태"].isin([
+            "무인 가동 후보",
+            "비생산 인력 투입",
+            "결측/확인 필요"
+        ])
+    ][check_cols]
+    .sort_values(
+        by=[col for col in ["datetime", "날짜", "시간_clean"] if col in check_cols]
+    )
+)
+
+print("확인 대상 행 수:", len(operation_check))
+display(operation_check.head(30))
+11. 분석 결과 자동 요약
+python
+
+# ============================================================
+# 가동 상태 분석 결과 자동 요약
+# ============================================================
+
+main_status = operation_count["관측치 수"].idxmax()
+main_status_ratio = operation_count.loc[main_status, "비율(%)"]
+
+highest_demand_status = operation_demand_stats["평균전력수요"].idxmax()
+highest_demand_value = operation_demand_stats.loc[
+    highest_demand_status,
+    "평균전력수요"
+]
+
+lowest_demand_status = operation_demand_stats["평균전력수요"].idxmin()
+lowest_demand_value = operation_demand_stats.loc[
+    lowest_demand_status,
+    "평균전력수요"
+]
+
+print("=" * 60)
+print("생산·인력 기반 가동 상태 분석 요약")
+print("=" * 60)
+
+print(
+    f"1. 가장 많은 가동 상태: {main_status} "
+    f"({main_status_ratio:.2f}%)"
+)
+
+print(
+    f"2. 평균 전력수요가 가장 높은 상태: "
+    f"{highest_demand_status} ({highest_demand_value:.2f})"
+)
+
+print(
+    f"3. 평균 전력수요가 가장 낮은 상태: "
+    f"{lowest_demand_status} ({lowest_demand_value:.2f})"
+)
+
+if "무인 가동 후보" in operation_count.index:
+    print(
+        f"4. 무인 가동 후보 행 수: "
+        f"{operation_count.loc['무인 가동 후보', '관측치 수']:,}개"
+    )
+
+if "비생산 인력 투입" in operation_count.index:
+    print(
+        f"5. 비생산 인력 투입 행 수: "
+        f"{operation_count.loc['비생산 인력 투입', '관측치 수']:,}개"
+    )
