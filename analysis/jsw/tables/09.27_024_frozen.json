@@ -1,0 +1,9 @@
+{
+  "question": "Does the fixed 008 daily K-means k=3 grouping explain the 021 high-hour rise through cluster mix or within-cluster burden?",
+  "inputs": ["09.27_008_cluster_days.csv", "09.27_015_daily.csv", "09.27_021_periods.csv"],
+  "fixed_assignments": "raw and shape k=3, unweighted training fit from008; no refit or k selection",
+  "sensitivity": "equal days and inverse-profile frequency day weights",
+  "decomposition": "sum cluster day-share * mean high hours per cluster /24; symmetric composition and within-cluster components",
+  "cross_method": "adjusted Rand index of raw-vs-shape k3 labels by period",
+  "limits": "daily full-power input and outcome share the same readings; descriptive grouping only, no causal or predictive validation"
+}

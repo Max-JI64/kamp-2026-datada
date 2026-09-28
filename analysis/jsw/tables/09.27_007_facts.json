@@ -1,0 +1,436 @@
+{
+  "production_cuts": [
+    110.0,
+    487.0,
+    1137.0
+  ],
+  "production": [
+    {
+      "period": "Jan-Jun",
+      "bin": 1,
+      "eligible": 606,
+      "onsets": 0,
+      "raw_rate": 0.0,
+      "common_hours": 215,
+      "common_cells": 17,
+      "standardized_rate": 0.0,
+      "peak_q95": 136.0
+    },
+    {
+      "period": "Jan-Jun",
+      "bin": 2,
+      "eligible": 584,
+      "onsets": 14,
+      "raw_rate": 0.023972602739726026,
+      "common_hours": 300,
+      "common_cells": 17,
+      "standardized_rate": 0.0346871027469187,
+      "peak_q95": 177.0
+    },
+    {
+      "period": "Jan-Jun",
+      "bin": 3,
+      "eligible": 529,
+      "onsets": 60,
+      "raw_rate": 0.11342155009451796,
+      "common_hours": 410,
+      "common_cells": 17,
+      "standardized_rate": 0.07892440641138199,
+      "peak_q95": 189.0
+    },
+    {
+      "period": "Jan-Jun",
+      "bin": 4,
+      "eligible": 544,
+      "onsets": 44,
+      "raw_rate": 0.08088235294117647,
+      "common_hours": 379,
+      "common_cells": 17,
+      "standardized_rate": 0.09273465990783747,
+      "peak_q95": 185.0
+    },
+    {
+      "period": "Jul-Aug",
+      "bin": 1,
+      "eligible": 182,
+      "onsets": 0,
+      "raw_rate": 0.0,
+      "common_hours": 3,
+      "common_cells": 2,
+      "standardized_rate": 0.0,
+      "peak_q95": 132.0
+    },
+    {
+      "period": "Jul-Aug",
+      "bin": 2,
+      "eligible": 181,
+      "onsets": 7,
+      "raw_rate": 0.03867403314917127,
+      "common_hours": 4,
+      "common_cells": 2,
+      "standardized_rate": 0.0,
+      "peak_q95": 177.0
+    },
+    {
+      "period": "Jul-Aug",
+      "bin": 3,
+      "eligible": 120,
+      "onsets": 45,
+      "raw_rate": 0.375,
+      "common_hours": 28,
+      "common_cells": 2,
+      "standardized_rate": 0.041666666666666664,
+      "peak_q95": 205.1
+    },
+    {
+      "period": "Jul-Aug",
+      "bin": 4,
+      "eligible": 131,
+      "onsets": 32,
+      "raw_rate": 0.24427480916030533,
+      "common_hours": 27,
+      "common_cells": 2,
+      "standardized_rate": 0.0625,
+      "peak_q95": 200.0
+    }
+  ],
+  "weather_summary": [
+    {
+      "period": "Jan-Jun",
+      "variable": "강수량",
+      "production_positive": 0,
+      "cells": 73,
+      "comparison_rows": 671,
+      "mean_difference": -5.54080029313877,
+      "q95_difference": -26.754098360655743,
+      "fraction_q95_positive_cells": 0.3287671232876712,
+      "high_rate_difference": 0.03089915548931942
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "강수량",
+      "production_positive": 1,
+      "cells": 111,
+      "comparison_rows": 1871,
+      "mean_difference": -2.5017122743554414,
+      "q95_difference": -4.824719401389628,
+      "fraction_q95_positive_cells": 0.24324324324324326,
+      "high_rate_difference": 0.0011738497299851709
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "기온",
+      "production_positive": 0,
+      "cells": 138,
+      "comparison_rows": 728,
+      "mean_difference": -1.0987179487179488,
+      "q95_difference": 5.579945054945051,
+      "fraction_q95_positive_cells": 0.391304347826087,
+      "high_rate_difference": 0.01098901098901099
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "기온",
+      "production_positive": 1,
+      "cells": 138,
+      "comparison_rows": 1264,
+      "mean_difference": -3.770435880048221,
+      "q95_difference": 0.3751977848101271,
+      "fraction_q95_positive_cells": 0.5362318840579711,
+      "high_rate_difference": 0.027384719710669077
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "습도",
+      "production_positive": 0,
+      "cells": 138,
+      "comparison_rows": 737,
+      "mean_difference": -7.771732247851653,
+      "q95_difference": -23.501696065128897,
+      "fraction_q95_positive_cells": 0.34782608695652173,
+      "high_rate_difference": -0.0407055630936228
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "습도",
+      "production_positive": 1,
+      "cells": 138,
+      "comparison_rows": 1296,
+      "mean_difference": -0.5386390358612586,
+      "q95_difference": 0.6911651234567908,
+      "fraction_q95_positive_cells": 0.5652173913043478,
+      "high_rate_difference": 0.035480967078189304
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "풍속",
+      "production_positive": 0,
+      "cells": 138,
+      "comparison_rows": 752,
+      "mean_difference": 3.3367907801418437,
+      "q95_difference": 8.201396276595743,
+      "fraction_q95_positive_cells": 0.4855072463768116,
+      "high_rate_difference": -5.905441620346577e-19
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "풍속",
+      "production_positive": 1,
+      "cells": 138,
+      "comparison_rows": 1308,
+      "mean_difference": 1.4922145769622825,
+      "q95_difference": 1.1966360856269116,
+      "fraction_q95_positive_cells": 0.5,
+      "high_rate_difference": 0.040018385029852915
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "강수량",
+      "production_positive": 0,
+      "cells": 32,
+      "comparison_rows": 295,
+      "mean_difference": 3.8920823244552056,
+      "q95_difference": 5.698644067796607,
+      "fraction_q95_positive_cells": 0.4375,
+      "high_rate_difference": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "강수량",
+      "production_positive": 1,
+      "cells": 42,
+      "comparison_rows": 702,
+      "mean_difference": -5.2682606250982325,
+      "q95_difference": -7.03468660968661,
+      "fraction_q95_positive_cells": 0.2619047619047619,
+      "high_rate_difference": -0.05411990273101384
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "production_positive": 0,
+      "cells": 42,
+      "comparison_rows": 254,
+      "mean_difference": -1.7757217847769031,
+      "q95_difference": -1.7001968503937008,
+      "fraction_q95_positive_cells": 0.6666666666666666,
+      "high_rate_difference": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "production_positive": 1,
+      "cells": 47,
+      "comparison_rows": 423,
+      "mean_difference": 6.172807610041653,
+      "q95_difference": 6.0608747044917255,
+      "fraction_q95_positive_cells": 0.723404255319149,
+      "high_rate_difference": 0.09456264775413711
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "습도",
+      "production_positive": 0,
+      "cells": 42,
+      "comparison_rows": 264,
+      "mean_difference": 0.9876893939393939,
+      "q95_difference": 0.07348484848484921,
+      "fraction_q95_positive_cells": 0.3333333333333333,
+      "high_rate_difference": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "습도",
+      "production_positive": 1,
+      "cells": 47,
+      "comparison_rows": 475,
+      "mean_difference": -3.7957126148705083,
+      "q95_difference": -5.131157894736844,
+      "fraction_q95_positive_cells": 0.3191489361702128,
+      "high_rate_difference": -0.06154385964912281
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "풍속",
+      "production_positive": 0,
+      "cells": 42,
+      "comparison_rows": 258,
+      "mean_difference": 0.15342377260981885,
+      "q95_difference": 0.08410852713178353,
+      "fraction_q95_positive_cells": 0.5952380952380952,
+      "high_rate_difference": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "풍속",
+      "production_positive": 1,
+      "cells": 47,
+      "comparison_rows": 436,
+      "mean_difference": -1.034365443425076,
+      "q95_difference": 1.567087155963303,
+      "fraction_q95_positive_cells": 0.574468085106383,
+      "high_rate_difference": -0.00879204892966361
+    }
+  ],
+  "profile_correlations": [
+    {
+      "period": "Jan-Jun",
+      "variable": "기온",
+      "profile_weighted": false,
+      "rows": 4344,
+      "residual_correlation": 0.004937774722968397
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "기온",
+      "profile_weighted": true,
+      "rows": 4344,
+      "residual_correlation": 0.005781090652491853
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "풍속",
+      "profile_weighted": false,
+      "rows": 4342,
+      "residual_correlation": 0.04961457536335105
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "풍속",
+      "profile_weighted": true,
+      "rows": 4342,
+      "residual_correlation": 0.031037136146270062
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "습도",
+      "profile_weighted": false,
+      "rows": 4344,
+      "residual_correlation": -0.016916944999701734
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "습도",
+      "profile_weighted": true,
+      "rows": 4344,
+      "residual_correlation": -0.022909458591603964
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "강수량",
+      "profile_weighted": false,
+      "rows": 4343,
+      "residual_correlation": 0.0014458698845996177
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "강수량",
+      "profile_weighted": true,
+      "rows": 4343,
+      "residual_correlation": -0.016768305866055953
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "profile_weighted": false,
+      "rows": 1440,
+      "residual_correlation": 0.020808185441652832
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "profile_weighted": true,
+      "rows": 1440,
+      "residual_correlation": 0.011239875869693806
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "풍속",
+      "profile_weighted": false,
+      "rows": 1439,
+      "residual_correlation": 0.015132579735026944
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "풍속",
+      "profile_weighted": true,
+      "rows": 1439,
+      "residual_correlation": 0.014616508545818266
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "습도",
+      "profile_weighted": false,
+      "rows": 1440,
+      "residual_correlation": -0.04558639386253534
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "습도",
+      "profile_weighted": true,
+      "rows": 1440,
+      "residual_correlation": -0.03692329647441019
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "강수량",
+      "profile_weighted": false,
+      "rows": 1440,
+      "residual_correlation": 0.020313077752678342
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "강수량",
+      "profile_weighted": true,
+      "rows": 1440,
+      "residual_correlation": 0.021854338378191236
+    }
+  ],
+  "largest_lag_abs": [
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "lag_hours": 1,
+      "pairs": 1438,
+      "residual_correlation": 0.10563400049423485
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "기온",
+      "lag_hours": 3,
+      "pairs": 1434,
+      "residual_correlation": 0.10326445722221887
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "기온",
+      "lag_hours": 24,
+      "pairs": 4320,
+      "residual_correlation": 0.0844819870085016
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "습도",
+      "lag_hours": 168,
+      "pairs": 4176,
+      "residual_correlation": -0.07364208537160652
+    },
+    {
+      "period": "Jul-Aug",
+      "variable": "습도",
+      "lag_hours": 1,
+      "pairs": 1438,
+      "residual_correlation": -0.07214805196199017
+    },
+    {
+      "period": "Jan-Jun",
+      "variable": "풍속",
+      "lag_hours": 3,
+      "pairs": 4339,
+      "residual_correlation": 0.06493982168973807
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frozen_sha256": "173e40df8bfe8eb666afb4a225142f7a11f6fbf3a9a59cc5e094f58e09b9a068",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+}

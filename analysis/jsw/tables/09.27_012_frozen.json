@@ -1,0 +1,8 @@
+{
+  "prior_evidence": "005 standardized peak mean100.50->97.34 but q95 182->197",
+  "threshold": 182,
+  "bin_rule": "zero separate; positive bins using Jan-Jun raw peak quartiles and threshold182, lower inclusive",
+  "standardization": "reuse005 high common cells and pooled exposure weights, raw and inverse-profile versions",
+  "decomposition": "bin contributions E[peak*indicator(bin)] sum to mean; later-minus-earlier contributions sum to mean difference",
+  "scope": "Jan-Jun versus Jul-Aug; arithmetic descriptive contribution, not energy or causality"
+}

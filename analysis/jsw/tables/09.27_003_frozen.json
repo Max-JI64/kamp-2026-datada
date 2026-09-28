@@ -1,0 +1,13 @@
+{
+  "question": "Does the descriptive onset-rate difference between zero-to-positive and positive-to-positive production persist within the same month and exact hour?",
+  "previous_evidence": "002: zero-to-positive onset rates 16/163 and 13/52 exceed positive-to-positive rates 102/2100 and 71/562, but hour composition differs and current production is posthoc",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope": "Same valid Jan-Aug records and exact previous-hour eligibility as 002; exploratory maximum-of-four threshold 182; no deletions of zero values",
+  "comparison": ["zero->positive", "positive->positive"],
+  "strata": ["month", "exact record hour"],
+  "common_support": "Stratum retained for comparison only if both groups have at least one eligible record; quantify excluded denominators and onsets separately. No minimum-size tuning.",
+  "standardization": "Within period, use pooled eligible exposure in each common-support stratum as a common weight for both group-specific onset rates; repeat using inverse within-period daily-profile frequency for exposure and onset totals",
+  "outputs": "All pair records, per-stratum counts, raw and profile-weighted standardized rates, support retention and minimum cell sizes; no significance claims",
+  "interpretation": "All comparisons use current production and are posthoc. Current positive production is held common, but unmeasured operating conditions, sparse cells, repeated profiles and measurement definitions remain unresolved.",
+  "decision": "If association changes direction or magnitude with common support and standardization, revise the crude transition interpretation. Stop before a causal or operational claim; do not tune cutoffs or strata to recover a preferred result."
+}

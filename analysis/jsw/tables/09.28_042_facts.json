@@ -1,0 +1,43 @@
+{
+  "threshold": 182,
+  "summary": [
+    {
+      "period": "Jan-Jun",
+      "valid_hours": 4344,
+      "valid_slots": 17376,
+      "high_hours": 235,
+      "high_slots": 444,
+      "hour_events": 139,
+      "slot_events": 211,
+      "multi_hour_events": 59,
+      "multi_hour_with_no_cross_hour_run": 18,
+      "multi_hour_longest_run_le4": 51,
+      "slot_events_one_slot": 79,
+      "slot_events_ge4": 27,
+      "slot_events_crossing_hours": 41,
+      "max_slot_event_slots": 7
+    },
+    {
+      "period": "Jul-Aug",
+      "valid_hours": 1440,
+      "valid_slots": 5760,
+      "high_hours": 220,
+      "high_slots": 515,
+      "hour_events": 85,
+      "slot_events": 187,
+      "multi_hour_events": 57,
+      "multi_hour_with_no_cross_hour_run": 17,
+      "multi_hour_longest_run_le4": 30,
+      "slot_events_one_slot": 70,
+      "slot_events_ge4": 49,
+      "slot_events_crossing_hours": 56,
+      "max_slot_event_slots": 8
+    }
+  ],
+  "run_length_total": 398,
+  "start_slot_total": 398,
+  "hour_event_total": 224,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "0b1814ec8443b030ffc5b2d4d0f0ef7f4cc348861044dde68167010ec3136373"
+}

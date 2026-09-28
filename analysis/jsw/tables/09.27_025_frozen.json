@@ -1,0 +1,10 @@
+{
+  "prior_evidence": "024 raw and shape k3 disagree (ARI 0.51/0.37), yet within-cluster high-hour increase dominates both decompositions",
+  "question": "Is the within-cluster high-hour rise and membership robust to one independent grouping method?",
+  "comparison": "Ward hierarchical clustering versus the already stored unweighted raw K-means k=3 assignments",
+  "fit": "Jan-Jun 181 full 96-slot raw-power days only, StandardScaler fitted on same days, Ward Euclidean k=3",
+  "later_assignment": "fixed Ward training-group centroids in standardized 96-slot space; nearest-centroid descriptive projection for Jul-Aug",
+  "representativeness": "all 241 observed valid 24-hour days; fit training duplicates retained",
+  "outcomes": "later-minus-earlier high-hour fraction; symmetric group-composition/within-group arithmetic if every group has support in both periods",
+  "limits": "Ward projection is an approximation, daily full-power inputs overlap outcome, no independent test or operating labels"
+}

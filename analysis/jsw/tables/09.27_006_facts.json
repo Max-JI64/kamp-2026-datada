@@ -1,0 +1,316 @@
+{
+  "change_best": [
+    {
+      "metric": "exact_daily_mean",
+      "split_date": "2021-07-31 00:00:00",
+      "before_days": 209,
+      "after_days": 32,
+      "before_mean": 94.46730462519935,
+      "after_mean": 79.22688802083333,
+      "sse_reduction_fraction": 0.012885316129681468,
+      "rank": 1
+    },
+    {
+      "metric": "high_hours",
+      "split_date": "2021-06-14 00:00:00",
+      "before_days": 164,
+      "after_days": 77,
+      "before_mean": 1.103658536585366,
+      "after_mean": 3.5584415584415585,
+      "sse_reduction_fraction": 0.18146827801828613,
+      "rank": 1
+    },
+    {
+      "metric": "excess_sum",
+      "split_date": "2021-06-28 00:00:00",
+      "before_days": 178,
+      "after_days": 63,
+      "before_mean": 8.707865168539326,
+      "after_mean": 42.301587301587304,
+      "sse_reduction_fraction": 0.18051103713166972,
+      "rank": 1
+    }
+  ],
+  "periodic": [
+    {
+      "status": "fit",
+      "segment": 1,
+      "period_hours": 24,
+      "observed_period": "Jan-Jun",
+      "rows": 4344,
+      "residual_median": 0.15776116506302884,
+      "residual_mad": 6.641952055875734,
+      "residual_abs_q95": 85.029811420584,
+      "residual_variance_ratio": 0.3647742243982452
+    },
+    {
+      "status": "fit",
+      "segment": 1,
+      "period_hours": 24,
+      "observed_period": "Jul-Aug",
+      "rows": 288,
+      "residual_median": -1.1356215853062182,
+      "residual_mad": 6.269207640516001,
+      "residual_abs_q95": 101.90927667216047,
+      "residual_variance_ratio": 0.38278925707784234
+    },
+    {
+      "status": "fit",
+      "segment": 1,
+      "period_hours": 168,
+      "observed_period": "Jan-Jun",
+      "rows": 4344,
+      "residual_median": -0.08254581400597516,
+      "residual_mad": 2.1646997912927546,
+      "residual_abs_q95": 67.43247897524567,
+      "residual_variance_ratio": 0.2584215113746371
+    },
+    {
+      "status": "fit",
+      "segment": 1,
+      "period_hours": 168,
+      "observed_period": "Jul-Aug",
+      "rows": 288,
+      "residual_median": 0.039900158735463265,
+      "residual_mad": 1.0803400461790247,
+      "residual_abs_q95": 11.916129607767415,
+      "residual_variance_ratio": 0.007676325813630973
+    },
+    {
+      "status": "insufficient_cycles",
+      "segment": 2,
+      "period_hours": 24,
+      "rows": 24
+    },
+    {
+      "status": "insufficient_cycles",
+      "segment": 2,
+      "period_hours": 168,
+      "rows": 24
+    },
+    {
+      "status": "fit",
+      "segment": 3,
+      "period_hours": 24,
+      "observed_period": "Jul-Aug",
+      "rows": 1128,
+      "residual_median": -0.03295214031421523,
+      "residual_mad": 3.841161531362035,
+      "residual_abs_q95": 79.83834634798637,
+      "residual_variance_ratio": 0.27511645150479297
+    },
+    {
+      "status": "fit",
+      "segment": 3,
+      "period_hours": 168,
+      "observed_period": "Jul-Aug",
+      "rows": 1128,
+      "residual_median": -0.0345889494888354,
+      "residual_mad": 1.0019728641874863,
+      "residual_abs_q95": 106.05686761669362,
+      "residual_variance_ratio": 0.3777515876736685
+    }
+  ],
+  "unsupported_reference_hours": 0,
+  "largest_anomalies": [
+    {
+      "period": "Jan-Jun",
+      "date": "2021-01-24 00:00:00",
+      "rows": 24,
+      "signed_mean": 123.3125,
+      "abs_mean": 123.3125,
+      "q95_residual": 162.1,
+      "abs_rank_within_period": 1.0
+    },
+    {
+      "period": "Jan-Jun",
+      "date": "2021-01-17 00:00:00",
+      "rows": 24,
+      "signed_mean": 118.85416666666667,
+      "abs_mean": 118.85416666666667,
+      "q95_residual": 167.975,
+      "abs_rank_within_period": 2.0
+    },
+    {
+      "period": "Jan-Jun",
+      "date": "2021-03-01 00:00:00",
+      "rows": 24,
+      "signed_mean": 105.8125,
+      "abs_mean": 105.89583333333333,
+      "q95_residual": 161.0,
+      "abs_rank_within_period": 3.0
+    },
+    {
+      "period": "Jan-Jun",
+      "date": "2021-02-11 00:00:00",
+      "rows": 24,
+      "signed_mean": 102.14583333333333,
+      "abs_mean": 102.14583333333333,
+      "q95_residual": 153.25,
+      "abs_rank_within_period": 4.0
+    },
+    {
+      "period": "Jan-Jun",
+      "date": "2021-03-14 00:00:00",
+      "rows": 24,
+      "signed_mean": 98.77083333333333,
+      "abs_mean": 99.35416666666667,
+      "q95_residual": 168.925,
+      "abs_rank_within_period": 5.0
+    },
+    {
+      "period": "Jan-Jun",
+      "date": "2021-03-21 00:00:00",
+      "rows": 24,
+      "signed_mean": 95.22916666666667,
+      "abs_mean": 95.5625,
+      "q95_residual": 178.54999999999998,
+      "abs_rank_within_period": 6.0
+    }
+  ],
+  "counterexamples": [
+    {
+      "period": "Jan-Jun",
+      "event_start": "2021-01-21 08:00:00",
+      "event_excess": 67.0,
+      "event_hours": 4,
+      "event_peak_at_start": "208",
+      "event_previous_peak": 101.0,
+      "controls_available": 6,
+      "control_timestamp": "2021-01-08 08:00:00",
+      "control_peak": "161",
+      "control_previous_peak": 117.0,
+      "previous_peak_distance": 16.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jan-Jun",
+      "event_start": "2021-03-21 08:00:00",
+      "event_excess": 67.0,
+      "event_hours": 4,
+      "event_peak_at_start": "208",
+      "event_previous_peak": 26.0,
+      "controls_available": 3,
+      "control_timestamp": "2021-03-06 08:00:00",
+      "control_peak": "27",
+      "control_previous_peak": 92.0,
+      "previous_peak_distance": 66.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jan-Jun",
+      "event_start": "2021-06-21 08:00:00",
+      "event_excess": 67.0,
+      "event_hours": 4,
+      "event_peak_at_start": "208",
+      "event_previous_peak": 101.0,
+      "controls_available": 11,
+      "control_timestamp": "2021-06-08 08:00:00",
+      "control_peak": "161",
+      "control_previous_peak": 117.0,
+      "previous_peak_distance": 16.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jan-Jun",
+      "event_start": "2021-01-29 08:00:00",
+      "event_excess": 41.0,
+      "event_hours": 2,
+      "event_peak_at_start": "222",
+      "event_previous_peak": 160.0,
+      "controls_available": 6,
+      "control_timestamp": "2021-01-22 08:00:00",
+      "control_peak": "178",
+      "control_previous_peak": 162.0,
+      "previous_peak_distance": 2.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jan-Jun",
+      "event_start": "2021-03-29 08:00:00",
+      "event_excess": 41.0,
+      "event_hours": 2,
+      "event_peak_at_start": "222",
+      "event_previous_peak": 160.0,
+      "controls_available": 11,
+      "control_timestamp": "2021-03-22 08:00:00",
+      "control_peak": "178",
+      "control_previous_peak": 162.0,
+      "previous_peak_distance": 2.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jul-Aug",
+      "event_start": "2021-07-21 08:00:00",
+      "event_excess": 98.0,
+      "event_hours": 4,
+      "event_peak_at_start": "209",
+      "event_previous_peak": 149.0,
+      "controls_available": 1,
+      "control_timestamp": "2021-07-02 08:00:00",
+      "control_peak": "173",
+      "control_previous_peak": 143.0,
+      "previous_peak_distance": 6.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jul-Aug",
+      "event_start": "2021-07-29 08:00:00",
+      "event_excess": 95.0,
+      "event_hours": 4,
+      "event_peak_at_start": "204",
+      "event_previous_peak": 159.0,
+      "controls_available": 1,
+      "control_timestamp": "2021-07-02 08:00:00",
+      "control_peak": "173",
+      "control_previous_peak": 143.0,
+      "previous_peak_distance": 16.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jul-Aug",
+      "event_start": "2021-07-28 08:00:00",
+      "event_excess": 94.0,
+      "event_hours": 4,
+      "event_peak_at_start": "204",
+      "event_previous_peak": 174.0,
+      "controls_available": 1,
+      "control_timestamp": "2021-07-02 08:00:00",
+      "control_peak": "173",
+      "control_previous_peak": 143.0,
+      "previous_peak_distance": 31.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jul-Aug",
+      "event_start": "2021-07-30 08:00:00",
+      "event_excess": 94.0,
+      "event_hours": 4,
+      "event_peak_at_start": "204",
+      "event_previous_peak": 174.0,
+      "controls_available": 1,
+      "control_timestamp": "2021-07-02 08:00:00",
+      "control_peak": "173",
+      "control_previous_peak": 143.0,
+      "previous_peak_distance": 31.0,
+      "same_profile": false
+    },
+    {
+      "period": "Jul-Aug",
+      "event_start": "2021-07-19 08:00:00",
+      "event_excess": 88.0,
+      "event_hours": 4,
+      "event_peak_at_start": "200",
+      "event_previous_peak": 119.0,
+      "controls_available": 1,
+      "control_timestamp": "2021-07-02 08:00:00",
+      "control_peak": "173",
+      "control_previous_peak": 143.0,
+      "previous_peak_distance": 24.0,
+      "same_profile": false
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frozen_sha256": "38d71ad705dab33d59b3e6be5d2b511f092a31f5792a0ca26ecb7cd2c2ffe36b",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+}

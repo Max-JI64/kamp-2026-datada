@@ -1,0 +1,9 @@
+{
+  "prior_evidence": "009 multi-hour events67.1% Jul-Aug versus42.9% Sep; 011 duration reduction offsets slightly higher event frequency",
+  "threshold": 182,
+  "comparisons": [["Jan-Jun", "Jul-Aug"], ["Jul-Aug", "Sep"]],
+  "standardization": "exact event start hour common cells; pooled event counts as reference",
+  "descriptive_groups": ["08h", "13h", "other"],
+  "duration_survival_hours": [2, 3, 4, 6],
+  "scope": "observed complete events, no fitted survival model/p-values; small cells and excluded events explicit"
+}

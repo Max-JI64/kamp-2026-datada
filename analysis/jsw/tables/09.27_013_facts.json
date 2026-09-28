@@ -1,0 +1,58 @@
+{
+  "standardization": [
+    {
+      "earlier": "Jan-Jun",
+      "later": "Jul-Aug",
+      "common_hours": 7,
+      "total_hours": 11,
+      "small_cells_either_n_le2": 0,
+      "earlier_all_events": 139,
+      "earlier_supported_events": 139,
+      "earlier_excluded_events": 0,
+      "earlier_standardized_mean_duration": 1.6884710661007998,
+      "earlier_standardized_atleast2_fraction": 0.41846839462547736,
+      "earlier_standardized_atleast3_fraction": 0.1774360515594737,
+      "earlier_standardized_atleast4_fraction": 0.09256661991584852,
+      "earlier_standardized_atleast6_fraction": 0.0,
+      "later_all_events": 85,
+      "later_supported_events": 78,
+      "later_excluded_events": 7,
+      "later_standardized_mean_duration": 2.701062655693249,
+      "later_standardized_atleast2_fraction": 0.7026852439963782,
+      "later_standardized_atleast3_fraction": 0.5365857174389953,
+      "later_standardized_atleast4_fraction": 0.4147870859629445,
+      "later_standardized_atleast6_fraction": 0.01566820276497696
+    },
+    {
+      "earlier": "Jul-Aug",
+      "later": "Sep",
+      "common_hours": 8,
+      "total_hours": 11,
+      "small_cells_either_n_le2": 5,
+      "earlier_all_events": 85,
+      "earlier_supported_events": 70,
+      "earlier_excluded_events": 15,
+      "earlier_standardized_mean_duration": 2.7114498404820986,
+      "earlier_standardized_atleast2_fraction": 0.7066938437906181,
+      "earlier_standardized_atleast3_fraction": 0.5376344086021506,
+      "earlier_standardized_atleast4_fraction": 0.42591279688053885,
+      "earlier_standardized_atleast6_fraction": 0.013736263736263738,
+      "later_all_events": 21,
+      "later_supported_events": 21,
+      "later_excluded_events": 0,
+      "later_standardized_mean_duration": 1.9340659340659343,
+      "later_standardized_atleast2_fraction": 0.521978021978022,
+      "later_standardized_atleast3_fraction": 0.2893772893772894,
+      "later_standardized_atleast4_fraction": 0.12271062271062272,
+      "later_standardized_atleast6_fraction": 0.0
+    }
+  ],
+  "event_counts": {
+    "Jan-Jun": 139,
+    "Jul-Aug": 85,
+    "Sep": 21
+  },
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "ca8c59a85e98000f7bad62ca82f5c8f2396b01b657e77cadd19d9bac97aa2f88"
+}

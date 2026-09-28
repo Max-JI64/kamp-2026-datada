@@ -1,0 +1,64 @@
+{
+  "occupancy": [
+    {
+      "period": "Jan-Jun",
+      "observed_hours": 4344,
+      "events": 139,
+      "high_hours": 235,
+      "events_per_hour": 0.03199815837937385,
+      "mean_duration": 1.6906474820143884,
+      "high_fraction": 0.054097605893186004,
+      "eligible": 4108,
+      "onsets": 139,
+      "onset_eligible_rate": 0.033836416747809156
+    },
+    {
+      "period": "Jul-Aug",
+      "observed_hours": 1440,
+      "events": 85,
+      "high_hours": 220,
+      "events_per_hour": 0.059027777777777776,
+      "mean_duration": 2.588235294117647,
+      "high_fraction": 0.1527777777777778,
+      "eligible": 1218,
+      "onsets": 85,
+      "onset_eligible_rate": 0.06978653530377668
+    },
+    {
+      "period": "Sep",
+      "observed_hours": 336,
+      "events": 21,
+      "high_hours": 37,
+      "events_per_hour": 0.0625,
+      "mean_duration": 1.7619047619047619,
+      "high_fraction": 0.11011904761904762,
+      "eligible": 299,
+      "onsets": 21,
+      "onset_eligible_rate": 0.07023411371237458
+    }
+  ],
+  "contributions": [
+    {
+      "earlier": "Jan-Jun",
+      "later": "Jul-Aug",
+      "high_fraction_difference": 0.09868017188459179,
+      "frequency_component": 0.057828286444617454,
+      "duration_component": 0.04085188543997432,
+      "frequency_share_of_difference": 0.5860172853392337,
+      "duration_share_of_difference": 0.41398271466076614
+    },
+    {
+      "earlier": "Jul-Aug",
+      "later": "Sep",
+      "high_fraction_difference": -0.042658730158730174,
+      "frequency_component": 0.00755232648615002,
+      "duration_component": -0.05021105664488018,
+      "frequency_share_of_difference": -0.17704058367533065,
+      "duration_share_of_difference": 1.1770405836753304
+    }
+  ],
+  "censored_or_cross_period_events": 0,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "1fc8c5f90ce4743301372b3adb339506d9db925782404f8441ee2b1db65b78f8"
+}

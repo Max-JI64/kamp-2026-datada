@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "015 daily reused values and weights independently agree with source241days",
+    "020 source category counts/means/probabilities and decomposition identity",
+    "021 source high-day/hour denominators and frequency-times-burden identity",
+    "022 independent exact-day237pairs, weekday cells and standardized proportions",
+    "source, profile and three frozen-setting hashes agree"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "reused_daily_sha256": "551f493fd45dddd95c77a5b85577266d3dfd69bb67cd9954ca48fea3dd0f3eaf"
+}

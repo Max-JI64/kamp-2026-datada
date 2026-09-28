@@ -1,0 +1,5 @@
+﻿period,profile_weighted,all_pairs,common_weekdays,small_cells_either_n_le2,state0_all_pairs,state0_common_pairs,state0_standardized_fraction,state1_all_pairs,state1_common_pairs,state1_standardized_fraction,standardized_difference
+Jan-Jun,False,180,7,1,112,112,0.24868508075744916,68,68,0.5665276081942748,0.3178425274368257
+Jan-Jun,True,180,7,1,112,112,0.27853229650592176,68,68,0.6070337624756108,0.32850146596968904
+Jul-Aug,False,57,5,5,24,6,0.08974358974358974,33,33,0.73992673992674,0.6501831501831502
+Jul-Aug,True,57,5,5,24,6,0.08552631578947369,33,33,0.7330827067669172,0.6475563909774436

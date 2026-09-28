@@ -1,0 +1,3 @@
+﻿period,valid_hours,valid_slots,high_hours,high_slots,hour_events,slot_events,multi_hour_events,multi_hour_with_no_cross_hour_run,multi_hour_longest_run_le4,slot_events_one_slot,slot_events_ge4,slot_events_crossing_hours,max_slot_event_slots
+Jan-Jun,4344,17376,235,444,139,211,59,18,51,79,27,41,7
+Jul-Aug,1440,5760,220,515,85,187,57,17,30,70,49,56,8

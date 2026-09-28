@@ -1,0 +1,189 @@
+{
+  "raw_context": [
+    {
+      "period": "Jan-Jun",
+      "weekend": 0,
+      "production_positive": 0,
+      "hours": 809,
+      "dates": 110,
+      "high_hours": 4,
+      "high_rate": 0.004944375772558714,
+      "profile_weighted_high_rate": 0.005748719370104606,
+      "temperature_min": -11.4,
+      "temperature_median": 9.2,
+      "temperature_max": 27.6
+    },
+    {
+      "period": "Jan-Jun",
+      "weekend": 0,
+      "production_positive": 1,
+      "hours": 2287,
+      "dates": 112,
+      "high_hours": 195,
+      "high_rate": 0.08526453869698294,
+      "profile_weighted_high_rate": 0.0818058064571365,
+      "temperature_min": -12.0,
+      "temperature_median": 14.4,
+      "temperature_max": 29.2
+    },
+    {
+      "period": "Jan-Jun",
+      "weekend": 1,
+      "production_positive": 0,
+      "hours": 1082,
+      "dates": 52,
+      "high_hours": 36,
+      "high_rate": 0.033271719038817,
+      "profile_weighted_high_rate": 0.04876440372067194,
+      "temperature_min": -10.5,
+      "temperature_median": 12.5,
+      "temperature_max": 29.0
+    },
+    {
+      "period": "Jan-Jun",
+      "weekend": 1,
+      "production_positive": 1,
+      "hours": 166,
+      "dates": 25,
+      "high_hours": 0,
+      "high_rate": 0.0,
+      "profile_weighted_high_rate": 0.0,
+      "temperature_min": -10.3,
+      "temperature_median": 10.55,
+      "temperature_max": 23.3
+    },
+    {
+      "period": "Jul-Aug",
+      "weekend": 0,
+      "production_positive": 0,
+      "hours": 233,
+      "dates": 33,
+      "high_hours": 2,
+      "high_rate": 0.008583690987124463,
+      "profile_weighted_high_rate": 0.004366812227074236,
+      "temperature_min": 21.3,
+      "temperature_median": 25.6,
+      "temperature_max": 33.3
+    },
+    {
+      "period": "Jul-Aug",
+      "weekend": 0,
+      "production_positive": 1,
+      "hours": 775,
+      "dates": 37,
+      "high_hours": 218,
+      "high_rate": 0.2812903225806452,
+      "profile_weighted_high_rate": 0.2781456953642384,
+      "temperature_min": 19.3,
+      "temperature_median": 24.9,
+      "temperature_max": 33.2
+    },
+    {
+      "period": "Jul-Aug",
+      "weekend": 1,
+      "production_positive": 0,
+      "hours": 383,
+      "dates": 18,
+      "high_hours": 0,
+      "high_rate": 0.0,
+      "profile_weighted_high_rate": 0.0,
+      "temperature_min": 21.2,
+      "temperature_median": 25.5,
+      "temperature_max": 33.4
+    },
+    {
+      "period": "Jul-Aug",
+      "weekend": 1,
+      "production_positive": 1,
+      "hours": 49,
+      "dates": 7,
+      "high_hours": 0,
+      "high_rate": 0.0,
+      "profile_weighted_high_rate": 0.0,
+      "temperature_min": 21.9,
+      "temperature_median": 23.6,
+      "temperature_max": 25.8
+    }
+  ],
+  "positive_weekday_standardization": [
+    {
+      "profile_weighted": false,
+      "common_cells": 24,
+      "excluded_earlier_n": 0,
+      "excluded_later_n": 0,
+      "earlier_n": 2287,
+      "earlier_high": 195,
+      "earlier_raw_rate": 0.08526453869698294,
+      "earlier_standardized_rate": 0.08525918077603156,
+      "earlier_min_n": 50,
+      "later_n": 775,
+      "later_high": 218,
+      "later_raw_rate": 0.2812903225806452,
+      "later_standardized_rate": 0.28128030988906233,
+      "later_min_n": 20,
+      "standardized_difference": 0.19602112911303077
+    },
+    {
+      "profile_weighted": true,
+      "common_cells": 24,
+      "excluded_earlier_n": 0,
+      "excluded_later_n": 0,
+      "earlier_n": 2287,
+      "earlier_high": 195,
+      "earlier_raw_rate": 0.08180580645713649,
+      "earlier_standardized_rate": 0.08191088911918137,
+      "earlier_min_n": 50,
+      "later_n": 775,
+      "later_high": 218,
+      "later_raw_rate": 0.2781456953642384,
+      "later_standardized_rate": 0.2775322705492047,
+      "later_min_n": 20,
+      "standardized_difference": 0.19562138143002333
+    }
+  ],
+  "temperature_support": {
+    "lower": 21.7,
+    "upper": 24.0,
+    "period_ranges": [
+      {
+        "period": "Jan-Jun",
+        "q05": -2.569999999999999,
+        "q95": 24.0,
+        "hours": 2287,
+        "dates": 112
+      },
+      {
+        "period": "Jul-Aug",
+        "q05": 21.7,
+        "q95": 30.4,
+        "hours": 775,
+        "dates": 37
+      }
+    ],
+    "period_exposure": [
+      {
+        "period": "Jan-Jun",
+        "hours": 174,
+        "dates": 36,
+        "high_hours": 18,
+        "high_rate": 0.10344827586206896
+      },
+      {
+        "period": "Jul-Aug",
+        "hours": 255,
+        "dates": 28,
+        "high_hours": 28,
+        "high_rate": 0.10980392156862745
+      }
+    ],
+    "comparison_eligible": false,
+    "common_hour_cells_with_10_each": 1,
+    "common_hour_excluded_n": {
+      "Jan-Jun": 163,
+      "Jul-Aug": 243
+    }
+  },
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "101b0ca213f9e434429d935dc2fd22e1c59aad2b7989c10fadc62af169ae7818"
+}

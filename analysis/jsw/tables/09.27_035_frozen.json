@@ -1,0 +1,7 @@
+{
+  "previous_evidence": "032/033 found positive-production weekday high-hour and continuous-target increases for Jan-Jun versus Jul-Aug, while Jan-Jun is a six-month baseline containing winter and spring. 030 showed June's all-hour high rate 8.75%, July 19.25%, August 11.56%.",
+  "question": "Does the positive-production weekday difference remain when each July and August month is compared with adjacent June, not the whole Jan-Jun baseline?",
+  "input": "Original June-Aug valid hours with positive same-time production and weekdays only; fixed 182 high threshold and both continuous targets; all records retained within this observed context.",
+  "method": "Report month counts, dates, high fraction, recorded-mean and four-slot-maximum means. Standardize each metric by exact hour using pooled exposure of June, July and August across 24 common hour cells; compare July-minus-June and August-minus-June separately. Repeat inverse-profile-frequency weighting using existing within-period weights; do not treat these months as independent holdouts.",
+  "decision": "If both months exceed June, the broad-baseline choice alone does not explain the descriptive increase. If one does not, describe month heterogeneity and revise any uniform summer claim. No physical causal attribution."
+}

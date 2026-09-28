@@ -1,0 +1,7 @@
+{
+  "prior_evidence": "009 July13/15 invalid48 records contain10 peaks>=182; 005 Jan-Jun/Jul-Aug difference persists",
+  "threshold": 182,
+  "scope": "July-August finite CSV records, not all unobserved hours in a population",
+  "method": "date-only high fraction uses all records; ignore invalid power values for adversarial 0..48 high count bound; fixed denominators Jan-Jun4344 and Jul-Aug1488",
+  "prohibitions": "no timestamp assignment, onset bound, duration bound, operational missingness assumption"
+}

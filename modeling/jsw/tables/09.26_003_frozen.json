@@ -1,0 +1,21 @@
+{
+  "question": "Do previous-record production and/or weather improve next-record power predictions beyond 001 power and calendar inputs?",
+  "development_folds": ["May", "Jun"],
+  "baseline": "09.26_001 saved hgb_calendar development predictions",
+  "candidate_groups": {
+    "production": ["생산량"],
+    "weather": ["기온", "풍속", "습도", "강수량"],
+    "both": ["생산량", "기온", "풍속", "습도", "강수량"]
+  },
+  "offset_hours": -1,
+  "model_settings": {
+    "loss": "squared_error", "learning_rate": 0.05, "max_iter": 200,
+    "max_leaf_nodes": 15, "min_samples_leaf": 30,
+    "l2_regularization": 1.0, "early_stopping": false, "random_state": 20260926
+  },
+  "nonnegative_clip": true,
+  "missing_weather_handling": "Preserve original NaN and use HistGradientBoostingRegressor native missing-value handling; do not drop evaluation hours or impute",
+  "comparison": "Same May and June timestamps as 001, mean and peak targets, pooled and foldwise MAE, high-onset and high-continued errors",
+  "availability_assumption": "The immediately previous record's production and weather observations have arrived before prediction",
+  "decision": "Require consistent improvement across folds and report concentration in repeated daily profiles; do not search additional lags or settings"
+}

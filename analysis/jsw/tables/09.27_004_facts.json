@@ -1,0 +1,217 @@
+{
+  "threshold_summary": [
+    {
+      "quantile": 0.9,
+      "threshold": 176.0,
+      "period": "Jan-Jun",
+      "valid_hours": 4344,
+      "high_hours": 444,
+      "eligible": 3899,
+      "onsets": 200,
+      "onset_rate": 0.0512952038984355,
+      "events": 200,
+      "multi_hour": 106,
+      "multi_hour_share": 0.53,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    },
+    {
+      "quantile": 0.9,
+      "threshold": 176.0,
+      "period": "Jul-Aug",
+      "valid_hours": 1440,
+      "high_hours": 285,
+      "eligible": 1153,
+      "onsets": 85,
+      "onset_rate": 0.07372072853425846,
+      "events": 85,
+      "multi_hour": 70,
+      "multi_hour_share": 0.8235294117647058,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 182.0,
+      "period": "Jan-Jun",
+      "valid_hours": 4344,
+      "high_hours": 235,
+      "eligible": 4108,
+      "onsets": 139,
+      "onset_rate": 0.033836416747809156,
+      "events": 139,
+      "multi_hour": 59,
+      "multi_hour_share": 0.4244604316546763,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 182.0,
+      "period": "Jul-Aug",
+      "valid_hours": 1440,
+      "high_hours": 220,
+      "eligible": 1218,
+      "onsets": 85,
+      "onset_rate": 0.06978653530377668,
+      "events": 85,
+      "multi_hour": 57,
+      "multi_hour_share": 0.6705882352941176,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    },
+    {
+      "quantile": 0.975,
+      "threshold": 188.0,
+      "period": "Jan-Jun",
+      "valid_hours": 4344,
+      "high_hours": 115,
+      "eligible": 4228,
+      "onsets": 82,
+      "onset_rate": 0.019394512771996216,
+      "events": 82,
+      "multi_hour": 24,
+      "multi_hour_share": 0.2926829268292683,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    },
+    {
+      "quantile": 0.975,
+      "threshold": 188.0,
+      "period": "Jul-Aug",
+      "valid_hours": 1440,
+      "high_hours": 152,
+      "eligible": 1286,
+      "onsets": 67,
+      "onset_rate": 0.052099533437014,
+      "events": 67,
+      "multi_hour": 42,
+      "multi_hour_share": 0.6268656716417911,
+      "left_censored": 0,
+      "right_censored": 0,
+      "cross_period": 0
+    }
+  ],
+  "severity": [
+    {
+      "quantile": 0.9,
+      "threshold": 176.0,
+      "period": "Jan-Jun",
+      "events": 200,
+      "median_hours": 2.0,
+      "mean_hours": 2.22,
+      "median_event_peak": 183.5,
+      "max_event_peak": "222",
+      "median_excess_sum": 10.0,
+      "total_event_excess": 3642.0,
+      "top5_event_excess_share": 0.1057111477210324
+    },
+    {
+      "quantile": 0.9,
+      "threshold": 176.0,
+      "period": "Jul-Aug",
+      "events": 85,
+      "median_hours": 4.0,
+      "mean_hours": 3.3529411764705883,
+      "median_event_peak": 193.0,
+      "max_event_peak": "222",
+      "median_excess_sum": 37.0,
+      "total_event_excess": 3982.0,
+      "top5_event_excess_share": 0.1479156202913109
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 182.0,
+      "period": "Jan-Jun",
+      "events": 139,
+      "median_hours": 1.0,
+      "mean_hours": 1.6906474820143884,
+      "median_event_peak": 189.0,
+      "max_event_peak": "222",
+      "median_excess_sum": 7.0,
+      "total_event_excess": 1703.0,
+      "top5_event_excess_share": 0.16617733411626542
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 182.0,
+      "period": "Jul-Aug",
+      "events": 85,
+      "median_hours": 2.0,
+      "mean_hours": 2.588235294117647,
+      "median_event_peak": 193.0,
+      "max_event_peak": "222",
+      "median_excess_sum": 16.0,
+      "total_event_excess": 2512.0,
+      "top5_event_excess_share": 0.18670382165605096
+    },
+    {
+      "quantile": 0.975,
+      "threshold": 188.0,
+      "period": "Jan-Jun",
+      "events": 82,
+      "median_hours": 1.0,
+      "mean_hours": 1.4024390243902438,
+      "median_event_peak": 193.0,
+      "max_event_peak": "222",
+      "median_excess_sum": 5.0,
+      "total_event_excess": 755.0,
+      "top5_event_excess_share": 0.2609271523178808
+    },
+    {
+      "quantile": 0.975,
+      "threshold": 188.0,
+      "period": "Jul-Aug",
+      "events": 67,
+      "median_hours": 2.0,
+      "mean_hours": 2.2686567164179103,
+      "median_event_peak": 199.0,
+      "max_event_peak": "222",
+      "median_excess_sum": 15.0,
+      "total_event_excess": 1412.0,
+      "top5_event_excess_share": 0.2471671388101983
+    }
+  ],
+  "recurrence": [
+    {
+      "period": "Jan-Jun",
+      "observable_gaps": 138,
+      "median_nonhigh_hours": 4.0,
+      "gaps_le_6": 70,
+      "gaps_le_24": 107,
+      "max_nonhigh_hours": 402.0,
+      "multi_event_dates": 50
+    },
+    {
+      "period": "Jul-Aug",
+      "observable_gaps": 83,
+      "median_nonhigh_hours": 2.0,
+      "gaps_le_6": 49,
+      "gaps_le_24": 74,
+      "max_nonhigh_hours": 229.0,
+      "multi_event_dates": 35
+    }
+  ],
+  "metric_rank_sensitivity": [
+    {
+      "period": "Jan-Jun",
+      "days": 181,
+      "spearman_peak_vs_daily_mean": 0.8077415237564042,
+      "top10_common_dates": 3
+    },
+    {
+      "period": "Jul-Aug",
+      "days": 60,
+      "spearman_peak_vs_daily_mean": 0.86734879414176,
+      "top10_common_dates": 6
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frozen_sha256": "060ffbb8905d7251fca8455393e249eb7f9191daea5a7ac76397d9fba56c614c",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+}

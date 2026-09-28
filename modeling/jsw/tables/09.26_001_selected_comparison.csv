@@ -1,0 +1,3 @@
+﻿target,selected_before_review,review_n,lag1_mae,selected_mae,mae_reduction_percent
+mean,hgb_calendar,1344,13.61235119047619,6.895556768390019,49.34338181625479
+peak,hgb_calendar,1344,12.677827380952381,7.914707975190522,37.570470575409

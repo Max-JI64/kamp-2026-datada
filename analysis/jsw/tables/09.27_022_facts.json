@@ -1,0 +1,151 @@
+{
+  "raw_transitions": [
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "previous_high_day": 0,
+      "pairs": 112,
+      "current_high_days": 30,
+      "weighted_exposure": 112.0,
+      "weighted_current_high": 30.0,
+      "current_high_fraction": 0.26785714285714285
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "previous_high_day": 1,
+      "pairs": 68,
+      "current_high_days": 39,
+      "weighted_exposure": 68.0,
+      "weighted_current_high": 39.0,
+      "current_high_fraction": 0.5735294117647058
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "previous_high_day": 0,
+      "pairs": 112,
+      "current_high_days": 30,
+      "weighted_exposure": 43.516666666666666,
+      "weighted_current_high": 13.333333333333332,
+      "current_high_fraction": 0.3063960168517809
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "previous_high_day": 1,
+      "pairs": 68,
+      "current_high_days": 39,
+      "weighted_exposure": 22.48333333333333,
+      "weighted_current_high": 12.666666666666666,
+      "current_high_fraction": 0.5633802816901409
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "previous_high_day": 0,
+      "pairs": 24,
+      "current_high_days": 9,
+      "weighted_exposure": 24.0,
+      "weighted_current_high": 9.0,
+      "current_high_fraction": 0.375
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "previous_high_day": 1,
+      "pairs": 33,
+      "current_high_days": 24,
+      "weighted_exposure": 33.0,
+      "weighted_current_high": 24.0,
+      "current_high_fraction": 0.7272727272727273
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "previous_high_day": 0,
+      "pairs": 24,
+      "current_high_days": 9,
+      "weighted_exposure": 24.0,
+      "weighted_current_high": 9.0,
+      "current_high_fraction": 0.375
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "previous_high_day": 1,
+      "pairs": 33,
+      "current_high_days": 24,
+      "weighted_exposure": 32.0,
+      "weighted_current_high": 23.0,
+      "current_high_fraction": 0.71875
+    }
+  ],
+  "standardization": [
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "all_pairs": 180,
+      "common_weekdays": 7,
+      "small_cells_either_n_le2": 1,
+      "state0_all_pairs": 112,
+      "state0_common_pairs": 112,
+      "state0_standardized_fraction": 0.24868508075744916,
+      "state1_all_pairs": 68,
+      "state1_common_pairs": 68,
+      "state1_standardized_fraction": 0.5665276081942748,
+      "standardized_difference": 0.3178425274368257
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "all_pairs": 180,
+      "common_weekdays": 7,
+      "small_cells_either_n_le2": 1,
+      "state0_all_pairs": 112,
+      "state0_common_pairs": 112,
+      "state0_standardized_fraction": 0.27853229650592176,
+      "state1_all_pairs": 68,
+      "state1_common_pairs": 68,
+      "state1_standardized_fraction": 0.6070337624756108,
+      "standardized_difference": 0.32850146596968904
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "all_pairs": 57,
+      "common_weekdays": 5,
+      "small_cells_either_n_le2": 5,
+      "state0_all_pairs": 24,
+      "state0_common_pairs": 6,
+      "state0_standardized_fraction": 0.08974358974358974,
+      "state1_all_pairs": 33,
+      "state1_common_pairs": 33,
+      "state1_standardized_fraction": 0.73992673992674,
+      "standardized_difference": 0.6501831501831502
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "all_pairs": 57,
+      "common_weekdays": 5,
+      "small_cells_either_n_le2": 5,
+      "state0_all_pairs": 24,
+      "state0_common_pairs": 6,
+      "state0_standardized_fraction": 0.08552631578947369,
+      "state1_all_pairs": 33,
+      "state1_common_pairs": 33,
+      "state1_standardized_fraction": 0.7330827067669172,
+      "standardized_difference": 0.6475563909774436
+    }
+  ],
+  "excluded_current_dates": [
+    "2021-01-01",
+    "2021-07-01",
+    "2021-07-14",
+    "2021-07-16"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "558a627e65c23cb3e5c0dea8ab4dfd46a77d69ca900355f49d84e86cc41f8d9c"
+}

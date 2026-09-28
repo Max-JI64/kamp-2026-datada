@@ -1,0 +1,55 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frozen_sha256": "dbd716d945ccedb18e2d72afc7455ecc34aa3092527082a3eaefd8e8787adc45",
+  "python": "3.13.1",
+  "eda008_checks": {
+    "Jan-Jun": {
+      "eda008_eligible": 4106,
+      "eda008_onsets": 139
+    },
+    "Jul-Aug": {
+      "eda008_eligible": 1214,
+      "eda008_onsets": 85
+    }
+  },
+  "period_summary": [
+    {
+      "period": "Jan-Jun",
+      "valid_hours": 4344,
+      "high_hours": 235,
+      "eligible_hours": 4108,
+      "onset_hours": 139,
+      "onset_rate": 0.033836416747809156
+    },
+    {
+      "period": "Jul-Aug",
+      "valid_hours": 1440,
+      "high_hours": 220,
+      "eligible_hours": 1218,
+      "onset_hours": 85,
+      "onset_rate": 0.06978653530377668
+    }
+  ],
+  "episode_summary": [
+    {
+      "period": "Jan-Jun",
+      "episodes": 139,
+      "left_censored_starts": 0,
+      "single_hour_episodes": 80,
+      "multi_hour_episodes": 59,
+      "longest_hours": 4,
+      "episodes_with_any_positive_production": 118
+    },
+    {
+      "period": "Jul-Aug",
+      "episodes": 85,
+      "left_censored_starts": 0,
+      "single_hour_episodes": 28,
+      "multi_hour_episodes": 57,
+      "longest_hours": 6,
+      "episodes_with_any_positive_production": 84
+    }
+  ],
+  "scope_rows": 5784,
+  "unique_dates": 241
+}

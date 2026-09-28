@@ -1,0 +1,18 @@
+{
+  "question": "Does a moderately upper quantile forecast reduce high-power shortfall, and at what overprediction and MAE cost?",
+  "target": "peak",
+  "development_folds": ["May", "Jun"],
+  "baseline": "09.26_001 saved hgb_calendar development predictions",
+  "candidate": "HistGradientBoostingRegressor with all 001 power and calendar inputs",
+  "quantile": 0.75,
+  "reason_for_quantile": "A single moderate upper quantile fixed before scoring; no search over levels",
+  "candidate_settings": {
+    "loss": "quantile", "quantile": 0.75, "learning_rate": 0.05,
+    "max_iter": 200, "max_leaf_nodes": 15, "min_samples_leaf": 30,
+    "l2_regularization": 1.0, "early_stopping": false, "random_state": 20260926
+  },
+  "nonnegative_clip": true,
+  "high_definition": "Each fold's training peak 95th percentile, inherited from 001",
+  "comparison": "Identical May and June timestamps; pooled and foldwise MAE, high-onset/continued underprediction, non-high overprediction",
+  "decision": "Report tradeoff without picking an operating policy; stop after this one comparison if no clear balanced gain"
+}

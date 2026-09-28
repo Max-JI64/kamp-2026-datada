@@ -1,0 +1,65 @@
+{
+  "periods": [
+    {
+      "profile_weighted": false,
+      "period": "Jan-Jun",
+      "days": 181,
+      "high_days": 69,
+      "high_day_fraction": 0.3812154696132596,
+      "mean_high_hours_per_high_day": 3.4057971014492763,
+      "high_fraction": 0.05409760589318601,
+      "high_hours": 235,
+      "median_high_hours_per_high_day": 3.0
+    },
+    {
+      "profile_weighted": false,
+      "period": "Jul-Aug",
+      "days": 60,
+      "high_days": 36,
+      "high_day_fraction": 0.6000000000000002,
+      "mean_high_hours_per_high_day": 6.111111111111109,
+      "high_fraction": 0.15277777777777776,
+      "high_hours": 220,
+      "median_high_hours_per_high_day": 6.0
+    },
+    {
+      "profile_weighted": true,
+      "period": "Jan-Jun",
+      "days": 181,
+      "high_days": 69,
+      "high_day_fraction": 0.38805970149253727,
+      "mean_high_hours_per_high_day": 3.5769230769230766,
+      "high_fraction": 0.05783582089552239,
+      "high_hours": 235,
+      "median_high_hours_per_high_day": 3.0
+    },
+    {
+      "profile_weighted": true,
+      "period": "Jul-Aug",
+      "days": 60,
+      "high_days": 36,
+      "high_day_fraction": 0.5932203389830506,
+      "mean_high_hours_per_high_day": 6.028571428571431,
+      "high_fraction": 0.1490112994350283,
+      "high_hours": 220,
+      "median_high_hours_per_high_day": 6.0
+    }
+  ],
+  "contributions": [
+    {
+      "profile_weighted": false,
+      "high_fraction_difference": 0.09868017188459174,
+      "high_day_frequency_component": 0.04337817279205706,
+      "high_hours_within_high_day_component": 0.055301999092534714
+    },
+    {
+      "profile_weighted": true,
+      "high_fraction_difference": 0.09117547853950592,
+      "high_day_frequency_component": 0.04105561200330993,
+      "high_hours_within_high_day_component": 0.050119866536195955
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "778d01cb0ff69fd3baf9a78e2a402bd795411cc23469af13856e337865e50329"
+}

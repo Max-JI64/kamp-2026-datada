@@ -1,0 +1,10 @@
+{
+  "evidence": "021 high-day fraction38.12%->60.00% and high-hour burden3.41->6.11; temporal clustering cannot be inferred from the marginal frequency",
+  "input": "09.27_015_daily.csv",
+  "high_day": "observed high_hours>0 at unchanged182 threshold",
+  "pairs": "exact previous calendar day, within same period; no bridge overJuly13/15 or Jan-Jun/Jul-Aug border",
+  "comparison": "current high-day fraction by previous high-day0/1, within each period",
+  "adjustment": "current weekday0..6 common between prior-state groups, pooled exposure reference",
+  "sensitivity": "raw and current-day inverse profile-frequency weights",
+  "limits": "descriptive persistence, no forecast skill/cause/independent sample or transition stationarity claim"
+}

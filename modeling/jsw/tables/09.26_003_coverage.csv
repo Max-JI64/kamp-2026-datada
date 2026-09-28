@@ -1,0 +1,3 @@
+﻿stage,training_n,evaluation_n,training_missing_weather_hours,evaluation_missing_weather_hours
+May,2712,744,1,0
+Jun,3456,720,1,2

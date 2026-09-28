@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "004 reused source peak and production values agree in5784 rows",
+    "011 independent runs, durations, exact previous exposures and onsets",
+    "011 frequency plus duration equals occupancy difference",
+    "012 bin mass and contribution totals reconcile with005 means",
+    "013 independent event-hour cells and five standardized duration metrics",
+    "014 full dated1488 records and230 high records, scenario fractions",
+    "015 source daily tail counts/means/variances, variance identity and category totals",
+    "source, profile and five frozen-config hashes preserved"
+  ],
+  "input_artifact_sha256": {
+    "09.27_004_records.csv": "aefab41f48b432088b867fb3a622b79224af413ea1784a93f3b0e4315a7a2a59",
+    "09.27_005_strata.csv": "3946f1b278a6e86abd6e9c48ee51f1cc07d74edbb00db0af4cbd271f02e3361e",
+    "09.27_005_standardized_distributions.csv": "80a400ec06125f63e79e4d6de8e004bbbe5756881a8ec9842c2033f892afdb1b",
+    "09.27_009_extended_periods.csv": "750e6bdcf26ac89c55eced36a3a31bcfb0e6eab5fa01b8a161b4fde9743e7517"
+  },
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+}

@@ -1,0 +1,9 @@
+{
+  "previous_evidence": "008/024/025 cluster input and high-hour outcome are same daily power array; EDA011 found identical power profiles with different production",
+  "question": "Do fixed power clusters identify a consistent production record context within the available CSV?",
+  "inputs": ["09.27_008_cluster_days.csv", "../../EDA/jsw/tables/09.23_011_daily_profile_summary.csv"],
+  "cluster": "008 raw k=3, unweighted Jan-Jun fit, fixed assignment for 241 valid Jan-Aug days",
+  "external_columns": ["production_total", "temperature_mean"],
+  "exact_profile_test": "same profile_id equals identical 96 daily power values; compare production_total across dates, no outcome-derived tuning",
+  "limits": "production_total meaning and timing unknown; association and conflicting records do not establish augmentation, causes, or factory operation"
+}

@@ -1,0 +1,10 @@
+{
+  "question": "005-007 leave upper-tail drift and unstable explanations: can statistical daily patterns and common power factors summarize it without naming actual operating states?",
+  "fit_scope": "Jan-Jun only; Jul-Aug descriptive projection, already explored and not independent test",
+  "pca": "Daily96 power matrix, raw and divided by each day mean;6 components; train centering; compare explained variation, score-mean correlation and reconstruction",
+  "fa": "Four power slots only, train-column standardized;1 and2 Gaussian factors; exclude stored average, derived factory staff, calendar codes and costs; report loadings/noise, not physical factors",
+  "nmf": "Daily96 nonnegative raw matrix, rank2 fixed, max_iter2000; describe basis/reconstruction without equipment naming",
+  "clustering": "Raw and per-day-mean shape representations; train feature standardization; k2/3/4 fixed; random_state20260927,n_init20; compare inverse train-profile frequency weighting; k3 first-quarter vs second-quarter fits evaluated on same day representations as sensitivity",
+  "near_profiles": "Unique training daily arrays are comparison prototypes only; nearest nonidentical training profile by RMS distance; report distances and contexts, fixed RMS<=1 descriptive threshold; no augmentation proof",
+  "decision": "Use types only as statistical summaries if stable; do not invent factory/shift/equipment labels. Do not optimize k or rank on Jul-Aug."
+}

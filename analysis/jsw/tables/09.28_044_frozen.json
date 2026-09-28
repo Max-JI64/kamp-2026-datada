@@ -1,0 +1,11 @@
+{
+  "question": "How many recorded quarter values must change to cap observed daily maxima, and what mathematical peak bound follows from an assumed within-day redistribution budget?",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope": "2021-01-01 through 2021-08-31; valid 0..23 hours only; 241 complete 24-hour days; all zero recorded values retained; invalid-hour rows not assigned to a daily schedule",
+  "slots": ["15분", "30분", "45분", "60분"],
+  "cutoffs": [176, 182, 188],
+  "cutoff_origin": "A004 Jan-Jun exploratory 90th, 95th, and 97.5th percentiles of hourly maxima; not operational limits",
+  "comparison": "For each day report exact mean/max ratio, top distinct values and ties, cells at or above and strictly above each cutoff, maximum excess, and sum of positive recorded-value excesses. The direct-cap case lowers every value above a cutoff to that cutoff and does not conserve the recorded-value sum.",
+  "redistribution": "For each complete day, minimize max(q_i) with q_i >= 0 and sum(q_i)=sum(p_i); moved amount sum(max(p_i-q_i,0)) <= budget_fraction * sum(p_i). Fractions fixed at 0, .05, .10. Fractional q_i allowed. All 96 receiving cells versus only originally positive cells are separate assumptions; originally zero cells remain zero in the latter. No chronological, rate, production, or equipment constraints.",
+  "interpretation": "Recorded-value arithmetic only: not energy, money, achievable intervention, prospective operation, or official billing peak. Summarize observed dates and distinct daily power profiles separately."
+}

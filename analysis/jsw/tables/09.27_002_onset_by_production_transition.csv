@@ -1,0 +1,9 @@
+﻿period,production_transition,eligible_hours,onset_hours,onset_rate
+Jan-Jun,positive->positive,2100,102,0.04857142857142857
+Jan-Jun,positive->zero,158,2,0.012658227848101266
+Jan-Jun,zero->positive,163,16,0.09815950920245399
+Jan-Jun,zero->zero,1687,19,0.011262596324836989
+Jul-Aug,positive->positive,562,71,0.12633451957295375
+Jul-Aug,positive->zero,41,1,0.024390243902439025
+Jul-Aug,zero->positive,52,13,0.25
+Jul-Aug,zero->zero,563,0,0.0

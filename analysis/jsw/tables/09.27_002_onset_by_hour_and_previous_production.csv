@@ -1,0 +1,13 @@
+﻿period,hour_group,previous_production_state,eligible_hours,onset_hours,onset_rate
+Jan-Jun,08,positive,112,27,0.24107142857142858
+Jan-Jun,08,zero,69,19,0.2753623188405797
+Jan-Jun,13,positive,100,36,0.36
+Jan-Jun,13,zero,81,12,0.14814814814814814
+Jan-Jun,other,positive,2046,41,0.020039100684261974
+Jan-Jun,other,zero,1700,4,0.002352941176470588
+Jul-Aug,08,positive,38,26,0.6842105263157895
+Jul-Aug,08,zero,22,5,0.22727272727272727
+Jul-Aug,13,positive,24,12,0.5
+Jul-Aug,13,zero,36,8,0.2222222222222222
+Jul-Aug,other,positive,541,34,0.06284658040665435
+Jul-Aug,other,zero,557,0,0.0

@@ -1,0 +1,10 @@
+{
+  "question": "How much information is excluded by48 invalid-hour records, does known rounding change classification, and does Sep descriptive data resemble the earlier periods?",
+  "previous_evidence": "004 maximum vs daily-mean top10 overlap3/6;005-008 leave definition and structural limitations",
+  "scope": "Preserve raw6168 rows; invalid-hour comparisons are non-temporal only; valid6120 records including previously seen September are descriptive and not independent test",
+  "rounding": "Verify all stored average=floor(exact mean+.5), quantify differences and mean>=182 classification disagreement; no assumptions about sensor error",
+  "redundancy": "Reuse verified variable-table formulas, audit average/staff/date codes without using redundant variables as causal evidence",
+  "invalid_hours": "Compare invalid48 to validJuly and Jan-Aug in peak/prod/weather numeric distributions; report gaps without hour reconstruction",
+  "september": "Apply Jan-Jun frozen peak thresholds176/182/188, exact prior-hour eligibility, episode lengths and hour rates; no tuning on Sep",
+  "decision": "Flag selection limitations and describe new-scope period only; do not repair timestamps, call Sep independent, or derive real energy/cost/efficiency."
+}

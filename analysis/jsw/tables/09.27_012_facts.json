@@ -1,0 +1,38 @@
+{
+  "training_edges": [
+    0.0,
+    1.0,
+    26.0,
+    112.5,
+    156.0,
+    182.0,
+    null
+  ],
+  "totals": [
+    {
+      "profile_weighted": false,
+      "earlier_mean": 100.49658097494549,
+      "later_mean": 97.34476486365259,
+      "mean_difference": -3.1518161112928915,
+      "below182_contribution": -21.945825412159977,
+      "atleast182_contribution": 18.794009300867085
+    },
+    {
+      "profile_weighted": true,
+      "earlier_mean": 101.40924676307415,
+      "later_mean": 95.99825996770352,
+      "mean_difference": -5.4109867953706186,
+      "below182_contribution": -22.72296588065326,
+      "atleast182_contribution": 17.31197908528264
+    }
+  ],
+  "common_cells": 80,
+  "input_reuse": [
+    "004_records",
+    "005_strata",
+    "005_standardized_distributions"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "34ac16c7221c978284fe8bb8bc7a697c28beee567bfc870393af81c0052e2975"
+}

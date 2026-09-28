@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "source_rows": 5784,
+  "high_hours": 455,
+  "monthly_rows_checked": 8,
+  "calendar_cells_checked": 96,
+  "report_links_checked": 79,
+  "target_context_rows_checked": 8,
+  "continuous_target_distributions_checked": 8,
+  "reversal_strata_checked": 8,
+  "adjacent_month_standardizations_checked": 6,
+  "natural_language_causal_claims_automatically_verified": false
+}

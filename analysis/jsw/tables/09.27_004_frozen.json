@@ -1,0 +1,8 @@
+{
+  "question": "Do the 002 period and hour concentrations survive train-only threshold changes, and which event severities and dates account for the difference?",
+  "previous_evidence": "002: 139/4108 vs 85/1218 onsets and 59/139 vs 57/85 multi-hour episodes; no severity or contribution decomposition",
+  "thresholds": "Jan-Jun peak percentiles .90, .95, .975; retain .95=182 baseline, do not choose by Jul-Aug outcomes",
+  "scope": "Jan-Aug valid timestamps, zeros retained, exact previous/next hour; gaps never bridged; report censoring and cross-period events",
+  "metrics": "high and onset rates; 08/13/other onset rate; event maximum/duration/excess-value sum; daily/weekly concentration; recurrence gaps; duration by start hour; mean-vs-max daily rank sensitivity",
+  "decision": "Keep only conclusions consistent across fixed thresholds. Excess-value sums are descriptive, not energy or money. Connect concentrated contributors to period composition/influence checks."
+}

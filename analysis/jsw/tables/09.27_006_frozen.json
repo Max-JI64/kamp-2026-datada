@@ -1,0 +1,9 @@
+{
+  "question": "005 shows lower standardized mean but higher upper quantiles later: when does daily structure change, and do atypical deviations remain after daily/weekly periodic structure?",
+  "scope": "Jan-Aug valid hourly records; no gap filling",
+  "change_candidates": "One split SSE scan of daily exact mean, high-hours at182, excess sum; at least28 observed days on each side; top3 descriptive candidates; no fault/change claim",
+  "seasonality": "If statsmodels available, STL24 and168 with robust=True only on contiguous segments >=2 cycles; report explained variation and residual scale; no parameter tuning or forecasts",
+  "anomaly": "Peak minus Jan-Jun median in exact hour/weekend/current production state; unsupported contexts reported; rank absolute daily residual and signed daily residual",
+  "counterexamples": "Largest five182 event excess sums per period; same month/hour/weekend/current production state and known prior-low power controls, nearest previous peak; no causal matching claim",
+  "decision": "Retain distinct upper-tail drift if periodic residuals and descriptive changes support it; candidate dates are exploratory and do not identify operating causes."
+}

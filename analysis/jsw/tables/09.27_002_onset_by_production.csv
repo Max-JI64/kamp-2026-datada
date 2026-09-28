@@ -1,0 +1,9 @@
+﻿period,timing,production_state,eligible_hours,onset_hours,onset_rate
+Jan-Jun,target_posthoc,positive,2263,118,0.05214317277949625
+Jan-Jun,target_posthoc,zero,1845,21,0.011382113821138212
+Jan-Jun,previous_availability_unconfirmed,positive,2258,104,0.046058458813108945
+Jan-Jun,previous_availability_unconfirmed,zero,1850,35,0.01891891891891892
+Jul-Aug,target_posthoc,positive,614,84,0.13680781758957655
+Jul-Aug,target_posthoc,zero,604,1,0.0016556291390728477
+Jul-Aug,previous_availability_unconfirmed,positive,603,72,0.11940298507462686
+Jul-Aug,previous_availability_unconfirmed,zero,615,13,0.02113821138211382

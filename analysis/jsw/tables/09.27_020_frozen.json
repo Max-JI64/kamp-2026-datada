@@ -1,0 +1,10 @@
+{
+  "evidence": "015 daily low-only mean42.89->30.72, high-only share25.97%->46.67%, neither share24.86%->1.67%",
+  "inputs": ["09.27_015_daily.csv", "09.27_015_coexistence.csv", "09.27_015_variance_partition.csv"],
+  "periods": ["Jan-Jun", "Jul-Aug"],
+  "categories": ["both_low_and_high", "low_only", "high_only", "neither"],
+  "thresholds": "reuse015 low<26, high>=182; no retuning",
+  "method": "mean=sum(category probability * category mean); symmetric composition and within-category level contributions",
+  "sensitivity": "equal day weights and015 inverse profile-frequency weights",
+  "limits": "same6168 source; descriptive arithmetic; no causal/regime labels; report small categories"
+}

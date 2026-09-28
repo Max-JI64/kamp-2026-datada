@@ -1,0 +1,203 @@
+{
+  "summary": [
+    {
+      "profile_weighted": false,
+      "gap": 0.10087518146236665,
+      "positive_hours": 11,
+      "zero_hours": 13,
+      "negative_hours": 0,
+      "top_five_hours": [
+        {
+          "hour": 14,
+          "contribution": 0.015602803224630882
+        },
+        {
+          "hour": 11,
+          "contribution": 0.0142768289480149
+        },
+        {
+          "hour": 10,
+          "contribution": 0.013727360725093042
+        },
+        {
+          "hour": 15,
+          "contribution": 0.01319996224946529
+        },
+        {
+          "hour": 9,
+          "contribution": 0.012849077568512095
+        }
+      ],
+      "predefined_groups": [
+        {
+          "profile_weighted": false,
+          "group": "08+13",
+          "hour_count": 2,
+          "reference_weight": 0.08333333333333333,
+          "earlier_n": 362,
+          "later_n": 120,
+          "earlier_high": 94,
+          "later_high": 51,
+          "earlier_conditional_rate": 0.25919877671301006,
+          "later_conditional_rate": 0.4307943094250148,
+          "conditional_difference": 0.17159553271200476,
+          "contribution": 0.014299627726000396,
+          "share_of_total_gap": 0.14175565801916437
+        },
+        {
+          "profile_weighted": false,
+          "group": "other_22",
+          "hour_count": 22,
+          "reference_weight": 0.9166666666666666,
+          "earlier_n": 3982,
+          "later_n": 1320,
+          "earlier_high": 141,
+          "later_high": 169,
+          "earlier_conditional_rate": 0.03532976721242667,
+          "later_conditional_rate": 0.1297758258339171,
+          "conditional_difference": 0.09444605862149046,
+          "contribution": 0.08657555373636625,
+          "share_of_total_gap": 0.8582443419808357
+        }
+      ],
+      "weekday_contribution": 0.10925373237203788,
+      "weekend_contribution": -0.008378550909671241
+    },
+    {
+      "profile_weighted": true,
+      "gap": 0.08721668824928644,
+      "positive_hours": 11,
+      "zero_hours": 13,
+      "negative_hours": 0,
+      "top_five_hours": [
+        {
+          "hour": 14,
+          "contribution": 0.014365637088847034
+        },
+        {
+          "hour": 11,
+          "contribution": 0.012617430285433738
+        },
+        {
+          "hour": 10,
+          "contribution": 0.012274399601209332
+        },
+        {
+          "hour": 15,
+          "contribution": 0.011439811715124787
+        },
+        {
+          "hour": 9,
+          "contribution": 0.011200106798211422
+        }
+      ],
+      "predefined_groups": [
+        {
+          "profile_weighted": true,
+          "group": "08+13",
+          "hour_count": 2,
+          "reference_weight": 0.08333333333333333,
+          "earlier_n": 362,
+          "later_n": 120,
+          "earlier_high": 94,
+          "later_high": 51,
+          "earlier_conditional_rate": 0.2775135241673851,
+          "later_conditional_rate": 0.40513775971093047,
+          "conditional_difference": 0.1276242355435453,
+          "contribution": 0.010635352961962108,
+          "share_of_total_gap": 0.12194171981815786
+        },
+        {
+          "profile_weighted": true,
+          "group": "other_22",
+          "hour_count": 22,
+          "reference_weight": 0.9166666666666667,
+          "earlier_n": 3982,
+          "later_n": 1320,
+          "earlier_high": 141,
+          "later_high": 169,
+          "earlier_conditional_rate": 0.03822354716924679,
+          "later_conditional_rate": 0.12176682202814605,
+          "conditional_difference": 0.08354327485889926,
+          "contribution": 0.07658133528732433,
+          "share_of_total_gap": 0.8780582801818422
+        }
+      ],
+      "weekday_contribution": 0.10113492491290421,
+      "weekend_contribution": -0.013918236663617776
+    }
+  ],
+  "monthly_high_rates": [
+    {
+      "month": 1,
+      "days": 31,
+      "hours": 744,
+      "high_hours": 53,
+      "high_rate": 0.07123655913978495,
+      "weighted_high_rate": 0.07932357043235705
+    },
+    {
+      "month": 2,
+      "days": 28,
+      "hours": 672,
+      "high_hours": 31,
+      "high_rate": 0.046130952380952384,
+      "weighted_high_rate": 0.04962914485165794
+    },
+    {
+      "month": 3,
+      "days": 31,
+      "hours": 744,
+      "high_hours": 63,
+      "high_rate": 0.0846774193548387,
+      "weighted_high_rate": 0.13586497890295363
+    },
+    {
+      "month": 4,
+      "days": 30,
+      "hours": 720,
+      "high_hours": 12,
+      "high_rate": 0.016666666666666666,
+      "weighted_high_rate": 0.01582278481012658
+    },
+    {
+      "month": 5,
+      "days": 31,
+      "hours": 744,
+      "high_hours": 13,
+      "high_rate": 0.01747311827956989,
+      "weighted_high_rate": 0.017842149454240137
+    },
+    {
+      "month": 6,
+      "days": 30,
+      "hours": 720,
+      "high_hours": 63,
+      "high_rate": 0.0875,
+      "weighted_high_rate": 0.08389201268742791
+    },
+    {
+      "month": 7,
+      "days": 29,
+      "hours": 696,
+      "high_hours": 134,
+      "high_rate": 0.1925287356321839,
+      "weighted_high_rate": 0.18601190476190477
+    },
+    {
+      "month": 8,
+      "days": 31,
+      "hours": 744,
+      "high_hours": 86,
+      "high_rate": 0.11559139784946236,
+      "weighted_high_rate": 0.11559139784946236
+    }
+  ],
+  "input_reuse": [
+    "09.27_029_strata.csv",
+    "09.27_004_records.csv"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "f1436321309ea5d85b428137adff048463851295e48835718d35cfd9f1d7333d"
+}

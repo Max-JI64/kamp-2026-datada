@@ -1,0 +1,10 @@
+{
+  "prior_evidence": "012 more peaks below26 and at least182 but fewer middle peaks; 008 raw first PC mainly daily level",
+  "scope": "004 records Jan-Jun4344 and Jul-Aug1440, complete24-hour days",
+  "low_threshold": 26,
+  "low_threshold_source": "012 Jan-Jun peak first quartile",
+  "high_threshold": 182,
+  "methods": "within-day coexistence of low/high hours; population variance identity between daily means plus mean within-day variance",
+  "sensitivity": "unweighted days and004 inverse profile-frequency day weights; all days preserved",
+  "prohibitions": "no operating-state labels; variance shares not PCA explained-variance shares or cause"
+}

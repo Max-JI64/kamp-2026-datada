@@ -1,0 +1,8 @@
+{
+  "prior_evidence": "004 high hours235/220 and event counts139/85; 009 September37 high hours/21 events",
+  "threshold": 182,
+  "periods": ["Jan-Jun", "Jul-Aug", "Sep"],
+  "comparison": "observed occupancy=events/observed hours * mean event length; symmetric arithmetic contribution",
+  "censoring": "report and require no censored/cross-period events for exact period identity",
+  "transition": "exact previous timestamp only; no stationarity assumption or causal contribution"
+}

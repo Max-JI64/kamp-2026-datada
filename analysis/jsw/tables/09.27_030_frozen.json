@@ -1,0 +1,7 @@
+{
+  "previous_evidence": "029: hour x weekend adjusted high-hour rate Jan-Jun 0.053985518004141954, Jul-Aug 0.1548606994665086, difference 0.10087518146236665; 011: both event frequency and duration increased.",
+  "question": "Which observed calendar hours and weekend strata account for the adjusted high-hour gap, and does it appear in both July and August?",
+  "input": "Reuse 029's fixed 48 hour x weekend cells for contribution accounting; reuse 004's fixed threshold-182 hourly labels only for month totals.",
+  "method": "Cell contribution is pooled-exposure fraction times later-minus-earlier cell high-hour rate. Sum by all 24 hours and weekday/weekend. Compare pre-existing exploratory 08 and 13 hours against other 22 without selecting windows after seeing results. Repeat inverse-profile-frequency weighting. Give July and August raw high-hour denominators separately.",
+  "decision": "If 08 and 13 account for nearly all the adjusted gap, describe localization there; otherwise document the distribution and the remaining-hour gap. In either case this is accounting, not causal attribution or a prospective risk rule."
+}

@@ -1,0 +1,12 @@
+{
+  "question": "008 and user request: is FA useful with four power measurements, and which dates/hours escape a daily common-factor description?",
+  "hourly_columns": ["15분", "30분", "45분", "60분"],
+  "hourly_factors": 1, "daily_factors": 2,
+  "daily_selection_reason": "008 first two raw PCA components cover 96.57 percent; examine a parsimonious two-factor covariance description, not copy PCA six-component errors",
+  "training": "January-June only, feature scaling estimated there; July-August projection",
+  "sensitivities": ["Jan-Mar", "Apr-Jun", "one representative per identical Jan-Jun daily power profile"],
+  "excluded": ["날짜", "시간", "day", "d", "m", "평균", "공장인원", "인건비", "전기요금(계절)", "생산량", "기온", "풍속", "습도", "강수량"],
+  "max_iter": 2000, "seed": 20260927,
+  "supplement_after_first_run": "Fit/project error comparison is asymmetric. Add fixed Jan-Mar to Apr-Jun and Jul-Aug reference, Apr-Jun to Jul-Aug reference, and count exact-profile overlap. Orient signs by positive loading sum only for readability.",
+  "decision": "Keep variable meanings for production/weather relationship analysis. FA power scores summarize observations and cannot name equipment or causal drivers. Evaluate residuals, loading stability and repeated-profile sensitivity; no new failure threshold."
+}
