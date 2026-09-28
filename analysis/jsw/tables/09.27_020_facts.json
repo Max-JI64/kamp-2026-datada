@@ -1,0 +1,27 @@
+{
+  "totals": [
+    {
+      "profile_weighted": false,
+      "earlier_mean": 100.39272559852671,
+      "later_mean": 98.11180555555555,
+      "mean_difference": -2.280920042971161,
+      "composition_component": 0.8798968206412319,
+      "level_component": -3.1608168636123977,
+      "low_only_level_component": -4.585568759463553
+    },
+    {
+      "profile_weighted": true,
+      "earlier_mean": 100.9365671641791,
+      "later_mean": 97.11370056497177,
+      "mean_difference": -3.8228665992073303,
+      "composition_component": 2.1138355375503117,
+      "level_component": -5.936702136757639,
+      "low_only_level_component": -7.6661379909589895
+    }
+  ],
+  "minimum_category_days": 1,
+  "days": 241,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "d55ca3b7c2ef7a330b28360a7fd768ef9652686fe9754ef9553d5ba31d9fac8e"
+}

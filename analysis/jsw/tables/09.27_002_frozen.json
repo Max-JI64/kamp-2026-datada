@@ -1,0 +1,15 @@
+{
+  "question": "Where do exploratory high-power episodes begin, and do the observed associations survive period and repeated-profile checks?",
+  "source": "../../data/origin/okm_augumented_2021.csv",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope": "2021-01-01 through 2021-08-31, valid hours 0 through 23; retain zero power and production",
+  "high_definition": "Maximum of the four within-record power values >= 182; threshold inherited from EDA 003 and 008, selected from Jan-Jun training period",
+  "onset_definition": "High target record with exactly one-hour-earlier observed peak < 182; records without a previous valid hour are ineligible",
+  "episode_definition": "Contiguous high records at exact hourly spacing; a gap starts a left-censored episode",
+  "periods": ["Jan-Jun", "Jul-Aug"],
+  "hour_groups": ["08", "13", "other"],
+  "production_comparisons": ["same-record production: posthoc only", "previous-record production: availability unconfirmed"],
+  "result_driven_followup": "After the first run showed different previous-zero and target-zero onset counts, count all four previous-to-target production states with their eligible denominators; this is posthoc and is not an advance warning feature",
+  "profile_sensitivity": "Within each period weight every eligible hour by reciprocal of the number of dates sharing its exact 96-value daily power profile; no dates deleted",
+  "decision": "Report denominators, episodes, period and profile sensitivity. Do not infer causes, an alarm rule, saved energy, or effects of shifting production. Stop if no new actionable condition is supported."
+}

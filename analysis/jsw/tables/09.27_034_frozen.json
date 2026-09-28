@@ -1,0 +1,7 @@
+{
+  "previous_evidence": "033: all-record recorded-mean target 93.067 to 91.015 and maximum target 100.393 to 98.112; positive-production weekday same-hour standardized means rise by 11.624 and 12.396 respectively.",
+  "question": "How can the overall means decline while means in positive-production weekdays rise?",
+  "input": "Original Jan-Aug valid records, four exhaustive observed strata from weekday/weekend x same-time production zero/positive, two fixed continuous prediction targets.",
+  "method": "For each target, write period mean as sum of four stratum shares times stratum means. Split later-minus-earlier exactly into symmetric mix contribution and within-stratum mean contribution using two-period average shares and means. Report stratum denominators and contributions. No stratum is interpreted as an intervention.",
+  "decision": "Use exact arithmetic to describe the reversal and identify which observed strata contribute. If decomposition fails to reconcile the whole mean, correct the calculation before interpretation. Physical cause remains unproven."
+}

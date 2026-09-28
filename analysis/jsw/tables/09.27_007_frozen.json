@@ -1,0 +1,9 @@
+{
+  "question": "005 upper-tail difference is not removed by observed composition: do production magnitude, weather tails, interaction and repeated-profile weights give a consistent descriptive explanation?",
+  "production": "Jan-Jun positive production quartiles fixed before comparisons; zero separate; common exact-hour/weekend contexts across all four positive bins within each period; report support",
+  "weather": "Within month/hour/weekend/production-zero-positive cells compare lower25% and upper25% weather values; cells need >=8 records and distinct q25<q75; rain zero vs positive. Report mean and q95 peak contrasts, denominators and sign consistency, not significance",
+  "interaction": "Weather contrasts reported separately for zero and positive production; no searching many variable combinations",
+  "profile_sensitivity": "Recompute weighted within-context centering and weighted residual correlations on identical complete rows; no representative date deletion",
+  "lags": "Unweighted within month/hour/weekend/production-state centered peak and production/weather; exact0/1/3/24/168-hour joins; associations only, not causality or confirmed advance availability",
+  "decision": "Retain descriptive associations only when sign and scope stable; sparse or period-dependent results remain unresolved. Reuse existing basic EDA, no new raw correlation fishing."
+}

@@ -1,0 +1,2 @@
+﻿all_rows,stored_minus_exact_min,stored_minus_exact_max,nonzero_rounding_rows,stored_mean_ge182,exact_mean_ge182,classification_disagreement,staff_nonmissing,staff_formula_matches,staff_max_absolute_error,staff_match_rule,staff_missing,zero_denominator
+6168,-0.25,0.5,4337,205,192,13,6151,6151,4.944070042256499e-09,half of source last decimal place plus floating arithmetic epsilon,17,17

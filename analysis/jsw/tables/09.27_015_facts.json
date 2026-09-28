@@ -1,0 +1,95 @@
+{
+  "variance_partition": [
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "days": 181,
+      "mean_peak": 100.39272559852671,
+      "total_variance": 3577.802028114391,
+      "within_day_variance": 1335.937404082259,
+      "between_day_variance": 2241.864624032132,
+      "within_share": 0.37339612241942244,
+      "between_share": 0.6266038775805776
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "days": 181,
+      "mean_peak": 100.93656716417908,
+      "total_variance": 3543.039508613648,
+      "within_day_variance": 1663.007048092869,
+      "between_day_variance": 1880.0324605207793,
+      "within_share": 0.4693729900696436,
+      "between_share": 0.5306270099303564
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "days": 60,
+      "mean_peak": 98.11180555555556,
+      "total_variance": 4383.807638406636,
+      "within_day_variance": 1391.7727141203704,
+      "between_day_variance": 2992.034924286266,
+      "within_share": 0.31748033420239946,
+      "between_share": 0.6825196657976005
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "days": 60,
+      "mean_peak": 97.11370056497177,
+      "total_variance": 4373.13608348096,
+      "within_day_variance": 1390.1615171845576,
+      "between_day_variance": 2982.974566296403,
+      "within_share": 0.3178866357339621,
+      "between_share": 0.682113364266038
+    }
+  ],
+  "coexistence": [
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "category": "both_low_and_high",
+      "days": 22,
+      "fraction": 0.12154696132596685,
+      "mean_peak": 114.67992424242424,
+      "mean_low_hours": 5.045454545454547,
+      "mean_high_hours": 4.045454545454546
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "category": "both_low_and_high",
+      "days": 22,
+      "fraction": 0.1791044776119403,
+      "mean_peak": 113.45833333333333,
+      "mean_low_hours": 5.249999999999999,
+      "mean_high_hours": 4.166666666666667
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "category": "both_low_and_high",
+      "days": 8,
+      "fraction": 0.13333333333333333,
+      "mean_peak": 117.44270833333334,
+      "mean_low_hours": 5.500000000000001,
+      "mean_high_hours": 5.500000000000001
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "category": "both_low_and_high",
+      "days": 8,
+      "fraction": 0.13559322033898305,
+      "mean_peak": 117.44270833333334,
+      "mean_low_hours": 5.5,
+      "mean_high_hours": 5.5
+    }
+  ],
+  "input_reuse": "004_records",
+  "days": 241,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "f89b2172ec589e212e112ef6225b41d7cd3403b05169e975c0cba55a86d0d079"
+}

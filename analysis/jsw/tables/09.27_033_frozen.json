@@ -1,0 +1,8 @@
+{
+  "previous_evidence": "032: same-hour high-hour rate on positive-production weekdays 0.085259 vs 0.281280; only one temperature-overlap hour cell has >=10 observations in each period. 005: all-record maximum-power mean 100.50 vs 97.34.",
+  "question": "Does the within-positive-weekday difference also appear in the two continuous prediction targets, or only in the thresholded high-hour indicator?",
+  "input": "Original 2021 Jan-Aug valid hours; positive-production weekdays per 032; all valid hours as context; no new exclusion of zeros or outliers.",
+  "targets": ["recorded rounded mean power", "maximum of four quarter-hour power slots"],
+  "method": "For both targets calculate period mean and 0.5, 0.9, 0.95 quantiles for all valid records and positive-production weekdays. Within positive weekdays standardize the mean by exact hour pooled exposure, with a separate inverse-profile-frequency version. Keep quantiles raw descriptive; do not optimize thresholds or choose a regression model.",
+  "decision": "If within-context continuous means increase while overall means decrease, describe a composition-dependent reversal, not physical cause. If only upper quantiles rise, describe tail concentration. Either result remains descriptive."
+}

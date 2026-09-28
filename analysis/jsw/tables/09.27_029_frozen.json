@@ -1,0 +1,8 @@
+{
+  "previous_evidence": "005: raw high fractions Jan-Jun 0.054097605893186004, Jul-Aug 0.1527777777777778; hour x weekend x current-production standardized 0.054474938568249545 and 0.1504712990694299. Same-time production is posthoc.",
+  "question": "Does the observed period high-hour difference persist when only hour and weekend are standardized?",
+  "input": "004 exact-time 5784 records, fixed high/onset at threshold 182; no new filtering or threshold choice",
+  "strata": ["exact hour 0-23", "weekend 0-1"],
+  "standardization": "Pooled exposure weights within cells present in both periods, separately for high/all hours and onset/eligible hours; repeat inverse daily-profile-frequency weighting",
+  "decision": "If the difference remains positive, retain only descriptive period contrast without attributing a cause. If it vanishes or reverses, revise 005. Report cell support and comparison to 005."
+}

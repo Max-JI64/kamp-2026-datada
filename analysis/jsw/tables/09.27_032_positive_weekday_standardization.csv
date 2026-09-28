@@ -1,0 +1,3 @@
+﻿profile_weighted,common_cells,excluded_earlier_n,excluded_later_n,earlier_n,earlier_high,earlier_raw_rate,earlier_standardized_rate,earlier_min_n,later_n,later_high,later_raw_rate,later_standardized_rate,later_min_n,standardized_difference
+False,24,0,0,2287,195,0.08526453869698294,0.08525918077603156,50,775,218,0.2812903225806452,0.28128030988906233,20,0.19602112911303077
+True,24,0,0,2287,195,0.08180580645713649,0.08191088911918137,50,775,218,0.2781456953642384,0.2775322705492047,20,0.19562138143002333

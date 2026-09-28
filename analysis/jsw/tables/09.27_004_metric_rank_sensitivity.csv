@@ -1,0 +1,3 @@
+﻿period,days,spearman_peak_vs_daily_mean,top10_common_dates,peak_top10_cutoff,peak_dates_at_cutoff,peak_inclusive_dates,mean_top10_cutoff,mean_dates_at_cutoff,mean_inclusive_dates,inclusive_intersection,inclusive_jaccard
+Jan-Jun,181,0.8077415237564042,3,199.0,2.0,11.0,137.82291666666666,4.0,11.0,3.0,0.15789473684210525
+Jul-Aug,60,0.86734879414176,6,211.0,2.0,10.0,138.25,1.0,10.0,6.0,0.42857142857142855

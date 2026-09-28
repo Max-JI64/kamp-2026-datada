@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "source and profile hashes,241 complete days, daily high/low counts",
+    "024 prior fixed labels, group profiles and high-hour arithmetic",
+    "025 independent Ward fit/projection, stored labels, agreement and decomposition",
+    "two frozen settings and source/profile hashes"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "prior_assignments_sha256": "f528ad9ef77625d455c9fb0f9b1815fec3d5f3cf5a05e9926879ae0b5db677ec",
+  "prior_daily_sha256": "551f493fd45dddd95c77a5b85577266d3dfd69bb67cd9954ca48fea3dd0f3eaf"
+}

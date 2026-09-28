@@ -1,0 +1,193 @@
+{
+  "training_days": 181,
+  "unique_training_profiles": 67,
+  "fits": [
+    {
+      "fit": "hourly-main",
+      "evaluation": "Jan-Jun",
+      "n": 4344,
+      "score_mean_correlation": 0.9968360527854307,
+      "rms_median": 5.298250280783839,
+      "rms_q95": 20.099686357669253,
+      "peak_residual_mean": 4.990877019250649
+    },
+    {
+      "fit": "hourly-main",
+      "evaluation": "Jul-Aug",
+      "n": 1440,
+      "score_mean_correlation": 0.9975916033406321,
+      "rms_median": 4.904347506894813,
+      "rms_q95": 20.067927327160042,
+      "peak_residual_mean": 4.519695706678946
+    },
+    {
+      "fit": "daily-Jan-Mar",
+      "evaluation": "Apr-Jun",
+      "n": 91,
+      "rms_median": 7.817164589157242,
+      "rms_q95": 12.044836958552718,
+      "evaluation_days_with_training_profile": 29
+    },
+    {
+      "fit": "daily-Jan-Mar",
+      "evaluation": "Jul-Aug",
+      "n": 60,
+      "rms_median": 8.662552840790916,
+      "rms_q95": 14.269808868110418,
+      "evaluation_days_with_training_profile": 0
+    },
+    {
+      "fit": "daily-Apr-Jun",
+      "evaluation": "Jul-Aug",
+      "n": 60,
+      "rms_median": 8.946190669673062,
+      "rms_q95": 13.614487266348208,
+      "evaluation_days_with_training_profile": 0
+    },
+    {
+      "fit": "daily-main",
+      "evaluation": "Jan-Jun",
+      "n": 181,
+      "rms_median": 7.090816233008277,
+      "rms_q95": 12.444833554137096,
+      "factor1_mean_correlation": 0.9264498289063887,
+      "factor2_mean_correlation": 0.37617026733576003
+    },
+    {
+      "fit": "daily-main",
+      "evaluation": "Jul-Aug",
+      "n": 60,
+      "rms_median": 8.726208004089393,
+      "rms_q95": 13.845694892141687,
+      "factor1_mean_correlation": 0.9485645331004308,
+      "factor2_mean_correlation": 0.5665678740953923
+    }
+  ],
+  "stability": [
+    {
+      "representation": "hourly",
+      "fit": "Jan-Mar",
+      "n": 2160,
+      "subspace_angle_max": 0.10713479444204237
+    },
+    {
+      "representation": "hourly",
+      "fit": "Apr-Jun",
+      "n": 2184,
+      "subspace_angle_max": 0.11952812379645106
+    },
+    {
+      "representation": "hourly",
+      "fit": "unique-profiles",
+      "n": 1608,
+      "subspace_angle_max": 0.061243615962661015
+    },
+    {
+      "representation": "daily",
+      "fit": "Jan-Mar",
+      "n": 90,
+      "subspace_angle_max": 2.181898273957791,
+      "subspace_angle_min": 0.630491486906608
+    },
+    {
+      "representation": "daily",
+      "fit": "Apr-Jun",
+      "n": 91,
+      "subspace_angle_max": 1.616259879295931,
+      "subspace_angle_min": 0.6986130543853446
+    },
+    {
+      "representation": "daily",
+      "fit": "unique-profiles",
+      "n": 67,
+      "subspace_angle_max": 2.136442566738812,
+      "subspace_angle_min": 0.8875700504778684
+    }
+  ],
+  "warnings": [],
+  "top_later_dates": [
+    {
+      "date": "2021-08-09 00:00:00",
+      "period": "Jul-Aug",
+      "profile": "P104",
+      "weekday": 0,
+      "mean_power": 107.59375,
+      "peak_power": 215,
+      "fa_rms": 20.488585590274692,
+      "factor1": 1.1141577317270683,
+      "factor2": -1.7144052513083106,
+      "high_hours": 8,
+      "zero_hours": 0,
+      "production_total": 20689,
+      "temperature_mean": 24.941666666666663,
+      "worst_hour": 18
+    },
+    {
+      "date": "2021-08-28 00:00:00",
+      "period": "Jul-Aug",
+      "profile": "P123",
+      "weekday": 5,
+      "mean_power": 46.1875,
+      "peak_power": 119,
+      "fa_rms": 17.07830336359042,
+      "factor1": -1.4946031702074292,
+      "factor2": 0.9158466877542055,
+      "high_hours": 0,
+      "zero_hours": 6,
+      "production_total": 1799,
+      "temperature_mean": 25.3875,
+      "worst_hour": 18
+    },
+    {
+      "date": "2021-08-16 00:00:00",
+      "period": "Jul-Aug",
+      "profile": "P111",
+      "weekday": 0,
+      "mean_power": 91.38541666666667,
+      "peak_power": 190,
+      "fa_rms": 15.770553634209731,
+      "factor1": 0.6460809155432521,
+      "factor2": -1.616383436579276,
+      "high_hours": 2,
+      "zero_hours": 0,
+      "production_total": 10238,
+      "temperature_mean": 23.620833333333334,
+      "worst_hour": 18
+    },
+    {
+      "date": "2021-07-28 00:00:00",
+      "period": "Jul-Aug",
+      "profile": "P093",
+      "weekday": 2,
+      "mean_power": 145.58333333333334,
+      "peak_power": 212,
+      "fa_rms": 13.744386537296005,
+      "factor1": 0.8739978580257226,
+      "factor2": 1.0109437453763734,
+      "high_hours": 9,
+      "zero_hours": 0,
+      "production_total": 24285,
+      "temperature_mean": 26.854166666666668,
+      "worst_hour": 20
+    },
+    {
+      "date": "2021-07-30 00:00:00",
+      "period": "Jul-Aug",
+      "profile": "P093",
+      "weekday": 4,
+      "mean_power": 145.58333333333334,
+      "peak_power": 212,
+      "fa_rms": 13.744386537296005,
+      "factor1": 0.8739978580257226,
+      "factor2": 1.0109437453763734,
+      "high_hours": 9,
+      "zero_hours": 0,
+      "production_total": 12688,
+      "temperature_mean": 28.59166666666667,
+      "worst_hour": 20
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "8b56936f74cd64cbe7792d2a645a82e91682d6d653b91539b557918ac730c468"
+}

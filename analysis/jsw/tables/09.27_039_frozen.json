@@ -1,0 +1,14 @@
+{
+  "question": "035-037: does continuous production plus contemporaneous weather explain remaining mean/max differences?",
+  "months": [6, 7, 8], "population": "positive-production weekdays",
+  "calendar": ["month", "hour", "weekday"],
+  "covariates": ["log1p_production", "temperature", "wind", "humidity", "wet", "log1p_rain"],
+  "spline": {"n_knots": 3, "degree": 2, "fit": "Jan-Jun positive-production weekdays only", "extrapolation": "linear"},
+  "models": ["calendar", "production", "weather", "joint"],
+  "joint_support": "For June vs each later month, same clock hour and wet status; all four continuous standardized differences <=1 June SD, nearest opposite-month observation. Keep only hour cells with >=5 eligible observations each month.",
+  "support_gate": {"min_hour_cells": 12, "min_total_rows": 200, "min_dates_each_month": 10},
+  "sensitivity": "inverse-profile weights and leave-one-calendar-week-out, fixed covariate transformation; repeated-data exploratory association, no iid p-values",
+  "missing_handling_after_diagnostic": "First fit failed because June 1 hours 1 and 2 have missing wind, previously documented EDA missingness. Use the same 1242 complete cases for all four models; retain original data and all 1244 rows in distribution analysis, no imputation.",
+  "followup_after_first_results": "Weather addition changes monthly contrasts. Diagnose each weather group's unique in-sample association by omitting that block from the same fixed joint model, not selecting variables. Drop only exactly all-zero spline basis columns, record names, and recheck rank; no information-bearing variable removed.",
+  "stop": "If support gate fails, no adjusted full-period attribution. Calendar/production/weather/joint fits remain descriptive same-sample relationships, not future predictive evaluation or causal contributions."
+}

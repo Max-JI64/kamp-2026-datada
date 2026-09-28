@@ -1,0 +1,15 @@
+{
+  "question": "How do contiguous high 15-minute recorded values differ from A002 high-hour episodes?",
+  "source": "../../data/origin/okm_augumented_2021.csv",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope": "2021-01-01 through 2021-08-31, valid hour 0..23; retain zero values; exclude invalid time rows without repairing timestamps",
+  "threshold": 182,
+  "threshold_source": "A002 Jan-Jun training-period exploratory cutoff; E015 threshold 187 is not mixed into this comparison",
+  "slot_order": ["15분", "30분", "45분", "60분"],
+  "adjacency": "Within an hour use consecutive listed slots; across hours connect 60분 to next 15분 only when the next valid hourly timestamp is exactly one hour later. A low slot or missing hour breaks a run.",
+  "hour_event": "A002: any of four values >= 182, consecutive high hours at exact one-hour spacing",
+  "slot_event": "Maximal consecutive recorded slots with values >= 182, using exact 15-minute slot-key spacing",
+  "comparison": "Show separate denominators for hours and slots, event/run length distribution, start slot and per-hour-event slot counts and longest run; no conversion to measured duration",
+  "sensitivity": "Use A004 fixed cutoffs 176 and 188 only if the main interpretation at 182 hinges on the cutoff",
+  "decision": "Narrow any sustained-high wording to consecutive high recorded values; do not infer continuous physical exceedance, billing peak, or intervention effect"
+}

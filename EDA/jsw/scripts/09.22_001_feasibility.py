@@ -19,6 +19,7 @@ for folder in ('tables', 'figures'):
 def save(frame, name):
     frame.to_csv(BASE / 'tables' / f'{PREFIX}_{name}.csv', index=False, encoding='utf-8-sig')
 
+#주석
 df = pd.read_csv(SOURCE, encoding='utf-8-sig')
 power = ['15분', '30분', '45분', '60분']
 dates = pd.to_datetime(df['날짜'].astype(str), format='%Y%m%d', errors='raise')

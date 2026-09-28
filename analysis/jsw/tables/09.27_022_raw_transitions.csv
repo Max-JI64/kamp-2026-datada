@@ -1,0 +1,9 @@
+﻿period,profile_weighted,previous_high_day,pairs,current_high_days,weighted_exposure,weighted_current_high,current_high_fraction
+Jan-Jun,False,0,112,30,112.0,30.0,0.26785714285714285
+Jan-Jun,False,1,68,39,68.0,39.0,0.5735294117647058
+Jan-Jun,True,0,112,30,43.516666666666666,13.333333333333332,0.3063960168517809
+Jan-Jun,True,1,68,39,22.48333333333333,12.666666666666666,0.5633802816901409
+Jul-Aug,False,0,24,9,24.0,9.0,0.375
+Jul-Aug,False,1,33,24,33.0,24.0,0.7272727272727273
+Jul-Aug,True,0,24,9,24.0,9.0,0.375
+Jul-Aug,True,1,33,24,32.0,23.0,0.71875

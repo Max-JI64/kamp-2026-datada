@@ -1,0 +1,40 @@
+{
+  "agreement": [
+    {
+      "period": "Jan-Jun",
+      "days": 181,
+      "ward_kmeans_ari": 0.9802671862593052
+    },
+    {
+      "period": "Jul-Aug",
+      "days": 60,
+      "ward_kmeans_ari": 1.0
+    }
+  ],
+  "contributions": [
+    {
+      "profile_weighted": false,
+      "common_groups": 3,
+      "status": "computed",
+      "mix_component": -0.005877364239106175,
+      "within_component": 0.10455753612369796,
+      "high_fraction_difference": 0.09868017188459179
+    },
+    {
+      "profile_weighted": true,
+      "common_groups": 3,
+      "status": "computed",
+      "mix_component": -0.009580552644364922,
+      "within_component": 0.10075603118387078,
+      "high_fraction_difference": 0.0911754785395059
+    }
+  ],
+  "training_cluster_sizes": [
+    63,
+    92,
+    26
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "184d3069fdb02c0cacb03ef8a86f9034a065041232eea357cb4fa90b97a2a643"
+}

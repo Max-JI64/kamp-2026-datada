@@ -1,0 +1,53 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "independent_onsets": [
+    139,
+    85
+  ],
+  "independent_eligible": [
+    4108,
+    1218
+  ],
+  "high_hour_reconciliation": 455,
+  "excess_reconciliation": 4215,
+  "standardized_rates_reconciled": 4,
+  "cluster_assignments_per_fit": 241,
+  "pca_orthogonality": true,
+  "rounding_disagreements": 13,
+  "refinements": [
+    "top10 cutoff ties",
+    "duration by production context",
+    "strict JSON null for nonfinite metadata"
+  ],
+  "rank_sensitivity": [
+    {
+      "period": "Jan-Jun",
+      "days": 181,
+      "spearman_peak_vs_daily_mean": 0.8077415237564042,
+      "top10_common_dates": 3,
+      "peak_top10_cutoff": 199.0,
+      "peak_dates_at_cutoff": 2.0,
+      "peak_inclusive_dates": 11.0,
+      "mean_top10_cutoff": 137.82291666666666,
+      "mean_dates_at_cutoff": 4.0,
+      "mean_inclusive_dates": 11.0,
+      "inclusive_intersection": 3.0,
+      "inclusive_jaccard": 0.15789473684210525
+    },
+    {
+      "period": "Jul-Aug",
+      "days": 60,
+      "spearman_peak_vs_daily_mean": 0.86734879414176,
+      "top10_common_dates": 6,
+      "peak_top10_cutoff": 211.0,
+      "peak_dates_at_cutoff": 2.0,
+      "peak_inclusive_dates": 10.0,
+      "mean_top10_cutoff": 138.25,
+      "mean_dates_at_cutoff": 1.0,
+      "mean_inclusive_dates": 10.0,
+      "inclusive_intersection": 6.0,
+      "inclusive_jaccard": 0.42857142857142855
+    }
+  ]
+}

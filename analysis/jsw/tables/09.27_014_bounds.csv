@@ -1,0 +1,5 @@
+﻿scenario,earlier_n,earlier_high,earlier_fraction,later_n,later_high,later_fraction,later_minus_earlier,interpretation
+valid_hours_only,4344,235,0.054097605893186004,1440,220,0.1527777777777778,0.09868017188459179,record fraction; actual hour interpretation requires provider definitions
+all_dated_records,4344,235,0.054097605893186004,1488,230,0.15456989247311828,0.10047228657993228,record fraction; actual hour interpretation requires provider definitions
+all_invalid_records_assumed_low,4344,235,0.054097605893186004,1488,220,0.1478494623655914,0.0937518564724054,record fraction; actual hour interpretation requires provider definitions
+all_invalid_records_assumed_high,4344,235,0.054097605893186004,1488,268,0.18010752688172044,0.12600992098853442,record fraction; actual hour interpretation requires provider definitions

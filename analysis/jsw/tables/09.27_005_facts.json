@@ -1,0 +1,206 @@
+{
+  "standardization": [
+    {
+      "metric": "onset",
+      "profile_weighted": false,
+      "common_cells": 80,
+      "total_cells": 84,
+      "cells_either_n_le_5": 10,
+      "earlier_raw_rate": 0.033836416747809156,
+      "earlier_overlap_rate": 0.03388590931253047,
+      "earlier_standardized_rate": 0.033445616921199295,
+      "earlier_all_n": 4108,
+      "earlier_overlap_n": 4102,
+      "earlier_excluded_events": 0,
+      "earlier_min_cell_n": 14,
+      "later_raw_rate": 0.06978653530377668,
+      "later_overlap_rate": 0.06978653530377668,
+      "later_standardized_rate": 0.0890624267419077,
+      "later_all_n": 1218,
+      "later_overlap_n": 1218,
+      "later_excluded_events": 0,
+      "later_min_cell_n": 1,
+      "raw_difference": 0.035950118555967525,
+      "standardized_difference": 0.05561680982070841
+    },
+    {
+      "metric": "onset",
+      "profile_weighted": true,
+      "common_cells": 80,
+      "total_cells": 84,
+      "cells_either_n_le_5": 10,
+      "earlier_raw_rate": 0.03434610303830911,
+      "earlier_overlap_rate": 0.03437529511757484,
+      "earlier_standardized_rate": 0.033534588392732816,
+      "earlier_all_n": 4108,
+      "earlier_overlap_n": 4102,
+      "earlier_excluded_events": 0,
+      "earlier_min_cell_n": 14,
+      "later_raw_rate": 0.06816292601828762,
+      "later_overlap_rate": 0.06816292601828762,
+      "later_standardized_rate": 0.08188419722846794,
+      "later_all_n": 1218,
+      "later_overlap_n": 1218,
+      "later_excluded_events": 0,
+      "later_min_cell_n": 1,
+      "raw_difference": 0.03381682297997851,
+      "standardized_difference": 0.04834960883573513
+    },
+    {
+      "metric": "high",
+      "profile_weighted": false,
+      "common_cells": 80,
+      "total_cells": 84,
+      "cells_either_n_le_5": 9,
+      "earlier_raw_rate": 0.054097605893186004,
+      "earlier_overlap_rate": 0.05417242969110189,
+      "earlier_standardized_rate": 0.054474938568249545,
+      "earlier_all_n": 4344,
+      "earlier_overlap_n": 4338,
+      "earlier_excluded_events": 0,
+      "earlier_min_cell_n": 14,
+      "later_raw_rate": 0.1527777777777778,
+      "later_overlap_rate": 0.1527777777777778,
+      "later_standardized_rate": 0.1504712990694299,
+      "later_all_n": 1440,
+      "later_overlap_n": 1440,
+      "later_excluded_events": 0,
+      "later_min_cell_n": 4,
+      "raw_difference": 0.09868017188459179,
+      "standardized_difference": 0.09599636050118036
+    },
+    {
+      "metric": "high",
+      "profile_weighted": true,
+      "common_cells": 80,
+      "total_cells": 84,
+      "cells_either_n_le_5": 9,
+      "earlier_raw_rate": 0.05783582089552238,
+      "earlier_overlap_rate": 0.05788210189383835,
+      "earlier_standardized_rate": 0.05795656499989811,
+      "earlier_all_n": 4344,
+      "earlier_overlap_n": 4338,
+      "earlier_excluded_events": 0,
+      "earlier_min_cell_n": 14,
+      "later_raw_rate": 0.14901129943502825,
+      "later_overlap_rate": 0.14901129943502825,
+      "later_standardized_rate": 0.14652794297687927,
+      "later_all_n": 1440,
+      "later_overlap_n": 1440,
+      "later_excluded_events": 0,
+      "later_min_cell_n": 4,
+      "raw_difference": 0.09117547853950586,
+      "standardized_difference": 0.08857137797698116
+    }
+  ],
+  "distributions": [
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": false,
+      "mean": 100.49658097494547,
+      "zero_fraction": 0.0,
+      "q0.1": 22.0,
+      "q0.5": 113.0,
+      "q0.9": 176.0,
+      "q0.95": 182.0,
+      "q0.99": 194.0
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": false,
+      "mean": 97.3447648636526,
+      "zero_fraction": 0.011136746988252701,
+      "q0.1": 21.0,
+      "q0.5": 108.0,
+      "q0.9": 188.0,
+      "q0.95": 197.0,
+      "q0.99": 207.0
+    },
+    {
+      "period": "Jan-Jun",
+      "profile_weighted": true,
+      "mean": 101.40924676307417,
+      "zero_fraction": 0.0,
+      "q0.1": 22.0,
+      "q0.5": 112.0,
+      "q0.9": 176.0,
+      "q0.95": 183.0,
+      "q0.99": 195.0
+    },
+    {
+      "period": "Jul-Aug",
+      "profile_weighted": true,
+      "mean": 95.99825996770353,
+      "zero_fraction": 0.012696564532662647,
+      "q0.1": 21.0,
+      "q0.5": 107.0,
+      "q0.9": 187.0,
+      "q0.95": 196.0,
+      "q0.99": 207.0
+    }
+  ],
+  "influence_ranges": [
+    {
+      "grouping": "month",
+      "onset_difference_min": 0.023914343130610298,
+      "onset_difference_max": 0.050092154680762266,
+      "high_difference_min": 0.061493791956276356,
+      "high_difference_max": 0.1384311297389979
+    },
+    {
+      "grouping": "profile",
+      "onset_difference_min": 0.032661899750507345,
+      "onset_difference_max": 0.03848261615169386,
+      "high_difference_min": 0.09101733663554963,
+      "high_difference_max": 0.1026841448189763
+    },
+    {
+      "grouping": "week",
+      "onset_difference_min": 0.03142093619336732,
+      "onset_difference_max": 0.0471159642045718,
+      "high_difference_min": 0.08662566454706556,
+      "high_difference_max": 0.11885836894958128
+    }
+  ],
+  "bootstrap_differences": [
+    {
+      "block": "date",
+      "period": "later-minus-earlier",
+      "metric": "onset",
+      "blocks": null,
+      "p025": 0.01677212964485555,
+      "p50": 0.035988261262709445,
+      "p975": 0.05540662569672606
+    },
+    {
+      "block": "date",
+      "period": "later-minus-earlier",
+      "metric": "high",
+      "blocks": null,
+      "p025": 0.06121355125844076,
+      "p50": 0.09836364333947208,
+      "p975": 0.13846896101903003
+    },
+    {
+      "block": "week",
+      "period": "later-minus-earlier",
+      "metric": "onset",
+      "blocks": null,
+      "p025": 0.009451631386116143,
+      "p50": 0.03659901825836636,
+      "p975": 0.059250840536419
+    },
+    {
+      "block": "week",
+      "period": "later-minus-earlier",
+      "metric": "high",
+      "blocks": null,
+      "p025": 0.039731844487541995,
+      "p50": 0.0996247954876941,
+      "p975": 0.14909429056519571
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frozen_sha256": "2a2b86abfd3eb417d681e27cc6cc5ecdf30cef48dac3dd97f65e88c57e89f0c6",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+}

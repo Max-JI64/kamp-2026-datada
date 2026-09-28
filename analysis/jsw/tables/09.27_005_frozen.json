@@ -1,0 +1,10 @@
+{
+  "question": "004 period differences persist at 176/182/188: are they due to observed hour/weekend/current-production composition or a single week/month/profile?",
+  "input": "004 exact-time records with fixed high/onset labels at182, source hash verified",
+  "strata": ["exact hour", "weekend", "current production zero/positive"],
+  "standardization": "Compare Jan-Jun and Jul-Aug only in cells with positive exposure in both periods; pooled exposure common weights. Repeat inverse-profile weighting. Current production is posthoc, not intervention.",
+  "metrics": "Onset among eligible and high among all valid records; raw/overlap/standardized rates; excluded exposure/events; cell sample sizes; standardized peak quantiles",
+  "influence": "Leave each calendar week, month and exact daily profile out of numerator and denominator without recomputing labels or reconnecting time gaps",
+  "bootstrap": "Seed20260927, 2000 replicates; resample observed calendar-day and calendar-week blocks separately within period; report descriptive percentile bands, not certified confidence intervals",
+  "decision": "If standardized difference reverses, revise crude period interpretation; if positive under all sensitivity checks, retain descriptive period difference, not a causal claim."
+}

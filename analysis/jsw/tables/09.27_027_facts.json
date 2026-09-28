@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "days": 241,
+    "clusters": 3,
+    "exact_profiles": 126,
+    "repeated_profiles": 45,
+    "days_in_repeated_profiles": 160,
+    "repeated_profiles_with_different_production": 40,
+    "days_in_different_production_profiles": 132,
+    "repeated_profiles_with_zero_and_positive": 7,
+    "days_in_zero_and_positive_profiles": 30
+  },
+  "cluster_context": [
+    {
+      "period": "Jan-Jun",
+      "cluster": 0,
+      "days": 62,
+      "distinct_power_profiles": 22,
+      "zero_production_days": 36,
+      "positive_production_days": 26,
+      "production_total_min": 0,
+      "production_total_median": 0.0,
+      "production_total_max": 20786,
+      "positive_production_median": 2485.5,
+      "temperature_mean_min": -3.5708333333333333,
+      "temperature_mean_max": 23.379166666666663
+    },
+    {
+      "period": "Jan-Jun",
+      "cluster": 1,
+      "days": 93,
+      "distinct_power_profiles": 31,
+      "zero_production_days": 3,
+      "positive_production_days": 90,
+      "production_total_min": 0,
+      "production_total_median": 16985.0,
+      "production_total_max": 26142,
+      "positive_production_median": 17188.5,
+      "temperature_mean_min": -8.825000000000001,
+      "temperature_mean_max": 24.070833333333336
+    },
+    {
+      "period": "Jan-Jun",
+      "cluster": 2,
+      "days": 26,
+      "distinct_power_profiles": 14,
+      "zero_production_days": 5,
+      "positive_production_days": 21,
+      "production_total_min": 0,
+      "production_total_median": 15768.5,
+      "production_total_max": 21648,
+      "positive_production_median": 16556.0,
+      "temperature_mean_min": -6.545833333333333,
+      "temperature_mean_max": 24.175
+    },
+    {
+      "period": "Jul-Aug",
+      "cluster": 0,
+      "days": 23,
+      "distinct_power_profiles": 23,
+      "zero_production_days": 16,
+      "positive_production_days": 7,
+      "production_total_min": 0,
+      "production_total_median": 0.0,
+      "production_total_max": 3794,
+      "positive_production_median": 1799.0,
+      "temperature_mean_min": 22.275,
+      "temperature_mean_max": 29.0
+    },
+    {
+      "period": "Jul-Aug",
+      "cluster": 1,
+      "days": 29,
+      "distinct_power_profiles": 28,
+      "zero_production_days": 0,
+      "positive_production_days": 29,
+      "production_total_min": 12688,
+      "production_total_median": 19849.0,
+      "production_total_max": 29279,
+      "positive_production_median": 19849.0,
+      "temperature_mean_min": 22.42083333333333,
+      "temperature_mean_max": 28.59166666666667
+    },
+    {
+      "period": "Jul-Aug",
+      "cluster": 2,
+      "days": 8,
+      "distinct_power_profiles": 8,
+      "zero_production_days": 0,
+      "positive_production_days": 8,
+      "production_total_min": 10238,
+      "production_total_median": 16147.5,
+      "production_total_max": 24022,
+      "positive_production_median": 16147.5,
+      "temperature_mean_min": 23.425,
+      "temperature_mean_max": 27.495833333333334
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "80d9e1bef84a9b13189811c3ebda19a04812a1e47e4ef6d77c898c96c3fe984b"
+}

@@ -1,0 +1,9 @@
+﻿scope,period,target,n,days,mean,median,q90,q95
+all_valid,Jan-Jun,target_mean,4344,181,93.06744935543279,104.0,166.0,172.0
+all_valid,Jan-Jun,target_max,4344,181,100.39272559852671,112.5,176.0,182.0
+all_valid,Jul-Aug,target_mean,1440,60,91.01527777777778,102.0,178.0,185.0
+all_valid,Jul-Aug,target_max,1440,60,98.11180555555555,109.0,188.0,197.0
+positive_weekday,Jan-Jun,target_mean,2287,112,128.4744206383909,128.0,171.0,177.0
+positive_weekday,Jan-Jun,target_max,2287,112,138.5010931351115,142.0,180.0,185.0
+positive_weekday,Jul-Aug,target_mean,775,37,139.70193548387095,136.0,185.0,189.0
+positive_weekday,Jul-Aug,target_max,775,37,150.3483870967742,153.0,196.0,202.0

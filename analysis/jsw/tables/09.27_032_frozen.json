@@ -1,0 +1,8 @@
+{
+  "previous_evidence": "029 calendar-only adjusted high-hour gap +0.100875; 030 later period all 220 high hours on weekdays; 005 current-production adjustment leaves +0.095996 with sparse cells; 031 cannot identify a physical cause.",
+  "question": "Does the target high-power difference remain among positive-production weekdays at the same hour, and is there enough overlapping temperature support for a narrower weather comparison?",
+  "input": "Original 2021 Jan-Aug valid hours, fixed high label peak of four power slots >=182; retain zeros and repeated profiles; do not use derived factory-personnel or same-time power as a covariate.",
+  "primary": "Summarize target by period x weekend x current production zero/positive. For weekday positive-production hours, standardize high rate across 24 exact hour cells using pooled exposure and repeat inverse profile frequency weighting. Current production is posthoc context, not an intervention.",
+  "temperature_support": "For weekday positive-production hours, define a common temperature range as intersection of period-specific 5th-95th percentile intervals, without using the target. Report exposure, dates, high hours and exact-hour common cells in this range. Compute common-hour descriptive rates only if both periods have at least 10 dates and at least 12 cells each with 10 hours per period. Otherwise stop and report insufficient support.",
+  "decision": "If within-context gap remains, rule out only the claim that period difference is entirely due to weekday/production composition. If it reverses, revise that claim. Temperature overlap comparison is descriptive and cannot establish weather causality."
+}

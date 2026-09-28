@@ -1,0 +1,111 @@
+{
+  "monthly_context": [
+    {
+      "month": 6,
+      "hours": 469,
+      "dates": 22,
+      "high_hours": 63,
+      "high_rate": 0.13432835820895522,
+      "mean_target_average": 136.16204690831557,
+      "max_target_average": 146.4179104477612,
+      "temperature_median": 20.9
+    },
+    {
+      "month": 7,
+      "hours": 415,
+      "dates": 20,
+      "high_hours": 132,
+      "high_rate": 0.3180722891566265,
+      "mean_target_average": 142.07469879518072,
+      "max_target_average": 152.8,
+      "temperature_median": 25.5
+    },
+    {
+      "month": 8,
+      "hours": 360,
+      "dates": 17,
+      "high_hours": 86,
+      "high_rate": 0.2388888888888889,
+      "mean_target_average": 136.96666666666667,
+      "max_target_average": 147.5222222222222,
+      "temperature_median": 24.35
+    }
+  ],
+  "standardized_months": [
+    {
+      "metric": "high",
+      "profile_weighted": false,
+      "june": 0.1356693949137679,
+      "july": 0.3133038585209003,
+      "august": 0.24014977775676186,
+      "july_minus_june": 0.17763446360713242,
+      "august_minus_june": 0.10448038284299396,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    },
+    {
+      "metric": "high",
+      "profile_weighted": true,
+      "june": 0.1510978835978836,
+      "july": 0.3116801011537854,
+      "august": 0.24191380718954247,
+      "july_minus_june": 0.16058221755590182,
+      "august_minus_june": 0.09081592359165888,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    },
+    {
+      "metric": "target_mean",
+      "profile_weighted": false,
+      "june": 136.2285753844518,
+      "july": 141.94284882598436,
+      "august": 137.04943548901133,
+      "july_minus_june": 5.714273441532555,
+      "august_minus_june": 0.8208601045595287,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    },
+    {
+      "metric": "target_mean",
+      "profile_weighted": true,
+      "june": 136.74903579338047,
+      "july": 141.68931938198605,
+      "august": 137.2826761341645,
+      "july_minus_june": 4.940283588605581,
+      "august_minus_june": 0.533640340784018,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    },
+    {
+      "metric": "target_max",
+      "profile_weighted": false,
+      "june": 146.4144692589108,
+      "july": 152.78269499602544,
+      "august": 147.51851629038953,
+      "july_minus_june": 6.368225737114642,
+      "august_minus_june": 1.1040470314787285,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    },
+    {
+      "metric": "target_max",
+      "profile_weighted": true,
+      "june": 146.922341349484,
+      "july": 152.52770932591108,
+      "august": 147.7422446698409,
+      "july_minus_june": 5.60536797642709,
+      "august_minus_june": 0.8199033203569002,
+      "minimum_hour_n_june": 11,
+      "minimum_hour_n_july": 10,
+      "minimum_hour_n_august": 7
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "2cdb055506dd9ce325aaa0c4a9d1febdc65121081f5360a3f423ed66630445be"
+}

@@ -1,0 +1,49 @@
+{
+  "totals": [
+    {
+      "representation": "raw",
+      "profile_weighted": false,
+      "high_fraction_difference": 0.09868017188459179,
+      "mix_component": -0.0067456909081408025,
+      "within_component": 0.1054258627927326
+    },
+    {
+      "representation": "raw",
+      "profile_weighted": true,
+      "high_fraction_difference": 0.09117547853950585,
+      "mix_component": -0.011876209885403577,
+      "within_component": 0.10305168842490943
+    },
+    {
+      "representation": "shape",
+      "profile_weighted": false,
+      "high_fraction_difference": 0.09868017188459179,
+      "mix_component": 0.005099380617336453,
+      "within_component": 0.09358079126725535
+    },
+    {
+      "representation": "shape",
+      "profile_weighted": true,
+      "high_fraction_difference": 0.09117547853950585,
+      "mix_component": 0.0022101448561957296,
+      "within_component": 0.08896533368331011
+    }
+  ],
+  "representation_agreement": [
+    {
+      "period": "Jan-Jun",
+      "days": 181,
+      "raw_shape_ari": 0.511315556333408
+    },
+    {
+      "period": "Jul-Aug",
+      "days": 60,
+      "raw_shape_ari": 0.3745885450954575
+    }
+  ],
+  "source_days": 241,
+  "cluster_fit_reused": true,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "4991f881a25c8df8f12c5ffaaa9836ae1d0658ce72bb35df94e91cdd81084bb0"
+}

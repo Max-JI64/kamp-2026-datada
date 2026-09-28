@@ -1,0 +1,145 @@
+{
+  "distribution": [
+    {
+      "scope": "all_valid",
+      "period": "Jan-Jun",
+      "target": "target_mean",
+      "n": 4344,
+      "days": 181,
+      "mean": 93.06744935543279,
+      "median": 104.0,
+      "q90": 166.0,
+      "q95": 172.0
+    },
+    {
+      "scope": "all_valid",
+      "period": "Jan-Jun",
+      "target": "target_max",
+      "n": 4344,
+      "days": 181,
+      "mean": 100.39272559852671,
+      "median": 112.5,
+      "q90": 176.0,
+      "q95": 182.0
+    },
+    {
+      "scope": "all_valid",
+      "period": "Jul-Aug",
+      "target": "target_mean",
+      "n": 1440,
+      "days": 60,
+      "mean": 91.01527777777778,
+      "median": 102.0,
+      "q90": 178.0,
+      "q95": 185.0
+    },
+    {
+      "scope": "all_valid",
+      "period": "Jul-Aug",
+      "target": "target_max",
+      "n": 1440,
+      "days": 60,
+      "mean": 98.11180555555555,
+      "median": 109.0,
+      "q90": 188.0,
+      "q95": 197.0
+    },
+    {
+      "scope": "positive_weekday",
+      "period": "Jan-Jun",
+      "target": "target_mean",
+      "n": 2287,
+      "days": 112,
+      "mean": 128.4744206383909,
+      "median": 128.0,
+      "q90": 171.0,
+      "q95": 177.0
+    },
+    {
+      "scope": "positive_weekday",
+      "period": "Jan-Jun",
+      "target": "target_max",
+      "n": 2287,
+      "days": 112,
+      "mean": 138.5010931351115,
+      "median": 142.0,
+      "q90": 180.0,
+      "q95": 185.0
+    },
+    {
+      "scope": "positive_weekday",
+      "period": "Jul-Aug",
+      "target": "target_mean",
+      "n": 775,
+      "days": 37,
+      "mean": 139.70193548387095,
+      "median": 136.0,
+      "q90": 185.0,
+      "q95": 189.0
+    },
+    {
+      "scope": "positive_weekday",
+      "period": "Jul-Aug",
+      "target": "target_max",
+      "n": 775,
+      "days": 37,
+      "mean": 150.3483870967742,
+      "median": 153.0,
+      "q90": 196.0,
+      "q95": 202.0
+    }
+  ],
+  "standardization": [
+    {
+      "target": "target_mean",
+      "profile_weighted": false,
+      "common_hours": 24,
+      "earlier_n": 2287,
+      "later_n": 775,
+      "earlier_raw_mean": 128.4744206383909,
+      "later_raw_mean": 139.70193548387095,
+      "earlier_standardized_mean": 128.38363276410104,
+      "later_standardized_mean": 140.0075353537334,
+      "standardized_difference": 11.623902589632365
+    },
+    {
+      "target": "target_mean",
+      "profile_weighted": true,
+      "common_hours": 24,
+      "earlier_n": 2287,
+      "later_n": 775,
+      "earlier_raw_mean": 126.65040253650795,
+      "later_raw_mean": 139.45099337748346,
+      "earlier_standardized_mean": 126.59933576739,
+      "later_standardized_mean": 139.52768000452397,
+      "standardized_difference": 12.92834423713397
+    },
+    {
+      "target": "target_max",
+      "profile_weighted": false,
+      "common_hours": 24,
+      "earlier_n": 2287,
+      "later_n": 775,
+      "earlier_raw_mean": 138.5010931351115,
+      "later_raw_mean": 150.3483870967742,
+      "earlier_standardized_mean": 138.3650935086722,
+      "later_standardized_mean": 150.76120342579628,
+      "standardized_difference": 12.396109917124079
+    },
+    {
+      "target": "target_max",
+      "profile_weighted": true,
+      "common_hours": 24,
+      "earlier_n": 2287,
+      "later_n": 775,
+      "earlier_raw_mean": 136.63572515075498,
+      "later_raw_mean": 150.10397350993378,
+      "earlier_standardized_mean": 136.50752367837444,
+      "later_standardized_mean": 150.24458634458674,
+      "standardized_difference": 13.737062666212296
+    }
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "8bd03d6b36d3d9b82058229cc5c6591ece9cfcfa7e0f26424056d041c5b26859"
+}

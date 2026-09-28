@@ -1,0 +1,7 @@
+﻿period,cluster,days,distinct_power_profiles,zero_production_days,positive_production_days,production_total_min,production_total_median,production_total_max,positive_production_median,temperature_mean_min,temperature_mean_max
+Jan-Jun,0,62,22,36,26,0,0.0,20786,2485.5,-3.5708333333333333,23.379166666666663
+Jan-Jun,1,93,31,3,90,0,16985.0,26142,17188.5,-8.825000000000001,24.070833333333336
+Jan-Jun,2,26,14,5,21,0,15768.5,21648,16556.0,-6.545833333333333,24.175
+Jul-Aug,0,23,23,16,7,0,0.0,3794,1799.0,22.275,29.0
+Jul-Aug,1,29,28,0,29,12688,19849.0,29279,19849.0,22.42083333333333,28.59166666666667
+Jul-Aug,2,8,8,0,8,10238,16147.5,24022,16147.5,23.425,27.495833333333334

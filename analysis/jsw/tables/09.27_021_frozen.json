@@ -1,0 +1,9 @@
+{
+  "evidence": "015 high-only day share rises25.97%->46.67% while020 mean falls because within-category level changes",
+  "input": "09.27_015_daily.csv",
+  "threshold": 182,
+  "high_day": "at least one observed high hour; all days have24 observed hours",
+  "identity": "hourly high fraction=high-day fraction * mean high hours per high day /24",
+  "comparison": "symmetric extensive(high-day fraction) and intensive(high-hour count per high day) arithmetic components",
+  "weights": "equal day and inverse-profile frequency; no day removal or independent-sample claim"
+}

@@ -1,0 +1,55 @@
+{
+  "scenarios": [
+    {
+      "scenario": "valid_hours_only",
+      "earlier_n": 4344,
+      "earlier_high": 235,
+      "earlier_fraction": 0.054097605893186004,
+      "later_n": 1440,
+      "later_high": 220,
+      "later_fraction": 0.1527777777777778,
+      "later_minus_earlier": 0.09868017188459179,
+      "interpretation": "record fraction; actual hour interpretation requires provider definitions"
+    },
+    {
+      "scenario": "all_dated_records",
+      "earlier_n": 4344,
+      "earlier_high": 235,
+      "earlier_fraction": 0.054097605893186004,
+      "later_n": 1488,
+      "later_high": 230,
+      "later_fraction": 0.15456989247311828,
+      "later_minus_earlier": 0.10047228657993228,
+      "interpretation": "record fraction; actual hour interpretation requires provider definitions"
+    },
+    {
+      "scenario": "all_invalid_records_assumed_low",
+      "earlier_n": 4344,
+      "earlier_high": 235,
+      "earlier_fraction": 0.054097605893186004,
+      "later_n": 1488,
+      "later_high": 220,
+      "later_fraction": 0.1478494623655914,
+      "later_minus_earlier": 0.0937518564724054,
+      "interpretation": "record fraction; actual hour interpretation requires provider definitions"
+    },
+    {
+      "scenario": "all_invalid_records_assumed_high",
+      "earlier_n": 4344,
+      "earlier_high": 235,
+      "earlier_fraction": 0.054097605893186004,
+      "later_n": 1488,
+      "later_high": 268,
+      "later_fraction": 0.18010752688172044,
+      "later_minus_earlier": 0.12600992098853442,
+      "interpretation": "record fraction; actual hour interpretation requires provider definitions"
+    }
+  ],
+  "invalid_record_count": 48,
+  "known_invalid_high_count": 10,
+  "timestamp_repair": false,
+  "event_duration_or_onset_identification": false,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_sha256": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+  "frozen_sha256": "8254c09de4fedb31b24ce0ff110267262a952b76969778d51fb9d0de989bca06"
+}

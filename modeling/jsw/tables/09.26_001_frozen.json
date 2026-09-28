@@ -1,0 +1,238 @@
+{
+  "time": "2026-09-26T17:09:21+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "settings": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "hgb": {
+      "loss": "squared_error",
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 20260926
+    },
+    "clip_predictions_below_zero": true,
+    "selection": "pooled May-Jun MAE on common timestamps, by target",
+    "past_observation_assumption": "All preceding record's values are available before target record"
+  },
+  "power_features": [
+    "mean_lag1",
+    "mean_lag2",
+    "mean_lag3",
+    "mean_lag24",
+    "mean_lag168",
+    "peak_lag1",
+    "peak_lag2",
+    "peak_lag3",
+    "peak_lag24",
+    "peak_lag168",
+    "last_slot_lag1",
+    "range_lag1",
+    "mean_past24_mean",
+    "mean_past24_std",
+    "mean_past24_min",
+    "mean_past24_max",
+    "peak_past24_mean",
+    "peak_past24_max"
+  ],
+  "all_features": [
+    "mean_lag1",
+    "mean_lag2",
+    "mean_lag3",
+    "mean_lag24",
+    "mean_lag168",
+    "peak_lag1",
+    "peak_lag2",
+    "peak_lag3",
+    "peak_lag24",
+    "peak_lag168",
+    "last_slot_lag1",
+    "range_lag1",
+    "mean_past24_mean",
+    "mean_past24_std",
+    "mean_past24_min",
+    "mean_past24_max",
+    "peak_past24_mean",
+    "peak_past24_max",
+    "hour",
+    "weekday",
+    "month",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "weekend"
+  ],
+  "selected_by_development": {
+    "mean": "hgb_calendar",
+    "peak": "hgb_calendar"
+  },
+  "development_rows_by_fold": [
+    {
+      "fold": "May",
+      "training_rows": 2712,
+      "evaluation_rows": 744,
+      "training_end": "2021-04-30 23:00:00",
+      "evaluation_start": "2021-05-01 00:00:00",
+      "evaluation_end": "2021-05-31 23:00:00"
+    },
+    {
+      "fold": "Jun",
+      "training_rows": 3456,
+      "evaluation_rows": 720,
+      "training_end": "2021-05-31 23:00:00",
+      "evaluation_start": "2021-06-01 00:00:00",
+      "evaluation_end": "2021-06-30 23:00:00"
+    }
+  ],
+  "development_scores": [
+    {
+      "target": "mean",
+      "method": "hgb_calendar",
+      "n": 1464,
+      "mae": 4.620825311603472,
+      "rmse": 6.8005086944090785,
+      "bias": -0.2681056959322918,
+      "under_rate": 0.5334699453551912,
+      "mean_shortfall": 2.444465503767882
+    },
+    {
+      "target": "mean",
+      "method": "hgb_power",
+      "n": 1464,
+      "mae": 5.183204020933555,
+      "rmse": 7.959251975969015,
+      "bias": -0.0704245834148652,
+      "under_rate": 0.4883879781420765,
+      "mean_shortfall": 2.62681430217421
+    },
+    {
+      "target": "mean",
+      "method": "lag1",
+      "n": 1464,
+      "mae": 14.814207650273223,
+      "rmse": 24.762560978814534,
+      "bias": -0.00273224043715847,
+      "under_rate": 0.40437158469945356,
+      "mean_shortfall": 7.408469945355192
+    },
+    {
+      "target": "mean",
+      "method": "lag168",
+      "n": 1464,
+      "mae": 15.60860655737705,
+      "rmse": 33.95817702535349,
+      "bias": -0.9938524590163934,
+      "under_rate": 0.5573770491803278,
+      "mean_shortfall": 8.301229508196721
+    },
+    {
+      "target": "mean",
+      "method": "lag24",
+      "n": 1464,
+      "mae": 41.46516393442623,
+      "rmse": 65.05411261639046,
+      "bias": -0.1523224043715847,
+      "under_rate": 0.42896174863387976,
+      "mean_shortfall": 20.808743169398905
+    },
+    {
+      "target": "mean",
+      "method": "ridge_calendar",
+      "n": 1464,
+      "mae": 10.617642876079966,
+      "rmse": 14.91491358710215,
+      "bias": 0.015376601295341725,
+      "under_rate": 0.48565573770491804,
+      "mean_shortfall": 5.301133137392312
+    },
+    {
+      "target": "mean",
+      "method": "ridge_power",
+      "n": 1464,
+      "mae": 10.464543865263021,
+      "rmse": 15.172510218780998,
+      "bias": 0.3697163510346275,
+      "under_rate": 0.4146174863387978,
+      "mean_shortfall": 5.047413757114197
+    },
+    {
+      "target": "peak",
+      "method": "hgb_calendar",
+      "n": 1464,
+      "mae": 5.267707007376484,
+      "rmse": 8.266241094383446,
+      "bias": 0.1816573569629397,
+      "under_rate": 0.4924863387978142,
+      "mean_shortfall": 2.5430248252067718
+    },
+    {
+      "target": "peak",
+      "method": "hgb_power",
+      "n": 1464,
+      "mae": 5.862595580248568,
+      "rmse": 9.516214352171644,
+      "bias": 0.08901263304397372,
+      "under_rate": 0.4883879781420765,
+      "mean_shortfall": 2.886791473602297
+    },
+    {
+      "target": "peak",
+      "method": "lag1",
+      "n": 1464,
+      "mae": 13.682377049180328,
+      "rmse": 23.060727029899578,
+      "bias": -0.0020491803278688526,
+      "under_rate": 0.4187158469945355,
+      "mean_shortfall": 6.842213114754099
+    },
+    {
+      "target": "peak",
+      "method": "lag168",
+      "n": 1464,
+      "mae": 17.443989071038253,
+      "rmse": 36.88741918309101,
+      "bias": -1.0191256830601092,
+      "under_rate": 0.5443989071038251,
+      "mean_shortfall": 9.23155737704918
+    },
+    {
+      "target": "peak",
+      "method": "lag24",
+      "n": 1464,
+      "mae": 45.27800546448088,
+      "rmse": 70.09517826779131,
+      "bias": -0.14959016393442623,
+      "under_rate": 0.44330601092896177,
+      "mean_shortfall": 22.713797814207652
+    },
+    {
+      "target": "peak",
+      "method": "ridge_calendar",
+      "n": 1464,
+      "mae": 11.394065080324706,
+      "rmse": 16.21165591446625,
+      "bias": 0.2903762508728677,
+      "under_rate": 0.4583333333333333,
+      "mean_shortfall": 5.551844414725918
+    },
+    {
+      "target": "peak",
+      "method": "ridge_power",
+      "n": 1464,
+      "mae": 11.33160764111791,
+      "rmse": 16.543840847981997,
+      "bias": 0.41527070323890974,
+      "under_rate": 0.40710382513661203,
+      "mean_shortfall": 5.458168468939501
+    }
+  ],
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "sklearn": "1.7.1"
+}
