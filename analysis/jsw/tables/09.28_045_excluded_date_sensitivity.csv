@@ -1,0 +1,7 @@
+﻿month,budget_fraction,receive_zero,adjusted_normal_days,unchanged_error_dates,error_original_maxima,error_candidate_max,adjusted_normal_month_max,error_candidate_exceeds_adjusted_normal,auxiliary_max_errors_unchanged,auxiliary_max_dates,auxiliary_reduction_from_222
+2021-07,0.0,False,29,2021-07-13|2021-07-15,190|202,202.0,222.0,False,222.0,2021-07-19,0.0
+2021-07,0.0,True,29,2021-07-13|2021-07-15,190|202,202.0,222.0,False,222.0,2021-07-19,0.0
+2021-07,0.05,False,29,2021-07-13|2021-07-15,190|202,202.0,172.57714285714286,True,202.0,2021-07-15,20.0
+2021-07,0.05,True,29,2021-07-13|2021-07-15,190|202,202.0,172.57714285714286,True,202.0,2021-07-15,20.0
+2021-07,0.1,False,29,2021-07-13|2021-07-15,190|202,202.0,154.01025641025643,True,202.0,2021-07-15,20.0
+2021-07,0.1,True,29,2021-07-13|2021-07-15,190|202,202.0,154.01025641025643,True,202.0,2021-07-15,20.0

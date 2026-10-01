@@ -1,0 +1,58 @@
+{
+  "time": "2026-09-29T17:12:13+09:00",
+  "python": "3.13.1",
+  "checks": [
+    {
+      "case": "score_ties_do_not_exceed_budget",
+      "passed": true
+    },
+    {
+      "case": "tie_larger_than_budget_no_warning_boundary",
+      "passed": true
+    },
+    {
+      "case": "all_warning_threshold_inclusive",
+      "passed": true
+    },
+    {
+      "case": "date_and_month_boundary_keeps_one_bundle",
+      "passed": true
+    },
+    {
+      "case": "hour_gap_breaks_bundle",
+      "passed": true
+    },
+    {
+      "case": "unavailable_breaks_bundle_stays_unknown",
+      "passed": true
+    },
+    {
+      "case": "no_warning_zero_precision_denominator",
+      "passed": true
+    },
+    {
+      "case": "all_warning_one_censored_bundle",
+      "passed": true
+    },
+    {
+      "case": "late_missing_and_unknown_starts_not_pre_warning",
+      "passed": true
+    },
+    {
+      "case": "previous_active_cleared_before_onset_not_capture",
+      "passed": true
+    },
+    {
+      "case": "daily_peak_ties_and_partial_coverage",
+      "passed": true
+    },
+    {
+      "case": "no_actual_high_zero_recall_denominator",
+      "passed": true
+    },
+    {
+      "case": "empty_group_denominators",
+      "passed": true
+    }
+  ]
+}

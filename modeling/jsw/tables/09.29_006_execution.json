@@ -1,0 +1,28 @@
+{
+    "recorded_at":  "2026-09-29T16:48:34+09:00",
+    "runtime":  "regular CPython 3.13.1",
+    "route":  "first-attempt require_escalated; Start-Process -Wait -PassThru -NoNewWindow; exit child.ExitCode",
+    "executions":  [
+                       {
+                           "phase":  "freeze",
+                           "observed_child_exit_code":  0
+                       },
+                       {
+                           "phase":  "initial comparison and one q75 fit",
+                           "observed_child_exit_code":  0
+                       },
+                       {
+                           "phase":  "auxiliary-baseline reaggregation, existing model reused",
+                           "observed_child_exit_code":  0
+                       },
+                       {
+                           "phase":  "independent source verification",
+                           "observed_child_exit_code":  0
+                       },
+                       {
+                           "phase":  "final verification including training quantiles, selection, and document links",
+                           "observed_child_exit_code":  0
+                       }
+                   ],
+    "total_new_fits":  1
+}

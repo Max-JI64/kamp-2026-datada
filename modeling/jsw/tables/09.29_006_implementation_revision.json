@@ -1,0 +1,6 @@
+{
+    "time":  "2026-09-29T16:35:53+09:00",
+    "reason":  "M005 diagnostic rows omit auxiliary lag24/lag168; reuse saved M001 baselines and existing q75 model. No change to candidates, folds, gate or criteria.",
+    "original_implementation_sha256":  "ebc08f7acb4f4daa4ff18dca425fe097d989b909235f2952de8a5f1e52d7f516",
+    "implementation_sha256":  "f2321fee18c5ff9a03548bdb562d6073021f9e294ef6141eee5207e518c6cffb"
+}

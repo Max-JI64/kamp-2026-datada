@@ -1,0 +1,4 @@
+﻿stage,training_cutoff_exclusive,eligible_training_rows,observed_complete_dates,observed_profiles,contributing_complete_dates,contributing_profiles,threshold
+May,2021-05-01,2712,120,51,113,48,183.0
+Jun,2021-06-01,3456,151,65,144,62,181.0
+Jul-Aug,2021-07-01,4176,181,67,174,66,182.0

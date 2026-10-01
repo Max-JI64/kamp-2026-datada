@@ -1,0 +1,52 @@
+{
+  "decision_date": "2026-09-29",
+  "status": "selected_for_next_session_only; M006 not executed",
+  "audit_configuration": "09.29_005_frozen.json",
+  "evidence_report": "../reports/09.29_005_peak_error_audit_plan.md",
+  "primary_failure": "peak high_continued mean shortfall",
+  "evidence_Jul_Aug": {
+    "threshold_ge": 182.0,
+    "hours": 119,
+    "dates": 29,
+    "events": 51,
+    "underpredicted_hours": 111,
+    "underpredicted_dates": 27,
+    "underpredicted_events": 49,
+    "daily_peak_hours": 18,
+    "daily_peak_dates": 17,
+    "sum_shortfall_hgb": 1570.8717645108984,
+    "sum_shortfall_lag1": 315.0,
+    "daily_peak_sum_shortfall_hgb": 326.4880995651696,
+    "leave_one_week_out_shortfall_delta_hgb_minus_lag1_range": [7.6495049796018684, 11.392129170351277]
+  },
+  "candidate": {
+    "target": "peak",
+    "gate": "previous observed peak >= preserved stage training threshold",
+    "prediction_when_gate_true": "0.5 * saved_hgb_calendar + 0.5 * saved_lag1",
+    "prediction_when_gate_false": "saved_hgb_calendar",
+    "fixed_weight": 0.5,
+    "fits_required_for_primary_candidate": 0,
+    "candidate_predictions_generated_this_session": false,
+    "mean_target": "retain saved hgb_calendar",
+    "expected_gate_Jul_Aug": {"hours": 195, "dates": 32, "continued_hours": 119, "descending_hours": 76},
+    "forbidden_gate_information": ["next actual state", "target actual", "daily profile", "daily maximum", "target production"],
+    "no_parameter_search": true
+  },
+  "periods": [
+    {"stage": "May", "train_cutoff_exclusive": "2021-05-01", "evaluation_end_exclusive": "2021-06-01", "common_hours": 744, "threshold_ge": 183.0},
+    {"stage": "Jun", "train_cutoff_exclusive": "2021-06-01", "evaluation_end_exclusive": "2021-07-01", "common_hours": 720, "threshold_ge": 181.0},
+    {"stage": "Jul-Aug", "train_cutoff_exclusive": "2021-07-01", "evaluation_end_exclusive": "2021-09-01", "common_hours": 1344, "July_hours": 600, "August_hours": 744, "threshold_ge": 182.0}
+  ],
+  "update_policy": "existing chronological folds; static June-end model for July and August; past observations update each target",
+  "baselines": ["hgb_calendar", "lag1", "lag24", "lag168", "hgb_q75_calendar development only"],
+  "q75_review": "not saved; if needed generate only during a future authorized M006 run, no extrapolation of development results",
+  "primary_metrics": ["monthly continuation mean shortfall", "bias", "under_n", "date and week paired differences", "original daily-peak date-weighted shortfall"],
+  "counter_metrics": ["descending mean over and MAE", "ordinary mean over", "zero-target MAE", "overall monthly MAE and RMSE", "pre-start warnings", "late capture", "missed events", "alarm hours", "false alarms", "seen/unseen scores and denominators", "coverage"],
+  "basic_model_replacement": "development peak MAE must not worsen in either May or June and pooled primary shortfall must improve; inspect fixed July/August results without independent-test claims",
+  "peak_only_candidate": "if primary shortfall improves with overall deterioration, do not replace basic HGB; retain separately for M007 tradeoff or discard",
+  "stop": "no primary improvement or dependence on a few dates/weeks or unsupported counter-effect: retain HGB; no weight or threshold search",
+  "secondary_issues_deferred": ["input fallback: 96 absent hours, 25 high hours, 5 peak hours, 9 event starts", "onset errors and warning burden", "zero-target errors on 2 dates", "profile reweighting without within-month review seen contrast"],
+  "partial_and_boundary_contract": "unknown starts/unpredictable starts excluded from warning-score numerator and retained in service denominator; all original tied peak hours required for all-peaks capture; partial prediction dates remain separate",
+  "data_scope": "current project data only; units and operational causes unidentified",
+  "next_authorized_work_in_this_session": "none; stop after M005 validation and documentation"
+}

@@ -1,0 +1,13 @@
+﻿table,column,groups,max_abs_difference
+selection_scores,n,15,0.0
+selection_scores,high_actual_n,15,0.0
+selection_scores,not_high_actual_n,15,0.0
+selection_scores,selected_n,15,0.0
+selection_scores,hit_n,15,0.0
+selection_scores,miss_n,15,0.0
+selection_scores,false_selection_n,15,0.0
+selection_scores,recall,15,5.551115123125783e-17
+selection_scores,precision,15,5.551115123125783e-17
+by_high_state,actual_n,30,0.0
+by_high_state,hit_n,30,0.0
+by_high_state,miss_n,30,0.0

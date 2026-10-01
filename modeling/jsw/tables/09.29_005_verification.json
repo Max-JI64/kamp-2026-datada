@@ -1,0 +1,25 @@
+{
+  "time": "2026-09-29T16:18:28+09:00",
+  "python": "3.13.1",
+  "exit_code_on_success": 0,
+  "checks": "stdlib csv and source loops independent of M005 implementation",
+  "input_hashes_preserved": 33,
+  "normal_hours": 5784,
+  "eligible_hours": 5520,
+  "audited_rows_checked": 12696,
+  "event_method_rows_checked": 963,
+  "distinct_events": 131,
+  "local_links_checked": 61,
+  "validated": [
+    "source actual and row keys",
+    "input coverage",
+    "state partitions and metrics",
+    "original tied daily peaks",
+    "events and pre-start issue chronology",
+    "unpredictable starts",
+    "A042 definition matching",
+    "past-only observed/contributed profile libraries",
+    "input hash preservation",
+    "local document links"
+  ]
+}

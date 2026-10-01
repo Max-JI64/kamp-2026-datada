@@ -1,0 +1,31 @@
+{
+  "time": "2026-09-29T17:17:05+09:00",
+  "python": "3.13.1",
+  "method": "stdlib csv; independent original-source eligibility, event and score-boundary loops; no M007 implementation imports",
+  "exit_code_on_success": 0,
+  "checks": {
+    "source_peak": 2904,
+    "source_row": 2904,
+    "source_coverage": 2904,
+    "prediction_actual": 11232,
+    "threshold_policies": 12,
+    "alerts": 310176,
+    "flag_policy_groups": 24,
+    "bundles": 11984,
+    "events": 24174,
+    "hour_metrics": 1872,
+    "daily": 11616,
+    "event_metrics": 792,
+    "peaks": 10164,
+    "peak_summary": 1440,
+    "monthly_peaks": 96,
+    "M004": 135,
+    "M004_states": 90
+  },
+  "normal_hours": 2904,
+  "alert_rows": 34848,
+  "event_policy_rows": 1572,
+  "protected_files_unchanged": 683,
+  "local_links_checked": 27,
+  "verifier_sha256": "a367b1c69a8d683353503e3da3486a97e72101bbc2b3c08111cde6aed6686af0"
+}
