@@ -1,0 +1,30 @@
+{
+  "decided_at": "2026-09-29T16:38:41+09:00",
+  "before_q75_review_fit": true,
+  "candidates": [
+    {
+      "method": "hgb_lag1_high_blend05",
+      "dev_primary_improves": true,
+      "dev_month_primary_nonworse": true,
+      "dev_date_week_robust": true,
+      "dev_month_mae_nonworse": false,
+      "review_month_primary_improves": null,
+      "review_month_mae_nonworse": null,
+      "decision": "peak_only_for_M007",
+      "dev_leaveout_delta_shortfall_min": -1.4967891234488797,
+      "dev_leaveout_delta_shortfall_max": -0.7935898391611375
+    },
+    {
+      "method": "hgb_q75_calendar",
+      "dev_primary_improves": true,
+      "dev_month_primary_nonworse": true,
+      "dev_date_week_robust": true,
+      "dev_month_mae_nonworse": false,
+      "review_month_primary_improves": null,
+      "review_month_mae_nonworse": null,
+      "decision": "peak_only_for_M007",
+      "dev_leaveout_delta_shortfall_min": -1.0616970595257527,
+      "dev_leaveout_delta_shortfall_max": -0.6409390773088433
+    }
+  ]
+}

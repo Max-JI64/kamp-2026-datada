@@ -1,0 +1,53 @@
+{
+    "created_at":  "2026-09-29T15:23+09:00",
+    "authorization":  "2026-09-29 user lifted A045 calculation hold; saved-result reaggregation only",
+    "expected_days":  241,
+    "expected_scenarios":  1446,
+    "expected_high_days":  105,
+    "high_cutoff":  182,
+    "budgets":  [
+                    0,
+                    0.05,
+                    0.1
+                ],
+    "receive_zero":  [
+                         true,
+                         false
+                     ],
+    "periods":  [
+                    "Jan-Aug",
+                    "Jan-Jun",
+                    "Jul-Aug"
+                ],
+    "groups":  [
+                   "all",
+                   "high_ge_182",
+                   "below_182"
+               ],
+    "weighting":  [
+                      "observed_days",
+                      "unique_profiles"
+                  ],
+    "quantile_method":  "linear; one record per exact 96-value profile within period and group",
+    "undefined_fraction":  "NaN if original daily maximum is zero",
+    "tie_atol":  1E-08,
+    "tie_rtol":  0,
+    "excluded_dates":  [
+                           "2021-07-13",
+                           "2021-07-15"
+                       ],
+    "july_auxiliary_assumption":  "error date original maxima unchanged; no time restoration",
+    "optimization":  "none; reuse A044 optimal_max",
+    "input_sha256":  {
+                         "data/origin/okm_augumented_2021.csv":  "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+                         "analysis/jsw/tables/09.28_044_redistribution.csv":  "8a001c6cc3a93f7b6670fd222e9b9e40b80ca4042fd33f273e62315b1031c23b",
+                         "analysis/jsw/tables/09.28_044_daily_concentration.csv":  "751e20f15e1276a29ee5eab7fa979c3bfbc8545deec7c059bd51a36823602365",
+                         "analysis/jsw/tables/09.28_044_scenario_summary.csv":  "bfa9d89a8c99f2c07924be7717e4166ca8d371146b1b44bdf61453536e908890",
+                         "analysis/jsw/tables/09.28_044_monthly_max.csv":  "b3a6d463e925a3b97ca77bff2b51fd8765ba31df9d7652ec0509f21fe3275f14",
+                         "EDA/jsw/tables/09.28_024_daily_concentration.csv":  "db8586bb4f347389ce7a7c5faf5d149ceb85b1c4b4ad8caba88e7c8e12df34f2",
+                         "EDA/jsw/tables/09.28_024_monthly_max_ties.csv":  "a3f20ddb65b2a8a7636d1172fe6305b0584dcc40b456791877a9578d28790d98",
+                         "EDA/jsw/tables/09.28_024_monthly_maxima.csv":  "e87ed09eb3b00b108886a004fe3cb05530a5612dd0e2124b7b27b8cb2988de57",
+                         "EDA/jsw/tables/09.28_024_invalid_time_candidates.csv":  "16cfc668a4fef26f609258c5c665233fb9a6fed26acf7423db8d5a22a023308f",
+                         "EDA/jsw/tables/09.23_011_daily_profile_summary.csv":  "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+                     }
+}

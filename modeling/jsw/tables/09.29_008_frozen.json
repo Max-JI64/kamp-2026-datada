@@ -1,0 +1,39 @@
+{
+  "frozen_at": "2026-09-29T20:13:42+09:00",
+  "evaluation_period": "2021-07-01 00:00:00 <= record_key < 2021-09-01 00:00:00",
+  "source_prediction": "modeling/jsw/predictions/09.29_006_review_predictions.csv",
+  "prediction_sha256": "7d0d4efa76ee82be81373f2bf1a5ff7d7b9f493016222ac4748e18a39c26084c",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "targets": [
+    "mean",
+    "peak"
+  ],
+  "methods": [
+    "hgb_calendar",
+    "lag1",
+    "lag24",
+    "lag168"
+  ],
+  "common_rows": "intersection of all four methods for each target; both targets must share record keys",
+  "production_level": {
+    "zero": "production == 0",
+    "positive_low": "0 < production <= 487",
+    "positive_high": "production > 487",
+    "unknown": "missing or invalid production"
+  },
+  "positive_boundary": 487,
+  "production_change": {
+    "increase": "production(t) - production(t-1h) > 0",
+    "decrease": "< 0",
+    "same": "== 0",
+    "unknown": "missing or invalid exact-hour pair"
+  },
+  "bias": "mean(prediction - actual); positive means overprediction",
+  "mae_difference": "HGB MAE - baseline MAE; negative means HGB improvement",
+  "periods": [
+    "all",
+    "7",
+    "8"
+  ],
+  "no_fit": true
+}

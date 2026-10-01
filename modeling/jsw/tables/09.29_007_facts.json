@@ -1,0 +1,18 @@
+{
+  "time": "2026-09-29T17:12:26+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "implementation_sha256": "7789b164a6938dfbd5054c3f15e3cb5b30c1356cc3736a434c0275f90ee550b9",
+  "frozen_sha256": "4b81f713b51ef70e6fc117102874bf99da1729ea2deda4a77745783e65dfebee",
+  "saved_input_files": 12,
+  "protected_files_unchanged": 683,
+  "unique_normal_hours": 2904,
+  "unique_available_hours": 2808,
+  "alert_rows": 34848,
+  "event_policy_rows": 1572,
+  "bundle_rows": 1498,
+  "new_model_training": 0,
+  "review_threshold_adjustments": 0,
+  "exit_code_on_success": 0
+}

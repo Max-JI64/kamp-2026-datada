@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-09-29T15:35+09:00",
+  "python": "3.13.1",
+  "executable": "C:\\Program Files\\Python313\\python.exe",
+  "free_threaded": false,
+  "source_days": 241,
+  "source_normal_hours": 5784,
+  "source_error_rows": 48,
+  "high_days": 105,
+  "exact_profiles": 126,
+  "saved_scenarios_checked": 1446,
+  "group_summaries_checked": 108,
+  "legacy_summaries_reproduced": 24,
+  "monthly_scenarios_checked": 48,
+  "calendar_tie_rows_checked": 100,
+  "excluded_date_scenarios_checked": 6,
+  "zero_policy_pairs_checked": 723,
+  "document_local_links_checked": 89,
+  "status": "passed"
+}

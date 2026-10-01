@@ -1,0 +1,5 @@
+﻿stage,month,threshold,normal_hours,dates,exact_lag1_hours,past24_hours,all_features_hours,common_saved_hours,excluded_hours,daily_peak_hours,eligible_peak_hours,excluded_peak_hours,peak_dates,dates_any_peak_available,excluded_high_hours,monthly_peak_hours,excluded_monthly_peak_hours
+Jul-Aug,7,182.0,696,29,694,648,600,600,96,42,37,5,29,25,25,1,0
+Jul-Aug,8,182.0,744,31,744,744,744,744,0,40,40,0,31,31,0,1,0
+Jun,6,181.0,720,30,720,720,720,720,0,39,39,0,30,30,0,1,0
+May,5,183.0,744,31,744,744,744,744,0,53,53,0,31,31,0,1,0

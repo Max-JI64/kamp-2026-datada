@@ -1,0 +1,68 @@
+{
+  "completed_at": "2026-09-29T15:23+09:00",
+  "normal_days": 241,
+  "scenario_rows": 1446,
+  "high_days": 105,
+  "period_counts": {
+    "Jan-Jun": {
+      "days": 181,
+      "high_days": 69,
+      "profiles": 67
+    },
+    "Jul-Aug": {
+      "days": 60,
+      "high_days": 36,
+      "profiles": 59
+    }
+  },
+  "summary_rows": 108,
+  "legacy_summary_rows_reproduced": 24,
+  "monthly_scenario_rows": 48,
+  "calendar_tie_rows": 100,
+  "zero_percent_daily_rows_reproduced": 482,
+  "zero_percent_months_reproduced": 16,
+  "positive_budget_date_sets": {
+    "replaced": 26,
+    "unchanged": 6
+  },
+  "max_original_date_only_miss": 6.976474358974372,
+  "excluded_dates": [
+    {
+      "date": "2021-07-13",
+      "invalid_hours": 24,
+      "invalid_slots": 96,
+      "invalid_peak": 190.0
+    },
+    {
+      "date": "2021-07-15",
+      "invalid_hours": 24,
+      "invalid_slots": 96,
+      "invalid_peak": 202.0
+    }
+  ],
+  "zero_policy_affected_rows": 2,
+  "zero_policy_max_gap": 2.0781395348837215,
+  "optimization_executed": false,
+  "model_training_executed": false,
+  "alert_evaluation_executed": false,
+  "input_sha256": {
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "analysis/jsw/tables/09.28_044_redistribution.csv": "8a001c6cc3a93f7b6670fd222e9b9e40b80ca4042fd33f273e62315b1031c23b",
+    "analysis/jsw/tables/09.28_044_daily_concentration.csv": "751e20f15e1276a29ee5eab7fa979c3bfbc8545deec7c059bd51a36823602365",
+    "analysis/jsw/tables/09.28_044_scenario_summary.csv": "bfa9d89a8c99f2c07924be7717e4166ca8d371146b1b44bdf61453536e908890",
+    "analysis/jsw/tables/09.28_044_monthly_max.csv": "b3a6d463e925a3b97ca77bff2b51fd8765ba31df9d7652ec0509f21fe3275f14",
+    "EDA/jsw/tables/09.28_024_daily_concentration.csv": "db8586bb4f347389ce7a7c5faf5d149ceb85b1c4b4ad8caba88e7c8e12df34f2",
+    "EDA/jsw/tables/09.28_024_monthly_max_ties.csv": "a3f20ddb65b2a8a7636d1172fe6305b0584dcc40b456791877a9578d28790d98",
+    "EDA/jsw/tables/09.28_024_monthly_maxima.csv": "e87ed09eb3b00b108886a004fe3cb05530a5612dd0e2124b7b27b8cb2988de57",
+    "EDA/jsw/tables/09.28_024_invalid_time_candidates.csv": "16cfc668a4fef26f609258c5c665233fb9a6fed26acf7423db8d5a22a023308f",
+    "EDA/jsw/tables/09.23_011_daily_profile_summary.csv": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c"
+  },
+  "output_sha256": {
+    "09.28_045_excluded_date_sensitivity.csv": "51616e8bc8d4c6640c80d23f954cf775e4baaa47e813cf69fa2499e2ad92ff2d",
+    "09.28_045_group_summary.csv": "543411cf7fd1a2d787fe71ed4a567fd0e6b6e37e9f83d821a0c374b18664ef4a",
+    "09.28_045_monthly_max.csv": "89eeb27888f77a11923d09c29385beb268a75fb7f143f8d57f339ad1be750011",
+    "09.28_045_monthly_max_ties.csv": "01c139437cba8a9c4c638e155c99c2a266a74d465d8d03c09dc3430b533802ea",
+    "09.28_045_zero_policy_difference.csv": "4bd55186695cedd5709d9e43b0525bb5f4f4d761955382f47665f79d937b9127"
+  },
+  "frozen_sha256": "0e710a37604343314217b1eff4bc6194cb44298c7279440eb230abc6d3ea59a9"
+}

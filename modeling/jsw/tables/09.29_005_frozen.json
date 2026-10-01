@@ -1,0 +1,59 @@
+{
+  "time": "2026-09-29T16:03:53+09:00",
+  "input_sha256": {
+    "EDA/jsw/tables/09.23_011_daily_profile_summary.csv": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+    "EDA/jsw/tables/09.28_024_daily_max_ties.csv": "11d8dad795fd704c1aa793b3c9a71a628ce12606801708c8b6f950b780b52641",
+    "EDA/jsw/tables/09.28_024_monthly_max_ties.csv": "a3f20ddb65b2a8a7636d1172fe6305b0584dcc40b456791877a9578d28790d98",
+    "analysis/jsw/tables/09.28_042_hour_event_comparison.csv": "ecc0c9db63174034752b4da6a9bfa6475104a9c945dc88f0d8505a473c4cfbf9",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "data/processed/jsw/09.26_021_coverage_manifest.csv": "85347e58a70fa83d6679b62f76d326dcbd298dbded0399d18a8a5777033b1973",
+    "modeling/jsw/predictions/09.26_001_development_predictions.csv": "c55ce8a9d41ab0ab372e03fee6e3660856afbca05c3ceb6a12655021e0e028fd",
+    "modeling/jsw/predictions/09.26_001_largest_errors.csv": "570fbf429a78faa40c9d3c79d50d478733047dbf9fcc84536def5c44eb3babcd",
+    "modeling/jsw/predictions/09.26_001_review_predictions.csv": "813de18365f4e14330b362510c21b0ae9e51f255b7f2d29f77acc89adfb48f4b",
+    "modeling/jsw/predictions/09.26_002_development_predictions.csv": "da571a4d3dcecee91b10d3f76a34fc853b661e684e82202042ad474b0cde2465",
+    "modeling/jsw/predictions/09.26_003_development_predictions.csv": "2d590d470d1d7a069fac44b679f3a6bfb2f4123443236df34b2f4aa4565ba60a",
+    "modeling/jsw/tables/09.26_001_development_by_month.csv": "1760bc13e406c813a65688a65200770692debf4722ee19e41b202a7788eb6481",
+    "modeling/jsw/tables/09.26_001_development_coverage.csv": "61c2ae88966f251c8734491ba63170a35e8ccd36c256b81926453f7cd1c91ca8",
+    "modeling/jsw/tables/09.26_001_development_peak_states.csv": "689e2687cffb5dd9bf16c145f760fe6051c684432d65887c9056de99fd76563a",
+    "modeling/jsw/tables/09.26_001_development_scores.csv": "354fc21329117140c85fa47ba62f7944813da7e167d7e6a71465ddf36b85ba17",
+    "modeling/jsw/tables/09.26_001_facts.json": "69024eb696c7266af7ed5f665b1b7746252c03c24c0940b099bc7cb8627ead4c",
+    "modeling/jsw/tables/09.26_001_feature_catalog.csv": "f594e72e647805d6a212380a8d5e5544361c7cef86b3d6da90045055f0da9a09",
+    "modeling/jsw/tables/09.26_001_frozen.json": "77095ae11e9a003162898a47be6d53e7fa743cc175bcf97b875cb937813a0665",
+    "modeling/jsw/tables/09.26_001_review_by_hour.csv": "68ee6e0c2463ea230f0f373018cffbb0f898fe6f3c726c431535acaab3d5bd5c",
+    "modeling/jsw/tables/09.26_001_review_by_month.csv": "8821f98c03362541a59025b2eab9f83998a03be6cac7a7853cbe140800bbbcb4",
+    "modeling/jsw/tables/09.26_001_review_by_peak_state.csv": "c88b350b4d22c60bbf831f3bbef3503a4c8ac83e8eec9ceb04ab304dbfb2d2f3",
+    "modeling/jsw/tables/09.26_001_review_scores.csv": "d234552d910890030b37e2582f7d32a8934ebd35390327cc7448064dd8de4c97",
+    "modeling/jsw/tables/09.26_001_review_zero_windows.csv": "2f42d58288d0b8506246e6663f162f892ed0a06fef790f16357a505df73d30a3",
+    "modeling/jsw/tables/09.26_001_selected_comparison.csv": "de12ef2e1b266ace5e9bf18a660b1574377265f0a27625a650e0379b0415309b",
+    "modeling/jsw/tables/09.26_001_training_context.csv": "f55d68a15b507ce20ec02578d8e68ecfc3df268c4efbe4cf9ab0be39a189fd50",
+    "modeling/jsw/tables/09.26_001_zero_target_scores.csv": "31a7eb5c1c2f08fc6c7106364f5b216d7288d9f747ce3ae660c0d470cd0f58bf",
+    "modeling/jsw/tables/09.26_002_frozen.json": "b9b976a0935810a97e7ac99579a6a5f02a0030721e0137127561f8acc83f4433",
+    "modeling/jsw/tables/09.26_002_scores.csv": "fb45b6805df4d9954875d99e6361e99b30ef7783c8b7390d05744a39db8e5fd3",
+    "modeling/jsw/tables/09.26_003_coverage.csv": "c75379eb37bdb2cea893e8d6fa3c0357a6542c26912abe0609f67fa241a4b47f",
+    "modeling/jsw/tables/09.26_003_frozen.json": "7bf05d06b0a69709eac620f6e7982c1aad43bf8b22d8abf8c14adbdd5242b98c",
+    "modeling/jsw/tables/09.26_003_scores.csv": "2e6ff3a483dcc42e34fc2c35b510caaeb247805b68b0c0f032295ff0da9951ab",
+    "modeling/jsw/tables/09.26_004_by_high_state.csv": "6aafc96821171e4679230fa292b09e3ba532f394e9cc8a164055677f68df46ad",
+    "modeling/jsw/tables/09.26_004_selection_scores.csv": "9e351d936f2a2e881aecff1e222d44497c7e83d8a91fcb8ef551945561889a34"
+  },
+  "training": "none; saved predictions only",
+  "periods": {
+    "May": [
+      "2021-05-01",
+      "2021-06-01"
+    ],
+    "Jun": [
+      "2021-06-01",
+      "2021-07-01"
+    ],
+    "Jul-Aug": [
+      "2021-07-01",
+      "2021-09-01"
+    ]
+  },
+  "state_threshold": "preserve saved stage threshold; high means >=",
+  "event_contract": "maximal exact-hour high runs within saved evaluation stage; unknown boundaries retained",
+  "daily_peak": "E024 full normal day; deduplicate tied slots to hours; retain every tied hour",
+  "profile": "exact full-day 96 values, diagnostic only; observed and eligible-contributed libraries before cutoff",
+  "paired_difference": "HGB minus lag1; date/week and leave-one-week-out descriptive sensitivity",
+  "partial_days": "complete/partial/no saved prediction dates separated; full-day all capture requires every original peak hour available"
+}

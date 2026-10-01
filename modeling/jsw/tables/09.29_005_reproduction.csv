@@ -1,0 +1,13 @@
+﻿file,groups,columns,max_abs_difference
+modeling/jsw/tables/09.26_001_development_scores.csv,14,"n,mae,rmse,bias,under_rate,mean_shortfall",3.552713678800501e-15
+modeling/jsw/tables/09.26_001_development_by_month.csv,28,"n,mae,rmse,bias,under_rate,mean_shortfall",7.105427357601002e-15
+modeling/jsw/tables/09.26_001_review_scores.csv,14,"n,mae,rmse,bias,under_rate,mean_shortfall",5.329070518200751e-15
+modeling/jsw/tables/09.26_001_review_by_month.csv,28,"n,mae,rmse,bias,under_rate,mean_shortfall",3.552713678800501e-15
+modeling/jsw/tables/09.26_001_review_by_peak_state.csv,42,"n,mae,rmse,bias,under_rate,mean_shortfall",7.105427357601002e-15
+modeling/jsw/tables/09.26_001_review_by_hour.csv,336,"n,mae,rmse,bias,under_rate,mean_shortfall",7.105427357601002e-15
+modeling/jsw/tables/09.26_001_review_zero_windows.csv,28,"n,mae,rmse,bias,under_rate,mean_shortfall",5.329070518200751e-15
+modeling/jsw/tables/09.26_001_development_peak_states.csv,24,"n,mae,bias,under_rate,actual_mean,prediction_mean",2.842170943040401e-14
+modeling/jsw/tables/09.26_001_zero_target_scores.csv,4,"n,mae,bias,under_rate,actual_mean,prediction_mean",3.552713678800501e-15
+modeling/jsw/tables/09.26_002_scores.csv,24,"n,mae,bias,under_n,under_rate,shortfall_per_hour,shortfall_when_under,over_n,over_rate,over_per_hour,over_when_over",1.4210854715202004e-14
+modeling/jsw/tables/09.26_004_selection_scores.csv,15,"n,high_actual_n,not_high_actual_n,selected_n,hit_n,miss_n,false_selection_n,recall,precision",5.551115123125783e-17
+modeling/jsw/tables/09.26_004_by_high_state.csv,30,"actual_n,hit_n,miss_n",0.0

@@ -1,0 +1,13 @@
+﻿method,budget,decision,delta_pre_start_capture,delta_raw_warning_hours,delta_new_notifications,delta_false_bundles,gain_nonworse_both_months,burden_nonworse_both_months
+hgb_calendar,1,reference_keep,0,0,0,0,True,True
+lag1,1,reject_as_start_warning_replacement,-27,66,20,9,False,False
+hgb_lag1_high_blend05,1,reject_as_start_warning_replacement,-3,16,2,-3,False,False
+hgb_q75_calendar,1,tradeoff_peak_review_candidate,7,5,6,5,True,False
+hgb_calendar,2,reference_keep,0,0,0,0,True,True
+lag1,2,reject_as_start_warning_replacement,-33,40,10,4,False,False
+hgb_lag1_high_blend05,2,reject_as_start_warning_replacement,-1,37,4,-1,False,False
+hgb_q75_calendar,2,tradeoff_peak_review_candidate,7,25,9,-1,True,False
+hgb_calendar,4,reference_keep,0,0,0,0,True,True
+lag1,4,reject_as_start_warning_replacement,-34,25,-1,1,False,False
+hgb_lag1_high_blend05,4,reject_as_start_warning_replacement,-1,27,-9,-2,False,False
+hgb_q75_calendar,4,tradeoff_peak_review_candidate,1,26,-5,-6,True,False

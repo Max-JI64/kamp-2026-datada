@@ -1,0 +1,15 @@
+{
+  "time": "2026-09-29T16:47:12+09:00",
+  "python": "3.13.1",
+  "exit_code_on_success": 0,
+  "protected_sha256_checked": 653,
+  "prediction_rows_checked": 28080,
+  "unique_target_hours": 2808,
+  "paired_rows_checked": 22464,
+  "score_groups_checked": 710,
+  "daily_peak_date_rows_checked": 726,
+  "event_rows_checked": 786,
+  "q75_review_predictions_reconstructed_from_source": 1344,
+  "method": "independent csv/source-key loops, source-based feature reconstruction, serialized q75 inference; no M006 imports",
+  "local_links_checked": 52
+}

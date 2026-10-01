@@ -1,0 +1,46 @@
+{
+  "started_from_frozen_at": "2026-09-29T16:34:06+09:00",
+  "completed_at": "2026-09-29T16:34:33+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "sklearn": "1.7.1",
+  "joblib": "1.5.1",
+  "new_fits": 1,
+  "new_fit_method": "hgb_q75_calendar",
+  "train_n": 4176,
+  "review_n": 1344,
+  "development_prediction_rows": 8784,
+  "review_prediction_rows": 8064,
+  "protected_files_unchanged": 653,
+  "model_sha256": "212a06467b9af6c14425d1d4afb1b0d8f357ce1db7e704d52351b45cddbfd1d8",
+  "frozen_sha256": "7803e886d04f989b6ce31f7aeaf52788601cb12a56b7a0abf30dcaf5e448ec52",
+  "model_reload_predictions_exact": true,
+  "successful_child_exit_code": 0,
+  "decisions": [
+    {
+      "method": "hgb_lag1_high_blend05",
+      "dev_primary_improves": true,
+      "dev_month_primary_nonworse": true,
+      "dev_date_week_robust": true,
+      "dev_month_mae_nonworse": false,
+      "review_month_primary_improves": true,
+      "review_month_mae_nonworse": false,
+      "decision": "peak_only_for_M007",
+      "dev_leaveout_delta_shortfall_min": -1.4967891234488797,
+      "dev_leaveout_delta_shortfall_max": -0.7935898391611375
+    },
+    {
+      "method": "hgb_q75_calendar",
+      "dev_primary_improves": true,
+      "dev_month_primary_nonworse": true,
+      "dev_date_week_robust": true,
+      "dev_month_mae_nonworse": false,
+      "review_month_primary_improves": true,
+      "review_month_mae_nonworse": true,
+      "decision": "peak_only_for_M007",
+      "dev_leaveout_delta_shortfall_min": -1.0616970595257527,
+      "dev_leaveout_delta_shortfall_max": -0.6409390773088433
+    }
+  ]
+}
