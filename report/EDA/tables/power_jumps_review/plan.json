@@ -1,0 +1,15 @@
+{
+  "previous_evidence": "POT found a possible absolute tail region, not a unique physical boundary. User now asks about 60→90 and 100→140 regardless of absolute level.",
+  "question": "Can adjacent 15-minute slot changes describe sudden rises simply, and do these rises immediately fall back?",
+  "scope": "Jan-Aug 2021 valid hours, whole-period descriptive EDA; no chronological train/test split.",
+  "definition": "delta = current slot - immediately preceding slot; gaps never bridged. The four columns are ordered interval values, not instantaneous sensor readings.",
+  "candidate_rule": "One-sided modified Z > 3.5 on signed adjacent changes. Threshold C = median(delta) + 3.5 * MAD(delta) / 0.6745; also require positive delta.",
+  "selection_reason": "Published potential-outlier labeling convention, not a desired percentage, an electricity standard, or a calibrated false-alarm guarantee. Mixture/dependence can make it inappropriate.",
+  "validation": "Inspect distribution and concentration by clock slot; compare k=3/3.5/4 and profile-weight sensitivity. Never tune for a desired flagged rate.",
+  "immediate_spike": "current-prev>C AND current-next>C with both neighbors adjacent; this is a single-slot rise-and-return, not every possible peak shape. Uses subsequent observation, retrospective only.",
+  "sources": [
+    "https://itl.nist.gov/div898/handbook/eda/section3/eda35h.htm",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.peak_prominences.html"
+  ],
+  "manuscript_edited": false
+}

@@ -1,0 +1,9 @@
+﻿population,variable,groups,positive,zero,negative,median_difference
+all,강수량,230,106,21,103,0.0
+all,기온,480,222,78,180,0.0
+all,습도,479,212,61,206,0.0
+all,풍속,481,225,76,180,0.0
+positive,강수량,88,34,4,50,-1.25
+positive,기온,193,109,11,73,1.5
+positive,습도,193,101,10,82,0.5
+positive,풍속,193,99,14,80,0.5

@@ -1,0 +1,8 @@
+﻿month,candidate_hours,days,next_exact_hour_pairs,next_first_high_pairs,next_any_high_pairs,median_current_last_value,median_next_first_value
+1,4,4,4,0,2,189.5,165.0
+2,4,3,4,0,0,189.5,175.0
+3,6,5,6,0,2,189.5,175.0
+5,1,1,1,0,0,192.0,183.0
+6,6,5,6,0,2,189.5,175.0
+7,14,11,14,6,8,190.0,176.5
+8,8,5,8,2,5,192.0,176.5

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "Restarted EDA first section only",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "checked_rows": 48,
+  "checked_numeric_columns": 3,
+  "groups": {
+    "weekday": {
+      "days": 171,
+      "production_peak_hour": 19,
+      "power_peak_hour": 8
+    },
+    "weekend": {
+      "days": 70,
+      "production_peak_hour": 7,
+      "power_peak_hour": 2
+    }
+  },
+  "figure": "restart_01_daily_pattern_clean.png",
+  "bytes": 173967,
+  "figure_sha256": "a2ef6ccb1ba0bd8f96cc00392f53ab983f144837924d7f8ed73ea1a041f68ec7",
+  "font": "Malgun Gothic",
+  "warnings": [],
+  "image_analysis_performed": false,
+  "visual_review": false,
+  "script_sha256": "cb42d4d56fe1f6f28c5b05458ad03924a0ca2a88dff4282a94b2c3be8cce178b"
+}

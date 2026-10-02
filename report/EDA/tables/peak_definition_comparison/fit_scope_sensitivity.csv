@@ -1,0 +1,16 @@
+﻿scope,method,fit_n,k,threshold,monotone,all_n
+Jan-Jun,GMM,4344,4.0,138.45000000000002,True,1797
+Jan-Jun,KMeans,4344,3.0,141.4,True,1753
+Jan-Jun,Q90,4344,,176.0,True,729
+Jan-Jun,Q95,4344,,182.0,True,455
+Jan-Jun,Q99,4344,,194.0,True,139
+Jan-Aug,GMM,5784,4.0,140.9,False,1763
+Jan-Aug,KMeans,5784,3.0,143.5,True,1696
+Jan-Aug,Q90,5784,,179.0,True,598
+Jan-Aug,Q95,5784,,186.0,True,318
+Jan-Aug,Q99,5784,,201.0,True,65
+Jan-Jun_unique_daily_profiles,GMM,1608,4.0,136.85,True,1811
+Jan-Jun_unique_daily_profiles,KMeans,1608,3.0,141.25,True,1753
+Jan-Jun_unique_daily_profiles,Q90,1608,,176.0,True,729
+Jan-Jun_unique_daily_profiles,Q95,1608,,183.0,True,416
+Jan-Jun_unique_daily_profiles,Q99,1608,,195.0,True,125

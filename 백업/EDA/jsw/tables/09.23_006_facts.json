@@ -1,0 +1,15 @@
+{
+  "time": "2026-09-23T09:00:04+09:00",
+  "valid_rows": 5784,
+  "strata_compared": 120,
+  "strata_positive_difference": 60,
+  "strata_zero_difference": 11,
+  "strata_negative_difference": 49,
+  "median_stratum_difference": 0.25,
+  "repeated_profiles": 45,
+  "profiles_with_different_production_totals": 40,
+  "fixed_power_groups": 1080,
+  "fixed_power_groups_different_production": 880,
+  "pandas": "3.0.1",
+  "numpy": "2.2.6"
+}

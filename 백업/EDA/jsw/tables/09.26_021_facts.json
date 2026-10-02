@@ -1,0 +1,52 @@
+{
+  "time": "2026-09-26T16:52:16+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "valid_days": 241,
+  "segments": 3,
+  "unusable_hours": 48,
+  "all_power_zero_rows": 17,
+  "coverage": [
+    {
+      "history_hours": 1,
+      "normal_target_rows": 5784,
+      "exact_lag_available": 5781,
+      "complete_past_available": 5781,
+      "incomplete_past": 3,
+      "complete_share": 0.9994813278008299,
+      "target_and_history_touches_all_power_zero": 18,
+      "complete_without_zero_window": 5763
+    },
+    {
+      "history_hours": 24,
+      "normal_target_rows": 5784,
+      "exact_lag_available": 5712,
+      "complete_past_available": 5712,
+      "incomplete_past": 72,
+      "complete_share": 0.9875518672199171,
+      "target_and_history_touches_all_power_zero": 41,
+      "complete_without_zero_window": 5671
+    },
+    {
+      "history_hours": 168,
+      "normal_target_rows": 5784,
+      "exact_lag_available": 5568,
+      "complete_past_available": 5424,
+      "incomplete_past": 360,
+      "complete_share": 0.9377593360995851,
+      "target_and_history_touches_all_power_zero": 78,
+      "complete_without_zero_window": 5346
+    }
+  ],
+  "manifest_shape": [
+    5784,
+    16
+  ],
+  "manifest_relative_path": "../../data/processed/jsw/09.26_021_coverage_manifest.csv",
+  "scope_note": "Recorded key offsets only; physical time anchor and collection latency unconfirmed",
+  "model_fitted": false,
+  "prediction_generated": false
+}

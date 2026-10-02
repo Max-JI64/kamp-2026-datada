@@ -1,0 +1,4 @@
+# Verified with regular CPython 3.13.1; Korean font required for figures.
+numpy==2.2.6
+pandas==3.0.1
+matplotlib==3.10.0

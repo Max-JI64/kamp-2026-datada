@@ -1,0 +1,7 @@
+﻿context,weighting,hours,high_15_count,high_60_count,net_60_minus_15_median,net_positive_hours,net_negative_hours,net_zero_hours,net_positive_share
+all,observed_hours,5784,64,194,1.0,2935,1938,911,0.5074343015214384
+all,unique_profile_hour,3024,50,140,0.0,1493,1032,499,0.4937169312169312
+1_6,observed_hours,4344,14,84,1.0,2244,1436,664,0.5165745856353591
+1_6,unique_profile_hour,1608,5,37,1.0,818,538,252,0.5087064676616916
+7_8,observed_hours,1440,50,110,0.0,691,502,247,0.4798611111111111
+7_8,unique_profile_hour,1416,45,103,0.0,675,494,247,0.4766949152542373

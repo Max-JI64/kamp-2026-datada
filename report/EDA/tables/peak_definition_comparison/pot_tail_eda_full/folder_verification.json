@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "compiled_scripts": [
+    "analyze_pot_tail.py",
+    "check_peak_iqr.py",
+    "compare_fixed_cluster_counts.py",
+    "compare_peak_definitions.py",
+    "eda_analysis.py",
+    "eda_daily_pattern.py",
+    "eda_external_conditions.py",
+    "eda_figures.py",
+    "eda_peak_conditions.py",
+    "eda_peak_distribution.py",
+    "eda_peak_visual_check.py",
+    "eda_story_figures.py",
+    "eda_variable_relations.py",
+    "plot_cluster_histograms_3_to_7.py",
+    "plot_fixed_cluster_counts.py",
+    "plot_peak_comparison.py",
+    "plot_pot_tail.py",
+    "summarize_pot_tail.py",
+    "verify_eda.py",
+    "verify_external_conditions.py",
+    "verify_peak_comparison.py",
+    "verify_restart_peak_document.py"
+  ],
+  "active_analysis_scope": "Jan-Aug 5784 valid hours",
+  "source_matches_four_slot_hourly_max": true,
+  "prior_pot_scope": "pot_tail Jan-Jun is superseded for current EDA",
+  "manuscript_edited": false
+}

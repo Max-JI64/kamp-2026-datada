@@ -1,0 +1,9 @@
+﻿date,high_hours,hour_min,hour_max,peak_max,mean_power_median,whole_day_zero_production,profile_id,distinct_episodes,prev_positive_production_hours,next_positive_production_hours,min_distance_to_positive_record,max_distance_to_positive_record
+20210117,5,8,14,197,183.0,False,P014,1,0,0,2,8
+20210124,2,8,13,190,176.5,True,P019,1,0,0,19,21
+20210130,2,8,9,193,179.5,False,P023,1,1,0,1,2
+20210301,2,8,10,195,175.0,True,P024,1,0,0,21,23
+20210314,4,8,15,204,182.0,True,P011,1,0,0,12,17
+20210321,6,8,14,208,189.0,True,P035,1,0,0,18,24
+20210328,5,8,15,198,182.0,True,P036,1,0,0,16,23
+20210730,2,17,18,190,165.0,False,P093,1,1,0,1,2

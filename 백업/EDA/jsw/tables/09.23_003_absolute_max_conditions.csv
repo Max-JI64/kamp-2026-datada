@@ -1,0 +1,5 @@
+﻿month,hour,production_level,rows,max_value,mean_production
+1,8,positive_low,1,222,364.0
+3,8,positive_high,1,222,1644.0
+6,8,positive_high,1,222,893.0
+7,11,positive_high,1,222,1280.0

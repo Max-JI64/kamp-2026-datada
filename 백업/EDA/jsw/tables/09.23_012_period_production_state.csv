@@ -1,0 +1,5 @@
+﻿period,production_state,days,full_day_repeated_days,median_daily_distinct_quarter_values,median_hour_range_across_days,mean_hour_tuple_repeat_share,mean_hour_tuple_repeat_state_share,mean_quarter_slot_repeat_share,mean_quarter_slot_repeat_state_share
+Jan-Jun,positive,137,122,58.0,16.5,0.24391727493917273,0.22354014598540145,0.5678223844282239,0.5327706812652068
+Jan-Jun,zero,44,36,7.0,1.0,0.6714015151515151,0.618371212121212,0.8513257575757577,0.7305871212121212
+Jul-Aug,positive,44,2,60.0,18.0,0.05871212121212121,0.047348484848484855,0.4637784090909091,0.4159564393939394
+Jul-Aug,zero,16,0,7.0,1.0,0.23177083333333334,0.20572916666666666,0.76953125,0.6875

@@ -1,0 +1,117 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "hours": 5784,
+  "slot_values": 23136,
+  "valid_adjacent_pairs": 23133,
+  "segments": 3,
+  "time_invalid_hours_excluded": 48,
+  "timestamp_convention": "Display each labeled interval at its start (0,15,30,45 minutes). This is a plotting convention, not verification of physical sensor timestamps.",
+  "median_change": 0.0,
+  "mad_change": 4.0,
+  "candidate_rise_cut": 20.756115641215715,
+  "integer_minimum_rise": 21,
+  "rise_count": 1485,
+  "rise_rate": 0.06419400855920114,
+  "single_slot_spikes": 12,
+  "rise_with_next_observed": 1485,
+  "category_counts_valid_pairs": {
+    "neither": 21143,
+    "rise_only": 1403,
+    "high_only": 505,
+    "both": 82
+  },
+  "nonpositive_previous_pairs": 72,
+  "quantiles_signed_change": {
+    "0": -159.0,
+    "0.01": -47.0,
+    "0.05": -21.0,
+    "0.25": -4.0,
+    "0.5": 0.0,
+    "0.75": 3.0,
+    "0.95": 25.0,
+    "0.99": 43.0,
+    "1": 154.0
+  },
+  "top_rise_slots": [
+    {
+      "slot": 52,
+      "valid_pairs": 241,
+      "rises": 156,
+      "spikes": 0,
+      "median_delta": 35.0,
+      "rate": 0.6473029045643154
+    },
+    {
+      "slot": 41,
+      "valid_pairs": 241,
+      "rises": 152,
+      "spikes": 0,
+      "median_delta": 26.0,
+      "rate": 0.6307053941908713
+    },
+    {
+      "slot": 4,
+      "valid_pairs": 241,
+      "rises": 151,
+      "spikes": 0,
+      "median_delta": 25.0,
+      "rate": 0.6265560165975104
+    },
+    {
+      "slot": 70,
+      "valid_pairs": 241,
+      "rises": 148,
+      "spikes": 0,
+      "median_delta": 33.0,
+      "rate": 0.6141078838174274
+    },
+    {
+      "slot": 30,
+      "valid_pairs": 241,
+      "rises": 134,
+      "spikes": 0,
+      "median_delta": 23.0,
+      "rate": 0.5560165975103735
+    }
+  ],
+  "boundary_counts": [
+    {
+      "boundary": false,
+      "pairs": 17352,
+      "rises": 1062
+    },
+    {
+      "boundary": true,
+      "pairs": 5781,
+      "rises": 423
+    }
+  ],
+  "sensitivity": [
+    {
+      "k": 3,
+      "cut": 17.790956263899186,
+      "n": 1776,
+      "rate": 0.07677344053948904
+    },
+    {
+      "k": 3.5,
+      "cut": 20.756115641215715,
+      "n": 1485,
+      "rate": 0.06419400855920114
+    },
+    {
+      "k": 4,
+      "cut": 23.721275018532246,
+      "n": 1259,
+      "rate": 0.054424415337396795
+    }
+  ],
+  "profile_sensitivity": {
+    "unique_days": 126,
+    "within_day_all_cut": 20.756115641215715,
+    "within_day_unique_cut": 15.567086730911786
+  },
+  "verification": "passed: independently reconstructed all changes from original four-column values; no gap crossing, no duplicate hours; source hash matched",
+  "decision": "Descriptive candidate for large upward changes, not a confirmed anomaly/physical peak threshold. Compare high-level and rising events separately; no p95 endorsement.",
+  "manuscript_edited": false
+}

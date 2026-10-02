@@ -1,0 +1,15 @@
+{
+  "time": "2026-09-23T16:56:09+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "zero_production_rows": 2507,
+  "zero_production_days": 213,
+  "zero_production_positive_mean_rows": 2490,
+  "zero_production_zero_mean_rows": 17,
+  "high_quarter_187_rows": 28,
+  "high_quarter_187_days": 8,
+  "episode_count": 215,
+  "longest_episode_hours": 230,
+  "pandas": "3.0.1"
+}

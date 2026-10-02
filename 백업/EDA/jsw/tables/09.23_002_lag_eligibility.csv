@@ -1,0 +1,4 @@
+﻿lag_hours,target_rows,exact_lag_pairs,missing_lag
+1,6120,6117,3
+24,6120,6048,72
+168,6120,5904,216

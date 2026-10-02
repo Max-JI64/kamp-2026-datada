@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-10-02T00:39:40+09:00",
+  "status": "passed",
+  "dates_reconstructed": 241,
+  "groups": {
+    "1": 7,
+    "2": 67,
+    "0": 164,
+    "3": 3
+  },
+  "primary_tests_verified": 4,
+  "pairwise_tests_verified": 12,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "profile_weights_sum_one": true
+}

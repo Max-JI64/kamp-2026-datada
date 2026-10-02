@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "fit_period": "2021-01-01..2021-06-30",
+  "fit_n": 4344,
+  "fixed_application_period": "2021-07-01..2021-08-31",
+  "application_n": 1440,
+  "application_caveat": "Previously explored period, not a pristine independent test",
+  "rules": {
+    "Q90": {
+      "threshold": 176.0,
+      "operator": ">=",
+      "kind": "quantile"
+    },
+    "Q95": {
+      "threshold": 182.0,
+      "operator": ">=",
+      "kind": "quantile"
+    },
+    "Q99": {
+      "threshold": 194.0,
+      "operator": ">=",
+      "kind": "quantile"
+    },
+    "Legacy187": {
+      "threshold": 187.0,
+      "operator": ">=",
+      "kind": "legacy_all_scope_reference"
+    },
+    "IQR": {
+      "threshold": 351.0,
+      "operator": ">",
+      "kind": "outlier_fence"
+    },
+    "GMM": {
+      "threshold": 138.45000000000002,
+      "operator": "highest_component",
+      "kind": "load_group",
+      "monotone": true,
+      "intervals": [
+        [
+          138.45000000000002,
+          230.0
+        ]
+      ]
+    },
+    "KMeans": {
+      "threshold": 141.4,
+      "operator": "highest_component",
+      "kind": "load_group",
+      "monotone": true,
+      "intervals": [
+        [
+          141.4,
+          230.0
+        ]
+      ]
+    },
+    "ReferenceMax": {
+      "threshold": 222.0,
+      "operator": ">=",
+      "kind": "observed_max_reference_not_bill"
+    },
+    "NewRecord": {
+      "threshold": 222.0,
+      "operator": ">",
+      "kind": "observed_max_reference_not_bill"
+    },
+    "DailyMax": {
+      "threshold": null,
+      "operator": "equals_block_max_all_ties",
+      "kind": "retrospective_block_max_not_fixed_threshold"
+    },
+    "MonthlyMax": {
+      "threshold": null,
+      "operator": "equals_block_max_all_ties",
+      "kind": "retrospective_block_max_not_fixed_threshold"
+    }
+  },
+  "selected_gmm_k": 4,
+  "selected_kmeans_k": 3,
+  "gmm_k_candidates": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "kmeans_k_candidates": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "bootstrap_kind": "40 calendar-week block resamples, refit and reselect k; descriptive stability, not confidence interval",
+  "unique_train_daily_profiles": 67,
+  "train_days": 181,
+  "actual_bill_threshold": "not identified from provided data; seasonal tariff is constant within month",
+  "cost_proxy_caveat": "reference maximum attainment/new records and monthly maxima are not actual bill increases",
+  "method_references": [
+    "https://scikit-learn.org/stable/auto_examples/mixture/plot_gmm_selection.html",
+    "https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html"
+  ],
+  "criteria": "No preferred peak fraction. Compare separation, stability, scope sensitivity, and task meaning. No supervised truth labels.",
+  "manuscript_edited": false
+}

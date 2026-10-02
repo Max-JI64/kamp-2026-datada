@@ -1,0 +1,21 @@
+{
+  "time": "2026-09-23T08:45:56+09:00",
+  "sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope_rows": 5832,
+  "valid_time_rows": 5784,
+  "reserved_september_rows": 336,
+  "positive_production_quartiles": [
+    114.0,
+    498.0,
+    1180.0
+  ],
+  "descriptive_high_threshold": 187.0,
+  "complete_days": 241,
+  "distinct_daily_mean_profiles": 125,
+  "days_in_repeated_profiles": 161,
+  "largest_identical_profile_group": 15,
+  "zero_production_high_rows": 28,
+  "zero_production_high_dates": 8,
+  "pandas": "3.0.1",
+  "numpy": "2.2.6"
+}

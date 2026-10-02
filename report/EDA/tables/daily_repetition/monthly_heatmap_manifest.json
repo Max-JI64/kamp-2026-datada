@@ -1,0 +1,109 @@
+{
+  "question": "Does month comparison add information beyond the full-period weekday/weekend curve?",
+  "previous_evidence": "Monthly small-multiple curves show differences, but occupy eight panels. User requests assessment and an eight-row monthly heatmap if informative.",
+  "decision": "Retain a compact monthly comparison candidate; replace eight-panel monthly line figure as preferred candidate with two eight-row summary heatmaps.",
+  "reasons": [
+    "Weekday 08 medians: June 171.5, July 187.5.",
+    "Weekend 10 medians: January 85.5, March 91.5, February 24, July 23, August 21. Whole-period curves conceal this heterogeneity."
+  ],
+  "aggregation": "Median over dates separately for each month, day type and hour; CSV hourly 平均 used. Same aggregation as preceding monthly lines.",
+  "rows_per_panel": 8,
+  "columns_per_panel": 24,
+  "checked_cells": 384,
+  "color_range": [
+    0,
+    210
+  ],
+  "month_group_date_counts": [
+    {
+      "month": 1,
+      "group": "weekday",
+      "n": 21
+    },
+    {
+      "month": 1,
+      "group": "weekend",
+      "n": 10
+    },
+    {
+      "month": 2,
+      "group": "weekday",
+      "n": 20
+    },
+    {
+      "month": 2,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 3,
+      "group": "weekday",
+      "n": 23
+    },
+    {
+      "month": 3,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 4,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 4,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 5,
+      "group": "weekday",
+      "n": 21
+    },
+    {
+      "month": 5,
+      "group": "weekend",
+      "n": 10
+    },
+    {
+      "month": 6,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 6,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 7,
+      "group": "weekday",
+      "n": 20
+    },
+    {
+      "month": 7,
+      "group": "weekend",
+      "n": 9
+    },
+    {
+      "month": 8,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 8,
+      "group": "weekend",
+      "n": 9
+    }
+  ],
+  "limit": "Weekend monthly summaries contain only 8-10 dates and may shift with date composition. Descriptive period differences, not proof of a seasonal/weather cause or model gain.",
+  "next_or_stop": "Current presentation question answered: preserve monthly differences compactly. Do not add further monthly plots without a new question. Production composition and other-variable explanations belong to separate analysis.",
+  "source_file": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\tables\\daily_repetition\\monthly_hourly_distribution.csv",
+  "source_sha256": "d39d0a9a141b5fdb7948178f33fb36b5e79fafdc49f05e3feec26b508e9be5a4",
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\figures\\daily_repetition\\06_monthly_power_heatmap.png",
+  "warnings": [],
+  "visual_review": true,
+  "visual_review_method": "One figure inspected at 50 percent. Two panels, eight rows each, common colorbar, axes and labels legible; no arrows, cell text or date-level rows.",
+  "manuscript_sha256": "87a674e5468791bf324ae65165a46b4d25f88e654ee45c18bf90a7a0237fe09c",
+  "manuscript_edited": false
+}

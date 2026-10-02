@@ -1,0 +1,18 @@
+{
+  "time": "2026-09-23T16:19:55+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "complete_days": 241,
+  "distinct_power_profiles": 126,
+  "repeated_profiles": 45,
+  "repeated_days": 160,
+  "repeated_profiles_with_different_production_totals": 40,
+  "repeated_profiles_with_different_hourly_production_profiles": 40,
+  "repeated_profiles_with_different_temperature_daily_means": 45,
+  "same_month_equal_pairs": 95,
+  "different_month_equal_pairs": 207,
+  "different_month_same_day_of_month_equal_pairs": 102,
+  "pandas": "3.0.1",
+  "numpy": "2.2.6"
+}

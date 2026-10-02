@@ -1,0 +1,12 @@
+{
+  "time": "2026-09-23T08:54:37+09:00",
+  "scope": "2021-01-01 through 2021-08-31; September excluded",
+  "distribution_rows": 5832,
+  "valid_time_rows": 5784,
+  "missing_production": 0,
+  "missing_rain": 1,
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "transform": "natural log(1+x)",
+  "row_level_derivatives_saved": false
+}

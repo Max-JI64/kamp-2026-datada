@@ -1,0 +1,44 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "source_rows": 6168,
+  "scoped_rows": 5832,
+  "invalid_time_rows": 48,
+  "valid_hours": 5784,
+  "valid_days": 241,
+  "shape_summary": [
+    {
+      "period": "Jan-Jun",
+      "shape": "mixed_recorded_values",
+      "days": 137,
+      "median_unique_values": 22.0,
+      "median_equal_run": 1.0,
+      "days_with_zero_positive_transition": 118
+    },
+    {
+      "period": "Jan-Jun",
+      "shape": "one_value_all_day",
+      "days": 44,
+      "median_unique_values": 1.0,
+      "median_equal_run": 24.0,
+      "days_with_zero_positive_transition": 0
+    },
+    {
+      "period": "Jul-Aug",
+      "shape": "mixed_recorded_values",
+      "days": 44,
+      "median_unique_values": 22.0,
+      "median_equal_run": 1.0,
+      "days_with_zero_positive_transition": 35
+    },
+    {
+      "period": "Jul-Aug",
+      "shape": "one_value_all_day",
+      "days": 16,
+      "median_unique_values": 1.0,
+      "median_equal_run": 24.0,
+      "days_with_zero_positive_transition": 0
+    }
+  ],
+  "days_with_zero_positive_transition": 153,
+  "days_with_multiple_exact_values": 181
+}

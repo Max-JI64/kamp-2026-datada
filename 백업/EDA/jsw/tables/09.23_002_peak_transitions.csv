@@ -1,0 +1,5 @@
+﻿previous_high,high,rows,previous_state_rows,conditional_rate
+False,False,5630,5802,0.9703550499827646
+False,True,172,5802,0.029644950017235435
+True,False,172,315,0.546031746031746
+True,True,143,315,0.45396825396825397

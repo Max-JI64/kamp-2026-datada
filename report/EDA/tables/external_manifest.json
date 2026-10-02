@@ -1,0 +1,96 @@
+{
+  "threshold": 187,
+  "population": "June-August positive-production weekdays",
+  "band_source": "pooled June-August, exploratory, not training/validation cutoffs",
+  "min_records_per_month_cell": 5,
+  "comparison_months": [
+    6,
+    7
+  ],
+  "bands": {
+    "생산량": {
+      "edges": [
+        132.75,
+        562.5,
+        1274.0
+      ],
+      "labels": [
+        "≤132.75",
+        "(132.75, 562.5]",
+        "(562.5, 1274]",
+        ">1274"
+      ],
+      "pooled_n": 1244
+    },
+    "기온": {
+      "edges": [
+        21.6,
+        23.8,
+        25.9
+      ],
+      "labels": [
+        "≤21.6",
+        "(21.6, 23.8]",
+        "(23.8, 25.9]",
+        ">25.9"
+      ],
+      "pooled_n": 1244
+    },
+    "풍속": {
+      "edges": [
+        1.0,
+        1.6,
+        2.4
+      ],
+      "labels": [
+        "≤1",
+        "(1, 1.6]",
+        "(1.6, 2.4]",
+        ">2.4"
+      ],
+      "pooled_n": 1242
+    },
+    "습도": {
+      "edges": [
+        75.0,
+        87.0,
+        96.0
+      ],
+      "labels": [
+        "≤75",
+        "(75, 87]",
+        "(87, 96]",
+        ">96"
+      ],
+      "pooled_n": 1244
+    },
+    "강수량": {
+      "edges": [
+        0.0
+      ],
+      "labels": [
+        "0",
+        ">0"
+      ],
+      "pooled_n": 1244
+    },
+    "기온+습도": {
+      "temperature_median": 23.8,
+      "humidity_median": 87.0,
+      "rule": "2*(temperature>median)+(humidity>median)"
+    }
+  },
+  "sample_weights": "pooled exposure on common hour x band cells",
+  "profile_sensitivity": "same cells and cell weights; inverse daily profile frequency within each cell",
+  "inference": "descriptive only; one variable at a time except predeclared temperature/humidity joint bands",
+  "script_sha256": "7bcc1e51191e7a6cb2722ecda3b9fb317774788797e68bfba9b304a76c15d505",
+  "image_analysis_performed": false,
+  "week_sensitivity": {
+    "question": "Does the hour-standardized July-June gap rely on one ISO week?",
+    "weights": "Original pooled June-August hour exposure weights, fixed in all runs",
+    "runs": 9,
+    "supported_runs": 9,
+    "min_delta": 0.12813296028730103,
+    "max_delta": 0.2137247532745924
+  }
+}

@@ -1,0 +1,3 @@
+﻿column,adjacent_pairs,equal_pairs,equal_pair_rate,longest_equal_run_hours,longest_nonzero_equal_run_hours
+평균,5781,634,0.10966960733437121,17,5
+생산량,5781,2296,0.3971631205673759,230,2

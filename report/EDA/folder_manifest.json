@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "active_root": "report/EDA",
+  "folders": [
+    "scripts",
+    "tables",
+    "figures"
+  ],
+  "source_policy": "Original project data preserved; new EDA uses Jan-Aug all valid hours",
+  "originals_preserved": true,
+  "source_copies": "Existing report EDA code/tables/plots copied to new EDA workspace; previous split calculations remain reference artifacts",
+  "active_pot_result": "tables/peak_definition_comparison/pot_tail_eda_full",
+  "main_manuscript_edited": false,
+  "scope": "POT code executed and verified here; other copied EDA scripts compiled, not all rerun"
+}

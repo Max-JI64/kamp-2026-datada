@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "reference_tables": 11,
+  "compared_rows": 2912,
+  "comparisons": [
+    {
+      "table": "distribution",
+      "reference": "09.27_037_summary",
+      "rows": 6,
+      "compared_columns": [
+        "hours",
+        "dates",
+        "mean_average",
+        "mean_q10",
+        "mean_q25",
+        "mean_q50",
+        "mean_q75",
+        "mean_q90",
+        "mean_q95",
+        "max_average",
+        "max_q10",
+        "max_q25",
+        "max_q50",
+        "max_q75",
+        "max_q90",
+        "max_q95",
+        "high_176",
+        "high_182",
+        "high_188"
+      ],
+      "passed": true
+    },
+    {
+      "table": "distribution_bins",
+      "reference": "09.27_037_bins",
+      "rows": 84,
+      "compared_columns": [
+        "mass",
+        "mean_contribution"
+      ],
+      "passed": true
+    },
+    {
+      "table": "distribution_sensitivity",
+      "reference": "09.27_037_sensitivity",
+      "rows": 8,
+      "compared_columns": [
+        "mean_delta_min",
+        "mean_delta_max",
+        "max_delta_min",
+        "max_delta_max",
+        "high_delta_min",
+        "high_delta_max"
+      ],
+      "passed": true
+    },
+    {
+      "table": "distribution_exclusions",
+      "reference": "09.27_037_exclusions",
+      "rows": 288,
+      "compared_columns": [
+        "valid",
+        "mean_delta",
+        "max_delta",
+        "high_delta"
+      ],
+      "passed": true
+    },
+    {
+      "table": "transition_strata",
+      "reference": "09.27_003_strata",
+      "rows": 191,
+      "compared_columns": [
+        "start_n",
+        "start_events",
+        "start_weight_n",
+        "start_weight_events",
+        "continuing_n",
+        "continuing_events",
+        "continuing_weight_n",
+        "continuing_weight_events",
+        "common_support"
+      ],
+      "passed": true
+    },
+    {
+      "table": "transition_summary",
+      "reference": "09.27_003_summary",
+      "rows": 4,
+      "compared_columns": [
+        "common_strata",
+        "total_strata",
+        "strata_with_either_cell_n_le_2",
+        "start_all_n",
+        "start_all_events",
+        "start_overlap_n",
+        "start_overlap_events",
+        "start_retention",
+        "start_crude_rate",
+        "start_overlap_rate",
+        "start_standardized_rate",
+        "continuing_all_n",
+        "continuing_all_events",
+        "continuing_overlap_n",
+        "continuing_overlap_events",
+        "continuing_retention",
+        "continuing_crude_rate",
+        "continuing_overlap_rate",
+        "continuing_standardized_rate",
+        "standardized_difference",
+        "crude_difference"
+      ],
+      "passed": true
+    },
+    {
+      "table": "direct_caps",
+      "reference": "09.28_044_direct_caps",
+      "rows": 723,
+      "compared_columns": [
+        "period",
+        "original_max",
+        "cells_ge",
+        "cells_gt",
+        "excess_value_sum"
+      ],
+      "passed": true
+    },
+    {
+      "table": "redistribution",
+      "reference": "09.28_044_redistribution",
+      "rows": 1446,
+      "compared_columns": [
+        "period",
+        "original_max",
+        "budget_value_sum",
+        "optimal_max",
+        "max_reduction",
+        "reduction_fraction",
+        "moved_value_sum",
+        "zero_cells"
+      ],
+      "passed": true
+    },
+    {
+      "table": "group_summary",
+      "reference": "09.28_045_group_summary",
+      "rows": 108,
+      "compared_columns": [
+        "days",
+        "unique_profiles",
+        "days_or_profiles",
+        "median_original_max",
+        "mean_reduction",
+        "q25_reduction",
+        "median_reduction",
+        "q75_reduction",
+        "q25_reduction_fraction",
+        "median_reduction_fraction",
+        "q75_reduction_fraction"
+      ],
+      "passed": true
+    },
+    {
+      "table": "monthly_max",
+      "reference": "09.28_045_monthly_max",
+      "rows": 48,
+      "compared_columns": [
+        "complete_days",
+        "unique_profiles",
+        "original_month_max",
+        "adjusted_month_max",
+        "month_reduction",
+        "month_reduction_fraction",
+        "original_max_dates",
+        "adjusted_max_dates",
+        "date_set_relation",
+        "original_date_only_adjusted_max",
+        "missed_max_by_original_date_only"
+      ],
+      "passed": true
+    },
+    {
+      "table": "july_sensitivity",
+      "reference": "09.28_045_excluded_date_sensitivity",
+      "rows": 6,
+      "compared_columns": [
+        "complete_days",
+        "adjusted_month_max",
+        "excluded_original_max",
+        "mixed_month_max",
+        "mixed_reduction"
+      ],
+      "passed": true
+    }
+  ],
+  "feasibility_and_local_optimality_checks": 1446,
+  "zero_budget_and_monotonicity": true,
+  "png_files": 10,
+  "image_reading": false,
+  "visual_review": false,
+  "markdown_links_checked": 25
+}

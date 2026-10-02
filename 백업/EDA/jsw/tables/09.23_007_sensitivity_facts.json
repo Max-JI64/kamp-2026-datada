@@ -1,0 +1,6 @@
+{
+  "time": "2026-09-23T09:17:01+09:00",
+  "rows": 5784,
+  "reason": "Sparse exact strata; negative weekly correlation after small-cell centering; August sign reversal",
+  "checks": "unique timestamps, August aggregate counts; no row deletion or model tuning"
+}

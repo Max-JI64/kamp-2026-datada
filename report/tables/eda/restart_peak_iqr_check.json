@@ -1,0 +1,9 @@
+{
+  "n": 5784,
+  "q1": 25.0,
+  "q3": 157.0,
+  "iqr": 132.0,
+  "upper_fence": 355.0,
+  "maximum": 222.0,
+  "above_upper_fence": 0
+}

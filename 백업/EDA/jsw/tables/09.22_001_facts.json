@@ -1,0 +1,33 @@
+{
+  "run_time": "2026-09-22T23:47:18+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "matplotlib": "3.10.0",
+  "source": "../../data/origin/okm_augumented_2021.csv",
+  "sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 6168,
+  "columns": 18,
+  "date_start": "2021-01-01",
+  "date_end": "2021-09-14",
+  "date_count": 257,
+  "missing_cells": 21,
+  "duplicate_rows": 0,
+  "duplicate_date_hour": 5,
+  "invalid_hour_rows": 48,
+  "invalid_hour_dates": [
+    20210713,
+    20210715
+  ],
+  "rounded_mean_matches": 6168,
+  "person_ratio_max_error": 4.944070042256499e-09,
+  "zero_production_rows": 2657,
+  "zero_production_positive_power_rows": 2640,
+  "zero_mean_rows": 17,
+  "descriptive_peak_p95": 187.0,
+  "descriptive_peak_ge_p95_rows": 324,
+  "max_quarter_value": 222,
+  "mean_power": 93.42412451361868,
+  "production_mean_pearson": 0.517947916056772,
+  "production_mean_spearman": 0.7472800623432135
+}

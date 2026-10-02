@@ -1,0 +1,71 @@
+{
+  "time": "2026-09-29T14:49:38+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "randomness": "none",
+  "input_sha256": {
+    "raw": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "profiles": "917b05d100c5ccbcfdacac58d9586b85fe2b842f573a4487742ff5afb566dd3c",
+    "legacy": "d12b67c2f198a3560dd84ae6604580531ac05532a535203ddc6172af5be48acd",
+    "daily": "db8586bb4f347389ce7a7c5faf5d149ceb85b1c4b4ad8caba88e7c8e12df34f2",
+    "manifest": "85347e58a70fa83d6679b62f76d326dcbd298dbded0399d18a8a5777033b1973",
+    "catalog": "f594e72e647805d6a212380a8d5e5544361c7cef86b3d6da90045055f0da9a09",
+    "model_code": "5d611153a693053f968ddbdfd660bb06e6cfd38f50bd7760013c844e8e8e4ad4",
+    "frozen": "77095ae11e9a003162898a47be6d53e7fa743cc175bcf97b875cb937813a0665",
+    "model_facts": "69024eb696c7266af7ed5f665b1b7746252c03c24c0940b099bc7cb8627ead4c",
+    "development": "c55ce8a9d41ab0ab372e03fee6e3660856afbca05c3ceb6a12655021e0e028fd",
+    "review": "813de18365f4e14330b362510c21b0ae9e51f255b7f2d29f77acc89adfb48f4b"
+  },
+  "input_paths": {
+    "raw": "data/origin/okm_augumented_2021.csv",
+    "profiles": "EDA/jsw/tables/09.23_011_daily_profile_summary.csv",
+    "legacy": "EDA/jsw/tables/09.23_015_mean_visibility.csv",
+    "daily": "EDA/jsw/tables/09.28_024_daily_concentration.csv",
+    "manifest": "data/processed/jsw/09.26_021_coverage_manifest.csv",
+    "catalog": "modeling/jsw/tables/09.26_001_feature_catalog.csv",
+    "model_code": "modeling/jsw/scripts/09.26_001_power_models.py",
+    "frozen": "modeling/jsw/tables/09.26_001_frozen.json",
+    "model_facts": "modeling/jsw/tables/09.26_001_facts.json",
+    "development": "modeling/jsw/predictions/09.26_001_development_predictions.csv",
+    "review": "modeling/jsw/predictions/09.26_001_review_predictions.csv"
+  },
+  "raw_rows": 6168,
+  "Jan_Aug_rows": 5832,
+  "invalid_time_rows_excluded": 48,
+  "September_rows_excluded": 336,
+  "normal_hours": 5784,
+  "normal_days": 241,
+  "M001_eligible": 5520,
+  "zero_hours_preserved": 17,
+  "A_fit_quantiles": [
+    19.25,
+    22.5,
+    93.25,
+    112.25,
+    153.25,
+    202.0
+  ],
+  "bin_rule": "internal boundaries from Jan-Jun A quintiles; lower exclusive, upper inclusive; outside fit min/max retained",
+  "weight_rule": "date_hour: each observed hour; profile_hour_once: unique profile_id/hour within reported group",
+  "small_cell_rule": "weighted_units<30 or observed_days<5; descriptive only",
+  "quantile_method": "linear",
+  "thresholds_reused_from_M001": {
+    "Jul-Aug": 182.0,
+    "Jun": 181.0,
+    "May": 183.0
+  },
+  "Q1": "legacy conclusion reused; missing exact hourly A/D summaries calculated",
+  "Q2": "catalog/frozen/code static audit; no new relationship/correlation/lag dataset calculated",
+  "unexecuted": [
+    "model training",
+    "performance comparison",
+    "alert evaluation",
+    "relocation simulation",
+    "clustering",
+    "FA",
+    "correlation",
+    "hour interaction tables",
+    "September EDA"
+  ]
+}

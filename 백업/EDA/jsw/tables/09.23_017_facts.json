@@ -1,0 +1,40 @@
+{
+  "time": "2026-09-23T17:40:46+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "exact_next_hour_pairs": 5781,
+  "high_value": 187,
+  "any_high_hours": 287,
+  "slot_high_counts": {
+    "15분": 64,
+    "30분": 153,
+    "45분": 176,
+    "60분": 194
+  },
+  "overall_net": {
+    "n": 5784,
+    "median": 1.0,
+    "p10": -12.0,
+    "p90": 30.0,
+    "positive": 2935,
+    "negative": 1938,
+    "zero": 911,
+    "positive_share": 0.5074343015214384,
+    "negative_share": 0.3350622406639004
+  },
+  "overall_boundary": {
+    "n": 5781,
+    "median": -1.0,
+    "p10": -29.0,
+    "p90": 10.0,
+    "positive": 1687,
+    "negative": 3016,
+    "zero": 1078,
+    "positive_share": 0.29181802456322437,
+    "negative_share": 0.5217090468777028
+  },
+  "unique_profile_hours": 3024
+}

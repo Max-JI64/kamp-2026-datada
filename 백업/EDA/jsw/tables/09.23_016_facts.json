@@ -1,0 +1,17 @@
+{
+  "time": "2026-09-23T17:32:49+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "exact_next_hour_pairs": 5781,
+  "high_value": 187,
+  "last_only_hours": 43,
+  "last_only_exact_pairs": 43,
+  "last_only_next_first_high_pairs": 8,
+  "last_only_next_any_high_pairs": 19,
+  "first_only_hours": 19,
+  "first_only_previous_last_high_pairs": 14,
+  "unique_profile_last_only_hours": 29
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "method": "Three plots inspected as a 50-percent contact sheet",
+  "figures": ["01_actual_examples.png", "02_level_vs_change.png", "03_rule_diagnostics.png"],
+  "contact_sheet": "../../figures/power_jumps_review/contact_50.png",
+  "repair": "Replaced an unsupported literal minus glyph in a plot axis label; regenerated successfully without font warnings and reviewed again.",
+  "checks": ["No overall top title or footer", "No invented physical units", "Threshold is labeled as a trial", "Legacy 187 line is explicitly unconfirmed", "Examples show actual values", "Full signed-change range retained"],
+  "execution": "Both scripts ran successfully in regular CPython 3.13, exit code 0",
+  "manuscript_edited": false
+}

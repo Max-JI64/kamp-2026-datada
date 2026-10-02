@@ -1,0 +1,3 @@
+﻿whole_day_zero_production,rows,days,mean_power_median,mean_power_p90,high_quarter_187_rows,mean_power_zero_rows
+False,1067,153,24.0,118.0,9,6
+True,1440,60,22.0,106.0,19,11

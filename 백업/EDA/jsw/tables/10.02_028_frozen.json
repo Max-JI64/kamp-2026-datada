@@ -1,0 +1,19 @@
+{
+  "input": "../../../data/processed/jsw/10.02_027_daily_calendar.csv",
+  "input_sha256": "8e2316dd28246b84c62eef75c3044db586e648e7848b4bac4c19d5f8d8fd57d6",
+  "period": "2021-01-01..2021-08-31; same 241 complete dates as E027",
+  "contrasts": [
+    "all weekdays vs all weekends; public holidays retained on both sides",
+    "all non-public-holidays vs all public-holidays; weekends retained on both sides"
+  ],
+  "metrics": [
+    "daily_mean",
+    "daily_peak"
+  ],
+  "alpha": 0.05,
+  "test": "two-sided Welch t, Holm across four tests",
+  "sensitivity": "E027 month-wise circular group-label shifts, absolute mean difference; Holm across four",
+  "B": 9999,
+  "seed": 20261002,
+  "boundary": "descriptive calendar association, not production-adjusted causal effect; exploratory comparison after E027"
+}

@@ -1,0 +1,5 @@
+﻿period,shape,days,median_unique_values,median_equal_run,days_with_zero_positive_transition
+Jan-Jun,mixed_recorded_values,137,22.0,1.0,118
+Jan-Jun,one_value_all_day,44,1.0,24.0,0
+Jul-Aug,mixed_recorded_values,44,22.0,1.0,35
+Jul-Aug,one_value_all_day,16,1.0,24.0,0

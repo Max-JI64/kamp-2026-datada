@@ -1,0 +1,68 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "period": "2021-01-01..2021-08-31",
+  "invalid_hours": "exclude outside 0..23; no reconstruction",
+  "unit": "complete 24-hour date",
+  "metrics": [
+    "daily_mean",
+    "daily_peak"
+  ],
+  "Q1": "weekday nonholiday versus all named public holidays; nonholiday weekends excluded",
+  "Q2": "four groups, omnibus and all six pairwise comparisons",
+  "holiday_definition": "national named holidays and substitute holidays; Sundays alone are weekend, not named holiday; May 1 is not a national public holiday",
+  "alpha": 0.05,
+  "primary_tests": "Welch two-sample and Welch one-way ANOVA",
+  "multiplicity": "Holm: four primary tests; separately twelve pairwise tests",
+  "temporal_sensitivity": "9999 independent month-wise circular rotations of the complete four-group label sequence, preserving outcomes in order and within-month group counts; absolute mean difference for two-group contrasts, between-group sum of squares for omnibus; exchangeability/stationarity assumption required",
+  "rotation_B": 9999,
+  "seed": 20261002,
+  "repeat_sensitivity": "inverse daily-profile frequency within full Jan-Aug scope; descriptive only",
+  "production": "composition diagnosis, not a causal mediator adjustment",
+  "external_scope": "user-authorized calendar labels only; no external manufacturing observations",
+  "holidays": [
+    [
+      20210101,
+      "신정"
+    ],
+    [
+      20210211,
+      "설 연휴"
+    ],
+    [
+      20210212,
+      "설날"
+    ],
+    [
+      20210213,
+      "설 연휴"
+    ],
+    [
+      20210301,
+      "삼일절"
+    ],
+    [
+      20210505,
+      "어린이날"
+    ],
+    [
+      20210519,
+      "부처님오신날"
+    ],
+    [
+      20210606,
+      "현충일"
+    ],
+    [
+      20210815,
+      "광복절"
+    ],
+    [
+      20210816,
+      "광복절 대체공휴일"
+    ]
+  ],
+  "calendar_sources": [
+    "https://astro.kasi.re.kr/life/post/calendardata",
+    "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/?boardId=bbs_0000000000000029&category=&cntId=3237&mode=view&pageIdx=9"
+  ]
+}

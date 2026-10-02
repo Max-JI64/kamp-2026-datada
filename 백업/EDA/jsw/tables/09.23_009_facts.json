@@ -1,0 +1,12 @@
+{
+  "time": "2026-09-23T15:32:12+09:00",
+  "training_level_quartiles": [
+    23.0,
+    103.0,
+    130.0
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 5320,
+  "onsets": 224,
+  "checks": "008 sample counts; aggregation denominators and event sums; 9月 excluded; no tuned cutoffs"
+}

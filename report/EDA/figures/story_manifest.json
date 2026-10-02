@@ -1,0 +1,149 @@
+{
+  "status": "generated_not_visually_reviewed",
+  "font": "Malgun Gothic",
+  "images": [
+    {
+      "file": "01A_daily_rhythm.png",
+      "bytes": 287015,
+      "title": "생산량과 전력의 하루 패턴은 어디에서 일치하고 달라지는가",
+      "caption": "1~8월 정상 241일 · 시각별 전체 241 / 평일 171 / 주말 70시간 · 두 패널의 세로축 단위와 범위는 다름\n음영은 전체 관측값의 가운데 50% 범위이며 평균의 신뢰구간이 아님 · 12시 위치를 함께 표시",
+      "visual_review": false,
+      "sha256": "a8ae94383b293698540a114c66a2fae2eeccccec9a25accf6d72f7886868d738"
+    },
+    {
+      "file": "01B_month_hour_rhythm.png",
+      "bytes": 108252,
+      "title": "전체 평균 뒤에 있는 월별 하루 패턴",
+      "caption": "각 칸은 월×시각의 평균 · 원은 해당 월에서 평균이 가장 높은 시각(동률 시 첫 시각)\n7월은 정상 29일, 나머지는 각 월의 모든 날짜 · 전력과 생산량은 각각의 색 척도를 사용",
+      "visual_review": false,
+      "sha256": "2681fe6bcd078e3ae6258cdb79e706baa192bc196b3f0b86dd3dc19d14215f08"
+    },
+    {
+      "file": "02A_calendar_joint.png",
+      "bytes": 132379,
+      "title": "평일·주말의 전력 분포와 생산 기록 구성",
+      "caption": "정상 241일 · 평일 171일 / 주말 70일 · 한 점은 하루(겹칠 수 있음) · 점선은 일평균=일최대\n공휴일 포함 · 생산량 구성의 차이를 함께 표시",
+      "visual_review": false,
+      "sha256": "90fe8ef8dd22ac0ea14d7d0da0d919989d1c02636c1a789f68337fe9c4029f51"
+    },
+    {
+      "file": "02B_calendar_ecdf.png",
+      "bytes": 69546,
+      "title": "평균 한 개 대신 평일·주말의 전체 분포를 비교",
+      "caption": "정상 241일 · 평일 171일 / 주말 70일 · 계단은 관측값의 누적 분포, 가로 점선은 50% 위치\n공휴일 포함 · 생산량 구성의 차이를 함께 표시",
+      "visual_review": false,
+      "sha256": "e583bb948431a66cbb034efbe5aab8a015cfb5e7d649a48bf335525d62f61ec7"
+    },
+    {
+      "file": "03A_month_hour_peaks.png",
+      "bytes": 122007,
+      "title": "고전력의 빈도와 월최대의 위치를 함께 본다",
+      "caption": "색: 월×시각에서 최대 ≥ 187인 시간의 비율 / 별: 그 달의 최고값 위치 / 아래: 1~8월 전체 빈도\n187은 E004의 1~8월 전체 5,832행 기준을 재사용 · 시간 비교는 정상 5,784행 · 공식 한계 아님",
+      "visual_review": false,
+      "sha256": "29f3164bb08bcb4f2afde7cf7b0ddb3ac50606a912a821603f3b077e168c2d88"
+    },
+    {
+      "file": "04A_correlation_context.png",
+      "bytes": 179467,
+      "title": "독립변수끼리의 관계와 전력과의 관계를 두 상관으로 비교",
+      "caption": "생산량·기온·풍속·습도·강수량의 모든 쌍을 포함 · 테두리는 독립변수 영역 · 두 패널은 동일한 변수 쌍별 표본\n전체 정상 5,784시간, 쌍별 결측 제외(n=5,780~5,784) · 관계의 방향·크기이며 인과효과나 변수 제거 기준은 아님",
+      "visual_review": false,
+      "sha256": "df1ac98d7ccde8098c4e4cf38dbfe79e4cfbd3d69ada6dc0f0d422df1f3fcc1d"
+    },
+    {
+      "file": "04B_conditional_density.png",
+      "bytes": 845710,
+      "title": "기상 네 변수 모두: 전력과의 분포 및 조건 안의 관계",
+      "caption": "양수 생산 기록 · 각 행의 좌우는 정확히 같은 표본 · 월×시각×평일/주말 집단당 5개 이상\n조건 내 편차는 각 집단 평균 제거 후의 값 · 모든 점을 빈도에 반영 · r=Pearson, ρ=Spearman",
+      "visual_review": false,
+      "sha256": "221cba0b0b378ab4958f50cd1e6924794de7d65c65397f98669fd2226dd2e5b1"
+    },
+    {
+      "file": "05A_monthly_lag_matrix.png",
+      "bytes": 140132,
+      "title": "직전 관계는 유지되지만 주간 반복은 월마다 달라진다",
+      "caption": "정확히 1·24·168시간 전 기록과 연결 · 월은 현재 기록 기준 · 각 칸에 유효 연결 쌍 수 병기\n시간 오류 구간을 압축하지 않으며 월별 상관은 예측 정확도가 아님",
+      "visual_review": false,
+      "sha256": "34b2d62c8bd92b00166071df7a8de65a9ae6c2bf73a20957cc9d3f12e5318d74"
+    },
+    {
+      "file": "05B_weekly_change_trace.png",
+      "bytes": 278056,
+      "title": "전주와 어긋난 실제 기록: 8월 2~15일",
+      "caption": "E003에서 확인한 변화 구간의 사례 · 회색 구간 8월 2~8일에는 생산량 기록이 모두 0\n과거 기록을 현재 시각에 맞춰 표시 · 시계열의 관측 비교이며 실제 휴무·설비 상태는 미식별",
+      "visual_review": false,
+      "sha256": "f01abcc6f0105305f2d8ed0b715b1498efcdadf7755fbad1b36c1633dc446403"
+    },
+    {
+      "file": "06A_high_slot_map.png",
+      "bytes": 244895,
+      "title": "높은 값은 한 구간에만 나타나는가, 여러 구간에 걸치는가",
+      "caption": "최대 ≥ 187인 287시간 전부 · 각 행은 한 시간, 높은 구간 수→배열→최대값 순으로 정렬(시간순 아님)\n같은 행을 양쪽에서 비교 · 평균 <187인 시간 194/287 · 구간 수를 실제 초과 지속시간으로 환산하지 않음",
+      "visual_review": false,
+      "sha256": "a8f481f6f6b0bdb405968f7f9a8d0d6bc2b4d58d681f7640e223c9bb616cee9d"
+    },
+    {
+      "file": "06B_high_slot_profiles.png",
+      "bytes": 344907,
+      "title": "높은 구간 수에 따라 달라지는 시간 안의 전력 형태",
+      "caption": "가는 선: 해당 집단의 모든 실제 네 구간 배열 / 굵은 선: 구간별 중앙값 / 점선: 탐색 기준 187\n중앙값 선은 개별 실제 사례가 아닐 수 있음 · 반복 날짜와 극단값을 모두 유지",
+      "visual_review": false,
+      "sha256": "20a30b93eb3caabced563f494c90517704f6122d9380ec4897f8d93ea6f12b73"
+    },
+    {
+      "file": "06A_low_load_monthly.png",
+      "bytes": 35306,
+      "title": "날짜별 낮은 전력 수준도 월 안에서 넓게 분포했다",
+      "caption": "1~8월 정상 241일 · q10은 통계적 하위 수준이며 필수 기저부하·절감 가능량이 아님 · 0 포함",
+      "visual_review": false,
+      "sha256": "f58c7b9ec888126a4a309da2c32fbba4ac2cd71945e6e7364cf86cc3855306b1"
+    },
+    {
+      "file": "06B_low_load_weighting.png",
+      "bytes": 94101,
+      "title": "반복 기록의 가중 방식에 따라 저부하 요약값이 달라진다",
+      "caption": "원본 삭제 없이 두 가중 방식 비교 · 1월 22→84.5, 4월 81.5→22 · 단일 기저값 가정에 주의",
+      "visual_review": false,
+      "sha256": "0aeb2f344f728df58ba5c7ccda4f96e5b58f2751bb441130870c55c42b71c218"
+    },
+    {
+      "file": "07A_calendar_joint.png",
+      "bytes": 131555,
+      "title": "비공휴일·공휴일의 전력 분포와 생산 기록 구성",
+      "caption": "정상 241일 · 비공휴일 231일 / 공휴일 10일 · 한 점은 하루(겹칠 수 있음) · 점선은 일평균=일최대\n공휴일 비교는 보정 후 비유의, 표본 10일",
+      "visual_review": false,
+      "sha256": "652dae44f014231895061783e028e31f6c404691da87b4962c4b62446f9bdec6"
+    },
+    {
+      "file": "07B_calendar_ecdf.png",
+      "bytes": 67919,
+      "title": "평균 한 개 대신 비공휴일·공휴일의 전체 분포를 비교",
+      "caption": "정상 241일 · 비공휴일 231일 / 공휴일 10일 · 계단은 관측값의 누적 분포, 가로 점선은 50% 위치\n공휴일 비교는 보정 후 비유의, 표본 10일",
+      "visual_review": false,
+      "sha256": "a32f08074abdc94ca16d2b13536996f678eb7aa5b4d71bde395f20f19edd541f"
+    },
+    {
+      "file": "03B_weather_peak_frequency.png",
+      "bytes": 269236,
+      "title": "7월의 고전력 빈도: 기상 구간별로 6·8월과 비교",
+      "caption": "생산량 양수인 평일만 사용 · 점 크기와 n은 시간 수 · 기온·풍속·습도는 통합 사분위 구간, 강수는 0/양수\n각 점은 관측 빈도 · 시간대와 다른 기상 변수의 구성을 아직 맞추지 않은 비교 · 연결선은 구간 비교용",
+      "visual_review": false,
+      "sha256": "02d86e26624939991d9c2a1443dd0edfff21a28605948bc913c57700d8c2c443"
+    }
+  ],
+  "image_reading": false,
+  "visual_review": false,
+  "last_changed_topics": [
+    "calendar",
+    "holiday",
+    "lags",
+    "low_load",
+    "peaks",
+    "relations",
+    "rhythm",
+    "slots"
+  ],
+  "generated_in_last_run": 16,
+  "generation_warnings": [],
+  "script_sha256": "ac91eb324b35a33f734ea88c6f6cf518bbae338dfadbfaa3dd6ca700fee7db2e"
+}

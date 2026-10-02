@@ -1,0 +1,105 @@
+{
+  "font": "Malgun Gothic",
+  "matplotlib": "3.10.0",
+  "status": "generated_not_visually_reviewed",
+  "images": [
+    {
+      "file": "01A_mean_peak_scatter.png",
+      "bytes": 205042,
+      "title": "같은 평균 수준에서도 최대 전력은 다르다",
+      "caption": "1~8월 정상 5,784시간 · 점이 겹칠 수 있음 · 점선 182는 분석 기준이며 공식 한계가 아님",
+      "visual_review": false
+    },
+    {
+      "file": "01B_mean_peak_counts.png",
+      "bytes": 48460,
+      "title": "높은 최대값이 평균 기준에서는 드러나지 않는 시간",
+      "caption": "각 기간의 최대 ≥ 182인 시간만 비교 · 분모 235 / 220시간 · 예측 모델의 미탐지율이 아님",
+      "visual_review": false
+    },
+    {
+      "file": "02A_calendar_means.png",
+      "bytes": 41445,
+      "title": "평일과 주말의 평균 전력 수준",
+      "caption": "1~8월 · 평일 171일 / 주말 70일\n공휴일 포함 · 생산량 양수 시간 비율: 평일 74.61%, 주말 12.80%",
+      "visual_review": false
+    },
+    {
+      "file": "02B_calendar_distribution.png",
+      "bytes": 92802,
+      "title": "평일·주말의 날짜별 분포",
+      "caption": "1~8월 · 평일 171일 / 주말 70일\n모든 날짜를 점으로 표시 · 상자는 25~75백분위, 중앙선은 중앙값 · 0 기록 포함",
+      "visual_review": false
+    },
+    {
+      "file": "03A_hourly_frequency.png",
+      "bytes": 58708,
+      "title": "고전력이 자주 기록된 시간대는 기간에 따라 달랐다",
+      "caption": "각 시각의 유효 기록이 분모: 1~6월 181 / 7~8월 60시간 · 시간별 최대 ≥ 182",
+      "visual_review": false
+    },
+    {
+      "file": "03B_monthly_peak_timing.png",
+      "bytes": 39191,
+      "title": "월최대는 7월을 제외한 일곱 달에서 8시에 발생했다",
+      "caption": "각 점은 월최대 발생 시간, 숫자는 전력 기록값 · 원본 15분 구간 위치는 결과표에 보존",
+      "visual_review": false
+    },
+    {
+      "file": "04A_conditional_correlations.png",
+      "bytes": 44937,
+      "title": "생산량·기온의 단순 상관은 같은 달력 조건에서 약해졌다",
+      "caption": "양수 생산 중 동일 3,072시간 · 월×시간×평일/주말, 집단당 5개 이상 · 인과효과 추정 아님",
+      "visual_review": false
+    },
+    {
+      "file": "04B_conditional_scatter.png",
+      "bytes": 595798,
+      "title": "동일 표본에서 원값과 조건 내 편차 비교",
+      "caption": "양수 생산 3,072시간 · 모든 점 포함, 표본 추출·이상치 삭제 없음 · 선형 관계 외의 효과를 배제하지 않음",
+      "visual_review": false
+    },
+    {
+      "file": "05A_lag_correlations.png",
+      "bytes": 45780,
+      "title": "직전 전력과의 관계가 가장 강하게 나타났다",
+      "caption": "1~8월 · 정확한 날짜·시간 차이로 연결 · 시차마다 이용 가능한 쌍의 수가 다름 · 예측 성능 아님",
+      "visual_review": false
+    },
+    {
+      "file": "05B_monthly_lag.png",
+      "bytes": 86182,
+      "title": "주간 반복의 강도는 월별로 일정하지 않았다",
+      "caption": "예측 대상 시각이 속한 월로 집계 · 과거값은 이전 달에서 올 수 있음 · 정확 시차 연결",
+      "visual_review": false
+    },
+    {
+      "file": "06A_low_load_monthly.png",
+      "bytes": 35306,
+      "title": "날짜별 낮은 전력 수준도 월 안에서 넓게 분포했다",
+      "caption": "1~8월 정상 241일 · q10은 통계적 하위 수준이며 필수 기저부하·절감 가능량이 아님 · 0 포함",
+      "visual_review": false
+    },
+    {
+      "file": "06B_low_load_weighting.png",
+      "bytes": 94101,
+      "title": "반복 기록의 가중 방식에 따라 저부하 요약값이 달라진다",
+      "caption": "원본 삭제 없이 두 가중 방식 비교 · 1월 22→84.5, 4월 81.5→22 · 단일 기저값 가정에 주의",
+      "visual_review": false
+    },
+    {
+      "file": "07A_calendar_means.png",
+      "bytes": 42773,
+      "title": "비공휴일과 공휴일의 평균 전력 수준",
+      "caption": "1~8월 · 비공휴일 231일 / 공휴일 10일\n공휴일 비교는 보정 후 비유의 · 차이 없음의 증거는 아님",
+      "visual_review": false
+    },
+    {
+      "file": "07B_calendar_distribution.png",
+      "bytes": 91028,
+      "title": "비공휴일·공휴일의 날짜별 분포",
+      "caption": "1~8월 · 비공휴일 231일 / 공휴일 10일\n모든 날짜를 점으로 표시 · 상자는 25~75백분위, 중앙선은 중앙값 · 0 기록 포함",
+      "visual_review": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿weighting,all_hours,high_hours,one_slot_high_hours,multiple_slot_high_hours,15분_high_cells,30분_high_cells,45분_high_cells,60분_high_cells,one_slot_share_of_high_hours
+observed_hour_rows,5784,287,100,187,64,153,176,194,0.34843205574912894
+unique_daily_profile_hour,3024,205,70,135,50,107,129,140,0.34146341463414637

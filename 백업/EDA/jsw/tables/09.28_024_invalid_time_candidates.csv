@@ -1,0 +1,3 @@
+﻿date,month,invalid_hours,invalid_slots,invalid_peak,valid_month_peak,invalid_exceeds_valid_month_peak,invalid_ties_valid_month_peak,invalid_slots_ge_182
+20210713,202107,24,96,190.0,222.0,False,False,8
+20210715,202107,24,96,202.0,222.0,False,False,17

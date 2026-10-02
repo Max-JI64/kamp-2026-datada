@@ -1,0 +1,5 @@
+﻿weighting,dates_or_profiles,11_to_12_decrease,11_to_12_equal,11_to_12_increase,12_to_13_decrease,12_to_13_equal,12_to_13_increase,down_then_up,down_then_up_share,both_12_values_below_both_edges,13_first_at_least_11_last_among_down_up,d_11_to_12_median,d_12_inside_median,d_12_to_13_median,d_11last_to_13first_median
+observed_dates,241,194,36,11,16,58,167,164,0.6804979253112033,163,59,-50.0,2.0,35.0,-2.0
+unique_daily_power_profile,126,103,16,7,11,28,87,84,0.6666666666666666,83,25,-51.5,0.0,35.5,-3.5
+dates_in_repeated_profiles,160,130,25,5,7,39,114,114,0.7125,114,47,-52.0,4.0,35.0,-1.0
+dates_in_singleton_profiles,81,64,11,6,9,19,53,50,0.6172839506172839,49,12,-48.0,0.0,35.0,-4.0

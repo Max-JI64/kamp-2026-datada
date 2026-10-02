@@ -1,0 +1,6 @@
+﻿A_bin,lower_exclusive,upper_inclusive,fit_period,fit_hours,fit_min_A,fit_max_A
+1,-inf,22.5,Jan-Jun_design,4344,19.25,202.0
+2,22.5,93.25,Jan-Jun_design,4344,19.25,202.0
+3,93.25,112.25,Jan-Jun_design,4344,19.25,202.0
+4,112.25,153.25,Jan-Jun_design,4344,19.25,202.0
+5,153.25,inf,Jan-Jun_design,4344,19.25,202.0
