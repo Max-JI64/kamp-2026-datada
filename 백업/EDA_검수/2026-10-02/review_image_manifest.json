@@ -1,0 +1,27 @@
+[
+  {
+    "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\simple_contact_50.png",
+    "target": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\백업\\EDA_검수\\2026-10-02\\simple_contact_50.png",
+    "sha256": "34D23899DBB4793A092180FBB1D675546FAD5D93F52A74FC14485AD55361B1E2"
+  },
+  {
+    "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\monthly_mean_heatmap_contact_50.png",
+    "target": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\백업\\EDA_검수\\2026-10-02\\monthly_mean_heatmap_contact_50.png",
+    "sha256": "3106880B0BC59AA3E022DADF7785A8A8FE1108E4E8A47F3FF24A9ED066072C67"
+  },
+  {
+    "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\qa\\manuscript_contact_01_50.png",
+    "target": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\백업\\EDA_검수\\2026-10-02\\manuscript_contact_01_50.png",
+    "sha256": "392870BD5ECA62DC99D51AE82BBBE53DF5BF45CA10BD430A75195E36E714688B"
+  },
+  {
+    "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\qa\\manuscript_contact_02_50.png",
+    "target": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\백업\\EDA_검수\\2026-10-02\\manuscript_contact_02_50.png",
+    "sha256": "00BCFC0D63DC71160B96F7D381BAE8E72768FF1857088CF1C7419B0863FDFBE7"
+  },
+  {
+    "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\qa\\manuscript_contact_03_50.png",
+    "target": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\백업\\EDA_검수\\2026-10-02\\manuscript_contact_03_50.png",
+    "sha256": "259CF0F0E5946E12F5A0607A4E3BD88513F4E86A65C8064BDCCA2C70F10F86B4"
+  }
+]

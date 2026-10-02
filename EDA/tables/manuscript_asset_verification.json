@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checked_links": 39,
+  "manuscript_sections": [
+    "2.1",
+    "2.2",
+    "2.3"
+  ],
+  "figures": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_01_daily_pattern_clean.png",
+      "sha256": "a2ef6ccb1ba0bd8f96cc00392f53ab983f144837924d7f8ed73ea1a041f68ec7"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\04_daily_pattern_simple.png",
+      "sha256": "a2f65aed303dbb204db1e1256271ae5248387ffda9eaecbf5bc49bfe3feecb2e"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\07_monthly_power_mean_heatmap.png",
+      "sha256": "aed2e0175c9a6abfd28caf108b0dd6882b1da8b0d9c4483bb9fbf34e1b7b1725"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_variable_relations.png",
+      "sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_monthly_relations.png",
+      "sha256": "d41f7040ddc1342fba88b444a7f0f10af2bad3b9c1480a337169c1f7702fb233"
+    }
+  ],
+  "python_syntax": "passed",
+  "contact_sheets": [],
+  "image_render_check": "PNG decoded; visual inspection recorded separately",
+  "visual_review": {
+    "passed": true,
+    "reviewed_images": 5,
+    "method": "Three contact sheets, each image at 50 percent; at most two images per sheet",
+    "findings": "Korean labels and legends readable, no overlap or clipping; no whole-figure title, footer or interpretive arrows"
+  }
+}

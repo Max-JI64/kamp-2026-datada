@@ -1,0 +1,35 @@
+{
+  "previous_evidence": "Current manuscript 2.3: temperature overall rho .058, monthly signs vary; August production-positive rho .599",
+  "question": "Temperature-power shape and whether differences remain among comparable hours",
+  "scope": "Jan-Aug all 5784 valid hours; no prediction split, extreme-value removal or peak threshold",
+  "outcome": "CSV mean (rounded hourly mean of four power values)",
+  "main_matching": {
+    "keys": [
+      "month",
+      "weekday/weekend",
+      "exact clock hour",
+      "zero/positive production"
+    ],
+    "production_relative_gap_max": 0.1,
+    "temperature_gap_min": 2,
+    "reuse": false,
+    "algorithm": "Greedy minimum production gap, then temperature gap, then row IDs"
+  },
+  "sensitivities": {
+    "production_tolerance": [
+      0.05,
+      0.2
+    ],
+    "temperature_gap": [
+      1,
+      3
+    ],
+    "temperature_bin_width": [
+      3,
+      4
+    ]
+  },
+  "humidity_followup": "Same keys, production gap <=10%, temperature gap <=1 C, humidity gap >=10 percentage points; display only >=30 pairs and >=20 dates",
+  "interpretation": "Descriptive matched-subset contrasts; monitor production balance and month-dependent signs; no causal or iid significance inference",
+  "output_policy": "Preview images in tmp only; current manuscript unchanged"
+}
