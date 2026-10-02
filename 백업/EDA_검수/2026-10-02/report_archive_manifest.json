@@ -1,0 +1,1798 @@
+[
+  {
+    "relative": "10.02_002_EDA_보조자료.md",
+    "sha256": "606566453E05F077FC6E9A5F31D8D2471EC56368A567F4838E87073E69FCE448"
+  },
+  {
+    "relative": "10.02_002_EDA_외부조건_후속분석.md",
+    "sha256": "F4436E175026313B98087635016FD3B44E71789EC15DC1F8B27D6D0496B6215F"
+  },
+  {
+    "relative": "10.02_002_EDA.md",
+    "sha256": "90A4E28A851B5A9E33F8D984A3F9E88BD8C156EE8BF91469E466162AF20955F2"
+  },
+  {
+    "relative": "10.02_003_analysis.md",
+    "sha256": "8A96C5B737BE02EB567BAC222A8368170568EF92BE2CAC29A56E786B3D363986"
+  },
+  {
+    "relative": "AGENTS.md",
+    "sha256": "C56B9A0F331B172937B574C5BC5B80D283505BCAF4292D389F3223EBE9F7C0D8"
+  },
+  {
+    "relative": "README.md",
+    "sha256": "8215A80A6DB398FFA4940F28FC9DF0C567C960B51DCC9F4BA0CC45783BF171C6"
+  },
+  {
+    "relative": "requirements-analysis.txt",
+    "sha256": "72FE19569872937774E7FF059C769BBFFEDFBD7E106F4EA2C40B5690C69834C7"
+  },
+  {
+    "relative": "requirements-eda.txt",
+    "sha256": "F5A45C4C2AC2035F64544D1ACB4B7F70A917BCADA36C0E896BD0E4D6ED2EB0B0"
+  },
+  {
+    "relative": "EDA\\AGENTS.md",
+    "sha256": "D146AE7FA1A72D11988CF34ADEC88703F91756A31B79D3E4F39305F181DC30E7"
+  },
+  {
+    "relative": "EDA\\folder_manifest.json",
+    "sha256": "66EEE3AAF59541C3FDF52B2C9FED62EDB30CDB97A810CDA42CB59A9BD8CE8C5B"
+  },
+  {
+    "relative": "EDA\\README.md",
+    "sha256": "3DB66BA0B041EE4FBD8939A4AF7EBECDE3CED447ED6E48D63A54C206BC5E41CD"
+  },
+  {
+    "relative": "EDA\\figures\\01A_daily_rhythm.png",
+    "sha256": "A8AE94383B293698540A114C66A2FAE2EECCCCEC9A25ACCF6D72F7886868D738"
+  },
+  {
+    "relative": "EDA\\figures\\01A_mean_peak_scatter.png",
+    "sha256": "E24A9AB6F81C318C46AAE67BF8FDA113A908BA3AD25C83F4FD3130609319EC3E"
+  },
+  {
+    "relative": "EDA\\figures\\01B_mean_peak_counts.png",
+    "sha256": "7C2BFBD154F491293C987D50BF3CCAF135853C8483DCF55ACBC65F3A6B8BAC20"
+  },
+  {
+    "relative": "EDA\\figures\\01B_month_hour_rhythm.png",
+    "sha256": "2681FE6BCD078E3AE6258CDB79E706BAA192BC196B3F0B86DD3DC19D14215F08"
+  },
+  {
+    "relative": "EDA\\figures\\02A_calendar_joint.png",
+    "sha256": "90FE8EF8DD22AC0EA14D7D0DA0D919989D1C02636C1A789F68337FE9C4029F51"
+  },
+  {
+    "relative": "EDA\\figures\\02A_calendar_means.png",
+    "sha256": "1A403912B6B9611FE32B7934D8B8F49645B388BD5EFAFD18AFA715E5D101A17C"
+  },
+  {
+    "relative": "EDA\\figures\\02B_calendar_distribution.png",
+    "sha256": "9DB87ACBE0E8B7C0749F064606357C533FE2989E687F2740F17B56C6DAFCEC70"
+  },
+  {
+    "relative": "EDA\\figures\\02B_calendar_ecdf.png",
+    "sha256": "E583BB948431A66CBB034EFBE5AAB8A015CFB5E7D649A48BF335525D62F61EC7"
+  },
+  {
+    "relative": "EDA\\figures\\03A_hourly_frequency.png",
+    "sha256": "6CBE6BADDE922C3DB2A32DE76187C53AEA78D9766DCFDE8D918EEF89E4B82ED9"
+  },
+  {
+    "relative": "EDA\\figures\\03A_month_hour_peaks.png",
+    "sha256": "29F3164BB08BCB4F2AFDE7CF7B0DDB3AC50606A912A821603F3B077E168C2D88"
+  },
+  {
+    "relative": "EDA\\figures\\03B_monthly_peak_timing.png",
+    "sha256": "6BB4F803A3D5760F781302830AA2A466A2805C7B15EB91BF77839FA00BA6EEFB"
+  },
+  {
+    "relative": "EDA\\figures\\03B_peak_timeline.png",
+    "sha256": "CB287A7A40B75CF187E31E60BCF654D45BB58543862D7BA09EAFD56573037D32"
+  },
+  {
+    "relative": "EDA\\figures\\03B_weather_peak_frequency.png",
+    "sha256": "02D86E26624939991D9C2A1443DD0EDFFF21A28605948BC913C57700D8C2C443"
+  },
+  {
+    "relative": "EDA\\figures\\04A_conditional_correlations.png",
+    "sha256": "F85CCD6B835EA39606B2E532D3ED81EC967A471DBE1C752325A658C9747A9C96"
+  },
+  {
+    "relative": "EDA\\figures\\04A_correlation_context.png",
+    "sha256": "DF1AC98D7CCDE8098C4E4CF38DBFE79E4CFBD3D69ADA6DC0F0D422DF1F3FCC1D"
+  },
+  {
+    "relative": "EDA\\figures\\04B_conditional_density.png",
+    "sha256": "221CBA0B0B378AB4958F50CD1E6924794DE7D65C65397F98669FD2226DD2E5B1"
+  },
+  {
+    "relative": "EDA\\figures\\04B_conditional_scatter.png",
+    "sha256": "4D3DDC7C08CDF8574D6D1A349D5176D5B2A48EB309FE40E41E963E1F90BD74DA"
+  },
+  {
+    "relative": "EDA\\figures\\05A_lag_correlations.png",
+    "sha256": "BE194EA85AB27699DFB53DA3F9CF376AF2593498045F573C60D42CA80774347E"
+  },
+  {
+    "relative": "EDA\\figures\\05A_monthly_lag_matrix.png",
+    "sha256": "34B2D62C8BD92B00166071DF7A8DE65A9AE6C2BF73A20957CC9D3F12E5318D74"
+  },
+  {
+    "relative": "EDA\\figures\\05B_monthly_lag.png",
+    "sha256": "A1D7966D7635D95D40F558DA3DE2F13A76B78804B33A9849B1D023A7ED213D32"
+  },
+  {
+    "relative": "EDA\\figures\\05B_weekly_change_trace.png",
+    "sha256": "F01ABCC6F0105305F2D8ED0B715B1498EFCDADF7755FBAD1B36C1633DC446403"
+  },
+  {
+    "relative": "EDA\\figures\\06A_high_slot_map.png",
+    "sha256": "A8F481F6F6B0BDB405968F7F9A8D0D6BC2B4D58D681F7640E223C9BB616CEE9D"
+  },
+  {
+    "relative": "EDA\\figures\\06A_low_load_monthly.png",
+    "sha256": "F58C7B9EC888126A4A309DA2C32FBBA4AC2CD71945E6E7364CF86CC3855306B1"
+  },
+  {
+    "relative": "EDA\\figures\\06B_high_slot_profiles.png",
+    "sha256": "20A30B93EB3CAABCED563F494C90517704F6122D9380EC4897F8D93EA6F12B73"
+  },
+  {
+    "relative": "EDA\\figures\\06B_low_load_weighting.png",
+    "sha256": "0AEB2F344F728DF58BA5C7CCDA4F96E5B58F2751BB441130870C55C42B71C218"
+  },
+  {
+    "relative": "EDA\\figures\\07A_calendar_joint.png",
+    "sha256": "652DAE44F014231895061783E028E31F6C404691DA87B4962C4B62446F9BDEC6"
+  },
+  {
+    "relative": "EDA\\figures\\07A_calendar_means.png",
+    "sha256": "AB2EB0A45D54FFC9014008FEEAA014264B468904AB7C75B2C278B26EB821E218"
+  },
+  {
+    "relative": "EDA\\figures\\07B_calendar_distribution.png",
+    "sha256": "DA61971AE18A0C4F196A13ABBCA6D5E032905F416A1CB488B716C94933487A7E"
+  },
+  {
+    "relative": "EDA\\figures\\07B_calendar_ecdf.png",
+    "sha256": "A32F08074ABDC94CA16D2B13536996F678EB7AA5B4D71BDE395F20F19EDD541F"
+  },
+  {
+    "relative": "EDA\\figures\\manifest.json",
+    "sha256": "D9E9FA91BB961A618306C5121610CC38C35719126112909D4086B70A9859D7EA"
+  },
+  {
+    "relative": "EDA\\figures\\restart_01_daily_pattern_clean.png",
+    "sha256": "A2EF6CCB1BA0BD8F96CC00392F53AB983F144837924D7F8ED73EA1A041F68EC7"
+  },
+  {
+    "relative": "EDA\\figures\\restart_01_daily_pattern.png",
+    "sha256": "A2EF6CCB1BA0BD8F96CC00392F53AB983F144837924D7F8ED73EA1A041F68EC7"
+  },
+  {
+    "relative": "EDA\\figures\\restart_02_monthly_relations.png",
+    "sha256": "D41F7040DDC1342FBA88B444A7F0F10AF2BAD3B9C1480A337169C1F7702FB233"
+  },
+  {
+    "relative": "EDA\\figures\\restart_02_variable_relations.png",
+    "sha256": "24082D1F6522B73D830DE21570E585AF718F732CD63464E86FA61122E89BBC6A"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_condition_ranges.png",
+    "sha256": "6E1745BF7E4321C99BC3D0383729F59BD5D6AEC75E41F698321E346DBE3237C3"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_hour_shape.png",
+    "sha256": "1AA5D007CD038EF6460A2B4BCEF1F859A480B264E32C3A3020E40FF5A87BB57C"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_peak_distribution.png",
+    "sha256": "7620C8056673E81A33F9609229481F2AA34A16A97A9DD5C3A03DA7603271663C"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_peak_month_distributions.png",
+    "sha256": "710214EEB194A68626D52D48F2C386E2556FBDD8E9A3A0C4500E7C3EFD348501"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_peak_timeline.png",
+    "sha256": "37ECFC339B9C3CEFECBA408ADC26ACE24B1BEA8B4B2A16994E48A006F207BB63"
+  },
+  {
+    "relative": "EDA\\figures\\restart_03_threshold_timing.png",
+    "sha256": "7013AEBA8205F56811E0F9B5BFB1B684FC7CA630D14B55F92A1742DE82A9E7F3"
+  },
+  {
+    "relative": "EDA\\figures\\story_manifest.json",
+    "sha256": "5798AB4FE3BCF01A3F00B31E68C7672ED5D5F4D3BF4E93C5F105E896C872507A"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\01_date_hour_heatmap.png",
+    "sha256": "30F0A471947EB214B6F093B655521E41F20545B27A9F6F56ED2E8F921A138C2E"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\02_daily_lines_and_spread.png",
+    "sha256": "076CEDF4221062F78C66B4054148B762F8BAEEE65962914D7952126D2B4E7BBA"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\03_paired_noon_changes.png",
+    "sha256": "4F04482662B3ED3091BC69DDD617E3E3DA6CCA58E2FE9CE366B09C0D2A85A222"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\05_monthly_daily_lines.png",
+    "sha256": "E79541CD10FFDF591130506DC8D615E6ABC1C08C6DF330A70020AAB5DCF56615"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\06_monthly_power_heatmap.png",
+    "sha256": "09AAD45ADFFB01467722EDD254F8693FE0A97AB7109AEE07F9432204E48B0340"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\contact_50.png",
+    "sha256": "6213E5424F010889ED5A63B2166D390E6ED84B191FF9B7B66A480E345E669D33"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\monthly_contact_50.png",
+    "sha256": "D3DF051FF2ED4BA994910627D6AA7E4C8F8A22BA0E36FE6C9B6DA447EBC973A2"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\monthly_heatmap_contact_50.png",
+    "sha256": "EA10FDAF78F5D15F23113F2096B8D252F8E762717070C8686FC03A435312C332"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\monthly_mean_heatmap_contact_50.png",
+    "sha256": "3106880B0BC59AA3E022DADF7785A8A8FE1108E4E8A47F3FF24A9ED066072C67"
+  },
+  {
+    "relative": "EDA\\figures\\daily_repetition\\simple_contact_50.png",
+    "sha256": "34D23899DBB4793A092180FBB1D675546FAD5D93F52A74FC14485AD55361B1E2"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\01_load_groups.png",
+    "sha256": "4697D53008DEBC5991E0578EC26A4A8D3F10206F213E373D0B9F81BD96963744"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\02_definition_comparison.png",
+    "sha256": "2DF157CD9052A8084A4E584D087712DBF5C9EEDA1F47FFC522C2FEA6268175F2"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\03_boundary_stability.png",
+    "sha256": "3D9C8A665FFE2C4B5B02759C84EA3057AB706D7A556C3D1080DAAE41C2EDB5FD"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\04_cost_and_conditions.png",
+    "sha256": "DE04C6A6CA17F0ECB9DFF39DA55189B55D5A3280D3710AE7A6857F99C8095750"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\contact_50.png",
+    "sha256": "3075BD2DE27B316E18CD1D3B05BE77EAECB23251BA0570D212DEB6A7914A73E0"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\01_kmeans_fixed_k.png",
+    "sha256": "934858E906E92ECA0F14120AD23DF19513CBC45728CC54854092C32A79171B70"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\02_gmm_fixed_k.png",
+    "sha256": "079438E029F5D671A3DCF329E44F377776F1B9652096A6D5FC0AD449DCA1C288"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\03_scores_and_upper_groups.png",
+    "sha256": "5E16ADE19EED945D7EE8FE36D63639FD36BB7048A93E5E34A3C9C26F69328D48"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\04_fixed_k_stability.png",
+    "sha256": "59851AB186C53F1C303DF67C92B1B734BCA40418DC4D6F7BDDA5913D75053AC3"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\contact_50.png",
+    "sha256": "9A97DC20F02D609C5F3D06CDA3DC9E69E24BBBF063C20638DF5A370129993004"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\manifest.json",
+    "sha256": "E770CA28177904C12E914B74DF3651007A75B981AE3CCE5F5B4C4B5E8525EF68"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\contact_50.png",
+    "sha256": "FF80A3405A05B1D97527D4A54AAC95ADAADE53866358ECAA57DB0F49B54CF2A4"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\gmm_histograms_3_to_7.png",
+    "sha256": "330D336BA07B879D65C9AAE3734B1A9B0E0644D657C001D98BEB8A6C177C6245"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\kmeans_histograms_3_to_7.png",
+    "sha256": "77127552544E74D14C776EE0C8C15630A4C0630C5ECE609273905B877E0FAB72"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\manifest.json",
+    "sha256": "9A447BE7330B82CB7D4799D229FDF40753332B53292F2E7A6FFE982D8D6F6A54"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\01_load_duration_tail.png",
+    "sha256": "F3EECE28A39B1BC7FAC71B481346C59524865D5193362C2E6C7D42D1E19E8C1D"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\02_mean_excess_and_events.png",
+    "sha256": "DC3EBCA5C5CFE1EC64D83E1153097CC5E607877E811665F3CC759CDE04070BDD"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\03_gpd_parameter_stability.png",
+    "sha256": "69B534BC503C064E8C309A1D175D5E122ED742B1180BD92A061A8963B088288F"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\04_fixed_model_qq.png",
+    "sha256": "A618B08D668817D11AB57AD05FE30F3485B819DC99502D514F6257C53F40E0C5"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\05_tail_robustness.png",
+    "sha256": "4221506E8FDC5A08BDDEB5CAEC10B62460C9064E3FB8C51D0CE17E44A8367345"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\contact_50_robustness.png",
+    "sha256": "391E42EC19A4122C3B543A72C9384CED25F0C7D189D1D39A8C7F085E4F32B358"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\contact_50.png",
+    "sha256": "D630C119685FD481FFA2260B88716F8C6C61DEDEC89363CA3F7E6243BA9B3484"
+  },
+  {
+    "relative": "EDA\\figures\\peak_definition_comparison\\pot_tail_eda_full\\manifest.json",
+    "sha256": "5ED44DF5977BE0F719A8802763ADC859ECD960C86F3DA7552B5BA9619B2A2384"
+  },
+  {
+    "relative": "EDA\\figures\\power_jumps_review\\01_actual_examples.png",
+    "sha256": "7B28C07245D6497BF95CBFAA145EF30E05FF5A1132B69A050ED8E64AC4460D01"
+  },
+  {
+    "relative": "EDA\\figures\\power_jumps_review\\02_level_vs_change.png",
+    "sha256": "063F54480B65D196EB8F48D4F5ACABF055A078E7D276E24B6B72ACA25C87AE2C"
+  },
+  {
+    "relative": "EDA\\figures\\power_jumps_review\\03_rule_diagnostics.png",
+    "sha256": "CD3ED7D235E6D12B0B3A759EF81FB5924B387F6879AA3F510EBA8D5D7E36874D"
+  },
+  {
+    "relative": "EDA\\figures\\power_jumps_review\\contact_50.png",
+    "sha256": "64B4D2111B9731B76AC44AB72BFE035861CC4B6592D13916AF9BF557B9BF40E4"
+  },
+  {
+    "relative": "EDA\\figures\\qa\\restart_03_contact_50.png",
+    "sha256": "6D66D1A8A346D9FDD490BF5191F66134DC33D659AA4A918CC46F651E9B72B8F4"
+  },
+  {
+    "relative": "EDA\\figures\\qa\\restart_03_distribution_contact_50.png",
+    "sha256": "BEE70DEBB7F1CE1E1AC6141897C5F2FFA204F662C9CA308B58FE141F719ABDE8"
+  },
+  {
+    "relative": "EDA\\scripts\\analyze_pot_tail.py",
+    "sha256": "F2EF9C472C6EC664F910B7609F88A74A1C262DB9458E742E3B3A415AE82B2D4D"
+  },
+  {
+    "relative": "EDA\\scripts\\check_peak_iqr.py",
+    "sha256": "32038BA86DE104783DFF3B93AD80A7F6041BE3C629AF61546A6434B6C7A37124"
+  },
+  {
+    "relative": "EDA\\scripts\\compare_fixed_cluster_counts.py",
+    "sha256": "358663A088BCF670C9EAB020CF87CDDC1481E3DCB72AA92809CAB8CBAE72BB19"
+  },
+  {
+    "relative": "EDA\\scripts\\compare_peak_definitions.py",
+    "sha256": "71D9321417D95E30403B8D2D2D7BE9329423F1C497D680105388395202AB4F0A"
+  },
+  {
+    "relative": "EDA\\scripts\\eda_external_conditions.py",
+    "sha256": "7BCC1E51191E7A6CB2722ECDA3B9FB317774788797E68BFBA9B304A76C15D505"
+  },
+  {
+    "relative": "EDA\\scripts\\eda_peak_conditions.py",
+    "sha256": "6F0FD6917617D6F71689449A79AD6C41BCF85C49751AF9ED9D9503B1AA3E72A1"
+  },
+  {
+    "relative": "EDA\\scripts\\eda_peak_distribution.py",
+    "sha256": "168480F2C49AE3DCF701C85A69A269D45C99E0C64A8F9A9C8798E09B70FDF063"
+  },
+  {
+    "relative": "EDA\\scripts\\eda_peak_visual_check.py",
+    "sha256": "D9B06EAF02DBCDAF206144AB856609901FA4BE43130DE8B1D4DD5E29F48F4BD2"
+  },
+  {
+    "relative": "EDA\\scripts\\eda_story_figures.py",
+    "sha256": "CAEE537675E6AFEF0EA455452665B3AD40E3FC653A479725C5048E5C53CF3295"
+  },
+  {
+    "relative": "EDA\\scripts\\plot_cluster_histograms_3_to_7.py",
+    "sha256": "E29EFCE916D2CE7A6914CE0063063813DF4E57D7E9CFF75B77E9FA60813B423B"
+  },
+  {
+    "relative": "EDA\\scripts\\plot_fixed_cluster_counts.py",
+    "sha256": "F2CB97830FFD2C97B3050A1008D4C8EA803355B21B91BDBC4137977458B9688E"
+  },
+  {
+    "relative": "EDA\\scripts\\plot_peak_comparison.py",
+    "sha256": "FC9A282EF649EA845937BDFC538A63E10390E49792A1782CC8D95B4B62E64B27"
+  },
+  {
+    "relative": "EDA\\scripts\\plot_pot_tail.py",
+    "sha256": "79DDE01DA1121FCDB84806514212BB91B568B6D3D91198B3731D9FD22913A259"
+  },
+  {
+    "relative": "EDA\\scripts\\plot_power_jumps.py",
+    "sha256": "C4686EC8C43A8096C448D971C33BEDD69D1484482D97014986A957427DA70200"
+  },
+  {
+    "relative": "EDA\\scripts\\review_power_jumps.py",
+    "sha256": "52E0D529CE4D802991F18D43AD3E6BECB58E20E999A821095820E910A74BDCDA"
+  },
+  {
+    "relative": "EDA\\scripts\\summarize_pot_tail.py",
+    "sha256": "5EC55D6B0BFB6D4B29BBC2EB4BA883ABDCA366AEEB277E9C8A31DE6A9C920262"
+  },
+  {
+    "relative": "EDA\\scripts\\verify_eda.py",
+    "sha256": "7EFE3FA96645E2452D908057F4A9259FF2BA479586ED300A2FC9A8BBCE05D231"
+  },
+  {
+    "relative": "EDA\\scripts\\verify_external_conditions.py",
+    "sha256": "9FBB7B74384EF9DFE4DF87F9B2A255CAE14EEF6ADB6F94FECB264BC57147281E"
+  },
+  {
+    "relative": "EDA\\scripts\\verify_peak_comparison.py",
+    "sha256": "74877F16BFCF4BA458446E80823E4C814E7F76F56696D673322DB0E3AA396E5E"
+  },
+  {
+    "relative": "EDA\\scripts\\verify_restart_peak_document.py",
+    "sha256": "23679BD9649D7B472DE834BB8067A6D2044FC05F81F68CD56176115162E4C9BC"
+  },
+  {
+    "relative": "EDA\\scripts\\__pycache__\\analyze_pot_tail.cpython-313.pyc",
+    "sha256": "E72D2E6E4DCC60BC61698F5E4B10EAA96B563604D42F9B4CDF45879479F6FCAE"
+  },
+  {
+    "relative": "EDA\\scripts\\__pycache__\\compare_peak_definitions.cpython-313.pyc",
+    "sha256": "F7A61CFE7685B64F597056DBA502C2166B19BDC7BB1E8312A24BF0B82B0DBDB3"
+  },
+  {
+    "relative": "EDA\\scripts\\__pycache__\\eda_figures.cpython-313.pyc",
+    "sha256": "A087AA9DE4FB74DB0E1D70FAC76821AD2ECB8C3E991E77096D2B9E2B20BB4BCD"
+  },
+  {
+    "relative": "EDA\\tables\\calendar_summary.csv",
+    "sha256": "9CE68DA3DFFC0BACC25D088579AE56D4000E72D52426C447225F2C5B91C52D4B"
+  },
+  {
+    "relative": "EDA\\tables\\calendar_tests.csv",
+    "sha256": "7FD342C3D98EDB3BCE8D7B437FD8E91153A444AC847F46C7D533BF8624DFFF39"
+  },
+  {
+    "relative": "EDA\\tables\\conditional_correlations.csv",
+    "sha256": "1F3B1CB29956B2D75D8F606EDA216BBD0A8ECC1ADA36FFE663EDA0D944CF3E73"
+  },
+  {
+    "relative": "EDA\\tables\\conditional_points.csv",
+    "sha256": "329D1F85520DE88608AD83B8BF40122A71927C77E17956855C3D0B1CD9F0CE0B"
+  },
+  {
+    "relative": "EDA\\tables\\daily_records.csv",
+    "sha256": "55AADF0BB001C75782E9A4F2A4F05C2DB6AF4BE9354A88695189F021FCA87419"
+  },
+  {
+    "relative": "EDA\\tables\\external_band_frequency.csv",
+    "sha256": "9704D3668E9E457E37F5816058DE7961600F4F5FF465CCF5405F2D0B1CE81CC8"
+  },
+  {
+    "relative": "EDA\\tables\\external_band_records.csv",
+    "sha256": "0914CC2688B3E33692B3D359B56DDCD28EFA4CEAE846ECF2D79E5C0165DEEEB9"
+  },
+  {
+    "relative": "EDA\\tables\\external_calendar_frequency.csv",
+    "sha256": "64B00504617C4F8098E96CEF687EA4EF63E67323FD4085B42F946C2705F29F1F"
+  },
+  {
+    "relative": "EDA\\tables\\external_common_cells.csv",
+    "sha256": "3E791C17756B815B9DC8B8D8C0E9D26E06E6C6DB021317781E370E8214DCBA35"
+  },
+  {
+    "relative": "EDA\\tables\\external_common_support.csv",
+    "sha256": "3C594F43F47D3EA138FEB8625309A49BDC8074A84E50E1C8F9ECFA4C0EEB8433"
+  },
+  {
+    "relative": "EDA\\tables\\external_manifest.json",
+    "sha256": "20274A4DFF777A92E6CFCF74770252156BF758AC839EC1C89F4394F717FD55B2"
+  },
+  {
+    "relative": "EDA\\tables\\external_month_frequency.csv",
+    "sha256": "F5253A7F7C6ACA21DB32F41914EE72BB1D28ECC8B8D98B477FD4EF7952728796"
+  },
+  {
+    "relative": "EDA\\tables\\external_positive_weekday_months.csv",
+    "sha256": "A408F3C0A9A77B9971D39600C547DF3DB2A6EE8394EBD222F5F3A48523CADC27"
+  },
+  {
+    "relative": "EDA\\tables\\external_week_sensitivity.csv",
+    "sha256": "E44935E37849D6D89F90A8F5CCA53CB2451B62440CA399A3EC138D1F29997A55"
+  },
+  {
+    "relative": "EDA\\tables\\high_slot_patterns.csv",
+    "sha256": "8AA9BD8634BCA630B3E6BFDACE10A83570DE4362287FC80295FF9097E5E80DF1"
+  },
+  {
+    "relative": "EDA\\tables\\high_slot_records.csv",
+    "sha256": "C445FD1AA60C480A54D8936CFD08723CFC3704A1365CC66E371E261568F6D55A"
+  },
+  {
+    "relative": "EDA\\tables\\high_slot_summary.csv",
+    "sha256": "296A6FA48F8C5D956F5EECD3336C2887BFE786624BFA7F6E74A16822F1F60AD0"
+  },
+  {
+    "relative": "EDA\\tables\\hour_frequency_187.csv",
+    "sha256": "3656ECB2F79519E0766B4FCE8157561F68F228F5AB024D995CE0C4E4B1E9C0AE"
+  },
+  {
+    "relative": "EDA\\tables\\hour_patterns.csv",
+    "sha256": "F010555604851E519D78B089591E907D4E0FC3CEAE1025F8DBC8B366862B45F7"
+  },
+  {
+    "relative": "EDA\\tables\\hourly_records.csv",
+    "sha256": "627FAE26A140907DBBB8380500ADFD48261ECA7E4C5DDECE72DEA0E9E8FD4394"
+  },
+  {
+    "relative": "EDA\\tables\\lag_correlations.csv",
+    "sha256": "8518A9E6042F7DD2E6FE84D5B36DED4CCFFF376526FF78D5B6BA2589917BFD19"
+  },
+  {
+    "relative": "EDA\\tables\\low_load_monthly.csv",
+    "sha256": "7260A2A15377EEEF17407F07E67510B4A163339CBC673D747CC62BF6F4F9AB0E"
+  },
+  {
+    "relative": "EDA\\tables\\mean_peak_visibility.csv",
+    "sha256": "B6BFF28C0CB1B871E64B33C1D04A571FFEA795104B83642300F63B744BDE18DB"
+  },
+  {
+    "relative": "EDA\\tables\\monthly_hour_overview.csv",
+    "sha256": "552EBE457673ED6BDBE94A646428817F103647B82D2993BDAC7304CCFC0E6EF1"
+  },
+  {
+    "relative": "EDA\\tables\\monthly_maxima.csv",
+    "sha256": "B0CBDCD6FBADDE737E7C6ADBC81679355B7436E38149EFABA3D8A7A690FBFC20"
+  },
+  {
+    "relative": "EDA\\tables\\narrative_manifest.json",
+    "sha256": "FFC9D318F676BE33F317DD623D897A5CF2073141F8310108A63AA48702C10E7F"
+  },
+  {
+    "relative": "EDA\\tables\\overall_correlations.csv",
+    "sha256": "DB3462E2486531C6C17A733E1987206ADFBCDB0555734AE92BDA8C0D8EFCE67C"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_condition_rates.csv",
+    "sha256": "9704D3668E9E457E37F5816058DE7961600F4F5FF465CCF5405F2D0B1CE81CC8"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_distribution_frequency.csv",
+    "sha256": "31C04B7B57E335FF74294F9650E7DBD198EA6B51B8122E6FEC391BCE3A2AAFAA"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_distribution_manifest.json",
+    "sha256": "77F2AB0CC8D2096A85238913EB879B919E9258F49BFA75A5061E5C3D216D87AA"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_distribution_points.csv",
+    "sha256": "4CA790766E2AA932F522C18CDA194B45B1ECDD12B01B19EF8C097E0480122502"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_document_verification.json",
+    "sha256": "45A3894588EACF71B121551EA190B3DAF8D8DF9596070DEFB78776BDBDAC906C"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_four_threshold_months.csv",
+    "sha256": "CD0DB1C67D18A3FD749D99DDB8889C2E61A614A3E251C7F8A4A22CEB9D084D9F"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_iqr_check.json",
+    "sha256": "E2152E3F2B32DF4101F91CFEFA36D80243A6002B154BFAE41E1CC78FC678262E"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_manifest.json",
+    "sha256": "55EF9CBF10EB846B888790AFBD643C3C611C444AE4993C088976FD06E2C22665"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_month_hour.csv",
+    "sha256": "552EBE457673ED6BDBE94A646428817F103647B82D2993BDAC7304CCFC0E6EF1"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_month_sensitivity.csv",
+    "sha256": "207E22533C9FC3251A37D6BD568AFEAA75AD7FB1F5066322BD1681E22987C1DC"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_quantile_sensitivity.csv",
+    "sha256": "22BD535753B945860DE60D0445C1C2938D815F47817741DE9886E3C1DE39297F"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_threshold_curve.csv",
+    "sha256": "8FA067C33C8509321425063331A492C33827EA1223B2955A12BEF4F10516EFDE"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_thresholds.csv",
+    "sha256": "A4E2CD2CC803A645B37E8F5A2C376C09856023434394B80373666C20A2D84970"
+  },
+  {
+    "relative": "EDA\\tables\\restart_peak_visual_review.json",
+    "sha256": "200237ACB28FBB6964A5D77214ACF0116D33D7ABDEE546CB9A48686575B1290A"
+  },
+  {
+    "relative": "EDA\\tables\\run_manifest.json",
+    "sha256": "F8B441534E4C9E4B3D3ED7CF8545AB22F68FEEB48969496D298A0FE2DA909E6F"
+  },
+  {
+    "relative": "EDA\\tables\\same_mean_examples.csv",
+    "sha256": "34561A780DC6B1DCCB8FF35F1321BDD56F6A00AD3F766C6B1AB83F94A78BD0D0"
+  },
+  {
+    "relative": "EDA\\tables\\verification.json",
+    "sha256": "BB85FE352DD6D5FC4744149542D55C018EAD45277F69659CC2910EDF4260AA70"
+  },
+  {
+    "relative": "EDA\\tables\\daily_repetition\\interpretation.json",
+    "sha256": "22956419D222DC83E1BC1D590A9B4FCB07A79EAC4E03A07FBA4B30396F9E7F4E"
+  },
+  {
+    "relative": "EDA\\tables\\daily_repetition\\monthly_heatmap_manifest.json",
+    "sha256": "D0F5FC97B5554F6ACEBE4806E6B5ADA048B5182CE40A06E6A0829CA5C30AA996"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\assignments.csv",
+    "sha256": "31A791945427D220B0F7E8822D858D8F2244C417008335D6AA1231C6E93B9BCA"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\comparison.csv",
+    "sha256": "083ECD777FC6341716F827EFBD13C71AAA31331C173ECEFEBD8474060F612B61"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\components.csv",
+    "sha256": "02AFB5BA599469C52E660E1C13ED627F4D377E0C3EE50A06F7557ACA1B025896"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\condition_rates.csv",
+    "sha256": "C918EA4472AC444DD26D2FC5140BA280D7B51A1BE78274A4EE147CD9C4D42EB5"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\cost_evidence.csv",
+    "sha256": "67C8107DF09D69E92146B7613308C458CAA2FF03FAF25E1DA50688E9546C9F9C"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\figures.json",
+    "sha256": "2BD3D85F5ECF2A1C288034B33DCA704A276C19C3259367C92EC57019FC0646FF"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fit_scope_sensitivity.csv",
+    "sha256": "FE0554974280F5D1D4AEC087A6295DE48405C2B8A2593535FEBE548AFBD8EFBF"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fitted_distribution.csv",
+    "sha256": "2572049056168A0F15AF9A37A40CA779C57F4DFC706D4F051029FE9B5AE02EC4"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\interpretation.json",
+    "sha256": "CA4BFDCCCBCFA672CE6400D3F712802727B41048902331F8D3D2B1B581F4D084"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\k_sensitivity.csv",
+    "sha256": "53EB749C0BE5E040B6770E48D3812DC856A28AAC74DF26818AF0FAAF01673BC4"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\manifest.json",
+    "sha256": "8CEB4BE7335B02024C3966D83E788BE081A135F2EE1B484B796A02A9CF48357B"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\model_selection.csv",
+    "sha256": "45DC3E7B3B36CBD40997848FE7DE3C736F533FA9AB143D915D183D4EBC8F9AD0"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\monthly_rates.csv",
+    "sha256": "E4453CE966E20C17CA53E238EECF5124F8B3A50FC8F02BBB07FFB8E4B47D8CE2"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\overlap.csv",
+    "sha256": "6CE502C1CD2A08219ACE1E4708258154EE07FCB4543120F9A9BD566CECF4193D"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\verification.json",
+    "sha256": "22B5B029B7BD4E6B94242839AC870F355649A10C818D3BC06C1CF61408FB861E"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\weekly_resampling.csv",
+    "sha256": "70B1C01C514D38E1F7B042FE6D22F2F86C3DE5FFF9B8B587C826642202C1B9B3"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\withdrawn_section_2_3.md",
+    "sha256": "4DF7FD9B285DA826573DDBE130483A5B04ADB50E9F90AD5352E6B48B477C0EAF"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\adjacent_k_changes.csv",
+    "sha256": "8FB4E48C5D81A0FA5CD1DAA29B666E2F3895EB77B2831FC2D9C6F60374C80F63"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\assignments.csv",
+    "sha256": "CD885CE420FB2604F3CA00C5FC148B8F9276174DD3E0B7BF809DFE2D027A5D9B"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\comparison.csv",
+    "sha256": "4B4E4D136DA61786AF92AE0100867ED59D30D48F9EE82F0F7ABF16A740AC4F8B"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\components.csv",
+    "sha256": "2CD318395A1BF39AB9708A0BD769507EE012FDA3CBBB0BFC73C428B65EECB56D"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\decision_grid.csv",
+    "sha256": "D0F6BBAF84306B8BFFCF8894A1AE26713353164B5A9D6398249097336221F124"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\initialization.csv",
+    "sha256": "5CD34AAF74D8F3C1A030CDA294E6C8DCB11B4CB49F545E562BFFE7F6B6CCBC63"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\manifest.json",
+    "sha256": "504AF27F945A6D6BE95CFC4FB91ADD6F90464C1286D9D77E657AF789E156B115"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\monthly_rates.csv",
+    "sha256": "92F3988F63AC5466D9AD7AFFBFF6539D724C347844ECF4CDB8AC6D7DE473535B"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\scope_sensitivity.csv",
+    "sha256": "925EC62A25ADCC9F44B3BDA07D4BC5FAC2708F35893A7FB9E904E6B82C8A7557"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\stability.csv",
+    "sha256": "1C7844246D1A3DCFB154C857EEEB89408D237CE9C1C24646BEF9041DCDD82085"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\verification.json",
+    "sha256": "066EA36575E813ED042FDA78174C769A96C3313061694606ACBD744DD62C6A58"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\fixed_k\\weekly_resampling.csv",
+    "sha256": "2F534DA668840C095C548353241F36FCE17BBAC245FB399806A5445C8EE6B52D"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\bootstrap_summary.csv",
+    "sha256": "105993ED44DE235328AA53FEA4C8A945D5980943B0286A7FACA00AFB901453F5"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\events_gap3.csv",
+    "sha256": "0E4FBC16EBDA27D733192C2C64CDF316662379DA677F5AA63241E7BF445641BD"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\exceedance_dependence.csv",
+    "sha256": "8C55D2C938BF94304138D040FC7F937AC19B53264A48CF659B09D14C8DBC0C6E"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\load_duration.csv",
+    "sha256": "EA694C8FACE9385E96F857F4C42F590C3CBEA076506E530538415B7F058A7A7F"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\manifest.json",
+    "sha256": "45055354EB6E011CE642016E178DE6E16CFBA9DFB87F776AEB1249AB82E239FE"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\monthly_fixed_thresholds.csv",
+    "sha256": "2046C9DB3FB4DAEA5830A69B1B165582BF1B994B68667740F62B5DE6284827B0"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\period_diagnostic.csv",
+    "sha256": "63D80C307010A113AFF0C6E4EB73DBBEA16323BC2275365E8FCE324DD0C23541"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\plan.json",
+    "sha256": "D75A56691CC4E3B50BDA6EEAC0CB8A45507E5F1753E131F8654F3B0B4E42FEFB"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\threshold_scan.csv",
+    "sha256": "CA6142E89289D054A0D474EDE4CBA5EF2F3F2747516A6B48253960C40DE471BF"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\unique_profile_sensitivity.csv",
+    "sha256": "497BCFE66AD8858DB248BDE1467A36CB4622B3EF714562C5DFC1B26E5CBA7962"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail\\weekly_resampling.csv",
+    "sha256": "BA68B076EB4386C14B70888C7990F574361A9C26C7D17358B7C9503FAED59A4F"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\bootstrap_summary.csv",
+    "sha256": "E15B843AAAE52CD98E9F6AF212A1BA982567771EC06677FFD444CD17C32ABD22"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\events_gap3.csv",
+    "sha256": "E7CE2D20EF02D0C03861FD0791B92EAAABBBCABC5875086CA5A530280E1247AD"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\exceedance_dependence.csv",
+    "sha256": "B64242A94FA573E597FC9FC75CA2BF10C259D139284FAC884D3F17B78E37CD43"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\folder_verification.json",
+    "sha256": "89015A4EA1CAB657ED79A1CA463B043C46279491E5E464C5A7AFA1CD661E7B8D"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\interpretation.json",
+    "sha256": "798C3DC849AFA325671EACD34D73C535D224DC250251B30344F40A5CF09A71F5"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\l_moment_sensitivity.csv",
+    "sha256": "43686DE1C4253C9B817DDC0702AEA7EE329F3F624A2F4A80C6DDF7906CDBBA33"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\load_duration.csv",
+    "sha256": "63A5D6629A6A7773D9C771188A4947EDEFD43C7104B799B2DB5CD328F6947F85"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\manifest.json",
+    "sha256": "94335C6A7D44A0EECBD6055C1EE0ED5068DD87FDE17A960902E60576C6CCE932"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\monthly_fixed_thresholds.csv",
+    "sha256": "5251175B8E6254BD21B21D19C2F8E941160D05875589E26C159EDB08627F6726"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\monthly_shape_diagnostics.csv",
+    "sha256": "E7B64A4A9071E4C5B00E7E111582F3B8D3C73AD1B4392E70FE946D8EBB64ADE3"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\plan.json",
+    "sha256": "3EF0C9FE1C9C2880C23F4D94AED1510A4F84FDB6C802BFCB7CC542B0E3FBEDC6"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\threshold_scan.csv",
+    "sha256": "9C6100160C8FB3E5B26A0121DC0DDAE14BA2AA5B269AACCB5D1A36DA8BBC4505"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\unique_profile_sensitivity.csv",
+    "sha256": "952F2AEB4A90B887A47C1311BC956DF2FB0AFED43544C90C3EBF21CD75AE7AFD"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\verification.json",
+    "sha256": "D8CD1C8A3D04DCB0043C32DFA9466B4C67EF31B0394D2EED996952722148891D"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\weekly_resampling.csv",
+    "sha256": "BA41AA2D7146405711B2FA26892D3BE243D5EA11B4A39D099C0ABE7548A29CC9"
+  },
+  {
+    "relative": "EDA\\tables\\peak_definition_comparison\\pot_tail_eda_full\\window_diagnostics.csv",
+    "sha256": "9E536C882D536CA701D9123306ED6876CD9DA87B523388BAC3663D447B5A3F0C"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\clock_slots.csv",
+    "sha256": "E93FE69FCBB63CD885B6C7CD0CBF999B94D272538042AAD4E0AD30EBA7BBA21A"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\example_windows.csv",
+    "sha256": "25FD8F9501178517E37A62F890F550A95B39151D96F86C88BA728AF9F32A7D6D"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\examples.json",
+    "sha256": "9416A5C6B42B149727C48652C52ABEDE53E66823C47D07B65216813658DC9837"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\interpretation.md",
+    "sha256": "93AA776BAACF4962062D85C20FB89853658882E0458946F04452D064EAA57588"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\plan.json",
+    "sha256": "3FE01772C991235439FD8A51E1B7A3C9CDFAB3BF4D8CBF3877AE734BEADBB3D4"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\sensitivity.csv",
+    "sha256": "C13FDCB19EDEFFB1399B251D09915A92DEB53A8D9BFCD31FD54DE1E9A04AF6FB"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\slots.csv",
+    "sha256": "382ABC14D8B8FE1C63EC249C71A0F72923DB7B28EDA6D392A8C24024CE2D7615"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\summary.json",
+    "sha256": "77BBB91E572C958BFF4C6408C28C8A0FA0EA30873DD0744E5A607FFF26F8E334"
+  },
+  {
+    "relative": "EDA\\tables\\power_jumps_review\\visual_review.json",
+    "sha256": "AB0139DB68B77E4374D3F0C81FF1757E5AC787BC92B172AC4FD135D3C1C9FFF1"
+  },
+  {
+    "relative": "figures\\plot_style_manifest.json",
+    "sha256": "868B167356891E67911BA078D7D62D7322A43F4AF6604B697972EA50671954E7"
+  },
+  {
+    "relative": "figures\\analysis\\01A_mean_and_high_rate.png",
+    "sha256": "0280368A48BFFB68E57BCBA84F101BD31B8A85E0D44EF13D9FF61F866C97CF9F"
+  },
+  {
+    "relative": "figures\\analysis\\01B_distribution_contribution.png",
+    "sha256": "482E60BC7172B09B64DE0CE336B1A667A811FA7B34645CCF3E167048D413EF59"
+  },
+  {
+    "relative": "figures\\analysis\\02A_transition_comparison.png",
+    "sha256": "7BBDFBDCBFD386F03B37B58610EA20973835F165CA9C5BBC5C75659DDBBEBD2D"
+  },
+  {
+    "relative": "figures\\analysis\\02B_transition_support.png",
+    "sha256": "84419E99CDA425D54DFC75228329A5F72FA0704435A23F7CE69A05C83C4078AE"
+  },
+  {
+    "relative": "figures\\analysis\\03A_sorted_daily_profiles.png",
+    "sha256": "B973A55C6D02B229BA8B76C8B182B880FDCB10B1B340703754EBEED958A56A75"
+  },
+  {
+    "relative": "figures\\analysis\\03B_cap_requirements.png",
+    "sha256": "EFB92B7C4D5403907924047AE4D2F6F5A068B2F004148A4605A62544151D6B7B"
+  },
+  {
+    "relative": "figures\\analysis\\04A_daily_reduction.png",
+    "sha256": "86F4C634F5DC534A656943E9CD825ECB097F33B3B4BEB1F5B2A7AEC42448F2D4"
+  },
+  {
+    "relative": "figures\\analysis\\04B_profile_sensitivity.png",
+    "sha256": "264193E62CF64666C281B67AE0E8C3C636EB728220C3696722A1C820586F0382"
+  },
+  {
+    "relative": "figures\\analysis\\05A_monthly_maximum.png",
+    "sha256": "C9E0C27C91E5B9B9376AC0B4A9F45D418D55AB311C7E1873806D13CF012CC1CF"
+  },
+  {
+    "relative": "figures\\analysis\\05B_maximum_dates.png",
+    "sha256": "0B00E200BBBC8D2464585D521F4676F1FA9D217D6316B2980B015663BDF607F9"
+  },
+  {
+    "relative": "figures\\analysis\\manifest.json",
+    "sha256": "C7262C6CFFAC36B4B58E6647526238A65FFE5A4076A08567FD0C96465D281A7C"
+  },
+  {
+    "relative": "figures\\eda\\01A_daily_rhythm.png",
+    "sha256": "A8AE94383B293698540A114C66A2FAE2EECCCCEC9A25ACCF6D72F7886868D738"
+  },
+  {
+    "relative": "figures\\eda\\01A_mean_peak_scatter.png",
+    "sha256": "E24A9AB6F81C318C46AAE67BF8FDA113A908BA3AD25C83F4FD3130609319EC3E"
+  },
+  {
+    "relative": "figures\\eda\\01B_mean_peak_counts.png",
+    "sha256": "7C2BFBD154F491293C987D50BF3CCAF135853C8483DCF55ACBC65F3A6B8BAC20"
+  },
+  {
+    "relative": "figures\\eda\\01B_month_hour_rhythm.png",
+    "sha256": "2681FE6BCD078E3AE6258CDB79E706BAA192BC196B3F0B86DD3DC19D14215F08"
+  },
+  {
+    "relative": "figures\\eda\\02A_calendar_joint.png",
+    "sha256": "90FE8EF8DD22AC0EA14D7D0DA0D919989D1C02636C1A789F68337FE9C4029F51"
+  },
+  {
+    "relative": "figures\\eda\\02A_calendar_means.png",
+    "sha256": "1A403912B6B9611FE32B7934D8B8F49645B388BD5EFAFD18AFA715E5D101A17C"
+  },
+  {
+    "relative": "figures\\eda\\02B_calendar_distribution.png",
+    "sha256": "9DB87ACBE0E8B7C0749F064606357C533FE2989E687F2740F17B56C6DAFCEC70"
+  },
+  {
+    "relative": "figures\\eda\\02B_calendar_ecdf.png",
+    "sha256": "E583BB948431A66CBB034EFBE5AAB8A015CFB5E7D649A48BF335525D62F61EC7"
+  },
+  {
+    "relative": "figures\\eda\\03A_hourly_frequency.png",
+    "sha256": "6CBE6BADDE922C3DB2A32DE76187C53AEA78D9766DCFDE8D918EEF89E4B82ED9"
+  },
+  {
+    "relative": "figures\\eda\\03A_month_hour_peaks.png",
+    "sha256": "29F3164BB08BCB4F2AFDE7CF7B0DDB3AC50606A912A821603F3B077E168C2D88"
+  },
+  {
+    "relative": "figures\\eda\\03B_monthly_peak_timing.png",
+    "sha256": "6BB4F803A3D5760F781302830AA2A466A2805C7B15EB91BF77839FA00BA6EEFB"
+  },
+  {
+    "relative": "figures\\eda\\03B_peak_timeline.png",
+    "sha256": "CB287A7A40B75CF187E31E60BCF654D45BB58543862D7BA09EAFD56573037D32"
+  },
+  {
+    "relative": "figures\\eda\\03B_weather_peak_frequency.png",
+    "sha256": "02D86E26624939991D9C2A1443DD0EDFFF21A28605948BC913C57700D8C2C443"
+  },
+  {
+    "relative": "figures\\eda\\04A_conditional_correlations.png",
+    "sha256": "F85CCD6B835EA39606B2E532D3ED81EC967A471DBE1C752325A658C9747A9C96"
+  },
+  {
+    "relative": "figures\\eda\\04A_correlation_context.png",
+    "sha256": "DF1AC98D7CCDE8098C4E4CF38DBFE79E4CFBD3D69ADA6DC0F0D422DF1F3FCC1D"
+  },
+  {
+    "relative": "figures\\eda\\04B_conditional_density.png",
+    "sha256": "221CBA0B0B378AB4958F50CD1E6924794DE7D65C65397F98669FD2226DD2E5B1"
+  },
+  {
+    "relative": "figures\\eda\\04B_conditional_scatter.png",
+    "sha256": "4D3DDC7C08CDF8574D6D1A349D5176D5B2A48EB309FE40E41E963E1F90BD74DA"
+  },
+  {
+    "relative": "figures\\eda\\05A_lag_correlations.png",
+    "sha256": "BE194EA85AB27699DFB53DA3F9CF376AF2593498045F573C60D42CA80774347E"
+  },
+  {
+    "relative": "figures\\eda\\05A_monthly_lag_matrix.png",
+    "sha256": "34B2D62C8BD92B00166071DF7A8DE65A9AE6C2BF73A20957CC9D3F12E5318D74"
+  },
+  {
+    "relative": "figures\\eda\\05B_monthly_lag.png",
+    "sha256": "A1D7966D7635D95D40F558DA3DE2F13A76B78804B33A9849B1D023A7ED213D32"
+  },
+  {
+    "relative": "figures\\eda\\05B_weekly_change_trace.png",
+    "sha256": "F01ABCC6F0105305F2D8ED0B715B1498EFCDADF7755FBAD1B36C1633DC446403"
+  },
+  {
+    "relative": "figures\\eda\\06A_high_slot_map.png",
+    "sha256": "A8F481F6F6B0BDB405968F7F9A8D0D6BC2B4D58D681F7640E223C9BB616CEE9D"
+  },
+  {
+    "relative": "figures\\eda\\06A_low_load_monthly.png",
+    "sha256": "F58C7B9EC888126A4A309DA2C32FBBA4AC2CD71945E6E7364CF86CC3855306B1"
+  },
+  {
+    "relative": "figures\\eda\\06B_high_slot_profiles.png",
+    "sha256": "20A30B93EB3CAABCED563F494C90517704F6122D9380EC4897F8D93EA6F12B73"
+  },
+  {
+    "relative": "figures\\eda\\06B_low_load_weighting.png",
+    "sha256": "0AEB2F344F728DF58BA5C7CCDA4F96E5B58F2751BB441130870C55C42B71C218"
+  },
+  {
+    "relative": "figures\\eda\\07A_calendar_joint.png",
+    "sha256": "652DAE44F014231895061783E028E31F6C404691DA87B4962C4B62446F9BDEC6"
+  },
+  {
+    "relative": "figures\\eda\\07A_calendar_means.png",
+    "sha256": "AB2EB0A45D54FFC9014008FEEAA014264B468904AB7C75B2C278B26EB821E218"
+  },
+  {
+    "relative": "figures\\eda\\07B_calendar_distribution.png",
+    "sha256": "DA61971AE18A0C4F196A13ABBCA6D5E032905F416A1CB488B716C94933487A7E"
+  },
+  {
+    "relative": "figures\\eda\\07B_calendar_ecdf.png",
+    "sha256": "A32F08074ABDC94CA16D2B13536996F678EB7AA5B4D71BDE395F20F19EDD541F"
+  },
+  {
+    "relative": "figures\\eda\\manifest.json",
+    "sha256": "D9E9FA91BB961A618306C5121610CC38C35719126112909D4086B70A9859D7EA"
+  },
+  {
+    "relative": "figures\\eda\\restart_01_daily_pattern.png",
+    "sha256": "A2EF6CCB1BA0BD8F96CC00392F53AB983F144837924D7F8ED73EA1A041F68EC7"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_condition_ranges.png",
+    "sha256": "6E1745BF7E4321C99BC3D0383729F59BD5D6AEC75E41F698321E346DBE3237C3"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_hour_shape.png",
+    "sha256": "1AA5D007CD038EF6460A2B4BCEF1F859A480B264E32C3A3020E40FF5A87BB57C"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_peak_distribution.png",
+    "sha256": "7620C8056673E81A33F9609229481F2AA34A16A97A9DD5C3A03DA7603271663C"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_peak_month_distributions.png",
+    "sha256": "710214EEB194A68626D52D48F2C386E2556FBDD8E9A3A0C4500E7C3EFD348501"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_peak_timeline.png",
+    "sha256": "37ECFC339B9C3CEFECBA408ADC26ACE24B1BEA8B4B2A16994E48A006F207BB63"
+  },
+  {
+    "relative": "figures\\eda\\restart_03_threshold_timing.png",
+    "sha256": "7013AEBA8205F56811E0F9B5BFB1B684FC7CA630D14B55F92A1742DE82A9E7F3"
+  },
+  {
+    "relative": "figures\\eda\\story_manifest.json",
+    "sha256": "5798AB4FE3BCF01A3F00B31E68C7672ED5D5F4D3BF4E93C5F105E896C872507A"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\01_load_groups.png",
+    "sha256": "4697D53008DEBC5991E0578EC26A4A8D3F10206F213E373D0B9F81BD96963744"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\02_definition_comparison.png",
+    "sha256": "2DF157CD9052A8084A4E584D087712DBF5C9EEDA1F47FFC522C2FEA6268175F2"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\03_boundary_stability.png",
+    "sha256": "3D9C8A665FFE2C4B5B02759C84EA3057AB706D7A556C3D1080DAAE41C2EDB5FD"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\04_cost_and_conditions.png",
+    "sha256": "DE04C6A6CA17F0ECB9DFF39DA55189B55D5A3280D3710AE7A6857F99C8095750"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\contact_50.png",
+    "sha256": "3075BD2DE27B316E18CD1D3B05BE77EAECB23251BA0570D212DEB6A7914A73E0"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\01_kmeans_fixed_k.png",
+    "sha256": "934858E906E92ECA0F14120AD23DF19513CBC45728CC54854092C32A79171B70"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\02_gmm_fixed_k.png",
+    "sha256": "079438E029F5D671A3DCF329E44F377776F1B9652096A6D5FC0AD449DCA1C288"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\03_scores_and_upper_groups.png",
+    "sha256": "5E16ADE19EED945D7EE8FE36D63639FD36BB7048A93E5E34A3C9C26F69328D48"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\04_fixed_k_stability.png",
+    "sha256": "59851AB186C53F1C303DF67C92B1B734BCA40418DC4D6F7BDDA5913D75053AC3"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\contact_50.png",
+    "sha256": "9A97DC20F02D609C5F3D06CDA3DC9E69E24BBBF063C20638DF5A370129993004"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\manifest.json",
+    "sha256": "E770CA28177904C12E914B74DF3651007A75B981AE3CCE5F5B4C4B5E8525EF68"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\contact_50.png",
+    "sha256": "FF80A3405A05B1D97527D4A54AAC95ADAADE53866358ECAA57DB0F49B54CF2A4"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\gmm_histograms_3_to_7.png",
+    "sha256": "330D336BA07B879D65C9AAE3734B1A9B0E0644D657C001D98BEB8A6C177C6245"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\kmeans_histograms_3_to_7.png",
+    "sha256": "77127552544E74D14C776EE0C8C15630A4C0630C5ECE609273905B877E0FAB72"
+  },
+  {
+    "relative": "figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\manifest.json",
+    "sha256": "9A447BE7330B82CB7D4799D229FDF40753332B53292F2E7A6FFE982D8D6F6A54"
+  },
+  {
+    "relative": "figures\\eda\\qa\\restart_03_contact_50.png",
+    "sha256": "6D66D1A8A346D9FDD490BF5191F66134DC33D659AA4A918CC46F651E9B72B8F4"
+  },
+  {
+    "relative": "figures\\eda\\qa\\restart_03_distribution_contact_50.png",
+    "sha256": "BEE70DEBB7F1CE1E1AC6141897C5F2FFA204F662C9CA308B58FE141F719ABDE8"
+  },
+  {
+    "relative": "scripts\\analysis_figures.py",
+    "sha256": "69F98E8944BF745EBBE5B91BA1EE2A7BBF2E570D61CBD9CB7905C5DCDCD69F76"
+  },
+  {
+    "relative": "scripts\\analysis_reproduce.py",
+    "sha256": "4CE7A4613AC30785FDA66A47609E42637235D0BA252EBF4FDDA4F4530064D2AB"
+  },
+  {
+    "relative": "scripts\\analyze_pot_tail.py",
+    "sha256": "389F9C2A6F786AFE376E70A86A11AF1D19CE4433EB6965AA3269204A94B82E51"
+  },
+  {
+    "relative": "scripts\\check_peak_iqr.py",
+    "sha256": "76DC2D83CDB52C387C0D2DD8F69CC4BDDFD2DBC10268FC9F7A96B44A3991C03A"
+  },
+  {
+    "relative": "scripts\\compare_fixed_cluster_counts.py",
+    "sha256": "60FEF709A0DFF5271E367FF4F23B9317A88FF9C6FB92851998DB6C6F121E33AE"
+  },
+  {
+    "relative": "scripts\\compare_peak_definitions.py",
+    "sha256": "9D7A9E06B7DF9EB3696AF2DDEC2AE065B2875A561852AA987228478D4C3D4806"
+  },
+  {
+    "relative": "scripts\\eda_analysis.py",
+    "sha256": "1073C2323C0DFB7EB8949BA1E13592067DC224FACA1CAD6607D10E2E727D92DC"
+  },
+  {
+    "relative": "scripts\\eda_daily_pattern.py",
+    "sha256": "CB42D4D56FE1F6F28C5B05458AD03924A0CA2A88DFF4282A94B2C3BE8CCE178B"
+  },
+  {
+    "relative": "scripts\\eda_external_conditions.py",
+    "sha256": "7BCC1E51191E7A6CB2722ECDA3B9FB317774788797E68BFBA9B304A76C15D505"
+  },
+  {
+    "relative": "scripts\\eda_figures.py",
+    "sha256": "8DBDC8733F1991DC27756D39C2A61F0579757FFA32471AF805524E6068AE4071"
+  },
+  {
+    "relative": "scripts\\eda_peak_conditions.py",
+    "sha256": "A7D51F39F97B98537610BFBC8AD5264B56A8F5F741F59E8A768091BE2F6BB4AD"
+  },
+  {
+    "relative": "scripts\\eda_peak_distribution.py",
+    "sha256": "26858E98380E41F1C3C6FABDD166719DBA392B46FB5F82104B3FBFAC15E90B67"
+  },
+  {
+    "relative": "scripts\\eda_peak_visual_check.py",
+    "sha256": "D9B06EAF02DBCDAF206144AB856609901FA4BE43130DE8B1D4DD5E29F48F4BD2"
+  },
+  {
+    "relative": "scripts\\eda_story_figures.py",
+    "sha256": "AC91EB324B35A33F734EA88C6F6CF518BBAE338DFADBFAA3DD6CA700FEE7DB2E"
+  },
+  {
+    "relative": "scripts\\eda_variable_relations.py",
+    "sha256": "903EFC33E113D42AFBF40BA3A7A231DE183B08FE11463DCB747B31D207035C94"
+  },
+  {
+    "relative": "scripts\\inspect_pot_input.py",
+    "sha256": "A140E3932ACB424C6BD2968F97CC6DF7D75602C20484AC743DC20A6798923D07"
+  },
+  {
+    "relative": "scripts\\plot_cluster_histograms_3_to_7.py",
+    "sha256": "DB56C4A28F267FF688B8C8CEF8DE51F7F6B55CBC69C241E77CAA8ADE9F4B985E"
+  },
+  {
+    "relative": "scripts\\plot_fixed_cluster_counts.py",
+    "sha256": "1C7F4A36676C387AB6345ED9C6197CC2C3ACF7B03459777B1D56AC5FECF75CE6"
+  },
+  {
+    "relative": "scripts\\plot_peak_comparison.py",
+    "sha256": "8F4B463B30B224A69F04B26A5C3B6B1C8A41B614B1BA2C027168151A32BD1E76"
+  },
+  {
+    "relative": "scripts\\plot_pot_tail.py",
+    "sha256": "9C5266E78C596402D0FBD5A7F985FB2EF4270908E21E3F45080AE7D0F81C3907"
+  },
+  {
+    "relative": "scripts\\refresh_report_plots.py",
+    "sha256": "AEDC3632F51C6D8A51C124B6458E6E26414914A2A68DFD96F276059A0603FA1B"
+  },
+  {
+    "relative": "scripts\\verify_analysis.py",
+    "sha256": "3A8F1FCA5C75B49942F2CF610E13A5C50AA44237FEAFAC175336E41F640DAAF4"
+  },
+  {
+    "relative": "scripts\\verify_eda.py",
+    "sha256": "875621A7359C7214592FB6E7B8CE18A8D883968F008FC0A923B30B54A91B194C"
+  },
+  {
+    "relative": "scripts\\verify_external_conditions.py",
+    "sha256": "9FBB7B74384EF9DFE4DF87F9B2A255CAE14EEF6ADB6F94FECB264BC57147281E"
+  },
+  {
+    "relative": "scripts\\verify_peak_comparison.py",
+    "sha256": "76C09744D8C31127349C4685FB9333FB89EF888CB1E20D3735531D979DA31BE9"
+  },
+  {
+    "relative": "scripts\\verify_restart_peak_document.py",
+    "sha256": "23679BD9649D7B472DE834BB8067A6D2044FC05F81F68CD56176115162E4C9BC"
+  },
+  {
+    "relative": "scripts\\__pycache__\\analysis_figures.cpython-313.pyc",
+    "sha256": "744738F356E64F8DC7ADA5F49FE9D916D13196548BF17CC2B16DB2A79B60918B"
+  },
+  {
+    "relative": "scripts\\__pycache__\\compare_peak_definitions.cpython-313.pyc",
+    "sha256": "22D579D67BA261B4D1B80F687CF63A64C43C665FD1A6AF39D4D596F2BC7BA049"
+  },
+  {
+    "relative": "scripts\\__pycache__\\eda_analysis.cpython-313.pyc",
+    "sha256": "D1D1434AC4500965E141988AA09D5F8863BB914F79F66AF18C5E13045F8BC644"
+  },
+  {
+    "relative": "scripts\\__pycache__\\eda_daily_pattern.cpython-313.pyc",
+    "sha256": "C784286F45F97393C90700F1F3472FA6F413C9175D251CC64B5804F1AAD2E793"
+  },
+  {
+    "relative": "scripts\\__pycache__\\eda_external_conditions.cpython-313.pyc",
+    "sha256": "2427600E990564CF706D676011AD7553C30ACDD6EC17944836F44CD2C18E23AF"
+  },
+  {
+    "relative": "scripts\\__pycache__\\eda_figures.cpython-313.pyc",
+    "sha256": "DE2FE970C3F2BBFA8980CB1C8F7E7A1C16CB8F5D485A37FA9296DB5BE7AE215E"
+  },
+  {
+    "relative": "scripts\\__pycache__\\eda_story_figures.cpython-313.pyc",
+    "sha256": "1BC1D49EE2834312E979197333E738C9135EED39CE279C07040F818CAF858761"
+  },
+  {
+    "relative": "scripts\\__pycache__\\plot_fixed_cluster_counts.cpython-313.pyc",
+    "sha256": "EE4CEDD4427DF52EBECF010E51AF6F4DEC866596912128AC5DECEC701B3E7C61"
+  },
+  {
+    "relative": "scripts\\__pycache__\\verify_external_conditions.cpython-313.pyc",
+    "sha256": "E64183E4654A6978169E584EB8F8CC965D5B2166D5EBE9408525E10E69B94BE1"
+  },
+  {
+    "relative": "tables\\analysis\\daily_concentration.csv",
+    "sha256": "A628C8E461A0249DA5C403EE786BE08AEC0C11B126941B1C38AD24E489CF2290"
+  },
+  {
+    "relative": "tables\\analysis\\daily_slots.csv",
+    "sha256": "4810B811183879B1440BF47427587CC48D958587CC2EC95B9E307AF6867735DC"
+  },
+  {
+    "relative": "tables\\analysis\\direct_caps.csv",
+    "sha256": "4F525FA96471A178C87E81E85884B59CC9A39F7F85FCB5CD75115434BBD07ABD"
+  },
+  {
+    "relative": "tables\\analysis\\distribution_bins.csv",
+    "sha256": "5E5E231D9B947AC750B5244F6AF6498A75D45702679CD352BA82A003C2F8DD8B"
+  },
+  {
+    "relative": "tables\\analysis\\distribution_exclusions.csv",
+    "sha256": "953AC0DF8D3F1EDA262F95E8165C30DE834227CF36A80E5E0091E071B8617687"
+  },
+  {
+    "relative": "tables\\analysis\\distribution_reference.csv",
+    "sha256": "D502EDB58B6AAA53947E06573A27CDB3E4D9D650059AE6AA2095593B7CFAD2CD"
+  },
+  {
+    "relative": "tables\\analysis\\distribution_sensitivity.csv",
+    "sha256": "8935BFDA65AB391D377180344C2797921932992D0EED1C0760A719F800EF9C3E"
+  },
+  {
+    "relative": "tables\\analysis\\distribution.csv",
+    "sha256": "F705513A5856B4105D602020FB9FDB7E373B7E9F0893AD2528F0E0D68A82C88E"
+  },
+  {
+    "relative": "tables\\analysis\\group_summary.csv",
+    "sha256": "523416468B047982C64384823CDD06E7DE152CC18C3723DCD32E23DBF1BDCA9A"
+  },
+  {
+    "relative": "tables\\analysis\\july_sensitivity.csv",
+    "sha256": "776C6970050BC84454C16614C90F7A86643438835C189FC7F81C2A5AA78B1535"
+  },
+  {
+    "relative": "tables\\analysis\\monthly_max.csv",
+    "sha256": "FDCCDE2C326074D19D5EC4E0B628B79CF983B78A32767B1070EC148F25483087"
+  },
+  {
+    "relative": "tables\\analysis\\redistribution.csv",
+    "sha256": "3BCA71890A0C88412D995C4B1175939FECF411D9CC7A759F9518AAD3EC5EFC57"
+  },
+  {
+    "relative": "tables\\analysis\\run_manifest.json",
+    "sha256": "4027D6CC7CD5B8BD95D018A4F143987A5B263F61011BEF3D0815991F4DA58664"
+  },
+  {
+    "relative": "tables\\analysis\\transition_records.csv",
+    "sha256": "77C4FB3016A7CA52F4888EF8CFF0B0FF9D7987E4A2C672DF53934B9FE8C103CF"
+  },
+  {
+    "relative": "tables\\analysis\\transition_strata.csv",
+    "sha256": "596E5B9B50C81121C02BEAC93F269C5167E24B876158C9287D83F88E2CCD4F1E"
+  },
+  {
+    "relative": "tables\\analysis\\transition_summary.csv",
+    "sha256": "06E7E7C45A77D61BD652627E7E038D75E858D10DF05448F69AD2DF295070F241"
+  },
+  {
+    "relative": "tables\\analysis\\verification.json",
+    "sha256": "F267185AA815C7936E42D895323767E2902AA2B81F290B01303EB79FC5E740EA"
+  },
+  {
+    "relative": "tables\\eda\\calendar_summary.csv",
+    "sha256": "9CE68DA3DFFC0BACC25D088579AE56D4000E72D52426C447225F2C5B91C52D4B"
+  },
+  {
+    "relative": "tables\\eda\\calendar_tests.csv",
+    "sha256": "7FD342C3D98EDB3BCE8D7B437FD8E91153A444AC847F46C7D533BF8624DFFF39"
+  },
+  {
+    "relative": "tables\\eda\\conditional_correlations.csv",
+    "sha256": "1F3B1CB29956B2D75D8F606EDA216BBD0A8ECC1ADA36FFE663EDA0D944CF3E73"
+  },
+  {
+    "relative": "tables\\eda\\conditional_points.csv",
+    "sha256": "329D1F85520DE88608AD83B8BF40122A71927C77E17956855C3D0B1CD9F0CE0B"
+  },
+  {
+    "relative": "tables\\eda\\daily_pattern_restart_manifest.json",
+    "sha256": "B6D8CAE3B9A5ED19FE3EE3F31D567BD5ED0F43BDE4CC2F5E8125B67005372D4E"
+  },
+  {
+    "relative": "tables\\eda\\daily_pattern_restart.csv",
+    "sha256": "59F650BF4A6C09D07469FA6928A74215B136476F41E648A5FBBBFB6777CAC50B"
+  },
+  {
+    "relative": "tables\\eda\\daily_records.csv",
+    "sha256": "55AADF0BB001C75782E9A4F2A4F05C2DB6AF4BE9354A88695189F021FCA87419"
+  },
+  {
+    "relative": "tables\\eda\\external_band_frequency.csv",
+    "sha256": "9704D3668E9E457E37F5816058DE7961600F4F5FF465CCF5405F2D0B1CE81CC8"
+  },
+  {
+    "relative": "tables\\eda\\external_band_records.csv",
+    "sha256": "0914CC2688B3E33692B3D359B56DDCD28EFA4CEAE846ECF2D79E5C0165DEEEB9"
+  },
+  {
+    "relative": "tables\\eda\\external_calendar_frequency.csv",
+    "sha256": "64B00504617C4F8098E96CEF687EA4EF63E67323FD4085B42F946C2705F29F1F"
+  },
+  {
+    "relative": "tables\\eda\\external_common_cells.csv",
+    "sha256": "3E791C17756B815B9DC8B8D8C0E9D26E06E6C6DB021317781E370E8214DCBA35"
+  },
+  {
+    "relative": "tables\\eda\\external_common_support.csv",
+    "sha256": "3C594F43F47D3EA138FEB8625309A49BDC8074A84E50E1C8F9ECFA4C0EEB8433"
+  },
+  {
+    "relative": "tables\\eda\\external_manifest.json",
+    "sha256": "20274A4DFF777A92E6CFCF74770252156BF758AC839EC1C89F4394F717FD55B2"
+  },
+  {
+    "relative": "tables\\eda\\external_month_frequency.csv",
+    "sha256": "F5253A7F7C6ACA21DB32F41914EE72BB1D28ECC8B8D98B477FD4EF7952728796"
+  },
+  {
+    "relative": "tables\\eda\\external_positive_weekday_months.csv",
+    "sha256": "A408F3C0A9A77B9971D39600C547DF3DB2A6EE8394EBD222F5F3A48523CADC27"
+  },
+  {
+    "relative": "tables\\eda\\external_week_sensitivity.csv",
+    "sha256": "E44935E37849D6D89F90A8F5CCA53CB2451B62440CA399A3EC138D1F29997A55"
+  },
+  {
+    "relative": "tables\\eda\\high_slot_patterns.csv",
+    "sha256": "8AA9BD8634BCA630B3E6BFDACE10A83570DE4362287FC80295FF9097E5E80DF1"
+  },
+  {
+    "relative": "tables\\eda\\high_slot_records.csv",
+    "sha256": "C445FD1AA60C480A54D8936CFD08723CFC3704A1365CC66E371E261568F6D55A"
+  },
+  {
+    "relative": "tables\\eda\\high_slot_summary.csv",
+    "sha256": "296A6FA48F8C5D956F5EECD3336C2887BFE786624BFA7F6E74A16822F1F60AD0"
+  },
+  {
+    "relative": "tables\\eda\\hour_frequency_187.csv",
+    "sha256": "3656ECB2F79519E0766B4FCE8157561F68F228F5AB024D995CE0C4E4B1E9C0AE"
+  },
+  {
+    "relative": "tables\\eda\\hour_patterns.csv",
+    "sha256": "F010555604851E519D78B089591E907D4E0FC3CEAE1025F8DBC8B366862B45F7"
+  },
+  {
+    "relative": "tables\\eda\\hourly_overview.csv",
+    "sha256": "1BA744075B221383A705C628845A8603855A969AC9FBF25C52F1909CFE4140FD"
+  },
+  {
+    "relative": "tables\\eda\\hourly_records.csv",
+    "sha256": "627FAE26A140907DBBB8380500ADFD48261ECA7E4C5DDECE72DEA0E9E8FD4394"
+  },
+  {
+    "relative": "tables\\eda\\lag_correlations.csv",
+    "sha256": "8518A9E6042F7DD2E6FE84D5B36DED4CCFFF376526FF78D5B6BA2589917BFD19"
+  },
+  {
+    "relative": "tables\\eda\\low_load_monthly.csv",
+    "sha256": "7260A2A15377EEEF17407F07E67510B4A163339CBC673D747CC62BF6F4F9AB0E"
+  },
+  {
+    "relative": "tables\\eda\\mean_peak_visibility.csv",
+    "sha256": "B6BFF28C0CB1B871E64B33C1D04A571FFEA795104B83642300F63B744BDE18DB"
+  },
+  {
+    "relative": "tables\\eda\\monthly_hour_overview.csv",
+    "sha256": "552EBE457673ED6BDBE94A646428817F103647B82D2993BDAC7304CCFC0E6EF1"
+  },
+  {
+    "relative": "tables\\eda\\monthly_maxima.csv",
+    "sha256": "B0CBDCD6FBADDE737E7C6ADBC81679355B7436E38149EFABA3D8A7A690FBFC20"
+  },
+  {
+    "relative": "tables\\eda\\narrative_manifest.json",
+    "sha256": "FFC9D318F676BE33F317DD623D897A5CF2073141F8310108A63AA48702C10E7F"
+  },
+  {
+    "relative": "tables\\eda\\overall_correlations.csv",
+    "sha256": "DB3462E2486531C6C17A733E1987206ADFBCDB0555734AE92BDA8C0D8EFCE67C"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_condition_rates.csv",
+    "sha256": "9704D3668E9E457E37F5816058DE7961600F4F5FF465CCF5405F2D0B1CE81CC8"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_distribution_frequency.csv",
+    "sha256": "31C04B7B57E335FF74294F9650E7DBD198EA6B51B8122E6FEC391BCE3A2AAFAA"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_distribution_manifest.json",
+    "sha256": "77F2AB0CC8D2096A85238913EB879B919E9258F49BFA75A5061E5C3D216D87AA"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_distribution_points.csv",
+    "sha256": "4CA790766E2AA932F522C18CDA194B45B1ECDD12B01B19EF8C097E0480122502"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_document_verification.json",
+    "sha256": "45A3894588EACF71B121551EA190B3DAF8D8DF9596070DEFB78776BDBDAC906C"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_four_threshold_months.csv",
+    "sha256": "CD0DB1C67D18A3FD749D99DDB8889C2E61A614A3E251C7F8A4A22CEB9D084D9F"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_iqr_check.json",
+    "sha256": "E2152E3F2B32DF4101F91CFEFA36D80243A6002B154BFAE41E1CC78FC678262E"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_manifest.json",
+    "sha256": "55EF9CBF10EB846B888790AFBD643C3C611C444AE4993C088976FD06E2C22665"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_month_hour.csv",
+    "sha256": "552EBE457673ED6BDBE94A646428817F103647B82D2993BDAC7304CCFC0E6EF1"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_month_sensitivity.csv",
+    "sha256": "207E22533C9FC3251A37D6BD568AFEAA75AD7FB1F5066322BD1681E22987C1DC"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_quantile_sensitivity.csv",
+    "sha256": "22BD535753B945860DE60D0445C1C2938D815F47817741DE9886E3C1DE39297F"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_threshold_curve.csv",
+    "sha256": "8FA067C33C8509321425063331A492C33827EA1223B2955A12BEF4F10516EFDE"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_thresholds.csv",
+    "sha256": "A4E2CD2CC803A645B37E8F5A2C376C09856023434394B80373666C20A2D84970"
+  },
+  {
+    "relative": "tables\\eda\\restart_peak_visual_review.json",
+    "sha256": "200237ACB28FBB6964A5D77214ACF0116D33D7ABDEE546CB9A48686575B1290A"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_august_context.csv",
+    "sha256": "74EF2F68E00AB634FC3A22578661CF7CB60FDB99BD108DEDA6AC3901C4C083D2"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_august_week.csv",
+    "sha256": "51A48DA87525F00BA6B869A24E988DA83FA09FA6EF9612F43BB106B0BE3D6B49"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_bins.csv",
+    "sha256": "089110EBD8BA5437BFB97B534C551464237D1D6F78502540C407BCC1BF728DEC"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_distribution.csv",
+    "sha256": "B3200DDBA1A6D29CCA0069FD31EC42F4A9DA1A8188DA4D633349D8C0B9858A2B"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_manifest.json",
+    "sha256": "60EE9855FA1D7ED8983EFEC3ADD5AA6399345A386754233856FA499CD40AAA66"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_monthly.csv",
+    "sha256": "A9FCCD364E806B92E72FF790720FA137E7E43B5B429556D4C25A311DC1009CC4"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_sensitivity.csv",
+    "sha256": "E430974F7E85FA504DBBC7FF21C5289656E1D155AED6CD54C443F518D1D99A36"
+  },
+  {
+    "relative": "tables\\eda\\restart_relations_spearman.csv",
+    "sha256": "5B38827F0922269D848062562A2E3921A5FB2A8D7A68A26EF31D2F4D8F5721CC"
+  },
+  {
+    "relative": "tables\\eda\\run_manifest.json",
+    "sha256": "F8B441534E4C9E4B3D3ED7CF8545AB22F68FEEB48969496D298A0FE2DA909E6F"
+  },
+  {
+    "relative": "tables\\eda\\same_mean_examples.csv",
+    "sha256": "34561A780DC6B1DCCB8FF35F1321BDD56F6A00AD3F766C6B1AB83F94A78BD0D0"
+  },
+  {
+    "relative": "tables\\eda\\verification.json",
+    "sha256": "BB85FE352DD6D5FC4744149542D55C018EAD45277F69659CC2910EDF4260AA70"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\assignments.csv",
+    "sha256": "31A791945427D220B0F7E8822D858D8F2244C417008335D6AA1231C6E93B9BCA"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\comparison.csv",
+    "sha256": "083ECD777FC6341716F827EFBD13C71AAA31331C173ECEFEBD8474060F612B61"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\components.csv",
+    "sha256": "02AFB5BA599469C52E660E1C13ED627F4D377E0C3EE50A06F7557ACA1B025896"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\condition_rates.csv",
+    "sha256": "C918EA4472AC444DD26D2FC5140BA280D7B51A1BE78274A4EE147CD9C4D42EB5"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\cost_evidence.csv",
+    "sha256": "67C8107DF09D69E92146B7613308C458CAA2FF03FAF25E1DA50688E9546C9F9C"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\figures.json",
+    "sha256": "2BD3D85F5ECF2A1C288034B33DCA704A276C19C3259367C92EC57019FC0646FF"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fit_scope_sensitivity.csv",
+    "sha256": "FE0554974280F5D1D4AEC087A6295DE48405C2B8A2593535FEBE548AFBD8EFBF"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fitted_distribution.csv",
+    "sha256": "2572049056168A0F15AF9A37A40CA779C57F4DFC706D4F051029FE9B5AE02EC4"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\interpretation.json",
+    "sha256": "CA4BFDCCCBCFA672CE6400D3F712802727B41048902331F8D3D2B1B581F4D084"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\k_sensitivity.csv",
+    "sha256": "53EB749C0BE5E040B6770E48D3812DC856A28AAC74DF26818AF0FAAF01673BC4"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\manifest.json",
+    "sha256": "8CEB4BE7335B02024C3966D83E788BE081A135F2EE1B484B796A02A9CF48357B"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\model_selection.csv",
+    "sha256": "45DC3E7B3B36CBD40997848FE7DE3C736F533FA9AB143D915D183D4EBC8F9AD0"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\monthly_rates.csv",
+    "sha256": "E4453CE966E20C17CA53E238EECF5124F8B3A50FC8F02BBB07FFB8E4B47D8CE2"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\overlap.csv",
+    "sha256": "6CE502C1CD2A08219ACE1E4708258154EE07FCB4543120F9A9BD566CECF4193D"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\verification.json",
+    "sha256": "22B5B029B7BD4E6B94242839AC870F355649A10C818D3BC06C1CF61408FB861E"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\weekly_resampling.csv",
+    "sha256": "70B1C01C514D38E1F7B042FE6D22F2F86C3DE5FFF9B8B587C826642202C1B9B3"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\adjacent_k_changes.csv",
+    "sha256": "8FB4E48C5D81A0FA5CD1DAA29B666E2F3895EB77B2831FC2D9C6F60374C80F63"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\assignments.csv",
+    "sha256": "CD885CE420FB2604F3CA00C5FC148B8F9276174DD3E0B7BF809DFE2D027A5D9B"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\comparison.csv",
+    "sha256": "4B4E4D136DA61786AF92AE0100867ED59D30D48F9EE82F0F7ABF16A740AC4F8B"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\components.csv",
+    "sha256": "2CD318395A1BF39AB9708A0BD769507EE012FDA3CBBB0BFC73C428B65EECB56D"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\decision_grid.csv",
+    "sha256": "D0F6BBAF84306B8BFFCF8894A1AE26713353164B5A9D6398249097336221F124"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\initialization.csv",
+    "sha256": "5CD34AAF74D8F3C1A030CDA294E6C8DCB11B4CB49F545E562BFFE7F6B6CCBC63"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\manifest.json",
+    "sha256": "504AF27F945A6D6BE95CFC4FB91ADD6F90464C1286D9D77E657AF789E156B115"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\monthly_rates.csv",
+    "sha256": "92F3988F63AC5466D9AD7AFFBFF6539D724C347844ECF4CDB8AC6D7DE473535B"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\scope_sensitivity.csv",
+    "sha256": "925EC62A25ADCC9F44B3BDA07D4BC5FAC2708F35893A7FB9E904E6B82C8A7557"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\stability.csv",
+    "sha256": "1C7844246D1A3DCFB154C857EEEB89408D237CE9C1C24646BEF9041DCDD82085"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\verification.json",
+    "sha256": "066EA36575E813ED042FDA78174C769A96C3313061694606ACBD744DD62C6A58"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\fixed_k\\weekly_resampling.csv",
+    "sha256": "2F534DA668840C095C548353241F36FCE17BBAC245FB399806A5445C8EE6B52D"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\bootstrap_summary.csv",
+    "sha256": "105993ED44DE235328AA53FEA4C8A945D5980943B0286A7FACA00AFB901453F5"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\events_gap3.csv",
+    "sha256": "0E4FBC16EBDA27D733192C2C64CDF316662379DA677F5AA63241E7BF445641BD"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\exceedance_dependence.csv",
+    "sha256": "8C55D2C938BF94304138D040FC7F937AC19B53264A48CF659B09D14C8DBC0C6E"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\load_duration.csv",
+    "sha256": "EA694C8FACE9385E96F857F4C42F590C3CBEA076506E530538415B7F058A7A7F"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\manifest.json",
+    "sha256": "45055354EB6E011CE642016E178DE6E16CFBA9DFB87F776AEB1249AB82E239FE"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\monthly_fixed_thresholds.csv",
+    "sha256": "2046C9DB3FB4DAEA5830A69B1B165582BF1B994B68667740F62B5DE6284827B0"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\period_diagnostic.csv",
+    "sha256": "63D80C307010A113AFF0C6E4EB73DBBEA16323BC2275365E8FCE324DD0C23541"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\plan.json",
+    "sha256": "D75A56691CC4E3B50BDA6EEAC0CB8A45507E5F1753E131F8654F3B0B4E42FEFB"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\threshold_scan.csv",
+    "sha256": "CA6142E89289D054A0D474EDE4CBA5EF2F3F2747516A6B48253960C40DE471BF"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\unique_profile_sensitivity.csv",
+    "sha256": "497BCFE66AD8858DB248BDE1467A36CB4622B3EF714562C5DFC1B26E5CBA7962"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail\\weekly_resampling.csv",
+    "sha256": "BA68B076EB4386C14B70888C7990F574361A9C26C7D17358B7C9503FAED59A4F"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\bootstrap_summary.csv",
+    "sha256": "E15B843AAAE52CD98E9F6AF212A1BA982567771EC06677FFD444CD17C32ABD22"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\events_gap3.csv",
+    "sha256": "E7CE2D20EF02D0C03861FD0791B92EAAABBBCABC5875086CA5A530280E1247AD"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\exceedance_dependence.csv",
+    "sha256": "B64242A94FA573E597FC9FC75CA2BF10C259D139284FAC884D3F17B78E37CD43"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\load_duration.csv",
+    "sha256": "63A5D6629A6A7773D9C771188A4947EDEFD43C7104B799B2DB5CD328F6947F85"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\manifest.json",
+    "sha256": "94335C6A7D44A0EECBD6055C1EE0ED5068DD87FDE17A960902E60576C6CCE932"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\monthly_fixed_thresholds.csv",
+    "sha256": "5251175B8E6254BD21B21D19C2F8E941160D05875589E26C159EDB08627F6726"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\monthly_shape_diagnostics.csv",
+    "sha256": "E7B64A4A9071E4C5B00E7E111582F3B8D3C73AD1B4392E70FE946D8EBB64ADE3"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\plan.json",
+    "sha256": "3EF0C9FE1C9C2880C23F4D94AED1510A4F84FDB6C802BFCB7CC542B0E3FBEDC6"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\threshold_scan.csv",
+    "sha256": "9C6100160C8FB3E5B26A0121DC0DDAE14BA2AA5B269AACCB5D1A36DA8BBC4505"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\unique_profile_sensitivity.csv",
+    "sha256": "952F2AEB4A90B887A47C1311BC956DF2FB0AFED43544C90C3EBF21CD75AE7AFD"
+  },
+  {
+    "relative": "tables\\eda\\peak_definition_comparison\\pot_tail_eda_full\\weekly_resampling.csv",
+    "sha256": "BA41AA2D7146405711B2FA26892D3BE243D5EA11B4A39D099C0ABE7548A29CC9"
+  }
+]
