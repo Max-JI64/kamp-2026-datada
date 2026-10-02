@@ -1,0 +1,20 @@
+{
+  "time": "2026-09-23T16:36:26+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "complete_days": 241,
+  "invalid_time_dates": {
+    "20210713": 24,
+    "20210715": 24
+  },
+  "calendar_groups": 45,
+  "groups_with_same_day_of_month_pair": 30,
+  "groups_with_exact_seven_day_gap_pair": 7,
+  "groups_with_adjacent_day_pair": 8,
+  "largest_profile_id": "P005",
+  "largest_profile_days": 15,
+  "largest_group_all_pairs": 105,
+  "largest_group_same_day_of_month_pairs": 5,
+  "pandas": "3.0.1"
+}

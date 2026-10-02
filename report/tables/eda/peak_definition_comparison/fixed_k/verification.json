@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "independently_verified_membership_cells": 69408,
+  "models": 12,
+  "weekly_resampling_fits": 480,
+  "all_observed_classifications_equivalent_to_integer_cut": true,
+  "verification_method": "Independent nearest-centroid / unnormalized Gaussian log posterior from saved parameters",
+  "manuscripts_edited": false
+}

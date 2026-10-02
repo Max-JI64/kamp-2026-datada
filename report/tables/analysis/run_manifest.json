@@ -1,0 +1,109 @@
+{
+  "executed_at": "2026-10-02T08:45:32+09:00",
+  "python": "3.13.1",
+  "numpy": "2.2.6",
+  "pandas": "3.0.1",
+  "source": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\data\\origin\\okm_augumented_2021.csv",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "4ce7a4613ac30785fda66a47609e42637235d0ba252ebf4fdda4f4530064d2ab",
+  "rows": 5784,
+  "days": 241,
+  "scope": "2021-01 through 2021-08, complete valid-hour days",
+  "threshold": 182,
+  "distribution_months": [
+    6,
+    7,
+    8
+  ],
+  "distribution_bins": [
+    0,
+    26,
+    112.5,
+    156,
+    176,
+    182,
+    188,
+    1000
+  ],
+  "distribution_reference": "pooled June-August positive-production weekday hours",
+  "profile_weight": "inverse frequency within Jan-Jun / Jul-Aug",
+  "budgets": [
+    0,
+    0.05,
+    0.1
+  ],
+  "receive_zero": [
+    false,
+    true
+  ],
+  "tie_atol": 1e-08,
+  "sources": [
+    "A003",
+    "A037",
+    "A044",
+    "A045"
+  ],
+  "image_reading": false,
+  "files": {
+    "daily_concentration.csv": {
+      "rows": 241,
+      "sha256": "a628c8e461a0249da5c403ee786be08aec0c11b126941b1c38ad24e489cf2290"
+    },
+    "daily_slots.csv": {
+      "rows": 23136,
+      "sha256": "4810b811183879b1440bf47427587cc48d958587cc2ec95b9e307af6867735dc"
+    },
+    "direct_caps.csv": {
+      "rows": 723,
+      "sha256": "4f525fa96471a178c87e81e85884b59cc9a39f7f85fcb5cd75115434bbd07abd"
+    },
+    "distribution.csv": {
+      "rows": 6,
+      "sha256": "f705513a5856b4105d602020fb9fdb7e373b7e9f0893ad2528f0e0d68a82c88e"
+    },
+    "distribution_bins.csv": {
+      "rows": 84,
+      "sha256": "5e5e231d9b947ac750b5244f6af6498a75d45702679cd352ba82a003c2f8dd8b"
+    },
+    "distribution_exclusions.csv": {
+      "rows": 288,
+      "sha256": "953ac0df8d3f1eda262f95e8165c30de834227cf36a80e5e0091e071b8617687"
+    },
+    "distribution_reference.csv": {
+      "rows": 48,
+      "sha256": "d502edb58b6aaa53947e06573a27cdb3e4d9d650059ae6aa2095593b7cfad2cd"
+    },
+    "distribution_sensitivity.csv": {
+      "rows": 8,
+      "sha256": "8935bfda65ab391d377180344c2797921932992d0eed1c0760a719f800ef9c3e"
+    },
+    "group_summary.csv": {
+      "rows": 108,
+      "sha256": "523416468b047982c64384823cdd06e7de152cc18c3723dcd32e23dbf1bdca9a"
+    },
+    "july_sensitivity.csv": {
+      "rows": 6,
+      "sha256": "776c6970050bc84454c16614c90f7a86643438835c189fc7f81c2a5aa78b1535"
+    },
+    "monthly_max.csv": {
+      "rows": 48,
+      "sha256": "fdccde2c326074d19d5ec4e0b628b79cf983b78a32767b1070ec148f25483087"
+    },
+    "redistribution.csv": {
+      "rows": 1446,
+      "sha256": "3bca71890a0c88412d995c4b1175939fecf411d9cc7a759f9518aad3ec5efc57"
+    },
+    "transition_records.csv": {
+      "rows": 2877,
+      "sha256": "77c4fb3016a7ca52f4888ef8cff0b0ff9d7987e4a2c672df53934b9fe8c103cf"
+    },
+    "transition_strata.csv": {
+      "rows": 191,
+      "sha256": "596e5b9b50c81121c02beac93f269c5167e24b876158c9287d83f88e2ccd4f1e"
+    },
+    "transition_summary.csv": {
+      "rows": 4,
+      "sha256": "06e7e7c45a77d61bd652627e7e038d75e858d10df05448f69ad2df295070f241"
+    }
+  }
+}

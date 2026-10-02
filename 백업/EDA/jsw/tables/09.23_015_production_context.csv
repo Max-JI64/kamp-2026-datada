@@ -1,0 +1,3 @@
+﻿production_state,all_hours,high_hours,median_spread_all,median_max_mean_gap_all,high_one_slot_hours,high_multiple_slot_hours,median_max_mean_gap_high,mean_below_same_number_hours,high_share_of_state_hours
+positive,3277,259,18.0,8.0,88,171,10.0,171,0.07903570338724443
+zero,2507,28,3.0,2.0,12,16,10.0,23,0.011168727562824093

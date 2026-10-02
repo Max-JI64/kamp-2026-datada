@@ -1,0 +1,8 @@
+﻿high_quarters,mean_below_same_number,hours,days,median_max_mean_gap
+1,False,1,1,5.0
+1,True,99,54,11.0
+2,False,22,19,10.0
+2,True,75,42,12.0
+3,False,47,26,9.0
+3,True,20,14,10.5
+4,False,23,14,6.0

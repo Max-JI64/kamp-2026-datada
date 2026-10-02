@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "independent_threshold_series_checks": 122,
+  "event_extraction": "Independent gap-based vectorized grouping; every exceedance hour accounted for",
+  "gpd_checks": "Analytic CDF/support, KS distance and modified-scale relation; no nominal p-value",
+  "boot_fits": 3240,
+  "near_endpoint_roundoff_rows": [
+    {
+      "series": "event",
+      "u": 145,
+      "shape": -1.3032675722592215
+    },
+    {
+      "series": "event",
+      "u": 146,
+      "shape": -1.1475051261969536
+    },
+    {
+      "series": "event",
+      "u": 147,
+      "shape": -1.1945323710132696
+    },
+    {
+      "series": "event",
+      "u": 148,
+      "shape": -1.0687036361289088
+    },
+    {
+      "series": "event",
+      "u": 149,
+      "shape": -1.096429045657705
+    },
+    {
+      "series": "event",
+      "u": 150,
+      "shape": -1.0690639863436724
+    },
+    {
+      "series": "event",
+      "u": 198,
+      "shape": -3.004525695593374
+    },
+    {
+      "series": "event",
+      "u": 201,
+      "shape": -1.5391336012542665
+    },
+    {
+      "series": "event",
+      "u": 202,
+      "shape": -1.5602836047106936
+    },
+    {
+      "series": "event",
+      "u": 203,
+      "shape": -2.1458846372710685
+    },
+    {
+      "series": "event",
+      "u": 204,
+      "shape": -1.4875894530993374
+    },
+    {
+      "series": "event",
+      "u": 205,
+      "shape": -1.8761261435656809
+    }
+  ],
+  "boundary_caveat": "At near-zero GPD support, decimal serialization and arithmetic ordering can affect CDF; tolerance1e-4 only here. Fits are flagged as boundary problems.",
+  "manuscript_edited": false
+}

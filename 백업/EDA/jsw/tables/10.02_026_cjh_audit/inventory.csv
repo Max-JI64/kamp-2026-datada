@@ -1,0 +1,12 @@
+﻿path,bytes,sha256,compile
+EDA/cjh/09.23_001_analysis_direction,3972,5d5f797a56113a721b22fea3dc114ce6e3d215b5cb6c8f4dd16b5aa9151295cc,
+EDA/cjh/cjh,2729,73f48ea394f3e7f2be2dafc3924873d8f6cc501f71d7d9a1e643d7a4dce79bec,
+EDA/cjh/code/10.02,2,7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6,
+EDA/cjh/code/안티그래프티1.ipynb,720248,619e44d88f0c2ad571baff0af1ffd1a48696088c9cc6056a7fd84bcc826f5f00,
+EDA/cjh/reports/09.24_002_analysis2,7181,88e162001e2b3dcc44dd2c9e48d3392f76d5978eadd13b45c6a014363b6c7b18,
+EDA/cjh/reports/readme,2,7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6,
+EDA/cjh/scripts/09.25_002_시간변수정제,11535,2c545d4c7cad971d1ef20e62e782001f4569cd8ad39ccc000e253511d3446880,SyntaxError line 23: unmatched ')'
+EDA/cjh/scripts/09.25_003_기술통계량,9459,b27e2296df615de96747adf7264b4ec7090a10a09008f09e83bb7b65f8c480e8,SyntaxError line 1: invalid syntax
+EDA/cjh/scripts/09.25_004_변수분석,13369,1dbb2c27a67cfcbc07783e3f30171d9d8a03881814fd1409be4a7c4d40cb072d,SyntaxError line 1: invalid syntax
+"EDA/cjh/scripts/09.25_005_시간대,요일,월별,전력수요패턴",10275,5b12c9ed59881114c6518c9fc5dbea0c17d584634a0eeb688692b882926c8826,SyntaxError line 269: invalid character '×' (U+00D7)
+EDA/cjh/scripts/09.25_006_생산·인력 기반 가동 상태,14701,f8a9f16ccdda3869984a69baa49a91f3ac1eb86290b85b599ab476fdc281a255,SyntaxError line 1: invalid syntax

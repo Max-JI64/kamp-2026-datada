@@ -1,0 +1,26 @@
+{
+  "status": "visually_reviewed",
+  "figures": [
+    {
+      "file": "01_load_groups.png",
+      "sha256": "4697d53008debc5991e0578ec26a4a8d3f10206f213e373d0b9f81bd96963744"
+    },
+    {
+      "file": "02_definition_comparison.png",
+      "sha256": "2df157cd9052a8084a4e584d087712dbf5c9eeda1f47ffc522c2fea6268175f2"
+    },
+    {
+      "file": "03_boundary_stability.png",
+      "sha256": "3d9c8a665ffe2c4b5b02759c84ea3057ab706d7a556c3d1080daae41c2edb5fd"
+    },
+    {
+      "file": "04_cost_and_conditions.png",
+      "sha256": "de04c6a6ca17f0ecb9dff39da55189b55d5a3280d3710ae7a6857f99c8095750"
+    }
+  ],
+  "warnings": [],
+  "visual_review": true,
+  "manuscript_edited": false,
+  "contact_sheet": "report/figures/eda/peak_definition_comparison/contact_50.png",
+  "review": "네 그림을 원본 가로·세로 50% 접촉 시트로 확인. 축·범례·주석·색상막대의 잘림과 겹침을 확인했다. 원고는 수정하지 않았다."
+}

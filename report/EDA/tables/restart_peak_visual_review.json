@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-10-02T11:33+09:00",
+  "status": "visually_reviewed",
+  "authorization": "2026-10-02 사용자: 지금부터 이미지 분석을 허용할게",
+  "contact_sheet": "figures/eda/qa/restart_03_contact_50.png",
+  "scale": 0.5,
+  "source_figures": [
+    {
+      "file": "restart_03_threshold_timing.png",
+      "sha256": "7013aeba8205f56811e0f9b5bfb1b684fc7ca630d14b55f92a1742de82a9e7f3"
+    },
+    {
+      "file": "restart_03_condition_ranges.png",
+      "sha256": "6e1745bf7e4321c99bc3d0383729f59bd5d6aec75e41f698321e346dbe3237c3"
+    },
+    {
+      "file": "restart_03_hour_shape.png",
+      "sha256": "1aa5d007cd038ef6460a2b4bcef1f859a480b264e32c3a3020e40ff5a87bb57c"
+    }
+  ],
+  "corrections": [
+    "평균·최대 비교 범례를 빈 공간으로 이동해 구분선과 겹침 해결",
+    "15분 값의 점은 187 이상임을 패널 제목에 표시"
+  ],
+  "findings": [
+    "새 세 그림의 글자·범례·패널·색상막대가 잘리지 않음을 확인",
+    "조건별 비율과 고전력/전체 분모를 같은 칸에서 읽을 수 있음",
+    "전체 상단 제목·하단 작은 설명·금지된 축 표현 없음"
+  ],
+  "numeric_validation": "restart_peak_manifest.json: 559 rows passed, exit code 0",
+  "scope": "새 2.3 그림 세 개만 확인; 기존 그림의 검수나 전체 EDA 완료를 뜻하지 않음"
+}

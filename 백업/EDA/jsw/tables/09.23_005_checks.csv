@@ -1,0 +1,5 @@
+﻿variable,population,n,inverse_max_abs_error
+생산량,all,5832,6.366462912410498e-12
+생산량,positive,3277,6.366462912410498e-12
+강수량,all,5831,4.263256414560601e-14
+강수량,positive,1442,4.263256414560601e-14

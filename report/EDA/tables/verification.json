@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "checked_tables": 19,
+  "checked_rows": 1255,
+  "checks": [
+    {
+      "name": "calendar_summary",
+      "rows": 8,
+      "numeric_columns": 5,
+      "status": "passed"
+    },
+    {
+      "name": "calendar_tests",
+      "rows": 4,
+      "numeric_columns": 8,
+      "status": "passed"
+    },
+    {
+      "name": "mean_peak",
+      "rows": 4,
+      "numeric_columns": 5,
+      "status": "passed"
+    },
+    {
+      "name": "hour_frequency",
+      "rows": 48,
+      "numeric_columns": 3,
+      "status": "passed"
+    },
+    {
+      "name": "monthly_maximum",
+      "rows": 8,
+      "numeric_columns": 1,
+      "status": "passed"
+    },
+    {
+      "name": "conditional_relations",
+      "rows": 10,
+      "numeric_columns": 5,
+      "status": "passed"
+    },
+    {
+      "name": "monthly_lags",
+      "rows": 24,
+      "numeric_columns": 2,
+      "status": "passed"
+    },
+    {
+      "name": "overall_lags",
+      "rows": 3,
+      "numeric_columns": 2,
+      "status": "passed"
+    },
+    {
+      "name": "low_load",
+      "rows": 8,
+      "numeric_columns": 8,
+      "status": "passed"
+    },
+    {
+      "name": "daily_calendar",
+      "rows": 241,
+      "numeric_columns": 6,
+      "status": "passed"
+    },
+    {
+      "name": "whole_period_hourly_rhythm",
+      "rows": 24,
+      "numeric_columns": 3,
+      "status": "passed"
+    },
+    {
+      "name": "high_slot_counts",
+      "rows": 4,
+      "numeric_columns": 2,
+      "status": "passed"
+    },
+    {
+      "name": "high_slot_patterns",
+      "rows": 15,
+      "numeric_columns": 1,
+      "status": "passed"
+    },
+    {
+      "name": "whole_period_high_frequency",
+      "rows": 24,
+      "numeric_columns": 3,
+      "status": "passed"
+    },
+    {
+      "name": "overall_pearson",
+      "rows": 36,
+      "numeric_columns": 1,
+      "status": "passed"
+    },
+    {
+      "name": "overall_spearman",
+      "rows": 36,
+      "numeric_columns": 1,
+      "status": "passed"
+    },
+    {
+      "name": "conditional_rank_correlations",
+      "rows": 5,
+      "numeric_columns": 2,
+      "status": "passed"
+    },
+    {
+      "name": "new_raw_scope_and_shape_checks",
+      "rows": 287,
+      "numeric_columns": 4,
+      "status": "passed"
+    },
+    {
+      "name": "weather_high_frequency_raw_and_support",
+      "rows": 466,
+      "numeric_columns": 6,
+      "status": "passed"
+    }
+  ],
+  "images_generated": 16,
+  "image_analysis_performed": false,
+  "validated_at": "2026-10-02T10:17:42+09:00"
+}

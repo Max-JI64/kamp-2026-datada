@@ -1,0 +1,23 @@
+{
+  "time": "2026-09-23T08:32:48+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_rows": 6168,
+  "valid_rows": 6120,
+  "train_rows": 4344,
+  "validation_rows": 1440,
+  "reserved_rows": 336,
+  "common_validation_rows": 1344,
+  "threshold_train_p95": 182.0,
+  "positive_production_train_median": 487.0,
+  "nonzero_common_rows": 1309,
+  "history_days": 241,
+  "absolute_max": 222.0,
+  "absolute_max_records": 4,
+  "high_events": 224,
+  "max_high_run_records": 6,
+  "derived_rows": 1344,
+  "derived_columns_including_timestamp": 18
+}

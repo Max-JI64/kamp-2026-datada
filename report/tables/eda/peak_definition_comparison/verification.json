@@ -1,0 +1,1006 @@
+{
+  "full_period_gmm_high_intervals_on_grid_0_260": [
+    [
+      140.9,
+      227.45000000000002
+    ]
+  ],
+  "observed_max": 222.0,
+  "observed_max_assigned_to_high": true,
+  "observed_high_min": 141.0,
+  "observed_high_max": 222.0,
+  "clarification": "Upper reversal occurs beyond observed maximum; it is extrapolation behavior, not a missed observed maximum.",
+  "stability": [
+    {
+      "method": "GMM",
+      "n": 40,
+      "minimum": 136.65,
+      "median": 160.20000000000002,
+      "maximum": 188.25,
+      "median_jaccard": 0.7445742904841403,
+      "selected_k_counts": {
+        "5.0": 20,
+        "4.0": 10,
+        "8.0": 8,
+        "7.0": 1,
+        "6.0": 1
+      }
+    },
+    {
+      "method": "KMeans",
+      "n": 40,
+      "minimum": 138.85,
+      "median": 142.375,
+      "maximum": 144.15,
+      "median_jaccard": 0.9788933257273246,
+      "selected_k_counts": {
+        "3.0": 40
+      }
+    },
+    {
+      "method": "Q90",
+      "n": 40,
+      "minimum": 174.0,
+      "median": 177.0,
+      "maximum": 179.0,
+      "median_jaccard": 0.9478737997256516,
+      "selected_k_counts": {}
+    },
+    {
+      "method": "Q95",
+      "n": 40,
+      "minimum": 180.0,
+      "median": 182.5,
+      "maximum": 185.0,
+      "median_jaccard": 0.8967032967032967,
+      "selected_k_counts": {}
+    },
+    {
+      "method": "Q99",
+      "n": 40,
+      "minimum": 191.0,
+      "median": 194.0,
+      "maximum": 198.0,
+      "median_jaccard": 0.8992805755395683,
+      "selected_k_counts": {}
+    }
+  ],
+  "gmm_boundary_by_selected_k": [
+    {
+      "k": 4.0,
+      "n": 10,
+      "minimum": 136.65,
+      "maximum": 140.9
+    },
+    {
+      "k": 5.0,
+      "n": 20,
+      "minimum": 149.05,
+      "maximum": 167.55
+    },
+    {
+      "k": 6.0,
+      "n": 1,
+      "minimum": 148.8,
+      "maximum": 148.8
+    },
+    {
+      "k": 7.0,
+      "n": 1,
+      "minimum": 171.3,
+      "maximum": 171.3
+    },
+    {
+      "k": 8.0,
+      "n": 8,
+      "minimum": 171.15,
+      "maximum": 188.25
+    }
+  ],
+  "month_with_highest_rate": {
+    "DailyMax": 1,
+    "GMM": 6,
+    "KMeans": 6,
+    "Legacy187": 7,
+    "MonthlyMax": 2,
+    "Q90": 7,
+    "Q95": 7,
+    "Q99": 7,
+    "ReferenceMax": 7
+  },
+  "key_conditions": [
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "Q90",
+      "n": 130,
+      "high_hours": 48,
+      "rate": 0.3692307692307692
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "Q95",
+      "n": 130,
+      "high_hours": 31,
+      "rate": 0.2384615384615384
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "Q99",
+      "n": 130,
+      "high_hours": 5,
+      "rate": 0.0384615384615384
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "Legacy187",
+      "n": 130,
+      "high_hours": 14,
+      "rate": 0.1076923076923077
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "IQR",
+      "n": 130,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "GMM",
+      "n": 130,
+      "high_hours": 119,
+      "rate": 0.9153846153846154
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "KMeans",
+      "n": 130,
+      "high_hours": 118,
+      "rate": 0.9076923076923076
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "ReferenceMax",
+      "n": 130,
+      "high_hours": 1,
+      "rate": 0.0076923076923076
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "NewRecord",
+      "n": 130,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "DailyMax",
+      "n": 130,
+      "high_hours": 14,
+      "rate": 0.1076923076923077
+    },
+    {
+      "variable": "생산량",
+      "month": 6,
+      "band": 2,
+      "method": "MonthlyMax",
+      "n": 130,
+      "high_hours": 1,
+      "rate": 0.0076923076923076
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "Q90",
+      "n": 100,
+      "high_hours": 67,
+      "rate": 0.67
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "Q95",
+      "n": 100,
+      "high_hours": 59,
+      "rate": 0.59
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "Q99",
+      "n": 100,
+      "high_hours": 28,
+      "rate": 0.28
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "Legacy187",
+      "n": 100,
+      "high_hours": 45,
+      "rate": 0.45
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "IQR",
+      "n": 100,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "GMM",
+      "n": 100,
+      "high_hours": 94,
+      "rate": 0.94
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "KMeans",
+      "n": 100,
+      "high_hours": 93,
+      "rate": 0.93
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "ReferenceMax",
+      "n": 100,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "NewRecord",
+      "n": 100,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "DailyMax",
+      "n": 100,
+      "high_hours": 11,
+      "rate": 0.11
+    },
+    {
+      "variable": "생산량",
+      "month": 7,
+      "band": 2,
+      "method": "MonthlyMax",
+      "n": 100,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "Q90",
+      "n": 81,
+      "high_hours": 50,
+      "rate": 0.6172839506172839
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "Q95",
+      "n": 81,
+      "high_hours": 39,
+      "rate": 0.4814814814814814
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "Q99",
+      "n": 81,
+      "high_hours": 12,
+      "rate": 0.1481481481481481
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "Legacy187",
+      "n": 81,
+      "high_hours": 25,
+      "rate": 0.3086419753086419
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "IQR",
+      "n": 81,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "GMM",
+      "n": 81,
+      "high_hours": 74,
+      "rate": 0.9135802469135802
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "KMeans",
+      "n": 81,
+      "high_hours": 74,
+      "rate": 0.9135802469135802
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "ReferenceMax",
+      "n": 81,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "NewRecord",
+      "n": 81,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "DailyMax",
+      "n": 81,
+      "high_hours": 11,
+      "rate": 0.1358024691358024
+    },
+    {
+      "variable": "생산량",
+      "month": 8,
+      "band": 2,
+      "method": "MonthlyMax",
+      "n": 81,
+      "high_hours": 1,
+      "rate": 0.0123456790123456
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "Q90",
+      "n": 30,
+      "high_hours": 15,
+      "rate": 0.5
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "Q95",
+      "n": 30,
+      "high_hours": 7,
+      "rate": 0.2333333333333333
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "Q99",
+      "n": 30,
+      "high_hours": 2,
+      "rate": 0.0666666666666666
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "Legacy187",
+      "n": 30,
+      "high_hours": 3,
+      "rate": 0.1
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "IQR",
+      "n": 30,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "GMM",
+      "n": 30,
+      "high_hours": 25,
+      "rate": 0.8333333333333334
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "KMeans",
+      "n": 30,
+      "high_hours": 25,
+      "rate": 0.8333333333333334
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "ReferenceMax",
+      "n": 30,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "NewRecord",
+      "n": 30,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "DailyMax",
+      "n": 30,
+      "high_hours": 3,
+      "rate": 0.1
+    },
+    {
+      "variable": "기온",
+      "month": 6,
+      "band": 3,
+      "method": "MonthlyMax",
+      "n": 30,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "Q90",
+      "n": 186,
+      "high_hours": 123,
+      "rate": 0.6612903225806451
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "Q95",
+      "n": 186,
+      "high_hours": 101,
+      "rate": 0.543010752688172
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "Q99",
+      "n": 186,
+      "high_hours": 59,
+      "rate": 0.3172043010752688
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "Legacy187",
+      "n": 186,
+      "high_hours": 90,
+      "rate": 0.4838709677419355
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "IQR",
+      "n": 186,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "GMM",
+      "n": 186,
+      "high_hours": 158,
+      "rate": 0.8494623655913979
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "KMeans",
+      "n": 186,
+      "high_hours": 157,
+      "rate": 0.8440860215053764
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "ReferenceMax",
+      "n": 186,
+      "high_hours": 1,
+      "rate": 0.0053763440860215
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "NewRecord",
+      "n": 186,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "DailyMax",
+      "n": 186,
+      "high_hours": 16,
+      "rate": 0.086021505376344
+    },
+    {
+      "variable": "기온",
+      "month": 7,
+      "band": 3,
+      "method": "MonthlyMax",
+      "n": 186,
+      "high_hours": 1,
+      "rate": 0.0053763440860215
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "Q90",
+      "n": 88,
+      "high_hours": 54,
+      "rate": 0.6136363636363636
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "Q95",
+      "n": 88,
+      "high_hours": 42,
+      "rate": 0.4772727272727273
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "Q99",
+      "n": 88,
+      "high_hours": 14,
+      "rate": 0.1590909090909091
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "Legacy187",
+      "n": 88,
+      "high_hours": 31,
+      "rate": 0.3522727272727273
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "IQR",
+      "n": 88,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "GMM",
+      "n": 88,
+      "high_hours": 76,
+      "rate": 0.8636363636363636
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "KMeans",
+      "n": 88,
+      "high_hours": 76,
+      "rate": 0.8636363636363636
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "ReferenceMax",
+      "n": 88,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "NewRecord",
+      "n": 88,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "DailyMax",
+      "n": 88,
+      "high_hours": 4,
+      "rate": 0.0454545454545454
+    },
+    {
+      "variable": "기온",
+      "month": 8,
+      "band": 3,
+      "method": "MonthlyMax",
+      "n": 88,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "Q90",
+      "n": 157,
+      "high_hours": 59,
+      "rate": 0.375796178343949
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "Q95",
+      "n": 157,
+      "high_hours": 34,
+      "rate": 0.2165605095541401
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "Q99",
+      "n": 157,
+      "high_hours": 8,
+      "rate": 0.0509554140127388
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "Legacy187",
+      "n": 157,
+      "high_hours": 17,
+      "rate": 0.10828025477707
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "IQR",
+      "n": 157,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "GMM",
+      "n": 157,
+      "high_hours": 116,
+      "rate": 0.7388535031847133
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "KMeans",
+      "n": 157,
+      "high_hours": 115,
+      "rate": 0.732484076433121
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "ReferenceMax",
+      "n": 157,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "NewRecord",
+      "n": 157,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "DailyMax",
+      "n": 157,
+      "high_hours": 11,
+      "rate": 0.0700636942675159
+    },
+    {
+      "variable": "습도",
+      "month": 6,
+      "band": 0,
+      "method": "MonthlyMax",
+      "n": 157,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "Q90",
+      "n": 106,
+      "high_hours": 87,
+      "rate": 0.8207547169811321
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "Q95",
+      "n": 106,
+      "high_hours": 77,
+      "rate": 0.7264150943396226
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "Q99",
+      "n": 106,
+      "high_hours": 46,
+      "rate": 0.4339622641509434
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "Legacy187",
+      "n": 106,
+      "high_hours": 69,
+      "rate": 0.6509433962264151
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "IQR",
+      "n": 106,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "GMM",
+      "n": 106,
+      "high_hours": 99,
+      "rate": 0.9339622641509434
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "KMeans",
+      "n": 106,
+      "high_hours": 98,
+      "rate": 0.9245283018867924
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "ReferenceMax",
+      "n": 106,
+      "high_hours": 1,
+      "rate": 0.0094339622641509
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "NewRecord",
+      "n": 106,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "DailyMax",
+      "n": 106,
+      "high_hours": 12,
+      "rate": 0.1132075471698113
+    },
+    {
+      "variable": "습도",
+      "month": 7,
+      "band": 0,
+      "method": "MonthlyMax",
+      "n": 106,
+      "high_hours": 1,
+      "rate": 0.0094339622641509
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "Q90",
+      "n": 55,
+      "high_hours": 31,
+      "rate": 0.5636363636363636
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "Q95",
+      "n": 55,
+      "high_hours": 22,
+      "rate": 0.4
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "Q99",
+      "n": 55,
+      "high_hours": 8,
+      "rate": 0.1454545454545454
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "Legacy187",
+      "n": 55,
+      "high_hours": 15,
+      "rate": 0.2727272727272727
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "IQR",
+      "n": 55,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "GMM",
+      "n": 55,
+      "high_hours": 48,
+      "rate": 0.8727272727272727
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "KMeans",
+      "n": 55,
+      "high_hours": 48,
+      "rate": 0.8727272727272727
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "ReferenceMax",
+      "n": 55,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "NewRecord",
+      "n": 55,
+      "high_hours": 0,
+      "rate": 0.0
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "DailyMax",
+      "n": 55,
+      "high_hours": 3,
+      "rate": 0.0545454545454545
+    },
+    {
+      "variable": "습도",
+      "month": 8,
+      "band": 0,
+      "method": "MonthlyMax",
+      "n": 55,
+      "high_hours": 0,
+      "rate": 0.0
+    }
+  ],
+  "status": "passed",
+  "audited_assignment_cells": 63624
+}

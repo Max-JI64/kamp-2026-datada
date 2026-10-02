@@ -1,0 +1,77 @@
+{
+  "font": "Malgun Gothic",
+  "figures": [
+    {
+      "file": "01A_mean_and_high_rate.png",
+      "bytes": 61791,
+      "title": "평균 수준이 비슷해도 높은 최대값의 비중은 다르다",
+      "caption": "생산량 양수인 평일 · 6~8월 통합 시간대 구성으로 표준화 · 날짜 가중 · 182는 분석 기준",
+      "visual_review": false
+    },
+    {
+      "file": "01B_distribution_contribution.png",
+      "bytes": 58825,
+      "title": "높은 구간의 증가와 중간 구간의 감소가 상쇄된다 (합계 +1.10)",
+      "caption": "기여 = 구간의 표준화 비중 × 구간 내 평균 · 인과효과가 아닌 관측 분포의 산술 분해",
+      "visual_review": false
+    },
+    {
+      "file": "02A_transition_comparison.png",
+      "bytes": 53058,
+      "title": "생산 시작과 고전력의 관계는 비교 조건에 따라 달라진다",
+      "caption": "직전 1시간 최대 < 182, 현재 생산 양수인 시간 · 공통 월×시각 구성으로 표준화 · 인과효과 아님",
+      "visual_review": false
+    },
+    {
+      "file": "02B_transition_support.png",
+      "bytes": 68204,
+      "title": "조건을 맞춘 결과의 적용 범위도 함께 확인해야 한다",
+      "caption": "공통 월×시각 65개 / 19개 · 둘 중 한 집단이 2시간 이하인 조건 42개 / 12개 · 날짜 가중",
+      "visual_review": false
+    },
+    {
+      "file": "03A_sorted_daily_profiles.png",
+      "bytes": 75756,
+      "title": "최고 한 칸을 낮춰도 다음으로 높은 값이 최대가 된다",
+      "caption": "시간 순서가 아닌 크기 순서 · 182 이하 달성에는 초과 칸 전체의 조정 필요 · 합계는 에너지 단위가 아님",
+      "visual_review": false
+    },
+    {
+      "file": "03B_cap_requirements.png",
+      "bytes": 54522,
+      "title": "목표 상한에 따라 필요한 조정 범위가 달라진다",
+      "caption": "176·182·188은 기존 분석 기준 · 상한과 같은 값은 조정 대상에서 제외 · 실제 이동 가능량은 미식별",
+      "visual_review": false
+    },
+    {
+      "file": "04A_daily_reduction.png",
+      "bytes": 58317,
+      "title": "고최대 날짜는 별도 집단으로 감소량을 보고한다",
+      "caption": "점: 중앙값, 막대: 25~75백분위 · 일별 합 보존·자유 재배치 가정 · 0칸 수신 허용 · 실측 절감 아님",
+      "visual_review": false
+    },
+    {
+      "file": "04B_profile_sensitivity.png",
+      "bytes": 91739,
+      "title": "반복 프로필을 한 번씩 세어도 감소 방향은 유지된다",
+      "caption": "세 예산 조건만 계산 · 선은 조건 간 연결이며 중간 예산의 계산 결과가 아님 · 실제 운영 성과 아님",
+      "visual_review": false
+    },
+    {
+      "file": "05A_monthly_maximum.png",
+      "bytes": 86584,
+      "title": "월최대는 모든 날짜를 다시 비교해 계산한다",
+      "caption": "7월 본 결과는 정상 29일 · 오류 날짜 원값 유지 시 보조 최대 202 · 사후 재배치 가정, 실제 성과 아님",
+      "visual_review": false
+    },
+    {
+      "file": "05B_maximum_dates.png",
+      "bytes": 104953,
+      "title": "최대 발생 날짜가 5%에서 6개월, 10%에서 7개월 바뀐다",
+      "caption": "정상 날짜만 비교 · 7월 28·30일 동률 보존 · 0칸 정책 두 조건의 월최대 동일 · 조정 후 시각은 산출 안 함",
+      "visual_review": false
+    }
+  ],
+  "image_reading": false,
+  "visual_review": false
+}

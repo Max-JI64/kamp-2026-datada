@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "k_candidates": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "histogram_fit_period": "Jan-Jun",
+  "fit_n": 4344,
+  "classification_application_period": "Jan-Aug",
+  "application_n": 5784,
+  "bin_width": 2,
+  "denominator": "4344 in both full and upper zoom; zoom does not renormalize",
+  "colours": "mean-ordered groups, highest orange; GMM histograms use maximum-posterior assignments",
+  "visual_review": false,
+  "manuscripts_edited": false,
+  "figures": [
+    {
+      "file": "kmeans_histograms_3_to_7.png",
+      "bytes": 369578,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    },
+    {
+      "file": "gmm_histograms_3_to_7.png",
+      "bytes": 366819,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    }
+  ],
+  "style_checks": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\kmeans_histograms_3_to_7.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\histograms_3_to_7\\gmm_histograms_3_to_7.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    }
+  ]
+}

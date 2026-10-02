@@ -1,0 +1,11 @@
+﻿period,month,normal_hours,days,profiles,M001_eligible_hours,M001_ineligible_hours,zero_hours_preserved,below_design_min_hours,above_design_max_hours
+Jan-Jun_design,all,4344,181,67,4176,168,0,0,0
+Jul-Aug_exploratory,all,1440,60,59,1344,96,17,19,6
+Jan-Jun_design,1,744,31,23,576,168,0,0,0
+Jan-Jun_design,2,672,28,21,672,0,0,0,0
+Jan-Jun_design,3,744,31,24,744,0,0,0,0
+Jan-Jun_design,4,720,30,15,720,0,0,0,0
+Jan-Jun_design,5,744,31,30,744,0,0,0,0
+Jan-Jun_design,6,720,30,30,720,0,0,0,0
+Jul-Aug_exploratory,7,696,29,28,600,96,0,0,5
+Jul-Aug_exploratory,8,744,31,31,744,0,17,19,1

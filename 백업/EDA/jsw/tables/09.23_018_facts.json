@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-23T17:47:44+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "valid_days": 241,
+  "unique_profiles": 126,
+  "overall": {
+    "dates_or_profiles": 241,
+    "11_to_12_decrease": 194,
+    "11_to_12_equal": 36,
+    "11_to_12_increase": 11,
+    "12_to_13_decrease": 16,
+    "12_to_13_equal": 58,
+    "12_to_13_increase": 167,
+    "down_then_up": 164,
+    "down_then_up_share": 0.6804979253112033,
+    "both_12_values_below_both_edges": 163,
+    "13_first_at_least_11_last_among_down_up": 59,
+    "d_11_to_12_median": -50.0,
+    "d_12_inside_median": 2.0,
+    "d_12_to_13_median": 35.0,
+    "d_11last_to_13first_median": -2.0
+  }
+}

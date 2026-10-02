@@ -1,0 +1,14 @@
+{
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\figures\\daily_repetition\\04_daily_pattern_simple.png",
+  "monthly_figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\figures\\daily_repetition\\05_monthly_daily_lines.png",
+  "change": "Removed all in-plot annotations, arrows, and outcome counts. Whole-period figure: mean, median and P10-P90 only. Monthly figure: two aggregated median lines per month, no band or per-date rows.",
+  "period": "2021-01-01 through 2021-08-31 valid dates; holidays included by day of week",
+  "criterion": "M12<M11 and M13>M12, same date; no minimum amplitude cutoff",
+  "band": "P10-P90 across dates, not confidence or prediction interval",
+  "manuscript_edited": false,
+  "manuscript_sha256": "87a674e5468791bf324ae65165a46b4d25f88e654ee45c18bf90a7a0237fe09c",
+  "visual_review": true,
+  "visual_review_method": "Updated whole-period and monthly figures inspected separately at 50 percent. No arrows, in-plot interpretation text or per-date rows. Monthly panels contain only two median lines, axes and legends.",
+  "numeric_result_changed": false,
+  "warnings": []
+}

@@ -1,0 +1,5 @@
+﻿high_quarters,hours,days,zero_production_hours,median_max_mean_gap,median_hour_mean,median_hour_max,share_of_high_hours
+1,100,54,12,11.0,179.0,189.0,0.34843205574912894
+2,97,48,9,12.0,183.0,194.0,0.33797909407665505
+3,67,37,7,9.0,189.0,199.0,0.23344947735191637
+4,23,14,0,6.0,198.0,204.0,0.08013937282229965

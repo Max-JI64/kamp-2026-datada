@@ -1,0 +1,18 @@
+{
+  "scope": "2021-01-01 to 2021-08-31, valid hours only",
+  "rows": 5784,
+  "days": 241,
+  "threshold": 187.0,
+  "threshold_basis": "E004 Jan-Aug 5832 rows including 48 invalid clock rows; row maximum P, linear 95th percentile",
+  "threshold_source_rows": 5832,
+  "valid_hour_p95": 186.0,
+  "high_hours": 287,
+  "multiple_slot_hours": 187,
+  "hidden_mean_hours": 194,
+  "unique_profile_high_hours": 205,
+  "unique_profile_multiple_slot_hours": 135,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "image_analysis_performed": false,
+  "script_sha256": "1073c2323c0dfb7eb8949ba1e13592067dc224faca1cad6607d10e2e727d92dc",
+  "run_at": "2026-10-02T10:17:20+09:00"
+}

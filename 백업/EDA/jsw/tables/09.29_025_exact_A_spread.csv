@@ -1,0 +1,5 @@
+﻿period,weighting,A_values,repeated_A_values,varying_D_A_values,repeated_A_units,varying_D_A_units,D_span_q50_over_varying_A,D_span_q95_over_varying_A
+Jan-Jun_design,date_hour,434,406,274,4316,3748,8.0,25.349999999999966
+Jan-Jun_design,profile_hour_once,434,300,274,1474,1378,8.0,25.349999999999966
+Jul-Aug_exploratory,date_hour,430,262,244,1272,1211,8.0,23.0
+Jul-Aug_exploratory,profile_hour_once,430,254,244,1240,1195,8.0,23.0

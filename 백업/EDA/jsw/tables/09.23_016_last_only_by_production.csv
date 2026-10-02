@@ -1,0 +1,3 @@
+﻿production_state,candidate_hours,days,next_exact_hour_pairs,next_first_high_pairs,next_any_high_pairs,median_current_last_value,median_next_first_value
+positive,36,28,36,7,16,190.0,175.0
+zero,7,6,7,1,3,190.0,175.0

@@ -1,0 +1,10 @@
+﻿record_condition,rows,mean_power,policy
+missing_personnel,17,0.0,raw_all
+positive_both,3511,129.1700370264882,raw_all
+zero_both,2640,46.486363636363635,raw_all
+personnel_only,17,0.0,notebook_median_all
+positive_both,3511,129.1700370264882,notebook_median_all
+zero_both,2640,46.486363636363635,notebook_median_all
+missing_personnel,17,0.0,jsw_valid_jan_aug
+positive_both,3277,128.78761061946904,jsw_valid_jan_aug
+zero_both,2490,45.506024096385545,jsw_valid_jan_aug

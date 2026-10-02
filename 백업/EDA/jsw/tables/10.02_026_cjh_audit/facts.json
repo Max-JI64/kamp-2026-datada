@@ -1,0 +1,62 @@
+{
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "pandas": "3.0.1",
+  "run_at": "2026-10-02T00:21+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 6168,
+  "columns_original": 18,
+  "original_missing": 21,
+  "invalid_hour_rows": 48,
+  "invalid_dates": [
+    20210713,
+    20210715
+  ],
+  "valid_hour_matches_row_order": 6120,
+  "valid_hour_rows": 6120,
+  "images": [
+    {
+      "cell": 10,
+      "output": 1,
+      "file": "cell_10_output_01.png",
+      "width": 1990,
+      "height": 1490
+    },
+    {
+      "cell": 12,
+      "output": 1,
+      "file": "cell_12_output_01.png",
+      "width": 916,
+      "height": 834
+    },
+    {
+      "cell": 14,
+      "output": 0,
+      "file": "cell_14_output_00.png",
+      "width": 1014,
+      "height": 545
+    },
+    {
+      "cell": 17,
+      "output": 1,
+      "file": "cell_17_output_01.png",
+      "width": 1005,
+      "height": 545
+    },
+    {
+      "cell": 18,
+      "output": 1,
+      "file": "cell_18_output_01.png",
+      "width": 868,
+      "height": 507
+    }
+  ],
+  "hour_median": 11.5,
+  "imputed_datetime_duplicate_excess": 46,
+  "personnel_positive_original": 3511,
+  "personnel_positive_imputed": 3528,
+  "personnel_ratio_max_abs_error": 4.944070042256499e-09,
+  "production_iqr_upper_all": 1593.125,
+  "production_iqr_flagged_all": 548,
+  "hourly_production_max_valid": 19.0,
+  "monthly_production_max": 6
+}

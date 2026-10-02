@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "fit_n": 4344,
+  "application_n": 5784,
+  "k_candidates": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "bootstrap_runs_per_fixed_k": 40,
+  "bootstrap_model_fits": 480,
+  "purpose": "Assess more clusters even with lower global score: highest group separation, subdivision, stability, and task relevance.",
+  "separation_metric": "Exact row-weighted silhouette of the highest assigned group; for GMM also normalized top-neighbor Gaussian density overlap.",
+  "grid_boundary_resolution": 0.05,
+  "highest_group": "largest centroid or component mean; all ties and original observations preserved",
+  "silhouette_is_not_peak_quality": true,
+  "actual_bill_threshold": "unidentified",
+  "manuscript_edited": false,
+  "stability_caveat": "Calendar-week resampling diagnostics, not confidence intervals; fixed k still an analyst choice",
+  "independent_period_caveat": "Jul-Aug already explored; not an untouched test"
+}

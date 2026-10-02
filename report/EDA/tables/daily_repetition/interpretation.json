@@ -1,0 +1,25 @@
+{
+  "previous_evidence": "Section 2.1 average weekday curve decreases at 12 and increases at 13. Existing E018 compares 15-minute boundary values, so its rates cannot be substituted here.",
+  "question": "Does the hourly-mean shape occur on actual dates, separately for weekdays and weekends?",
+  "scope": "Jan-Aug, 5784 valid hours / 241 dates. Weekday 171, weekend 70, public holidays included by weekday. Gray calendar rows are invalid July 13 and July 15, not zero power.",
+  "confirmed": [
+    "Strict M12<M11 and M13>M12: weekday 147/171 (85.96%), weekend 13/70 (18.57%). Counts include small changes; direction and magnitude must be read together.",
+    "Median paired changes 11->12 / 12->13: weekday -64 / +61, weekend -1 / 0. These are medians of per-date changes, not differences between hourly medians.",
+    "Weekday nonmatching dates: 24 total, including 20 with no positive production record all day. Positive-production weekday matches 145/149 (97.32%); all-zero-production weekday matches 2/22 (9.09%).",
+    "Weekend positive-production matches 6/32 (18.75%); all-zero-production matches 7/38 (18.42%). Production presence alone does not explain calendar differences.",
+    "Full 96-slot profiles repeat. One vote per distinct profile within each calendar group: weekday 78/90 (86.67%), weekend 12/47 (25.53%). Groups may share a profile, so group distinct counts are not additive. No records were deleted.",
+    "Among matching weekdays, 13-hour average reaches the 11-hour average in only 51/147. Rebound does not generally mean full recovery.",
+    "The daily lines show wide day-to-day variation on weekends and a sizable mean/median difference. A single average curve is insufficient to describe every date."
+  ],
+  "judgment_update": "2.1's weekday midday dip/rebound is observed on most individual weekdays, especially those with positive production. It is not a universal calendar rule. Weekends mix different trajectories and levels. Normal schedule, lunch break, equipment use and true shutdown causes remain unidentified.",
+  "next_or_stop": "The approved question has been answered, including exceptions by month and production presence, plus repeated-profile sensitivity. Stop this descriptive iteration. Future use of calendar/history inputs needs modeling validation; this EDA does not demonstrate prediction performance. Hourly-average versus four-slot variation is a separate planned 2.4 question and has not been executed here.",
+  "visual_review": {
+    "passed": true,
+    "method": "Three figures reviewed as a 50-percent contact sheet, maximum four images",
+    "repair": "Removed overlapping July 13/15 arrow labels and explained gray invalid-date rows in the weekday panel title; regenerated and reviewed the changed rendering.",
+    "figures": ["01_date_hour_heatmap.png", "02_daily_lines_and_spread.png", "03_paired_noon_changes.png"],
+    "bands": "P10-P90 across dates; not a confidence interval, normal range or predictive interval."
+  },
+  "execution": "Regular CPython 3.13 exit 0. Original source hash and 48 group-hour means reconciled with section 2.1; direct per-date sign counts checked; manuscript before/after SHA256 unchanged.",
+  "manuscript_edited": false
+}

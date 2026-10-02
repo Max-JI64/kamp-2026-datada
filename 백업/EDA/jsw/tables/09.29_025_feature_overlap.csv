@@ -1,0 +1,10 @@
+﻿candidate,definition,M001_overlap,classification,handoff
+past_M,CSV rounded mean,mean_lag1/2/3/24/168; mean_past24_*,existing,reuse
+past_A,(q1+q2+q3+q4)/4,M differs by rounding only,rounding precision,do not silently replace M001 mean target
+past_P,"max(q1,q2,q3,q4)",peak_lag1/2/3/24/168; peak_past24_*,existing,reuse; not a new candidate
+past_R,"P-min(q1,q2,q3,q4)",range_lag1,existing at lag1,reuse; no additional lags without a question
+past_D_M,P-M,"peak_lagk - mean_lagk, k=1/2/3/24/168",fully derived,optional representation only
+past_D,P-A = (P-M)+(M-A),past_D_M plus rounding remainder,mostly derived,conditional alternative to S; no independent sensor claim
+past_S,q4-q1,last_slot_lag1 exists; first_slot absent,not algebraically determined,one lag1 candidate only if M005 identifies relevant onset failure
+target_A_P_D_R_S,target-hour descriptors,target power,future leakage,EDA explanation only; prohibit prediction input
+current_day_96_FA_profile,requires complete target date,future records within day,future leakage,prohibit intra-day prediction input

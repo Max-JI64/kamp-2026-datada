@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "unique_figures": 40,
+  "changed_figures": 40,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "numerical_tables_unchanged": true,
+  "whole_figure_title": false,
+  "footer": false,
+  "original_value_axis_label": false,
+  "panel_titles_and_legends_preserved": true,
+  "warnings": [],
+  "image_reading": false,
+  "visual_review": false,
+  "figures": [
+    {
+      "file": "figures\\analysis\\01A_mean_and_high_rate.png",
+      "sha256": "0280368a48bffb68e57bcba84f101bd31b8a85e0d44ef13d9ff61f866c97cf9f"
+    },
+    {
+      "file": "figures\\analysis\\01B_distribution_contribution.png",
+      "sha256": "482e60bc7172b09b64de0ce336b1a667a811fa7b34645ccf3e167048d413ef59"
+    },
+    {
+      "file": "figures\\analysis\\02A_transition_comparison.png",
+      "sha256": "7bbdfbdcbfd386f03b37b58610ea20973835f165ca9c5bbc5c75659ddbbebd2d"
+    },
+    {
+      "file": "figures\\analysis\\02B_transition_support.png",
+      "sha256": "84419e99cda425d54dfc75228329a5f72fa0704435a23f7ce69a05c83c4078ae"
+    },
+    {
+      "file": "figures\\analysis\\03A_sorted_daily_profiles.png",
+      "sha256": "b973a55c6d02b229ba8b76c8b182b880fdcb10b1b340703754ebeed958a56a75"
+    },
+    {
+      "file": "figures\\analysis\\03B_cap_requirements.png",
+      "sha256": "efb92b7c4d5403907924047ae4d2f6f5a068b2f004148a4605a62544151d6b7b"
+    },
+    {
+      "file": "figures\\analysis\\04A_daily_reduction.png",
+      "sha256": "86f4c634f5dc534a656943e9cd825ecb097f33b3b4beb1f5b2a7aec42448f2d4"
+    },
+    {
+      "file": "figures\\analysis\\04B_profile_sensitivity.png",
+      "sha256": "264193e62cf64666c281b67ae0e8c3c636eb728220c3696722a1c820586f0382"
+    },
+    {
+      "file": "figures\\analysis\\05A_monthly_maximum.png",
+      "sha256": "c9e0c27c91e5b9b9376ac0b4a9f45d418d55ab311c7e1873806d13cf012cc1cf"
+    },
+    {
+      "file": "figures\\analysis\\05B_maximum_dates.png",
+      "sha256": "0b00e200bbbc8d2464585d521f4676f1fa9d217d6316b2980b015663bdf607f9"
+    },
+    {
+      "file": "figures\\eda\\01A_daily_rhythm.png",
+      "sha256": "a8ae94383b293698540a114c66a2fae2eeccccec9a25accf6d72f7886868d738"
+    },
+    {
+      "file": "figures\\eda\\01A_mean_peak_scatter.png",
+      "sha256": "e24a9ab6f81c318c46aae67bf8fda113a908ba3ad25c83f4fd3130609319ec3e"
+    },
+    {
+      "file": "figures\\eda\\01B_mean_peak_counts.png",
+      "sha256": "7c2bfbd154f491293c987d50bf3ccaf135853c8483dcf55acbc65f3a6b8bac20"
+    },
+    {
+      "file": "figures\\eda\\01B_month_hour_rhythm.png",
+      "sha256": "2681fe6bcd078e3ae6258cdb79e706baa192bc196b3f0b86dd3dc19d14215f08"
+    },
+    {
+      "file": "figures\\eda\\02A_calendar_joint.png",
+      "sha256": "90fe8ef8dd22ac0ea14d7d0da0d919989d1c02636c1a789f68337fe9c4029f51"
+    },
+    {
+      "file": "figures\\eda\\02A_calendar_means.png",
+      "sha256": "1a403912b6b9611fe32b7934d8b8f49645b388bd5efafd18afa715e5d101a17c"
+    },
+    {
+      "file": "figures\\eda\\02B_calendar_distribution.png",
+      "sha256": "9db87acbe0e8b7c0749f064606357c533fe2989e687f2740f17b56c6dafcec70"
+    },
+    {
+      "file": "figures\\eda\\02B_calendar_ecdf.png",
+      "sha256": "e583bb948431a66cbb034efbe5aab8a015cfb5e7d649a48bf335525d62f61ec7"
+    },
+    {
+      "file": "figures\\eda\\03A_hourly_frequency.png",
+      "sha256": "6cbe6badde922c3db2a32de76187c53aea78d9766dcfde8d918eef89e4b82ed9"
+    },
+    {
+      "file": "figures\\eda\\03A_month_hour_peaks.png",
+      "sha256": "29f3164bb08bcb4f2afde7cf7b0ddb3ac50606a912a821603f3b077e168c2d88"
+    },
+    {
+      "file": "figures\\eda\\03B_monthly_peak_timing.png",
+      "sha256": "6bb4f803a3d5760f781302830aa2a466a2805c7b15eb91bf77839fa00ba6eefb"
+    },
+    {
+      "file": "figures\\eda\\03B_peak_timeline.png",
+      "sha256": "cb287a7a40b75cf187e31e60bcf654d45bb58543862d7ba09eafd56573037d32"
+    },
+    {
+      "file": "figures\\eda\\03B_weather_peak_frequency.png",
+      "sha256": "02d86e26624939991d9c2a1443dd0edfff21a28605948bc913c57700d8c2c443"
+    },
+    {
+      "file": "figures\\eda\\04A_conditional_correlations.png",
+      "sha256": "f85ccd6b835ea39606b2e532d3ed81ec967a471dbe1c752325a658c9747a9c96"
+    },
+    {
+      "file": "figures\\eda\\04A_correlation_context.png",
+      "sha256": "df1ac98d7ccde8098c4e4cf38dbfe79e4cfbd3d69ada6dc0f0d422df1f3fcc1d"
+    },
+    {
+      "file": "figures\\eda\\04B_conditional_density.png",
+      "sha256": "221cba0b0b378ab4958f50cd1e6924794de7d65c65397f98669fd2226dd2e5b1"
+    },
+    {
+      "file": "figures\\eda\\04B_conditional_scatter.png",
+      "sha256": "4d3ddc7c08cdf8574d6d1a349d5176d5b2a48eb309fe40e41e963e1f90bd74da"
+    },
+    {
+      "file": "figures\\eda\\05A_lag_correlations.png",
+      "sha256": "be194ea85ab27699dfb53da3f9cf376af2593498045f573c60d42ca80774347e"
+    },
+    {
+      "file": "figures\\eda\\05A_monthly_lag_matrix.png",
+      "sha256": "34b2d62c8bd92b00166071df7a8de65a9ae6c2bf73a20957cc9d3f12e5318d74"
+    },
+    {
+      "file": "figures\\eda\\05B_monthly_lag.png",
+      "sha256": "a1d7966d7635d95d40f558da3de2f13a76b78804b33a9849b1d023a7ed213d32"
+    },
+    {
+      "file": "figures\\eda\\05B_weekly_change_trace.png",
+      "sha256": "f01abcc6f0105305f2d8ed0b715b1498efcdadf7755fbad1b36c1633dc446403"
+    },
+    {
+      "file": "figures\\eda\\06A_high_slot_map.png",
+      "sha256": "a8f481f6f6b0bdb405968f7f9a8d0d6bc2b4d58d681f7640e223c9bb616cee9d"
+    },
+    {
+      "file": "figures\\eda\\06A_low_load_monthly.png",
+      "sha256": "f58c7b9ec888126a4a309da2c32fbba4ac2cd71945e6e7364cf86cc3855306b1"
+    },
+    {
+      "file": "figures\\eda\\06B_high_slot_profiles.png",
+      "sha256": "20a30b93eb3caabced563f494c90517704f6122d9380ec4897f8d93ea6f12b73"
+    },
+    {
+      "file": "figures\\eda\\06B_low_load_weighting.png",
+      "sha256": "0aeb2f344f728df58ba5c7ccda4f96e5b58f2751bb441130870c55c42b71c218"
+    },
+    {
+      "file": "figures\\eda\\07A_calendar_joint.png",
+      "sha256": "652dae44f014231895061783e028e31f6c404691da87b4962c4b62446f9bdec6"
+    },
+    {
+      "file": "figures\\eda\\07A_calendar_means.png",
+      "sha256": "ab2eb0a45d54ffc9014008feeaa014264b468904ab7c75b2c278b26eb821e218"
+    },
+    {
+      "file": "figures\\eda\\07B_calendar_distribution.png",
+      "sha256": "da61971ae18a0c4f196a13abbca6d5e032905f416a1cb488b716c94933487a7e"
+    },
+    {
+      "file": "figures\\eda\\07B_calendar_ecdf.png",
+      "sha256": "a32f08074abdc94ca16d2b13536996f678eb7aa5b4d71bde395f20f19edd541f"
+    },
+    {
+      "file": "figures\\eda\\restart_01_daily_pattern.png",
+      "sha256": "a2ef6ccb1ba0bd8f96cc00392f53ab983f144837924d7f8ed73ea1a041f68ec7"
+    }
+  ],
+  "script_sha256": "0889bd036fe67fd4032a1fc175ea3ed619ea1fbfc16465609aea5aef0c9fdb4c"
+}

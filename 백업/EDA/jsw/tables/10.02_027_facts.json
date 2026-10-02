@@ -1,0 +1,20 @@
+{
+  "run_at": "2026-10-02T00:37:52+09:00",
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "pandas": "3.0.1",
+  "scipy": "1.17.1",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_rows": 6168,
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "days": 241,
+  "group_days": {
+    "주말 공휴일": 3,
+    "주말 비공휴일": 67,
+    "평일 공휴일": 7,
+    "평일 비공휴일": 164
+  },
+  "zero_power_rows_preserved": 17,
+  "validation": "hash, prior E011 profiles/date set, 24-hour completeness, 10 holiday dates, rotation group counts, finite unstudentized rotation statistics, SciPy Welch t and ANOVA cross-check"
+}

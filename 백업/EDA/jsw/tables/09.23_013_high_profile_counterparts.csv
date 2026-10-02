@@ -1,0 +1,9 @@
+﻿date,high_hours,high_hours_with_other_date,high_hours_with_positive_counterpart,other_date_hour_pairs,positive_other_date_hour_pairs
+20210117,5,5,5,15,15
+20210124,2,2,2,6,6
+20210130,2,2,2,4,4
+20210301,2,2,2,4,4
+20210314,4,4,4,8,8
+20210321,6,0,0,0,0
+20210328,5,0,0,0,0
+20210730,2,2,2,2,2

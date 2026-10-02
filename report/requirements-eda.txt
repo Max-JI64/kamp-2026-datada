@@ -1,0 +1,5 @@
+# Verified with regular CPython 3.13.1; packages were not installed by this task.
+numpy==2.2.6
+pandas==3.0.1
+scipy==1.17.1
+matplotlib==3.10.0

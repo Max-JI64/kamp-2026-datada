@@ -1,0 +1,71 @@
+{
+  "time": "2026-09-23T17:53:10+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "pandas": "3.0.1",
+  "scope_rows": 5832,
+  "valid_rows": 5784,
+  "valid_days": 241,
+  "windows_per_day": 22,
+  "unique_profiles": 126,
+  "noon_observed": {
+    "start_hour": 11,
+    "window": "11-12-13",
+    "weighting": "observed_dates",
+    "n": 241,
+    "first_boundary_down": 194,
+    "second_boundary_up": 167,
+    "down_then_up": 164,
+    "down_then_up_share": 0.6804979253112033,
+    "both_middle_values_below_both_edges": 163,
+    "end_reaches_start_among_down_up": 59,
+    "first_boundary_difference_median": -50.0,
+    "middle_within_hour_difference_median": 2.0,
+    "second_boundary_difference_median": 35.0,
+    "end_minus_start_median": -2.0,
+    "down_up_rank_within_weighting": 1
+  },
+  "noon_unique": {
+    "start_hour": 11,
+    "window": "11-12-13",
+    "weighting": "unique_daily_power_profile",
+    "n": 126,
+    "first_boundary_down": 103,
+    "second_boundary_up": 87,
+    "down_then_up": 84,
+    "down_then_up_share": 0.6666666666666666,
+    "both_middle_values_below_both_edges": 83,
+    "end_reaches_start_among_down_up": 25,
+    "first_boundary_difference_median": -51.5,
+    "middle_within_hour_difference_median": 0.0,
+    "second_boundary_difference_median": 35.5,
+    "end_minus_start_median": -3.5,
+    "down_up_rank_within_weighting": 1
+  },
+  "top_five_observed": [
+    {
+      "start_hour": 11,
+      "down_then_up": 164,
+      "both_middle_values_below_both_edges": 163
+    },
+    {
+      "start_hour": 4,
+      "down_then_up": 123,
+      "both_middle_values_below_both_edges": 55
+    },
+    {
+      "start_hour": 9,
+      "down_then_up": 70,
+      "both_middle_values_below_both_edges": 44
+    },
+    {
+      "start_hour": 6,
+      "down_then_up": 64,
+      "both_middle_values_below_both_edges": 1
+    },
+    {
+      "start_hour": 2,
+      "down_then_up": 59,
+      "both_middle_values_below_both_edges": 40
+    }
+  ]
+}

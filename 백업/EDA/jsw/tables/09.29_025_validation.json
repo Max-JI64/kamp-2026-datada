@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-29T14:58:20+09:00",
+  "status": "passed",
+  "method": "independent stdlib CSV, exact integer quarter sums, manual linear quantiles and exact timestamp lookups",
+  "raw_rows": 6168,
+  "normal_hours": 5784,
+  "summary_rows_checked": 120,
+  "visibility_rows_checked": 36,
+  "examples_checked": 40,
+  "document_links_checked": 33,
+  "input_hashes_preserved": 11,
+  "S_algebraic_counterexample": [
+    [
+      80,
+      90,
+      100,
+      100
+    ],
+    [
+      90,
+      80,
+      100,
+      100
+    ]
+  ],
+  "model_training_or_scoring": false
+}

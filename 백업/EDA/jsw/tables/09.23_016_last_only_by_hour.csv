@@ -1,0 +1,9 @@
+﻿시간,candidate_hours,days,next_exact_hour_pairs,next_first_high_pairs,next_any_high_pairs,median_current_last_value,median_next_first_value
+8,9,9,9,0,3,193.0,176.0
+9,1,1,1,0,1,189.0,165.0
+10,3,3,3,0,0,187.0,184.0
+13,7,7,7,2,3,190.0,175.0
+14,11,11,11,0,6,189.0,149.0
+15,7,7,7,3,3,197.0,186.0
+16,2,2,2,0,0,188.0,137.0
+17,3,3,3,3,3,190.0,190.0

@@ -1,0 +1,9 @@
+{
+  "run_at": "2026-10-02T00:54:42+09:00",
+  "status": "passed",
+  "source": "E027 verified daily dataset, unchanged",
+  "days": 241,
+  "tests": 4,
+  "input_sha256": "8e2316dd28246b84c62eef75c3044db586e648e7848b4bac4c19d5f8d8fd57d6",
+  "validation": "exhaustive binary partitions; counts 171/70 and 231/10; analytic t equals SciPy; all rotation statistics finite; frozen input unchanged"
+}

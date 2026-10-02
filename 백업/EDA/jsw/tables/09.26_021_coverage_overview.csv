@@ -1,0 +1,4 @@
+﻿history_hours,normal_target_rows,exact_lag_available,complete_past_available,incomplete_past,complete_share,target_and_history_touches_all_power_zero,complete_without_zero_window
+1,5784,5781,5781,3,0.9994813278008299,18,5763
+24,5784,5712,5712,72,0.9875518672199171,41,5671
+168,5784,5568,5424,360,0.9377593360995851,78,5346

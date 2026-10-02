@@ -1,0 +1,22 @@
+{
+  "time": "2026-09-23T09:14:00+09:00",
+  "stage": "relations",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_rows": 6168,
+  "analysis_rows": 5784,
+  "days": 241,
+  "reserved_september_rows": 336,
+  "files": [
+    "09.23_007_pearson_matrix.csv",
+    "09.23_007_spearman_matrix.csv",
+    "09.23_007_pair_counts.csv",
+    "09.23_007_identities.csv",
+    "09.23_007_conditional_correlations.csv",
+    "09.23_007_monthly_correlations.csv",
+    "09.23_007_weather_bins.csv"
+  ],
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "checks": "source hash, unique valid timestamps, CSV roundtrip shapes; stage-specific numerical checks passed"
+}

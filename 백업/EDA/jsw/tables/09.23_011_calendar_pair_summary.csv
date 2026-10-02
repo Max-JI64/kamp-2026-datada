@@ -1,0 +1,12 @@
+﻿relation,all_date_pairs,equal_power_profile_pairs,equal_share_within_relation
+all_pairs,28920,302,0.010442600276625172
+same_month,3514,95,0.02703471826977803
+different_month,25406,207,0.008147681650003936
+same_day_of_month,822,102,0.12408759124087591
+different_day_of_month,28098,200,0.007117944337675279
+different_month_same_day_of_month,822,102,0.12408759124087591
+same_weekday,4030,92,0.0228287841191067
+different_weekday,24890,210,0.008437123342707915
+adjacent_days,238,15,0.06302521008403361
+exactly_seven_days_apart,232,22,0.09482758620689655
+gap_more_than_30_days,22214,174,0.007832898172323759

@@ -1,0 +1,17 @@
+{
+  "status": "scan_passed",
+  "sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "analysis_n": 5784,
+  "analysis_period": "Jan-Aug",
+  "role": "Descriptive EDA; not a predictive evaluation or training threshold",
+  "unique_daily_profiles": 126,
+  "days": 241,
+  "numpy": "2.2.6",
+  "scipy": "1.17.1",
+  "manuscript_edited": false,
+  "method_sources": [
+    "https://georgebv.github.io/pyextremes/user-guide/5-threshold-selection/",
+    "https://georgebv.github.io/pyextremes/user-guide/4-peaks-over-threshold/",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.genpareto.html"
+  ]
+}

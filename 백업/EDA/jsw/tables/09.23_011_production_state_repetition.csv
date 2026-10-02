@@ -1,0 +1,5 @@
+﻿period,production_state,days,repeated_days,distinct_profiles,repeated_day_share
+Jan-Jun,positive,137,122,54,0.8905109489051095
+Jan-Jun,zero,44,36,20,0.8181818181818182
+Jul-Aug,positive,44,2,43,0.045454545454545456
+Jul-Aug,zero,16,0,16,0.0

@@ -1,0 +1,105 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "source_rows": 6168,
+  "scoped_rows": 5832,
+  "complete_days": 241,
+  "valid_hours": 5784,
+  "valid_slots": 23136,
+  "invalid_hours": 48,
+  "daily_peak_matches_A004": true,
+  "daily_mean_matches_A004": true,
+  "zero_peak_days": 0,
+  "high_peak_days": 105,
+  "all_four_zero_hours": 17,
+  "daily_q10_zero_days": 2,
+  "monthly_maxima": [
+    {
+      "month": 202101,
+      "complete_days": 31,
+      "valid_hours": 744,
+      "valid_slots": 2976,
+      "monthly_peak_valid_time": 222,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 13,
+      "high_slots_ge_182": 107
+    },
+    {
+      "month": 202102,
+      "complete_days": 28,
+      "valid_hours": 672,
+      "valid_slots": 2688,
+      "monthly_peak_valid_time": 198,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 9,
+      "high_slots_ge_182": 52
+    },
+    {
+      "month": 202103,
+      "complete_days": 31,
+      "valid_hours": 744,
+      "valid_slots": 2976,
+      "monthly_peak_valid_time": 222,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 15,
+      "high_slots_ge_182": 122
+    },
+    {
+      "month": 202104,
+      "complete_days": 30,
+      "valid_hours": 720,
+      "valid_slots": 2880,
+      "monthly_peak_valid_time": 199,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 9,
+      "high_slots_ge_182": 20
+    },
+    {
+      "month": 202105,
+      "complete_days": 31,
+      "valid_hours": 744,
+      "valid_slots": 2976,
+      "monthly_peak_valid_time": 199,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 8,
+      "high_slots_ge_182": 21
+    },
+    {
+      "month": 202106,
+      "complete_days": 30,
+      "valid_hours": 720,
+      "valid_slots": 2880,
+      "monthly_peak_valid_time": 222,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 15,
+      "high_slots_ge_182": 122
+    },
+    {
+      "month": 202107,
+      "complete_days": 29,
+      "valid_hours": 696,
+      "valid_slots": 2784,
+      "monthly_peak_valid_time": 222,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 20,
+      "high_slots_ge_182": 329
+    },
+    {
+      "month": 202108,
+      "complete_days": 31,
+      "valid_hours": 744,
+      "valid_slots": 2976,
+      "monthly_peak_valid_time": 218,
+      "peak_tied_slots": 1,
+      "peak_tied_dates": 1,
+      "high_days_ge_182": 16,
+      "high_slots_ge_182": 186
+    }
+  ]
+}

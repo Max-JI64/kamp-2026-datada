@@ -1,0 +1,116 @@
+{
+  "question": "How do monthly average levels and hourly shapes differ within weekdays and weekends?",
+  "previous_evidence": "User chose an arithmetic mean view after verifying that low July/August weekend values are genuine and discussing the mean-versus-median purpose.",
+  "decision": "Use a mean heatmap as the primary monthly comparison candidate; retain the median version as a supplementary calculation.",
+  "reasons": [
+    "Consistent with section 2.1 arithmetic means.",
+    "August weekday 08: mean 142.6818 versus median 172.5; retain genuine low-power dates."
+  ],
+  "aggregation": "Arithmetic mean of CSV hourly 平均 over all dates in each month/day-type/hour, including zero-production dates.",
+  "statistic": "mean",
+  "rows_per_panel": 8,
+  "columns_per_panel": 24,
+  "checked_cells": 384,
+  "color_range": [
+    0,
+    210
+  ],
+  "month_group_date_counts": [
+    {
+      "month": 1,
+      "group": "weekday",
+      "n": 21
+    },
+    {
+      "month": 1,
+      "group": "weekend",
+      "n": 10
+    },
+    {
+      "month": 2,
+      "group": "weekday",
+      "n": 20
+    },
+    {
+      "month": 2,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 3,
+      "group": "weekday",
+      "n": 23
+    },
+    {
+      "month": 3,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 4,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 4,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 5,
+      "group": "weekday",
+      "n": 21
+    },
+    {
+      "month": 5,
+      "group": "weekend",
+      "n": 10
+    },
+    {
+      "month": 6,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 6,
+      "group": "weekend",
+      "n": 8
+    },
+    {
+      "month": 7,
+      "group": "weekday",
+      "n": 20
+    },
+    {
+      "month": 7,
+      "group": "weekend",
+      "n": 9
+    },
+    {
+      "month": 8,
+      "group": "weekday",
+      "n": 22
+    },
+    {
+      "month": 8,
+      "group": "weekend",
+      "n": 9
+    }
+  ],
+  "limit": "Weekend monthly summaries contain only 8-10 dates and may shift with date composition. Descriptive period differences, not proof of a seasonal/weather cause or model gain.",
+  "next_or_stop": "Current presentation question answered: preserve monthly differences compactly. Do not add further monthly plots without a new question. Production composition and other-variable explanations belong to separate analysis.",
+  "source_file": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\tables\\daily_repetition\\independent_monthly_cells.csv",
+  "source_sha256": "79641c17149ab52add85658b67829151fd70998d2d6f00158b4cb02d73420618",
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\EDA\\figures\\daily_repetition\\07_monthly_power_mean_heatmap.png",
+  "warnings": [],
+  "visual_review": true,
+  "visual_review_method": "Inspected the generated mean heatmap at 50 percent: shared scale, 8 rows per panel, legible axes and colorbar, no annotations or clipping.",
+  "manuscript_sha256": "87a674e5468791bf324ae65165a46b4d25f88e654ee45c18bf90a7a0237fe09c",
+  "manuscript_edited": false,
+  "validation": "384 source-derived means retained; weighted recombination over months reconciled all 48 full-period day-type/hour means with section 2.1; common untruncated color range 0..210.",
+  "proposed_section_order": [
+    "2.1 weekday/weekend daily pattern",
+    "2.2 monthly power changes",
+    "2.3 production/weather relationships"
+  ]
+}

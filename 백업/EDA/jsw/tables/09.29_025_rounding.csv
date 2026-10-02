@@ -1,0 +1,17 @@
+﻿period,weighting,M_minus_A,weighted_units,denominator_units
+Jan-Jun_design,date_hour,-0.25,1075,4344
+Jan-Jun_design,date_hour,0.0,1319,4344
+Jan-Jun_design,date_hour,0.25,960,4344
+Jan-Jun_design,date_hour,0.5,990,4344
+Jan-Jun_design,profile_hour_once,-0.25,386,1608
+Jan-Jun_design,profile_hour_once,0.0,474,1608
+Jan-Jun_design,profile_hour_once,0.25,368,1608
+Jan-Jun_design,profile_hour_once,0.5,380,1608
+Jul-Aug_exploratory,date_hour,-0.25,322,1440
+Jul-Aug_exploratory,date_hour,0.0,402,1440
+Jul-Aug_exploratory,date_hour,0.25,364,1440
+Jul-Aug_exploratory,date_hour,0.5,352,1440
+Jul-Aug_exploratory,profile_hour_once,-0.25,315,1416
+Jul-Aug_exploratory,profile_hour_once,0.0,394,1416
+Jul-Aug_exploratory,profile_hour_once,0.25,361,1416
+Jul-Aug_exploratory,profile_hour_once,0.5,346,1416

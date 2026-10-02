@@ -1,0 +1,9 @@
+﻿date,period,unique_values,shape,zero_hours,positive_hours,zero_positive_transitions,exact_value_changes,longest_equal_run,first_value,last_value,min_value,max_value,sum_of_hour_records
+20210104,Jan-Jun,14,mixed_recorded_values,11,13,5,15,8,0,52,0,2757,13672
+20210107,Jan-Jun,21,mixed_recorded_values,4,20,7,23,1,0,12,0,2841,16805
+20210101,Jan-Jun,1,one_value_all_day,24,0,0,0,24,0,0,0,0,0
+20210102,Jan-Jun,1,one_value_all_day,24,0,0,0,24,0,0,0,0,0
+20210701,Jul-Aug,24,mixed_recorded_values,0,24,0,23,1,76,118,6,3036,18353
+20210702,Jul-Aug,23,mixed_recorded_values,2,22,3,23,1,0,76,0,5516,19849
+20210704,Jul-Aug,1,one_value_all_day,24,0,0,0,24,0,0,0,0,0
+20210711,Jul-Aug,1,one_value_all_day,24,0,0,0,24,0,0,0,0,0

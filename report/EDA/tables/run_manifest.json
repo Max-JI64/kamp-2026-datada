@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "run_at": "2026-10-02T08:24:20+09:00",
+  "python": "3.13.1",
+  "pandas": "3.0.1",
+  "numpy": "2.2.6",
+  "scipy": "1.17.1",
+  "rows": 5784,
+  "days": 241,
+  "threshold": 182.0,
+  "threshold_basis": "M001 Jan-Jun eligible 4176 rows, P 95th percentile",
+  "holiday_dates": [
+    20210101,
+    20210211,
+    20210212,
+    20210213,
+    20210301,
+    20210505,
+    20210519,
+    20210606,
+    20210815,
+    20210816
+  ],
+  "holiday_source": "Existing E027 definitions; no new web data",
+  "seed": 20261002,
+  "rotations": 9999,
+  "script_sha256": "c23ef8b1baab8f5f40450a23727153620617aa79fc5c001e95bf2f947513b230",
+  "image_analysis_performed": false
+}

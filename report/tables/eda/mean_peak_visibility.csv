@@ -1,0 +1,5 @@
+﻿period,mean_definition,normal_hours,threshold,high_hours,hidden_hours,hidden_rate
+Jan-Jun,M,4344,182.0,235,165,0.7021276595744681
+Jan-Jun,A,4344,182.0,235,171,0.7276595744680852
+Jul-Aug,M,1440,182.0,220,105,0.4772727272727273
+Jul-Aug,A,1440,182.0,220,110,0.5

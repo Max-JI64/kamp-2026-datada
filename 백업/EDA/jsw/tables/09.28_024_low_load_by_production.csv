@@ -1,0 +1,7 @@
+﻿period,production_record_shape,days,unique_power_profiles,q10_min,q10_q25,q10_median,q10_q75,q10_max,q10_unique_profile_median,q25_median,days_with_zero_q10,days_with_all_four_zero_hour
+Jan-Jun,all_positive,19,15,22.0,85.25,91.0,94.5,99.5,91.0,105.75,0,0
+Jan-Jun,all_zero,44,20,19.5,21.0,21.5,22.0,101.5,22.0,21.5,0,0
+Jan-Jun,mixed_zero_positive,118,53,19.0,22.0,84.25,97.0,101.5,83.0,100.75,0,0
+Jul-Aug,all_positive,9,9,87.5,94.5,95.5,98.0,102.0,95.5,108.0,0,0
+Jul-Aug,all_zero,16,16,0.0,20.0,20.0,21.625,23.0,20.0,21.0,1,1
+Jul-Aug,mixed_zero_positive,35,35,0.0,22.5,92.0,96.5,102.0,92.0,103.75,1,1

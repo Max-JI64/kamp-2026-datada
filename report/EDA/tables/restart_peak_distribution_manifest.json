@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "normal_rows": 5784,
+  "threshold_source_rows": 5832,
+  "figures": [
+    {
+      "file": "restart_03_peak_distribution.png",
+      "sha256": "7620c8056673e81a33f9609229481f2aa34a16a97a9dd5c3a03da7603271663c",
+      "bytes": 183999
+    },
+    {
+      "file": "restart_03_peak_timeline.png",
+      "sha256": "37ecfc339b9c3cefecba408adc26ace24b1bea8b4b2a16994e48a006f207bb63",
+      "bytes": 539704
+    },
+    {
+      "file": "restart_03_peak_month_distributions.png",
+      "sha256": "710214eeb194a68626d52d48f2c386e2556fbdd8e9a3a0c4500e7c3efd348501",
+      "bytes": 159169
+    }
+  ],
+  "frequency_bin": "each exact integer value; width 1; no smoothing/truncation in whole distribution",
+  "fixed_thresholds": [
+    179,
+    186,
+    187,
+    201
+  ],
+  "font": "Malgun Gothic",
+  "warnings": [],
+  "visual_review": true,
+  "threshold_changed": false,
+  "script_sha256": "26858e98380e41f1c3c6fabdd166719dba392b46fb5f82104b3fbfac15e90b67",
+  "reviewed_at": "2026-10-02T11:42+09:00",
+  "contact_sheet": "figures/eda/qa/restart_03_distribution_contact_50.png",
+  "review_scope": "세 그림을 50% 접촉 시트로 확인. 주석과 범례 겹침을 수정하고 재확인. 사용자 요청에 따라 Markdown 문서는 수정하지 않음."
+}

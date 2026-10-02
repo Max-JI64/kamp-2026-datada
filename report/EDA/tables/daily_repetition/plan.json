@@ -1,0 +1,10 @@
+{
+  "previous_evidence": "2.1 weekday/weekend hourly means: weekday 11->12 decreases and 12->13 increases. E018 counts different, 15-minute boundary values.",
+  "question": "How often does the same shape occur on individual dates, and how do level and spread change across dates?",
+  "scope": "Jan-Aug 2021, valid hours; weekday includes public holidays. No training/test partition.",
+  "target": "CSV 平均, hourly four-slot arithmetic mean rounded half up, same target as section 2.1.",
+  "criteria": "For each date: M12<M11 and M13>M12. Strict comparisons; ties explicitly distinguished. No peak threshold or inference test.",
+  "outputs": "Separate weekday/weekend heatmaps with shared absolute color scale; all-date trajectories and median/P10-P90/mean; paired change scatter.",
+  "follow_up_rule": "If a shape is not present every day, inspect month/day-type composition and ties. If exact daily profiles repeat, compare one-vote-per-profile summaries descriptively.",
+  "manuscript_edited": false
+}

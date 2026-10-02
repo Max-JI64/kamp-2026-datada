@@ -1,0 +1,16 @@
+{
+  "time": "2026-09-23T15:43:15+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "threshold_train_p95": 182.0,
+  "training_level_quartiles": [
+    23.0,
+    103.0,
+    130.0
+  ],
+  "eligible_8_13_rows": 482,
+  "onsets_8_13": 145,
+  "complete_days": 241,
+  "distinct_profiles": 126,
+  "pandas": "3.0.1",
+  "numpy": "2.2.6"
+}

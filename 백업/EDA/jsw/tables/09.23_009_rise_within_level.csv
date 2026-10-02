@@ -1,0 +1,17 @@
+﻿period,level,rising,n,events,onset_rate
+train,q1,False,874,0,0.0
+train,q1,True,241,0,0.0
+train,q2,False,584,16,0.0273972602739726
+train,q2,True,409,21,0.05134474327628362
+train,q3,False,546,33,0.06043956043956044
+train,q3,True,435,6,0.013793103448275862
+train,q4,False,515,29,0.05631067961165048
+train,q4,True,502,34,0.06772908366533864
+validation,q1,False,314,0,0.0
+validation,q1,True,109,0,0.0
+validation,q2,False,188,1,0.005319148936170213
+validation,q2,True,137,7,0.051094890510948905
+validation,q3,False,160,19,0.11875
+validation,q3,True,113,10,0.08849557522123894
+validation,q4,False,101,14,0.13861386138613863
+validation,q4,True,92,34,0.3695652173913043

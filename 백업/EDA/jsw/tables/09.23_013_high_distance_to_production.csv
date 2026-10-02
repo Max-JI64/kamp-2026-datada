@@ -1,0 +1,4 @@
+﻿distance_band,high_rows,days
+adjacent_1_hour,2,2
+2_to_6_hours,5,3
+at_least_7_hours,21,6

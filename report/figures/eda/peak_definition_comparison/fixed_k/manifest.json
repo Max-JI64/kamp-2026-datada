@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "independently_verified_membership_cells": 69408,
+  "models": 12,
+  "weekly_resampling_fits": 480,
+  "all_observed_classifications_equivalent_to_integer_cut": true,
+  "verification_method": "Independent nearest-centroid / unnormalized Gaussian log posterior from saved parameters",
+  "manuscripts_edited": false,
+  "font": [
+    "Malgun Gothic"
+  ],
+  "figures": [
+    {
+      "file": "01_kmeans_fixed_k.png",
+      "bytes": 151728,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    },
+    {
+      "file": "02_gmm_fixed_k.png",
+      "bytes": 391197,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    },
+    {
+      "file": "03_scores_and_upper_groups.png",
+      "bytes": 235096,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    },
+    {
+      "file": "04_fixed_k_stability.png",
+      "bytes": 149647,
+      "title": "",
+      "caption": "",
+      "visual_review": false
+    }
+  ],
+  "style_checks": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\01_kmeans_fixed_k.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\02_gmm_fixed_k.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\03_scores_and_upper_groups.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\report\\figures\\eda\\peak_definition_comparison\\fixed_k\\04_fixed_k_stability.png",
+      "whole_figure_title": false,
+      "footer": false,
+      "original_value_label": false
+    }
+  ],
+  "distribution_view": "100..226 upper-load zoom; fits use ALL Jan-Jun valid hours; histogram denominator unchanged",
+  "resampling_view": "40 calendar-week resamples; thin line min-max, thick segment p10-p90; NOT confidence intervals",
+  "visual_review": false
+}

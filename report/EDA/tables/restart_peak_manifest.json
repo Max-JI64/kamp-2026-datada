@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "threshold": 187,
+  "threshold_source_rows": 5832,
+  "normal_hour_rows": 5784,
+  "normal_hour_p95": 186,
+  "quantile_rule": "linear interpolation: zero-based position (n-1)*0.95",
+  "threshold_reason": "existing E004 upper-tail descriptive definition; not optimal/official/forecast threshold",
+  "weather_method": "univariate pooled quartile bins, not clusters or named weather states",
+  "weather_population": "June-August positive-production weekdays, 1244 rows; wind nonmissing 1242",
+  "checked_rows": 559,
+  "figures": [
+    {
+      "file": "restart_03_threshold_timing.png",
+      "bytes": 264345,
+      "sha256": "7013aeba8205f56811e0f9b5bfb1b684fc7ca630d14b55f92a1742de82a9e7f3"
+    },
+    {
+      "file": "restart_03_condition_ranges.png",
+      "bytes": 235449,
+      "sha256": "6e1745bf7e4321c99bc3d0383729f59bd5d6aec75e41f698321e346dbe3237c3"
+    },
+    {
+      "file": "restart_03_hour_shape.png",
+      "bytes": 220464,
+      "sha256": "1aa5d007cd038ef6460a2b4bcef1f859a480b264e32c3a3020e40ff5a87bb57c"
+    }
+  ],
+  "warnings": [],
+  "font": "Malgun Gothic",
+  "image_analysis_performed": false,
+  "script_sha256": "a7d51f39f97b98537610bfbc8ad5264b56a8f5f741f59e8a768091be2f6bb4ad"
+}
