@@ -4,9 +4,9 @@
 
 ## 파일과 코드
 
-- `power_frequency.csv`: 모든 평일 기록의 정수 전력값별 빈도. 20~26에 747시간, 27~48에 0시간, 다음 관측값 49.
+- `power_frequency.csv`: 모든 평일 기록의 정수 전력값별 빈도. 20 ~ 26에 747시간, 27 ~ 48에 0시간, 다음 관측값 49.
 - `daily_hour_patterns.csv`: 평일 171일 각각의 24시간을 전수 확인한 낮은 시각 목록. 일부 사례를 일반화하지 않았다.
-- `pattern_summary.csv`: 00~06시만 낮음 29일, 08~23시만 낮음 7일, 하루 내내 낮음 18일, 낮은 구간 없음 117일.
+- `pattern_summary.csv`: 00 ~ 06시만 낮음 29일, 08 ~ 23시만 낮음 7일, 하루 내내 낮음 18일, 낮은 구간 없음 117일.
 - `production_context.csv`: 낮은 전력 중 양수 생산량 기록 92시간을 대조한다. 낮은 전력을 실제 회사 휴무로 확정하지 않는다.
 - `histogram_bins.csv`: 본문 그림의 5 간격 막대와 표본 수. 경계는 막대 폭이 아닌 실제 정수값별 빈 구간에서 확인했다.
 - `summary.json`: 원본 해시·전수 검증·그림 해시·검수 기록.
@@ -14,7 +14,7 @@
 
 [EDA/scripts/eda_weekday_power_levels.py](<../../scripts/eda_weekday_power_levels.py>)의 `summarize_patterns()`가 정확한 시간 조합을 집계하고 `plot_distribution()`이 본문 히스토그램을 생성한다. `main()`은 원본 범위·빈 구간·날짜별 시각 목록을 검증한다. 프로젝트 루트에서 정규 CPython 3.13으로 실행한다. 원본 로더는 현재 2.3 코드, 스타일은 공통 그림 코드를 재사용하며 삭제한 후보 코드에 의존하지 않는다.
 
-이미지 파일: [EDA/figures/weekday_power_levels.png](<../../figures/weekday_power_levels.png>). 가로축은 시간별 평균 전력, 세로축은 기록 수다. 20~26의 주황 막대와 49~208의 파란 막대 사이에는 기록이 없는 구간이 보인다. 정확한 경계는 `power_frequency.csv`로 확인했다. 그림 해석과 네 시간 조합 표는 [EDA 원고](<../../02_EDA_원고.md>)의 2.4에 작성했다.
+이미지 파일: [EDA/figures/weekday_power_levels.png](<../../figures/weekday_power_levels.png>). 가로축은 시간별 평균 전력, 세로축은 기록 수다. 20 ~ 26의 주황 막대와 49 ~ 208의 파란 막대 사이에는 기록이 없는 구간이 보인다. 정확한 경계는 `power_frequency.csv`로 확인했다. 그림 해석과 네 시간 조합 표는 [EDA 원고](<../../02_EDA_원고.md>)의 2.4에 작성했다.
 
 ## 판단과 범위
 

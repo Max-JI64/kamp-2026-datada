@@ -6,7 +6,7 @@
 
 | 원고 내용 | 계산 코드 | 그림 생성 코드 |
 |---|---|---|
-| 데이터 1.1~1.5 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>) | 본문 그림 없음 |
+| 데이터 1.1 ~ 1.5 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>) | 본문 그림 없음 |
 | EDA 2.1 생산량·전력 하루 패턴 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>), [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) | [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) |
 | EDA 2.2 날짜별 전력 패턴 | [EDA/scripts/eda_daily_repetition.py](<scripts/eda_daily_repetition.py>) | [EDA/scripts/plot_daily_repetition_simple.py](<scripts/plot_daily_repetition_simple.py>) |
 | EDA 2.2 월별 평균 전력 | [EDA/scripts/verify_monthly_power_heatmap.py](<scripts/verify_monthly_power_heatmap.py>) | [EDA/scripts/plot_monthly_power_heatmap.py](<scripts/plot_monthly_power_heatmap.py>) |
@@ -30,7 +30,7 @@
 
 연속된 네 전력값의 재검토는 [15분 배열·선그래프 결과](<tables/quarter_hour_patterns/README.md>)에 있다. [EDA/scripts/eda_quarter_hour_patterns.py](<scripts/eda_quarter_hour_patterns.py>)는 앞의 검증 결과를 재사용하며 원본과 다시 대조한다. 검토용 선그래프·변동 폭 분포는 `tmp/eda_quarter_hour_patterns`에 생성한다.
 
-그림의 축·색·비교 대상과 핵심 해석은 EDA 원고에서 각 이미지와 함께 설명한다. 이미지 아래에는 파일 위치를 표시하며, 각 절의 관련 Python 코드 링크에서 수정할 코드를 확인할 수 있다. 데이터 원고 1.1~1.5는 플롯 이미지를 사용하지 않는다.
+그림의 축·색·비교 대상과 핵심 해석은 EDA 원고에서 각 이미지와 함께 설명한다. 이미지 아래에는 파일 위치를 표시하며, 각 절의 관련 Python 코드 링크에서 수정할 코드를 확인할 수 있다. 데이터 원고 1.1 ~ 1.5는 플롯 이미지를 사용하지 않는다.
 
 | 원고 절 | 이미지 파일 | 생성 코드와 함수 |
 |---|---|---|
@@ -66,7 +66,7 @@ EDA/scripts/eda_slot_time_patterns.py
 
 EDA는 정상 시간 5,784행·241일 전체를 사용하며, 평일 171일·주말 70일에 공휴일을 포함한다. EDA에 학습·검증 기간 분할을 적용하지 않는다. 2.2의 하락·상승은 같은 날짜의 시간별 평균 비교이며 피크 임계값이 아니다. 월별 히트맵은 생산량 0인 날짜도 포함한 산술평균이다. 원인이나 모델 성능 개선을 이 EDA의 결과로 주장하지 않는다.
 
-2.4는 사용자 요청에 따라 평일 171일·4,104시간을 대상으로 한다. 정수값별 빈도에서 27~48의 빈 구간을 확인해 20~26을 낮은 전력 구간으로 구분하고, 날짜마다 해당 시각을 모두 추출해 네 조합을 집계했다. 히스토그램 한 장과 표를 본문에 반영했다. 최종 수치와 검증은 `tables/weekday_power_levels`에 있다.
+2.4는 사용자 요청에 따라 평일 171일·4,104시간을 대상으로 한다. 정수값별 빈도에서 27 ~ 48의 빈 구간을 확인해 20 ~ 26을 낮은 전력 구간으로 구분하고, 날짜마다 해당 시각을 모두 추출해 네 조합을 집계했다. 히스토그램 한 장과 표를 본문에 반영했다. 최종 수치와 검증은 `tables/weekday_power_levels`에 있다.
 
 그림의 전체 제목·하단 설명·화살표·해석 문구는 이미지 안에 넣지 않는다. 설명은 원고에 작성한다. 날짜별 모든 선·행을 표시하지 않고 질문에 맞게 요약한다.
 
