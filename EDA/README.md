@@ -6,41 +6,41 @@
 
 | 원고 내용 | 계산 코드 | 그림 생성 코드 |
 |---|---|---|
-| 데이터 1.1~1.5 | [EDA/scripts/data_overview.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/data_overview.py>) | 본문 그림 없음 |
-| EDA 2.1 생산량·전력 하루 패턴 | [EDA/scripts/data_overview.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/data_overview.py>), [EDA/scripts/eda_daily_pattern.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_daily_pattern.py>) | [EDA/scripts/eda_daily_pattern.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_daily_pattern.py>) |
-| EDA 2.2 날짜별 전력 패턴 | [EDA/scripts/eda_daily_repetition.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_daily_repetition.py>) | [EDA/scripts/plot_daily_repetition_simple.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/plot_daily_repetition_simple.py>) |
-| EDA 2.2 월별 평균 전력 | [EDA/scripts/verify_monthly_power_heatmap.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/verify_monthly_power_heatmap.py>) | [EDA/scripts/plot_monthly_power_heatmap.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/plot_monthly_power_heatmap.py>) |
-| EDA 2.3 생산량·날씨 관계 | [EDA/scripts/eda_variable_relations.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_variable_relations.py>) | 같은 파일의 `figures()` |
-| EDA 2.4 평일 전력 분포·네 시간 조합 | [EDA/scripts/eda_weekday_power_levels.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_weekday_power_levels.py>) | 같은 파일의 `plot_distribution()` |
-| EDA 2.5 시간대별 15분 구간 패턴 | [EDA/scripts/eda_slot_time_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_slot_time_patterns.py>) | 같은 파일의 `plot_centered_heatmap()` |
+| 데이터 1.1~1.5 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>) | 본문 그림 없음 |
+| EDA 2.1 생산량·전력 하루 패턴 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>), [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) | [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) |
+| EDA 2.2 날짜별 전력 패턴 | [EDA/scripts/eda_daily_repetition.py](<scripts/eda_daily_repetition.py>) | [EDA/scripts/plot_daily_repetition_simple.py](<scripts/plot_daily_repetition_simple.py>) |
+| EDA 2.2 월별 평균 전력 | [EDA/scripts/verify_monthly_power_heatmap.py](<scripts/verify_monthly_power_heatmap.py>) | [EDA/scripts/plot_monthly_power_heatmap.py](<scripts/plot_monthly_power_heatmap.py>) |
+| EDA 2.3 생산량·날씨 관계 | [EDA/scripts/eda_variable_relations.py](<scripts/eda_variable_relations.py>) | 같은 파일의 `figures()` |
+| EDA 2.4 평일 전력 분포·네 시간 조합 | [EDA/scripts/eda_weekday_power_levels.py](<scripts/eda_weekday_power_levels.py>) | 같은 파일의 `plot_distribution()` |
+| EDA 2.5 시간대별 15분 구간 패턴 | [EDA/scripts/eda_slot_time_patterns.py](<scripts/eda_slot_time_patterns.py>) | 같은 파일의 `plot_centered_heatmap()` |
 
 - [데이터 원고](01_데이터_원고.md)
 - [데이터 0.5페이지용 압축본](01_데이터_0.5페이지용_압축본.md): 원본 확인·전처리·EDA 입력 범위를 약 0.5페이지 분량으로 정리했다. 상세본과 처리 기준은 같으며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
 - [EDA 원고](02_EDA_원고.md)
-- [EDA 3페이지용 압축본](02_EDA_3페이지용_압축본.md): 기존 원고를 유지한 별도 문서다. 다섯 절·그림 일곱 장을 세 묶음·그림 다섯 장으로 재구성했다. 통합 하루 패턴 그림은 [EDA/scripts/plot_report_daily_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/plot_report_daily_patterns.py>)로 재현한다. 약 3페이지를 목표로 하며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
+- [EDA 3페이지용 압축본](02_EDA_3페이지용_압축본.md): 기존 원고를 유지한 별도 문서다. 다섯 절·그림 일곱 장을 세 묶음·그림 다섯 장으로 재구성했다. 통합 하루 패턴 그림은 [EDA/scripts/plot_report_daily_patterns.py](<scripts/plot_report_daily_patterns.py>)로 재현한다. 약 3페이지를 목표로 하며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
 - 코드 `scripts`, 그림 `figures`, 수치·검증 기록 `tables`.
-- 공통 글꼴·색상·PNG 저장 설정은 [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>)의 `setup()`·`finish()`.
+- 공통 글꼴·색상·PNG 저장 설정은 [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>)의 `setup()`·`finish()`.
 - 입력은 `../data/origin/okm_augumented_2021.csv`. 원본은 변경하지 않는다.
 
 ## 본문 이미지와 파일 위치
 
-2.5에는 [전체 날짜의 시간대별 15분 패턴](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/tables/slot_time_patterns/README.md>)을 반영했다. [EDA/scripts/eda_slot_time_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_slot_time_patterns.py>)는 모든 정상 날짜를 모아 시간대별 네 구간 차이·반복 날짜 비율을 계산한다. 본문에는 `EDA/figures/slot_time_patterns.png`의 평일·주말 히트맵 한 장을 사용한다. 96구간 선그래프는 `tmp/eda_slot_time_patterns`에 검토용으로 남긴다. 아래 평균·최대 비교와 세 사례 비교는 앞선 검토 과정이며 이번 반복 패턴의 본문 근거로 사용하지 않는다.
+2.5에는 [전체 날짜의 시간대별 15분 패턴](<tables/slot_time_patterns/README.md>)을 반영했다. [EDA/scripts/eda_slot_time_patterns.py](<scripts/eda_slot_time_patterns.py>)는 모든 정상 날짜를 모아 시간대별 네 구간 차이·반복 날짜 비율을 계산한다. 본문에는 `EDA/figures/slot_time_patterns.png`의 평일·주말 히트맵 한 장을 사용한다. 96구간 선그래프는 `tmp/eda_slot_time_patterns`에 검토용으로 남긴다. 아래 평균·최대 비교와 세 사례 비교는 앞선 검토 과정이며 이번 반복 패턴의 본문 근거로 사용하지 않는다.
 
-앞선 검토 자료는 [시간 평균·최대 비교 결과](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/tables/mean_max_power/README.md>)에 있다. [EDA/scripts/eda_mean_max_power.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_mean_max_power.py>)로 재현하며, 검토용 그림은 `tmp/eda_mean_max_power`에 저장한다.
+앞선 검토 자료는 [시간 평균·최대 비교 결과](<tables/mean_max_power/README.md>)에 있다. [EDA/scripts/eda_mean_max_power.py](<scripts/eda_mean_max_power.py>)로 재현하며, 검토용 그림은 `tmp/eda_mean_max_power`에 저장한다.
 
-연속된 네 전력값의 재검토는 [15분 배열·선그래프 결과](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/tables/quarter_hour_patterns/README.md>)에 있다. [EDA/scripts/eda_quarter_hour_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_quarter_hour_patterns.py>)는 앞의 검증 결과를 재사용하며 원본과 다시 대조한다. 검토용 선그래프·변동 폭 분포는 `tmp/eda_quarter_hour_patterns`에 생성한다.
+연속된 네 전력값의 재검토는 [15분 배열·선그래프 결과](<tables/quarter_hour_patterns/README.md>)에 있다. [EDA/scripts/eda_quarter_hour_patterns.py](<scripts/eda_quarter_hour_patterns.py>)는 앞의 검증 결과를 재사용하며 원본과 다시 대조한다. 검토용 선그래프·변동 폭 분포는 `tmp/eda_quarter_hour_patterns`에 생성한다.
 
 그림의 축·색·비교 대상과 핵심 해석은 EDA 원고에서 각 이미지와 함께 설명한다. 이미지 아래에는 파일 위치를 표시하며, 각 절의 관련 Python 코드 링크에서 수정할 코드를 확인할 수 있다. 데이터 원고 1.1~1.5는 플롯 이미지를 사용하지 않는다.
 
 | 원고 절 | 이미지 파일 | 생성 코드와 함수 |
 |---|---|---|
-| 2.1 하루 패턴 | [EDA/figures/restart_01_daily_pattern_clean.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_01_daily_pattern_clean.png>) | `EDA/scripts/eda_daily_pattern.py`: `main()` |
-| 2.2 날짜별 분포 | [EDA/figures/daily_repetition/04_daily_pattern_simple.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/04_daily_pattern_simple.png>) | `EDA/scripts/plot_daily_repetition_simple.py`: `main()` |
-| 2.2 월별 평균 | [EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png>) | `EDA/scripts/plot_monthly_power_heatmap.py`: `main()`, `--statistic mean` |
-| 2.3 전체 상관 | [EDA/figures/restart_02_variable_relations.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_variable_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
-| 2.3 월별 상관 | [EDA/figures/restart_02_monthly_relations.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_monthly_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
-| 2.4 평일 분포 | [EDA/figures/weekday_power_levels.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/weekday_power_levels.png>) | `EDA/scripts/eda_weekday_power_levels.py`: `plot_distribution()` |
-| 2.5 시간대별 구간 차이 | [EDA/figures/slot_time_patterns.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/slot_time_patterns.png>) | `EDA/scripts/eda_slot_time_patterns.py`: `plot_centered_heatmap()` |
+| 2.1 하루 패턴 | [EDA/figures/restart_01_daily_pattern_clean.png](<figures/restart_01_daily_pattern_clean.png>) | `EDA/scripts/eda_daily_pattern.py`: `main()` |
+| 2.2 날짜별 분포 | [EDA/figures/daily_repetition/04_daily_pattern_simple.png](<figures/daily_repetition/04_daily_pattern_simple.png>) | `EDA/scripts/plot_daily_repetition_simple.py`: `main()` |
+| 2.2 월별 평균 | [EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png](<figures/daily_repetition/07_monthly_power_mean_heatmap.png>) | `EDA/scripts/plot_monthly_power_heatmap.py`: `main()`, `--statistic mean` |
+| 2.3 전체 상관 | [EDA/figures/restart_02_variable_relations.png](<figures/restart_02_variable_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
+| 2.3 월별 상관 | [EDA/figures/restart_02_monthly_relations.png](<figures/restart_02_monthly_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
+| 2.4 평일 분포 | [EDA/figures/weekday_power_levels.png](<figures/weekday_power_levels.png>) | `EDA/scripts/eda_weekday_power_levels.py`: `plot_distribution()` |
+| 2.5 시간대별 구간 차이 | [EDA/figures/slot_time_patterns.png](<figures/slot_time_patterns.png>) | `EDA/scripts/eda_slot_time_patterns.py`: `plot_centered_heatmap()` |
 
 ## 실행 순서
 
@@ -58,7 +58,7 @@ EDA/scripts/eda_weekday_power_levels.py
 EDA/scripts/eda_slot_time_patterns.py
 ```
 
-모두 실행한 뒤 [EDA/scripts/verify_manuscript_assets.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/verify_manuscript_assets.py>)로 원고의 이미지·코드·근거 링크를 검사할 수 있다. 스크립트는 원고를 작성하거나 수정하지 않는다. 코드 경로는 각 `.py` 위치에서 계산하므로 다른 작업 디렉터리에서도 실행할 수 있다.
+모두 실행한 뒤 [EDA/scripts/verify_manuscript_assets.py](<scripts/verify_manuscript_assets.py>)로 원고의 이미지·코드·근거 링크를 검사할 수 있다. 스크립트는 원고를 작성하거나 수정하지 않는다. 코드 경로는 각 `.py` 위치에서 계산하므로 다른 작업 디렉터리에서도 실행할 수 있다.
 
 본문 그림은 `EDA/figures`에 생성한다. 2.5 코드는 검토용 96구간 선그래프도 `tmp`에 생성한다. 2.5의 히트맵 표시만 수정했다면 `--figures-only`로 검증된 결과표를 재사용할 수 있다. 검수용 축소 시트가 필요한 경우에만 위 검증 코드에 `--contact-sheets`를 지정한다. 시트는 `tmp/eda_visual_review`에 생성하며 `EDA/figures`에는 추가하지 않는다. 이전 검수용 사본 5개는 `백업/EDA_검수/2026-10-02`에 보관했다.
 

@@ -6,9 +6,9 @@
 
 시간 내 변동 폭은 같은 행의 네 전력값 중 `최대−최소`다. 전체 중앙값과 같은 변동 폭의 시간, 가장 큰 변동 폭의 시간, 가장 높은 전력이 있는 시간을 선정했다. 동률은 날짜·시각이 가장 이른 기록을 선택했다. 중앙값 사례는 앞뒤 두 시간이 같은 날짜에 존재하도록 02~21시에서 선택했다. 분포 계산에는 모든 5,784시간을 포함했다. 이 사례의 가운데 한 시간만 중앙값과 같으며, 주변 다섯 시간 전체가 전형적이라는 뜻은 아니다.
 
-![다섯 시간의 15분 구간 전력과 시간 평균](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_quarter_hour_patterns/sequential_power_examples.png>)
+![다섯 시간의 15분 구간 전력과 시간 평균](<../../../tmp/eda_quarter_hour_patterns/sequential_power_examples.png>)
 
-이미지 파일: [tmp/eda_quarter_hour_patterns/sequential_power_examples.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_quarter_hour_patterns/sequential_power_examples.png>). 생성 코드: [EDA/scripts/eda_quarter_hour_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_quarter_hour_patterns.py>)의 `plot_examples()`.
+이미지 파일: [tmp/eda_quarter_hour_patterns/sequential_power_examples.png](<../../../tmp/eda_quarter_hour_patterns/sequential_power_examples.png>). 생성 코드: [EDA/scripts/eda_quarter_hour_patterns.py](<../../scripts/eda_quarter_hour_patterns.py>)의 `plot_examples()`.
 
 파란 선은 각 행의 `15분→30분→45분→60분`을 다음 시간과 연결한다. 주황 점선은 CSV의 시간 평균이며 각 시간 안에서 일정한 계단선이다. 옅은 세로선은 행의 시간 경계다. 세 패널의 세로축은 같은 범위다. 가로 위치는 열의 순서를 표현하며, 센서의 정확한 시작·종료 시각을 확정한 것이 아니다. 연결선도 점 사이의 실제 계측 경로를 확인한 것은 아니다. 선택한 창은 연속된 다섯 행·20개 값이며 누락 시간을 연결하지 않았다.
 
@@ -24,9 +24,9 @@
 
 세 번째 패널은 08시의 190→222→207→189에서 두 번째 값이 가장 높았다. 앞 시간부터 전력이 상승했고 그 뒤에도 높은 수준의 값이 이어졌다. 평균 202도 높은 전력을 보여줬지만, 가장 높은 222와 구간별 순서를 그대로 표현하지는 못했다. 최고 222는 네 시간에 관측됐고 그중 세 시간의 네 값은 같았다. 그림은 동률 중 최초 사례다.
 
-![정상 기록 전체의 한 시간 내 변동 폭 분포](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_quarter_hour_patterns/within_hour_range.png>)
+![정상 기록 전체의 한 시간 내 변동 폭 분포](<../../../tmp/eda_quarter_hour_patterns/within_hour_range.png>)
 
-이미지 파일: [tmp/eda_quarter_hour_patterns/within_hour_range.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_quarter_hour_patterns/within_hour_range.png>). 생성 코드: 위 Python 파일의 `plot_distribution()`.
+이미지 파일: [tmp/eda_quarter_hour_patterns/within_hour_range.png](<../../../tmp/eda_quarter_hour_patterns/within_hour_range.png>). 생성 코드: 위 Python 파일의 `plot_distribution()`.
 
 가로축은 한 시간의 최대−최소, 세로축은 기록 수다. 1 간격 막대에 전체 기록을 표시했다. 작은 변동 폭에 기록이 모이고 큰 변동 폭 쪽으로 긴 분포가 이어졌다. 변동 폭의 중앙값은 11, 평균은 15.82, 90백분위수는 40, 최대는 105였다. 네 값이 전부 같은 시간은 558시간이었다. 이는 분포를 설명하는 수치이며 피크 임계값이 아니다.
 
@@ -42,7 +42,7 @@
 
 ## 코드·결과와 검증
 
-관련 Python 코드: [EDA/scripts/eda_quarter_hour_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_quarter_hour_patterns.py>). `load_verified()`에서 이전 검증 결과를 원본과 다시 대조하고, `classify_shapes()`는 전체 배열, `select_examples()`는 선정 기준, `continuity_statistics()`는 이웃 값 비교를 담당한다. 선·축·범례는 `plot_examples()`, 분포 막대는 `plot_distribution()`에서 수정한다. 스타일은 [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>)를 사용한다.
+관련 Python 코드: [EDA/scripts/eda_quarter_hour_patterns.py](<../../scripts/eda_quarter_hour_patterns.py>). `load_verified()`에서 이전 검증 결과를 원본과 다시 대조하고, `classify_shapes()`는 전체 배열, `select_examples()`는 선정 기준, `continuity_statistics()`는 이웃 값 비교를 담당한다. 선·축·범례는 `plot_examples()`, 분포 막대는 `plot_distribution()`에서 수정한다. 스타일은 [EDA/scripts/eda_figures.py](<../../scripts/eda_figures.py>)를 사용한다.
 
 - [hourly_shapes.csv](hourly_shapes.csv): 모든 시간의 전력값·변동 폭·배열.
 - [example_selection.csv](example_selection.csv): 선택한 날짜·시각·선정 이유·동률 수.

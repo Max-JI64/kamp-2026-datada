@@ -4,9 +4,9 @@
 
 평균은 앞 절과 같은 CSV `평균` 열이며 네 값의 산술평균을 정수로 반올림한 값이다. 최대는 같은 행의 `15분·30분·45분·60분` 중 가장 큰 값이다. 차이는 `최대−CSV 평균`이다. 별도의 피크 임계값은 정하지 않았다.
 
-![시간 평균과 최대 전력의 관계 및 차이 분포](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_mean_max_power/mean_max_power.png>)
+![시간 평균과 최대 전력의 관계 및 차이 분포](<../../../tmp/eda_mean_max_power/mean_max_power.png>)
 
-이미지 파일: [tmp/eda_mean_max_power/mean_max_power.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_mean_max_power/mean_max_power.png>). 생성 코드: [EDA/scripts/eda_mean_max_power.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_mean_max_power.py>)의 `plot_mean_max()`. 검토용 그림은 본문 그림 폴더 밖에 저장했다.
+이미지 파일: [tmp/eda_mean_max_power/mean_max_power.png](<../../../tmp/eda_mean_max_power/mean_max_power.png>). 생성 코드: [EDA/scripts/eda_mean_max_power.py](<../../scripts/eda_mean_max_power.py>)의 `plot_mean_max()`. 검토용 그림은 본문 그림 폴더 밖에 저장했다.
 
 왼쪽은 한 시간에 점 하나를 표시한 산점도다. 가로축은 평균, 세로축은 최대이며 점선은 두 값이 같은 위치다. 점들은 대체로 점선 가까이에서 함께 높아졌다. 평균과 최대의 Spearman 상관은 0.987이었다. 전체에서 가장 높은 최대 222가 나타난 네 시간의 평균도 199 또는 202로 높았다. 평균이 높은 전력 수준을 전반적으로 보여준다는 해석을 유지한다.
 
@@ -33,6 +33,6 @@
 - [daily_highest_hour_comparison.csv](daily_highest_hour_comparison.csv): 241일 전체의 최고 시각 집합·교집합·최대 차이.
 - [summary.json](summary.json): 원본·그림 해시와 검증 결과.
 
-관련 Python 코드: [EDA/scripts/eda_mean_max_power.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_mean_max_power.py>). `load_and_verify()`는 원본을 별도로 CSV 순회해 5,784행의 평균·최대·차이를 전수 대조한다. `summarize()`는 기술통계와 실제 사례, `compare_daily_highest_hours()`는 최고 시각의 동률 포함 비교를 담당한다. 그림은 `plot_mean_max()`에서 선·축·막대 간격을 수정할 수 있다. 공통 스타일은 [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>)다.
+관련 Python 코드: [EDA/scripts/eda_mean_max_power.py](<../../scripts/eda_mean_max_power.py>). `load_and_verify()`는 원본을 별도로 CSV 순회해 5,784행의 평균·최대·차이를 전수 대조한다. `summarize()`는 기술통계와 실제 사례, `compare_daily_highest_hours()`는 최고 시각의 동률 포함 비교를 담당한다. 그림은 `plot_mean_max()`에서 선·축·막대 간격을 수정할 수 있다. 공통 스타일은 [EDA/scripts/eda_figures.py](<../../scripts/eda_figures.py>)다.
 
 정규 CPython 3.13 실행은 종료 코드 0이었다. 첫 그림 생성에서 글꼴의 수학용 빼기 기호 지원 문제를 확인해 축 표기의 기호만 수정했다. 그림은 50% 크기로 실제 확인했으며 글자 잘림과 전체 제목·하단 설명·해석 화살표는 없었다. 평균의 반올림 영향을 확인하면 반올림 전 평균과 최대의 차이는 평균 7.38·중앙값 5.25로, 본문에 설명한 차이의 존재는 유지됐다.

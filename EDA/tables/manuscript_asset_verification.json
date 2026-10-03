@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checked_links": 130,
-  "checked_documents": 8,
+  "checked_links": 179,
+  "checked_documents": 11,
   "visible_figure_paths": 7,
   "manuscript_sections": [
     "2.1",
@@ -41,12 +41,7 @@
     }
   ],
   "python_syntax": "passed",
-  "contact_sheets": [
-    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_01_50.png",
-    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_02_50.png",
-    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_03_50.png",
-    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_04_50.png"
-  ],
+  "contact_sheets": [],
   "image_render_check": "PNG decoded; visual inspection recorded separately",
   "section_2_5_visual_review": {
     "date": "2026-10-03",

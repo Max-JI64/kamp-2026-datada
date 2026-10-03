@@ -6,9 +6,9 @@
 
 ## 하루 96개 구간의 평균
 
-![전체 날짜를 모은 평일·주말의 96구간 평균 전력](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_slot_time_patterns/daily_96_slot_means.png>)
+![전체 날짜를 모은 평일·주말의 96구간 평균 전력](<../../../tmp/eda_slot_time_patterns/daily_96_slot_means.png>)
 
-이미지 파일: [tmp/eda_slot_time_patterns/daily_96_slot_means.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/tmp/eda_slot_time_patterns/daily_96_slot_means.png>). 생성 코드: [EDA/scripts/eda_slot_time_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_slot_time_patterns.py>)의 `plot_daily_96()`.
+이미지 파일: [tmp/eda_slot_time_patterns/daily_96_slot_means.png](<../../../tmp/eda_slot_time_patterns/daily_96_slot_means.png>). 생성 코드: [EDA/scripts/eda_slot_time_patterns.py](<../../scripts/eda_slot_time_patterns.py>)의 `plot_daily_96()`.
 
 각 시간대의 네 점은 해당 요일 집단 전체 날짜의 같은 열을 평균한 값이다. 예를 들어 평일 04시 첫 점은 평일 171일의 04시 `15분` 기록 평균이다. 왼쪽부터 `15분→30분→45분→60분`을 연결하고 다음 시간으로 이어간다. 파란 선은 평일, 주황 선은 주말이며 한 축에 두 선을 표시했다. 하루 96개 점이 있으므로 시간 눈금 사이에도 네 구간의 변화가 표시된다. 열 순서를 표현했으며 정확한 센서 시각·점 사이의 계측 경로는 확정하지 않는다.
 
@@ -16,9 +16,9 @@
 
 ## 시간대별 구간 차이
 
-![시간대별 각 구간과 같은 시간 평균의 차이](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/slot_time_patterns.png>)
+![시간대별 각 구간과 같은 시간 평균의 차이](<../../figures/slot_time_patterns.png>)
 
-이미지 파일: [EDA/figures/slot_time_patterns.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/slot_time_patterns.png>). 생성 코드: 위 Python 코드의 `plot_centered_heatmap()`.
+이미지 파일: [EDA/figures/slot_time_patterns.png](<../../figures/slot_time_patterns.png>). 생성 코드: 위 Python 코드의 `plot_centered_heatmap()`.
 
 왼쪽은 평일 171일, 오른쪽은 주말 70일이다. 행은 00~23시, 열은 네 전력 구간이다. 숫자는 전력값 자체가 아니라 **같은 시간의 네 구간 평균에서 얼마나 벗어났는지**를 뜻한다. 날짜별로 각 구간 전력에서 같은 행의 네 값 산술평균을 빼고, 그 차이를 평일 또는 주말의 모든 날짜에서 평균했다. 빨간색은 평균보다 높은 위치, 파란색은 낮은 위치다. 백분율이나 이전 구간 대비 증감률이 아니며, 전력 기록값과 같은 단위의 차이다. 두 패널의 색 범위는 −23~+23으로 동일하며, 같은 숫자는 같은 색이다. 주말의 작은 차이를 강조하도록 별도 색 범위를 적용하지 않았다.
 
@@ -68,7 +68,7 @@
 
 ## 코드·수치 검증
 
-관련 Python 코드: [EDA/scripts/eda_slot_time_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_slot_time_patterns.py>). `load_data()`는 원본 해시·날짜별 24시간·평균 반올림식을 확인한다. `summarize()`는 모든 시간대의 네 구간 평균·차이·날짜 비율을 계산한다. `verify_independently()`는 원본 CSV를 독립 순회해 평균·차이 192칸, 변화 방향 192개와 배열 조건 192개를 대조한다. 선·축·범례는 `plot_daily_96()`, 히트맵은 `plot_centered_heatmap()`에서 수정한다. 글꼴·색상은 [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>)를 사용한다.
+관련 Python 코드: [EDA/scripts/eda_slot_time_patterns.py](<../../scripts/eda_slot_time_patterns.py>). `load_data()`는 원본 해시·날짜별 24시간·평균 반올림식을 확인한다. `summarize()`는 모든 시간대의 네 구간 평균·차이·날짜 비율을 계산한다. `verify_independently()`는 원본 CSV를 독립 순회해 평균·차이 192칸, 변화 방향 192개와 배열 조건 192개를 대조한다. 선·축·범례는 `plot_daily_96()`, 히트맵은 `plot_centered_heatmap()`에서 수정한다. 글꼴·색상은 [EDA/scripts/eda_figures.py](<../../scripts/eda_figures.py>)를 사용한다.
 
 - [hour_slot_summary.csv](hour_slot_summary.csv): 평일·주말 24시간×네 구간의 평균·차이·높음/낮음 빈도.
 - [within_hour_directions.csv](within_hour_directions.csv): 끝−처음 및 이웃 구간 차이·양수/동률/음수 날짜 수.

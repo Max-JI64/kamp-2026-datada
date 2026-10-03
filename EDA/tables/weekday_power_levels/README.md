@@ -12,9 +12,9 @@
 - `summary.json`: 원본 해시·전수 검증·그림 해시·검수 기록.
 - `cleanup_manifest.json`: 사용자 요청으로 삭제한 미선정 후보 파일의 경로·해시·완료 상태. 삭제 파일의 내용을 복사해 보존하지 않는다.
 
-[EDA/scripts/eda_weekday_power_levels.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_weekday_power_levels.py>)의 `summarize_patterns()`가 정확한 시간 조합을 집계하고 `plot_distribution()`이 본문 히스토그램을 생성한다. `main()`은 원본 범위·빈 구간·날짜별 시각 목록을 검증한다. 프로젝트 루트에서 정규 CPython 3.13으로 실행한다. 원본 로더는 현재 2.3 코드, 스타일은 공통 그림 코드를 재사용하며 삭제한 후보 코드에 의존하지 않는다.
+[EDA/scripts/eda_weekday_power_levels.py](<../../scripts/eda_weekday_power_levels.py>)의 `summarize_patterns()`가 정확한 시간 조합을 집계하고 `plot_distribution()`이 본문 히스토그램을 생성한다. `main()`은 원본 범위·빈 구간·날짜별 시각 목록을 검증한다. 프로젝트 루트에서 정규 CPython 3.13으로 실행한다. 원본 로더는 현재 2.3 코드, 스타일은 공통 그림 코드를 재사용하며 삭제한 후보 코드에 의존하지 않는다.
 
-이미지 파일: [EDA/figures/weekday_power_levels.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/weekday_power_levels.png>). 가로축은 시간별 평균 전력, 세로축은 기록 수다. 20~26의 주황 막대와 49~208의 파란 막대 사이에는 기록이 없는 구간이 보인다. 정확한 경계는 `power_frequency.csv`로 확인했다. 그림 해석과 네 시간 조합 표는 [EDA 원고](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/02_EDA_원고.md>)의 2.4에 작성했다.
+이미지 파일: [EDA/figures/weekday_power_levels.png](<../../figures/weekday_power_levels.png>). 가로축은 시간별 평균 전력, 세로축은 기록 수다. 20~26의 주황 막대와 49~208의 파란 막대 사이에는 기록이 없는 구간이 보인다. 정확한 경계는 `power_frequency.csv`로 확인했다. 그림 해석과 네 시간 조합 표는 [EDA 원고](<../../02_EDA_원고.md>)의 2.4에 작성했다.
 
 ## 판단과 범위
 
