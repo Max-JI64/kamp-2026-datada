@@ -14,7 +14,7 @@ from matplotlib.colors import Normalize
 ROOT=Path(__file__).resolve().parents[2]
 TAB=ROOT/'EDA/tables/daily_repetition'
 OUT=ROOT/'EDA/figures/daily_repetition'
-MANUSCRIPT=ROOT/'EDA/10.02_002_EDA_새원고.md'
+MANUSCRIPT=ROOT/'EDA/02_EDA_원고.md'
 
 def main(statistic='mean'):
     before=hashlib.sha256(MANUSCRIPT.read_bytes()).hexdigest()

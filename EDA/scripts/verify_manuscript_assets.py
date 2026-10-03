@@ -1,4 +1,4 @@
-"""Check local manuscript links, selected PNGs, and relocated Python syntax."""
+"""Check all EDA Markdown links, visible figure paths, PNGs, and Python syntax."""
 from pathlib import Path
 from urllib.parse import unquote
 import ast
@@ -12,8 +12,8 @@ BASE=Path(__file__).resolve().parents[1]
 
 def main(contact_sheets=False):
     checked=[]
-    for doc in BASE.glob('*.md'):
-        if not doc.name.startswith('10.02_'):continue
+    documents=sorted(BASE.rglob('*.md'))
+    for doc in documents:
         text=doc.read_text(encoding='utf-8')
         for value in re.findall(r'!?\[[^\]]*\]\(([^\n]+?)\)',text):
             value=unquote(value.strip('<>')).split('#')[0]
@@ -24,17 +24,26 @@ def main(contact_sheets=False):
             checked.append(str(path.resolve()))
     for path in (BASE/'scripts').glob('*.py'):
         ast.parse(path.read_text(encoding='utf-8'),filename=str(path))
-    doc=(BASE/'10.02_002_EDA_새원고.md').read_text(encoding='utf-8')
-    assert re.findall(r'^## (2\.\d+) ',doc,re.M)==['2.1','2.2','2.3']
+    doc=(BASE/'02_EDA_원고.md').read_text(encoding='utf-8')
+    assert re.findall(r'^## (2\.\d+) ',doc,re.M)==['2.1','2.2','2.3','2.4','2.5']
     for section in re.split(r'(?=^## 2\.)',doc,flags=re.M)[1:]:
         assert '**관련 Python 코드**' in section
+        image_paths=re.findall(r'!\[[^\]]*\]\(<([^>]+)>\)',section)
+        displayed_paths=re.findall(r'이미지 파일: \[([^\]]+)\]\(<([^>]+)>\)',section)
+        assert len(displayed_paths)==len(image_paths), 'Every figure needs a visible file path'
+        for value,(label,target) in zip(image_paths,displayed_paths):
+            assert Path(value).resolve()==Path(target).resolve(), 'Displayed path must match embedded figure'
+            assert label=='EDA/'+Path(target).relative_to(BASE).as_posix(), 'Label must show folder and filename'
+        assert section.count('생성 코드:')==len(image_paths)
+    data_doc=(BASE/'01_데이터_원고.md').read_text(encoding='utf-8')
+    assert '플롯 이미지를 사용하지 않았다' in data_doc
     figures=[]
     for value in re.findall(r'!\[[^\]]*\]\(<([^>]+)>\)',doc):
         path=Path(value)
         with Image.open(path) as image:
             image.verify()
         figures.append(dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
-    assert len(figures)==5
+    assert len(figures)==7
     contacts=[]
     # Visual QA is opt-in and goes outside the manuscript's EDA image folder.
     qa=BASE.parent/'tmp/eda_visual_review'
@@ -52,7 +61,8 @@ def main(contact_sheets=False):
         target=qa/f'manuscript_contact_{offset//2+1:02d}_50.png'
         contact.save(target)
         contacts.append(str(target))
-    result=dict(status='passed',checked_links=len(checked),manuscript_sections=['2.1','2.2','2.3'],
+    result=dict(status='passed',checked_links=len(checked),checked_documents=len(documents),
+        visible_figure_paths=len(figures),manuscript_sections=['2.1','2.2','2.3','2.4','2.5'],
         figures=figures,python_syntax='passed',contact_sheets=contacts,
         image_render_check='PNG decoded; visual inspection recorded separately')
     result_path=BASE/'tables/manuscript_asset_verification.json'
@@ -60,6 +70,8 @@ def main(contact_sheets=False):
         previous=json.loads(result_path.read_text(encoding='utf-8-sig'))
         if previous.get('figures')==figures and previous.get('visual_review'):
             result['visual_review']=previous['visual_review']
+        if previous.get('figures')==figures and previous.get('section_2_4_visual_review'):
+            result['section_2_4_visual_review']=previous['section_2_4_visual_review']
     result_path.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({k:v for k,v in result.items() if k!='figures'},ensure_ascii=False))
 

@@ -1,4 +1,0 @@
-﻿state,same_daily_production_state,pairs,power_difference_mean,absolute_power_difference_mean,absolute_difference_ge50
-positive,True,602,-0.6644518272425249,14.800664451827242,29
-zero,False,401,-0.6134663341645885,42.733167082294266,154
-zero,True,582,0.07388316151202749,17.400343642611684,83

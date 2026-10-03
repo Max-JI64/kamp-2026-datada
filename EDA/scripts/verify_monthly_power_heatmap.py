@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[2]
 SOURCE=ROOT/'data/origin/okm_augumented_2021.csv'
 TAB=ROOT/'EDA/tables/daily_repetition'
 SHA='8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'
-MANUSCRIPT=ROOT/'EDA/10.02_002_EDA_새원고.md'
+MANUSCRIPT=ROOT/'EDA/02_EDA_원고.md'
 
 def save(name,d):
     d.to_csv(TAB/(name+'.csv'),index=False,encoding='utf-8-sig')

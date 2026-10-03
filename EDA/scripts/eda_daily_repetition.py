@@ -15,7 +15,7 @@ SOURCE=ROOT/'data/origin/okm_augumented_2021.csv'
 SHA='8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'
 TAB=ROOT/'EDA/tables/daily_repetition'
 FIG=ROOT/'EDA/figures/daily_repetition'
-MANUSCRIPT=ROOT/'EDA/10.02_002_EDA_새원고.md'
+MANUSCRIPT=ROOT/'EDA/02_EDA_원고.md'
 
 def json_save(name,obj):
     (TAB/(name+'.json')).write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding='utf-8')
