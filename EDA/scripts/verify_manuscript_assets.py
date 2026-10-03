@@ -10,6 +10,11 @@ from PIL import Image
 
 BASE=Path(__file__).resolve().parents[1]
 
+def linked_path(document, value):
+    """Resolve Markdown links from the document directory, including URL escapes."""
+    target=Path(unquote(value.strip('<>')).split('#')[0])
+    return (document.parent/target).resolve()
+
 def main(contact_sheets=False):
     checked=[]
     documents=sorted(BASE.rglob('*.md'))
@@ -24,7 +29,8 @@ def main(contact_sheets=False):
             checked.append(str(path.resolve()))
     for path in (BASE/'scripts').glob('*.py'):
         ast.parse(path.read_text(encoding='utf-8'),filename=str(path))
-    doc=(BASE/'02_EDA_원고.md').read_text(encoding='utf-8')
+    manuscript=BASE/'02_EDA_원고.md'
+    doc=manuscript.read_text(encoding='utf-8')
     assert re.findall(r'^## (2\.\d+) ',doc,re.M)==['2.1','2.2','2.3','2.4','2.5']
     for section in re.split(r'(?=^## 2\.)',doc,flags=re.M)[1:]:
         assert '**관련 Python 코드**' in section
@@ -32,14 +38,14 @@ def main(contact_sheets=False):
         displayed_paths=re.findall(r'이미지 파일: \[([^\]]+)\]\(<([^>]+)>\)',section)
         assert len(displayed_paths)==len(image_paths), 'Every figure needs a visible file path'
         for value,(label,target) in zip(image_paths,displayed_paths):
-            assert Path(value).resolve()==Path(target).resolve(), 'Displayed path must match embedded figure'
-            assert label=='EDA/'+Path(target).relative_to(BASE).as_posix(), 'Label must show folder and filename'
+            assert linked_path(manuscript,value)==linked_path(manuscript,target), 'Displayed path must match embedded figure'
+            assert label=='EDA/'+linked_path(manuscript,target).relative_to(BASE).as_posix(), 'Label must show folder and filename'
         assert section.count('생성 코드:')==len(image_paths)
     data_doc=(BASE/'01_데이터_원고.md').read_text(encoding='utf-8')
-    assert '플롯 이미지를 사용하지 않았다' in data_doc
+    assert not re.search(r'!\[[^\]]*\]\(',data_doc), 'Data manuscript contains no plots'
     figures=[]
     for value in re.findall(r'!\[[^\]]*\]\(<([^>]+)>\)',doc):
-        path=Path(value)
+        path=linked_path(manuscript,value)
         with Image.open(path) as image:
             image.verify()
         figures.append(dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
@@ -70,8 +76,10 @@ def main(contact_sheets=False):
         previous=json.loads(result_path.read_text(encoding='utf-8-sig'))
         if previous.get('figures')==figures and previous.get('visual_review'):
             result['visual_review']=previous['visual_review']
-        if previous.get('figures')==figures and previous.get('section_2_4_visual_review'):
-            result['section_2_4_visual_review']=previous['section_2_4_visual_review']
+        if previous.get('figures')==figures:
+            for key,value in previous.items():
+                if key.endswith('_visual_review'):
+                    result[key]=value
     result_path.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({k:v for k,v in result.items() if k!='figures'},ensure_ascii=False))
 

@@ -4,9 +4,9 @@
 
 하루 중 생산량과 전력이 언제 높아지고 낮아지는지, 그 패턴이 평일과 주말에 어떻게 다른지 비교했다. 2021년 1~8월의 정상 기록 241일을 평일 171일과 주말 70일로 나누고, 각 시간대의 평균을 계산했다. 평일은 월~금요일, 주말은 토·일요일이며 공휴일도 해당 요일에 포함했다.
 
-![평일과 주말의 시간대별 평균 생산량 및 평균 전력](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_01_daily_pattern_clean.png>)
+![평일과 주말의 시간대별 평균 생산량 및 평균 전력](<figures/restart_01_daily_pattern_clean.png>)
 
-이미지 파일: [EDA/figures/restart_01_daily_pattern_clean.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_01_daily_pattern_clean.png>). 생성 코드: `EDA/scripts/eda_daily_pattern.py`의 `main()`.
+이미지 파일: [EDA/figures/restart_01_daily_pattern_clean.png](<figures/restart_01_daily_pattern_clean.png>). 생성 코드: `EDA/scripts/eda_daily_pattern.py`의 `main()`.
 
 *위는 생산량, 아래는 전력이다. 파란 실선은 평일, 주황 점선은 주말을 나타낸다. 예를 들어 평일 08시의 값은 평일 171일의 08시 기록을 평균한 값이다. 생산량과 전력의 단위가 달라 세로축은 각각 표시했다.*
 
@@ -24,17 +24,17 @@
 
 **관련 Python 코드**
 
-- [EDA/scripts/eda_daily_pattern.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_daily_pattern.py>): 평일·주말의 시간대별 생산량·전력 평균을 원본과 대조하고, 이 절의 선그래프를 생성한다. 선 색·축·범례는 `main()`의 그림 생성 부분에서 수정할 수 있다.
-- [EDA/scripts/data_overview.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/data_overview.py>): 원본 품질을 점검하고 위 코드가 읽는 `hourly_overview.csv`를 생성한다.
-- [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>): 공통 글꼴·색상·이미지 저장 설정이다.
+- [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>): 평일·주말의 시간대별 생산량·전력 평균을 원본과 대조하고, 이 절의 선그래프를 생성한다. 선 색·축·범례는 `main()`의 그림 생성 부분에서 수정할 수 있다.
+- [EDA/scripts/data_overview.py](<scripts/data_overview.py>): 원본 품질을 점검하고 위 코드가 읽는 `hourly_overview.csv`를 생성한다.
+- [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>): 공통 글꼴·색상·이미지 저장 설정이다.
 
 ## 2.2 전력의 하루 패턴은 날짜와 월에 따라 어떻게 달라지는가?
 
 2.1의 평균 선만으로는 같은 패턴이 매일 나타나는지 알기 어렵다. 같은 241일의 시간별 평균 전력을 날짜별로 비교하고, 평일·주말을 구분한 상태에서 월별 수준도 살펴봤다.
 
-![평일과 주말의 시간대별 전력 분포](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/04_daily_pattern_simple.png>)
+![평일과 주말의 시간대별 전력 분포](<figures/daily_repetition/04_daily_pattern_simple.png>)
 
-이미지 파일: [EDA/figures/daily_repetition/04_daily_pattern_simple.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/04_daily_pattern_simple.png>). 생성 코드: `EDA/scripts/plot_daily_repetition_simple.py`의 `main()`.
+이미지 파일: [EDA/figures/daily_repetition/04_daily_pattern_simple.png](<figures/daily_repetition/04_daily_pattern_simple.png>). 생성 코드: `EDA/scripts/plot_daily_repetition_simple.py`의 `main()`.
 
 *실선은 날짜별 값의 중앙값, 점선은 산술평균이다. 음영은 각 시간대에서 날짜별 전력값의 10~90백분위 범위이며 신뢰구간이 아니다. 평일 171일, 주말 70일을 각각 요약했다.*
 
@@ -50,9 +50,9 @@
 
 날짜별 차이가 확인되어 전체 기간의 평균을 월별로 나눴다. 2.1과 동일한 평균 수준을 비교하기 위해 산술평균을 사용했다. 각 칸은 해당 월·평일 또는 주말·같은 시간대에 기록된 CSV ‘평균’ 값을 다시 평균한 것이다. 생산량이 0인 날짜도 포함했다.
 
-![평일과 주말의 월별 시간대별 평균 전력](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png>)
+![평일과 주말의 월별 시간대별 평균 전력](<figures/daily_repetition/07_monthly_power_mean_heatmap.png>)
 
-이미지 파일: [EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png>). 생성 코드: `EDA/scripts/plot_monthly_power_heatmap.py`의 `main()`이며 `--statistic mean`을 사용한다.
+이미지 파일: [EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png](<figures/daily_repetition/07_monthly_power_mean_heatmap.png>). 생성 코드: `EDA/scripts/plot_monthly_power_heatmap.py`의 `main()`이며 `--statistic mean`을 사용한다.
 
 *두 패널은 같은 0~210 색 척도를 사용한다. 각 패널의 행은 1~8월, 열은 0~23시다. 월별 평일은 20~23일, 주말은 8~10일이며 공휴일도 해당 요일에 포함했다.*
 
@@ -66,10 +66,10 @@
 
 **관련 Python 코드**
 
-- [EDA/scripts/eda_daily_repetition.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_daily_repetition.py>): 날짜별 11→12시·12→13시 변화, 평일·주말의 빈도, 생산량 기록별 차이와 시간대별 분포를 계산한다.
-- [EDA/scripts/plot_daily_repetition_simple.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/plot_daily_repetition_simple.py>): 위 결과표로 평균·중앙값·10~90백분위 범위의 선그래프를 생성한다. `main()`의 선·음영·축 설정에서 그림을 수정할 수 있다.
-- [EDA/scripts/verify_monthly_power_heatmap.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/verify_monthly_power_heatmap.py>): 원본에서 월·평일/주말·시간별 평균과 중앙값을 직접 계산해 결과표를 검증하고, 7·8월 생산량 기록 구성도 비교한다.
-- [EDA/scripts/plot_monthly_power_heatmap.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/plot_monthly_power_heatmap.py>): 월별 평균 히트맵을 생성한다. `main()`의 색상·색 척도·축 설정에서 그림을 수정할 수 있다. 기본값과 본문 그림은 `--statistic mean`이다.
+- [EDA/scripts/eda_daily_repetition.py](<scripts/eda_daily_repetition.py>): 날짜별 11→12시·12→13시 변화, 평일·주말의 빈도, 생산량 기록별 차이와 시간대별 분포를 계산한다.
+- [EDA/scripts/plot_daily_repetition_simple.py](<scripts/plot_daily_repetition_simple.py>): 위 결과표로 평균·중앙값·10~90백분위 범위의 선그래프를 생성한다. `main()`의 선·음영·축 설정에서 그림을 수정할 수 있다.
+- [EDA/scripts/verify_monthly_power_heatmap.py](<scripts/verify_monthly_power_heatmap.py>): 원본에서 월·평일/주말·시간별 평균과 중앙값을 직접 계산해 결과표를 검증하고, 7·8월 생산량 기록 구성도 비교한다.
+- [EDA/scripts/plot_monthly_power_heatmap.py](<scripts/plot_monthly_power_heatmap.py>): 월별 평균 히트맵을 생성한다. `main()`의 색상·색 척도·축 설정에서 그림을 수정할 수 있다. 기본값과 본문 그림은 `--statistic mean`이다.
 
 ## 2.3 생산량·날씨와 전력의 관계
 
@@ -79,9 +79,9 @@
 
 생산량·날씨는 수치형 자료이며, 각 값을 작은 값부터 순위로 바꿔 계산했다. 같은 값에는 평균 순위를 부여했다. 모든 정상 기록과 극단값을 포함했고, 결측은 비교하는 두 변수에 필요한 만큼만 제외했다. 상관계수는 관측 관계의 크기와 방향을 설명하며, 시간별 기록의 반복·연속성을 고려하지 않은 p값으로 유의성을 주장하지 않았다.
 
-![생산량 날씨 변수 사이 및 평균 전력과의 Spearman 상관](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_variable_relations.png>)
+![생산량 날씨 변수 사이 및 평균 전력과의 Spearman 상관](<figures/restart_02_variable_relations.png>)
 
-이미지 파일: [EDA/figures/restart_02_variable_relations.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_variable_relations.png>). 생성 코드: `EDA/scripts/eda_variable_relations.py`의 `figures()`.
+이미지 파일: [EDA/figures/restart_02_variable_relations.png](<figures/restart_02_variable_relations.png>). 생성 코드: `EDA/scripts/eda_variable_relations.py`의 `figures()`.
 
 *숫자는 두 변수의 순위상관이다. +1에 가까울수록 함께 높아지는 관계, −1에 가까울수록 한쪽이 높을 때 다른 쪽은 낮아지는 관계가 강하다. 같은 변수의 중복 비교는 생략했다.*
 
@@ -93,9 +93,9 @@
 
 **기온과 전력의 관계는 월에 따라 방향이 달랐다.** 기온의 전체 상관이 작다는 이유만으로 관계가 없다고 판단하지 않고, 월별로 같은 비교를 이어갔다. 2월에는 −0.356, 4월에는 0.383으로 서로 다른 방향의 관계가 나타났다.
 
-![월별 생산량 및 기상 변수와 평균 전력의 Spearman 상관](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_monthly_relations.png>)
+![월별 생산량 및 기상 변수와 평균 전력의 Spearman 상관](<figures/restart_02_monthly_relations.png>)
 
-이미지 파일: [EDA/figures/restart_02_monthly_relations.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/restart_02_monthly_relations.png>). 생성 코드: `EDA/scripts/eda_variable_relations.py`의 `figures()`.
+이미지 파일: [EDA/figures/restart_02_monthly_relations.png](<figures/restart_02_monthly_relations.png>). 생성 코드: `EDA/scripts/eda_variable_relations.py`의 `figures()`.
 
 *각 칸은 해당 월의 변수와 평균 전력 사이의 순위상관이다. 모든 칸에 같은 −1~+1 색 척도를 사용했다. 월마다 정상 날짜 수와 결측 수가 달라 표본 수는 결과표에 함께 기록했다.*
 
@@ -109,16 +109,16 @@ Spearman 상관이 작아도, 중간 구간에서만 전력이 높아지는 관�
 
 **관련 Python 코드**
 
-- [EDA/scripts/eda_variable_relations.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_variable_relations.py>): `diagnose()`에서 분포·결측·동률을 점검하고, `relations()`에서 전체·월별 Spearman 상관과 8월 생산 기록별 비교를 계산한다. `figures()`는 이 절의 두 상관 히트맵을 생성하며 색 척도·축·숫자 표시를 수정할 수 있다. 실행 옵션은 `--diagnose --figures`다.
-- [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>): 두 히트맵에 적용하는 공통 글꼴과 이미지 저장 설정이다.
+- [EDA/scripts/eda_variable_relations.py](<scripts/eda_variable_relations.py>): `diagnose()`에서 분포·결측·동률을 점검하고, `relations()`에서 전체·월별 Spearman 상관과 8월 생산 기록별 비교를 계산한다. `figures()`는 이 절의 두 상관 히트맵을 생성하며 색 척도·축·숫자 표시를 수정할 수 있다. 실행 옵션은 `--diagnose --figures`다.
+- [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>): 두 히트맵에 적용하는 공통 글꼴과 이미지 저장 설정이다.
 
 ## 2.4 평일의 전력 분포와 낮은 전력이 나타나는 시간
 
 2.2에서는 같은 평일 시간대라도 날짜의 생산 기록 구성에 따라 전력 수준이 달랐고, 2.3에서는 낮은 전력이 기록된 기간이 날씨와의 전체 관계에 포함돼 있었다. 이번에는 평일 안에서도 서로 다른 전력 수준이 나타나는지 분포를 확인하고, 낮은 전력이 하루 중 어느 시간에 나타나는지 살펴봤다. 2021년 1~8월의 정상 평일 171일·4,104시간을 모두 사용했다. 평일은 월~금요일이며 공휴일도 해당 요일에 포함했다. 전력은 앞 절과 같은 CSV ‘평균’ 값이다.
 
-![평일 시간별 평균 전력의 분포](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/weekday_power_levels.png>)
+![평일 시간별 평균 전력의 분포](<figures/weekday_power_levels.png>)
 
-이미지 파일: [EDA/figures/weekday_power_levels.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/weekday_power_levels.png>). 생성 코드: `EDA/scripts/eda_weekday_power_levels.py`의 `plot_distribution()`.
+이미지 파일: [EDA/figures/weekday_power_levels.png](<figures/weekday_power_levels.png>). 생성 코드: `EDA/scripts/eda_weekday_power_levels.py`의 `plot_distribution()`.
 
 *가로축은 시간별 평균 전력, 세로축은 해당 기록 수다. 막대는 전력값을 5 간격으로 묶었다. 주황색은 20~26, 파란색은 49~208의 기록이며 모든 평일 기록을 포함했다.*
 
@@ -148,17 +148,17 @@ Spearman 상관이 작아도, 중간 구간에서만 전력이 높아지는 관�
 
 **관련 Python 코드**
 
-- [EDA/scripts/eda_weekday_power_levels.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_weekday_power_levels.py>): `main()`에서 평일 전력 분포의 빈 구간과 수치를 확인하고, `summarize_patterns()`에서 171일의 정확한 시간 조합을 전수 집계한다. `plot_distribution()`이 이 절의 히스토그램을 생성하며 막대 간격·색·축·범례를 수정할 수 있다.
-- [EDA/scripts/eda_variable_relations.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_variable_relations.py>): `source_frame()`에서 동일한 원본과 1~8월 정상 시간 기록을 읽는다.
-- [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>): 공통 글꼴·색상·이미지 저장 설정이다.
+- [EDA/scripts/eda_weekday_power_levels.py](<scripts/eda_weekday_power_levels.py>): `main()`에서 평일 전력 분포의 빈 구간과 수치를 확인하고, `summarize_patterns()`에서 171일의 정확한 시간 조합을 전수 집계한다. `plot_distribution()`이 이 절의 히스토그램을 생성하며 막대 간격·색·축·범례를 수정할 수 있다.
+- [EDA/scripts/eda_variable_relations.py](<scripts/eda_variable_relations.py>): `source_frame()`에서 동일한 원본과 1~8월 정상 시간 기록을 읽는다.
+- [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>): 공통 글꼴·색상·이미지 저장 설정이다.
 
 ## 2.5 시간대별 15분 구간의 전력 패턴
 
 앞 절들은 시간 평균으로 전력 수준을 비교했다. 이번에는 같은 시간 안의 `15분·30분·45분·60분` 값이 구간 위치에 따라 반복적으로 높거나 낮은지 살펴봤다. 2021년 1~8월 정상 241일·5,784시간의 네 값 23,136개를 모두 사용하고, 평일 171일과 주말 70일을 구분했다. 낮은 전력과 생산량 0인 기록도 포함했으며 특정 날짜를 골라 대표 사례로 삼지 않았다.
 
-![평일과 주말의 시간대별 15분 구간 평균 대비 차이](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/slot_time_patterns.png>)
+![평일과 주말의 시간대별 15분 구간 평균 대비 차이](<figures/slot_time_patterns.png>)
 
-이미지 파일: [EDA/figures/slot_time_patterns.png](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/figures/slot_time_patterns.png>). 생성 코드: `EDA/scripts/eda_slot_time_patterns.py`의 `plot_centered_heatmap()`.
+이미지 파일: [EDA/figures/slot_time_patterns.png](<figures/slot_time_patterns.png>). 생성 코드: `EDA/scripts/eda_slot_time_patterns.py`의 `plot_centered_heatmap()`.
 
 *왼쪽은 평일, 오른쪽은 주말이다. 행은 00~23시, 열은 같은 시간 안의 네 전력 구간이다. 공휴일은 해당 요일에 포함했다. 두 패널은 같은 −23~+23 색 척도를 사용한다.*
 
@@ -187,5 +187,5 @@ Spearman 상관이 작아도, 중간 구간에서만 전력이 높아지는 관�
 
 **관련 Python 코드**
 
-- [EDA/scripts/eda_slot_time_patterns.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_slot_time_patterns.py>): `load_data()`에서 전체 정상 기록을 읽고, `summarize()`에서 시간대·구간별 평균과 날짜 빈도를 계산한다. `verify_independently()`는 원본 CSV를 별도로 순회해 수치를 대조한다. 히트맵의 색·축·숫자·패널 크기는 `plot_centered_heatmap()`에서 수정할 수 있다. 집계를 재사용해 히트맵만 수정하려면 `--figures-only`로 실행한다.
-- [EDA/scripts/eda_figures.py](<D:/대회/제6회 K-인공지능 제조데이터 분석 경진대회/EDA/scripts/eda_figures.py>): 공통 글꼴·색상 설정이다.
+- [EDA/scripts/eda_slot_time_patterns.py](<scripts/eda_slot_time_patterns.py>): `load_data()`에서 전체 정상 기록을 읽고, `summarize()`에서 시간대·구간별 평균과 날짜 빈도를 계산한다. `verify_independently()`는 원본 CSV를 별도로 순회해 수치를 대조한다. 히트맵의 색·축·숫자·패널 크기는 `plot_centered_heatmap()`에서 수정할 수 있다. 집계를 재사용해 히트맵만 수정하려면 `--figures-only`로 실행한다.
+- [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>): 공통 글꼴·색상 설정이다.
