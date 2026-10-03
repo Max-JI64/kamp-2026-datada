@@ -1,3 +1,0 @@
-﻿state,pairs,hours,dates,power_difference_mean,power_difference_median,difference_q25,difference_q75,positive_fraction,temperature_gap_mean,production_relative_gap_mean,production_low_mean,production_high_mean,humidity_low_mean,humidity_high_mean,omit_one_date_mean_min,omit_one_date_mean_max
-positive,176,352,122,-0.5568181818181818,-1.5,-10.0,9.25,0.4375,0.5045454545454546,0.045396013272578244,959.8522727272727,957.8693181818181,56.26704545454545,77.6875,-1.3121387283236994,0.23563218390804597
-zero,470,940,165,-2.795744680851064,0.0,-2.75,2.0,0.3446808510638298,0.4014893617021275,0.0,0.0,0.0,55.33191489361702,78.93617021276596,-6.574561403508772,-0.34210526315789475

@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "raw_shape": [
+    6168,
+    18
+  ],
+  "eda_rows": 5784,
+  "eda_days": 241,
+  "invalid_hours_excluded": 48,
+  "missing_cells": {
+    "풍속": 3,
+    "강수량": 1,
+    "공장인원": 17
+  },
+  "eda_missing_cells": {
+    "풍속": 3,
+    "강수량": 1,
+    "공장인원": 17
+  },
+  "zero_power_rows_retained": 17,
+  "max_production_retained": 9830,
+  "weekday_rows": 4104,
+  "weekday_days": 171,
+  "checked_sections": [
+    "2.1 daily means",
+    "2.2 all hourly values and monthly means",
+    "2.3 pairwise overall/monthly correlations",
+    "2.4 frequencies and all daily masks",
+    "2.5 all three pattern tables"
+  ],
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "manuscript_or_existing_results_modified": false
+}

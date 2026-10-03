@@ -1,10 +1,14 @@
 {
   "status": "passed",
-  "checked_links": 39,
+  "checked_links": 130,
+  "checked_documents": 8,
+  "visible_figure_paths": 7,
   "manuscript_sections": [
     "2.1",
     "2.2",
-    "2.3"
+    "2.3",
+    "2.4",
+    "2.5"
   ],
   "figures": [
     {
@@ -26,15 +30,29 @@
     {
       "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_monthly_relations.png",
       "sha256": "d41f7040ddc1342fba88b444a7f0f10af2bad3b9c1480a337169c1f7702fb233"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\weekday_power_levels.png",
+      "sha256": "d6e8b30853f84e6b693a598d08b7d145aff7154c721e2c60fae7a193c7a3332c"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\slot_time_patterns.png",
+      "sha256": "ac4c66d60c810a09690767637706d86f1a66b77e813f36d24d64deb08f0d5820"
     }
   ],
   "python_syntax": "passed",
-  "contact_sheets": [],
+  "contact_sheets": [
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_01_50.png",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_02_50.png",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_03_50.png",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_visual_review\\manuscript_contact_04_50.png"
+  ],
   "image_render_check": "PNG decoded; visual inspection recorded separately",
-  "visual_review": {
-    "passed": true,
-    "reviewed_images": 5,
-    "method": "Three contact sheets, each image at 50 percent; at most two images per sheet",
-    "findings": "Korean labels and legends readable, no overlap or clipping; no whole-figure title, footer or interpretive arrows"
+  "section_2_5_visual_review": {
+    "date": "2026-10-03",
+    "figure": "EDA/figures/slot_time_patterns.png",
+    "contact_sheet": "tmp/eda_visual_review/manuscript_contact_04_50.png",
+    "scale": "50%",
+    "status": "passed"
   }
 }
