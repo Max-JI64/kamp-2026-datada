@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "daily_tie_aware_diagnostics_checked": 241,
+  "observations_unchanged": true,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "7a89107d4ee95b26657112e45fda76903ef6e605baba6d387035ea24f9dd3528",
+  "outputs_sha256": {
+    "antecedent_associations.csv": "347d82cc8e901f28240e16ec4b95e06e6b1d6ad7c169278101ff538e16e0ff66",
+    "daily_maximum_context.csv": "3e2da3607bce55e075f93d3851fe770b0f2b372bd6877e1d6c69ed879c6a5785",
+    "daily_priority_diagnostics.csv": "6de3279155718a22444b29d84ea633a93f815f2832a25300ea476da6452c0bc7",
+    "daily_priority_summary.csv": "7fc0ef72a42060bf73ea52c6841256cea13ee1b26f95a1626444a651f3840c6f",
+    "descriptive.csv": "f67ae55fe80cfc8375a9c139f1cf2742f1a9ad90602d07fb6be03f9a9523a993",
+    "matched_contrasts.csv": "12110f98bf3618b90c61a4d6738a8b2b3e0f0699661e050ebfcff777b5e8d4ed",
+    "matched_sensitivity.csv": "dcbb6e0d13ad571c7bbd10db89965c505b4b1accef6326c29255fa8a1c9ed22e",
+    "monthly_associations.csv": "b22a817ce91e3879c60ed9d17161631eaaf679c9d3c4c1d2ff2e9b9399a1c33c",
+    "observations_pairs.csv": "f822d756d6d2d5a5d8cbe5b47726adfe18584b263e804201cdc3f52901ead2fa",
+    "observations_triples.csv": "c9a4092b336d082aa13d343f7050db1fb6c6326081523ce7becaa5935d6e1c69",
+    "terminal_slot_robustness.csv": "17307579c6e0dd0b97275985bf884ae2854ebd9dfbfcdb7be808dfbeeba40907"
+  }
+}

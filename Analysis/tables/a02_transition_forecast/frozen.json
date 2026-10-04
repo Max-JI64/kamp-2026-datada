@@ -1,0 +1,18 @@
+{
+  "family": "hgb",
+  "selected_features": "shape",
+  "power_gate": true,
+  "reason": "Validation AP within0.01 of best favors fewer inputs; same classifier family for ablations. Power followup requires AP above calendar and Brier no worse than5%.",
+  "thresholds": {
+    "calendar": 0.32418130623928276,
+    "level": 0.23541496682336432,
+    "shape": 0.2580651743247188
+  },
+  "validated_before_test": true,
+  "test_consulted": false,
+  "classifier_parameters": "Fixed logistic C1 or HGB150iterations/7leaves/min20/l2=1/lr.05; no tuning grid.",
+  "train_n": 1359,
+  "train_events": 109,
+  "validation_n": 530,
+  "validation_events": 54
+}

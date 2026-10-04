@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_hours_checked": 5784,
+  "eda_august_correlations_reproduced": true,
+  "joint_calendar_residual_vs_explicit_dummy_verified": true,
+  "zero_records_preserved": true,
+  "script_sha256": "8500b6ecb0715cc6ba2df7b536b56d0485fb8108f4a13ffc50067789ade4f69d",
+  "outputs_sha256": {
+    "associations.csv": "945d970359232d29b265fc42faebc43db193da4e6e99373610420a3a2cba29ab",
+    "leave_month_out.csv": "702d540e3c9646afa2ce3318993efe86da39d69d0fa890212bb696f02bd08133",
+    "monthly.csv": "c52fde8530fd49ac4f34614242830da4953cbfb340b80019daceacf7869fe689",
+    "observations.csv": "18b8d647eb0eef2e68fa184d02b2a3ee3158a65c2fcd1fb3b981461b62fa71ac",
+    "sample_counts.csv": "b58fb93866149142f350248e9b91a3a4438bae6696d1c0bae37d2ee61966c775",
+    "weather_correlations.csv": "7f1d5b97b1e7d34431f84f14b8f9e2554553723db24d342247124079403aa22b"
+  }
+}
