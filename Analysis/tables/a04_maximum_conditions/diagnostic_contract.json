@@ -1,0 +1,7 @@
+{
+  "reason": "Main A04 onset maximum135.73vs135.32(nearzero); terminal slot partialrank+.434 versus mean+.431, target-excess relation weaker. Need observed priority differences and stability, not new tuning.",
+  "daily": "All241complete24h dates; compare observed maximum-per-hour top set vs observed hourly-mean top set, all ties retained. Report unavoidable maximum gap if sets disjoint, continuous size; this is not a forecast score.",
+  "terminal": "Compare all four past positions together using same controls; linear vs cubic rank level/production, add date effects, inverse-profile, same-date, monthly/leave-month-out.",
+  "boundaries": "No peak threshold, highest-mean oracle restoration, predictive training or risk classifier. Actual targets used for descriptive context only.",
+  "stop": "If terminal association remains but excess/rank-disagreement is weak, use direct maximum candidate with cautious scope; do not seek a different cutoff or winning month."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "a02_observations_unchanged": true,
+  "exact_level_residual_identity_verified": true,
+  "exact_sign_comparison_independent": false,
+  "main_sign_stop_reason": "No exact-level common cells with at least2dates in each opposite-sign group; no threshold relaxation.",
+  "main_sign_n": 0,
+  "script_sha256": "341b57f002be51e11d479184e779d2b9d8d998f07d270bcf62f0731772d9973e",
+  "outputs_sha256": {
+    "numeric_associations.csv": "4e0900cd8de71f3092d6a0aa86716b1caa356706e1ff958f147f57afd5d4c3c4",
+    "exact_level_sign_comparisons.csv": "644d7441b899959cb97d54413ea8ce8291bf13720e455361148560858f7c29a9",
+    "exact_level_support.csv": "16d27a7431eaff153dc5022168382703a6393d2104db7f270cbb0f0304ada2cc",
+    "adjustment_form_sensitivity.csv": "46b48568414b3ce5d54a304b2dddcb40ae3ff8b83346a2ab2e5fcf7bfd00d515"
+  }
+}

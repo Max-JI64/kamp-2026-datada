@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "same5778records": true,
+  "controls": "Target calendar and known production plus observed prior mean cubic ranks; no target mean/production controls.",
+  "interpretation": "Partial rank association, not accuracy, percentage improvement or causal effect.",
+  "path": "Analysis\\figures\\a04_terminal_slots.png",
+  "image_sha256": "084d059d78724f5594f41d56cdc2131167d23569ec501dfa3acdfbe5b358ff6a",
+  "visually_reviewed": true,
+  "review_scale": 0.5
+}

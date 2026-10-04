@@ -1,0 +1,6 @@
+{
+  "reason": "Exact prior-mean matching has1039of5778hours, Jan-Apr r-.009 vs whole-control r+.394. Check support and observed low-power composition rather than alter matching bins.",
+  "comparison": "Exact same calendar, prior unrounded mean and known0/positive state; require3dates. Describe retained/omitted records and cells with varying terminal values. Compare same selected subset under original controls.",
+  "low_power": "Use existing EDA original rounded average20..26 at observed t-1, including zeros/extremes in other group. No new peak threshold or selection on future outcomes.",
+  "stop": "Report support restriction and remaining heterogeneity; no more cutoff/transformation searches."
+}
