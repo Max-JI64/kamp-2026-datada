@@ -10,6 +10,7 @@
 | EDA 2.1 생산량·전력 하루 패턴 | [EDA/scripts/data_overview.py](<scripts/data_overview.py>), [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) | [EDA/scripts/eda_daily_pattern.py](<scripts/eda_daily_pattern.py>) |
 | EDA 2.2 날짜별 전력 패턴 | [EDA/scripts/eda_daily_repetition.py](<scripts/eda_daily_repetition.py>) | [EDA/scripts/plot_daily_repetition_simple.py](<scripts/plot_daily_repetition_simple.py>) |
 | EDA 2.2 월별 평균 전력 | [EDA/scripts/verify_monthly_power_heatmap.py](<scripts/verify_monthly_power_heatmap.py>) | [EDA/scripts/plot_monthly_power_heatmap.py](<scripts/plot_monthly_power_heatmap.py>) |
+| EDA 2.2 실제 시간순 전력·0 구간·지속시간 | [Analysis/scripts/a06_power_state_transitions.py](<../Analysis/scripts/a06_power_state_transitions.py>) | [Modeling/scripts/plot_observed_power_timeline.py](<../Modeling/scripts/plot_observed_power_timeline.py>)의 검증된 관측 그림 재사용 |
 | EDA 2.3 생산량·날씨 관계 | [EDA/scripts/eda_variable_relations.py](<scripts/eda_variable_relations.py>) | 같은 파일의 `figures()` |
 | EDA 2.4 평일 전력 분포·네 시간 조합 | [EDA/scripts/eda_weekday_power_levels.py](<scripts/eda_weekday_power_levels.py>) | 같은 파일의 `plot_distribution()` |
 | EDA 2.5 시간대별 15분 구간 패턴 | [EDA/scripts/eda_slot_time_patterns.py](<scripts/eda_slot_time_patterns.py>) | 같은 파일의 `plot_centered_heatmap()` |
@@ -17,7 +18,7 @@
 - [데이터 원고](01_데이터_원고.md)
 - [데이터 0.5페이지용 압축본](01_데이터_0.5페이지용_압축본.md): 원본 확인·전처리·EDA 입력 범위를 약 0.5페이지 분량으로 정리했다. 상세본과 처리 기준은 같으며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
 - [EDA 원고](02_EDA_원고.md)
-- [EDA 3페이지용 압축본](02_EDA_3페이지용_압축본.md): 기존 원고를 유지한 별도 문서다. 다섯 절·그림 일곱 장을 세 묶음·그림 다섯 장으로 재구성했다. 통합 하루 패턴 그림은 [EDA/scripts/plot_report_daily_patterns.py](<scripts/plot_report_daily_patterns.py>)로 재현한다. 약 3페이지를 목표로 하며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
+- [EDA 3페이지용 압축본](02_EDA_3페이지용_압축본.md): 상세 원고와 함께 유지하는 별도 문서다. 상세 다섯 절을 세 묶음·그림 다섯 장으로 압축했다. 시간순 전력·0 구간의 상세 해석은 지속시간과 기록 구분으로 요약해 기존 낮은 전력·생산량·날씨 설명에 연결했다. 통합 하루 패턴 그림은 [EDA/scripts/plot_report_daily_patterns.py](<scripts/plot_report_daily_patterns.py>)로 재현한다. 약 3페이지를 목표로 하며 실제 제출 양식의 페이지 수는 아직 확인하지 않았다.
 - 코드 `scripts`, 그림 `figures`, 수치·검증 기록 `tables`.
 - 공통 글꼴·색상·PNG 저장 설정은 [EDA/scripts/eda_figures.py](<scripts/eda_figures.py>)의 `setup()`·`finish()`.
 - 입력은 `../data/origin/okm_augumented_2021.csv`. 원본은 변경하지 않는다.
@@ -37,6 +38,8 @@
 | 2.1 하루 패턴 | [EDA/figures/restart_01_daily_pattern_clean.png](<figures/restart_01_daily_pattern_clean.png>) | `EDA/scripts/eda_daily_pattern.py`: `main()` |
 | 2.2 날짜별 분포 | [EDA/figures/daily_repetition/04_daily_pattern_simple.png](<figures/daily_repetition/04_daily_pattern_simple.png>) | `EDA/scripts/plot_daily_repetition_simple.py`: `main()` |
 | 2.2 월별 평균 | [EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png](<figures/daily_repetition/07_monthly_power_mean_heatmap.png>) | `EDA/scripts/plot_monthly_power_heatmap.py`: `main()`, `--statistic mean` |
+| 2.2 실제 시간순 전력 | [Modeling/figures/observed_power_monthly_2021_01_08.png](<../Modeling/figures/observed_power_monthly_2021_01_08.png>) | `Modeling/scripts/plot_observed_power_timeline.py`: `main()`의 `level` 패널 |
+| 2.2 전력0 구간 확대 | [Modeling/figures/observed_power_zero_interval.png](<../Modeling/figures/observed_power_zero_interval.png>) | 같은 코드의 `zoom` 패널 |
 | 2.3 전체 상관 | [EDA/figures/restart_02_variable_relations.png](<figures/restart_02_variable_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
 | 2.3 월별 상관 | [EDA/figures/restart_02_monthly_relations.png](<figures/restart_02_monthly_relations.png>) | `EDA/scripts/eda_variable_relations.py`: `figures()` |
 | 2.4 평일 분포 | [EDA/figures/weekday_power_levels.png](<figures/weekday_power_levels.png>) | `EDA/scripts/eda_weekday_power_levels.py`: `plot_distribution()` |
@@ -73,6 +76,8 @@ EDA는 정상 시간 5,784행·241일 전체를 사용하며, 평일 171일·주
 데이터 원고는 원본 확인 → 품질 점검과 처리 → EDA 입력 자료 구성 순서로 설명한다. 이전 모델의 입력·결측 처리와 5,520행 표본 설명은 현재 원고에 포함하지 않는다. `data_overview.py`의 원본 품질 점검 수치와 각 EDA 코드의 기간·시간 필터 및 변수별 결측 처리가 근거다. 별도의 전처리 완료 CSV를 공통 입력으로 저장하는 방식은 아니며 원본 CSV는 보존한다.
 
 ## 이번 이동·반영 결과
+
+2026-10-04 사용자 요청으로 상세 원고2.2에 실제 시간순 전력과0구간 확대를 삽입하고 그림의 평균·최대 정의, 결측 연결, 연속 구간, 단일0사례의 한계를 설명했다. 상세 본문 그림은9장, 압축본은5장이다. 기존Modeling 관측 그림을 경로와 생성 코드에 연결했으며 별도 짧은 보고서는 만들지 않았다. `a06_power_state_transitions.py`가 원본에서 계산한1,936시간·71구간·중앙24시간·최장223시간과 단일17시간0사례를 반영했다. 전체기간에는 양수20미만7시간이 있으므로 평일20 ~ 26 구분을 모든 낮은전력의 완전한 분류로 확대하지 않았다. 전력 구간과 생산량 전환의 차이는 Analysis 상세3.1·압축3.1로 연결한다. 원자료5,784시간·정확한시간차5,781개와 기존그림의 입력이 일치함을 독립 대조했으며 모델 학습은 수행하지 않았다.
 
 2026-10-03에는 2.5를 추가했다. 평일·주말의 24시간×네 구간 히트맵, 숫자의 계산 예시, 평균 형태가 실제로 나타난 날짜 비율을 반영했다. 본문 그림은 총 7개다. 이미지 파일 위치와 생성 Python 코드·함수, 수치 근거 링크를 함께 표시했다. 앞선 2.5 후보 그림은 본문에 추가하지 않았다.
 

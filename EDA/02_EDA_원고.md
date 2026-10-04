@@ -60,7 +60,45 @@
 
 8월 평일 08시 평균이 낮아진 데에는 날짜 구성도 포함돼 있었다. 8월 평일 22일 중 5일은 하루 동안 생산량이 모두 0이었고, 이 날짜들의 08시 평균 전력은 21.00이었다. 양수 생산량이 있는 나머지 17일의 08시 평균은 178.47이었다. 7월 평일 20일에는 모두 양수 생산량 기록이 있었다. 낮은 날짜를 제외한 결과는 구성 차이를 확인하는 보조 비교이며, 히트맵의 전체 평균을 대체하지 않는다.
 
-이 비교는 하루 패턴이 많은 평일에서 반복되지만 날짜·월에 따라 수준이 달라진다는 것을 보여준다. 달력만으로 실제 운전 상태나 날씨의 영향을 확정할 수는 없다. 다음 절에서는 생산량과 날씨의 관계를 함께 살펴보고, 전체 관계와 월별 관계가 어떻게 다른지 비교한다.
+### 실제 시간순 전력과 낮은 구간의 지속
+
+월별 평균에는 전력이 낮게 이어진 기간과 다시 높아진 시점이 섞여 있다. 이를 구분하기 위해 같은 5,784시간을 실제 날짜·시각 순서로 연결하고, 시간 평균과 시간 최대값을 함께 표시했다. 이 그림의 평균은 네 15분 값의 **반올림 전 산술평균**, 최대값은 네 값의 최댓값이다. 앞의 CSV 정수 ‘평균’을 집계한 그림과 계산 정밀도를 구분했다. 정상 시각이 없는 2월 1일·7월 15일은 선을 끊었고, 빈 구간을 보간하거나 평활하지 않았다.
+
+![1월부터 8월까지 실제 시간순 평균·최대 전력](<../Modeling/figures/observed_power_monthly_2021_01_08.png>)
+
+이미지 파일: [Modeling/figures/observed_power_monthly_2021_01_08.png](<../Modeling/figures/observed_power_monthly_2021_01_08.png>). 생성 코드: [Modeling/scripts/plot_observed_power_timeline.py](<../Modeling/scripts/plot_observed_power_timeline.py>)의 `main()` 내 월별 `level` 패널. 기존에 검증한 관측 그림을 재사용했다.
+
+*여덟 패널은 1 ~ 8월이며 가로축은 실제 날짜, 세로축은 전력값이다. 파란 선은 시간 평균, 주황 선은 시간 최대값으로 모든 월에 같은 세로축 범위를 적용했다. 두 선의 간격은 같은 시간 안의 평균·최대 차이이며 직전 시간 대비 변화량이 아니다.*
+
+**전력은 낮은 수준이 이어지는 기간과 그보다 높은 값이 반복되는 기간을 오갔다.** 1월에는 한 날짜 안에서도 큰 상승·하락이 나타났고, 8월 초에는 낮은 값이 길게 이어졌다. 그림의 선이 빽빽한 정도만으로 월별 급변 빈도를 판단하지 않고, 기존 2.4의 CSV ‘평균’ 20 ~ 26 구간을 전체 기간에 적용해 지속시간을 확인했다.
+
+| 기록 구분 | 평일 | 주말 | 전체 |
+|---|---:|---:|---:|
+| 네 전력값 모두 0 | 0시간 | 17시간 | 17시간 |
+| 양수이며 CSV ‘평균’이 20 미만 | 0시간 | 7시간 | 7시간 |
+| CSV ‘평균’이 20 ~ 26 | 747시간 | 1,189시간 | 1,936시간 |
+| CSV ‘평균’이 26 초과 | 3,357시간 | 467시간 | 3,824시간 |
+| 합계 | 4,104시간 | 1,680시간 | 5,784시간 |
+
+*20 ~ 26은 평일 분포에서 발견한 탐색적 구간을 그대로 재사용한 것이다. 주말까지 포함하면 양수이면서 20 미만인 7시간이 있어 별도로 표시했다. 26 초과를 고전력·피크 또는 특정 설비의 운전 상태로 정의한 것은 아니다.*
+
+20 ~ 26이 정확히 한 시간 간격으로 이어진 구간은 71개였고, 각 구간의 지속시간은 중앙값 24시간, 최소 1시간, 최대 223시간이었다. 가장 긴 구간은 **7월 31일 00시부터 8월 9일 06시까지**였으며 이 기간의 생산량은 모두 0이었다. 모든 구간의 앞뒤 정상 기록을 확인했으므로 자료 시작·종료나 결측 때문에 잘린 지속시간은 없었다. 다만 19와 20 사이를 오가도 구간이 끊기는 정의이므로, 71개를 실제 가동·정지 횟수로 해석하지 않았다. 날짜별 반복 배열도 있어 각 구간을 독립적인 실험으로 간주하지 않는다.
+
+### 전력 0 구간과 다시 높아지는 과정
+
+![17시간 연속 전력 0과 전후 시간순 변화](<../Modeling/figures/observed_power_zero_interval.png>)
+
+이미지 파일: [Modeling/figures/observed_power_zero_interval.png](<../Modeling/figures/observed_power_zero_interval.png>). 생성 코드: [Modeling/scripts/plot_observed_power_timeline.py](<../Modeling/scripts/plot_observed_power_timeline.py>)의 `main()` 내 `zoom` 패널.
+
+*위 패널은 평균·최대 전력, 아래 패널은 각각의 직전 시간 대비 차이다. 파란 선은 평균, 주황 선은 최대이며 회색 음영은 네 값이 모두 0인 17시간이다. 0 구간 앞뒤 24시간을 함께 표시했다.*
+
+**전력 0은 8월 28일 18시부터 29일 10시까지 이어진 하나의 연속 사례였다.** 17개의 서로 독립적인 사건이 아니다. 진입 직전 시간 평균은 22.00, 최대값은 47이었고, 0 구간 직후인 29일 11시에는 평균 16.50·최대값 41이 기록됐다. 바로 100이나 200으로 상승한 것이 아니라 낮은 값이 이어진 뒤 다시 크게 높아졌다. 낮은 시간 평균에 최대값 47이 포함될 수 있다는 점도 평균과 최대를 함께 확인할 이유다.
+
+따라서 생산량 0, 평균 20 ~ 26, 네 전력값 모두 0을 같은 상태로 묶지 않았다. 실제 정지·전원 차단·계측 이상 중 어떤 원인인지는 현 자료에서 미식별이며, 이 한 사례로 0 발생의 일반 규칙이나 예측 가능성을 주장하지 않는다. 기록은 보존했다. 반면 반복되는 전력 구간의 진입·이탈은 시간 연결을 통해 비교할 수 있으므로, **전력 자체의 전환이 생산량 전환과 얼마나 겹치는지**를 Analysis 3.1에서 확인한다.
+
+이 비교는 하루 패턴이 많은 평일에서 반복되지만 날짜·월에 따라 수준과 지속시간이 달라진다는 것을 보여준다. 달력만으로 실제 운전 상태나 날씨의 영향을 확정할 수는 없다. 다음 절에서는 생산량과 날씨의 관계를 함께 살펴보고, 전체 관계와 월별 관계가 어떻게 다른지 비교한다.
+
+시간순 분석 근거: [구간별 시간 수](<../Analysis/tables/a06_power_state_transitions/state_counts.csv>) · [연속 구간과 지속시간](<../Analysis/tables/a06_power_state_transitions/episodes.csv>) · [0 구간 전후 값](<../Modeling/tables/observed_timeline/zero_interval.csv>) · [원자료 전수 대조·정의](<../Analysis/tables/a06_power_state_transitions/summary.json>).
 
 근거: [날짜별 전력·변화](tables/daily_repetition/daily_values.csv) · [평일·주말 집계](tables/daily_repetition/group_summary.csv) · [생산 기록별 비교](tables/daily_repetition/production_context.csv) · [월·요일·시간별 평균과 표본 수](tables/daily_repetition/independent_monthly_cells.csv) · [7·8월 생산 기록 구성](tables/daily_repetition/july_august_production_composition.csv)
 
@@ -70,6 +108,8 @@
 - [EDA/scripts/plot_daily_repetition_simple.py](<scripts/plot_daily_repetition_simple.py>): 위 결과표로 평균·중앙값·10 ~ 90백분위 범위의 선그래프를 생성한다. `main()`의 선·음영·축 설정에서 그림을 수정할 수 있다.
 - [EDA/scripts/verify_monthly_power_heatmap.py](<scripts/verify_monthly_power_heatmap.py>): 원본에서 월·평일/주말·시간별 평균과 중앙값을 직접 계산해 결과표를 검증하고, 7·8월 생산량 기록 구성도 비교한다.
 - [EDA/scripts/plot_monthly_power_heatmap.py](<scripts/plot_monthly_power_heatmap.py>): 월별 평균 히트맵을 생성한다. `main()`의 색상·색 척도·축 설정에서 그림을 수정할 수 있다. 기본값과 본문 그림은 `--statistic mean`이다.
+- [Analysis/scripts/a06_power_state_transitions.py](<../Analysis/scripts/a06_power_state_transitions.py>): `load()`에서 원본의 정상 1 ~ 8월 기록과 정확한 시간 연결을 구성하고, `episodes()`에서 연속 구간을 집계한다. `independent_verify()`가 원본을 별도로 순회해 5,784시간과 5,781개 시간차를 대조한다. 이 절과 Analysis 3.1이 같은 집계를 사용한다.
+- [Modeling/scripts/plot_observed_power_timeline.py](<../Modeling/scripts/plot_observed_power_timeline.py>): 검증된 전체 관측 기록으로 월별 선그래프와 0 구간 확대 그림을 생성한다. 학습·검증 표본 제한이나 모델 학습 없이 전체 5,784시간을 사용하며, `main()`에서 선·축·패널을 수정한다.
 
 ## 2.3 생산량·날씨와 전력의 관계
 
