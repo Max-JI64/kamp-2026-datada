@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "checked_links": 179,
+  "checked_links": 201,
   "checked_documents": 11,
-  "visible_figure_paths": 7,
+  "visible_figure_paths": 9,
   "manuscript_sections": [
     "2.1",
     "2.2",
@@ -24,6 +24,14 @@
       "sha256": "aed2e0175c9a6abfd28caf108b0dd6882b1da8b0d9c4483bb9fbf34e1b7b1725"
     },
     {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\Modeling\\figures\\observed_power_monthly_2021_01_08.png",
+      "sha256": "cf5017ec15263f54d639dd0b1c910a50d090a7008981f7692ac186c7def284a3"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\Modeling\\figures\\observed_power_zero_interval.png",
+      "sha256": "6bdd8ab1c740b5a83b9d81948ca5882e81797e3c7118005e1f7ac8993e4a5a24"
+    },
+    {
       "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_variable_relations.png",
       "sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
     },
@@ -42,12 +50,5 @@
   ],
   "python_syntax": "passed",
   "contact_sheets": [],
-  "image_render_check": "PNG decoded; visual inspection recorded separately",
-  "section_2_5_visual_review": {
-    "date": "2026-10-03",
-    "figure": "EDA/figures/slot_time_patterns.png",
-    "contact_sheet": "tmp/eda_visual_review/manuscript_contact_04_50.png",
-    "scale": "50%",
-    "status": "passed"
-  }
+  "image_render_check": "PNG decoded; visual inspection recorded separately"
 }

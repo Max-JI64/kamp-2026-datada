@@ -39,7 +39,7 @@ def main(contact_sheets=False):
         assert len(displayed_paths)==len(image_paths), 'Every figure needs a visible file path'
         for value,(label,target) in zip(image_paths,displayed_paths):
             assert linked_path(manuscript,value)==linked_path(manuscript,target), 'Displayed path must match embedded figure'
-            assert label=='EDA/'+linked_path(manuscript,target).relative_to(BASE).as_posix(), 'Label must show folder and filename'
+            assert label==linked_path(manuscript,target).relative_to(BASE.parent).as_posix(), 'Label must show project folder and filename'
         assert section.count('생성 코드:')==len(image_paths)
     data_doc=(BASE/'01_데이터_원고.md').read_text(encoding='utf-8')
     assert not re.search(r'!\[[^\]]*\]\(',data_doc), 'Data manuscript contains no plots'
@@ -49,7 +49,7 @@ def main(contact_sheets=False):
         with Image.open(path) as image:
             image.verify()
         figures.append(dict(path=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
-    assert len(figures)==7
+    assert len(figures)==9
     contacts=[]
     # Visual QA is opt-in and goes outside the manuscript's EDA image folder.
     qa=BASE.parent/'tmp/eda_visual_review'
