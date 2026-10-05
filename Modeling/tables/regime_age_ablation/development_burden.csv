@@ -1,0 +1,16 @@
+﻿variant,period,hours,routed,routed_up,routed_non_up_known,routed_unknown
+B0,May-Jun,1462,0,0,0,0
+B0,5,744,0,0,0,0
+B0,6,718,0,0,0,0
+B1_all,May-Jun,1462,1462,12,1450,0
+B1_all,5,744,744,8,736,0
+B1_all,6,718,718,4,714,0
+G1_noage,May-Jun,1462,12,12,0,0
+G1_noage,5,744,8,8,0,0
+G1_noage,6,718,4,4,0,0
+G1_old,May-Jun,1462,12,12,0,0
+G1_old,5,744,8,8,0,0
+G1_old,6,718,4,4,0,0
+hour08,May-Jun,1462,61,12,49,0
+hour08,5,744,31,8,23,0
+hour08,6,718,30,4,26,0

@@ -1,5 +1,13 @@
 # Analysis 원고와 재현 자료
 
+**후속 활용 비교:** 기존 위험 점수를 이용한 하루 2회 순차 검토에서 동일 182시간의 큰 과소예측 선별 20→27건을 확인했다. [Modeling 상세 원고 4.11](../Modeling/04_Modeling_원고.md#411-하루-2회-검토를-위한-과소예측-우선순위)에 개발 성과와 월별 한계를 함께 기록했다. EDA·Analysis 본문과 압축본은 변경하지 않았다.
+
+**동일·유사 입력과 과소예측 위험 진단 완료:** B 입력이 같은데 다음 값이 다른 기록은 8개 집단·21행, 6시간 이력 포함 시 4개 집단·13행이었다. 일부 모호성의 근거이며 전체 예측 한계를 증명하지 않는다. 과거 이웃 요약과 기존 예측의 큰 오차를 이용한 보조 경고는 전체 개선·4월 적중 감소가 함께 나타나 미채택이다. [전체 실행 결과·코드](../Modeling/README.md#과소예측-위험-경고-비교-결과)에 보존하고 원고·압축본에는 추가하지 않았다.
+
+**학습 구성 후속 진단 완료:** 최근 이력의 새 배열 악화를 같은 월·시각·직전 전력 수준에서 비교했다. 39개 공통 조건에서 새 배열 손실 +0.230·기존 배열 −0.370이 남았지만 새 배열 22.1%만 포함해 원인으로 확정하지 않았다. 이에 따른 반복 가중치·최근 기간 비교는 모두 미채택이다. [Modeling/scripts/training_design_diagnose.py](../Modeling/scripts/training_design_diagnose.py)의 `main()`으로 [진단표](../Modeling/tables/training_design/diagnosis/standardized.csv)를 재현하며, [통합 결과](../Modeling/README.md#학습-구성-재검토-결과-반복-가중치와-최근-기간)에 해석 변경·종료 이유와 전체 코드를 연결했다. 이번 진단은 원고·압축본에 반영하지 않았다.
+
+**P02·P03 실행 완료:** 최근 2·6·24시간의 네 값·관측된 상태 지속시간을 비교했다. 학습 구간 안의 시간순 선택은 4·5·6월 모두 6시간 이력을 골랐지만, 외부 개발 전체 MAE 개선과 최대 시간 오차 악화가 함께 나타났다. [같은 시간대·직전 평균의 이력 표](tables/p02_profile_history/matched_state_history.csv)와 [조건별 오류](tables/p02_profile_history/conditional_errors.csv)를 보존한다. 계산·학습은 [Modeling/scripts/profile_history.py](../Modeling/scripts/profile_history.py), 독립 대조·조건 표는 [Modeling/scripts/profile_history_verify.py](../Modeling/scripts/profile_history_verify.py)로 재현한다. 새 후보 미채택으로 원고·압축본은 변경하지 않았다. [통합 실행 결과](../Modeling/README.md#p01--p04-실행-결과-이번-후보는-미채택)를 따른다.
+
 [상세 원고](03_Analysis_원고.md)는 3.1 ~ 3.4의 상세 본문·그림 5장·코드 설명을 담는다. 3.1은 생산량 전환과 전력 자체의 구간 전환을 연결한다. [3페이지용 압축본](03_Analysis_3페이지용_압축본.md)은 상세 3.1·3.2를 압축본 3.1로 합치고 날씨를 3.2, 최대전력을 3.3으로 배치했다. 압축본의 본문 그림은 2장이다. 백업 자료는 사용하지 않는다.
 
 ## 압축본의 근거와 그림

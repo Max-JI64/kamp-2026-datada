@@ -1,0 +1,17 @@
+﻿split,baseline,used,hours
+dev_apr,lag1,lag1,720
+dev_apr,lag24,lag24,720
+dev_apr,lag168,lag168,720
+dev_may,lag1,lag1,744
+dev_may,lag24,lag24,744
+dev_may,lag168,lag168,744
+dev_jun,lag1,lag1,720
+dev_jun,lag24,lag24,720
+dev_jun,lag168,lag168,720
+later_jul_aug,lag1,lag1,1438
+later_jul_aug,lag1,abstain,2
+later_jul_aug,lag24,lag24,1392
+later_jul_aug,lag24,lag1,46
+later_jul_aug,lag24,abstain,2
+later_jul_aug,lag168,lag168,1392
+later_jul_aug,lag168,lag24,48

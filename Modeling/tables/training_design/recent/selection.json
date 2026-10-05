@@ -1,0 +1,183 @@
+{
+  "selected": null,
+  "candidate_gates": [
+    {
+      "method": "all_history",
+      "overall_MAE": 6.190524965035317,
+      "peak_MAE": 7.58873099352297,
+      "peak_under": 6.987028143141024,
+      "peak_over": 0.6017028503819463,
+      "balanced_score": 0.4488151149793232,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": true,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": true
+      }
+    },
+    {
+      "method": "fixed_HGB_A",
+      "overall_MAE": 6.737973239313947,
+      "peak_MAE": 11.750641760429726,
+      "peak_under": 11.260036830592895,
+      "peak_over": 0.4906049298368324,
+      "balanced_score": 0.4885052965961246,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_HGB_B",
+      "overall_MAE": 6.190524965035317,
+      "peak_MAE": 7.58873099352297,
+      "peak_under": 6.987028143141024,
+      "peak_over": 0.6017028503819463,
+      "balanced_score": 0.4488151149793232,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": true,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": true
+      }
+    },
+    {
+      "method": "lag1",
+      "overall_MAE": 13.793040293040294,
+      "peak_MAE": 36.588958660387235,
+      "peak_under": 36.588958660387235,
+      "peak_over": 0.0,
+      "balanced_score": 1.0,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "recent_30d",
+      "overall_MAE": 7.681418505336336,
+      "peak_MAE": 11.42911902416455,
+      "peak_under": 10.300219982050981,
+      "peak_over": 1.1288990421135707,
+      "balanced_score": 0.556905391569996,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": false,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": false,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "recent_60d",
+      "overall_MAE": 6.734622013873717,
+      "peak_MAE": 10.23704916603783,
+      "peak_under": 9.610951199674176,
+      "peak_over": 0.6260979663636546,
+      "balanced_score": 0.4882623316392311,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "recent_90d",
+      "overall_MAE": 6.385350799736197,
+      "peak_MAE": 7.972202338810863,
+      "peak_under": 7.263898973623164,
+      "peak_over": 0.7083033651877004,
+      "balanced_score": 0.4629400526697601,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "selected_policy",
+      "overall_MAE": 7.300105236539818,
+      "peak_MAE": 10.376122589161076,
+      "peak_under": 9.327418374312062,
+      "peak_over": 1.0487042148490155,
+      "balanced_score": 0.5292600530010279,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": false,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    }
+  ],
+  "no_eligible_candidate": true,
+  "fixed_candidate_scores_are_diagnostic": true
+}

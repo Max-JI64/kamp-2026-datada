@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-06T00:54+09:00",
+  "entrypoint_sha256": "cebd7565866b22c90c489bb2f9f0ea0242ff26ec389eab1e1c3495cd3c5759e4",
+  "inputs_sha256": {
+    "followup_classification.csv": "55466771a3f6fa06a6d5f40ea94845bc830f72ddbd54d97145c115e05e79ab19",
+    "followup_predictions.csv": "051d0ac73e2a1b621480f63b131b827eb3c1d106714ea68253b6dbb13cc094b7",
+    "run.json": "d5dd17c56613afdee13a4d7efce0e1fc824e951eaf94ff526c5dfe2d0fb65805",
+    "independent_verification.json": "d4a1bd8da260c15dc06a84db35d6290cd71e292ed35a5f57878e87a36b2ea8de"
+  },
+  "reason": "All7 candidate alarms at Monday08; check whether a weekday/hour rule explains the selection and value gain.",
+  "rule": "Monday hour08, no other weekday/hour trials or threshold changes",
+  "scope": "Posthoc control from already-seen July-August; not independent validation or a new adopted candidate",
+  "fits": 0
+}

@@ -1,0 +1,4 @@
+﻿name,file,sha256,train_hours,trained_before
+up_logistic,Modeling/models/regime_followup/up_logistic.joblib,15010c55de5d413a1f9978f2b5988c4d5b2d3f1ce87e6d7c2618ecd89564a56a,4336,2021-07-01
+B0,Modeling/models/regime_followup/B0.joblib,5fafc0cd7726f530cc4a8c226101fa2472d59e91d25f30686a4cc1ea66c2747b,3598,2021-07-01
+B1,Modeling/models/regime_followup/B1.joblib,4a9f5536599789b4d07c1cc11590e00e89d931b7c901a5b09f303cbf54fb9dc4,3598,2021-07-01
