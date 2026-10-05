@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "script_sha256": "f57890175916324fe1a6bb0e651c8f10986c35abe6154ab9d5a1eb1a47f79db2",
+  "contract_sha256": "3f3feecb69bee5df50dc1b17916e294c89f4a407bda4e191e5d7b312a160d0d5",
+  "inputs_sha256": {
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m01/verification.json": "f6bb5c1bfec819dbb96560dd386c584b53101c0d7a5fffada07390ea2e8a4536",
+    "Modeling/tables/regime_diagnosis/hourly_labels.csv": "5b7a878ddae196bcb6d7bd085e0f68d07484d4838bf8d39c00a9d8a0682d53a1",
+    "Modeling/tables/regime_diagnosis/contract.json": "9e649b641cb6b3a82bc022f9875576bd7311581c5a48b554618a5657fc9ebc6e",
+    "Modeling/tables/regime_forecast/contract.json": "7cf736158a9e3f26c9a36e023f28ef9cce1285d198b84e6cc195a799e5f32066",
+    "Modeling/tables/regime_forecast/predictions.csv": "7dd9d767e04fa2c78c17fce0b76bb06a70a9e788099ad42b5f280cf24ec76488",
+    "Modeling/tables/regime_forecast/independent_verification.json": "d075f30fa51b9c866ebf53707940901705db5dcf18a57e3d1e359afd5b66b3ce",
+    "Modeling/tables/regime_integration/contract.json": "478bd8843d913573df90f2036e578124ca3b8c2d7efeaf666dabb02f7dc7a3dc",
+    "Modeling/tables/regime_integration/meta_features.csv": "078e288b5dc4b1772efd229bc3eba6a94c3fed6a22a31020f52ad1b06a1987b8",
+    "Modeling/tables/regime_integration/independent_verification.json": "a022ab4e33edcd652fe769c868a41237b5fc949561bf0bee9ebc3ac846f78637",
+    "Modeling/tables/regime_routing/contract.json": "6128545156775ed8b81a6ae04644d8a0f12b5045c487ab5595472df36223ef22",
+    "Modeling/tables/regime_routing/decision.json": "d819ebf582a360f4167366f7e52a30952af00cff601f6232dab81136678be5fb",
+    "Modeling/tables/regime_routing/independent_verification.json": "ed077a1d7ad3c39a4c63a40f047f04bea9760b6ad36f252dc410c705d78466e7",
+    "Modeling/scripts/regime_diagnose.py": "765b3e42bc2da6ea2d587a64621d7c237681e30b219401d17be832e4542fc2a9",
+    "Modeling/scripts/regime_forecast.py": "2f424576b2c361baa1eb07cda973f1521ad424d558d1b18f5a9bc658e8d1d0d1"
+  },
+  "new_fits": 3,
+  "outputs_sha256": {
+    "hourly_extended.csv": "80ef320095474e893c0b1bb424408b61070ac23f134673fbd36c83640c77dc85",
+    "events_extended.csv": "50ca5337e44e178d3ec19143f8f5ac83d61df7118b8ad327b7d8538ffd7840d4",
+    "classification_predictions.csv": "0abaffa9b331a1e1391d55f684043a16c5489f6e872806aba2f22993e64a750b",
+    "evaluation_frame.csv": "e7e8a224f5bc156f8fba110bd9db2fb2859712979a9d65a33cdf2bebcbab5e53",
+    "predictions.csv": "657f4ec3de58947d6ac8e844356df1ce4b55d0e9f68dc89baa967a630d293261",
+    "metrics.csv": "49d861aac7f9385c7ea11d018e69b951cf448b9fafaa87763fe4ddbb4601bedf",
+    "detection_metrics.csv": "fcda5a047fdd954cec4d54f34f359acc816312df504eb231ce415ec7ff23c965",
+    "coverage.csv": "d75a94af4278feb089b4748a219ac4215d7920cccdbb093af086711bb1547e68",
+    "routing_burden.csv": "ba69d13bafa990058635b152258894cd600fbfe707faed5ad8ffe44ffbf81277",
+    "event_windows.csv": "e907c1dcf30be3863a1c5d2f49948c171417058fd6dee878d1cc62550339a88d",
+    "event_window_coverage.csv": "e860f3506aa26cda9cd35a388e753ba205301d946cc9321a71ca0c7741fbff12",
+    "daily_peak_errors.csv": "765827cf10df29c2a2344143429b1a06a8816d8bc64258b968d046a08ad53450",
+    "model_manifest.csv": "6a875a80ade43607349ff7586237345fa551cb97fc468d3f8eeb7619683fda00",
+    "decision.json": "831ad34a95332e1a8db54e3161d423dcb9c0e928abc8ba82a8fe5d81b3f5a1c0"
+  },
+  "runtime": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]"
+}

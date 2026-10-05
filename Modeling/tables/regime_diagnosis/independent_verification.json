@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "run_sha256": "ac2fcd04e6f4c28df8dfbe0caeae31791d4b09746e2d4ef820ad97826e6c7440",
+  "verifier_sha256": "6b75d25f034b1d22f750b7a571e74b58ae79f51f9295e2eed318fa00da80633e",
+  "raw_hours_checked": 4344,
+  "hourly_labels_checked": 4344,
+  "events_checked": 146,
+  "matched_cells_checked": 432,
+  "split_records_checked": 20,
+  "prefix_tests": 3,
+  "synthetic_cases": [
+    {
+      "events": [
+        [
+          6,
+          1
+        ]
+      ],
+      "persistence": "True"
+    },
+    {
+      "events": [
+        [
+          6,
+          1
+        ]
+      ],
+      "persistence": "False"
+    },
+    {
+      "events": [
+        [
+          6,
+          -1
+        ]
+      ],
+      "persistence": "True"
+    },
+    {
+      "events": [
+        [
+          6,
+          1
+        ]
+      ],
+      "persistence": "None"
+    }
+  ],
+  "new_fits": 0,
+  "extra_outputs_sha256": {
+    "persistence_precursors.csv": "278bfe5cea6508ac94beab014772ad4c27707df63de8f679d8cddf1767f0057b"
+  }
+}

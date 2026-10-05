@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-05T17:48+09:00",
+  "run_sha256": "3eed8bdf9fb4899f9e5cec31d333a9f98f049fc3aa29983b54db10c88d2c89d6",
+  "script_sha256": "716e5d86ab909280916150e6ea2b2bbbe9c953388e5826dcc5ed0484876bc8f0",
+  "pairs": 3528,
+  "raw_lag_values": 88320,
+  "conditions": 86
+}

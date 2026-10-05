@@ -1,0 +1,33 @@
+{
+  "version": "m02-v1",
+  "parent": "Modeling/config/m01_contract.json",
+  "reason": "User authorized expanding initial M02 from Ridge/HGB to Ridge/ElasticNet/SVR/HGB, with three historical baselines.",
+  "pool": "common",
+  "features": "A",
+  "splits": ["dev_apr", "dev_may", "dev_jun"],
+  "targets": ["target_maximum", "target_mean"],
+  "baselines": {"previous_hour": 1, "previous_day": 24, "previous_week": 168},
+  "grids": {
+    "Ridge": {"alpha": [10.0, 1.0]},
+    "ElasticNet": {"alpha": [0.1, 0.01, 0.001], "l1_ratio": [0.1, 0.5, 0.9], "max_iter": 20000, "tol": 0.0001, "selection": "cyclic"},
+    "SVR": {"C": [1.0, 10.0, 100.0], "gamma": ["scale", 0.03], "epsilon": [0.1, 0.05], "kernel": "rbf", "cache_size": 512},
+    "HGB": {"max_leaf_nodes": [7, 15], "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42}
+  },
+  "preprocessing": {
+    "Ridge": "StandardScaler on X fit on each training split",
+    "ElasticNet": "StandardScaler on X and y, fit on each training split; inverse y transformation for metrics",
+    "SVR": "StandardScaler on X and y, fit on each training split; inverse y transformation for metrics",
+    "HGB": "raw features and target; no random validation or early stopping"
+  },
+  "selection": {
+    "metric": "pooled MAE on three development months, per target",
+    "within_family": "within 1 percent of best MAE prefer first listed parameter combination; publish all results",
+    "between_families": "publish selected setting of each family and best historical baseline; provisional overall candidate chosen within 1 percent of best MAE, preference baseline, Ridge, ElasticNet, HGB, SVR",
+    "limitations": "These are development-selected scores, not independent test estimates. Family grid sizes differ. No claim of exhaustive optimization or algorithm superiority.",
+    "final_tradeoff": "M05 selection tolerances for maximum-hour under/overprediction remain pending development evidence"
+  },
+  "diagnostics": ["daily maximum with one-date tie weights", "power state transitions from A06", "production transitions", "month", "weekday/weekend", "hour", "seen/new daily profiles", "inverse profile weights"],
+  "power_states": "posthoc only: zero, positive rounded mean<20, rounded mean20..26, rounded mean>26; apply same definitions to previous hour",
+  "prohibited_in_this_run": ["later_jul_aug fitting or scoring", "last-slot input B", "lag24/168 learned inputs C", "weather D", "prediction clipping"],
+  "outputs": "all candidate development predictions and metrics, family selection, condition errors, training audit, selected fitted estimators and hashes"
+}

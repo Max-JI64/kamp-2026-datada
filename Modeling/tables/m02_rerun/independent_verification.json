@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-04T21:41+09:00",
+  "prediction_rows": 30576,
+  "metric_rows": 1988,
+  "raw_lag_values_checked": 33408,
+  "inner_configurations_checked": 21,
+  "trials_checked": 700,
+  "identical_outer_timestamps": 2184,
+  "daily_maximum_dates": 91,
+  "selected_model": "HGB_initial",
+  "july_august_evaluated": false,
+  "run_sha256": "076a03da26ccc72bed772d83f8c54d28675f8b2727a0e1ad03498e7e7682eb7d",
+  "verifier_sha256": "688a1c31b29ea322e19904fb066b2794becde138ee68912627be9a0108643d51"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "run_sha256": "ec6c7a44b351de28d858f225df45de126585b411626794ebdef365cbf189f787",
+  "verifier_sha256": "daea2b7e70092c56444e1fa9b770d1e891c892886af333f17725a620c3eb1f8f",
+  "predictions_checked": 8772,
+  "daily_rows_checked": 360,
+  "metrics_checked": 60,
+  "future_removal_checks": 2,
+  "new_fits": 0,
+  "alarm_origin_past_only": true,
+  "calendar_routing_event_predictions_identical": true,
+  "extra_outputs_sha256": {
+    "verified_routed_cases.csv": "6e498f208fcc6613b906000c6231b381657925d72f2ba124f4abdd1affacb5b1"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "primary": "B2_up on up May-Jun",
+  "comparisons": [
+    {
+      "variant": "B2_up",
+      "direction": "up",
+      "period": "May-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 1,
+      "overall_mae_change_vs_B0": 0.05067134134398632,
+      "daily_peak_mae_change_vs_B0": 0.04736582838602987
+    },
+    {
+      "variant": "B2_up",
+      "direction": "down",
+      "period": "Apr-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 1,
+      "overall_mae_change_vs_B0": 0.09726412904185588,
+      "daily_peak_mae_change_vs_B0": 0.11342420082935334
+    },
+    {
+      "variant": "B2_down",
+      "direction": "up",
+      "period": "May-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 1,
+      "overall_mae_change_vs_B0": 0.0018510524713593046,
+      "daily_peak_mae_change_vs_B0": 0.05346467614513739
+    },
+    {
+      "variant": "B2_down",
+      "direction": "down",
+      "period": "Apr-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 3,
+      "overall_mae_change_vs_B0": 0.033549022448726706,
+      "daily_peak_mae_change_vs_B0": 0.071270408585143
+    },
+    {
+      "variant": "B2_both",
+      "direction": "up",
+      "period": "May-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 1,
+      "overall_mae_change_vs_B0": 0.05499751908967587,
+      "daily_peak_mae_change_vs_B0": 0.08515721433667012
+    },
+    {
+      "variant": "B2_both",
+      "direction": "down",
+      "period": "Apr-Jun",
+      "development_gate_passed": false,
+      "monthly_wins_vs_B1": 2,
+      "overall_mae_change_vs_B0": 0.10826490269049605,
+      "daily_peak_mae_change_vs_B0": 0.0858775364709563
+    }
+  ],
+  "scope": "Development ablation using strategy chosen after S03; not independent validation or operating savings."
+}

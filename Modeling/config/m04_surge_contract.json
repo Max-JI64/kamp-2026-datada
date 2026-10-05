@@ -1,0 +1,28 @@
+{
+  "version": "m04-surge-v1",
+  "recorded_at": "2026-10-05T12:43+09:00",
+  "reason": "User authorizes hourly-increase surge definition, existing prediction re-evaluation and April missed-case diagnosis before a minimal evidence-led model change.",
+  "event": {
+    "increase": "target_maximum minus exact t-1 maximum",
+    "calibration": "January 2021 common training rows only, before every February onward inner validation",
+    "primary": "positive increase at or above the linear empirical 95th percentile of positive January increases",
+    "sensitivity": "also report the prespecified 90th percentile boundary; never select the more favorable boundary",
+    "interpretation": "Exploratory record-scale definition; not a physical tariff threshold or all zero restart events; report ties and actual prevalence"
+  },
+  "comparison": "Same common chronological development rows as M03/M04: 2184 April-June hours. Preserve all prior results and evaluate delta-defined events without changing their predictions.",
+  "methods": ["B", "D_dynamic", "W_rise_weighted", "G_Logistic", "G_HGB", "G_Logistic_rise_focus", "G_HGB_rise_focus"],
+  "alarm": {
+    "regression_score": "predicted next maximum minus observed previous maximum; primary frozen alarm is score at or above the event boundary",
+    "legacy_probability": "Existing low-only classifier probability used only where prior_low is observed; zero outside support; report unsupported surge coverage",
+    "fixed_false_positive_caps": [0.01, 0.05],
+    "deployable_threshold": "Choose threshold maximizing recall subject to cap only on selected past inner OOF scores; tie by fewer false positives and then higher threshold",
+    "outer_frontier": "Observed recall at the same cap using outer labels is descriptive diagnostic only, never a deployable threshold or final performance claim"
+  },
+  "april_diagnosis": "For the eight inherited low->above26 cases retain their original labels; inspect probability rank among all 200 prior-low April rows, fixed gate threshold, selected blend, expert error, actual delta and new-surge membership. Counterfactual blend-one predictions are diagnostics only.",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frame_sha256": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+  "parent_run_sha256": "9f9ac915e840903e4b03e5b952c6218f8972fffcbfe8ea7d33457a27d0e641b1",
+  "first_run_sha256": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+  "no_july_august_evaluation": true,
+  "scope": "Diagnosis first; log a concrete question and separate contract before any new fitting. No repeating the closed old gate search or relaxing old acceptance criteria."
+}
