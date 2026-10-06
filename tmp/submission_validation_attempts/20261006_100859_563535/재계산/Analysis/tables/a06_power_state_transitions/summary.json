@@ -1,0 +1,48 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 5784,
+  "pairs": 5781,
+  "state_counts": {
+    "above26": 3824,
+    "low": 1936,
+    "zero": 17,
+    "below20": 7
+  },
+  "episodes": {
+    "low": {
+      "observed_runs": 71,
+      "complete_runs": 71,
+      "observed_hours": 1936,
+      "complete_duration_min": 1,
+      "complete_duration_median": 24.0,
+      "complete_duration_max": 223
+    },
+    "zero": {
+      "observed_runs": 1,
+      "complete_runs": 1,
+      "observed_hours": 17,
+      "complete_duration_min": 17,
+      "complete_duration_median": 17.0,
+      "complete_duration_max": 17
+    }
+  },
+  "verification": {
+    "raw_rows_checked": 5784,
+    "exact_hour_pairs_checked": 5781,
+    "existing_plot_frame_matches_raw": true
+  },
+  "largest_changes_both_production_zero": true,
+  "definition": "zero: maximum=0; below20: positive and rounded mean<20; low: rounded mean20..26; above26: rounded mean>26",
+  "revision": "Initial other group mixed weekend values below20 with above26. Separated at existing lower bound20 to avoid interpreting every low-range exit as a rise; no records excluded.",
+  "scope": "all valid Jan-Aug hours, no model split, no new peak threshold, no model fit",
+  "inference": "descriptive counts only; temporal and repeated-profile dependence retained",
+  "outputs_sha256": {
+    "transition_summary.csv": "2466142f9824a04bccf3098ab637d9e4f17bef644682acb12439bb45f671a025",
+    "state_counts.csv": "96d18539ea9eceddd791fffd1d507e7a0731b8522dafd1cdc0b5a020250c5786",
+    "monthly_state_counts.csv": "3d8f67df286dc9758564ea8dbb57b766e3952652a17d62c27f9897464b0bd581",
+    "transition_hours.csv": "04cc52c8077b449f0e8e30568d90fcc4c5097d3a3939b24b08e45c49a49a17f9",
+    "episodes.csv": "7632c43447e9054057629173e344b165366ca4815708483fe5108b8fa32e2b34",
+    "boundary_records.csv": "475d2c45e0d8d321e351f9c8130a25d6a504024c177000771c670d6e6ea3697e",
+    "largest_changes.csv": "398af78ec5e79216e66d8e3682aa2c261e21adf181fdd0f3161a96c251154c15"
+  }
+}

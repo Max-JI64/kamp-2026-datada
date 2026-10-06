@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_rows": 6168,
+  "columns": 18,
+  "scope_rows": 5832,
+  "valid_hours": 5784,
+  "valid_days": 241,
+  "missing_cells": 21,
+  "headcount_formula_checked_rows": 6151,
+  "headcount_formula_max_abs_error": 4.944070042256499e-09,
+  "unique_96slot_profiles": 126,
+  "dates_in_repeated_profiles": 160,
+  "multiple_production_value_dates": 181,
+  "eligible_history_hours": 5520,
+  "model_training_performed": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 5784,
+  "days": 241,
+  "weekday_days": 171,
+  "weekend_days": 70,
+  "checked_mean_deviation_cells": 192,
+  "checked_direction_cells": 192,
+  "checked_profile_conditions": 192,
+  "line_figure_groups": [
+    "weekday",
+    "weekend"
+  ],
+  "heatmap_figure_groups": [
+    "weekday",
+    "weekend"
+  ],
+  "definition": "Each slot minus the exact arithmetic mean of its own four-slot row; average across all dates at the same hour and group.",
+  "figure_x_definition": "Four slots are placed in column order within each hour, not verified exact sensor timestamps.",
+  "figures": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101010_381386\\재계산\\tmp\\eda_slot_time_patterns\\daily_96_slot_means.png",
+      "sha256": "93a48453d95327244bd4b0e0f60baa92fcd7716c6446dba20b3b62d8f83bfaf0"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101010_381386\\재계산\\EDA\\figures\\slot_time_patterns.png",
+      "sha256": "80f5da22b95870086617bbafdb8dab888d7170c47d107a51329d2eb150dca7c1"
+    }
+  ],
+  "manuscript_edited": false,
+  "visual_review": false,
+  "p_values_used": false,
+  "note": "Date frequencies are descriptive; repeated four-value profiles are not independent experiments."
+}

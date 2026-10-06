@@ -1,0 +1,37 @@
+{
+  "source_frame_sha256": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+  "rows": 5784,
+  "exact_hour_changes": 5781,
+  "zero_hours": 17,
+  "zero_start": "2021-08-28 18:00:00",
+  "zero_end": "2021-08-29 10:00:00",
+  "before_zero": {
+    "timestamp": "2021-08-28 17:00:00",
+    "target_mean": "22.0",
+    "target_maximum": "47",
+    "lag1_mean": "45.75",
+    "lag1_maximum": "52.0",
+    "mean_delta": "-23.75",
+    "maximum_delta": "-5.0"
+  },
+  "after_zero": {
+    "timestamp": "2021-08-29 11:00:00",
+    "target_mean": "16.5",
+    "target_maximum": "41",
+    "lag1_mean": "0.0",
+    "lag1_maximum": "0.0",
+    "mean_delta": "16.5",
+    "maximum_delta": "41.0"
+  },
+  "maximum_drop": -163.0,
+  "maximum_rise": 182.0,
+  "figures": {
+    "observed_power_monthly_2021_01_08.png": "65f55fd8099510c7506d13df66c29e16a6c1db802a6be847813b8e61ae0f098f",
+    "observed_power_delta_monthly_2021_01_08.png": "b12046779f3973b5070c5a7935dd252f3911e3bc8c88ba2cc3603c6db4aabaf9",
+    "observed_power_zero_interval.png": "e0401860977fbd49baad3d75dbf2af1b60bf82b4afea4c5523113abdd8c3fac9"
+  },
+  "gaps_not_connected": true,
+  "no_smoothing": true,
+  "no_model_fitting": true,
+  "visual_review": "pending"
+}

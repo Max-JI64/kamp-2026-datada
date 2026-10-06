@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "source_observations_unchanged": true,
+  "explicit_dummy_maximum_control_verified": true,
+  "script_sha256": "5b4880c6013ffafa60b2e326d19e8260b30337ae752bd05c5c1da699b0751693",
+  "output_sha256": "178c1ed71933cb645608ae0ddf764971a76ae41aa7ea91d7be0f45e4c5e5a060"
+}

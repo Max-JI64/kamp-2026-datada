@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-06T10:12+09:00",
+  "run_sha256": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+  "script_sha256": "0ec1b712761da72f93db49a834abe17ec27d1b7229f9bbfbf57bc351b564a224",
+  "raw_feature_values_checked": 112752,
+  "prediction_rows": 10920,
+  "metric_rows": 260,
+  "trials": 450,
+  "model_reload_checks": 12,
+  "selected": "B",
+  "no_july_august_evaluation": true,
+  "AP_and_confusion_independently_recomputed": true,
+  "training_only_scaler_checked": true
+}

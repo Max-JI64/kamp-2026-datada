@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checked_links": 214,
+  "checked_documents": 11,
+  "visible_figure_paths": 9,
+  "manuscript_sections": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5"
+  ],
+  "figures": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_01_daily_pattern_clean.png",
+      "sha256": "a2ef6ccb1ba0bd8f96cc00392f53ab983f144837924d7f8ed73ea1a041f68ec7"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\04_daily_pattern_simple.png",
+      "sha256": "a2f65aed303dbb204db1e1256271ae5248387ffda9eaecbf5bc49bfe3feecb2e"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\daily_repetition\\07_monthly_power_mean_heatmap.png",
+      "sha256": "aed2e0175c9a6abfd28caf108b0dd6882b1da8b0d9c4483bb9fbf34e1b7b1725"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\Modeling\\figures\\observed_power_monthly_2021_01_08.png",
+      "sha256": "cf5017ec15263f54d639dd0b1c910a50d090a7008981f7692ac186c7def284a3"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\Modeling\\figures\\observed_power_zero_interval.png",
+      "sha256": "6bdd8ab1c740b5a83b9d81948ca5882e81797e3c7118005e1f7ac8993e4a5a24"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_variable_relations.png",
+      "sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\restart_02_monthly_relations.png",
+      "sha256": "d41f7040ddc1342fba88b444a7f0f10af2bad3b9c1480a337169c1f7702fb233"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\weekday_power_levels.png",
+      "sha256": "d6e8b30853f84e6b693a598d08b7d145aff7154c721e2c60fae7a193c7a3332c"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\slot_time_patterns.png",
+      "sha256": "ac4c66d60c810a09690767637706d86f1a66b77e813f36d24d64deb08f0d5820"
+    }
+  ],
+  "python_syntax": "passed",
+  "contact_sheets": [],
+  "image_render_check": "PNG decoded; visual inspection recorded separately"
+}

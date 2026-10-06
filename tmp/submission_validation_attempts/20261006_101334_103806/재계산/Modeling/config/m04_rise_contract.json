@@ -1,0 +1,48 @@
+{
+  "version": "m04-rise-v1",
+  "recorded_at": "2026-10-05T11:56+09:00",
+  "reason": "User prioritizes demonstrated rise-error improvement before M05. Existing B underpredicts all 20 low->above26 development cases (MAE 48.771613); prior-low persistence made this worse. Compare information, training emphasis and observable probability gating separately.",
+  "target": "target_maximum",
+  "event_definition": "Prior maximum > 0 and floor(prior exact mean + 0.5) in [20,26], followed by target supplied rounded mean > 26. This is the inherited low->above26 transition, not every large power increase.",
+  "pool": "common",
+  "outer_splits": ["dev_apr", "dev_may", "dev_jun"],
+  "inner_months": {"dev_apr": [2,3], "dev_may": [2,3,4], "dev_jun": [2,3,4,5]},
+  "information_time": "After observation of t-1; no reporting delay assumed as in M01. No future production, target state, maximum-day flag or target profile in inputs.",
+  "features": {
+    "base": "M01 B: 18 features",
+    "add": ["prev_slot_rise", "prev_slot_range", "prev_slot_slope", "last_delta", "mean_delta", "maximum_delta", "production_delta", "low_run_length6", "low_history_gap6"],
+    "definitions": "t-1 last-first, range and least-squares four-slot slope; t-1 minus t-2 last/mean/maximum/production; consecutive low hours backward from t-1 capped at 6, stop at first non-low or missing exact timestamp; gap flag if missing encountered before stop. Missing never bridged."
+  },
+  "hgb_parameters": {"max_leaf_nodes": 15, "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42},
+  "methods": ["B", "D_dynamic", "W_rise_weighted", "G_Logistic", "G_HGB"],
+  "weighted": {"weight_range": [1.0,12.0], "enqueue": [1.0,2.0,4.0,8.0,12.0], "trials": 30, "loss": "fixed squared_error HGB on D input; sample weight only for training event labels", "objective": "inner score: max(relative overall MAE, relative daily-maximum MAE, relative rise MAE); apply stated tolerance penalties"},
+  "classifier": {
+    "fit_rows": "Only observable prior-low training hours; unweighted binary likelihood",
+    "Logistic": {"C": [0.01,100.0], "max_iter": 2000, "scaler": "StandardScaler fitted only in each training fold"},
+    "HGB": {"max_leaf_nodes": [3,7,15], "min_samples_leaf": [10,20,40], "l2_regularization": [0.1,10.0], "max_iter": 150, "learning_rate": 0.05},
+    "trials_per_family": 30,
+    "objective": "maximize pooled inner average precision on prior-low validation rows, tie by lower Brier then earlier trial; AP is non-interpolated average_precision_score, not trapezoidal PR-AUC",
+    "single_class": "training event fraction constant, recorded; no future fallback"
+  },
+  "gate": {
+    "threshold": [0.01,0.8], "blend": [0.0,1.0], "trials_per_family": 30,
+    "enqueue": [{"threshold": 0.5, "blend": 0.0}, {"threshold": 0.1, "blend": 0.5}, {"threshold": 0.2, "blend": 1.0}],
+    "prediction": "B + I(prior_low and probability>=threshold) * blend * (W-B); exact B elsewhere",
+    "objective": "inner constrained error score against inner B; false positive fraction among prior-low non-events <= 0.05",
+    "tuning": "Use selected weighted expert and selected classifier predictions from past-only inner folds. Outer evaluation never tunes threshold, blend, C, tree settings or event weight."
+  },
+  "development_selection": {
+    "overall_MAE_ratio_max": 1.01, "daily_maximum_MAE_ratio_max": 1.01,
+    "low_stay_MAE_ratio_max": 1.01, "low_stay_mean_over_ratio_max": 1.05,
+    "rise_MAE_ratio_max": 0.90, "rise_mean_under_ratio_max": 0.90,
+    "rise_monthly_MAE_ratio_max": 1.0, "gate_false_positive_fraction_max": 0.05,
+    "eligible_choice": "Among methods satisfying all gates choose lowest max(relative overall, daily-maximum and rise MAE), within 1 percent prefer D_dynamic, then W, G_Logistic, G_HGB. If none eligible retain B and state unmet requirements. Report all candidates, not only successful results.",
+    "interpretation": "Numerical development tolerances, not measured economic optima or a guarantee of improvement; calibration and alarm metrics supplement regression results."
+  },
+  "sampler": {"seed": 42, "n_jobs": 1, "n_startup_trials": 10, "pruning": "none"},
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "frame_sha256": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+  "parent_predictions_sha256": "d1f2fc8062b84248bc2a9512d17563713368fc94a6b56dc127c93c56cbe2a5f8",
+  "no_july_august_evaluation": true,
+  "scope": "Retrospectively motivated development, not independent final test. Stop this declared comparison after results/verification; change plans only for a concrete new question."
+}

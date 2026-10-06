@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-06T10:15+09:00",
+  "run_sha256": "884b0205482558e841619cbab6fc8145f47a4e76fcb092eb57e5e02343d21c0f",
+  "script_sha256": "a70a74c5b077a706d89ceff2eb1785f5bc78d4cbb19509a14b38f91162a3f487",
+  "prediction_rows": 10920,
+  "policy_rows": 30,
+  "alarm_rows": 60,
+  "scores_and_models_unchanged": true,
+  "normal_forecast_unchanged": true,
+  "selection_gates_unchanged": true,
+  "selected_risk_channel": "B_score",
+  "no_new_fitting": true,
+  "no_july_august_evaluation": true
+}

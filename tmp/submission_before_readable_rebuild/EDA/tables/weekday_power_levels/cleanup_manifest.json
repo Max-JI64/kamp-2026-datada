@@ -1,0 +1,479 @@
+{
+  "date": "2026-10-03",
+  "status": "completed",
+  "reason": "User requested deletion of all unselected EDA 2.4 images and code; obsolete dependent candidate results also removed",
+  "final_script": "EDA/scripts/eda_weekday_power_levels.py",
+  "final_image": "EDA/figures/weekday_power_levels.png",
+  "files": [
+    {
+      "path": "EDA/scripts/eda_weather_power.py",
+      "bytes": 23932,
+      "sha256": "ebd4ea87b1df80e17c4be82d61baaf390525b6f988465285396ee2795e188427"
+    },
+    {
+      "path": "EDA/scripts/eda_weather_power_weekdays.py",
+      "bytes": 11678,
+      "sha256": "881544fb774b55670886bb77cc84e285bfa940f685e65237e56b3241ddf60c57"
+    },
+    {
+      "path": "EDA/scripts/eda_low_power_patterns.py",
+      "bytes": 18751,
+      "sha256": "421ed59fcc0d57d8986e978517e858a980781ae592a0d0fbc71612f46d96d966"
+    },
+    {
+      "path": "EDA/tables/weather_power/daily_production_context.csv",
+      "bytes": 299,
+      "sha256": "0fdeaedcb5439fab8be8593df26f6de432d37809b75bf1913ad84b7315af5e89"
+    },
+    {
+      "path": "EDA/tables/weather_power/humidity_pair_monthly.csv",
+      "bytes": 3020,
+      "sha256": "abbea3fb07b8a2d8d97568356e6b75e113e5d46618969100d004c904298cefe9"
+    },
+    {
+      "path": "EDA/tables/weather_power/humidity_pair_summary.csv",
+      "bytes": 680,
+      "sha256": "30837ada4b59c563385dd23ae7077e82113152a527125657c70ee2955d31e873"
+    },
+    {
+      "path": "EDA/tables/weather_power/humidity_pairs.csv",
+      "bytes": 73394,
+      "sha256": "561811d1cb5fd7746fba2a98f7be0d401b16662426e677ad02568319846834bc"
+    },
+    {
+      "path": "EDA/tables/weather_power/july_temperature_humidity_control.csv",
+      "bytes": 929,
+      "sha256": "59c03948411c050797a440e6ae17020d5ecca2d94286872b0e90d6babdc29720"
+    },
+    {
+      "path": "EDA/tables/weather_power/july_temperature_pairs_humidity_10pp.csv",
+      "bytes": 5822,
+      "sha256": "1fbcf9968d8f8abe286d866487136761897c5da92aa646879cf6a12dbb39ba01"
+    },
+    {
+      "path": "EDA/tables/weather_power/july_temperature_pairs_humidity_15pp.csv",
+      "bytes": 7698,
+      "sha256": "c5168965465e1bd683df975434c61e1059f22ac634e8abc64a2532948adbfb72"
+    },
+    {
+      "path": "EDA/tables/weather_power/july_temperature_pairs_humidity_5pp.csv",
+      "bytes": 4079,
+      "sha256": "3fba55dc7d4c788740d200c41af74616979783229be2324737ba918a4efe475a"
+    },
+    {
+      "path": "EDA/tables/weather_power/manifest.json",
+      "bytes": 19802,
+      "sha256": "d7814b7f99d7b4ad34bc8744cef3dbe31e69a0996455ca7309665ef9707f30fe"
+    },
+    {
+      "path": "EDA/tables/weather_power/plan.json",
+      "bytes": 1341,
+      "sha256": "98b65117528928e528939de988e50ed6c2a504ea46d9d91654367b867303febc"
+    },
+    {
+      "path": "EDA/tables/weather_power/population.csv",
+      "bytes": 56,
+      "sha256": "89f5c4bc5fb7dc66556b18dd985c80a053cfbb151839894059724fb98256c15e"
+    },
+    {
+      "path": "EDA/tables/weather_power/README.md",
+      "bytes": 10170,
+      "sha256": "682f86cab35f1a6839cebd6e75fd1b50e1b6644e61382489280932281bf06895"
+    },
+    {
+      "path": "EDA/tables/weather_power/sensitivity_production_20pct_monthly.csv",
+      "bytes": 3360,
+      "sha256": "ebbc4f232c982485d958467e00bc43a8698efeb0451bea53f6383dd7ba374e13"
+    },
+    {
+      "path": "EDA/tables/weather_power/sensitivity_production_5pct_monthly.csv",
+      "bytes": 3201,
+      "sha256": "b3bed8bc1293058681532d6a7bbb6ec22cee74136358fb90e566cfc7aab19a7d"
+    },
+    {
+      "path": "EDA/tables/weather_power/sensitivity_production_exact_monthly.csv",
+      "bytes": 2595,
+      "sha256": "955bb9c80069d21a9466a68ebc6c00771025b7612131f4e5701873bf5fb1bf1f"
+    },
+    {
+      "path": "EDA/tables/weather_power/sensitivity_temperature_1c_monthly.csv",
+      "bytes": 3285,
+      "sha256": "2b5851a27f1cb78967380729091cd2f223bcfc15883a97fbaf9c793aaba82897"
+    },
+    {
+      "path": "EDA/tables/weather_power/sensitivity_temperature_3c_monthly.csv",
+      "bytes": 3204,
+      "sha256": "28c0d35aef1a92af47c2cfbdb05b3114e5eefe67900b8badec1208d43dd097a4"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_bins_2c.csv",
+      "bytes": 4551,
+      "sha256": "cfe639db0655197a620d102eadfc47b508b9acd2e7ca67010f08ed9a7b04081b"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_bins_3c.csv",
+      "bytes": 3092,
+      "sha256": "545bbc22aacab7b140dbbb80c1ace00c6e0a80cead9d44b3ee76b16ce3952288"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_bins_4c.csv",
+      "bytes": 2503,
+      "sha256": "1935dd7bc984d39f68673ce6d32f30fce20a2c1dbd9cef9474783f858ab60a68"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_pair_monthly.csv",
+      "bytes": 3316,
+      "sha256": "332def845cd5e64aca6ba8b5bb2622d08f4bc8de2d897033765efd48dbda2811"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_pair_summary.csv",
+      "bytes": 694,
+      "sha256": "ffb7b3473a2d9cd9f44809a74e523d5e3c9e9925753a969aad2663fcd11af2c8"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_pairs_same_daily_state.csv",
+      "bytes": 167466,
+      "sha256": "cef74b1d20f268f31c80c0497a14403c47e0e7d34dbb6f91e2973bf0dcd13822"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_pairs.csv",
+      "bytes": 179368,
+      "sha256": "bc17a0d664ef8be545605cf75c33a7339d515719fa2fffd5cf6ed8cf475584c4"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_same_daily_state_monthly.csv",
+      "bytes": 3309,
+      "sha256": "5a18c4cdf57f26d8dd956c52f0492e3715a46932aed763d242af72ce167fcc2d"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_same_daily_state_summary.csv",
+      "bytes": 698,
+      "sha256": "1c87ce347e01683e5afc6c6c2771667d69f92ed3f1c368f8b3c2361c5ac84940"
+    },
+    {
+      "path": "EDA/tables/weather_power/temperature_sensitivity.csv",
+      "bytes": 2843,
+      "sha256": "6f272aae15af59bddcbcdd090476e736b105d007f0f5dea43f9b10fbacf12d07"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/daily_production_context.csv",
+      "bytes": 192,
+      "sha256": "214a1cca72107b098213b4aa8321aa67fd4a86008000f8ebf69047df8df2b6d8"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/humidity_pairs.csv",
+      "bytes": 40552,
+      "sha256": "c77311599c142158d12363754f972c53446f9197db26b8551b3db3b26d99e537"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/humidity_summary.csv",
+      "bytes": 523,
+      "sha256": "bb8746920d8dd3e7db2f0c2fa37940dd851c3cf71a3bd912da09e423f6be7e77"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/july_humidity_control.csv",
+      "bytes": 979,
+      "sha256": "85111b5a38bfeb7c6cbb8625da611e90310b1249656bf630089909aada3cea8e"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/july_pairs_humidity_10pp.csv",
+      "bytes": 7101,
+      "sha256": "1920864f9ffa0de7139a98ec0440374576e678ddb80d36d1dd30e951ffc10efd"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/july_pairs_humidity_15pp.csv",
+      "bytes": 9088,
+      "sha256": "fc0a10291b0dbe83157e55acdf8f0a4685e313cfa5c86bb4f54565991c2acfef"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/july_pairs_humidity_5pp.csv",
+      "bytes": 5044,
+      "sha256": "ec32830ae48afecc021743a402a2bc6ad71316e889b38461d43d9fc86d859f1b"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/main_monthly.csv",
+      "bytes": 2116,
+      "sha256": "cdbe52251ddb0986a23dd338b5c3b83edf53985aac9244c658ec2a558dfbf83d"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/manifest.json",
+      "bytes": 15273,
+      "sha256": "edc40d02f71793f7dccb8defc8f665f875ac2bca601c3f7e8f55c85b05a2cbdd"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/monthly_comparison_rejected.md",
+      "bytes": 4089,
+      "sha256": "6a87733f337cba5edb6876f902b115a37e29b2a514d204ddf3946aa15520f587"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/plan.json",
+      "bytes": 775,
+      "sha256": "571b14cc36359b472f7bb6e695375d314c0b6aac750c6cd87c098e4ce548ac97"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/production_20pct_monthly.csv",
+      "bytes": 2084,
+      "sha256": "22d4a5bb2d673a9ab086a6b73c4c900f00e269a94d69ae27e0d1969ee3ad246a"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/production_5pct_monthly.csv",
+      "bytes": 2015,
+      "sha256": "a15f825f565f56c905b3f9bc5d59d62376325d89cd9bedddbd34e95eaa2a1c7c"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/production_stratum_monthly.csv",
+      "bytes": 3292,
+      "sha256": "5daa55dfd4a7832ea46b2cbc85683204f0bc85737debbb2844439f00eac64ec2"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/production_stratum_summary.csv",
+      "bytes": 695,
+      "sha256": "4301ed284688599abdb0d5eaf6b18a17cd841ec23ffc131a6a4d49dc49799b9f"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/README.md",
+      "bytes": 8078,
+      "sha256": "55fb939cc8fdd817bbca02a47c3fe25150ce9aeb86c317b0581993749b3ab64b"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/sensitivity.csv",
+      "bytes": 1494,
+      "sha256": "1fda2ba7282e05bc220744f10a2d2d3dbf3dceb069fe0f3ebb819d1880493f6c"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_1c_monthly.csv",
+      "bytes": 2121,
+      "sha256": "911b1d06476605f3310d2ac7ac2c0d5b13c95daf788baccf8e584b3d3f04220d"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_3c_monthly.csv",
+      "bytes": 1910,
+      "sha256": "23fead25449de4a9ff0e254275ca419191690d9cc5eab8dd874e6b93147ec6dc"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_bins_2c.csv",
+      "bytes": 2577,
+      "sha256": "359b4a5c65233f21c74700d7e078e905d78e560b6efd3bb88cb1fcf30f5d0de4"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_bins_3c.csv",
+      "bytes": 1805,
+      "sha256": "e7fb968a0a1a7a76661bf90d2e81100bb0e87f8db993883d1e7ec19d5286f1c5"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_bins_4c.csv",
+      "bytes": 1359,
+      "sha256": "693d7f3efab02e852e5997ba20ea1c47a72d6c05d2344d51b973a2e6c0ddde67"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_pair_monthly.csv",
+      "bytes": 2116,
+      "sha256": "cdbe52251ddb0986a23dd338b5c3b83edf53985aac9244c658ec2a558dfbf83d"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_pair_summary.csv",
+      "bytes": 512,
+      "sha256": "51cdc9fdbe5a7247dfd874c9499fc4792e4d6f80146797111faacafd73609557"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/temperature_pairs.csv",
+      "bytes": 113260,
+      "sha256": "bc2587f4ab990db5e80fc8832467a6d2f0f9f237c839a35dbcb661e7355c026b"
+    },
+    {
+      "path": "EDA/tables/weather_power_weekdays/without_daily_state_monthly.csv",
+      "bytes": 2123,
+      "sha256": "5f463ef74e288621d56e08a641a1f5069c0d4c6cb8476f675d6fd2ca20d6db3a"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/adjacent_hour_pairs.csv",
+      "bytes": 379754,
+      "sha256": "d2561d9d0f4e11bd9f8a60c69e8eecce251ab9bf734d04ee3e0431c3a7f0529c"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/daily_low_hours.csv",
+      "bytes": 5640,
+      "sha256": "7c3a0bc55c15d4f0aa7c76424cf7d20b0d4f932f4a7c3d0d89932442e6b08d15"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/four_slot_audit.csv",
+      "bytes": 128,
+      "sha256": "c92d45ba17ea3e919958ebfd6353edfa894f6c4c824f9270d0869765ed3b5f36"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/hourly_low_frequency.csv",
+      "bytes": 768,
+      "sha256": "501b297a8c74c45e72fffd850ba6ebf47882eea4ac478b321b55cd8d2ce34efa"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/hourly_records.csv",
+      "bytes": 208483,
+      "sha256": "0829d474d64df0a22a509fb6514f6b39ca3c44c2b059ec150d49cfc5696ea3e9"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/independent_daily_hour_patterns.csv",
+      "bytes": 5571,
+      "sha256": "4a0c3fd15ba71eb2613aadc6adb2a94b2b12b6668e5d1ecf7197414763e76d03"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/independent_pattern_summary.csv",
+      "bytes": 245,
+      "sha256": "54e1dda94de45214c210d8c85e7f348aeac2ca80763c56410c03eed6c73a60bf"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/low_spells.csv",
+      "bytes": 2860,
+      "sha256": "c9c4dd3bfb436cc2b291e3285835deaef10fdcea6ee7a32632da51413aa1d532"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/observed_support_gaps.csv",
+      "bytes": 97,
+      "sha256": "dab48f5396ff654fd26f5916778ffc5818c222b52c441b55b4f8e756a5e9d625"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/plan.json",
+      "bytes": 840,
+      "sha256": "037e6b67556ec91f19ce9e52f3fb8d0e9ed8e222d0dae2e0219d1a96daa46eae"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/plotted_spell_examples.csv",
+      "bytes": 240,
+      "sha256": "e5a7e33c8a9cc1053783e0947e7afc3839ca9e470a5130c1816c591ce910e020"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/power_frequency.csv",
+      "bytes": 1374,
+      "sha256": "6125cc2f0e9dde1edcb48b8f574f227960ea0b30b15093bec67e120fe9c8020e"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/production_context.csv",
+      "bytes": 227,
+      "sha256": "2219d2dc0a76a1c398bee72de746759991f8d2730398ee6f3121a4a2b3555061"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/profile_sensitivity.csv",
+      "bytes": 278,
+      "sha256": "aafce0da2bb070f005692750dfbf3208d2a1b09aac2ea79d75ae4189342a8a19"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/README.md",
+      "bytes": 11092,
+      "sha256": "012478ed65056d44f5517cdfba7b71312951f5475a49cc145da004396e7612e7"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/summary.json",
+      "bytes": 5099,
+      "sha256": "2ee87823bcb57743f8eda00867f606324f712cff6ed700056cb8c0acd008ac20"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/transition_event_records.csv",
+      "bytes": 4459,
+      "sha256": "e4492900bb153b7fbc09b9573826f3fb6c74f05a65e3fef2696c9dbfdad96c84"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/transition_events.csv",
+      "bytes": 201,
+      "sha256": "70b9e581a4be5d91acec56b22557d2fbde48493932a6511fcb64f8b6ccb88210"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/transition_hours.csv",
+      "bytes": 95,
+      "sha256": "20b3166d4ba1ca6ff36ac508b961ac479517bfcbef55c482e042127e8efc8678"
+    },
+    {
+      "path": "EDA/tables/low_power_patterns/transition_summary.csv",
+      "bytes": 214,
+      "sha256": "01af79fe15032eec68c0276562a050ef7fec97f1fc5942f324e2cbee7cc998db"
+    },
+    {
+      "path": "tmp/eda_weather_power/01_temperature_power.png",
+      "bytes": 369606,
+      "sha256": "f41ec7f9bef99a661dac42bbe9b60b09a79a4e95a45d078a0bf0e5284b233e8c"
+    },
+    {
+      "path": "tmp/eda_weather_power/02_comparable_temperature_pairs.png",
+      "bytes": 175850,
+      "sha256": "1ad8171461d15c8f0daee191c7906c8e4e13e063706b936265d291ea970d0253"
+    },
+    {
+      "path": "tmp/eda_weather_power/03_monthly_temperature_difference.png",
+      "bytes": 100564,
+      "sha256": "681ec21b2a3a1a134d7126edfa460076e7c2e287b23da9558da179c00f4c3ec3"
+    },
+    {
+      "path": "tmp/eda_weather_power/04_comparable_humidity_pairs.png",
+      "bytes": 116732,
+      "sha256": "64bb2aea5c9282c4eb701537806617ae032e82457277272c5d616e60723f55a0"
+    },
+    {
+      "path": "tmp/eda_weather_power/contact_01_50.png",
+      "bytes": 237351,
+      "sha256": "69853c708e1d93426438731192bcc0b8701a5e7641332ce3e4f46c04e1fddafb"
+    },
+    {
+      "path": "tmp/eda_weather_power/contact_02_50.png",
+      "bytes": 116285,
+      "sha256": "e89c96d0ff2ad16164302d5bca68a6b451ffc44e513c82af42d489cd2fd09555"
+    },
+    {
+      "path": "tmp/eda_weather_power_weekdays/01_weekday_temperature_power.png",
+      "bytes": 355376,
+      "sha256": "e35b5edfe2804a683d77624ae3142f72ebf466062c2be5550981ed4e40a0f996"
+    },
+    {
+      "path": "tmp/eda_weather_power_weekdays/02_weekday_comparable_pairs.png",
+      "bytes": 137072,
+      "sha256": "75f93eb11f0a10100ad195c4440ee0a6c8795fd060872ad024dc02acda1cdf5f"
+    },
+    {
+      "path": "tmp/eda_weather_power_weekdays/contact_50.png",
+      "bytes": 220208,
+      "sha256": "11203fb08d59be340e13dd910e10e369ea2c35dda1eed67a80483696b115bc85"
+    },
+    {
+      "path": "tmp/eda_weather_power_weekdays/reference/03_weekday_monthly_difference.png",
+      "bytes": 63583,
+      "sha256": "7243f2a4794f4f3b3c5e41fc57d1ff9c156ea9b37d0892e979975e57358aa33f"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/01_weekday_power_distribution.png",
+      "bytes": 44148,
+      "sha256": "d6e8b30853f84e6b693a598d08b7d145aff7154c721e2c60fae7a193c7a3332c"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/02_low_power_by_hour.png",
+      "bytes": 36731,
+      "sha256": "65996fb11622b0a935838aeb8299c321e73abc4a939f591d185a085fe27915e1"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/03_low_spell_examples.png",
+      "bytes": 114320,
+      "sha256": "c37c415ba49a34128d57fa61282bdd36c8354539d905c13a09ffe9ca1a85f474"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/04_transition_clock_hours.png",
+      "bytes": 55082,
+      "sha256": "27270b7bf3cad17cb23ccd46986a911534e49e85f56989ed494360dcc4a0f403"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/contact_01_50.png",
+      "bytes": 44054,
+      "sha256": "f44f7d6311cbbc82e6da0f6d49ac8a02d6bf9863d19366ffde2f324f6ae0c3d5"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/contact_02_50.png",
+      "bytes": 103179,
+      "sha256": "a62a4436273a5a2f75aacdb3d510f6e96a01f1981ba404c5b293decc4c823bcb"
+    },
+    {
+      "path": "tmp/eda_low_power_patterns/reference/03_complete_low_spell_duration.png",
+      "bytes": 33689,
+      "sha256": "e443261a644559e3ba827435999f5a65fe8e017aec1923b0afdd45a64152af9e"
+    },
+    {
+      "path": "EDA/scripts/__pycache__/eda_weather_power.cpython-313.pyc",
+      "bytes": 35147,
+      "sha256": "3845b443b5de5b0e06bc00d40492c15bc707c4c559189e39104220f645bd22f3"
+    }
+  ]
+}

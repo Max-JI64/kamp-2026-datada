@@ -1,0 +1,21 @@
+{
+  "previous": "A01 zero-to-positive absolute change37.92 vs30.21; EDA2.5 shows within-hour patterns.",
+  "question": "Do the last observed hour slot trend and recent mean change precede next-hour mean changes after calendar and observed level adjustment?",
+  "input_time": "Hour t-1 has completely finished and all four slots/production are assumed observed; actual reporting latency is unidentified.",
+  "target": "Unrounded mean(t) minus mean(t-1), signed; never used in controls.",
+  "features": {
+    "prior_slot_trend": "last minus first slot at t-1",
+    "recent_level_delta": "mean(t-1) minus mean(t-2)"
+  },
+  "scope": "Same Jan-Aug valid241 days; exact consecutive t-2,t-1,t required; no gaps bridged.",
+  "primary": "Rank associations: raw, calendar, calendar+observed rank-level cubic+known production0/positive, then other-feature adjustment.",
+  "calendar": "Target month x hour x weekday/weekend fixed effects, adjusted scopes need >=3distinct dates per cell.",
+  "level_adjustment": "Cubic of observed rank(mean(t-1)), no target levels, no threshold or parameter search; partial association is descriptive, not a fitted future forecast.",
+  "sensitivity": "Inverse joint3-day profile frequency, same date for all3hours, leave each month out; no pvalue or causal significance.",
+  "transition": "Actual production(t) used only to split posthoc diagnostic groups; cannot be a predictor.",
+  "next_action": "If calendar-only and level-adjusted differ, diagnose scale/coupling; if conditional signal survives use as forecasting candidate, no claim of improvement.",
+  "forecast_training": false,
+  "manuscript": false,
+  "backup_access": false,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+}

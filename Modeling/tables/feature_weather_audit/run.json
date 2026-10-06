@@ -1,0 +1,123 @@
+{
+  "new_fits": 8,
+  "reused_models": 8,
+  "baseline_prediction_checks": [
+    {
+      "fold": 4,
+      "model": "B0",
+      "hours": 720,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 4,
+      "model": "B1",
+      "hours": 720,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 5,
+      "model": "B0",
+      "hours": 744,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 5,
+      "model": "B1",
+      "hours": 744,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 6,
+      "model": "B0",
+      "hours": 718,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 6,
+      "model": "B1",
+      "hours": 718,
+      "max_abs_diff": 2.842170943040401e-14
+    },
+    {
+      "fold": 7,
+      "model": "B0",
+      "hours": 1344,
+      "max_abs_diff": 5.684341886080802e-14
+    },
+    {
+      "fold": 7,
+      "model": "B1",
+      "hours": 1344,
+      "max_abs_diff": 8.526512829121202e-14
+    }
+  ],
+  "decisions": {
+    "B0": {
+      "development_gate_passed": false,
+      "overall_reduction_pct": -7.157289321563999,
+      "peak_reduction_pct": -7.630072832331574,
+      "months_nonworse": 0,
+      "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+      "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+    },
+    "B1": {
+      "development_gate_passed": false,
+      "overall_reduction_pct": -4.69490638236487,
+      "peak_reduction_pct": -0.7187017768306322,
+      "months_nonworse": 0,
+      "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+      "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+    },
+    "G1": {
+      "development_gate_passed": false,
+      "overall_reduction_pct": -7.091186069841423,
+      "peak_reduction_pct": -6.132417922180381,
+      "months_nonworse": 0,
+      "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+      "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+    }
+  },
+  "outputs_sha256": {
+    "04_B0_weather.joblib": "c65d3bcf52dab487303e370eee0ae5d21795ea9f1076c86098118297524776e6",
+    "04_B0_weather_eval.csv": "48500d985b99a837dc143354c9678587393d710893e1c9692d69d69779618e15",
+    "04_B0_weather_train.csv": "b93242ded69856fdc1a92e14a28542aa4249066e830266fab3cc8f9f3268ac7d",
+    "04_B1_weather.joblib": "4051999dacf460f97457be4a6b235d8d9e157cb6b79be498a2bc9ff27232b358",
+    "04_B1_weather_eval.csv": "f04007b35bef4c712f561b77d5b3b8b10ffb184bcac96c63eb036c44ac53cc10",
+    "04_B1_weather_train.csv": "8b0b14cc620ef98de48255c7505e3bad7f6c2d6bc8ec62880ff30ae3048b6c10",
+    "05_B0_weather.joblib": "163a4782ecd8d41ba126903605f569fc4e83e6f6dde8947c600d2bf919fb5ea6",
+    "05_B0_weather_eval.csv": "0772a0c10cec72fdfca0d790c14fc5bdd18ec3722a3468f4e0376e0515a2731c",
+    "05_B0_weather_train.csv": "abca3413a0cc47e18d52e1e6d8eb9880b11766cda3ea7403ec4f42e801fed21b",
+    "05_B1_weather.joblib": "054312930937a9bb7bfe24d996294e0b4376603129db3006e031d9097e3449b7",
+    "05_B1_weather_eval.csv": "9181ebf1321f42354ff391cb0bf4942e8aeb0619a1329ee19241cb304fedc487",
+    "05_B1_weather_train.csv": "f8f03ed6602b42ad5f5680f26257c10198eda437fbeb7e06c565659ad0774777",
+    "06_B0_weather.joblib": "0a40586ad1b28dc4890ad3fb5029348b3650f414d43bf82f4109ebd19e7d55de",
+    "06_B0_weather_eval.csv": "5f1c1c832b77131a31f1877c110479367e2a9b31fed6786b94c1dedade972c78",
+    "06_B0_weather_train.csv": "87b44ecad74b922e01a0b187ec1ae449f5a87b7cead9025e47978f76a67393a6",
+    "06_B1_weather.joblib": "5eb0c3dad80974efecd48dd05903afc9cfd5999907969c128eb7f2377aefccb8",
+    "06_B1_weather_eval.csv": "232d469180b945812be3c04a744840a92cdbf1574a90e1388d08b3522485158a",
+    "06_B1_weather_train.csv": "c19470b15fb5c517e6df1e041bcb9844577aa212b5ca12e7655cfd908c9cac3a",
+    "07_B0_weather.joblib": "5036b79fee00a1ee1daf2d979ee2f8d0de2266c61c7570fb9b0fe0fe0c157f03",
+    "07_B0_weather_eval.csv": "bcb6743b136f3dc69072e8875d05dab919d1274be1a1e1dd6f4b4206d02ef995",
+    "07_B0_weather_train.csv": "57412c543d3481b5ebe0fd790e3a9b566183ecf568a9fa2f66d5f740eb1e576e",
+    "07_B1_weather.joblib": "56f0b33c26a0057d9ffcf98c0d11037407370bfe0829c06a524ce899b4492355",
+    "07_B1_weather_eval.csv": "42c3111c8ab24d8ffb1d280761e435a3be69bf085ccb1cfd14a0b0b2f1d48de3",
+    "07_B1_weather_train.csv": "0e4d9f611939454b42a23d8803b9d7516325119a5ee3218da4e2f37d2686b27d",
+    "baseline_prediction_checks.csv": "25fdc98ef4100b11e72ef162e1464ae85c5ede4551979dd95927650ef2ff539f",
+    "contract.json": "90258e023921ae719b04c199972b0037750d252c5b5c464debeaced616faa16a",
+    "decision.json": "8f38ac451be56be02ee2ada0ccf5160353bd5c4ff27b74096616b372e5e9adca",
+    "eval_04.csv": "e4582e9ab6ed775d4cc911816221691ead2bc927280a6b1a6ecf3c857658be46",
+    "eval_05.csv": "0592a628ae4d26b6c7548eafa7cd74fc5a64abd84403e9439292446c3d1c427b",
+    "eval_06.csv": "3d597b67e221645ec47d43ce50340a8b97cdd5e37fa4a0571c495a3b1cfad36c",
+    "eval_07.csv": "bb0cc4faf9734d0001d7e669fa23085dd6967890f0b5db5c2c464a7c317f8762",
+    "explanation_jobs.json": "dbb191273891ee7c10c961f4a2fb949ac829662c1d86db9f181f9dc619100f85",
+    "metrics.csv": "90789657709f407e8e522cd4325978958a8e217953bb0e2fe4b81e2b0536e2ae",
+    "paired_weather.csv": "b70b945abfadc35c5ebb1f8a2b75f5641bd500725b304d7d7d0830d01665bd05",
+    "predictions.csv": "b92e007e3be200891bb91a344d9f02868834ca4d67f29df9bd7ac5a2f29828b5",
+    "train_04.csv": "3b1aba726b92e7586e2b3da2cc6fd14a986b3f9a6288f5f54446dd76e6b04d34",
+    "train_05.csv": "79fbf61f8f9a2207fca312f5530d15fd79e9efdba5a3f38d8cd6ab048a899e32",
+    "train_06.csv": "bcf0fecebfa0eb03aa331a973011444f737591b02ee9f024a245129d2009ecb6",
+    "train_07.csv": "b4b61a9d633f58257bf6dd153fd399034b97433d5dd57e39dc57b6ced157a2dd",
+    "weather_missing.csv": "d6915ece1349506bc4dfa2c0f492804318baa8cb35f92dfde56d45f5ea2b2239",
+    "weather_models.csv": "a23ffec1ffc2f4890586ade8d16c349b8a9cfcf11499a39fca0f9b982fdc6f7b"
+  }
+}

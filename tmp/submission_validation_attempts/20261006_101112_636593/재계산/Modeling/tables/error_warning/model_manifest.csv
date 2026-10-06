@@ -1,0 +1,7 @@
+﻿month,method,file,sha256,train_rows,calibration_rows,eval_rows,train_end
+4,Logistic,Modeling\models\error_warning\month4_Logistic.joblib,c748a4a37d11d7aacddae00de62a452c0dafc1609f0eafb2d28ebaab29268547,672,744,720,2021-02-28 23:00:00
+4,HGB,Modeling\models\error_warning\month4_HGB.joblib,18d414a019683d45bdb4392e627df1722de3717762fc0cb1cc749baf6d3ce330,672,744,720,2021-02-28 23:00:00
+5,Logistic,Modeling\models\error_warning\month5_Logistic.joblib,28e12373aff7fcafbe0f9e703beb70b4f62e14a8676bda949a60b86634ca95f1,1416,720,744,2021-03-31 23:00:00
+5,HGB,Modeling\models\error_warning\month5_HGB.joblib,87b1d553bb7118fd641f4274db83a97ea2cad88fee3ffaad78a33034eb14d1ef,1416,720,744,2021-03-31 23:00:00
+6,Logistic,Modeling\models\error_warning\month6_Logistic.joblib,86d91182b2a9dfb629b69f9d97b2fa586d1e3382b999af2313375d56008316f8,2136,744,720,2021-04-30 23:00:00
+6,HGB,Modeling\models\error_warning\month6_HGB.joblib,ae4ecc414044ed0024d2993be6a432b7587a0fefcd4b9c553294ff6a156388cf,2136,744,720,2021-04-30 23:00:00

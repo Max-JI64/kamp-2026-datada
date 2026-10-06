@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_links": 30,
+  "sections": [
+    "2.1",
+    "2.2",
+    "2.3"
+  ],
+  "images": 5,
+  "visible_image_paths": 5,
+  "manuscript_sha256": "3045BBF762A28F360BB655936DF13A25B8474A7D98A9C6776300D12F17022337",
+  "page_count_verified": false,
+  "missing_targets": []
+}

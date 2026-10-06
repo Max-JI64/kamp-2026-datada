@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "contract_sha256": "66619a08e383454fd3eb3712cbb628a84c9806044d89380b7c0d904910f91885",
+  "script_sha256": "cebd7565866b22c90c489bb2f9f0ea0242ff26ec389eab1e1c3495cd3c5759e4",
+  "new_fits": 0,
+  "scalar_routing_check": "passed",
+  "outputs_sha256": {
+    "calendar_control_detection.csv": "fc707e3df98624dbdd237be810d01e37376dbf609bb2a626d8c1759b2287f6ef",
+    "calendar_control_metrics.csv": "f876f890a0352c46b3ec8ad441c50e026162d1ba3ed47624f2a6594f207bd650",
+    "calendar_control_predictions.csv": "e4338d712f10f2de918aca8f7ac8f90652b9765ddd66f4ee1e33ffcbd8d9e68e"
+  },
+  "scope": "Posthoc control from already-seen July-August; not independent validation or a new adopted candidate"
+}

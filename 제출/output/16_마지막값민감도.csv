@@ -1,0 +1,9 @@
+﻿기간,feature,adjustment,weighting,n,days,cells,correlation
+전체,prior_last,mean_maximum,date_hour,5778,241,384,0.4092834406343708
+전체,prior_last,exact_mean,date_hour,1039,141,245,0.23561315971236654
+1~4월,prior_last,mean_maximum,date_hour,2878,120,192,0.3942084025707587
+1~4월,prior_last,exact_mean,date_hour,900,73,200,-0.009092356844104402
+5~6월,prior_last,mean_maximum,date_hour,1464,61,96,0.42968628234356704
+5~6월,prior_last,exact_mean,date_hour,53,25,17,0.31657104496620747
+7~8월,prior_last,mean_maximum,date_hour,1436,60,96,0.39007437957264895
+7~8월,prior_last,exact_mean,date_hour,86,43,28,0.38044826844619967

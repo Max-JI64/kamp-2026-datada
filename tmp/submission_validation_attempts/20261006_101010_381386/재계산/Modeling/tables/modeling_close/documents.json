@@ -1,0 +1,21 @@
+{
+  "status": "written",
+  "script_sha256": "620c6c557f033b90909d9de8425fb91e6e083e0be5434730dfc868f2ac0e15ea",
+  "format": "markdown_only",
+  "target_pages": 3,
+  "pagination_verified": false,
+  "compact_sections": 3,
+  "compact_figures": 2,
+  "structural_merges": [
+    "evaluation_and_model_selection",
+    "state_forecast_and_performance",
+    "errors_use_and_reproduction"
+  ],
+  "figure_merge": "metrics_alarms_improved_and_missed_cases",
+  "outputs_sha256": {
+    "Modeling/04_Modeling_원고.md": "1605f4d72e95158360257107cad3d56f47152b3bcdd141f8bb96f728bf023fe8",
+    "Modeling/README.md": "6cc970c62400cff00f04af955188b40532ba2985b5615771b9bda236d2274b73",
+    "Modeling/04_Modeling_3페이지용_압축본.md": "493e015bac4fcbafbf4af15ed5be0542dfbdf38567546ce9dd43e0999c2758a6"
+  },
+  "original_manuscript_sha256": "39c5a6a506f5b2f36f402e90438ce3b339ce5de9aaff83378f28c5d3e3f14646"
+}

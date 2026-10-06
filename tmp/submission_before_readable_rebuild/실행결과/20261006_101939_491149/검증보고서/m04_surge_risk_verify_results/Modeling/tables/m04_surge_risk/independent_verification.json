@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-06T10:21+09:00",
+  "run_sha256": "6c55fdc47c847254fb942c0013cb0d00acda4e5b52272c8ca3b5dc579340710e",
+  "script_sha256": "fbd0fca423348e7aa696b557b1e9977f543abb5aa11b65bd26dbfc3bd557fba2",
+  "prediction_rows": 10920,
+  "inner_rows": 32160,
+  "trials_independently_recomputed": 120,
+  "model_reload_checks": 9,
+  "policies_checked": 30,
+  "alarm_rows": 60,
+  "regression_rows": 36,
+  "normal_forecast_unchanged": true,
+  "selected_risk_channel": "B_score",
+  "no_july_august_evaluation": true
+}

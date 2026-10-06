@@ -1,0 +1,17 @@
+{
+  "version": "m03-c-v1",
+  "stage": "c",
+  "parent": "Modeling/config/m03_ab_contract.json",
+  "reason": "AB reduced primary MAE 6.738 to 6.191 and daily-maximum underprediction 11.260 to 6.987, but worsened low->above26 and low->low. M02 weekly baseline was relatively strong in June. Test whether seasonal histories explain residual errors and whether last-slot benefit remains conditional on them.",
+  "pool": "common",
+  "splits": ["dev_apr", "dev_may", "dev_jun"],
+  "targets": ["target_maximum", "target_mean"],
+  "groups": ["A", "B", "C_A", "C_B"],
+  "new_groups": ["C_A", "C_B"],
+  "comparisons": [["A", "B"], ["C_A", "C_B"], ["A", "C_A"], ["B", "C_B"]],
+  "reuse_stage": "ab",
+  "hgb_parameters": {"max_leaf_nodes": 15, "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42},
+  "selection": "Same as AB: provisional lowest pooled development MAE, within 1 percent prefer fewer inputs; monthly, maximum-hour, transition and new-profile tradeoffs must be reported. No final M05 tradeoff rule inferred from later-period results.",
+  "diagnostics": "paired changes use same rows and fixed M02 diagnostic definitions; no future states as input",
+  "prohibited": ["hyperparameter retuning", "July-August scoring", "prediction clipping", "weather input", "test-driven iteration"]
+}

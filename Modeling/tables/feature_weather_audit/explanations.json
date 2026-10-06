@@ -1,0 +1,91 @@
+{
+  "models": 10,
+  "explained_hours": 9740,
+  "shap_checks": [
+    {
+      "fold": 4,
+      "variant": "B0",
+      "hours": 720,
+      "expected_value": 103.35325160309769,
+      "max_additivity_error": 2.6290081223123707e-13
+    },
+    {
+      "fold": 4,
+      "variant": "B1",
+      "hours": 720,
+      "expected_value": 103.35317891319526,
+      "max_additivity_error": 3.730349362740526e-13
+    },
+    {
+      "fold": 5,
+      "variant": "B0",
+      "hours": 744,
+      "expected_value": 103.03285287682509,
+      "max_additivity_error": 3.694822225952521e-13
+    },
+    {
+      "fold": 5,
+      "variant": "B1",
+      "hours": 744,
+      "expected_value": 103.03259073784847,
+      "max_additivity_error": 3.765876499528531e-13
+    },
+    {
+      "fold": 6,
+      "variant": "B0",
+      "hours": 718,
+      "expected_value": 100.52484107780498,
+      "max_additivity_error": 3.979039320256561e-13
+    },
+    {
+      "fold": 6,
+      "variant": "B1",
+      "hours": 718,
+      "expected_value": 100.52494709039549,
+      "max_additivity_error": 4.263256414560601e-13
+    },
+    {
+      "fold": 7,
+      "variant": "B0",
+      "hours": 1344,
+      "expected_value": 102.58945638890846,
+      "max_additivity_error": 3.552713678800501e-13
+    },
+    {
+      "fold": 7,
+      "variant": "B0_weather",
+      "hours": 1344,
+      "expected_value": 102.58992394534735,
+      "max_additivity_error": 4.050093593832571e-13
+    },
+    {
+      "fold": 7,
+      "variant": "B1",
+      "hours": 1344,
+      "expected_value": 102.58997779710843,
+      "max_additivity_error": 4.547473508864641e-13
+    },
+    {
+      "fold": 7,
+      "variant": "B1_weather",
+      "hours": 1344,
+      "expected_value": 102.58978561526747,
+      "max_additivity_error": 2.877698079828406e-13
+    }
+  ],
+  "outputs_sha256": {
+    "shap_04_B0.csv": "ec9c377b7aca494235a07812bb80eb3487d5db3007f67afaa3272e61bbc678c7",
+    "shap_04_B1.csv": "2b90c2c349ed6c1dfb20a92d892bad6cee4915174afc0e739fe1c73be804aaf2",
+    "shap_05_B0.csv": "815dcba10b7095ae1fbacb97148e21e528dfa68710af39297752214858756983",
+    "shap_05_B1.csv": "8e9bd3a3cbee3d64ffdc3d97b9ece0a5c7cfe81f78655072a1d5924b98460022",
+    "shap_06_B0.csv": "d0ac1fff72d6348e6f7a00706aea0124208f6169892630e6ed8d465105ce1e33",
+    "shap_06_B1.csv": "a078d52c323cedadf995705913d9f0138b0dab9cb9bcdb085bfc7470cbe67c0b",
+    "shap_07_B0.csv": "288c313e4351a86b95e529d06022fb8d6e445a28a62f932c979b5a8c1a0082e4",
+    "shap_07_B0_weather.csv": "22494851fb94f7f0dbe56720603123774dfa051e30847bd208649c01857ef908",
+    "shap_07_B1.csv": "ae7666eac63facab3552b2aa58caabe88549c21c53eecdebd0cd8101b451c212",
+    "shap_07_B1_weather.csv": "2bc2bf0fbaba4702e73a4d5d1288b21b505fafaaef868740546d4ba306527ecb",
+    "shap_checks.csv": "735c9b5aa5b8e1b7cb422e1d8d4426c3f8afbdfcb06c620d1dbb95c521328a64",
+    "shap_features.csv": "3e08a3fc85bc15c8ad65e26d22a3f8448c2424072f12c7286eb594695cdb9e4d",
+    "shap_groups.csv": "cbe894e089962538e66c90645545d655d01406969ef36ca82808ab00f1d21129"
+  }
+}

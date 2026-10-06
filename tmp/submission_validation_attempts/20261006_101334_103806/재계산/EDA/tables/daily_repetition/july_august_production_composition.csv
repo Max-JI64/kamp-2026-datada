@@ -1,0 +1,13 @@
+﻿month,hour,any_positive_production_on_date,days,mean_hour_average,median_hour_average
+7,8,False,0,,
+7,10,False,0,,
+7,13,False,0,,
+7,8,True,20,185.05,187.5
+7,10,True,20,178.3,179.0
+7,13,True,20,177.6,176.0
+8,8,False,5,21.0,21.0
+8,10,False,5,22.0,22.0
+8,13,False,5,22.0,22.0
+8,8,True,17,178.47058823529412,174.0
+8,10,True,17,170.05882352941177,171.0
+8,13,True,17,174.35294117647058,174.0

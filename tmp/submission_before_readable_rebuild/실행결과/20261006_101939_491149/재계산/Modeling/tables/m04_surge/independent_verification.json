@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-05T12:46+09:00",
+  "run_sha256": "a0324c13bf4bf7950b2598b9261f12975e426541be5f84295667b72571b90d29",
+  "script_sha256": "f07fd95c58d17d187bf256ee3b7fae3cc6662c61afa6be89b7af92f1532e4179",
+  "boundary": {
+    "q95": 93.0,
+    "q90": 61.60000000000002
+  },
+  "prediction_rows": 15288,
+  "error_rows": 280,
+  "alarm_rows": 80,
+  "policies_checked": 12,
+  "april_cases_checked": 8,
+  "raw_common_hours_checked": 4176,
+  "no_fitting": true,
+  "no_july_august_evaluation": true
+}

@@ -1,0 +1,4 @@
+﻿month,true_event,alarms,prior_state_age_min,prior_state_age_max,age_above_training_max,mean_age_logit_contribution,age_largest_positive_feature
+7,1,4,0.0,49.0,0,0.5200962630558135,0
+8,0,38,180.0,227.0,38,7.669246276376917,38
+8,1,3,0.0,228.0,1,3.1716105912694825,1

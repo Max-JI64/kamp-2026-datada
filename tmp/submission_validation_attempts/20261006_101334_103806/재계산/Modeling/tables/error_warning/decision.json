@@ -1,0 +1,12 @@
+{
+  "eligible": false,
+  "gates": {
+    "AP_5percent": true,
+    "ranking_same_budget": true,
+    "online_TP_gain": true,
+    "no_more_warnings": true,
+    "warning_cap": true,
+    "monthly_TP": false,
+    "monthly_AP": true
+  }
+}

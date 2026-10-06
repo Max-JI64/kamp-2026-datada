@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T12:14+09:00",
+  "contract_sha256": "e1a4252e23ad36d16df9f1ab247bf70946a93209e7d2d773cae0389629084aa5",
+  "parent_run_sha256": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+  "script_sha256": "bf608c8f598d20b66cd09b1219d8fd5dd69d49c8e5adca53783667925167dc5a",
+  "no_new_fitting": true,
+  "no_july_august_evaluation": true,
+  "trials": 300,
+  "outputs_sha256": {
+    "classification.csv": "bd53be35045adb15a6fce67e49dd6ac69b81b3d66c881419a4219f95d9c62e29",
+    "inner_predictions.csv": "16ae2e66c4844e163afd22a8c2c0f28056cb5f45b82a2656c786f40b027a9005",
+    "metrics.csv": "b6b91eebdd1fb826362c11bf9a21ac23b3d381a427bca9f531ad04647436a8a0",
+    "predictions.csv": "fcbf2f16eef01bad704a58f1b32b43ed6ee78b67988cb27afb4f6d2e2b0d6afb",
+    "selected_configurations.json": "57afd0549e9616850f97664763f86a4f80ab063f672845c0659f3d70675816b1",
+    "selection.json": "fb97844a668bb8f9d981f6b1839a1f448f114ef09d5bd10d74190dfeac36799f",
+    "selection_metrics.csv": "f66ef34f3c443db317eb8d69035b4e1d51bf7570474155d1afede4ab866a65c5",
+    "trials.csv": "8b514a5adb9cff7ed9ef03587281dcba0478422a0ac3d1f1dfa85a2afdf72880"
+  },
+  "prediction_rows": 15288,
+  "metric_rows": 364
+}

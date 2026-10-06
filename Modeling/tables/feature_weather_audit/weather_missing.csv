@@ -1,0 +1,17 @@
+﻿fold,feature,train_missing,eval_missing,train_median
+4,lag1_temperature,0,0,9.0999999999999996
+4,lag1_wind,0,0,2.3999999999999999
+4,lag1_humidity,0,0,60
+4,lag1_rain,0,0,0
+5,lag1_temperature,0,0,10.699999999999999
+5,lag1_wind,0,0,2.3999999999999999
+5,lag1_humidity,0,0,61
+5,lag1_rain,0,0,0
+6,lag1_temperature,0,0,12.699999999999999
+6,lag1_wind,0,2,2.2000000000000002
+6,lag1_humidity,0,0,63
+6,lag1_rain,0,0,0
+7,lag1_temperature,0,0,14.6
+7,lag1_wind,2,1,2
+7,lag1_humidity,0,0,68
+7,lag1_rain,0,0,0

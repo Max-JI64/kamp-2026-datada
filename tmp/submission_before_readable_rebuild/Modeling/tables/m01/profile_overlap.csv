@@ -1,0 +1,9 @@
+﻿split,pool,eval_days,eval_profiles,overlap_days,overlap_hours,new_profile_hours
+dev_apr,core,30,15,0,0,720
+dev_apr,common,30,15,0,0,720
+dev_may,core,31,30,17,408,336
+dev_may,common,31,30,17,408,336
+dev_jun,core,30,30,28,672,48
+dev_jun,common,30,30,26,624,96
+later_jul_aug,core,60,59,0,0,1436
+later_jul_aug,common,56,55,0,0,1344

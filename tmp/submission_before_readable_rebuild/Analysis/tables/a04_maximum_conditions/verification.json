@@ -1,0 +1,19 @@
+{
+  "raw_pairs_checked": 5781,
+  "raw_triples_checked": 5778,
+  "explicit_dummy_residual_check": true,
+  "input_timestamps_precede_target": true,
+  "status": "passed",
+  "a01_matched_contrast_reproduced": true,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "df4def1b2d55acb96010962593cc62e6969e0410c37f622613cf0999f1fce1cd",
+  "outputs_sha256": {
+    "antecedent_associations.csv": "347d82cc8e901f28240e16ec4b95e06e6b1d6ad7c169278101ff538e16e0ff66",
+    "descriptive.csv": "f67ae55fe80cfc8375a9c139f1cf2742f1a9ad90602d07fb6be03f9a9523a993",
+    "matched_contrasts.csv": "12110f98bf3618b90c61a4d6738a8b2b3e0f0699661e050ebfcff777b5e8d4ed",
+    "matched_sensitivity.csv": "dcbb6e0d13ad571c7bbd10db89965c505b4b1accef6326c29255fa8a1c9ed22e",
+    "monthly_associations.csv": "b22a817ce91e3879c60ed9d17161631eaaf679c9d3c4c1d2ff2e9b9399a1c33c",
+    "observations_pairs.csv": "f822d756d6d2d5a5d8cbe5b47726adfe18584b263e804201cdc3f52901ead2fa",
+    "observations_triples.csv": "c9a4092b336d082aa13d343f7050db1fb6c6326081523ce7becaa5935d6e1c69"
+  }
+}

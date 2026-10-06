@@ -1,0 +1,68 @@
+{
+  "events": [
+    {
+      "timestamp": "2021-07-12 07:00:00",
+      "actual": 123.0,
+      "increase": 98.0,
+      "B_score": 56.08970401209643,
+      "G_score": 67.88362951857589,
+      "B_alarm": false,
+      "G_alarm": true,
+      "prior_low": true
+    },
+    {
+      "timestamp": "2021-07-19 07:00:00",
+      "actual": 119.0,
+      "increase": 96.0,
+      "B_score": 61.384649364209295,
+      "G_score": 70.82290316852318,
+      "B_alarm": true,
+      "G_alarm": true,
+      "prior_low": true
+    },
+    {
+      "timestamp": "2021-07-26 07:00:00",
+      "actual": 127.0,
+      "increase": 100.0,
+      "B_score": 45.36765290982663,
+      "G_score": 63.48379021322383,
+      "B_alarm": false,
+      "G_alarm": true,
+      "prior_low": true
+    },
+    {
+      "timestamp": "2021-08-09 08:00:00",
+      "actual": 215.0,
+      "increase": 103.0,
+      "B_score": 57.88705311200064,
+      "G_score": 57.88705311200064,
+      "B_alarm": true,
+      "G_alarm": false,
+      "prior_low": false
+    },
+    {
+      "timestamp": "2021-08-16 07:00:00",
+      "actual": 122.0,
+      "increase": 96.0,
+      "B_score": 42.896866514068265,
+      "G_score": 41.44961016565384,
+      "B_alarm": false,
+      "G_alarm": false,
+      "prior_low": true
+    },
+    {
+      "timestamp": "2021-08-30 08:00:00",
+      "actual": 183.0,
+      "increase": 103.0,
+      "B_score": 104.12801632568107,
+      "G_score": 104.12801632568107,
+      "B_alarm": true,
+      "G_alarm": true,
+      "prior_low": false
+    }
+  ],
+  "overall_reduction_percent": 0.9221285786536693,
+  "peak_MAE_change_percent": 3.193228852829355,
+  "baseline_reduction_percent": 47.77312608094376,
+  "no_test_based_change": true
+}

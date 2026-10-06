@@ -1,0 +1,7 @@
+{
+  "prior_evidence": "B0/B1 weather development MAE worsened; fixed later B1 weather alarm MAE improved. Isolate the applied 7-hour effect without weather-changing B0.",
+  "method": "Reuse all frozen predictions and no-age alarm; select B1_weather only at existing alarms, B0 without weather otherwise. No fitting, new thresholds, or candidate adoption.",
+  "predictions_sha256": "b92e007e3be200891bb91a344d9f02868834ca4d67f29df9bd7ac5a2f29828b5",
+  "script_sha256": "67529bbd333df137ae010fae419c02badb7803ebc52f429d6b0a9a73ccbda746",
+  "scope": "Same development and already-observed follow-up; diagnostic arithmetic only."
+}

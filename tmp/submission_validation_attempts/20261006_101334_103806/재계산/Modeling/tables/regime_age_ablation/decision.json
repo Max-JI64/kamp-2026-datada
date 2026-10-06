@@ -1,0 +1,20 @@
+{
+  "development": {
+    "classification_passed": true,
+    "routing_passed": true,
+    "start_mae_reduction": 0.1377996577648939,
+    "under_reduction": 0.10813427572539469,
+    "overall_mae_change": -0.002022037006237598,
+    "daily_peak_mae_change": -0.0010747628922946895
+  },
+  "followup_executed": true,
+  "scope": "Hypothesis selected after observing S05. Development and follow-up are exploratory; no new independent test.",
+  "followup": {
+    "classification_passed": false,
+    "routing_passed": true,
+    "start_mae_reduction": 0.091400342826923,
+    "under_reduction": 0.15847596132369435,
+    "overall_mae_change": -0.0027962666633742916,
+    "daily_peak_mae_change": -0.04591271774965411
+  }
+}

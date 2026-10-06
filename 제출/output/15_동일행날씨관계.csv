@@ -1,0 +1,9 @@
+﻿variable,adjustment,weighting,n,days,correlation
+기온,raw,date_hour,4102,171,0.2265244966444948
+기온,joint,date_hour,4102,171,-0.004333600010135375
+풍속,raw,date_hour,4102,171,0.19463472463600187
+풍속,joint,date_hour,4102,171,0.04552232580941073
+습도,raw,date_hour,4102,171,-0.10244667403713903
+습도,joint,date_hour,4102,171,0.09989275617081542
+강수량,raw,date_hour,4102,171,0.057304818436021386
+강수량,joint,date_hour,4102,171,-0.06041012081987905

@@ -1,0 +1,15 @@
+{
+  "boundary_primary": 93.0,
+  "boundary_sensitivity": 61.60000000000002,
+  "calibration_hours": 576,
+  "calibration_positive_hours": 233,
+  "calibration_first": "2021-01-08 00:00:00",
+  "calibration_last": "2021-01-31 23:00:00",
+  "development_surges": 8,
+  "april_old_cases": 8,
+  "april_old_cases_above_gate": 0,
+  "april_old_rank_min": 9,
+  "april_old_rank_max": 34,
+  "no_fitting": true,
+  "no_july_august_evaluation": true
+}

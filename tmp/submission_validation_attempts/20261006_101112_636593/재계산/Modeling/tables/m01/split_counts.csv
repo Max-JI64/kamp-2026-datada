@@ -1,0 +1,9 @@
+﻿split,role,pool,train_hours,eval_hours,train_dates,eval_dates,eval_available_target_hours,eval_excluded_hours,complete_eval_days,incomplete_eval_days,daily_maximum_eval_hours
+dev_apr,development,core,2158,720,90,30,720,0,30,0,45
+dev_apr,development,common,1992,720,83,30,720,0,30,0,45
+dev_may,development,core,2878,744,120,31,744,0,31,0,53
+dev_may,development,common,2712,744,113,31,744,0,31,0,53
+dev_jun,development,core,3622,720,151,30,720,0,30,0,39
+dev_jun,development,common,3456,720,144,30,720,0,30,0,39
+later_jul_aug,later evaluation after development freeze; already observed period,core,4342,1436,181,60,1440,4,58,2,80
+later_jul_aug,later evaluation after development freeze; already observed period,common,4176,1344,174,56,1440,96,56,4,77

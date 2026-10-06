@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "verification_type": "Node DOM/canvas execution; actual browser visual rendering unverified",
+  "layout_viewport_checks": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "fitted": [
+        1920,
+        1080
+      ],
+      "scale": 1.2
+    },
+    {
+      "viewport": [
+        1600,
+        900
+      ],
+      "fitted": [
+        1600,
+        900
+      ],
+      "scale": 1
+    },
+    {
+      "viewport": [
+        1440,
+        810
+      ],
+      "fitted": [
+        1440,
+        810
+      ],
+      "scale": 0.9
+    },
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "fitted": [
+        1365.3333333333335,
+        768
+      ],
+      "scale": 0.8533333333333334
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "fitted": [
+        1280,
+        720
+      ],
+      "scale": 0.8
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "fitted": [
+        1024,
+        576
+      ],
+      "scale": 0.64
+    }
+  ],
+  "observations": 24480,
+  "hourly_forecasts": 6120,
+  "publication": {
+    "n": 24480,
+    "missing": 0,
+    "modes": {
+      "warmup": 11,
+      "reference": 12,
+      "backcast": 17368,
+      "official": 5376,
+      "extension": 1713
+    }
+  },
+  "checks": [
+    "Jan1 start and initial reference",
+    "full period including September",
+    "midnight continuous history and playback",
+    "gap preserved as boundary without fabricated observation",
+    "hour-start publication",
+    "partial actual maximum withheld",
+    "selective B1 improvement and exact warning",
+    "experimental sustained down scene",
+    "zero value",
+    "controls and final stop",
+    "finite drawing at 1320/768/366px",
+    "no external runtime/network"
+  ],
+  "official_prediction_checks": 1344
+}

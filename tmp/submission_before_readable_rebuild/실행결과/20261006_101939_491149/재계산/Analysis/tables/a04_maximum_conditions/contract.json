@@ -1,0 +1,28 @@
+{
+  "previous": "3.1 matched absolute mean-change37.92vs30.21;3.2 power-change association+.305 but power forecast improvement unstable;3.3 weather weak.",
+  "question": "Are production transitions high maximum conditions, does mean conceal maximum differences, and which observed power features precede next-hour maximum?",
+  "outcome": "Maximum of the four15min recorded values in next fully observed hour, continuous; mean and maximum-minus-mean for interpretation.",
+  "period": "Normal Jan-Aug241days; exact1h5781pairs and exact2h5778triples; all zeros/extremes retained.",
+  "comparison": "Same target month-hour-weekday/weekend, each production group>=2dates, common pooled-hour weights.",
+  "signals": "Available at completed t-1; raw and calendar+known production, then observed prior mean rank cubic; never control/input target mean or future production.",
+  "antecedents": [
+    "past_level",
+    "prior_maximum",
+    "prior_last",
+    "prior_slot_trend",
+    "prior_last_above_mean",
+    "prior_maximum_excess",
+    "prior_range",
+    "recent_level_delta"
+  ],
+  "outcomes": [
+    "target_maximum",
+    "level",
+    "target_excess"
+  ],
+  "sensitivity": "Daily-array inverse-frequency, same-day pairs, month omission; week-resampling800 exploratory ranges for main matched contrasts.",
+  "decision": "Separate absolute change from maximum level; if conditional shape signal weak or monthly heterogeneous diagnose observed-level and target-gap distinction, no favorable row or threshold search.",
+  "boundaries": "Descriptive rank associations only; no model training, forecast scoring, peak classification, oracle maximum reconstruction, manuscript, backup.",
+  "zero_mean": "Zero means retained for absolute/maximum metrics; only relative excess is undefined for zero denominator and omitted metric-wise with count.",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+}

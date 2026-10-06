@@ -1,0 +1,11 @@
+﻿split,model_a,model_b,inner_residual_correlation
+dev_apr,HGB,XGBoost,0.9451429371763703
+dev_apr,HGB,LightGBM,0.9160392031002622
+dev_apr,HGB,CatBoost,0.8666590447837245
+dev_apr,HGB,ExtraTrees,0.9018505654607968
+dev_apr,XGBoost,LightGBM,0.9324796840538576
+dev_apr,XGBoost,CatBoost,0.935247986144948
+dev_apr,XGBoost,ExtraTrees,0.9184384393128159
+dev_apr,LightGBM,CatBoost,0.9302012661125978
+dev_apr,LightGBM,ExtraTrees,0.8487174785242693
+dev_apr,CatBoost,ExtraTrees,0.8685702752249986

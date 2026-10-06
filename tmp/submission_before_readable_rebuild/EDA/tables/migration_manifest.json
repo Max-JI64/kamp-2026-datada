@@ -1,0 +1,222 @@
+[
+  {
+    "source": "report/10.02_001_데이터_수록내용_선별.md",
+    "target": "EDA/10.02_001_데이터_수록내용_선별.md",
+    "original_sha256": "1d87e9348b4fdd627bfc5acec3b680e99a17ceee969daee65c21c89ef9f2e1e3"
+  },
+  {
+    "source": "report/10.02_002_EDA_새원고.md",
+    "target": "EDA/10.02_002_EDA_새원고.md",
+    "original_sha256": "87a674e5468791bf324ae65165a46b4d25f88e654ee45c18bf90a7a0237fe09c"
+  },
+  {
+    "source": "report/EDA/scripts/eda_daily_pattern.py",
+    "target": "EDA/scripts/eda_daily_pattern.py",
+    "original_sha256": "81b3a6812dbb27b48fdf294c74bc3260870f1ebd3cee615cb6ac0ad73e97b206"
+  },
+  {
+    "source": "report/EDA/scripts/eda_variable_relations.py",
+    "target": "EDA/scripts/eda_variable_relations.py",
+    "original_sha256": "0d2c3083493903a96542a616ee8ce5ae62681df70c90969f5d2263aff49b0cd1"
+  },
+  {
+    "source": "report/EDA/scripts/eda_figures.py",
+    "target": "EDA/scripts/eda_figures.py",
+    "original_sha256": "0e0ec9294bda2f14de93cf7a24a0a7a786d002367477440ccb8f220b37f0c0e1"
+  },
+  {
+    "source": "report/EDA/scripts/eda_daily_repetition.py",
+    "target": "EDA/scripts/eda_daily_repetition.py",
+    "original_sha256": "48d747fe10ab68adb81ec2164413660f7830d9130a980353f5f603d3056ec54f"
+  },
+  {
+    "source": "report/EDA/scripts/plot_daily_repetition_simple.py",
+    "target": "EDA/scripts/plot_daily_repetition_simple.py",
+    "original_sha256": "2789655b3ed0767677976b71eafb3a2dd7f045f5a24456b5a49fce794e9a2ff0"
+  },
+  {
+    "source": "report/EDA/scripts/verify_monthly_power_heatmap.py",
+    "target": "EDA/scripts/verify_monthly_power_heatmap.py",
+    "original_sha256": "3dd5e81774599cc2b3f03d5a41548a77bea956f5779ca08fd2dc0c0a0afe534c"
+  },
+  {
+    "source": "report/EDA/scripts/plot_monthly_power_heatmap.py",
+    "target": "EDA/scripts/plot_monthly_power_heatmap.py",
+    "original_sha256": "88e094b56487c576ca772807d4987ce72216637faf374e8f1aa92e2121f934da"
+  },
+  {
+    "source": "report/EDA/scripts/eda_analysis.py",
+    "target": "EDA/scripts/data_overview.py",
+    "original_sha256": "b4ea59ff8ee47ac5f459268280cf74e8b7b6933457db9d41e3e745e3b042e3bf"
+  },
+  {
+    "source": "report/figures/eda/restart_01_daily_pattern_clean.png",
+    "target": "EDA/figures/restart_01_daily_pattern_clean.png",
+    "original_sha256": "a2ef6ccb1ba0bd8f96cc00392f53ab983f144837924d7f8ed73ea1a041f68ec7"
+  },
+  {
+    "source": "report/figures/eda/restart_02_variable_relations.png",
+    "target": "EDA/figures/restart_02_variable_relations.png",
+    "original_sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
+  },
+  {
+    "source": "report/figures/eda/restart_02_monthly_relations.png",
+    "target": "EDA/figures/restart_02_monthly_relations.png",
+    "original_sha256": "d41f7040ddc1342fba88b444a7f0f10af2bad3b9c1480a337169c1f7702fb233"
+  },
+  {
+    "source": "report/EDA/figures/daily_repetition/04_daily_pattern_simple.png",
+    "target": "EDA/figures/daily_repetition/04_daily_pattern_simple.png",
+    "original_sha256": "a2f65aed303dbb204db1e1256271ae5248387ffda9eaecbf5bc49bfe3feecb2e"
+  },
+  {
+    "source": "report/EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png",
+    "target": "EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png",
+    "original_sha256": "aed2e0175c9a6abfd28caf108b0dd6882b1da8b0d9c4483bb9fbf34e1b7b1725"
+  },
+  {
+    "source": "report/EDA/tables/hourly_overview.csv",
+    "target": "EDA/tables/hourly_overview.csv",
+    "original_sha256": "1ba744075b221383a705c628845a8603855a969ac9fbf25c52f1909cfe4140fd"
+  },
+  {
+    "source": "report/EDA/tables/daily_pattern_restart.csv",
+    "target": "EDA/tables/daily_pattern_restart.csv",
+    "original_sha256": "59f650bf4a6c09d07469fa6928a74215b136476f41e648a5fbbbfb6777cac50b"
+  },
+  {
+    "source": "report/EDA/tables/daily_pattern_restart_manifest.json",
+    "target": "EDA/tables/daily_pattern_restart_manifest.json",
+    "original_sha256": "b6d8cae3b9a5ed19fe3ee3f31d567bd5ed0f43bde4cc2f5e8125b67005372d4e"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_distribution.csv",
+    "target": "EDA/tables/restart_relations_distribution.csv",
+    "original_sha256": "b3200ddba1a6d29cca0069fd31ec42f4a9da1a8188da4d633349d8c0b9858a2b"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_sensitivity.csv",
+    "target": "EDA/tables/restart_relations_sensitivity.csv",
+    "original_sha256": "e430974f7e85fa504dbbc7ff21c5289656e1d155aed6cd54c443f518d1d99a36"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_bins.csv",
+    "target": "EDA/tables/restart_relations_bins.csv",
+    "original_sha256": "089110ebd8ba5437bfb97b534c551464237d1d6f78502540c407bcc1bf728dec"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_spearman.csv",
+    "target": "EDA/tables/restart_relations_spearman.csv",
+    "original_sha256": "5b38827f0922269d848062562a2e3921a5fb2a8d7a68a26ef31d2f4d8f5721cc"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_monthly.csv",
+    "target": "EDA/tables/restart_relations_monthly.csv",
+    "original_sha256": "a9fccd364e806b92e72ff790720fa137e7e43b5b429556d4c25a311dc1009cc4"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_august_context.csv",
+    "target": "EDA/tables/restart_relations_august_context.csv",
+    "original_sha256": "74ef2f68e00ab634fc3a22578661cf7cb60fdb99bd108deda6ac3901c4c083d2"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_august_week.csv",
+    "target": "EDA/tables/restart_relations_august_week.csv",
+    "original_sha256": "51a48da87525f00ba6b869a24e988da83fa09fa6ef9612f43bb106b0be3d6b49"
+  },
+  {
+    "source": "report/EDA/tables/restart_relations_manifest.json",
+    "target": "EDA/tables/restart_relations_manifest.json",
+    "original_sha256": "60ee9855fa1d7ed8983efec3add5aa6399345a386754233856fa499cd40aaa66"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/daily_values.csv",
+    "target": "EDA/tables/daily_repetition/daily_values.csv",
+    "original_sha256": "8e3dee6d3ff377d5a8d7ccb9a84e40ce77b7d697ef36f255c70d6359b9fdb885"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/hourly_matrix.csv",
+    "target": "EDA/tables/daily_repetition/hourly_matrix.csv",
+    "original_sha256": "e68c074dc8e3dfb2cebe3aa13011431d9e1e319b265093924d68cdeb315c49bc"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/hourly_distribution.csv",
+    "target": "EDA/tables/daily_repetition/hourly_distribution.csv",
+    "original_sha256": "de7264d94302a76d72e6c9b2ddabc024c7ca149f3f0ab3c30b968460b3d45a03"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/group_summary.csv",
+    "target": "EDA/tables/daily_repetition/group_summary.csv",
+    "original_sha256": "9406fa2922b4c5056d52638e3daa27a45b894c564de8fd50b2e62c522a3f8b73"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/monthly_summary.csv",
+    "target": "EDA/tables/daily_repetition/monthly_summary.csv",
+    "original_sha256": "68e1b28da61d9cec0e774aa60b1c55b41c2e044b21c5eeb72e97261762511187"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/sign_combinations.csv",
+    "target": "EDA/tables/daily_repetition/sign_combinations.csv",
+    "original_sha256": "af0c981d92f81a3b6885d7771eebb58f8d58c2f7b6b779d6cfe40d873925875a"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/profile_sensitivity.csv",
+    "target": "EDA/tables/daily_repetition/profile_sensitivity.csv",
+    "original_sha256": "f7c6d996f79101d3743def4800b11871b5ccf2389ce5eab9fc94dd3342f1743e"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/production_context.csv",
+    "target": "EDA/tables/daily_repetition/production_context.csv",
+    "original_sha256": "cac03b2493935272e9e707d9c5eaf32a6e56a12f763c563711c930bce1b204b5"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/summary.json",
+    "target": "EDA/tables/daily_repetition/summary.json",
+    "original_sha256": "aacb0e4a3d221ccbeafbcb79d302de96ebfa4338620b06a4415eeb92f256100c"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/plan.json",
+    "target": "EDA/tables/daily_repetition/plan.json",
+    "original_sha256": "4d6bff2b1ff71845c721ba5f800047684ae406f6bbab60f3a8fa4ce9553c5fe7"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/simple_figure_manifest.json",
+    "target": "EDA/tables/daily_repetition/simple_figure_manifest.json",
+    "original_sha256": "a7bc5b4a4d15fd740bc43134f8e028846fe240bd27e45356f6e527f67b9a4866"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/monthly_hourly_distribution.csv",
+    "target": "EDA/tables/daily_repetition/monthly_hourly_distribution.csv",
+    "original_sha256": "d39d0a9a141b5fdb7948178f33fb36b5e79fafdc49f05e3feec26b508e9be5a4"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/independent_monthly_cells.csv",
+    "target": "EDA/tables/daily_repetition/independent_monthly_cells.csv",
+    "original_sha256": "79641c17149ab52add85658b67829151fd70998d2d6f00158b4cb02d73420618"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/july_august_levels.csv",
+    "target": "EDA/tables/daily_repetition/july_august_levels.csv",
+    "original_sha256": "de99ba44a223c6e5375ecfbfdcb9fc08fb8e094a958d353165651c9b82f08b44"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/july_august_hour_examples.csv",
+    "target": "EDA/tables/daily_repetition/july_august_hour_examples.csv",
+    "original_sha256": "87fa0675d67f30593b3fd143a010b6427b51934bd6399173487ab33389810613"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/july_august_production_composition.csv",
+    "target": "EDA/tables/daily_repetition/july_august_production_composition.csv",
+    "original_sha256": "dcf45deab5821cb910ae737d7affff88de71e3a14c46f020c585bc73914fda61"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/independent_heatmap_verification.json",
+    "target": "EDA/tables/daily_repetition/independent_heatmap_verification.json",
+    "original_sha256": "e808a901ebd4a67df2fe7fca69ce3fa1a7643b9fb4722bd638f2ee2419eacebb"
+  },
+  {
+    "source": "report/EDA/tables/daily_repetition/monthly_mean_heatmap_manifest.json",
+    "target": "EDA/tables/daily_repetition/monthly_mean_heatmap_manifest.json",
+    "original_sha256": "6663a45b87b6908eefaca9427ca4d58ed11f28ab8038cd6f83f17b0e1e618057"
+  }
+]

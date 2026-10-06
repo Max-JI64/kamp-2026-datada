@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source_observations_unchanged": true,
+  "support_hours": 1039,
+  "total_hours": 5778,
+  "script_sha256": "f9a914a589abd9249ec98fc6d274e232a8d83535461402140f241b064ff574ea",
+  "outputs_sha256": {
+    "exact_mean_support": "f4152de018f36ab37e77da168eafd98beafef266d815b399c150a539a52e476e",
+    "support_associations": "71c993b191a96b146371e4b76f9c070e0a3b80cdf5adf4e66542ea4b7f29d4b8"
+  }
+}

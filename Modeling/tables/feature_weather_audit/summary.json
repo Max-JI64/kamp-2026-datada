@@ -1,0 +1,1877 @@
+{
+  "top_features": [
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_last",
+      "hours": 2182,
+      "mean_abs_shap": 47.189859696983646,
+      "mean_signed_shap": 2.0676653825644125,
+      "rank": 1
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "hour_cos",
+      "hours": 2182,
+      "mean_abs_shap": 14.129814850987415,
+      "mean_signed_shap": -0.5123667476214352,
+      "rank": 2
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_maximum",
+      "hours": 2182,
+      "mean_abs_shap": 1.5953671190668692,
+      "mean_signed_shap": -0.9626160070866754,
+      "rank": 3
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "hour_sin",
+      "hours": 2182,
+      "mean_abs_shap": 1.4686960130709024,
+      "mean_signed_shap": 0.07137652954475128,
+      "rank": 4
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_mean",
+      "hours": 2182,
+      "mean_abs_shap": 1.0184434290760978,
+      "mean_signed_shap": -0.1023908225280644,
+      "rank": 5
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag2_mean",
+      "hours": 2182,
+      "mean_abs_shap": 0.8905506003806677,
+      "mean_signed_shap": 0.008750281987280789,
+      "rank": 6
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "lag1_last",
+      "hours": 2182,
+      "mean_abs_shap": 45.71147650052102,
+      "mean_signed_shap": 2.6429347831447396,
+      "rank": 1
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "hour_cos",
+      "hours": 2182,
+      "mean_abs_shap": 13.67352643132758,
+      "mean_signed_shap": -0.3416081959743293,
+      "rank": 2
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "lag1_maximum",
+      "hours": 2182,
+      "mean_abs_shap": 1.5446623787326028,
+      "mean_signed_shap": -0.6834231827185998,
+      "rank": 3
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "hour_sin",
+      "hours": 2182,
+      "mean_abs_shap": 1.2027353430924215,
+      "mean_signed_shap": 0.1339255690465459,
+      "rank": 4
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "prior_delta",
+      "hours": 2182,
+      "mean_abs_shap": 0.9279191760882447,
+      "mean_signed_shap": -0.22180573403182446,
+      "rank": 5
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "prior_last_minus_mean",
+      "hours": 2182,
+      "mean_abs_shap": 0.9267729227953357,
+      "mean_signed_shap": -0.12106083700441625,
+      "rank": 6
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_last",
+      "hours": 1344,
+      "mean_abs_shap": 53.44144968340366,
+      "mean_signed_shap": -9.605805005461837,
+      "rank": 1
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "hour_cos",
+      "hours": 1344,
+      "mean_abs_shap": 14.23745603677056,
+      "mean_signed_shap": -0.3511210289417374,
+      "rank": 2
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_maximum",
+      "hours": 1344,
+      "mean_abs_shap": 1.5419914888414172,
+      "mean_signed_shap": 0.1857404328070991,
+      "rank": 3
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "hour_sin",
+      "hours": 1344,
+      "mean_abs_shap": 1.36126824757098,
+      "mean_signed_shap": 0.1660970225860129,
+      "rank": 4
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag1_mean",
+      "hours": 1344,
+      "mean_abs_shap": 1.0094425298182084,
+      "mean_signed_shap": 0.4818756143326807,
+      "rank": 5
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "feature": "lag2_mean",
+      "hours": 1344,
+      "mean_abs_shap": 0.7970517362850263,
+      "mean_signed_shap": 0.4311487194081644,
+      "rank": 6
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "lag1_last",
+      "hours": 1344,
+      "mean_abs_shap": 53.41594293902595,
+      "mean_signed_shap": -9.742707507225209,
+      "rank": 1
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "hour_cos",
+      "hours": 1344,
+      "mean_abs_shap": 14.314308023493217,
+      "mean_signed_shap": -0.3489521020259478,
+      "rank": 2
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "lag1_maximum",
+      "hours": 1344,
+      "mean_abs_shap": 1.5726418915945863,
+      "mean_signed_shap": 0.1666659873453812,
+      "rank": 3
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "hour_sin",
+      "hours": 1344,
+      "mean_abs_shap": 1.2874438448607084,
+      "mean_signed_shap": 0.1434433079249692,
+      "rank": 4
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "lag1_mean",
+      "hours": 1344,
+      "mean_abs_shap": 1.0453215491879952,
+      "mean_signed_shap": 0.5416534363846585,
+      "rank": 5
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "feature": "lag2_mean",
+      "hours": 1344,
+      "mean_abs_shap": 0.7391270204189796,
+      "mean_signed_shap": 0.4248295567838353,
+      "rank": 6
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "lag1_last",
+      "hours": 1344,
+      "mean_abs_shap": 51.3433566377084,
+      "mean_signed_shap": -8.324668433545929,
+      "rank": 1
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "hour_cos",
+      "hours": 1344,
+      "mean_abs_shap": 13.656847034257876,
+      "mean_signed_shap": -0.3381357368161721,
+      "rank": 2
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "prior_state_age",
+      "hours": 1344,
+      "mean_abs_shap": 1.4990670731488671,
+      "mean_signed_shap": 1.259469991473683,
+      "rank": 3
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "lag1_maximum",
+      "hours": 1344,
+      "mean_abs_shap": 1.3828252162116652,
+      "mean_signed_shap": -0.0086012624407395,
+      "rank": 4
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "hour_sin",
+      "hours": 1344,
+      "mean_abs_shap": 1.3460360126008355,
+      "mean_signed_shap": 0.1568244834009623,
+      "rank": 5
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "feature": "past_median6",
+      "hours": 1344,
+      "mean_abs_shap": 1.0677710823542348,
+      "mean_signed_shap": 0.1570445880492264,
+      "rank": 6
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "lag1_last",
+      "hours": 1344,
+      "mean_abs_shap": 51.221864144475205,
+      "mean_signed_shap": -8.441134282696716,
+      "rank": 1
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "hour_cos",
+      "hours": 1344,
+      "mean_abs_shap": 13.729673171714802,
+      "mean_signed_shap": -0.3246405621767508,
+      "rank": 2
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "lag1_maximum",
+      "hours": 1344,
+      "mean_abs_shap": 1.470894428493034,
+      "mean_signed_shap": -0.1279018553163283,
+      "rank": 3
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "prior_state_age",
+      "hours": 1344,
+      "mean_abs_shap": 1.3741733023384295,
+      "mean_signed_shap": 1.164367649090803,
+      "rank": 4
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "hour_sin",
+      "hours": 1344,
+      "mean_abs_shap": 1.373747416577077,
+      "mean_signed_shap": 0.1805299316596281,
+      "rank": 5
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "feature": "past_median6",
+      "hours": 1344,
+      "mean_abs_shap": 1.2086641599964285,
+      "mean_signed_shap": 0.1451257066571003,
+      "rank": 6
+    }
+  ],
+  "groups": [
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 2182,
+      "mean_abs_group_shap": 14.451189356836244,
+      "mean_signed_group_shap": -1.1318998287827262
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "power",
+      "hours": 2182,
+      "mean_abs_group_shap": 46.82208965619992,
+      "mean_signed_group_shap": 0.8797969647143072
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "production",
+      "hours": 2182,
+      "mean_abs_group_shap": 0.41028457358046866,
+      "mean_signed_group_shap": -0.008476380611039058
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 2182,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 2182,
+      "mean_abs_group_shap": 13.794358621017583,
+      "mean_signed_group_shap": -1.0786139658445424
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "power",
+      "hours": 2182,
+      "mean_abs_group_shap": 46.97419043591244,
+      "mean_signed_group_shap": 0.9703102957610912
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "production",
+      "hours": 2182,
+      "mean_abs_group_shap": 0.3237191780272198,
+      "mean_signed_group_shap": 0.04024998109069607
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "state",
+      "hours": 2182,
+      "mean_abs_group_shap": 0.7968196304237684,
+      "mean_signed_group_shap": 0.09852552612965866
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 18,
+      "mean_abs_group_shap": 37.367173570772806,
+      "mean_signed_group_shap": 37.367173570772806
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "power",
+      "hours": 18,
+      "mean_abs_group_shap": 30.619458267369687,
+      "mean_signed_group_shap": 30.619458267369687
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "production",
+      "hours": 18,
+      "mean_abs_group_shap": 0.8136955090022192,
+      "mean_signed_group_shap": 0.28162702539826284
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 18,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 18,
+      "mean_abs_group_shap": 31.65283293240293,
+      "mean_signed_group_shap": 31.65283293240293
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "power",
+      "hours": 18,
+      "mean_abs_group_shap": 34.30771432536808,
+      "mean_signed_group_shap": 34.30771432536808
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "production",
+      "hours": 18,
+      "mean_abs_group_shap": 0.6139007493618869,
+      "mean_signed_group_shap": 0.339443442689247
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "state",
+      "hours": 18,
+      "mean_abs_group_shap": 2.355185957431976,
+      "mean_signed_group_shap": 1.860911969383174
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 12,
+      "mean_abs_group_shap": 41.21709472287068,
+      "mean_signed_group_shap": 41.21709472287068
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "power",
+      "hours": 12,
+      "mean_abs_group_shap": 38.0090726082469,
+      "mean_signed_group_shap": 38.0090726082469
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "production",
+      "hours": 12,
+      "mean_abs_group_shap": 0.45147336050505854,
+      "mean_signed_group_shap": 0.45147336050505854
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 12,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 12,
+      "mean_abs_group_shap": 36.27462318798586,
+      "mean_signed_group_shap": 36.27462318798586
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "power",
+      "hours": 12,
+      "mean_abs_group_shap": 41.051823040471675,
+      "mean_signed_group_shap": 41.051823040471675
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "production",
+      "hours": 12,
+      "mean_abs_group_shap": 0.6118748725452265,
+      "mean_signed_group_shap": 0.5938415448260335
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "state",
+      "hours": 12,
+      "mean_abs_group_shap": 2.6017499551752103,
+      "mean_signed_group_shap": 2.103843834507707
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_abs_group_shap": 14.711964714973973,
+      "mean_signed_group_shap": 0.004381957967365
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "power",
+      "hours": 1344,
+      "mean_abs_group_shap": 54.45339489950594,
+      "mean_signed_group_shap": -8.442142260176835
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "production",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.4620345248227028,
+      "mean_signed_group_shap": -0.029877885253530696
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_abs_group_shap": 14.796655368394848,
+      "mean_signed_group_shap": -0.0267727837337842
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "power",
+      "hours": 1344,
+      "mean_abs_group_shap": 54.3539783230904,
+      "mean_signed_group_shap": -8.51059228002928
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "production",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.4075013554547023,
+      "mean_signed_group_shap": 0.013894833831302997
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "weather",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.2931473376893528,
+      "mean_signed_group_shap": 0.1580336823499004
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_abs_group_shap": 14.048783776464017,
+      "mean_signed_group_shap": -0.1802416091721908
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "power",
+      "hours": 1344,
+      "mean_abs_group_shap": 53.78887905977359,
+      "mean_signed_group_shap": -7.629927309856337
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "production",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.5997606361984233,
+      "mean_signed_group_shap": -0.1360926530231901
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "state",
+      "hours": 1344,
+      "mean_abs_group_shap": 1.4990670731488671,
+      "mean_signed_group_shap": 1.259469991473683
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "availability",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_abs_group_shap": 14.10783019597411,
+      "mean_signed_group_shap": -0.1998840322766709
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "power",
+      "hours": 1344,
+      "mean_abs_group_shap": 53.83550548373952,
+      "mean_signed_group_shap": -7.752952469289063
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "production",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.5271370311673264,
+      "mean_signed_group_shap": -0.0902230623695147
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "state",
+      "hours": 1344,
+      "mean_abs_group_shap": 1.3741733023384295,
+      "mean_signed_group_shap": 1.164367649090803
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "weather",
+      "hours": 1344,
+      "mean_abs_group_shap": 0.2311525910078013,
+      "mean_signed_group_shap": 0.1086779834260759
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 13,
+      "mean_abs_group_shap": 36.564334517842155,
+      "mean_signed_group_shap": 36.564334517842155
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "power",
+      "hours": 13,
+      "mean_abs_group_shap": 42.018279229988806,
+      "mean_signed_group_shap": 42.018279229988806
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0",
+      "group": "production",
+      "hours": 13,
+      "mean_abs_group_shap": 0.2574855858970631,
+      "mean_signed_group_shap": 0.2574855858970631
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0_weather",
+      "group": "calendar",
+      "hours": 13,
+      "mean_abs_group_shap": 36.51126499170269,
+      "mean_signed_group_shap": 36.51126499170269
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0_weather",
+      "group": "power",
+      "hours": 13,
+      "mean_abs_group_shap": 42.38246856596456,
+      "mean_signed_group_shap": 42.38246856596456
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0_weather",
+      "group": "production",
+      "hours": 13,
+      "mean_abs_group_shap": 0.20593490592216573,
+      "mean_signed_group_shap": 0.20593490592216573
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B0_weather",
+      "group": "weather",
+      "hours": 13,
+      "mean_abs_group_shap": 0.3748099401677684,
+      "mean_signed_group_shap": -0.0597013921603882
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 13,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 13,
+      "mean_abs_group_shap": 31.846947076072357,
+      "mean_signed_group_shap": 31.846947076072357
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "power",
+      "hours": 13,
+      "mean_abs_group_shap": 49.03397363468733,
+      "mean_signed_group_shap": 49.03397363468733
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "production",
+      "hours": 13,
+      "mean_abs_group_shap": 0.2105565913657309,
+      "mean_signed_group_shap": 0.1525846630416603
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1",
+      "group": "state",
+      "hours": 13,
+      "mean_abs_group_shap": 2.0134617358267444,
+      "mean_signed_group_shap": 1.5533640584216002
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "availability",
+      "hours": 13,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "calendar",
+      "hours": 13,
+      "mean_abs_group_shap": 31.97465353986353,
+      "mean_signed_group_shap": 31.97465353986353
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "power",
+      "hours": 13,
+      "mean_abs_group_shap": 49.051382285511984,
+      "mean_signed_group_shap": 49.051382285511984
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "production",
+      "hours": 13,
+      "mean_abs_group_shap": 0.2379163560579744,
+      "mean_signed_group_shap": 0.2379163560579744
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "state",
+      "hours": 13,
+      "mean_abs_group_shap": 1.9686372404439108,
+      "mean_signed_group_shap": 1.588935311864384
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "up_start",
+      "variant": "B1_weather",
+      "group": "weather",
+      "hours": 13,
+      "mean_abs_group_shap": 0.2395088004723821,
+      "mean_signed_group_shap": -0.0439517642426975
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 7,
+      "mean_abs_group_shap": 40.90687114932384,
+      "mean_signed_group_shap": 40.90687114932384
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "power",
+      "hours": 7,
+      "mean_abs_group_shap": 37.8465487743746,
+      "mean_signed_group_shap": 37.8465487743746
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "production",
+      "hours": 7,
+      "mean_abs_group_shap": 0.2839963621764875,
+      "mean_signed_group_shap": 0.2839963621764875
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "calendar",
+      "hours": 7,
+      "mean_abs_group_shap": 40.75941905514806,
+      "mean_signed_group_shap": 40.75941905514806
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "power",
+      "hours": 7,
+      "mean_abs_group_shap": 38.79028092927901,
+      "mean_signed_group_shap": 38.79028092927901
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "production",
+      "hours": 7,
+      "mean_abs_group_shap": 0.207396639712706,
+      "mean_signed_group_shap": 0.207396639712706
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "weather",
+      "hours": 7,
+      "mean_abs_group_shap": 0.2247708850800008,
+      "mean_signed_group_shap": -0.0504323107210937
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 7,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 7,
+      "mean_abs_group_shap": 35.74159635688233,
+      "mean_signed_group_shap": 35.74159635688233
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "power",
+      "hours": 7,
+      "mean_abs_group_shap": 48.171281074418495,
+      "mean_signed_group_shap": 48.171281074418495
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "production",
+      "hours": 7,
+      "mean_abs_group_shap": 0.0462895716063649,
+      "mean_signed_group_shap": -0.0459309927844117
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "state",
+      "hours": 7,
+      "mean_abs_group_shap": 3.4247602239045447,
+      "mean_signed_group_shap": 3.199344822556667
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "availability",
+      "hours": 7,
+      "mean_abs_group_shap": 0.0,
+      "mean_signed_group_shap": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "calendar",
+      "hours": 7,
+      "mean_abs_group_shap": 36.22161708847912,
+      "mean_signed_group_shap": 36.22161708847912
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "power",
+      "hours": 7,
+      "mean_abs_group_shap": 48.62233881247208,
+      "mean_signed_group_shap": 48.62233881247208
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "production",
+      "hours": 7,
+      "mean_abs_group_shap": 0.1256720780475658,
+      "mean_signed_group_shap": 0.1256720780475658
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "state",
+      "hours": 7,
+      "mean_abs_group_shap": 3.4166190964653405,
+      "mean_signed_group_shap": 3.1903013578214927
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "weather",
+      "hours": 7,
+      "mean_abs_group_shap": 0.3474360283462343,
+      "mean_signed_group_shap": -0.1305630575598042
+    }
+  ],
+  "permutation_all": [
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 2182,
+      "mean_mae_increment": 0.6356253331521128,
+      "sd_mae_increment": 0.1772540026281015,
+      "min_increment": 0.34730976596721785,
+      "max_increment": 0.8994448543570825
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "power",
+      "hours": 2182,
+      "mean_mae_increment": 45.02719137181256,
+      "sd_mae_increment": 3.282967119730329,
+      "min_increment": 40.483471698247406,
+      "max_increment": 50.24828533321908
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B0",
+      "group": "production",
+      "hours": 2182,
+      "mean_mae_increment": 0.3357503689336973,
+      "sd_mae_increment": 0.05699575813418164,
+      "min_increment": 0.22163435455448702,
+      "max_increment": 0.4016924536874574
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 2182,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 2182,
+      "mean_mae_increment": 0.48920186568503227,
+      "sd_mae_increment": 0.11027924506788078,
+      "min_increment": 0.3184068646331446,
+      "max_increment": 0.6166159369709044
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "power",
+      "hours": 2182,
+      "mean_mae_increment": 45.15630040487826,
+      "sd_mae_increment": 3.2467879795281234,
+      "min_increment": 40.65705799331335,
+      "max_increment": 50.304455198648235
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "production",
+      "hours": 2182,
+      "mean_mae_increment": 0.3304611071289725,
+      "sd_mae_increment": 0.035025674150569557,
+      "min_increment": 0.2681581421825705,
+      "max_increment": 0.37249199851137005
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "all",
+      "variant": "B1",
+      "group": "state",
+      "hours": 2182,
+      "mean_mae_increment": 0.02145298220660218,
+      "sd_mae_increment": 0.050783747965082275,
+      "min_increment": -0.06447502860296055,
+      "max_increment": 0.10706786018341256
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_mae_increment": 1.4585683434442607,
+      "sd_mae_increment": 0.21271393187233315,
+      "min_increment": 1.1817360292446626,
+      "max_increment": 1.9249440043510817
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "power",
+      "hours": 1344,
+      "mean_mae_increment": 51.14322750557711,
+      "sd_mae_increment": 5.430725422207242,
+      "min_increment": 41.16385834130406,
+      "max_increment": 58.23506063299723
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0",
+      "group": "production",
+      "hours": 1344,
+      "mean_mae_increment": 0.5376688893614145,
+      "sd_mae_increment": 0.06891535680445883,
+      "min_increment": 0.41854732966600056,
+      "max_increment": 0.6111799006048722
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_mae_increment": 1.5147602550674975,
+      "sd_mae_increment": 0.2299097093947101,
+      "min_increment": 1.2357542367325869,
+      "max_increment": 2.0162339392118365
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "power",
+      "hours": 1344,
+      "mean_mae_increment": 50.97823200572528,
+      "sd_mae_increment": 5.418928361235618,
+      "min_increment": 41.0502602046458,
+      "max_increment": 58.05768467166778
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "production",
+      "hours": 1344,
+      "mean_mae_increment": 0.439557282654517,
+      "sd_mae_increment": 0.0578735975527186,
+      "min_increment": 0.3361441908578047,
+      "max_increment": 0.5004228146848819
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B0_weather",
+      "group": "weather",
+      "hours": 1344,
+      "mean_mae_increment": -0.01365195805267858,
+      "sd_mae_increment": 0.01268692796929925,
+      "min_increment": -0.026743554846756005,
+      "max_increment": 0.0141046926464812
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 1344,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_mae_increment": 0.9009967507456362,
+      "sd_mae_increment": 0.13288234416038183,
+      "min_increment": 0.7529790988988371,
+      "max_increment": 1.2046670182210757
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "power",
+      "hours": 1344,
+      "mean_mae_increment": 50.48811891540893,
+      "sd_mae_increment": 5.345545621104666,
+      "min_increment": 40.63061950911668,
+      "max_increment": 57.64292833066944
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "production",
+      "hours": 1344,
+      "mean_mae_increment": 0.8235916730520996,
+      "sd_mae_increment": 0.11718471929624488,
+      "min_increment": 0.6217074415759749,
+      "max_increment": 0.9549296586328476
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1",
+      "group": "state",
+      "hours": 1344,
+      "mean_mae_increment": -0.6196151400252576,
+      "sd_mae_increment": 0.18508216492370302,
+      "min_increment": -0.9051482032646954,
+      "max_increment": -0.4127719748475848
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "availability",
+      "hours": 1344,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "calendar",
+      "hours": 1344,
+      "mean_mae_increment": 0.8885081512174157,
+      "sd_mae_increment": 0.13635086479275915,
+      "min_increment": 0.7328502780539458,
+      "max_increment": 1.1917744341874554
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "power",
+      "hours": 1344,
+      "mean_mae_increment": 50.62948608051668,
+      "sd_mae_increment": 5.387861239801917,
+      "min_increment": 40.75779750520304,
+      "max_increment": 57.9256185145303
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "production",
+      "hours": 1344,
+      "mean_mae_increment": 0.6631896079941049,
+      "sd_mae_increment": 0.09807941436291127,
+      "min_increment": 0.4969070972324167,
+      "max_increment": 0.780490741094026
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "state",
+      "hours": 1344,
+      "mean_mae_increment": -0.5609602882158855,
+      "sd_mae_increment": 0.1707427140471758,
+      "min_increment": -0.8290400377379544,
+      "max_increment": -0.3720809785999926
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "all",
+      "variant": "B1_weather",
+      "group": "weather",
+      "hours": 1344,
+      "mean_mae_increment": -0.012107958593154729,
+      "sd_mae_increment": 0.009553216643705209,
+      "min_increment": -0.0322053166072641,
+      "max_increment": -0.0011786927907534
+    }
+  ],
+  "permutation_alarm": [
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 12,
+      "mean_mae_increment": 2.747932863630564,
+      "sd_mae_increment": 1.7841727492852366,
+      "min_increment": -0.16998833466316646,
+      "max_increment": 4.878944205081031
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "power",
+      "hours": 12,
+      "mean_mae_increment": 52.64375792289643,
+      "sd_mae_increment": 11.521798513097844,
+      "min_increment": 32.816790065127634,
+      "max_increment": 70.81871141231413
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "production",
+      "hours": 12,
+      "mean_mae_increment": 0.5762525441369486,
+      "sd_mae_increment": 0.20876184777349582,
+      "min_increment": 0.08098644434480437,
+      "max_increment": 0.785018980094847
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 12,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 12,
+      "mean_mae_increment": 2.1989825911466747,
+      "sd_mae_increment": 1.2726934305657098,
+      "min_increment": -0.08190241866660608,
+      "max_increment": 3.810087061305431
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "power",
+      "hours": 12,
+      "mean_mae_increment": 55.77919532222895,
+      "sd_mae_increment": 11.94727153424695,
+      "min_increment": 35.484409050953474,
+      "max_increment": 74.14907770516618
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "production",
+      "hours": 12,
+      "mean_mae_increment": 0.43108169988944356,
+      "sd_mae_increment": 0.1683738590768686,
+      "min_increment": 0.21113275887671767,
+      "max_increment": 0.7666755103817806
+    },
+    {
+      "period": "Apr-Jun",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "state",
+      "hours": 12,
+      "mean_mae_increment": 1.4968287139859608,
+      "sd_mae_increment": 0.9295893526486052,
+      "min_increment": 0.02611631244959985,
+      "max_increment": 2.5652818867528473
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "calendar",
+      "hours": 7,
+      "mean_mae_increment": 3.9167117088161683,
+      "sd_mae_increment": 2.1378061029845403,
+      "min_increment": 1.1705873410987035,
+      "max_increment": 6.822618459628968
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "power",
+      "hours": 7,
+      "mean_mae_increment": 50.70575761130944,
+      "sd_mae_increment": 21.81067965341274,
+      "min_increment": 13.574743600284345,
+      "max_increment": 76.44842927840516
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0",
+      "group": "production",
+      "hours": 7,
+      "mean_mae_increment": 0.8919025728530029,
+      "sd_mae_increment": 0.3590613226857457,
+      "min_increment": 0.3812391953179964,
+      "max_increment": 1.4154933949248434
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "calendar",
+      "hours": 7,
+      "mean_mae_increment": 3.4170280128680703,
+      "sd_mae_increment": 2.3015884063238583,
+      "min_increment": 0.5989884526997814,
+      "max_increment": 6.6974343012460205
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "power",
+      "hours": 7,
+      "mean_mae_increment": 50.53035740038446,
+      "sd_mae_increment": 21.54062886694822,
+      "min_increment": 14.936801562597015,
+      "max_increment": 75.90042911954843
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "production",
+      "hours": 7,
+      "mean_mae_increment": 0.23342578782535095,
+      "sd_mae_increment": 0.24586781391257856,
+      "min_increment": -0.1252033172873885,
+      "max_increment": 0.5227517992766642
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B0_weather",
+      "group": "weather",
+      "hours": 7,
+      "mean_mae_increment": 0.20888596012534238,
+      "sd_mae_increment": 0.30473666417388107,
+      "min_increment": -0.127453272733289,
+      "max_increment": 0.7495571513949121
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "availability",
+      "hours": 7,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "calendar",
+      "hours": 7,
+      "mean_mae_increment": 0.8013758921992686,
+      "sd_mae_increment": 1.0193058994123922,
+      "min_increment": -1.3192205841311553,
+      "max_increment": 2.5231367474845
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "power",
+      "hours": 7,
+      "mean_mae_increment": 56.07950550112055,
+      "sd_mae_increment": 22.86953950385632,
+      "min_increment": 17.23420711243696,
+      "max_increment": 85.71300868137659
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "production",
+      "hours": 7,
+      "mean_mae_increment": 0.16947625534741345,
+      "sd_mae_increment": 0.12708126228186398,
+      "min_increment": -0.0080256467009616,
+      "max_increment": 0.3248050990365771
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1",
+      "group": "state",
+      "hours": 7,
+      "mean_mae_increment": -0.42436059052404007,
+      "sd_mae_increment": 1.1283352927147279,
+      "min_increment": -2.4639192388593267,
+      "max_increment": 0.9406606307030156
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "availability",
+      "hours": 7,
+      "mean_mae_increment": 0.0,
+      "sd_mae_increment": 0.0,
+      "min_increment": 0.0,
+      "max_increment": 0.0
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "calendar",
+      "hours": 7,
+      "mean_mae_increment": 0.9453901178213325,
+      "sd_mae_increment": 0.8558650017310321,
+      "min_increment": -0.7426876034044604,
+      "max_increment": 2.5071728127031787
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "power",
+      "hours": 7,
+      "mean_mae_increment": 57.227869820057705,
+      "sd_mae_increment": 22.974221153602965,
+      "min_increment": 18.438125290878983,
+      "max_increment": 86.33232824611407
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "production",
+      "hours": 7,
+      "mean_mae_increment": 0.21137622610730045,
+      "sd_mae_increment": 0.20830453609093696,
+      "min_increment": -0.0803513254721752,
+      "max_increment": 0.48312393785436064
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "state",
+      "hours": 7,
+      "mean_mae_increment": -0.5990019662796779,
+      "sd_mae_increment": 1.1939999979790215,
+      "min_increment": -2.8903955596440727,
+      "max_increment": 0.932085406668522
+    },
+    {
+      "period": "Jul-Aug",
+      "condition": "fixed_alarm",
+      "variant": "B1_weather",
+      "group": "weather",
+      "hours": 7,
+      "mean_mae_increment": 0.5419746712377036,
+      "sd_mae_increment": 0.3963520609128697,
+      "min_increment": -0.0271883878022387,
+      "max_increment": 1.2240683068727989
+    }
+  ],
+  "current_routing_max_difference": 5.684341886080802e-14,
+  "day_counts": [
+    {
+      "variant": "B0",
+      "period": "Apr-Jun",
+      "dates": 91,
+      "weather_better_dates": 24,
+      "weather_worse_dates": 67,
+      "tied_dates": 0
+    },
+    {
+      "variant": "B0",
+      "period": "Jul-Aug",
+      "dates": 56,
+      "weather_better_dates": 21,
+      "weather_worse_dates": 35,
+      "tied_dates": 0
+    },
+    {
+      "variant": "B1",
+      "period": "Apr-Jun",
+      "dates": 91,
+      "weather_better_dates": 27,
+      "weather_worse_dates": 64,
+      "tied_dates": 0
+    },
+    {
+      "variant": "B1",
+      "period": "Jul-Aug",
+      "dates": 56,
+      "weather_better_dates": 32,
+      "weather_worse_dates": 24,
+      "tied_dates": 0
+    },
+    {
+      "variant": "G1",
+      "period": "Apr-Jun",
+      "dates": 91,
+      "weather_better_dates": 23,
+      "weather_worse_dates": 68,
+      "tied_dates": 0
+    },
+    {
+      "variant": "G1",
+      "period": "Jul-Aug",
+      "dates": 56,
+      "weather_better_dates": 22,
+      "weather_worse_dates": 34,
+      "tied_dates": 0
+    }
+  ],
+  "monthly_weather": [
+    {
+      "variant": "B0",
+      "period": "month_4",
+      "condition": "all",
+      "hours": 720,
+      "mae_no_weather": 7.582897524356147,
+      "mae_weather": 8.113793201162377,
+      "mae_change": 0.5308956768062288,
+      "mae_reduction_pct": -7.001224467309499,
+      "under_no_weather": 3.1601764137283403,
+      "under_weather": 2.9464181858989247
+    },
+    {
+      "variant": "B0",
+      "period": "month_5",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 5.6003031534760215,
+      "mae_weather": 6.102380903447561,
+      "mae_change": 0.5020777499715408,
+      "mae_reduction_pct": -8.965188780180746,
+      "under_no_weather": 2.4768352600167205,
+      "under_weather": 2.310440832543447
+    },
+    {
+      "variant": "B0",
+      "period": "month_6",
+      "condition": "all",
+      "hours": 718,
+      "mae_no_weather": 5.638523233076213,
+      "mae_weather": 5.949041649659863,
+      "mae_change": 0.3105184165836503,
+      "mae_reduction_pct": -5.507087649512807,
+      "under_no_weather": 3.9648682909722086,
+      "under_weather": 4.562722572978304
+    },
+    {
+      "variant": "B0",
+      "period": "month_7",
+      "condition": "all",
+      "hours": 600,
+      "mae_no_weather": 6.527656918201733,
+      "mae_weather": 6.5418499187961245,
+      "mae_change": 0.0141930005943926,
+      "mae_reduction_pct": -0.2174287155750613,
+      "under_no_weather": 4.413086748685211,
+      "under_weather": 4.406015242374808
+    },
+    {
+      "variant": "B0",
+      "period": "month_8",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 6.179501468320673,
+      "mae_weather": 6.30260896960149,
+      "mae_change": 0.1231075012808178,
+      "mae_reduction_pct": -1.9921914722721676,
+      "under_no_weather": 2.7215829853405302,
+      "under_weather": 2.701829080117299
+    },
+    {
+      "variant": "B1",
+      "period": "month_4",
+      "condition": "all",
+      "hours": 720,
+      "mae_no_weather": 7.815881024365667,
+      "mae_weather": 8.258337136050775,
+      "mae_change": 0.4424561116851082,
+      "mae_reduction_pct": -5.6609883173217534,
+      "under_no_weather": 3.0784359719026546,
+      "under_weather": 2.8313988143531774
+    },
+    {
+      "variant": "B1",
+      "period": "month_5",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 5.429082212359539,
+      "mae_weather": 5.577912724380251,
+      "mae_change": 0.1488305120207122,
+      "mae_reduction_pct": -2.741356756062622,
+      "under_no_weather": 2.428472309836238,
+      "under_weather": 2.385956047354135
+    },
+    {
+      "variant": "B1",
+      "period": "month_6",
+      "condition": "all",
+      "hours": 718,
+      "mae_no_weather": 5.961417246690576,
+      "mae_weather": 6.275482484071483,
+      "mae_change": 0.3140652373809054,
+      "mae_reduction_pct": -5.2682981979705525,
+      "under_no_weather": 3.8443708942130095,
+      "under_weather": 4.493833282553739
+    },
+    {
+      "variant": "B1",
+      "period": "month_7",
+      "condition": "all",
+      "hours": 600,
+      "mae_no_weather": 6.738691755225816,
+      "mae_weather": 6.712681136734573,
+      "mae_change": -0.0260106184912425,
+      "mae_reduction_pct": 0.3859891420478084,
+      "under_no_weather": 4.42082315998828,
+      "under_weather": 4.336901144521198
+    },
+    {
+      "variant": "B1",
+      "period": "month_8",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 9.006357890352795,
+      "mae_weather": 8.774483845438095,
+      "mae_change": -0.2318740449147007,
+      "mae_reduction_pct": 2.5745595249226527,
+      "under_no_weather": 2.6048892853193,
+      "under_weather": 2.6214853135268927
+    },
+    {
+      "variant": "G1",
+      "period": "month_4",
+      "condition": "all",
+      "hours": 720,
+      "mae_no_weather": 7.582897524356147,
+      "mae_weather": 8.113793201162377,
+      "mae_change": 0.5308956768062288,
+      "mae_reduction_pct": -7.001224467309499,
+      "under_no_weather": 3.1601764137283403,
+      "under_weather": 2.9464181858989247
+    },
+    {
+      "variant": "G1",
+      "period": "month_5",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 5.580356956292281,
+      "mae_weather": 6.0945577666882045,
+      "mae_change": 0.5142008103959242,
+      "mae_reduction_pct": -9.21447883035732,
+      "under_no_weather": 2.4631246452018245,
+      "under_weather": 2.3190838479751825
+    },
+    {
+      "variant": "G1",
+      "period": "month_6",
+      "condition": "all",
+      "hours": 718,
+      "mae_no_weather": 5.636056331077928,
+      "mae_weather": 5.919782328307065,
+      "mae_change": 0.283725997229137,
+      "mae_reduction_pct": -5.034122807904456,
+      "under_no_weather": 3.964613395827723,
+      "under_weather": 4.5301295672280215
+    },
+    {
+      "variant": "G1",
+      "period": "month_7",
+      "condition": "all",
+      "hours": 600,
+      "mae_no_weather": 6.498398911184294,
+      "mae_weather": 6.51270804466585,
+      "mae_change": 0.0143091334815554,
+      "mae_reduction_pct": -0.2201947537712445,
+      "under_no_weather": 4.373683986564901,
+      "under_weather": 4.356982601118137
+    },
+    {
+      "variant": "G1",
+      "period": "month_8",
+      "condition": "all",
+      "hours": 744,
+      "mae_no_weather": 6.171096884035571,
+      "mae_weather": 6.286651925876677,
+      "mae_change": 0.1155550418411053,
+      "mae_reduction_pct": -1.8725202992687164,
+      "under_no_weather": 2.699586832747791,
+      "under_weather": 2.6824904101228397
+    }
+  ]
+}

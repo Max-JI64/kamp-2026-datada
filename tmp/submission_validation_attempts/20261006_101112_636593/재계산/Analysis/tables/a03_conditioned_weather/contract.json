@@ -1,0 +1,23 @@
+{
+  "previous": "Current EDA August temp-power rho-.076 overall vs+.599 production-positive383hours; weekday low-power747hours include92production-positive.",
+  "question": "Does weather-power association remain within calendar and observed production conditions? What explains aggregate/subgroup difference?",
+  "period": "Jan-Aug2021 normal241days5784hours; primary weekday171days4104hours; no zero/low-value filtering.",
+  "outcome": "Unrounded mean of four15min values at same time; descriptive contemporaneous association only.",
+  "variables": [
+    "기온",
+    "풍속",
+    "습도",
+    "강수량"
+  ],
+  "calendar": "month x hour x weekday/weekend; adjusted groups require>=3distinct dates per cell.",
+  "adjustment": "Rank correlations raw -> same-calendar residual -> production0/positive plus cubic rank-production -> other three rank-weather variables.",
+  "sample": "Each variable uses its observed pairs except joint analyses use common complete four-weather records; count missing per scope.",
+  "sensitivity": "Daily array inverse-frequency; all/weekdays/positive/zero; per-month and leave-month-out; no pvalues or forecasting.",
+  "decision": "If monthly signs or adjustments differ, diagnose composition/production/weather co-variation before interpreting; report mixed results without seeking stronger correlations.",
+  "next_scope": "Analysis only, do not start power prediction; any Modeling inputs must respect information time.",
+  "backup": false,
+  "forecast": false,
+  "manuscript": false,
+  "new_peak_threshold": false,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+}

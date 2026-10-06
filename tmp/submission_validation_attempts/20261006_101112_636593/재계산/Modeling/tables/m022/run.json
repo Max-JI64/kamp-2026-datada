@@ -1,0 +1,72 @@
+{
+  "status": "interrupted",
+  "started": "2026-10-04T20:35+09:00",
+  "input_hashes": {
+    "Modeling/config/m022_contract.json": "77e73413df305f9abf0ae83111be86ab2ca729dc8f2a4309c6597c7dec909283",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m03/c/predictions.csv": "d1f2fc8062b84248bc2a9512d17563713368fc94a6b56dc127c93c56cbe2a5f8"
+  },
+  "features": [
+    "hour_sin",
+    "hour_cos",
+    "month",
+    "weekend",
+    "dow_0",
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6",
+    "lag1_production",
+    "lag1_production_zero",
+    "lag1_mean",
+    "lag1_maximum",
+    "lag2_mean",
+    "lag2_maximum",
+    "lag1_last"
+  ],
+  "environment": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "packages": {
+      "numpy": {
+        "status": "ok",
+        "version": "2.2.6"
+      },
+      "pandas": {
+        "status": "ok",
+        "version": "3.0.1"
+      },
+      "sklearn": {
+        "status": "ok",
+        "version": "1.7.1"
+      },
+      "joblib": {
+        "status": "ok",
+        "version": "1.5.1"
+      },
+      "optuna": {
+        "status": "ok",
+        "version": "4.7.0"
+      },
+      "xgboost": {
+        "status": "ok",
+        "version": "3.1.3"
+      },
+      "lightgbm": {
+        "status": "ok",
+        "version": "4.6.0"
+      },
+      "catboost": {
+        "status": "ok",
+        "version": "1.2.10"
+      }
+    }
+  },
+  "july_august_evaluated": false,
+  "selection_scope": "outer development family choice; not final test",
+  "stop_reason": "User redirected expanded comparison to M02 rerun, then explicitly paused learning to decide task-aligned evaluation criteria. Partial B-input results are exploratory only and excluded from final model selection.",
+  "stopped_at": "2026-10-04T20:39+09:00"
+}

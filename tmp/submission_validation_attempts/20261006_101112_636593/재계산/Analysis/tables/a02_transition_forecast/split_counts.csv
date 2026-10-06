@@ -1,0 +1,7 @@
+﻿scope,n,risk_hours,events
+class_train,2878,1359,109
+class_valid,1464,530,54
+class_finaltrain,4342,1889,163
+power_validtrain,1464,609,63
+power_finaltrain,2928,1139,117
+final_test,1436,617,52

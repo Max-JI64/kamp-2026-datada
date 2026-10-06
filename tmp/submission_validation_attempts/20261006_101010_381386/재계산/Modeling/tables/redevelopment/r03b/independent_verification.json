@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-05T18:11+09:00",
+  "run_sha256": "b5fa8c074541bae269240a2086f202b4449bf2da98ddd1874971965159c3275b",
+  "script_sha256": "8292b3af32e6115002ada44aaa9a620750c437ab46cc51b466f30c1465ed4751",
+  "prediction_rows": 8736,
+  "raw_lag_values": 88320,
+  "models_reloaded": 3,
+  "metrics": 84,
+  "trials": 0,
+  "selection": null,
+  "independent_weighted_refits": 3
+}

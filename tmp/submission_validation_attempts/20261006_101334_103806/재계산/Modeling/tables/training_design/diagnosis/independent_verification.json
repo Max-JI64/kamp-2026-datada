@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "run_sha256": "06c2056f9e02f8f02e8975a8bbb4812f32870fa0343c3e4993de8ae24f711f4c",
+  "verifier_sha256": "87d416d83e637ef51c5483a4052b6a4180e37df02b5816b113fb9c4672ac00c5",
+  "paired_rows_checked": 2184,
+  "robust_shared_cells_checked": 39
+}

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "contract_sha256": "1800ec1dffee4d6020cc82222e8e71d69afc7984d56c01a75543a75f660c69d2",
+  "exact_summaries": [
+    {
+      "inputs": "B",
+      "eligible_rows": 4176,
+      "repeated_input_groups": 177,
+      "repeated_input_rows": 578,
+      "conflicting_groups": 8,
+      "conflicting_rows": 21,
+      "within_repeated_empirical_MAD": 0.31314878892733566
+    },
+    {
+      "inputs": "H6",
+      "eligible_rows": 4176,
+      "repeated_input_groups": 159,
+      "repeated_input_rows": 526,
+      "conflicting_groups": 4,
+      "conflicting_rows": 13,
+      "within_repeated_empirical_MAD": 0.1444866920152091
+    }
+  ],
+  "eligible_for_warning_trial": true,
+  "note": "Exact conflicts describe finite recorded cases; nearest-state variability is not proof of an irreducible limit or operational risk.",
+  "outputs_sha256": {
+    "exact_groups.csv": "be5454c6256b8244c5efaaefc032885fc64597ba85806e645e010413076da1eb",
+    "neighbors.csv": "36abcace6a75d77e9857481cf70c9ba8c0e1e97f265c05e19193b035990a8ca5",
+    "neighbor_summary.csv": "e882cf87ac372aeecd3a5150174aa4d28a39b9641dc5eef74011bd66bfba4948",
+    "risk_frame.csv": "d24faff3d775ddcf65b3f1db77dfd9e3b558db06030f3ac0cf0fa81b1d8352e1"
+  }
+}

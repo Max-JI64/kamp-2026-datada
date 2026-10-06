@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "run_sha256": "83630deeb974bb760dc104b020e87ebfc76b01b36dba24480b7b4b2b11869548",
+  "diagnosis_sha256": "916bfdf57f3843ac8dec945f7b9330f7e2dbaf9925d9ea753f63fa51a98e3772",
+  "verifier_sha256": "af8ca7f0159dee3c5184e9571fe0ff919286fb104ff500fb19fc58ba89dee77c",
+  "exact_input_rows_checked": 4176,
+  "neighbors_checked": 144000,
+  "point_forecasts_checked": 3600,
+  "warning_models_reloaded": 6,
+  "score_values_checked": 8784,
+  "independent_HGB_refits": 3,
+  "evaluated_rows": 15288,
+  "monthly_metric_rows": 21,
+  "gate_decision": {
+    "eligible": false,
+    "gates": {
+      "AP_5percent": true,
+      "ranking_same_budget": true,
+      "online_TP_gain": true,
+      "no_more_warnings": true,
+      "warning_cap": true,
+      "monthly_TP": false,
+      "monthly_AP": true
+    }
+  },
+  "later_evaluated": false
+}

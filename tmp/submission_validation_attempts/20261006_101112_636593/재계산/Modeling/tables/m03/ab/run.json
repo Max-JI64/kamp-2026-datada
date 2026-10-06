@@ -1,0 +1,111 @@
+{
+  "status": "completed",
+  "started": "2026-10-04T19:08+09:00",
+  "stage": "ab",
+  "input_hashes": {
+    "source": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "contract": "b0d3325f9a35461dafda494872a2d594e59fd8585163a930f66038883f68bbfe",
+    "m01_contract": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling\\tables\\m01\\hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling\\tables\\m01\\evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "Modeling\\tables\\m01\\split_counts.csv": "4236fd90853521efc701a5271e8ea2216cfaf9728cbdbb94acd8b2c7bae7dc56",
+    "Modeling\\tables\\m02\\selected_predictions.csv": "8440f8bed253f15a425caa223581f361904196bddfc6f41d901e0af9ab90eed2",
+    "Modeling\\tables\\m02\\model_manifest.csv": "1e8ea9f8805c606d84ed8d59c536d499a1186e9abef5f1f724488a7ee99d6cfe",
+    "Modeling\\tables\\m02\\run.json": "1b0392ad58b57f97c9d8ef95dd71e5c0703292a12dcd7fb510eca633414d5feb"
+  },
+  "features": {
+    "A": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum"
+    ],
+    "B": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last"
+    ]
+  },
+  "parameters": {
+    "max_leaf_nodes": 15,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "runtime": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "3.0.1",
+      "scikit-learn": "1.7.1",
+      "joblib": "1.5.1"
+    }
+  },
+  "finished": "2026-10-04T19:08+09:00",
+  "seconds": 2.736798199999612,
+  "fits_completed": 6,
+  "reused_models_verified": 6,
+  "prediction_rows": 8736,
+  "july_august_evaluated": false,
+  "provisional_candidates": {
+    "target_maximum": {
+      "group": "B",
+      "MAE": 6.190524965035317,
+      "RMSE": 9.783123597993868
+    },
+    "target_mean": {
+      "group": "B",
+      "MAE": 5.4881816738201525,
+      "RMSE": 8.022505032624382
+    }
+  },
+  "outputs_sha256": {
+    "comparison.csv": "1d7b714ddf46d2b04d107d7b985dc3d25d4d295380617176d681a5d2f666e4b4",
+    "condition_errors.csv": "ceea598a49df60ed2457e0b43d6e4d7acc82924cf15fca944829ff15e9d77cad",
+    "daily_deltas.csv": "2d56ca28a57306dd8ca496fe5b48148aaa35f10c7a76f95d7f5c5fa6ed87f8e4",
+    "daily_errors.csv": "9208809279cadff593c228eceea400c03120d2594feda96d9ef1c8ebfc5e2916",
+    "model_manifest.csv": "18b145dc1c3280eb3801135970f7508a289e8f73b17ebf7db5e384469445efbd",
+    "paired_deltas.csv": "d9fabb2bef71000ba7b30a85ea79b77128cef22dfb4d03e8625b8f82b7728cd0",
+    "paired_predictions.csv": "bdbbf476e86200770d2593ad6f3cdfbf9b6af2d4464e369d1ae123b7bc39f793",
+    "predictions.csv": "b626199fe9703481f63ebb58a32626d613004595982e630ef60add18fb8d8174",
+    "training_audit.csv": "3b0fac0a9a3a5e32142ceea5377ec402708a7a28bae16d01dad5fceda025695a"
+  },
+  "script_sha256": "f60e711268227fe112ce31ffc77193734fb9f880a5a607505c11513bc885533d",
+  "helper_sha256": {
+    "m01_prepare.py": "ec6716743f8ac9b78adfadc701ddd5cbbbb374c29109d97a9918c3b7d48fe7ff",
+    "m02_compare.py": "555c73e2648c1454483df2dfdb3eac654b9c16cad27f7262daa21e2373df349d"
+  }
+}

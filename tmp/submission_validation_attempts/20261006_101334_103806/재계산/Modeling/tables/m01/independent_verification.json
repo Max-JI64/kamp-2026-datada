@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "independent_standard_library_verification": true,
+  "hourly_rows": 5784,
+  "split_and_daily_weight_checks": [
+    {
+      "split": "dev_apr",
+      "pool": "core",
+      "train_hours": 2158,
+      "eval_hours": 720,
+      "complete_days": 30
+    },
+    {
+      "split": "dev_apr",
+      "pool": "common",
+      "train_hours": 1992,
+      "eval_hours": 720,
+      "complete_days": 30
+    },
+    {
+      "split": "dev_may",
+      "pool": "core",
+      "train_hours": 2878,
+      "eval_hours": 744,
+      "complete_days": 31
+    },
+    {
+      "split": "dev_may",
+      "pool": "common",
+      "train_hours": 2712,
+      "eval_hours": 744,
+      "complete_days": 31
+    },
+    {
+      "split": "dev_jun",
+      "pool": "core",
+      "train_hours": 3622,
+      "eval_hours": 720,
+      "complete_days": 30
+    },
+    {
+      "split": "dev_jun",
+      "pool": "common",
+      "train_hours": 3456,
+      "eval_hours": 720,
+      "complete_days": 30
+    },
+    {
+      "split": "later_jul_aug",
+      "pool": "core",
+      "train_hours": 4342,
+      "eval_hours": 1436,
+      "complete_days": 58
+    },
+    {
+      "split": "later_jul_aug",
+      "pool": "common",
+      "train_hours": 4176,
+      "eval_hours": 1344,
+      "complete_days": 56
+    }
+  ],
+  "source_and_output_hashes_match": true,
+  "model_fitting_performed": false,
+  "verifier_sha256": "8a699864d91b4ec0bec7c48bf8b2d6e5eabc2a976bd1444d5ed243cd0cf98bd3"
+}

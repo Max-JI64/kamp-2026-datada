@@ -1,0 +1,26 @@
+{
+  "B0": {
+    "development_gate_passed": false,
+    "overall_reduction_pct": -7.157289321563999,
+    "peak_reduction_pct": -7.630072832331574,
+    "months_nonworse": 0,
+    "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+    "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+  },
+  "B1": {
+    "development_gate_passed": false,
+    "overall_reduction_pct": -4.69490638236487,
+    "peak_reduction_pct": -0.7187017768306322,
+    "months_nonworse": 0,
+    "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+    "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+  },
+  "G1": {
+    "development_gate_passed": false,
+    "overall_reduction_pct": -7.091186069841423,
+    "peak_reduction_pct": -6.132417922180381,
+    "months_nonworse": 0,
+    "interpretation": "no sufficient reason to replace existing variant under frozen criterion",
+    "not_claimed": "weather has no value in other configurations; independent later validation; automatic adoption"
+  }
+}

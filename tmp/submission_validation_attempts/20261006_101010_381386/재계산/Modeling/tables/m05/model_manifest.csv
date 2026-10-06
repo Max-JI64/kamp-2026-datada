@@ -1,0 +1,5 @@
+﻿name,file,sha256,reload_checked
+A,Modeling/models/m05/A.joblib,e8b9562a1d816488479c3917e1cb40a961f3451307f88bfef2538226db01816b,True
+B,Modeling/models/m05/B.joblib,05679c846b4787f756bcf0f741fe7e00d6d872444b6ad0ef400bb2df158eaa30,True
+expert,Modeling/models/m05/expert.joblib,f8442bf7371b0da445545ab75032a7c80b46ab864fee0a6e2cd43abdfc9a5062,True
+classifier,Modeling/models/m05/classifier.joblib,4e3b0252c5712ce7ba6691c0c523beb5def4c82b2dd3b4cc82aabe2ca939980b,True

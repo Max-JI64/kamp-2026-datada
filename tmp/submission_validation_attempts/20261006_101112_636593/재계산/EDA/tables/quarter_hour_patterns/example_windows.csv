@@ -1,0 +1,16 @@
+﻿날짜,시간,15분,30분,45분,60분,평균,생산량,exact_mean,maximum,minimum,gap,exact_gap,slot_range,maximum_count,month,weekend,shape,interior_above_both_ends,largest_within_step,example
+20210101,0,62,61,61,61,61,0,61.25,62,61,1,0.75,1,1,1,False,nonincreasing,False,1,median_range
+20210101,1,96,93,116,113,105,0,104.5,116,93,11,11.5,23,1,1,False,mixed,True,23,median_range
+20210101,2,106,96,106,107,104,0,103.75,107,96,3,3.25,11,1,1,False,mixed,False,10,median_range
+20210101,3,92,110,110,109,105,0,105.25,110,92,5,4.75,18,2,1,False,mixed,True,18,median_range
+20210101,4,108,105,106,108,107,0,106.75,108,105,1,1.25,3,2,1,False,mixed,False,3,median_range
+20210409,5,22,23,23,26,24,118,23.5,26,22,2,2.5,4,1,4,False,nondecreasing,False,3,largest_range
+20210409,6,27,24,23,22,24,123,24.0,27,22,3,3.0,5,1,4,False,nonincreasing,False,3,largest_range
+20210409,7,26,34,63,131,64,440,63.5,131,26,67,67.5,105,1,4,False,nondecreasing,False,68,largest_range
+20210409,8,160,180,182,184,177,342,176.5,184,160,7,7.5,24,1,4,False,nondecreasing,False,20,largest_range
+20210409,9,164,163,156,149,158,411,158.0,164,149,6,6.0,15,1,4,False,nonincreasing,False,7,largest_range
+20210129,6,119,113,108,112,113,2,113.0,119,108,6,6.0,11,1,1,False,mixed,False,6,highest_power
+20210129,7,113,120,154,160,137,1288,136.75,160,113,23,23.25,47,1,1,False,nondecreasing,False,34,highest_power
+20210129,8,190,222,207,189,202,364,202.0,222,189,20,20.0,33,1,1,False,mixed,True,32,highest_power
+20210129,9,183,179,179,176,179,301,179.25,183,176,4,3.75,7,1,1,False,nonincreasing,False,4,highest_power
+20210129,10,139,169,175,168,163,601,162.75,175,139,12,12.25,36,1,1,False,mixed,True,30,highest_power

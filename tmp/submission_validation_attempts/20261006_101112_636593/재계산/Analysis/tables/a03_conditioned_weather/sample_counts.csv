@@ -1,0 +1,8 @@
+﻿scope,n,days,complete,기온_missing,풍속_missing,습도_missing,강수량_missing
+weekday,4104,171,4102,0,2,0,0
+weekday_positive,3062,149,3060,0,2,0,0
+weekday_zero,1042,143,1042,0,0,0,0
+all,5784,241,5780,0,3,0,1
+all_positive,3277,181,3275,0,2,0,0
+august_all,744,31,744,0,0,0,0
+august_positive,383,20,383,0,0,0,0

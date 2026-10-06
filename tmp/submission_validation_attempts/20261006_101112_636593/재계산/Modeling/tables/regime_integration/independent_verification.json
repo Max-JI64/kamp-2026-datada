@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "run_sha256": "ff3b12ee114c32a3926bdc6136f89d6b7f5e01e976995cb764bfab5f2bcd6b6e",
+  "verifier_sha256": "008d701be22452b4562b7d8cebc639ff41776a721a04ceeec8886c84617a3318",
+  "meta_rows_checked": 3598,
+  "predictions_checked": 10910,
+  "models_reloaded": 15,
+  "independent_refits": 3,
+  "event_windows_checked": 165,
+  "daily_rows_checked": 450,
+  "metrics_checked": 135,
+  "genuine_prior_month_probabilities": true
+}

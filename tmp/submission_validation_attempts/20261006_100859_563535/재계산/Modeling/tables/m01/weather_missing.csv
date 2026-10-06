@@ -1,0 +1,9 @@
+﻿feature,pool,missing_hours
+lag1_temperature,core,0
+lag1_wind,core,3
+lag1_humidity,core,0
+lag1_rain,core,1
+lag1_temperature,common,0
+lag1_wind,common,3
+lag1_humidity,common,0
+lag1_rain,common,1

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "verification_type": "Node execution with DOM/canvas adapter; browser visual rendering not verified",
+  "timeline_indices_checked": 24480,
+  "indices_with_forecast": 5376,
+  "drawing_widths_checked": 3,
+  "checks": [
+    "hour-boundary forecast publication",
+    "partial-hour actual maxima withheld",
+    "completed actual maxima revealed",
+    "rise warning and missed-rise examples",
+    "missing forecasts",
+    "invalid-hour gap",
+    "zero power retained",
+    "play/pause/step/speed/date/scrub/scenes",
+    "finite canvas text geometry",
+    "no network or model execution"
+  ],
+  "raw_rows": 6168,
+  "forecast_rows": 1344
+}

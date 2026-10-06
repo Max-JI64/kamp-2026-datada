@@ -1,0 +1,38 @@
+[
+  {
+    "month": 4,
+    "simple": "neighbor_std",
+    "ML": "HGB",
+    "calibration_AP": {
+      "high_prediction": 0.15080748776439784,
+      "prior_maximum": 0.19547273012009875,
+      "neighbor_std": 0.2533092076476007,
+      "Logistic": 0.07480813208319914,
+      "HGB": 0.15978687567681346
+    }
+  },
+  {
+    "month": 5,
+    "simple": "prior_maximum",
+    "ML": "HGB",
+    "calibration_AP": {
+      "high_prediction": 0.09120907996753723,
+      "prior_maximum": 0.09792458073187299,
+      "neighbor_std": 0.0906098345495354,
+      "Logistic": 0.11906104367749148,
+      "HGB": 0.2147923390757435
+    }
+  },
+  {
+    "month": 6,
+    "simple": "neighbor_std",
+    "ML": "HGB",
+    "calibration_AP": {
+      "high_prediction": 0.10734548516838874,
+      "prior_maximum": 0.09020380730717281,
+      "neighbor_std": 0.19812371764978431,
+      "Logistic": 0.1650548349148279,
+      "HGB": 0.2519304631002131
+    }
+  }
+]

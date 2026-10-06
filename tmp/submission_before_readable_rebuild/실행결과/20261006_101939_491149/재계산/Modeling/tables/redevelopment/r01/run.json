@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "completed_at": "2026-10-05T17:38+09:00",
+  "new_fits": 0,
+  "pairs": 3528,
+  "contract_sha256": "8592087f30311451179347aefde6df9f9a05a163f0cc4642f21b30fd19271186",
+  "inputs_sha256": {
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m03/ab/predictions.csv": "b626199fe9703481f63ebb58a32626d613004595982e630ef60add18fb8d8174",
+    "Modeling/tables/m03/ab/run.json": "9b228ab5127aca5f29605d72e37fd8e1ca27d2926b816c46905aae316eb281b7",
+    "Modeling/tables/m03/ab/independent_verification.json": "0b056aefa3c541133e5dcefcebe4c019e423474672512179026b74c6e85620aa",
+    "Modeling/tables/m05/predictions.csv": "4c6ba2b9dcaba0a5676dd53824dd75d0c6e6bef9cff952f75c9f537f8c74a335",
+    "Modeling/tables/m05/run.json": "75ecb09ba2365be889088c16ae0503f4fa3346a40545f5aca98fc937e73b1d10",
+    "Modeling/tables/m05/independent_verification.json": "0c4ba7aa6363f294fd2fb5fefaf476cfdde240f35e5706b4944d362b892b27cc",
+    "Modeling/scripts/redevelopment_r01.py": "76f516a1bd555436a07cca7f05e342aac139734dc17b75262fd003e57f5dfe4d",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+  },
+  "outputs_sha256": {
+    "conditions.csv": "19cabdecc9ff6c33610ea0716591b31acdad21ed54004d7150a49d0616c7ba01",
+    "daily_errors.csv": "1c06a80142ed8cf8aca2cc3788444dd09d019d0aa0b52f6bc9b95f93dc84c209",
+    "leave_one_date_out.csv": "065381af8eb4e7067883d1dacdff4879a7017f743bd856d1d54a8d59a3c34ce9",
+    "paired.csv": "b61c7d0b0ddca77f81ed5b8bbb3e9727aa701ff72cf6b3fc6f8cfbcdfa9d7604",
+    "thresholds.csv": "4432bf47881f83576422eb4face63f8ee45cc40cd27079f5c50fb8051e3a522a"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-05T18:17+09:00",
+  "script_sha256": "40b9d2dde7dc8343555c7203e8f2099ff25a19d6f8754d5736591df5c776ece4",
+  "manuscript_sha256": "6ff557eb244bea468ae7c599a7a944b9bd1a1ecedbb57496f7e231ccb0d750e9",
+  "execution_record_sha256": "5d15ccd0bf25f6abc0090b158b25ca37fd46678f4933ac635fb25238835b3ed4",
+  "error_rows": 7,
+  "risk_rows": 5,
+  "monthly_rows": 3,
+  "local_links_checked": 248,
+  "normal_forecast": "B",
+  "automatic_risk_selection": "B_score",
+  "provisional_followup_risk_candidate": "G_HGB_score",
+  "no_training_or_deletion": true
+}

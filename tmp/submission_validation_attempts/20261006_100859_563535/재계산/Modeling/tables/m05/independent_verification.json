@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-05T16:03+09:00",
+  "run_sha256": "75ecb09ba2365be889088c16ae0503f4fa3346a40545f5aca98fc937e73b1d10",
+  "script_sha256": "d1d9deac95655e8f774c369f1d8cd40f92a9e9ab2b89c7e647b340b40fce064f",
+  "raw_feature_cells_checked": 149040,
+  "prediction_rows_checked": 10936,
+  "models_reloaded": 4,
+  "metrics_rows_checked": 1000,
+  "alarm_rows_checked": 24,
+  "diagnostics_sha256": "fccf0684f616f09091169d2d8b1ae0ba40d96830bd7b32cbd81029ea63e58956",
+  "confirmation_flags_verified": true,
+  "no_fitting": true
+}

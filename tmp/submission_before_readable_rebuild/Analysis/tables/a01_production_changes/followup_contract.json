@@ -1,0 +1,12 @@
+{
+  "previous_result": "2292 of2296 unchanged-production hours have zero in both records; only4 unchanged-positive. Delta-only effect confounded.",
+  "questions": [
+    "Which zero/nonzero transitions account for observed volatility?",
+    "Within positive production, is the magnitude/direction of production change connected to power change after calendar control?"
+  ],
+  "comparison": "Same fixed calendar matching, plus rank associations centered within exact month-hour-weekend cells.",
+  "not_causal": true,
+  "no_threshold": true,
+  "no_forecast": true,
+  "unchanged_positive_conclusion": "Too few records for stable matched contrast; do not infer equivalence."
+}

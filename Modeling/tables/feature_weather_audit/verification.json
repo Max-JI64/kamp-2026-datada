@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "metric_rows_checked": 186,
+  "independent_weather_refits": 8,
+  "refit_checks": [
+    {
+      "fold": 4,
+      "variant": "B0_weather",
+      "hours": 720,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 4,
+      "variant": "B1_weather",
+      "hours": 720,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 5,
+      "variant": "B0_weather",
+      "hours": 744,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 5,
+      "variant": "B1_weather",
+      "hours": 744,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 6,
+      "variant": "B0_weather",
+      "hours": 718,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 6,
+      "variant": "B1_weather",
+      "hours": 718,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 7,
+      "variant": "B0_weather",
+      "hours": 1344,
+      "max_abs_diff": 0.0
+    },
+    {
+      "fold": 7,
+      "variant": "B1_weather",
+      "hours": 1344,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "input_hashes_unchanged": true,
+  "protected_manuscripts": {
+    "Modeling/04_Modeling_원고.md": "unchanged",
+    "Modeling/04_Modeling_3페이지용_압축본.md": "unchanged",
+    "Analysis/03_Analysis_원고.md": "unchanged"
+  },
+  "shap_additivity_checked": true,
+  "run_sha256": "1ab099fc6bbb6fa2cf9ddd973200ce56a5db5dc7d7d343722c64aae6432ee422",
+  "explanations_sha256": "2d56c7cc9f33d432f4e934673d4f5b8cbb43cf7de74dfc89e2e4c6f4b48cd584"
+}

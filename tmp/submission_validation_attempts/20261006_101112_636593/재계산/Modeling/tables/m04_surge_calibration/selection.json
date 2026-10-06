@@ -1,0 +1,9 @@
+{
+  "selected_risk_channel": "B_score",
+  "normal_forecast": "B",
+  "eligible_methods": [],
+  "selection_gates_unchanged": true,
+  "no_new_fitting": true,
+  "development_only": true,
+  "no_july_august_evaluation": true
+}

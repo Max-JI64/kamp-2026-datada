@@ -1,0 +1,44 @@
+[
+  {
+    "split": "dev_apr",
+    "method": "delta_fixed_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "delta",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    }
+  },
+  {
+    "split": "dev_may",
+    "method": "delta_fixed_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "delta",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    }
+  },
+  {
+    "split": "dev_jun",
+    "method": "delta_fixed_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "delta",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    }
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "started": "2026-10-04T21:34+09:00",
+  "input_hashes": {
+    "Modeling/config/m02_rerun_contract.json": "96086165595bb3319c20298dbd333da90d35abb08768955e5112da3d0be2fb54",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m01/evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "Modeling/tables/m02/selected_predictions.csv": "8440f8bed253f15a425caa223581f361904196bddfc6f41d901e0af9ab90eed2"
+  },
+  "features": [
+    "hour_sin",
+    "hour_cos",
+    "month",
+    "weekend",
+    "dow_0",
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6",
+    "lag1_production",
+    "lag1_production_zero",
+    "lag1_mean",
+    "lag1_maximum",
+    "lag2_mean",
+    "lag2_maximum"
+  ],
+  "environment": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "3.0.1",
+      "scikit-learn": "1.7.1",
+      "optuna": "4.7.0",
+      "xgboost": "3.1.3",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.10",
+      "joblib": "1.5.1"
+    }
+  },
+  "july_august_evaluated": false,
+  "selection_scope": "retrospectively redesigned outer development; not independent final test",
+  "finished": "2026-10-04T21:39+09:00",
+  "seconds": 337.95290189998923,
+  "tuning_fits": 1630,
+  "outer_model_fits": 15,
+  "trials_including_ensemble": 700,
+  "prediction_rows": 30576,
+  "outer_hours_per_method": 2184,
+  "outputs_sha256": {
+    "comparison.csv": "fd60ba66cf7a8f082aea7457b65977f9a3c150805f9eabdd85968c9d288aea23",
+    "condition_errors.csv": "3472e7ace05871e190cf72fab81289c97cd76e2c50c338c70586cea22da20d72",
+    "daily_errors.csv": "36746d4cb12d4c4cbe36691083d3f1cf0f3e0fe1bb17bed726ee5be1da73edb5",
+    "fold_audit.csv": "2c0c5f33d5f105438f4c84b5df2e8558a1108995ceb9d413ae85e551c00edf79",
+    "inner_residual_correlations.csv": "ec17fca4c8cd5da2c4d9df4b85f6312a3e89aef546da2e05b0df364f75f2b457",
+    "inner_selected_predictions.csv": "2295a73a2105b266bc05a299269e51ac03d26b5ab2de461d05a98ceec4f9b818",
+    "model_manifest.csv": "38845c37e39d7536e93c31eff719f9d2708d0dd5d1fe0bc4a7f86a5faebba686",
+    "predictions.csv": "db7d2eba0142a1c60e62c326b594b702c10658af8e4fad28d99d3a54c966cc48",
+    "selection_metrics.csv": "a3cb84a2b3a825b5b9a94d1bfc6fdfe932142bb6bfb9f73ec1ad8305ad03fc2b",
+    "trials.csv": "93227f57a86b69d7703ee82e4c240086282c5ab9a3551fc7208a470eae72cf4e",
+    "trial_fold_scores.csv": "20e962e36ee4e9a6818e44c592dc8bd15477e19e1e63c28bdfc5ad1bf922e886"
+  },
+  "configuration_sha256": "c00f67a21bb133750b752476abb713e744e8531dc9c78f18f0ef48a9334f3547",
+  "selection_sha256": "9831a23f5ecbb428dedd33e91467e69ff945afb444d2eaa5d49f2d5ad86f781a",
+  "script_sha256": "8731bde1c5b984e64d09b79be696022097da5ea0d7028a4824ffceb1cc53a20b",
+  "helper_sha256": "f54a0e826e5c24cc5c4a09a8f8b0659cf9d2b85d6554cfa245ef005e92574d12"
+}

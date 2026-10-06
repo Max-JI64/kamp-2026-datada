@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-06T10:20+09:00",
+  "stage": "c",
+  "prediction_rows": 17472,
+  "paired_rows": 17472,
+  "metric_rows": 1136,
+  "raw_source_lag_checks": 20880,
+  "csv_hashes_checked": 9,
+  "models_checked": 24,
+  "july_august_evaluated": false,
+  "identical_evaluation_timestamps": 2184,
+  "daily_maximum_dates": 91,
+  "run_sha256": "a14995bf8f93b1efca794f6923f64f8b6ff1acf68697c7a11329871478dd6eb8",
+  "verifier_sha256": "c891aa7e96edb1aade066129c61bd4e6b885afe202980f500eae8675a95463ae"
+}

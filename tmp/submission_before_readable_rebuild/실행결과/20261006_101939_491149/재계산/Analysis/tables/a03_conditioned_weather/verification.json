@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_hours_checked": 5784,
+  "eda_august_correlations_reproduced": true,
+  "joint_calendar_residual_vs_explicit_dummy_verified": true,
+  "zero_records_preserved": true,
+  "script_sha256": "8500b6ecb0715cc6ba2df7b536b56d0485fb8108f4a13ffc50067789ade4f69d",
+  "outputs_sha256": {
+    "associations.csv": "945d970359232d29b265fc42faebc43db193da4e6e99373610420a3a2cba29ab",
+    "common_row_associations.csv": "71240785b66c99a267b329ecabaf5b6d56a6cca41804427ec80163f78840ea3b",
+    "conditional_temperature_weather.csv": "89a9b0d1fd3ba310b2bc39fe16d6f57705b6086c44bc44c3ca32b6a9327bd373",
+    "daily_temperature_relations.csv": "aa7a7bbd1bab5fa050e6440fdf0ab1778043117263050da537b06de5d2c649cc",
+    "leave_month_out.csv": "702d540e3c9646afa2ce3318993efe86da39d69d0fa890212bb696f02bd08133",
+    "monthly.csv": "c52fde8530fd49ac4f34614242830da4953cbfb340b80019daceacf7869fe689",
+    "observations.csv": "18b8d647eb0eef2e68fa184d02b2a3ee3158a65c2fcd1fb3b981461b62fa71ac",
+    "positive_day_means.csv": "a6f90852ff1c4b1ebeb5de24368f66e5df7603850f0cb7989e5853e70a9587ab",
+    "sample_counts.csv": "b58fb93866149142f350248e9b91a3a4438bae6696d1c0bae37d2ee61966c775",
+    "temperature_leave_week_out.csv": "53ca2657ed5e1c12a76e641d384f419d9878d2dd60822c6668a9b4e2bd3f8ab1",
+    "temperature_monthly_diagnostics.csv": "50de7aa7891e6a3efe800ca309515a73f9e96b641293040bf56d177e5db3f9b9",
+    "weather_correlations.csv": "7f1d5b97b1e7d34431f84f14b8f9e2554553723db24d342247124079403aa22b"
+  }
+}

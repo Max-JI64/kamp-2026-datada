@@ -1,0 +1,21 @@
+﻿month,partition,direction,hours,onsets,sustained3,event_dates,event_profiles,last_label_confirmation
+2,train,up,736,12,6,7,7,2021-01-31 23:00:00
+2,train,down,736,21,11,17,13,2021-01-31 23:00:00
+2,validation_count_only,up,672,0,0,0,0,2021-03-01 01:00:00
+2,validation_count_only,down,672,22,8,21,17,2021-03-01 01:00:00
+3,train,up,1408,12,6,7,7,2021-02-28 23:00:00
+3,train,down,1408,43,19,38,21,2021-02-28 23:00:00
+3,validation_count_only,up,744,4,4,4,4,2021-04-01 01:00:00
+3,validation_count_only,down,744,23,9,22,15,2021-04-01 01:00:00
+4,train,up,2152,16,10,11,10,2021-03-31 23:00:00
+4,train,down,2152,66,28,60,21,2021-03-31 23:00:00
+4,validation_count_only,up,720,6,6,6,4,2021-05-01 01:00:00
+4,validation_count_only,down,720,13,5,13,8,2021-05-01 01:00:00
+5,train,up,2872,22,16,17,14,2021-04-30 23:00:00
+5,train,down,2872,79,33,73,29,2021-04-30 23:00:00
+5,validation_count_only,up,744,8,8,8,7,2021-06-01 01:00:00
+5,validation_count_only,down,744,15,6,14,14,2021-06-01 01:00:00
+6,train,up,3616,30,24,25,17,2021-05-31 23:00:00
+6,train,down,3616,94,39,87,37,2021-05-31 23:00:00
+6,validation_count_only,up,718,4,4,4,4,2021-06-30 23:00:00
+6,validation_count_only,down,718,18,4,17,17,2021-06-30 23:00:00

@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "script_sha256": "16597a16786ebfdfe792c1d0a91d635f4606d2755de759c2d825357e10ebb706",
+  "contract_sha256": "6128545156775ed8b81a6ae04644d8a0f12b5045c487ab5595472df36223ef22",
+  "inputs_sha256": {
+    "Modeling/tables/regime_integration/predictions.csv": "e8e210b1a05862b7c1a29042d6a7390074042a606d2b7292028f70f45844618b",
+    "Modeling/tables/regime_integration/run.json": "ff3b12ee114c32a3926bdc6136f89d6b7f5e01e976995cb764bfab5f2bcd6b6e",
+    "Modeling/tables/regime_integration/independent_verification.json": "a022ab4e33edcd652fe769c868a41237b5fc949561bf0bee9ebc3ac846f78637",
+    "Modeling/tables/regime_integration/metrics.csv": "3745df99282033fc515f3b35683f5f7c2b99d5a4eaa6c903937e8c6ff57a57f1",
+    "Modeling/tables/regime_forecast/predictions.csv": "7dd9d767e04fa2c78c17fce0b76bb06a70a9e788099ad42b5f280cf24ec76488",
+    "Modeling/tables/regime_forecast/selection.csv": "f3500b85fb17ff300236d55aa6ffdf22031f02f19be9621de1d087735ba0a931",
+    "Modeling/tables/regime_forecast/independent_verification.json": "d075f30fa51b9c866ebf53707940901705db5dcf18a57e3d1e359afd5b66b3ce"
+  },
+  "new_fits": 0,
+  "outputs_sha256": {
+    "predictions.csv": "7955791315c4ff8bc05391cddc387fa35e812f1e84e1995201bd85de2b51104d",
+    "metrics.csv": "6589346af579a1cff5f9a311fa64c283cb5198a61e207a8d39ae7117adf2e9cc",
+    "routing_burden.csv": "8e07c51d04dfe5beb6de17fbd38cefc7d6bd75cef2674e2d201f6948a299fe8f",
+    "daily_peak_errors.csv": "c0dee7891cba3c73e92ad6864a24d7873a31c5a54705774372f14edf8b455354",
+    "decision.json": "d819ebf582a360f4167366f7e52a30952af00cff601f6232dab81136678be5fb"
+  }
+}

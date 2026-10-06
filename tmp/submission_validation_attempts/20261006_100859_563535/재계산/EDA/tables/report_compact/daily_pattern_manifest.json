@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checked_hour_group_cells": 48,
+  "mean_series_match": true,
+  "input_tables_and_detailed_manuscript_unchanged": true,
+  "input_sha256": {
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\10.02_002_EDA_새원고.md": "9e36f533c62c1960832c6f3d073e5ace3f3e60bd5068875954a4e9f76421e3d2",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\tables\\daily_pattern_restart.csv": "59f650bf4a6c09d07469fa6928a74215b136476f41e648a5fbbbfb6777cac50b",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\tables\\daily_repetition\\hourly_distribution.csv": "de7264d94302a76d72e6c9b2ddabc024c7ca149f3f0ab3c30b968460b3d45a03"
+  },
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\report_compact\\daily_pattern_distribution.png",
+  "figure_sha256": "50856ef91bfe93fc245e065f032a5266235921e7af538071403073f55edfbb7f",
+  "visual_review": true,
+  "display": "Production means; separate weekday/weekend power means and P10-P90; no median lines",
+  "visual_review_note": "2026-10-03: inspected at 50% scale; production means and separate weekday/weekend power means with P10-P90 are legible; shared power range; no title, footer or interpretive arrows."
+}

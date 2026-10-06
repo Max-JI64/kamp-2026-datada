@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "contract_sha256": "c4ddaedb2d8642340083fd594a65f58823ff6827325656aa6d7d73692ccfb8d8",
+  "new_fits": 0,
+  "hours_per_method": 2184,
+  "dates": 91,
+  "reviews_per_method": 182,
+  "events": 184,
+  "decision": {
+    "reportworthy_development_result": true,
+    "criteria": {
+      "at_least_five_more": true,
+      "at_least_twenty_percent_more": true,
+      "two_month_wins": true
+    },
+    "strongest_simple_TP": 20,
+    "not_automatic_warning_acceptance": true,
+    "not_independent_test": true
+  },
+  "later_evaluated": false,
+  "outputs_sha256": {
+    "predictions.csv": "f441d4ac582db4c3cab87fd44362d0dd5d8fc2b95e92e20bc4a00f39a0a136c8",
+    "daily.csv": "d05b3b99e0029d58e5fb186e780ed5016bef721add66d49f64a43c50845b0c09",
+    "metrics.csv": "14c4bbc162cef3fbc257b7079d00d9d98c00e1f2ebc1437e42dcfffdaa244ac5",
+    "sensitivity.csv": "6842c480281034d36d5980209e60b930fb38be832ab04be3e234a5872c38f402",
+    "hourly_allocation.csv": "26a85233290fd2cdb1f4fc5651d69234c3524ad059e8001e0d6a5938cbc4a1d3",
+    "decision.json": "61bb8fbe598cb0c35bf182903f2288f31434ee0cfd50c6941bf0ecf4fb82086f"
+  }
+}

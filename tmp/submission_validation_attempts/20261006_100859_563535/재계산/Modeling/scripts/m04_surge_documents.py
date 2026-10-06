@@ -1,0 +1,210 @@
+"""Document verified surge diagnosis, risk comparison and one calibration follow-up."""
+import argparse
+import json
+import re
+import sys
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+from m03_verify import rows, sha
+
+ROOT = Path(__file__).resolve().parents[2]
+MD = ROOT / 'Modeling/04_Modeling_원고.md'
+LOG = ROOT / 'Modeling/10.05_M04_증가량급등과위험출력_실행기록.md'
+TITLE = '## 4.8 M04 후속: 일반 급등의 재평가와 별도 위험 출력'
+NAMES = ['B_score', 'G_HGB_score', 'HGB_all', 'Logistic_all', 'Q90_upper']
+LABELS = dict(zip(NAMES, ['B 증가 점수', '기존 HGB 결합 증가 점수', '전체 상태 HGB 분류', '전체 상태 Logistic 분류', 'Q90 상단 증가 점수']))
+NEW = {
+    'm04_surge_diagnose.py': '증가량 경계 고정·기존 7방법 재평가·4월 순위/임계값/전문가 진단',
+    'm04_surge_verify.py': '원본 정확한 시차·분위수·급등 오차·AP/혼동행렬 독립 검증',
+    'm04_surge_risk.py': '전체 상태 분류의 120회 Optuna·Q90 보조 학습·위험 출력 비교',
+    'm04_surge_risk_verify.py': '120회 내부 OOF·시간 경계·모델 재로딩·모든 선택 요건 검증',
+    'm04_surge_calibration.py': '고정된 내부 음성 꼬리 경계로 한 번의 경보 보정; 새 학습 없음',
+    'm04_surge_calibration_verify.py': '순서통계량 경계·복사 예측·경보·변경 없는 선택 요건 독립 검증',
+    'm04_surge_documents.py': '4.8 상세 원고·기록·README 작성과 표/링크 검증; --write 또는 --verify',
+}
+
+
+def verified_tables():
+    for folder in ['m04_surge', 'm04_surge_risk', 'm04_surge_calibration']:
+        directory = ROOT / 'Modeling/tables' / folder
+        run = json.loads((directory / 'run.json').read_text(encoding='utf-8'))
+        independent = json.loads((directory / 'independent_verification.json').read_text(encoding='utf-8'))
+        assert run['status'] == 'completed' and independent['status'] == 'passed'
+        assert independent['run_sha256'] == sha(directory / 'run.json')
+        for name, expected in run['outputs_sha256'].items():
+            assert sha(directory / name) == expected, (folder, name)
+
+
+def error_table():
+    records = rows(ROOT / 'Modeling/tables/m04_surge/errors.csv')
+    table = '| 기존 방법 | 증가량≥93의 MAE | 증가량≥61.6의 MAE |\n|---|---:|---:|\n'
+    for name in ['B', 'D_dynamic', 'W_rise_weighted', 'G_Logistic', 'G_HGB', 'G_Logistic_rise_focus', 'G_HGB_rise_focus']:
+        values = [next(r for r in records if r['boundary_name'] == boundary and r['group'] == name
+                       and r['split'] == 'pooled_development' and r['condition'] == 'surge') for boundary in ['q95', 'q90']]
+        table += f"| {name} | {float(values[0]['MAE']):.3f} | {float(values[1]['MAE']):.3f} |\n"
+    return table
+
+
+def risk_table():
+    before = {r['group']: r for r in rows(ROOT / 'Modeling/tables/m04_surge_risk/selection_metrics.csv')}
+    after = {r['group']: r for r in rows(ROOT / 'Modeling/tables/m04_surge_calibration/selection_metrics.csv')}
+    table = '| 위험 출력 | 월별 AP의 사건 수 가중 평균 | 첫 경계 TP/FP | 음성 꼬리 경계 TP/FP | 재현율 | 정밀도 | 실제 오경보율 |\n|---|---:|---:|---:|---:|---:|---:|\n'
+    for name in NAMES:
+        a, b = before[name], after[name]
+        table += f"| {LABELS[name]} | {float(b['weighted_monthly_AP']):.3f} | {a['TP']}/{a['FP']} | {b['TP']}/{b['FP']} | {100*float(b['recall']):.1f}% | {100*float(b['precision']):.1f}% | {100*float(b['false_positive_fraction']):.3f}% |\n"
+    return table
+
+
+def month_table():
+    records = rows(ROOT / 'Modeling/tables/m04_surge_calibration/alarm_metrics.csv')
+    table = '| 월 | 급등 수 | B 점수 TP/FP | 기존 HGB 결합 점수 TP/FP | 전체 상태 HGB TP/FP |\n|---|---:|---:|---:|---:|\n'
+    for split, label in [('dev_apr', '4월'), ('dev_may', '5월'), ('dev_jun', '6월')]:
+        values = [next(r for r in records if r['split'] == split and r['group'] == name
+                       and r['cap'] == '0.01' and r['boundary_name'] == 'q95') for name in ['B_score', 'G_HGB_score', 'HGB_all']]
+        table += f"| {label} | {values[0]['events']} | " + ' | '.join(f"{r['TP']}/{r['FP']}" for r in values) + ' |\n'
+    return table
+
+
+def upper_summary():
+    records = [r for r in rows(ROOT / 'Modeling/tables/m04_surge_risk/regression_metrics.csv') if r['group'] == 'Q90_upper']
+    def pooled(condition, key):
+        rs = [r for r in records if r['condition'] == condition]
+        return sum(int(r['hours'])*float(r[key]) for r in rs)/sum(int(r['hours']) for r in rs)
+    coverage = [next(r for r in records if r['split'] == split and r['condition'] == 'all')['coverage']
+                for split in ['dev_apr', 'dev_may', 'dev_jun']]
+    return (pooled('surge_q95', 'MAE'), pooled('surge_q95', 'mean_under'), pooled('all', 'MAE'),
+            pooled('all', 'coverage'), pooled('surge_q95', 'coverage'), [100*float(x) for x in coverage])
+
+
+def section():
+    u_mae, u_under, all_mae, coverage, event_coverage, monthly_cov = upper_summary()
+    return f'''{TITLE}
+
+4.7의 결합은 낮은 상태에서 26초과로 바뀐 20시간의 오차를 일부 줄였지만, 그 정의는 시간당 큰 전력 증가 자체와 달랐다.
+이번 질문은 '직전 상태가 낮지 않아도 발생하는 큰 증가에서 개선이 남는가, 4월 미탐지는 어디에서 생기는가, 전력 크기 예측을 유지하면서 별도 위험 출력으로 더 잘 찾을 수 있는가'다. [실행 기록](10.05_M04_증가량급등과위험출력_실행기록.md)에 진단→최소 재학습→한 번의 경보 보정 순서를 남겼다. 앞선 실패를 삭제하거나 허용 범위를 늘려 통과시킨 작업은 아니다.
+
+### 급등을 학습 자료에서 먼저 정의
+
+급등은 `다음 시간 최대값 - 정확히 직전 시간 최대값 ≥ 93`으로 정했다. 1월 공통 비교 576시간에서 양의 증가 233건의 95분위수가 93이었다. 같은 학습 자료의 90분위수 61.6은 민감도 점검에만 사용했다. 1월 공통 표본은 시차 168시간 때문에 1월8일부터 시작한다. 시간 누락을 건너뛰어 차이를 만들지 않으며 임의 단위를 붙이지 않는다. [진단 조건](config/m04_surge_contract.json)은 계산 전에 기록했다.
+
+같은 개발 2,184시간·91일에서 주 급등은 8시간·8일(4월2·5월4·6월2)이었고, 민감도 급등은 38시간(11·13·14)이었다. 8시간 중 기존 low→above26 전환과 겹치는 것은 3시간뿐이며 5시간은 직전 낮은 상태가 아니다. 38시간에서는 17시간이 겹치고 21시간은 직전 낮은 상태 밖이다. 따라서 prior-low에서만 학습한 분류기는 범위상 모든 급등을 다루기 어렵다. 1~3월 학습의 주 급등도 15시간·7일에 불과하다. 1~6월 공통 표본에는 직전 최대값이 0인 사례가 없어 이번 결과는 0 이후 재가동의 성능을 입증하지 않는다. [사건 수](tables/m04_surge/event_counts.csv)를 함께 보존한다.
+
+### 기존 예측을 새 정의에서 재평가
+
+이번 표는 모델을 다시 학습하지 않고 기존 7방법의 같은 예측을 사용한 결과다. 주 급등 8건과 민감도 급등 38건의 분모를 섞지 않는다.
+
+{error_table()}
+B에서 주 급등 8건은 모두 과소예측되었고 MAE와 평균 과소예측은 38.586이었다. 기존 HGB 분류 결합은 둘 다 31.125로 19.3% 줄였으며, 민감도 급등 MAE도 30.444→25.941로 14.8% 줄였다. 이는 급등 크기의 오차 개선이다. 예측 증가가 93 이상일 때만 경보를 내는 직접 규칙에서는 B와 기존 결합 모두 TP2·FP2·FN6으로 같았다. 크기를 덜 작게 예상해도 경계를 넘지 않으면 탐지 수는 늘지 않는다. 또한 기존 결합은 4.7의 낮은 유지 MAE 허용 요건에 실패했으므로 이 결과만으로 정상 전력 예측을 교체하지 않는다. [전체 오류표](tables/m04_surge/errors.csv)와 [직접/보정 경보표](tables/m04_surge/alarm_metrics.csv)를 연결한다.
+
+### 4월 미탐지를 순위·경계·전문가로 구분
+
+4월의 기존 상승 8시간은 prior-low 200시간 중 확률 순위 9~34위였다. 확률은 0.00377~0.06329로 선택 경계 0.73860보다 모두 낮았고, 결합 비율도 약 0.00129였다. 이 8시간 중 새 주 급등 정의를 만족한 것은 4월9일07시 한 건이었다. 해당 시간은 실제 증가 104인데 B 최대 예측은 32.474, 상승 전문가 예측은 34.951이었다. 경보 경계만 낮춰도 전문가가 실제 최대값을 충분히 높게 예측하지 못하는 문제가 남는다. [8건의 순위·확률·전문가 상세](tables/m04_surge/april_legacy_cases.csv)를 보존했다.
+
+이 진단으로 '기존 낮은 상태 분류기의 경계를 계속 조절'하는 대신, 전체 상태에서 급등 여부를 학습하고 정상 예측과 위험 출력을 분리하는 비교를 선택했다. 4월의 모든 상승을 새 급등으로 표현하지 않으며 관측상 원인을 설비 기동 등으로 단정하지 않는다.
+
+### 전체 상태 분류와 Q90 보조 출력의 시간순 비교
+
+[추가 학습 조건](config/m04_surge_risk_contract.json)은 외부 1~3월→4월, 1~4월→5월, 1~5월→6월과 내부 과거 월 확장 검증을 유지했다. 전체 상태 Logistic/HGB 분류기는 검증된 과거 변화 포함 27입력으로 증가량≥93 여부를 학습했다. Logistic은 학습 구간에서만 표준화하고 C 0.001~100을 탐색했다. HGB는 잎3·7·15, 최소 잎 표본10·20·40, L2 0.1~10, 반복150·학습률0.05·조기종료 안 함으로 비교했다. 외부 월마다 각20회 Optuna, 총120회다. 내부 AP를 최대화하고 동률은 Brier·시도 순서로 구분했다.
+
+AP는 비보간 평균 정밀도다. 분류 순위의 주 비교는 각 월 AP를 그 월 사건 수로 가중한 평균이며, 월별 점수 척도가 달라질 수 있어 합친 AP는 보조값으로 보존했다. AUROC도 남겼지만 전체 정상 시간이 대부분인 자료에서 그 수치만으로 희소 급등 탐지를 평가하지 않았다. 전력 크기는 여전히 MAE·과소/과대로 따로 평가한다.
+
+Q90은 B의 18입력·기존 HGB 설정에 분위수 손실 0.9만 사용한 보조 상단 예측이다. 분위수를 새로 탐색하지 않았다. 분류 내부360회·분위수 내부9회·외부9회, 총378회 학습하고 저장 모델9개를 재로딩했다. 기존 B와 기존 HGB 결합의 위험 점수는 저장 예측에서 `예측 최대값-직전 최대값`으로 재사용했다. 모든 방법에서 정상 전력 예측은 B로 유지해 위험 출력 때문에 낮은 유지의 정상 예측이 악화되지 않게 했다. 이 구조는 현장 경보 비용이 사라졌다는 뜻은 아니다.
+
+### 경보 경계의 한 번의 보정과 결과
+
+첫 경보 선택은 과거 내부 예측에서 오경보 허용률 1%(보조5%) 아래 TP를 최대화하고 동률이면 FP가 적은 경계를 골랐다. 초기 내부 자료에 주 급등이 매우 적어 허용 경계에서 TP가 모두 0이면 일부 방법은 경보를 전혀 내지 않는 선택으로 귀결됐다. 이를 확인한 뒤 [후속 조건](config/m04_surge_calibration_contract.json)에 음성 꼬리 경계를 한 번만 적용하기로 기록했다. 새 모델·입력·급등 정의·AP·채택 기준은 바꾸지 않았고 새 학습도 없었다.
+
+보정 경계는 과거 내부 비급등 점수만 내림차순 정렬해 `k=floor(허용률×음성 수)`로 정하고, 인덱스 k의 점수 바로 위 부동소수점 값을 사용한다. 같은 점수의 동률은 보수적으로 제외한다. 미래 평가 월의 점수나 정답으로 경계를 고르지 않는다. 아래는 주 허용률1% 결과다. 허용률은 내부 선택 조건이며 외부에서 같은 오경보율을 보장하는 값이 아니다.
+
+{risk_table()}
+{month_table()}
+기존 결합 증가 점수는 B 점수의 5/8건 탐지에서 6/8건으로 늘었다. 대신 오경보가 8→10건으로 늘어 정밀도는 38.5%→37.5%였다. 이는 '동일 오경보 수' 비교가 아니라 '같은 내부 허용률에서 정한 경계'의 비교다. 실제 오경보율은 각각 8/2,176=0.368%, 10/2,176=0.460%다. 전체 상태 HGB는 순위 AP가 더 높아도 고정된 경계에서 3건만 찾았고 4월 주 급등 2건을 모두 놓쳤다. AP의 개선과 실제 운용 경계의 탐지 개선을 구분해야 한다. [최종 경보표](tables/m04_surge_calibration/alarm_metrics.csv), [전체 비교표](tables/m04_surge_calibration/selection_metrics.csv)에 FN/TN·5% 조건·민감도 결과도 보존했다.
+
+### 상단 예측의 성과와 한계
+
+Q90의 주 급등 MAE는 {u_mae:.3f}, 평균 과소예측은 {u_under:.3f}로 B보다 작았다. 그러나 상단을 정상 예측으로 대체하면 전체 MAE가 6.191에서 {all_mae:.3f}로 커진다. 전체 관측이 상단 이하인 비율은 4~6월 각각 {monthly_cov[0]:.2f}%·{monthly_cov[1]:.2f}%·{monthly_cov[2]:.2f}%, 합계 {100*coverage:.2f}%였다. 주 급등에서의 포함률은 {100*event_coverage:.1f}%로 8건 중1건뿐이다. 따라서 이를 급등의 90% 보장 상단이나 신뢰구간이라고 표현할 수 없다. [상단 오류·포함률](tables/m04_surge_risk/regression_metrics.csv)은 보조 분석으로 남기고 최종 정상 예측이나 위험 채널로 채택하지 않았다.
+
+### 채택 판단과 다음 회차의 변경 근거
+
+사전 추가 후보 목록은 전체 상태 Logistic/HGB와 Q90이었다. 채택하려면 B 대비 가중 AP가 5% 이상 높고, 합계 TP와 각 월 TP가 작지 않으며, 실제 합계 오경보율1% 이내이고 TP 증가 또는 FP 감소가 있어야 했다. 이 새 후보들은 모든 요건을 함께 충족하지 못해 [자동 선택](tables/m04_surge_calibration/selection.json)은 B 점수를 유지했다. 기존 HGB 결합 점수는 수치 요건을 모두 통과했지만 사전에 '기존 결과 재평가용'으로 제외한 방법이다. 결과를 본 뒤 후보 목록을 바꿔 자동 채택했다고 쓰지 않는다.
+
+다만 '기존 결합을 정상 예측 교체가 아닌 위험 점수로 사용'하는 방향은 이번 결과에서 얻은 후속 후보다. 정상 예측 B를 유지하면서 6/8건을 찾은 성과와 추가 오경보2건을 함께 보여줄 수 있다. 이것은 같은 개발 자료에서 찾은 탐색적 후보이며 8건의 작은 분모를 가진다. 보고서 제3장에는 급등 크기 오차19.3% 감소와 위험 출력의 이득·오경보 부담, 4월 한계·미평가 0재가동을 연결한다. 제5장의 주요 근거는 M03 마지막 값의 기여를 유지하고, 이번 결과는 그 뒤에 확인한 보완 가능성으로 제시한다. '모든 급등을 미리 정확히 맞춘다'는 주장은 하지 않는다.
+
+선언한 새 모델 비교와 한 번의 경보 보정은 여기서 종료한다. 다음 M05에서는 정상 예측 A/B와 별도 위험 출력 B 점수/기존 HGB 결합 점수의 비교 조건을 먼저 고정한다. M01에서 정한 대로 1~6월 자료로 각 모델을 한 번 학습하고, 같은 모델을 고정해 7~8월 전체를 평가한다. 증가 경계93과 음성 꼬리 보정식을 유지하며 모델 설정·결합 규칙·경보 경계는 6월 말까지의 자료로 확정한다. 7월 정답을 추가해 모델을 다시 학습하거나 8월용 경보 경계를 새로 정하지 않는다. 평가 중에는 관측을 마친 직전 시간의 전력·생산량 등을 입력에 반영해 다음 한 시간을 예측하며, 이 입력 갱신은 모델 재학습과 구분한다. 7~8월 결과를 보고 재튜닝하지 않으며, 후반기 자료의 과거 관찰 이력이 있으므로 완전히 처음 보는 시험이라고 쓰지 않는다. 이번 회차는 M05·현장 경보 운영·전력 절감 실측·압축본·파일 삭제를 실행하지 않았다.
+
+### 코드와 재현 근거
+
+[진단 실행](scripts/m04_surge_diagnose.py)→[진단 독립 검증](scripts/m04_surge_verify.py)→[위험 출력 학습](scripts/m04_surge_risk.py)→[학습 독립 검증](scripts/m04_surge_risk_verify.py)→[경보 보정](scripts/m04_surge_calibration.py)→[보정 독립 검증](scripts/m04_surge_calibration_verify.py)→[문서 작성·검증](scripts/m04_surge_documents.py)의 순서다. 전체 코드는 4.5의 32개 파일 목록에 포함한다.
+
+추가 조건3개, `tables/m04_surge/`, `tables/m04_surge_risk/`, `tables/m04_surge_calibration/`, `models/m04_surge_risk/`의 모델9개를 함께 보존한다. `trial_oof_predictions.npz`는 120회 선택을 독립 검증하는 배열이므로 본문에 직접 인용하지 않더라도 필요하다. 진단 15,288행·추가 위험 출력 10,920행·내부 예측32,160행·후속 경보10,920행의 검증을 마쳤다. 새 그림이나 별도 압축 보고서는 만들지 않고 상세 원고와 두 README의 기존 흐름에 연결했다.
+'''
+
+
+def write():
+    source = MD.read_text(encoding='utf-8')
+    assert TITLE not in source, 'Preserve the existing section; do not overwrite.'
+    source = source.replace('사용한 25개 파일이다.', '사용한 32개 파일이다.')
+    insert = '\n'.join(f'| [{name}](scripts/{name}) | 4.8 {role} | 전체 파일 보존; `main()` |' for name, role in NEW.items()) + '\n'
+    marker = '| [modeling_submission_audit.py]'
+    source = source.replace(marker, insert + marker, 1)
+    source = source.replace('[결합 점수 수정](config/m04_rise_gate_contract.json).', '[결합 점수 수정](config/m04_rise_gate_contract.json), [일반 급등 진단](config/m04_surge_contract.json), [위험 출력](config/m04_surge_risk_contract.json), [경보 보정](config/m04_surge_calibration_contract.json).')
+    source = source.replace('`m04_rise_gate/`, `observed_timeline/`', '`m04_rise_gate/`, `m04_surge/`, `m04_surge_risk/`, `m04_surge_calibration/`, `observed_timeline/`')
+    source = source.replace('`m02_rerun/`, `m04_rise/`의 파일.', '`m02_rerun/`, `m04_rise/`, `m04_surge_risk/`의 파일.')
+    start = source.index('| 11 | `Modeling/scripts/m02_rerun_document_verify.py`')
+    end = source.index('\n\n정리 전에는', start)
+    source = source[:start] + '''| 11 | `Modeling/scripts/m04_surge_diagnose.py` → `Modeling/scripts/m04_surge_verify.py` | 증가량 정의·기존 예측 재평가·4월 진단 |
+| 12 | `Modeling/scripts/m04_surge_risk.py` → `Modeling/scripts/m04_surge_risk_verify.py` | 전체 상태 분류·Q90 보조 학습과 검증 |
+| 13 | `Modeling/scripts/m04_surge_calibration.py` → `Modeling/scripts/m04_surge_calibration_verify.py` | 저장 내부 예측의 음성 꼬리 경보 보정; 새 학습 없음 |
+| 14 | `Modeling/scripts/m02_rerun_document_verify.py`, `Modeling/scripts/m04_verify.py --documents`, `Modeling/scripts/m04_rise_documents.py --verify`, `Modeling/scripts/m04_surge_documents.py --verify` | 기존·추가 원고 수치와 링크 검증 |
+| 15 | `Modeling/scripts/modeling_submission_audit.py --record` → `Modeling/scripts/modeling_submission_audit.py --verify` | 최신 상태를 보존 목록에 기록하고 의존성 확인 |''' + source[end:]
+    MD.write_text(source.rstrip() + '\n\n' + section().rstrip() + '\n', encoding='utf-8')
+    LOG.write_text('# M04 증가량 급등과 별도 위험 출력 실행 기록\n\n' + section() + '\n', encoding='utf-8')
+    paragraph = '''일반 급등을 학습 1월 양의 증가 95분위수인 증가량93 이상으로 먼저 정하고 기존 예측을 재평가했다. 개발8건에서 기존 HGB 결합의 MAE는38.586→31.125(19.3%감소)였다. 전체 상태 분류·Q90을120회 Optuna·378회 학습으로 비교한 뒤, 저장 내부 예측의 음성 꼬리 경계를 한 번 보정했다. 정상 예측은 B로 유지한다. 별도 위험 점수로 기존 결합을 쓰면 B의5/8건 탐지·오경보8건에서6/8건·오경보10건으로 바뀌었다. 새 후보는 모든 채택 요건을 충족하지 못했고 자동 선택은 B 점수다. 기존 결합 점수는 사전 후보 목록 밖의 탐색적 후속 후보이므로 M05에서 고정 조건으로 확인할 대상으로 연결한다. 3단계 독립 검증을 마쳤고 M05는 미실행이다.'''
+    for path, target in [(ROOT / 'README.md', 'Modeling/10.05_M04_증가량급등과위험출력_실행기록.md'), (ROOT / 'Modeling/README.md', '10.05_M04_증가량급등과위험출력_실행기록.md')]:
+        content = path.read_text(encoding='utf-8')
+        assert target not in content
+        position = content.index('\n\n', content.index('# '))
+        content = content[:position] + f'\n\n[일반 급등·위험 출력 실행 기록]({target}): {paragraph}' + content[position:]
+        if path.parent.name == 'Modeling':
+            content = re.sub(r'사용한 Python 코드 \d+개', '사용한 Python 코드 32개', content)
+        path.write_text(content, encoding='utf-8')
+
+
+def verify():
+    source = MD.read_text(encoding='utf-8')
+    assert source.count(TITLE) == 1
+    assert source.split(TITLE, 1)[1].split('\n## 4.9', 1)[0].rstrip() == section().split(TITLE, 1)[1].rstrip()
+    assert LOG.read_text(encoding='utf-8').split(TITLE, 1)[1].rstrip() == section().split(TITLE, 1)[1].rstrip()
+    links = 0
+    for target in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', source):
+        if target.startswith(('http:', 'https:', '#', 'app:')):
+            continue
+        assert (MD.parent / target.split('#')[0].strip('<>')).resolve().exists(), target
+        links += 1
+    for name in NEW:
+        assert f'(scripts/{name})' in source
+    result = {'status': 'passed', 'checked_at': datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='minutes'),
+              'script_sha256': sha(Path(__file__)), 'manuscript_sha256': sha(MD), 'execution_record_sha256': sha(LOG),
+              'error_rows': 7, 'risk_rows': 5, 'monthly_rows': 3, 'local_links_checked': links,
+              'normal_forecast': 'B', 'automatic_risk_selection': 'B_score',
+              'provisional_followup_risk_candidate': 'G_HGB_score', 'no_training_or_deletion': True}
+    (ROOT / 'Modeling/tables/m04_surge_calibration/document_verification.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+    print(json.dumps(result), flush=True)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--write', action='store_true')
+    group.add_argument('--verify', action='store_true')
+    args = parser.parse_args()
+    assert sys.version_info[:2] == (3, 13) and sys._is_gil_enabled()
+    verified_tables()
+    if args.write:
+        write()
+    verify()
+
+
+if __name__ == '__main__':
+    main()

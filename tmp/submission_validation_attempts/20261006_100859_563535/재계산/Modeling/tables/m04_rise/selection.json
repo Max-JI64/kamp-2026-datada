@@ -1,0 +1,18 @@
+{
+  "selected": "B",
+  "eligible_methods": [],
+  "development_only": true,
+  "rule": {
+    "overall_MAE_ratio_max": 1.01,
+    "daily_maximum_MAE_ratio_max": 1.01,
+    "low_stay_MAE_ratio_max": 1.01,
+    "low_stay_mean_over_ratio_max": 1.05,
+    "rise_MAE_ratio_max": 0.9,
+    "rise_mean_under_ratio_max": 0.9,
+    "rise_monthly_MAE_ratio_max": 1.0,
+    "gate_false_positive_fraction_max": 0.05,
+    "eligible_choice": "Among methods satisfying all gates choose lowest max(relative overall, daily-maximum and rise MAE), within 1 percent prefer D_dynamic, then W, G_Logistic, G_HGB. If none eligible retain B and state unmet requirements. Report all candidates, not only successful results.",
+    "interpretation": "Numerical development tolerances, not measured economic optima or a guarantee of improvement; calibration and alarm metrics supplement regression results."
+  },
+  "no_july_august_evaluation": true
+}

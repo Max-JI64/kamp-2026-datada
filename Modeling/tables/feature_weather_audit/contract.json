@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-10-06T12:08+09:00",
+  "prior_evidence": [
+    "Analysis 3.3: conditioned associations do not test forecast utility",
+    "Modeling 4.3: weather D never run; 4.12 B0/B1; 4.13 only Logistic explained"
+  ],
+  "questions": [
+    "Does prior-hour weather improve identical B0/B1 forecasts?",
+    "Which feature groups and individual inputs influence the existing HGB forecasts?"
+  ],
+  "inputs_sha256": {
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/regime_integration/meta_features.csv": "078e288b5dc4b1772efd229bc3eba6a94c3fed6a22a31020f52ad1b06a1987b8",
+    "Modeling/tables/regime_integration/predictions.csv": "e8e210b1a05862b7c1a29042d6a7390074042a606d2b7292028f70f45844618b",
+    "Modeling/tables/regime_followup/predictions.csv": "657f4ec3de58947d6ac8e844356df1ce4b55d0e9f68dc89baa967a630d293261",
+    "Modeling/tables/regime_followup/contract.json": "3f3feecb69bee5df50dc1b17916e294c89f4a407bda4e191e5d7b312a160d0d5",
+    "Modeling/tables/regime_age_ablation/development_classification.csv": "f6e1ee1bd9eb6ff7b09596fca7b890b214f91d918f13f2589331920848ee3703",
+    "Modeling/tables/regime_age_ablation/followup_classification.csv": "55466771a3f6fa06a6d5f40ea94845bc830f72ddbd54d97145c115e05e79ab19",
+    "Modeling/tables/regime_age_ablation/followup_predictions.csv": "051d0ac73e2a1b621480f63b131b827eb3c1d106714ea68253b6dbb13cc094b7",
+    "Modeling/models/regime_integration/04_B0.joblib": "ee0b41ba2973058d6ae283278e9904253eddbe5394975c005c6ab82f95c8d4a5",
+    "Modeling/models/regime_integration/04_B1.joblib": "35e251471a92b8e870be13a987ed3c2cf419174976f7bf81a680e7ca95b376a9",
+    "Modeling/models/regime_integration/05_B0.joblib": "c04b4abb4341e70724b44b3ccb4cc65c4a20256d538cccf76d6bbded9e77b2d0",
+    "Modeling/models/regime_integration/05_B1.joblib": "0bd09fe3f5b42c1ca72c8ee7236dd914b347b05a54d70c566c0422d711a08f47",
+    "Modeling/models/regime_integration/06_B0.joblib": "fb58e4534ed2803c86622b7be115d2d15364ffab981e779fb9004d597767f62a",
+    "Modeling/models/regime_integration/06_B1.joblib": "8a4695d2dff02c888b912170ec3b47a805d9f6b2933ee221270afeab8735e4a6",
+    "Modeling/models/regime_followup/B0.joblib": "5fafc0cd7726f530cc4a8c226101fa2472d59e91d25f30686a4cc1ea66c2747b",
+    "Modeling/models/regime_followup/B1.joblib": "4a9f5536599789b4d07c1cc11590e00e89d931b7c901a5b09f303cbf54fb9dc4"
+  },
+  "script_sha256": "d16c374f2c554bd22f6cfcf661bd7c2e077555ba15cef510dc716baf00979e0a",
+  "features": {
+    "B0": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last"
+    ],
+    "B1": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last",
+      "past_median6",
+      "past_iqr6",
+      "past_range6",
+      "past_slope6",
+      "prior_delta",
+      "prior_last_minus_mean",
+      "prior_slot_range",
+      "prior_production_delta",
+      "prior_state_age",
+      "prior_state_left_censored",
+      "prior_state_direction",
+      "up_classifier_available",
+      "down_classifier_available"
+    ]
+  },
+  "parameters": {
+    "max_leaf_nodes": 15,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "weather_features": [
+    "lag1_temperature",
+    "lag1_wind",
+    "lag1_humidity",
+    "lag1_rain"
+  ],
+  "weather_policy": "Exact t-1 weather only. Train-only median imputation, indicator for missing in train. Keep every baseline row. No target weather, interpolation, clipping, retuning, or classifier/gate changes.",
+  "folds": "Existing Feb-to-prior-month training for Apr/May/Jun; matured labels only. Fixed Feb-Jun fit before July for July/August. Reuse eight original B0/B1 models and verify their predictions. Eight new weather fits.",
+  "decision_before_run": "For each B0/B1: development pooled MAE reduction >=1%, peak MAE worsening <=1%, non-worse overall MAE in at least 2/3 months. Secondary fixed-gate system evaluated separately. Later period is exploratory corroboration, not selection or independent final test.",
+  "shap": {
+    "method": "interventional TreeExplainer, raw regression output, exact, 100 random training-only background rows seed42",
+    "scope": "All baseline development/follow-up hours; weather follow-up models. Rank by mean absolute SHAP. Record signed event/alarm contributions and background. Check sum+base=prediction.",
+    "limitations": "Attribution depends on background and dependence assumptions; correlated features share credit. No causal/equipment effect or performance importance claim."
+  },
+  "permutation": {
+    "method": "10 same-month donor-day permutations at matched hour; entire feature group moves together. Missing donor hours retain original values. RNG42. All/up-start/fixed-alarm MAE increments.",
+    "limitations": "Sensitivity to perturbed combinations, not retrained removal effect. Cross-group dependence can break. SD measures permutation variability, not a confidence interval."
+  },
+  "protected_manuscripts_sha256": {
+    "Modeling/04_Modeling_원고.md": "1605f4d72e95158360257107cad3d56f47152b3bcdd141f8bb96f728bf023fe8",
+    "Modeling/04_Modeling_3페이지용_압축본.md": "493e015bac4fcbafbf4af15ed5be0542dfbdf38567546ce9dd43e0999c2758a6",
+    "Analysis/03_Analysis_원고.md": "51d227960b5d0b60060c5f5b2a00248dd96a74aa5acf19b003c9e8c28d7f1e00"
+  },
+  "packages": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "pandas": "3.0.1",
+    "sklearn": "1.7.1",
+    "shap": "0.51.0"
+  },
+  "stop": "One frozen weather set and settings; explain verified models; document all outcomes. No additional tuning to obtain improvement. Existing manuscripts/models/results untouched."
+}

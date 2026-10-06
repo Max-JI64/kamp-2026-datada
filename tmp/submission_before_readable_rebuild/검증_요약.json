@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "raw_matches_original": true,
+  "raw_rows": 6168,
+  "scoped_rows": 5832,
+  "invalid_hours": 48,
+  "valid_hours": 5784,
+  "raw_preprocessed_input_reads": 20,
+  "manuscript_source_files": 97,
+  "code_cells": 105,
+  "markdown_cells": 171,
+  "executed_result_markdown_cells": 58,
+  "execution_steps": 50,
+  "classification_predictions_checked": 1428,
+  "regression_predictions_checked": 4032,
+  "selected_model_refits": 6,
+  "notebook_sha256": "47f25ed16723d71d67d058bf4f9019c8581a0da14629ba25bc62247f7a2e7e0a",
+  "input_manifest_sha256": "cbd95bafb3ad3eea57601988421d41e0b5149e53faecb8f46a16b464a2a6d045",
+  "run": "실행결과/20261006_101939_491149",
+  "historical_optuna_search_rerun": false,
+  "limitations": "Historical fixed outputs and models are reused and verified; selected current models are refitted. No deployment or new independent holdout."
+}

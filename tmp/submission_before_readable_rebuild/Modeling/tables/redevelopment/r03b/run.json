@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "completed_at": "2026-10-05T18:09+09:00",
+  "new_fits": 75,
+  "new_optuna_trials": 0,
+  "weight_configurations": 21,
+  "seconds": 38.40121199999703,
+  "script_sha256": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986",
+  "entrypoint_sha256": "f4ad735390e460643eb69f34bcdc00b4b2502d9ffb31a329ec9b00df0752121c",
+  "contract_sha256": "72e0bb7eb396241fff1c4ca1ffd21ab11fecbaba3d31de1e4319f289b625b3fc",
+  "outputs_sha256": {
+    "comparison.csv": "d001a071cb9713dc503cd208cb5afcc105917aa5fc56f7ec8f8fca7e263adb1f",
+    "configurations.json": "ef3f194bc1befb77f0f7e433648642131b278a580c464bd49c92604fceb3abdd",
+    "inner_predictions.csv": "11a4377a7e50a84ba8234c80ca518b97a211948263314edb8a0120c8cbba8293",
+    "leave_one_date_out.csv": "15b9036918de708d8f2103383c3f50ad8ff63a5019e7d44e1bf914d6f9781cdb",
+    "metrics.csv": "86d26aef4420b671d4002053ebbca09c182a6b00451f576b45394b592f25ea6d",
+    "model_manifest.csv": "482389aca9d7fdf37c618aa077d15584216bf51db0a35897a7cc70b580415b35",
+    "predictions.csv": "b1830f0d60d3ffb17ccb7f660dc5031ed8600a8e8080c812f9ffcefd607efe42",
+    "selection.json": "8932ff1796b7a3578e82324e654c34fa0ab4b117d84ad2b55c5782b5c63fc030",
+    "training_weight_audit.csv": "fc4476591915db621309967bd0470af0044fbe539f20be2c3e4fb412a06e86ef",
+    "weight_trials.csv": "fa0aaebc37577861b37c6f3a0090c86449eb0fa746d94f6f684328ae83448284"
+  }
+}

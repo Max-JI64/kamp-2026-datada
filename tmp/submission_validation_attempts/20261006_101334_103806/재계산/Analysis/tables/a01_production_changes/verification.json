@@ -1,0 +1,34 @@
+{
+  "raw_independent_pairs": 5781,
+  "unpaired_hours": 3,
+  "source_preserved": true,
+  "status": "passed",
+  "n": 5781,
+  "days": 241,
+  "production_group_counts": {
+    "maintain": 2296,
+    "increase": 1797,
+    "decrease": 1688
+  },
+  "transition_counts": {
+    "positive_to_positive": 3060,
+    "zero_to_zero": 2292,
+    "zero_to_positive": 215,
+    "positive_to_zero": 214
+  },
+  "transition_matching_independently_verified": true,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "2ed13143a4e91c72f3c981181ffc1c5baf2fd2c91b3df54f5467d42cad834c3f",
+  "outputs_sha256": {
+    "leave_month_out.csv": "6231c597bb2b561b0ea097ce943665c5115554efa5562d60167c61d75133449f",
+    "matched_contrasts.csv": "f0a2ae0c55ba3be05bb192b79952204ab9b38f7a142a920cd8687123c9b08591",
+    "observations.csv": "188d98e8712063bd2a1b56f0e95ea7ffc23f587eff1444be92413905330a2b4c",
+    "positive_production_correlations.csv": "da44325cdc35221df681bd5979d231bc391db977396ade7cdb38ed00fce25fe2",
+    "relative_contrasts.csv": "b62911d27f83574eb7be694dafc4dc3969eed95d81551d41ca911a97e2cbcfcd",
+    "relative_denominators.csv": "89d43676446135dfbf8b2ff0615bc26a0e271a82f97bd0731430faafa2f407cb",
+    "relative_matched_observations.csv": "bced64c837150927be9ea23d1e053072fa27f90784b1157f05f4452926cef3fe",
+    "summaries.csv": "a14620e5316b93802bf408cd84c7372e1eafd4258eb319fa3c0de3659e3bd26f",
+    "transition_matched_contrasts.csv": "b70be5789f700a7f6d98ce73ba421dad7bd8dd6bd356f2368998761ee1c802e1",
+    "transition_stability.csv": "bff1a157c5aaea62262f01eeb5d1e1f82498e59de20b8468073371a474723339"
+  }
+}

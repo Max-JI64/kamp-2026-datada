@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "frozen_conditions_unchanged": {
+    "frozen.json": "5cc22daeba82fc8f9c276c386215c8dc4021e17f0bfe0c0fd83340bb31c22b4e",
+    "power_frozen.json": "a2f0d13883678e19d5b5625cb700cf265ca8c01ac00bde25ea8a66f2ef30229d"
+  },
+  "daily_profiles_used_only_for_posthoc_diagnostic": true,
+  "figure_path": "Analysis\\figures\\a02_transition_detection.png",
+  "figure_sha256": "c93bc79d81e8dbe011cc92c941f5832cad37b7e16eee9b56fa18f920c39ee304",
+  "figure_reviewed": true,
+  "outputs_sha256": {
+    "repetition_sensitivity.csv": "2ce9fe3c7885aab54e5574c1034f8d7c2051f88b83554c14c82abdb2db3b6cf5",
+    "mixture_diagnosis.csv": "92aaab6b9eb2a0a93fd13c769618687021c8e086640f73d3a27dd9fc2e3719ec",
+    "split_counts.csv": "09f2e03db2d1005b9a245d28805f811c31dd34a1e813e0067255138dddb0c97a"
+  },
+  "review_scale": "50%; labels, counts, legend, axes checked visually"
+}

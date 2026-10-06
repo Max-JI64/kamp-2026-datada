@@ -1,0 +1,10 @@
+{
+  "classification_gate_passed": false,
+  "routing_gate_passed": false,
+  "start_mae_reduction": 0.091400342826923,
+  "up_under_reduction": 0.15847596132369468,
+  "overall_mae_change": 0.0545358705362089,
+  "daily_peak_mae_change": -0.03149982832123621,
+  "scope": "Already observed July/August follow-up, not a new independent test. Do not retune from these results.",
+  "no_retuning": true
+}
