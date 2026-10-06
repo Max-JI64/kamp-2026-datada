@@ -1,0 +1,6 @@
+{
+  "reason": "Terminal slot association robust, but also associated with next mean. Need check redundancy with prior maximum and mean-adjustment assumptions before forecasting candidate.",
+  "comparison": "Retain continuous next maximum; add observed prior maximum cubic ranks to fixed controls, then prior trend; exact prior mean+production0state matched cells as non-binned sensitivity.",
+  "periods": "Jan-Apr,May-Jun,Jul-Aug separate descriptive associations only, no fitting or independent test claim.",
+  "stop": "Candidate retained only as observed antecedent if direction survives; no forecast training/threshold change or favorable subgroup selection."
+}

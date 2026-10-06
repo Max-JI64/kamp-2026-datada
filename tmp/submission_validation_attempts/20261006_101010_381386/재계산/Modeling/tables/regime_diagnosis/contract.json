@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-05T22:04+09:00",
+  "entrypoint_sha256": "765b3e42bc2da6ea2d587a64621d7c237681e30b219401d17be832e4542fc2a9",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "probe_sha256": "95550820c0b95c4e8cea110f93f557b24d72ee58a302deab9d368b559bab63db",
+  "scope": "January-June only. S02 condition diagnosis January-March; April-June onset counts only, no performance selection.",
+  "thresholds": {
+    "up": 59.5,
+    "down": 42.92499999999997
+  },
+  "quantile": 0.9,
+  "calibration": "January valid rows with six exact past observations; separate positive/negative one-hour mean deltas",
+  "onset": "delta and departure from preceding6 median each >=direction threshold; departure>=1.5 preceding6 IQR",
+  "episode": "freeze baseline at onset; suppress same-direction starts while departure>=half threshold; allow opposite qualifying start; reset on return or gap. State features prior-only. Large same-direction steps saved as suppressed candidates, not new starts.",
+  "persistence": "at t,t+1,t+2 all observed levels in original departure direction at least half threshold. Unknown if gap/end; confirmed t+2.",
+  "duration": "consecutive hours on one side of original frozen baseline until return/gap/end; opposite-event reference durations can overlap; not a disjoint state segmentation or constant box guarantee",
+  "sensitivity": "q95 and horizon1/6 descriptive; no model-dependent definition choice",
+  "features": [
+    "prior_mean",
+    "past_median6",
+    "past_iqr6",
+    "past_range6",
+    "past_slope6",
+    "prior_delta",
+    "prior_last_minus_mean",
+    "prior_slot_range",
+    "prior_production",
+    "prior_production_delta",
+    "prior_state_age",
+    "prior_state_left_censored",
+    "prior_state_direction"
+  ],
+  "conditions": "January-March only month/hour/previous-level-bin; January prior mean quintiles; min2event and min5control records; weights=min(event,control); one-event cells sensitivity",
+  "controls": "eligible onset=0 rows with the same complete persistence observation window; controls include ongoing states, not all stable",
+  "no_future_inputs": "target level/delta/deviation, event outcomes, full-day profile and future duration excluded from features",
+  "splits": "for validation months2..6 use timestamp before month and confirmed_at before month. No class prediction fitted.",
+  "no_manuscript_edit": true,
+  "fits": 0,
+  "later_evaluated": false
+}

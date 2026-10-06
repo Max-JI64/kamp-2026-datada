@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "original_observations_preserved": true,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "2829833b9138a4f2538fd54d3dea12e0abbc06a813849fe74d2d3c6356f54402",
+  "matched_rows": 717,
+  "matched_cells": 46,
+  "all_zero_denominator_hours": 17,
+  "primary_zero_denominator_hours": 0,
+  "independent_raw_rows_checked": 717,
+  "primary_percent_grouping_verified": true,
+  "outputs_sha256": {
+    "relative_contrasts.csv": "b62911d27f83574eb7be694dafc4dc3969eed95d81551d41ca911a97e2cbcfcd",
+    "relative_denominators.csv": "89d43676446135dfbf8b2ff0615bc26a0e271a82f97bd0731430faafa2f407cb",
+    "relative_matched_observations.csv": "bced64c837150927be9ea23d1e053072fa27f90784b1157f05f4452926cef3fe"
+  }
+}

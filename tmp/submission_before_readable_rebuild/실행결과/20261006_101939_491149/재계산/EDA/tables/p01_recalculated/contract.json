@@ -1,0 +1,20 @@
+{
+  "version": "p01-v1",
+  "recorded_at": "2026-10-06T10:20+09:00",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "script_sha256": "dee875b3c43c742e1fd7ecce429f2689ae94069aa5b8d020e29114ec9b798f05",
+  "question": "Does within-hour shape and duration justify history and four-output comparisons?",
+  "scope": "All 5784 valid Jan-Aug hours; descriptive only; already observed data",
+  "high_definition": "January valid hourly maximum linear q95; fixed before output inspection; slot >= threshold",
+  "shape_measures": [
+    "maximum-mean",
+    "maximum-minimum",
+    "maximum-second_largest",
+    "tied maxima",
+    "high slots count"
+  ],
+  "episode_definition": "Consecutive recorded slots in column order, connect hours only when exact-hour consecutive; no interpolation",
+  "future_rule": "No full-day label or completed episode duration may be a prediction input",
+  "reuse": "a06 episodes.csv for low/zero; slot_time_patterns for mean slot shapes",
+  "no_manuscript_edit": true
+}

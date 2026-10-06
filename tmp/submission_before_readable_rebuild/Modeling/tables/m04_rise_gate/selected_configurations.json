@@ -1,0 +1,224 @@
+[
+  {
+    "split": "dev_apr",
+    "group": "G_Logistic_rise_focus",
+    "best_trial": 34,
+    "parameters": {
+      "threshold": 0.7226908538861713,
+      "blend": 0.9001444671945034
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 13.232725059035378,
+        "daily_maximum_MAE": 17.93334644691127,
+        "rise_MAE": 51.612176812007,
+        "rise_under": 51.612176812007,
+        "low_stay_MAE": 23.108362337560216,
+        "low_stay_over": 22.344887515210164,
+        "prior_low_hours": 438,
+        "rise_hours": 17
+      },
+      "classification": {
+        "prior_low_hours": 438,
+        "positive_hours": 17,
+        "prevalence": 0.03881278538812785,
+        "AP": 0.12136844237756164,
+        "AUROC": 0.5830655302501048,
+        "Brier": 0.049949005677032476,
+        "TP": 1,
+        "FP": 0,
+        "FN": 16,
+        "TN": 421,
+        "precision": 1.0,
+        "recall": 0.058823529411764705,
+        "false_positive_fraction": 0.0,
+        "threshold": 0.7226908538861713
+      }
+    }
+  },
+  {
+    "split": "dev_apr",
+    "group": "G_HGB_rise_focus",
+    "best_trial": 33,
+    "parameters": {
+      "threshold": 0.6051810675650828,
+      "blend": 0.0011572049401622714
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 13.23640177735055,
+        "daily_maximum_MAE": 17.93302258980549,
+        "rise_MAE": 51.92949807142627,
+        "rise_under": 51.92949807142627,
+        "low_stay_MAE": 23.10791523951782,
+        "low_stay_over": 22.344440417167757,
+        "prior_low_hours": 438,
+        "rise_hours": 17
+      },
+      "classification": {
+        "prior_low_hours": 438,
+        "positive_hours": 17,
+        "prevalence": 0.03881278538812785,
+        "AP": 0.2654231768203768,
+        "AUROC": 0.6428671230962694,
+        "Brier": 0.05870464392109537,
+        "TP": 5,
+        "FP": 17,
+        "FN": 12,
+        "TN": 404,
+        "precision": 0.22727272727272727,
+        "recall": 0.29411764705882354,
+        "false_positive_fraction": 0.040380047505938245,
+        "threshold": 0.6051810675650828
+      }
+    }
+  },
+  {
+    "split": "dev_may",
+    "group": "G_Logistic_rise_focus",
+    "best_trial": 47,
+    "parameters": {
+      "threshold": 0.7487191692810179,
+      "blend": 0.13295791584825567
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 11.21044206720361,
+        "daily_maximum_MAE": 13.875880604247705,
+        "rise_MAE": 54.74212788562328,
+        "rise_under": 54.74212788562328,
+        "low_stay_MAE": 17.420581414504035,
+        "low_stay_over": 16.793746980387073,
+        "prior_low_hours": 638,
+        "rise_hours": 25
+      },
+      "classification": {
+        "prior_low_hours": 638,
+        "positive_hours": 25,
+        "prevalence": 0.03918495297805643,
+        "AP": 0.1428065953995608,
+        "AUROC": 0.5648287112561174,
+        "Brier": 0.0954901227903842,
+        "TP": 6,
+        "FP": 29,
+        "FN": 19,
+        "TN": 584,
+        "precision": 0.17142857142857143,
+        "recall": 0.24,
+        "false_positive_fraction": 0.04730831973898858,
+        "threshold": 0.7487191692810179
+      }
+    }
+  },
+  {
+    "split": "dev_may",
+    "group": "G_HGB_rise_focus",
+    "best_trial": 45,
+    "parameters": {
+      "threshold": 0.6269180888084964,
+      "blend": 0.9992129395111893
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 11.15983640519584,
+        "daily_maximum_MAE": 13.868732440260635,
+        "rise_MAE": 53.23202352343824,
+        "rise_under": 52.991471600009206,
+        "low_stay_MAE": 17.30526816041555,
+        "low_stay_over": 16.658646619796258,
+        "prior_low_hours": 638,
+        "rise_hours": 25
+      },
+      "classification": {
+        "prior_low_hours": 638,
+        "positive_hours": 25,
+        "prevalence": 0.03918495297805643,
+        "AP": 0.22957702198305155,
+        "AUROC": 0.7070799347471453,
+        "Brier": 0.05175969592868784,
+        "TP": 5,
+        "FP": 13,
+        "FN": 20,
+        "TN": 600,
+        "precision": 0.2777777777777778,
+        "recall": 0.2,
+        "false_positive_fraction": 0.021207177814029365,
+        "threshold": 0.6269180888084964
+      }
+    }
+  },
+  {
+    "split": "dev_jun",
+    "group": "G_Logistic_rise_focus",
+    "best_trial": 24,
+    "parameters": {
+      "threshold": 0.7390397478120815,
+      "blend": 0.0013101200616119912
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 9.78464413350605,
+        "daily_maximum_MAE": 11.874714473885922,
+        "rise_MAE": 54.395989937426876,
+        "rise_under": 54.395989937426876,
+        "low_stay_MAE": 13.297774081177566,
+        "low_stay_over": 12.63856273532233,
+        "prior_low_hours": 900,
+        "rise_hours": 33
+      },
+      "classification": {
+        "prior_low_hours": 900,
+        "positive_hours": 33,
+        "prevalence": 0.03666666666666667,
+        "AP": 0.1268797866636249,
+        "AUROC": 0.5783090419768621,
+        "Brier": 0.07679032050653271,
+        "TP": 6,
+        "FP": 31,
+        "FN": 27,
+        "TN": 836,
+        "precision": 0.16216216216216217,
+        "recall": 0.18181818181818182,
+        "false_positive_fraction": 0.03575547866205306,
+        "threshold": 0.7390397478120815
+      }
+    }
+  },
+  {
+    "split": "dev_jun",
+    "group": "G_HGB_rise_focus",
+    "best_trial": 41,
+    "parameters": {
+      "threshold": 0.4703978698248008,
+      "blend": 0.9937733872450277
+    },
+    "inner_metrics": {
+      "metrics": {
+        "overall_MAE": 9.727069180897999,
+        "daily_maximum_MAE": 11.691453503277446,
+        "rise_MAE": 51.928230697035886,
+        "rise_under": 51.92155779319059,
+        "low_stay_MAE": 13.199885672154034,
+        "low_stay_over": 12.540518872953752,
+        "prior_low_hours": 900,
+        "rise_hours": 33
+      },
+      "classification": {
+        "prior_low_hours": 900,
+        "positive_hours": 33,
+        "prevalence": 0.03666666666666667,
+        "AP": 0.291065302204624,
+        "AUROC": 0.798154555940023,
+        "Brier": 0.04438909943913596,
+        "TP": 9,
+        "FP": 21,
+        "FN": 24,
+        "TN": 846,
+        "precision": 0.3,
+        "recall": 0.2727272727272727,
+        "false_positive_fraction": 0.02422145328719723,
+        "threshold": 0.4703978698248008
+      }
+    }
+  }
+]

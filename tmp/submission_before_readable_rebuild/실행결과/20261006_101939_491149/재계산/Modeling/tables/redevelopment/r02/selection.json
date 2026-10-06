@@ -1,0 +1,204 @@
+{
+  "selected": null,
+  "candidate_gates": [
+    {
+      "method": "fixed_ExtraTrees_A",
+      "overall_MAE": 6.825227442673923,
+      "peak_MAE": 11.540047830988037,
+      "peak_under": 10.89693593669694,
+      "peak_over": 0.6431118942910968,
+      "balanced_score": 0.4948312553047353,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_ExtraTrees_B",
+      "overall_MAE": 6.3425397804451,
+      "peak_MAE": 9.018818432738277,
+      "peak_under": 8.226139343037962,
+      "peak_over": 0.7926790897003138,
+      "balanced_score": 0.4598362395595571,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_HGB_A",
+      "overall_MAE": 6.737973239313947,
+      "peak_MAE": 11.750641760429726,
+      "peak_under": 11.260036830592895,
+      "peak_over": 0.4906049298368324,
+      "balanced_score": 0.4885052965961246,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_HGB_B",
+      "overall_MAE": 6.190524965035317,
+      "peak_MAE": 7.58873099352297,
+      "peak_under": 6.987028143141024,
+      "peak_over": 0.6017028503819463,
+      "balanced_score": 0.4488151149793232,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": true,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": true
+      }
+    },
+    {
+      "method": "lag1",
+      "overall_MAE": 13.793040293040294,
+      "peak_MAE": 36.588958660387235,
+      "peak_under": 36.588958660387235,
+      "peak_over": 0.0,
+      "balanced_score": 1.0,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "tuned_ExtraTrees_A",
+      "overall_MAE": 6.825227442673923,
+      "peak_MAE": 11.540047830988037,
+      "peak_under": 10.896935936696941,
+      "peak_over": 0.643111894291097,
+      "balanced_score": 0.4948312553047353,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "tuned_ExtraTrees_B",
+      "overall_MAE": 6.2591206649947875,
+      "peak_MAE": 9.075306437074476,
+      "peak_under": 8.36472026684923,
+      "peak_over": 0.7105861702252443,
+      "balanced_score": 0.4537883259974975,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "tuned_HGB_A",
+      "overall_MAE": 6.9626158154309925,
+      "peak_MAE": 13.250595531819217,
+      "peak_under": 12.705092443587835,
+      "peak_over": 0.545503088231377,
+      "balanced_score": 0.5047919579372356,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "tuned_HGB_B",
+      "overall_MAE": 6.531215124014087,
+      "peak_MAE": 9.788986792521177,
+      "peak_under": 9.16023572704231,
+      "peak_over": 0.6287510654788672,
+      "balanced_score": 0.47351526460120724,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    }
+  ],
+  "no_eligible_candidate": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "generated",
+  "visual_review": "passed: two figures viewed at 50 percent; axes, legends, values, group sizes, weighted maximum-hour interpretation checked",
+  "input_sha256": {
+    "comparison.csv": "abd33d88b34f1ba78a136f75641eb308453d0d8c02078fc54573bc406692b7fa",
+    "condition_errors.csv": "d52c0570b29a9d9cdbf9e2f91e43c8c5343bee42a352182c9d7177a1b2c28a45"
+  },
+  "figures": {
+    "Modeling\\figures\\m02\\model_comparison.png": "7f1781032ba1ddc5bde3db34078570972844bb7784d1490e3b4ae71a8043545b",
+    "Modeling\\figures\\m02\\condition_errors.png": "dfe2dd3a5fc0c5b6009556bc617a0873a090885f712e5a5751c0036f0d413a53"
+  },
+  "no_fitting": true,
+  "manuscript_sha256": "e1bd5bb7abbb8791f3026e8b5ed9d0d58ec16486f9a88e1e9e313c70ca17bd12",
+  "document_validation": "65 links in manuscript and Modeling README; pooled MAE/RMSE values matched source tables; diff whitespace check passed"
+}

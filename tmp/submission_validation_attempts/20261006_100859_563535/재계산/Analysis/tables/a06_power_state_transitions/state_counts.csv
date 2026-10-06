@@ -1,0 +1,7 @@
+﻿daytype,state,hours
+weekday,above26,3357
+weekday,low,747
+weekend,above26,467
+weekend,below20,7
+weekend,low,1189
+weekend,zero,17

@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "contract_sha256": "9a067e78183427d35ae3aa7d99770c3797bae9baba08ad69b852615d6d44f961",
+  "new_fits": 6,
+  "development_hours": 2184,
+  "event_threshold": 9.73851536905958,
+  "events": 184,
+  "decision": {
+    "eligible": false,
+    "gates": {
+      "AP_5percent": true,
+      "ranking_same_budget": true,
+      "online_TP_gain": true,
+      "no_more_warnings": true,
+      "warning_cap": true,
+      "monthly_TP": false,
+      "monthly_AP": true
+    }
+  },
+  "later_evaluated": false,
+  "manuscripts_edited": false,
+  "outputs_sha256": {
+    "predictions.csv": "1aaa0dccb0024787a5c0f81abe02dcd40e3df6ebc19bdcda03bf5323e422f8f2",
+    "calibration_predictions.csv": "ab8e54b8b08e61944f807a27950bb194be9758aafdd9572417054e7168e7d14e",
+    "metrics.csv": "37911aa535329f4fb736bdc725c35e9ed3f8d4573a0ea7499159cdaff0485d3e",
+    "model_manifest.csv": "9b3a10cdbdcc3f9b5b78112cb81f4204562adcc27f2e58fab4af8a14dfb58df4",
+    "selection.json": "f9f006c009381dc0275f43399d5bcc474fd0a45ccf735ec2f728bad1ddb712f3",
+    "decision.json": "67892cfd39db5073c1776c6ee8b7ac700f7849d644fe2c532178fee2594db35d"
+  }
+}

@@ -1,0 +1,5 @@
+﻿scope,feature,opposite_sign_common_cells,minimum_two_dates_cells,direction_zero_hours
+all,prior_slot_trend,86,0,911
+all,recent_level_delta,102,3,323
+known_production_zero,prior_slot_trend,36,0,788
+known_production_zero,recent_level_delta,67,2,297

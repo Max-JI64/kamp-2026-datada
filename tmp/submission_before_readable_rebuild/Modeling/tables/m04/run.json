@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T11:18+09:00",
+  "no_fitting": true,
+  "no_july_august_evaluation": true,
+  "contract_sha256": "081e74e960e14a7e860f2bd80d50aa9d470870ba0636438d7aaa5e081f0b318a",
+  "script_sha256": "455fd0d1786e0f33cc545eb046067f674a7688ce2b21c2b00815b3ac456f7c2e",
+  "inputs_sha256": {
+    "Modeling/tables/m03/c/run.json": "a14995bf8f93b1efca794f6923f64f8b6ff1acf68697c7a11329871478dd6eb8",
+    "Modeling/tables/m03/c/predictions.csv": "d1f2fc8062b84248bc2a9512d17563713368fc94a6b56dc127c93c56cbe2a5f8",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab"
+  },
+  "outputs_sha256": {
+    "daily_errors.csv": "2d394304a8ede207d5f6a844fa0577aa2a6b1d658f72c33ff39be8a4b6623bf7",
+    "metrics.csv": "7c3bb494b2e9513a51e099b4684398848ca18cdfec0bb04d8b848ce6d36c00a7",
+    "origin_feature_summary.csv": "c6352fc140e95ead4f480fc039289cc440c367ad3e1602cda33329a1f1e76ad0",
+    "origin_hour_counts.csv": "700cbd4c0a0a9a65650bbaafd362bc5e81e158f2fbdeed32edc370c8cc47d8d6",
+    "origin_signature_collisions.csv": "fb733f9dd65876b87e905ddb6c2b6ee387be319e3ac3235ac5b44a2caa1a7b28",
+    "paired_predictions.csv": "87252eb548a7809221d8db56d5bb8147cdeaac571db3a83d7695584826275783",
+    "predictions.csv": "c7223bf4efd6a34b3918faf90f0ec6a8462ef4e364cef492e6fc5ba80660fd87",
+    "prior_low_cases.csv": "795dd8aadd2a28ebd2b47998af2fbb1581b5d98aae9028680ec358975fd9a4d7",
+    "selection.json": "e331d0359cfdc02dbbecc2c0c244454318a6c33d4695ed5d007043af43c11c4d"
+  },
+  "prediction_rows": 8736,
+  "paired_rows": 4368,
+  "metric_rows": 208,
+  "unique_evaluation_hours": 2184,
+  "daily_maximum_hours": 137,
+  "daily_maximum_date_weight": 91.0,
+  "runtime": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]"
+  }
+}

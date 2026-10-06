@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_valid_hours": 5784,
+  "independently_checked_heatmap_cells": 384,
+  "max_absolute_median_error": 0.0,
+  "month_levels": [
+    {
+      "month": 7,
+      "group": "all",
+      "days": 29,
+      "hours": 696,
+      "all_hours_average_power": 101.48132183908046,
+      "all_hours_median_power": 106.0,
+      "largest_hourly_average": 208,
+      "largest_15minute_value": 222,
+      "hours_with_average_ge_200": 5
+    },
+    {
+      "month": 7,
+      "group": "weekday",
+      "days": 20,
+      "hours": 480,
+      "all_hours_average_power": 132.2875,
+      "all_hours_median_power": 128.5,
+      "largest_hourly_average": 208,
+      "largest_15minute_value": 222,
+      "hours_with_average_ge_200": 5
+    },
+    {
+      "month": 7,
+      "group": "weekend",
+      "days": 9,
+      "hours": 216,
+      "all_hours_average_power": 33.023148148148145,
+      "all_hours_median_power": 24.0,
+      "largest_hourly_average": 106,
+      "largest_15minute_value": 112,
+      "hours_with_average_ge_200": 0
+    },
+    {
+      "month": 8,
+      "group": "all",
+      "days": 31,
+      "hours": 744,
+      "all_hours_average_power": 81.22446236559139,
+      "all_hours_median_power": 88.0,
+      "largest_hourly_average": 203,
+      "largest_15minute_value": 218,
+      "hours_with_average_ge_200": 1
+    },
+    {
+      "month": 8,
+      "group": "weekday",
+      "days": 22,
+      "hours": 528,
+      "all_hours_average_power": 102.8465909090909,
+      "all_hours_median_power": 109.0,
+      "largest_hourly_average": 203,
+      "largest_15minute_value": 218,
+      "hours_with_average_ge_200": 1
+    },
+    {
+      "month": 8,
+      "group": "weekend",
+      "days": 9,
+      "hours": 216,
+      "all_hours_average_power": 28.37037037037037,
+      "all_hours_median_power": 22.0,
+      "largest_hourly_average": 111,
+      "largest_15minute_value": 119,
+      "hours_with_average_ge_200": 0
+    }
+  ],
+  "hour_08_examples": [
+    {
+      "month": 7,
+      "group": "weekday",
+      "hour": 8,
+      "n": 20,
+      "arithmetic_mean": 185.05,
+      "plotted_median": 187.5,
+      "maximum_hour_average": 198,
+      "maximum_15minute_value": 217
+    },
+    {
+      "month": 7,
+      "group": "weekend",
+      "hour": 8,
+      "n": 9,
+      "arithmetic_mean": 23.77777777777778,
+      "plotted_median": 24.0,
+      "maximum_hour_average": 26,
+      "maximum_15minute_value": 28
+    },
+    {
+      "month": 8,
+      "group": "weekday",
+      "hour": 8,
+      "n": 22,
+      "arithmetic_mean": 142.6818181818182,
+      "plotted_median": 172.5,
+      "maximum_hour_average": 203,
+      "maximum_15minute_value": 218
+    },
+    {
+      "month": 8,
+      "group": "weekend",
+      "hour": 8,
+      "n": 9,
+      "arithmetic_mean": 21.333333333333332,
+      "plotted_median": 23.0,
+      "maximum_hour_average": 35,
+      "maximum_15minute_value": 36
+    }
+  ],
+  "hour_average_maximum_examples": [
+    {
+      "month": 7,
+      "date": 20210728,
+      "hour": 11,
+      "four_values": [
+        202,
+        211,
+        205,
+        212
+      ],
+      "hour_average": 208
+    },
+    {
+      "month": 8,
+      "date": 20210811,
+      "hour": 8,
+      "four_values": [
+        176,
+        206,
+        218,
+        212
+      ],
+      "hour_average": 203
+    }
+  ],
+  "weekday_production_composition": [
+    {
+      "month": 7,
+      "hour": 8,
+      "any_positive_production_on_date": false,
+      "days": 0,
+      "mean_hour_average": null,
+      "median_hour_average": null
+    },
+    {
+      "month": 7,
+      "hour": 8,
+      "any_positive_production_on_date": true,
+      "days": 20,
+      "mean_hour_average": 185.05,
+      "median_hour_average": 187.5
+    },
+    {
+      "month": 8,
+      "hour": 8,
+      "any_positive_production_on_date": false,
+      "days": 5,
+      "mean_hour_average": 21.0,
+      "median_hour_average": 21.0
+    },
+    {
+      "month": 8,
+      "hour": 8,
+      "any_positive_production_on_date": true,
+      "days": 17,
+      "mean_hour_average": 178.47058823529412,
+      "median_hour_average": 174.0
+    }
+  ],
+  "judgment": "All 384 displayed monthly/hour/day-type medians and counts match the source. Values near or above 200 do occur; a maximum observation, monthly/hourly arithmetic mean, and monthly/hourly median describe different quantities. August all-hour means include low-power dates; do not silently remove them.",
+  "manuscript_edited": false
+}

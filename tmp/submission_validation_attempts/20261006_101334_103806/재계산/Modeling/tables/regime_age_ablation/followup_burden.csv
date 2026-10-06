@@ -1,0 +1,16 @@
+﻿variant,period,hours,routed,routed_up,routed_non_up_known,routed_unknown
+B0,Jul-Aug,1344,0,0,0,0
+B0,7,600,0,0,0,0
+B0,8,744,0,0,0,0
+B1_all,Jul-Aug,1344,1344,13,1327,4
+B1_all,7,600,600,7,591,2
+B1_all,8,744,744,6,736,2
+G1_noage,Jul-Aug,1344,7,7,0,0
+G1_noage,7,600,4,4,0,0
+G1_noage,8,744,3,3,0,0
+G1_old,Jul-Aug,1344,45,7,38,0
+G1_old,7,600,4,4,0,0
+G1_old,8,744,41,3,38,0
+hour08,Jul-Aug,1344,56,13,43,0
+hour08,7,600,25,7,18,0
+hour08,8,744,31,6,25,0

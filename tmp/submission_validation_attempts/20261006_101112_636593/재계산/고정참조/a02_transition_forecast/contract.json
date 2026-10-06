@@ -1,0 +1,17 @@
+{
+  "previous": "A02 within-onset correlation.013 does not test onset/no-onset separation; matched prior means81.85 vs39.57.",
+  "question": "Can past information discriminate next-hour production onset among known-zero production hours, then improve next mean-power forecasts?",
+  "source": "Current verified A02 observations only, no backup or previous models.",
+  "split": "Class1-4train/5-6validation/7-8final chronological retrospective evaluation; all months were previously explored in EDA.",
+  "class_models": "Fixed logistic and fixed shallow HGB; calendar -> observed mean -> observed slot trend; select common family on validation shapeAP.",
+  "class_selection": "Highest validation AP within.01 favors simpler features; threshold maximizes validation F1, high threshold breaks ties.",
+  "probability_gate": "Selected noncalendar AP better than calendar and Brier<=1.05calendar on validation.",
+  "power_models": "Fixed HGB baseline past means/calendar/known past production; add direct slot trend; then add soft onset probability.",
+  "power_probability": "March-June probabilities from strictly earlier month data; July/August probabilities from January-June only; positives set0 plus explicit known_zero feature.",
+  "power_split": "3-4train/5-6validation; final3-6train/7-8test; same records across three fixed models.",
+  "power_metrics": "All-hour and actual onset MAE plus average underprediction amount (including0 for overprediction), monthly and profile-weighted sensitivity.",
+  "no_target_inputs": true,
+  "no_peak_threshold": true,
+  "no_manuscript": true,
+  "stop": "After final evaluation no feature/model retuning for favorable scores."
+}

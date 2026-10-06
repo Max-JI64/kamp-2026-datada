@@ -1,0 +1,79 @@
+{
+  "started": "2026-10-04T17:50+09:00",
+  "status": "completed",
+  "input_hashes": {
+    "m01_contract": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "m02_contract": "6e332d3371dfd142664333006443333dbfa946a5544ab26aeab5de3af75fe7b4",
+    "source": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "split_counts.csv": "4236fd90853521efc701a5271e8ea2216cfaf9728cbdbb94acd8b2c7bae7dc56"
+  },
+  "features": [
+    "hour_sin",
+    "hour_cos",
+    "month",
+    "weekend",
+    "dow_0",
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6",
+    "lag1_production",
+    "lag1_production_zero",
+    "lag1_mean",
+    "lag1_maximum",
+    "lag2_mean",
+    "lag2_maximum"
+  ],
+  "candidate_settings": 25,
+  "planned_fits": 150,
+  "runtime": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "3.0.1",
+      "scikit-learn": "1.7.1",
+      "joblib": "1.5.1"
+    }
+  },
+  "finished": "2026-10-04T17:53+09:00",
+  "fits_completed": 150,
+  "prediction_rows": 122304,
+  "seconds": 156.79194999998435,
+  "development_hours_per_method_target": 2184,
+  "provisional_candidates": {
+    "target_maximum": {
+      "model": "hgb_01",
+      "family": "HGB",
+      "MAE": 6.737973239313947,
+      "RMSE": 10.953965007434705
+    },
+    "target_mean": {
+      "model": "hgb_01",
+      "family": "HGB",
+      "MAE": 5.969618799503768,
+      "RMSE": 9.185066060892868
+    }
+  },
+  "july_august_evaluated": false,
+  "last_slot_used": false,
+  "outputs_sha256": {
+    "all_candidate_metrics.csv": "556ed04b18703f8740573a1ec3b7fa00d33c08a4c19ca59d26bbfab080806b98",
+    "candidates.csv": "107d549a5bcb5d29a797511e92aecfbc46b364f20280901dd15111b16230b2f4",
+    "comparison.csv": "abd33d88b34f1ba78a136f75641eb308453d0d8c02078fc54573bc406692b7fa",
+    "condition_errors.csv": "d52c0570b29a9d9cdbf9e2f91e43c8c5343bee42a352182c9d7177a1b2c28a45",
+    "daily_errors.csv": "302f77ae4794c85be59c2a461fb3646372e48298c7e8fb930580026658cf5d95",
+    "family_selection.csv": "cdbda195d79476dffcd0b0466ea2f80e6cd9c05a778d69f81b83ed699b3ea141",
+    "largest_errors.csv": "14ab610a8eb6fd4bb43bcc4fa3702c7aef9f4f4c96ba4e0526f81ad4ebb08ce9",
+    "model_manifest.csv": "1e8ea9f8805c606d84ed8d59c536d499a1186e9abef5f1f724488a7ee99d6cfe",
+    "predictions.csv": "20238bf469f415f920a2a69ba06b39290ffe0e6ec8f2566bfea8444e5008ee05",
+    "selected_predictions.csv": "8440f8bed253f15a425caa223581f361904196bddfc6f41d901e0af9ab90eed2",
+    "training_audit.csv": "f5c9f4b9d40ee57ab5f413834d1ffc5b74dca5ca8ca1a10d332ca484aaa23872"
+  },
+  "script_sha256": "555c73e2648c1454483df2dfdb3eac654b9c16cad27f7262daa21e2373df349d"
+}

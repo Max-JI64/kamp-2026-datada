@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "run_sha256": "fba96fd3bed86a2dcf19ecabe93ebaa8ea77ae97e8723f9593bb5b992b860174",
+  "verifier_sha256": "87d416d83e637ef51c5483a4052b6a4180e37df02b5816b113fb9c4672ac00c5",
+  "raw_day_profiles_checked": 241,
+  "training_weights_checked": 27720,
+  "model_reloads": 20,
+  "prediction_values_checked": 14400,
+  "independent_refits": 3,
+  "internal_selections_checked": 3,
+  "methods_checked": 8,
+  "selected": null,
+  "later_evaluation": "not eligible"
+}

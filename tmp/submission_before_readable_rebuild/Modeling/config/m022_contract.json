@@ -1,0 +1,26 @@
+{
+  "version": "m022-v1",
+  "reason": "User authorized expanded model competition, Optuna tuning, chronological cross-validation and ensembles after M03 established last-slot value; repeat fixed-setting M03 if the selected model or its settings change.",
+  "input_group": "B",
+  "pool": "common",
+  "target": "target_maximum",
+  "secondary_target": "target_mean will be checked with the selected configuration in the follow-up, without a second broad optimization",
+  "outer_splits": ["dev_apr", "dev_may", "dev_jun"],
+  "inner_validation_months": {"dev_apr": [2, 3], "dev_may": [2, 3, 4], "dev_jun": [2, 3, 4, 5]},
+  "inner_rule": "For each validation month, fit on all eligible rows strictly before that month. Calendar-month boundaries, not row-count TimeSeriesSplit, because invalid dates create gaps. No random train/test split. One-hour labels are observed before next-hour forecast origin; no overlapping future target window and no extra gap is imposed.",
+  "outer_rule": "All tuning, ensemble member/weight selection occurs only inside each outer training period. Refit on all outer training rows, freeze for that evaluation month and update observed lag inputs hourly. This is sequential one-hour prediction, not month-ahead forecasting.",
+  "families": ["HGB", "XGBoost", "LightGBM", "CatBoost", "ExtraTrees"],
+  "optuna": {"sampler": "TPESampler", "seed": 42, "n_startup_trials": 10, "base_trials_per_study": 30, "max_trials_per_study": 50, "extension_rule": "After 30 trials, extend to 50 only if the best inner CV MAE improves at least 1 percent over the best of the first 20 trials. No further extension or search-range expansion based on outer performance.", "pruner": "NopPruner; every candidate sees every inner month", "objective": "pooled chronological inner validation MAE", "parallel_trials": 1, "model_threads": 4},
+  "search_spaces": {
+    "HGB": {"learning_rate": [0.02, 0.15, "log"], "max_iter": [100, 500, 50], "max_leaf_nodes": [7, 15, 31], "min_samples_leaf": [10, 80], "l2_regularization": [0.001, 20.0, "log"]},
+    "XGBoost": {"learning_rate": [0.02, 0.15, "log"], "n_estimators": [100, 500, 50], "max_depth": [2, 6], "min_child_weight": [1.0, 30.0, "log"], "subsample": [0.7, 1.0], "colsample_bytree": [0.7, 1.0], "reg_alpha": [0.0001, 5.0, "log"], "reg_lambda": [0.1, 20.0, "log"]},
+    "LightGBM": {"learning_rate": [0.02, 0.15, "log"], "n_estimators": [100, 500, 50], "num_leaves": [7, 15, 31], "min_child_samples": [10, 80], "subsample": [0.7, 1.0], "colsample_bytree": [0.7, 1.0], "reg_alpha": [0.0001, 5.0, "log"], "reg_lambda": [0.1, 20.0, "log"]},
+    "CatBoost": {"learning_rate": [0.02, 0.15, "log"], "iterations": [100, 500, 50], "depth": [3, 7], "l2_leaf_reg": [1.0, 20.0, "log"], "random_strength": [0.0, 2.0]},
+    "ExtraTrees": {"n_estimators": [200, 400, 100], "max_depth": [6, 10, 16, null], "min_samples_leaf": [1, 20], "max_features": [0.6, 1.0]}
+  },
+  "ensembles": {"mean5": "Equal average of five tuned families", "weighted_top3": "Choose top 3 by inner CV MAE and optimize nonnegative weights summing to one for 50 Optuna trials on cached inner out-of-fold predictions; apply fixed members and weights to outer evaluation. Inner score is optimistic due to selection and is not a performance claim.", "stacking": "Deferred: small set of independent development months and added meta-model selection complexity; first test simple and weighted averaging."},
+  "baselines": ["previous_hour", "previous_day", "previous_week", "HGB_B_m03"],
+  "provisional_selection": "Lowest pooled outer-development MAE. Within 1 percent prefer existing HGB_B, then single models, then mean5, then weighted_top3. Publish all monthly, peak under/over, profile and transition tradeoffs. Outer development chooses family and therefore is not an independent final test. Final M05 tolerances remain separate.",
+  "M03_followup": "If the selected family, ensemble, or HGB settings differ from existing HGB_B, freeze each outer split's selected B-tuned configuration (including ensemble weights) and compare A/B and C_A/C_B on identical rows. No retuning on A/C; report B-selection dependence. Keep old M03 results.",
+  "prohibited": ["July-August fitting/scoring", "random cross-validation", "outer evaluation used for early stopping", "prediction clipping", "future target-state feature", "claims of globally optimal model", "rewriting prior M02/M03 results as if planned before observation"]
+}

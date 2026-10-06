@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "finished": "2026-10-04T19:23+09:00",
+  "no_fitting": true,
+  "question": "Why daily maximum underprediction improved while low->above26 did not; examine overlap and observable prior-state bias.",
+  "rise_hours": 20,
+  "rise_dates": 20,
+  "rise_maximum_hours": 0,
+  "rise_maximum_dates": 0,
+  "rise_maximum_weight": 0.0,
+  "maximum_total_hours": 137,
+  "maximum_total_date_weight": 91.0,
+  "rise_by_month": {
+    "dev_apr": 8,
+    "dev_jun": 4,
+    "dev_may": 8
+  },
+  "rise_B_underpredicted_hours": 20,
+  "input_sha256": {
+    "predictions.csv": "d1f2fc8062b84248bc2a9512d17563713368fc94a6b56dc127c93c56cbe2a5f8",
+    "paired_predictions.csv": "78e7498faa298e0410da257ef8a108ca0d0d808b92daa60dd78b48cd64933685"
+  },
+  "outputs_sha256": {
+    "maximum_transition_errors.csv": "4a8a9e663330afba8162ae86f038b729ba04aa017db57151a6defbe813fb1270",
+    "prior_state_errors.csv": "da44d39d5258bf086b7c27f502517ad0b8c0e22d157c7ed51c2ca081e75d4f48",
+    "rise_cases.csv": "0ee110c44123e719e91f80efa9890c2598f72282d44f7f38d3be849729c4d891"
+  },
+  "script_sha256": "b53fff3ab2bb9b33ec54cdb957bf2834bec92f80ebf82aa0629e6d0d8e190eda",
+  "rise_cases_arithmetic_verified": true,
+  "independently_recomputed_metric_rows": 10
+}

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 5784,
+  "days": 241,
+  "weekday_days": 171,
+  "weekend_days": 70,
+  "checked_mean_deviation_cells": 192,
+  "checked_direction_cells": 192,
+  "checked_profile_conditions": 192,
+  "line_figure_groups": [
+    "weekday",
+    "weekend"
+  ],
+  "definition": "Each slot minus the exact arithmetic mean of its own four-slot row; average across all dates at the same hour and group.",
+  "figure_x_definition": "Four slots are placed in column order within each hour, not verified exact sensor timestamps.",
+  "figures": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_slot_time_patterns\\daily_96_slot_means.png",
+      "sha256": "4082e8b20769f8a74b2ccaaa26ddb652a3a64a01d63b7ee87fd1459d26d70b6a"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\EDA\\figures\\slot_time_patterns.png",
+      "sha256": "ac4c66d60c810a09690767637706d86f1a66b77e813f36d24d64deb08f0d5820"
+    }
+  ],
+  "manuscript_edited": false,
+  "visual_review": true,
+  "p_values_used": false,
+  "note": "Date frequencies are descriptive; repeated four-value profiles are not independent experiments.",
+  "heatmap_figure_groups": [
+    "weekday",
+    "weekend"
+  ],
+  "plot_revision": {
+    "date": "2026-10-03",
+    "figures_only": true,
+    "result_tables_unchanged": true,
+    "common_color_limits": [
+      -23.0,
+      23.0
+    ]
+  },
+  "manuscript_reflected": true,
+  "manuscript_section": "2.5",
+  "selected_heatmap_review": {
+    "date": "2026-10-03",
+    "scale": "50%",
+    "contact_sheet": "tmp/eda_visual_review/manuscript_contact_04_50.png",
+    "checked": "Weekday/weekend panels, 24 hour labels, four slot labels, numeric values, common color scale and manuscript interpretation",
+    "status": "passed"
+  }
+}

@@ -1,0 +1,4 @@
+﻿example,date,center_hour,first_hour,last_hour,range,maximum,mean,shape,slots,tied_target_hours
+median_range,20210101,2,0,4,11,107,104,mixed,"[106, 96, 106, 107]",161
+largest_range,20210409,7,5,9,105,131,64,nondecreasing,"[26, 34, 63, 131]",3
+highest_power,20210129,8,6,10,33,222,202,mixed,"[190, 222, 207, 189]",4

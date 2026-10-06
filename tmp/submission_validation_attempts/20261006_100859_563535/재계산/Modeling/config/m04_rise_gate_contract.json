@@ -1,0 +1,13 @@
+{
+  "version": "m04-rise-gate-v2",
+  "reason": "First G_HGB reduces development rise MAE by 17.5 percent but fails low-stay MAE tolerance. Inner minimax objective can be pinned at 1 by unchanged peak error and fail to reward further rise gains. Change only gate objective; freeze all trained regressors, classifiers, features, acceptance tolerances and time splits.",
+  "recorded_at": "2026-10-05T12:11+09:00",
+  "parent_run": "Modeling/tables/m04_rise/run.json",
+  "parent_run_sha256": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+  "objective": "relative inner rise MAE plus the unchanged first-stage constraint penalties for overall/peak/low-stay error and false-positive fraction; replace only the max(relative overall,peak,rise) term by relative rise",
+  "parameters": "same threshold [0.01,0.8] and blend [0,1]; 50 Optuna trials per classifier per outer split; same three initial points, seed42",
+  "families": ["Logistic","HGB"],
+  "no_new_fitting": true,
+  "no_july_august_evaluation": true,
+  "scope": "Development-motivated follow-up; choose gate parameters on cached earlier-month OOF predictions only; no relaxing acceptance criteria or tuning against outer cases. Stop this declared follow-up after comparison and verification."
+}

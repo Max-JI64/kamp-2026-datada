@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "completed_at": "2026-10-05T18:02+09:00",
+  "seconds": 742.4489677999518,
+  "new_fits": 1095,
+  "new_trials": 360,
+  "contract_sha256": "794ebb4afa348ea351e734fa0492ec145543b1ef82b6fa2d50c567e135951380",
+  "script_sha256": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986",
+  "inputs_sha256": {
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m01/evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "Modeling/config/m02_rerun_contract.json": "96086165595bb3319c20298dbd333da90d35abb08768955e5112da3d0be2fb54",
+    "Modeling/tables/m02_rerun/selected_configurations.json": "c00f67a21bb133750b752476abb713e744e8531dc9c78f18f0ef48a9334f3547",
+    "Modeling/tables/m02_rerun/model_manifest.csv": "38845c37e39d7536e93c31eff719f9d2708d0dd5d1fe0bc4a7f86a5faebba686",
+    "Modeling/tables/m03/ab/model_manifest.csv": "18b145dc1c3280eb3801135970f7508a289e8f73b17ebf7db5e384469445efbd",
+    "Modeling/tables/redevelopment/r01/run.json": "3eed8bdf9fb4899f9e5cec31d333a9f98f049fc3aa29983b54db10c88d2c89d6",
+    "Modeling/tables/redevelopment/r01/conditions.csv": "19cabdecc9ff6c33610ea0716591b31acdad21ed54004d7150a49d0616c7ba01",
+    "Modeling/tables/redevelopment/r01/independent_verification.json": "561f3c864a007cad58c5936020e2b32eba8540d6ef17d61507d7856a2feecce0",
+    "Modeling/scripts/redevelopment_compare.py": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986"
+  },
+  "outputs_sha256": {
+    "comparison.csv": "b09c2de3dfc4e6dbca3adb0e3d01951ecd0059dca2a6418323234526c1376ecb",
+    "configurations.json": "903086081ed62e3c86a5ab09a8ac5bb61dee7213db7f34449e37302caf353d69",
+    "leave_one_date_out.csv": "de8e61ed7beb514b6301782249cd0e9bfa0f90a156b3738dfa18bd0c425e867f",
+    "metrics.csv": "55de66db93ae8d5c6ed5e61de78e923408eac78a9a69ca58509eababf10073f4",
+    "model_manifest.csv": "e87e68421ef6452d1d74746d8bab8398228eed5ea17b7355ce265fe0958f0cd9",
+    "predictions.csv": "de3ba2111d878bd24332bd20f7dadde0de0baf104b758a029e5efbba8af58c0e",
+    "preflight_contract.json": "1090e0c99701f0edb2f04d68c314cdac52b9a383fada66478136550407d121dd",
+    "selected_inner_predictions.csv": "5233cdddb0c85c2816275a5f94edd8923c3b421f62e7f3ee09ad5a604bbeff84",
+    "selection.json": "fd54904da930615e9a07a6b68d296b8fd36bb19c237f2ead8fe3983007935bd4",
+    "time_audit.csv": "b6560cab8268c085a9a9a01fdaeb0c4f65a7c69ae6e11be7bbc19a8350f48fb9",
+    "trials.csv": "825b85eba5b277053d6fa17bc56bf4334bca8f7fef1d13deacfff0ddb812ab15",
+    "trial_fold_scores.csv": "5b0aaeb373303df6dfc3b7c246373a0f2e75e104b2a6dacad85eff5b9535ad66"
+  }
+}

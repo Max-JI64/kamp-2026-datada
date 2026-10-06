@@ -1,0 +1,13 @@
+﻿scope,weighting,metric,n,calendar_centered_rank_correlation
+positive_both,date_hour,power_delta,3060,0.02496157604456605
+positive_both,date_hour,abs_power_delta,3060,-0.005873998926913124
+positive_both,date_hour,slot_range,3060,0.012516710495337887
+positive_both,profile_balanced,power_delta,3060,0.006196474588057588
+positive_both,profile_balanced,abs_power_delta,3060,-0.004026870411647114
+positive_both,profile_balanced,slot_range,3060,0.01847204816323036
+same_day_positive_both,date_hour,power_delta,2984,0.024631198779892696
+same_day_positive_both,date_hour,abs_power_delta,2984,-0.007462392967550694
+same_day_positive_both,date_hour,slot_range,2984,0.013588085080098594
+same_day_positive_both,profile_balanced,power_delta,2984,0.005661240204044971
+same_day_positive_both,profile_balanced,abs_power_delta,2984,-0.007180574758293681
+same_day_positive_both,profile_balanced,slot_range,2984,0.020787589739252453

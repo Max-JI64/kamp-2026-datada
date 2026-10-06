@@ -1,0 +1,8 @@
+{
+  "previous": "Weekday temperature rho+.227 falls to-.004 after calendar/production/otherweather; August positive+.286 survives; monthly signs differ.",
+  "checks": "Fixed common-row comparisons; all8monthly positive groups with date fixed effects and linear-vs-cubic production; leave each week out; conditional weather co-variation; daily positive-record means.",
+  "cautions": "Date-fixed relation is within-date variation, cannot erase genuine between-day weather effect; daily positive means have different selected hours; no causal or predictive claims.",
+  "no_forecast": true,
+  "no_threshold_search": true,
+  "no_backup": true
+}

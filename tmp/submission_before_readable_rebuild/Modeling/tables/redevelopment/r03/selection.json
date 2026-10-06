@@ -1,0 +1,94 @@
+{
+  "selected": null,
+  "candidate_gates": [
+    {
+      "method": "delta_fixed_HGB_B",
+      "overall_MAE": 6.180744670969752,
+      "peak_MAE": 8.95298830175021,
+      "peak_under": 8.319243852225432,
+      "peak_over": 0.6337444495247786,
+      "balanced_score": 0.4481060404128913,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": true,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_HGB_A",
+      "overall_MAE": 6.737973239313947,
+      "peak_MAE": 11.750641760429726,
+      "peak_under": 11.260036830592895,
+      "peak_over": 0.4906049298368324,
+      "balanced_score": 0.4885052965961246,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    },
+    {
+      "method": "fixed_HGB_B",
+      "overall_MAE": 6.190524965035317,
+      "peak_MAE": 7.58873099352297,
+      "peak_under": 6.987028143141024,
+      "peak_over": 0.6017028503819463,
+      "balanced_score": 0.4488151149793232,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": true,
+        "fixed_HGB_A_peak": true,
+        "fixed_HGB_A_under": true,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": true,
+        "fixed_HGB_B_overall": true,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": true
+      }
+    },
+    {
+      "method": "lag1",
+      "overall_MAE": 13.793040293040294,
+      "peak_MAE": 36.588958660387235,
+      "peak_under": 36.588958660387235,
+      "peak_over": 0.0,
+      "balanced_score": 1.0,
+      "eligible": false,
+      "gates": {
+        "fixed_HGB_A_overall": false,
+        "fixed_HGB_A_peak": false,
+        "fixed_HGB_A_under": false,
+        "fixed_HGB_A_over": true,
+        "fixed_HGB_A_leave_one_date": false,
+        "fixed_HGB_B_overall": false,
+        "fixed_HGB_B_peak": false,
+        "fixed_HGB_B_under": false,
+        "fixed_HGB_B_over": true,
+        "fixed_HGB_B_leave_one_date": false,
+        "monthly": false
+      }
+    }
+  ],
+  "no_eligible_candidate": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "same4102weekday_records": true,
+  "note": "Raw Spearman vs adjusted rank-residual partial association; neither is accuracy or causal effect.",
+  "path": "Analysis\\figures\\a03_weather_conditions.png",
+  "image_sha256": "6a733cf2eeb6f3a401316cb827694d127c58e784fab5dc5b4e5bba8f292b0586",
+  "visually_reviewed": false
+}

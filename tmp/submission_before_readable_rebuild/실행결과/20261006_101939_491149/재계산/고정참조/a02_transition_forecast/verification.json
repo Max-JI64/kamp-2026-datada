@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "input_sha256": "abe694f87df238221ff4a7a2b876cd7c722865f8afc07948f05d28560742e69b",
+  "input_timestamps_checked": 5778,
+  "n": 5778,
+  "target_production_not_a_feature": true,
+  "independent_csv_brier_and_mae": true,
+  "probability_training_strictly_past": true,
+  "script_sha256": "81f56f07590bfe50672ad9e47742c54f51eed9f4e3ee5a1743c90cef5f35b29d",
+  "outputs_sha256": {
+    "classification_test.csv": "bca0ba5faabfd8cd8e96f26e8e2d61a52dfb0e7cb553c006b0fdcfeb6018e022",
+    "classification_test_predictions.csv": "09630d0736e20a780e2082a664caa970cf74c80d6334946b352a50edfe9b7aeb",
+    "classification_validation.csv": "3af80f6e0a7f46f5d13a1607faae08630f67d609f38954d31471dcc8d031a40b",
+    "classification_validation_predictions.csv": "57d06f4a3a07533493e78b4b7adb08388474c355e41cc6fb888812dfb4af6371",
+    "power_test.csv": "0d227c46b63183e1f259762d61439c32173764ba7a60893173c082805fd3bfa6",
+    "power_test_predictions.csv": "7efe56ba8c5a597971b9d3da3575fbdb7224f53fc418ff2309453f18b267a3ba",
+    "power_validation.csv": "06d8d1e3d1fc20b0bcbf6272795f01ec586f9dcff1879076964a0c1025ed1ffd",
+    "power_validation_predictions.csv": "0e6033fd5460c1b174bc7bbc21b374432bc98303b64c21302e6ea22c7bd07680",
+    "probability_time_audit.csv": "0fc72a74c096d2b878266b83225a6f3e6e69d034ee1ef3b37f2b64dbf25a3e5c"
+  }
+}

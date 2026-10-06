@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "run_sha256": "c3fd9f5f43a03321a7b6d0387f6d1906592507c99f6e42ea4d7fadca17408b0a",
+  "verifier_sha256": "1a0f2d5a827734a03d882c513f52201bea0e7cffd2efa558148074a21cf387e9",
+  "raw_hours_checked": 5784,
+  "hourly_state_rows_checked": 5832,
+  "regression_predictions_checked": 6720,
+  "classification_prediction_hours": 1428,
+  "models_reloaded": 3,
+  "independent_refits": 3,
+  "metrics_checked": 105,
+  "detection_metrics_checked": 12,
+  "daily_rows_checked": 280,
+  "prefix_tests": 2,
+  "no_july_august_training": true,
+  "extra_outputs_sha256": {
+    "verified_alarm_cases.csv": "ea26ca63ed35bb0593ac842663e3df5c270f57836f454e87156ffd8355fd8564",
+    "verified_alarm_conditions.csv": "bfb7b839ad221d6a4a3fd179044ad15e46043caf1b1e3a7d61b1112f408d241a"
+  }
+}

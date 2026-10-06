@@ -1,0 +1,11 @@
+﻿direction,month,calibration_available,calibration_hours,calibration_events,calibration_latest_confirmed,selected_simple,selected_ml
+up,2,False,0,0,,,
+up,3,False,0,0,,,
+up,4,False,0,0,,,
+up,5,True,718,6,2021-04-30 23:00:00,calendar,logistic
+up,6,True,1462,14,2021-05-31 23:00:00,calendar,logistic
+down,2,False,0,0,,,
+down,3,True,670,8,2021-02-28 23:00:00,last_delta,hgb
+down,4,True,1414,17,2021-03-31 23:00:00,calendar,hgb
+down,5,True,2134,22,2021-04-30 23:00:00,calendar,hgb
+down,6,True,2878,28,2021-05-31 23:00:00,calendar,hgb

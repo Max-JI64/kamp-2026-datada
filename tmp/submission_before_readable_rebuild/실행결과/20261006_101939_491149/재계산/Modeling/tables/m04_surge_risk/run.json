@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T12:51+09:00",
+  "seconds": 31.079936600057408,
+  "script_sha256": "b8e7d331d023692884bc00e8d4b32d3c7faa64e92614d77880dc2726067fc12e",
+  "contract_sha256": "82efa2fe3a42ee417f39e7faf6dd417c09985f2a642a01f01fe30963d96572c4",
+  "inputs_sha256": {
+    "Modeling/tables/m04_surge/run.json": "a0324c13bf4bf7950b2598b9261f12975e426541be5f84295667b72571b90d29",
+    "Modeling/tables/m04_surge/independent_verification.json": "8c0fc4174d15d09f8b3263dae59b7fc5cc4262c7ed328ea2ee3126d2703f3cf4",
+    "Modeling/tables/m04_rise/run.json": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+    "Modeling/tables/m04_rise/feature_frame.csv": "ddac3c3580ffba459620f4ce126bcd86e32e3d9cb865c3ed9aa19ca808d1c09a",
+    "Modeling/tables/m04_rise/inner_predictions.csv": "16192597bb9071bad5a0d25e86f5d7b321d231caac90f0d12bd54148660dec84",
+    "Modeling/tables/m04_rise/predictions.csv": "5379e3e7eccbd6360ef1e742dd8f64452c523611f21d96526c5bd74f3305b2f8",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/config/m04_rise_contract.json": "1d5844aecd870e7522d1cdfadb2d35b6515d151e6e7fcd83ee66b1eea6fa2ddc"
+  },
+  "helper_sha256": {
+    "m01_prepare.py": "ec6716743f8ac9b78adfadc701ddd5cbbbb374c29109d97a9918c3b7d48fe7ff",
+    "m04_rise_compare.py": "826560973de65df31860120021b17d15192c09d16423639a302f4a71c598e728",
+    "m04_surge_diagnose.py": "ea8b6c3ebf251a130898f98e951957daac35e8cbd3e9ad8ba62eaf3f30134571"
+  },
+  "features": {
+    "classifier": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last",
+      "prev_slot_rise",
+      "prev_slot_range",
+      "prev_slot_slope",
+      "last_delta",
+      "mean_delta",
+      "maximum_delta",
+      "production_delta",
+      "low_run_length6",
+      "low_history_gap6"
+    ],
+    "quantile": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last"
+    ]
+  },
+  "fits": {
+    "inner_classifier": 360,
+    "inner_quantile": 9,
+    "outer_classifier": 6,
+    "outer_quantile": 3
+  },
+  "trials": 120,
+  "warnings": [],
+  "normal_forecast_unchanged": true,
+  "no_july_august_evaluation": true,
+  "runtime": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]"
+  },
+  "outputs_sha256": {
+    "alarm_metrics.csv": "41754c8a831b79b94a15c23424a002e92860556697c5ebcecd160c676d36a9f9",
+    "alarm_policies.csv": "f7fcfb41ecefc9f2c6a166d609f400c3440c0206bef0c90ed789df0e568baca6",
+    "fold_audit.csv": "54f4b3cf87aa992ac08541a219d9be4a6ded3ce8674ff254c7af322c02fc791d",
+    "inner_predictions.csv": "a1cc4bceccbff5261f8f168f7df6a4682a8f84036728f3e6598f4069455a6581",
+    "model_manifest.csv": "c6dc41bf0cf7e22af7e4e43a78f53a25d4f3628397b23d17117886b1e020b207",
+    "predictions.csv": "54414b990e069c79d7256f75df6e5fad99c8dc3d75404b655284507e365db032",
+    "regression_metrics.csv": "801d1fee6136bd8f32d4d761adf94377af0684821f2bb788259f77a531c95b00",
+    "selected_configurations.json": "72a8a91ee034e01897f000097a6897cd1bf98534462e584b64b71d9888019a41",
+    "selection.json": "9c69cef67fb3cd65637bc25b4b1b69a782cc5953a20a42fca00810f468bf6228",
+    "selection_metrics.csv": "868108c22ac0d824a0401c2a521236e678ab2e6ee43ca39a4a4723c50ba9ef39",
+    "trials.csv": "8a5e3556a24a7374f8832d39fe47a3535d23859655325ac91c7b130a3b2c5a6b",
+    "trial_oof_predictions.npz": "b2803a1c028827c287c4941e96723b1ab030599e300f4b7ffc541ce4ca8be158"
+  },
+  "prediction_rows": 10920
+}

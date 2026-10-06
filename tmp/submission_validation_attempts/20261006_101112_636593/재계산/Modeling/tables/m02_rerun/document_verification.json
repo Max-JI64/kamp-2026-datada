@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-05T18:17+09:00",
+  "links_checked": 374,
+  "expanded_M02_table_rows_checked": 28,
+  "HGB_tuning_trials_checked": 90,
+  "documents_sha256": {
+    "README.md": "6f2377a14b33160404d169a06deeecda359386083d0aa81b8de4d9ecab80b34c",
+    "Modeling\\README.md": "6ac3988824241cce6d2a205a13d07ebb8aa03d8f6ad6cfeb298522709032a88f",
+    "Modeling\\04_Modeling_원고.md": "6ff557eb244bea468ae7c599a7a944b9bd1a1ecedbb57496f7e231ccb0d750e9",
+    "Modeling\\10.04_M02_확장모델비교_실행기록.md": "355271796be7868559a10707decd030cca101b01c3062cf771e3bd071170e68a",
+    "Modeling\\10.04_M02_기본모형비교_실행기록.md": "b2fbe509f8eb20c643a8569edf90eb4136f5e7a9c45d4b9b4c95940c96fa653a"
+  },
+  "no_new_fitting": true,
+  "script_sha256": "91b84a2e07a8e1d8168547e16898eee08c109f0e4a289aad6260a9139bd4e2c9"
+}

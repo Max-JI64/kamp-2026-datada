@@ -1,0 +1,34 @@
+{
+  "primary": "G1",
+  "comparisons": [
+    {
+      "variant": "G1",
+      "mae_reduction": 0.13779965776489367,
+      "under_reduction": 0.10813427572539436,
+      "overall_mae_change": -0.002022037006237598,
+      "daily_peak_mae_change": -0.0010747628922944674,
+      "monthly_wins": 2,
+      "development_gate_passed": true
+    },
+    {
+      "variant": "G2",
+      "mae_reduction": 0.10627461133966598,
+      "under_reduction": 0.21331637249642255,
+      "overall_mae_change": -0.0015594465214054942,
+      "daily_peak_mae_change": -0.018152397393410902,
+      "monthly_wins": 1,
+      "development_gate_passed": false
+    },
+    {
+      "variant": "hour08",
+      "mae_reduction": 0.13779965776489367,
+      "under_reduction": 0.10813427572539436,
+      "overall_mae_change": -0.004391290299107342,
+      "daily_peak_mae_change": 0.008563351918527973,
+      "monthly_wins": 2,
+      "development_gate_passed": true
+    }
+  ],
+  "stop": "No further same-period routing/model/threshold search after this comparison; retain S03 detection separately from value integration.",
+  "numeric_probability_ablation": "Original B2 variants failed. Routing does not overturn that result."
+}

@@ -1,0 +1,21 @@
+{
+  "directions": [
+    {
+      "direction": "down",
+      "extra_tp": 8,
+      "relative_extra_tp": null,
+      "extra_fp_per100h": 0.458295142071494,
+      "development_gate_passed": true,
+      "scope": "exploratory Jan-Jun development; not independent final testing"
+    },
+    {
+      "direction": "up",
+      "extra_tp": 12,
+      "relative_extra_tp": null,
+      "extra_fp_per100h": 0.0,
+      "development_gate_passed": true,
+      "scope": "exploratory Jan-Jun development; not independent final testing"
+    }
+  ],
+  "no_claim": "No regression improvement, final-test success, physical operating cause, or all-shape transition coverage was evaluated."
+}

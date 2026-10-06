@@ -1,0 +1,53 @@
+{
+  "status": "rejected",
+  "selected": "B",
+  "gates": [
+    {
+      "kind": "all",
+      "value": "all",
+      "metric": "MAE",
+      "B": 6.190524965035317,
+      "rule": 6.060536486400971,
+      "delta": -0.12998847863434637,
+      "strict_decrease": true,
+      "passed": true
+    },
+    {
+      "kind": "daily_maximum",
+      "value": "all",
+      "metric": "MAE",
+      "B": 7.58873099352297,
+      "rule": 7.874590695967474,
+      "delta": 0.28585970244450465,
+      "strict_decrease": false,
+      "passed": false
+    },
+    {
+      "kind": "daily_maximum",
+      "value": "all",
+      "metric": "mean_under",
+      "B": 6.987028143141023,
+      "rule": 7.339916213416402,
+      "delta": 0.3528880702753794,
+      "strict_decrease": false,
+      "passed": false
+    },
+    {
+      "kind": "power_transition",
+      "value": "low->above26",
+      "metric": "mean_under",
+      "B": 48.77161301058377,
+      "rule": 75.4,
+      "delta": 26.628386989416235,
+      "strict_decrease": false,
+      "passed": false
+    }
+  ],
+  "rule_applied_hours": 650,
+  "unchanged_hours": 1534,
+  "days_improved": 0,
+  "days_worsened": 0,
+  "days_unchanged": 91,
+  "origin_signature_collisions": 1,
+  "note": "A smaller aggregate error does not override a failed predeclared safety-of-accuracy gate; no operational safety claim."
+}

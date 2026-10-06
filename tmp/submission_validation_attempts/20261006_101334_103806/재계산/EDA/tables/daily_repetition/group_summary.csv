@@ -1,0 +1,3 @@
+﻿group,n,drop,rise,both,both_rate,median_drop,median_rise,ties_at_one_or_both,returned_among_both
+weekday,171,164,150,147,0.8596491228070176,-64.0,61.0,21,51
+weekend,70,51,16,13,0.18571428571428572,-1.0,0.0,28,9

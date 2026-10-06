@@ -1,0 +1,7 @@
+﻿split,role,hours,prior_low_hours,rise_hours,rise_dates
+dev_apr,train,1992,655,31,23
+dev_apr,eval,720,200,8,8
+dev_may,train,2712,855,39,31
+dev_may,eval,744,262,8,8
+dev_jun,train,3456,1117,47,39
+dev_jun,eval,720,188,4,4

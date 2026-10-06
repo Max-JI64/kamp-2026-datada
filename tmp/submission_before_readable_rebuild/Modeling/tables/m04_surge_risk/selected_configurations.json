@@ -1,0 +1,104 @@
+[
+  {
+    "split": "dev_apr",
+    "name": "Logistic_all",
+    "best_trial": 17,
+    "parameters": {
+      "C": 0.02311182227431954
+    },
+    "inner_metrics": {
+      "AP": 0.003728272371181228,
+      "AUROC": 0.7167609618104669,
+      "events": 2,
+      "hours": 1416,
+      "Brier": 0.0020098249749306483
+    },
+    "constant_outer": false
+  },
+  {
+    "split": "dev_apr",
+    "name": "HGB_all",
+    "best_trial": 15,
+    "parameters": {
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 10,
+      "l2_regularization": 0.2215764037792996
+    },
+    "inner_metrics": {
+      "AP": 0.008928571428571428,
+      "AUROC": 0.842998585572843,
+      "events": 2,
+      "hours": 1416,
+      "Brier": 0.004645741672450441
+    },
+    "constant_outer": false
+  },
+  {
+    "split": "dev_may",
+    "name": "Logistic_all",
+    "best_trial": 13,
+    "parameters": {
+      "C": 0.05423185466354646
+    },
+    "inner_metrics": {
+      "AP": 0.0036774856092529687,
+      "AUROC": 0.6822232645403377,
+      "events": 4,
+      "hours": 2136,
+      "Brier": 0.002688093280560225
+    },
+    "constant_outer": false
+  },
+  {
+    "split": "dev_may",
+    "name": "HGB_all",
+    "best_trial": 12,
+    "parameters": {
+      "max_leaf_nodes": 3,
+      "min_samples_leaf": 40,
+      "l2_regularization": 0.11718039702283908
+    },
+    "inner_metrics": {
+      "AP": 0.03229384282401755,
+      "AUROC": 0.8280956848030019,
+      "events": 4,
+      "hours": 2136,
+      "Brier": 0.003535726234513241
+    },
+    "constant_outer": false
+  },
+  {
+    "split": "dev_jun",
+    "name": "Logistic_all",
+    "best_trial": 16,
+    "parameters": {
+      "C": 82.62810495772486
+    },
+    "inner_metrics": {
+      "AP": 0.013988513150212805,
+      "AUROC": 0.7354630919220057,
+      "events": 8,
+      "hours": 2880,
+      "Brier": 0.004533634197210116
+    },
+    "constant_outer": false
+  },
+  {
+    "split": "dev_jun",
+    "name": "HGB_all",
+    "best_trial": 0,
+    "parameters": {
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 10,
+      "l2_regularization": 0.13066739238053282
+    },
+    "inner_metrics": {
+      "AP": 0.4014218337244769,
+      "AUROC": 0.9279683147632312,
+      "events": 8,
+      "hours": 2880,
+      "Brier": 0.003488288680613012
+    },
+    "constant_outer": false
+  }
+]

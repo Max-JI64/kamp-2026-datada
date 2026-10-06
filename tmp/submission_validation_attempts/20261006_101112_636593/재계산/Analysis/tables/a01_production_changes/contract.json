@@ -1,0 +1,29 @@
+{
+  "question": "Within the same month/hour/weekday-weekend, do production increases/decreases/unchanged records have different observed power changes?",
+  "previous_evidence": "Current EDA: weekday noon drop/13h rise; production peak19h versus power8h; recurring within-hour differences.",
+  "scope": "2021 Jan-Aug current EDA valid241 days; exact 1h pairing only, including valid midnight boundaries.",
+  "metrics": [
+    "power_delta",
+    "abs_power_delta",
+    "slot_range"
+  ],
+  "definitions": {
+    "power_delta": "current unrounded four-slot mean minus exact 1h past mean",
+    "abs_power_delta": "absolute value of power_delta",
+    "slot_range": "current max-min across four slots"
+  },
+  "production_groups": "sign of exact production difference: >0,<0,=0; even 1-unit production difference retained, actual magnitudes described",
+  "matching": "month x hour x weekend; at least two dates in EACH compared group; pooled common-cell weights, fixed prior to bootstrap",
+  "repeat_sensitivity": "Inverse number of dates sharing joint current/previous day power profile",
+  "zero_sensitivity": "0->positive,positive->0,positive->positive,0->0; not operational closure labels",
+  "robustness": "same-day only; both production records positive; leave each month out; week cluster bootstrap800 seed3103",
+  "intervals": "Exploratory week-resampling sensitivity, not proof of independent weeks or causal/statistical significance; duplicated profiles retained",
+  "pvalues": false,
+  "forecast_training": false,
+  "oracle_maximum_reconstruction": false,
+  "peak_threshold": null,
+  "manuscript": false,
+  "backup_access": false,
+  "stop": "Resolve matched relationships and confounding, no desired-result selection.",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+}

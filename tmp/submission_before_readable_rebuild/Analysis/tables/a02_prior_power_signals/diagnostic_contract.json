@@ -1,0 +1,11 @@
+{
+  "previous": "A02 adjusted rank correlation .305 for prior within-hour trend but only .013 within posthoc onset group; onset/zero-continuing prior means81.85 vs39.57.",
+  "reason": "Recent differences share mean(t-1); prior-level group imbalance requires transparent conditioning, not an onset detection claim.",
+  "checks": "Numeric-scale partial correlation with exact observed level polynomial; target-level and target-change residual identity; exact prior-level/calendar/known-production sign comparisons.",
+  "scope": "Reuse immutable A02 observations only, no forecasting or threshold search.",
+  "exact_matching": "month x upcoming hour x weekend x exact mean(t-1) x known production0/positive; >=2 dates in each sign; zero trend retained in source but outside opposite-sign comparison.",
+  "decision": "If exact matching has little coverage report it; do not relax definitions for larger differences. If sign relationship reverses under repeat weighting do not promote it.",
+  "manuscript": false,
+  "backup": false,
+  "forecast": false
+}

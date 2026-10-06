@@ -1,0 +1,32 @@
+{
+  "version": "redevelopment-peak-v1",
+  "recorded_at": "2026-10-05T18:08+09:00",
+  "reason": "R02 has no eligible model/input candidate; same-input delta target has MAE6.181 but peak8.953 versus B7.589. Align training emphasis with daily-max evaluation rather than repeat model tuning.",
+  "source_r02": "133d7025abca81026a1985c71696bf129771146f2b9b8e6260d4f4b3f78ffbcc",
+  "source_r03": "571691270e931d66dc6ae091f9e7df0f628b31617cda805fc11170a86a12a062",
+  "helper_sha256": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986",
+  "entrypoint_sha256": "f4ad735390e460643eb69f34bcdc00b4b2502d9ffb31a329ec9b00df0752121c",
+  "weight_grid": [
+    1.0,
+    1.25,
+    1.5,
+    2.0,
+    3.0,
+    4.0,
+    8.0
+  ],
+  "parameters": {
+    "max_leaf_nodes": 15,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0
+  },
+  "features": "B18; unchanged",
+  "training_weight": "1+(lambda-1)*w; w is 1/ties at actual maximum of each complete eligible training date, zero otherwise",
+  "selection": "within each outer training interval: overall <=1.01 inner B, over increase <=0.05 inner B peakMAE, monthly overall/peak <=1.05 B; minimize max(peakMAE/B,peakUnder/B), tie smaller lambda. Lambda1 baseline always feasible.",
+  "outer_gates": "unchanged redevelopment_r02_contract.json criteria against both original A/B",
+  "no_new_optuna": true,
+  "no_later_selection": true,
+  "max_new_fits": 75
+}

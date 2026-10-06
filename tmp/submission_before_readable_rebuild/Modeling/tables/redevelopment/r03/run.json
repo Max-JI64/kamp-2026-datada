@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "completed_at": "2026-10-05T18:03+09:00",
+  "new_fits": 3,
+  "new_trials": 0,
+  "script_sha256": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986",
+  "parent_run_sha256": "133d7025abca81026a1985c71696bf129771146f2b9b8e6260d4f4b3f78ffbcc",
+  "outputs_sha256": {
+    "comparison.csv": "6498cdcf4d70e643d01d035474a1600b96d08d4a7d327dc72412cba6c03c746f",
+    "configurations.json": "b103e15eb7f7a8b3c7d0c18631657701d0f14e2b52b8b39a1f20ce2cf32d8070",
+    "contract.json": "6fe745eeb43ae1fe473ae51c40d394b559f45ae4cb1ec693480664d884df5947",
+    "leave_one_date_out.csv": "7dca78eda6728222fc6bfff7b8a742d24e23768cc7ebd5bf8602422743d7cefc",
+    "metrics.csv": "e52f51ac7abe2dec5d8c5407c26dfbd05daa7d8395d1b070f230541ec84ca80e",
+    "model_manifest.csv": "4b26efc60b939c28f362dc8cbdf43bcf94e62c6641e05bbf468f513a08cd9162",
+    "predictions.csv": "8ac790543d4a2329408b36d02d3751835659fe7484b4b60f8eb42e32322d1217",
+    "selection.json": "72468a1b6925b87cf5a73176448cf1654d98ebd409463d86955145d15640e1a6"
+  }
+}

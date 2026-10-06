@@ -1,0 +1,17 @@
+{
+  "executable": "C:\\Program Files\\Python313\\python.exe",
+  "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "gil_enabled": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "3.0.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.7.1"
+  },
+  "required_model_imports": [
+    "Ridge",
+    "HistGradientBoostingRegressor",
+    "StandardScaler"
+  ]
+}

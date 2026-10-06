@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 4104,
+  "days": 171,
+  "cutoff": 26,
+  "next_observed_value": 49,
+  "empty_integer_values": [
+    27,
+    48
+  ],
+  "low_hours": 747,
+  "low_fraction": 0.18201754385964913,
+  "low_production_positive": 92,
+  "patterns": [
+    {
+      "pattern": "07시부터 49 이상",
+      "low_hour_pattern": "0,1,2,3,4,5,6",
+      "hours_00_06": "20~26",
+      "hour_07": "49 이상",
+      "hours_08_23": "49 이상",
+      "days": 29,
+      "low_hours_per_day": 7
+    },
+    {
+      "pattern": "08시부터 낮은 구간",
+      "low_hour_pattern": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+      "hours_00_06": "49 이상",
+      "hour_07": "49 이상",
+      "hours_08_23": "20~26",
+      "days": 7,
+      "low_hours_per_day": 16
+    },
+    {
+      "pattern": "하루 내내 낮은 구간",
+      "low_hour_pattern": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+      "hours_00_06": "20~26",
+      "hour_07": "20~26",
+      "hours_08_23": "20~26",
+      "days": 18,
+      "low_hours_per_day": 24
+    },
+    {
+      "pattern": "하루 내내 49 이상",
+      "low_hour_pattern": "none",
+      "hours_00_06": "49 이상",
+      "hour_07": "49 이상",
+      "hours_08_23": "49 이상",
+      "days": 117,
+      "low_hours_per_day": 0
+    }
+  ],
+  "checked_daily_masks": 171,
+  "histogram_hours": 4104,
+  "warnings": [],
+  "image_analysis_performed": false,
+  "image": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101112_636593\\재계산\\EDA\\figures\\weekday_power_levels.png",
+  "image_sha256": "e693ec78e3db93fe15931bc38e85583ed9158561c03ee8c6f892355c92061319",
+  "script_sha256": "fa7ddfd59210b9829664bd4898263a0355e06abd668c179d356c5f185fb66e6e"
+}

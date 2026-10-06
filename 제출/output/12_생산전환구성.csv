@@ -1,0 +1,7 @@
+﻿change,transition,시간 수
+decrease,positive_to_positive,1474
+decrease,positive_to_zero,214
+increase,positive_to_positive,1582
+increase,zero_to_positive,215
+maintain,positive_to_positive,4
+maintain,zero_to_zero,2292

@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-06T10:30+09:00",
+  "scope": "Static offline historical replay; no model inference or refitting in browser.",
+  "inputs": {
+    "data\\origin\\okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling\\tables\\regime_age_ablation\\development_predictions.csv": "8e052dc0ff00f15a9c1949fb8ab4f6fb328a9a13c43cdb08bf4e437a64f35dce",
+    "Modeling\\tables\\regime_age_ablation\\followup_predictions.csv": "051d0ac73e2a1b621480f63b131b827eb3c1d106714ea68253b6dbb13cc094b7",
+    "Modeling\\tables\\regime_age_ablation\\followup_classification.csv": "55466771a3f6fa06a6d5f40ea94845bc830f72ddbd54d97145c115e05e79ab19"
+  },
+  "raw_rows_embedded": 6168,
+  "raw_columns_embedded": 18,
+  "valid_hour_rows": 6120,
+  "invalid_hour_rows": 48,
+  "invalid_rows_preserved_in_payload": true,
+  "quarter_hour_observations": 24480,
+  "forecast_rows": 1344,
+  "classification_rows": 1428,
+  "prediction_variant": "G1_noage",
+  "interval": {
+    "target": "Maximum of the FOUR quarter-hour observations in the target hour, not individual slots.",
+    "name": "Nominal 90% empirical prediction interval",
+    "method": "prediction +/- fixed 90% absolute-residual order statistic; no clipping",
+    "calibration_period": "2021-05-01 to 2021-06-30, prior-month OOF development predictions",
+    "rank": 1317,
+    "half_width": 12.57270890641783,
+    "development": {
+      "n": 1462,
+      "covered": 1317,
+      "coverage": 0.9008207934336525
+    },
+    "followup_2021_07_08": {
+      "n": 1344,
+      "covered": 1123,
+      "coverage": 0.8355654761904762
+    },
+    "limits": "Development selected after exploratory modeling; dependent time series and reuse of development data. No formal 90% coverage guarantee and no confidence interval for a parameter."
+  },
+  "verification": {
+    "raw_hour_maxima_checked": 1344,
+    "alarm_route_matches": true,
+    "future_error_used_to_set_width": false,
+    "forecasts_only_published_at_target_hour_start": true
+  },
+  "time_contract": "hour row h unfolds at h:15, h:30, h:45, (h+1):00; display convention consistent with hour blocks, not a verified meter acquisition timestamp.",
+  "forecast_missing_policy": "Show unavailable; do not impute or forward-fill predictions."
+}

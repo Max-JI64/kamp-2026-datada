@@ -1,0 +1,7 @@
+﻿variant,period,dates,weather_better_dates,weather_worse_dates,tied_dates
+B0,Apr-Jun,91,24,67,0
+B0,Jul-Aug,56,21,35,0
+B1,Apr-Jun,91,27,64,0
+B1,Jul-Aug,56,32,24,0
+G1,Apr-Jun,91,23,68,0
+G1,Jul-Aug,56,22,34,0

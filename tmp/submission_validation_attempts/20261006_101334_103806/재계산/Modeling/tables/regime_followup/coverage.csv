@@ -1,0 +1,3 @@
+﻿month,calendar_hours,valid_hours,missing_hours,six_history_prediction_hours,six_history_known_label_hours,common_prediction_hours,common_known_label_hours,all_observed_persistent_up_events,persistent_up_events_in_common,excluded_persistent_up_events
+7,744,696,48,684,680,600,598,8,7,1
+8,744,744,0,744,742,744,742,6,6,0

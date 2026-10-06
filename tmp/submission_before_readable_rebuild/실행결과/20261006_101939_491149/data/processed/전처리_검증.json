@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "raw_source": "data/origin/okm_augumented_2021.csv",
+  "raw_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "raw_rows": 6168,
+  "columns": 18,
+  "scope_rows": 5832,
+  "invalid_hours": 48,
+  "valid_hours": 5784,
+  "valid_days": 241,
+  "exact_numeric_roundtrip": true,
+  "missing_imputed": false,
+  "zero_or_extreme_values_deleted": false,
+  "analysis_input": "실행결과/20261006_101939_491149/data/processed/정규화_전체자료.csv",
+  "valid_hour_input": "실행결과/20261006_101939_491149/data/processed/정상시간_전처리자료.csv"
+}

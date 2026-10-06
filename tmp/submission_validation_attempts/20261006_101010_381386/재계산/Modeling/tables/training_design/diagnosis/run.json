@@ -1,0 +1,50 @@
+{
+  "status": "completed",
+  "contract_sha256": "e45f202b86b4da24afbaf24ea9de44492bb20c0d980419330b2f671550e019a8",
+  "prior_edges": [
+    116.0,
+    160.0
+  ],
+  "pooled": {
+    "loss_B": {
+      "false": 5.561972504780801,
+      "true": 6.753603210679987
+    },
+    "loss_H": {
+      "false": 4.847408859239859,
+      "true": 7.072056508296722
+    },
+    "loss_change": {
+      "false": -0.7145636455409413,
+      "true": 0.31845329761673535
+    }
+  },
+  "robust_standardized": {
+    "strata": "month_hour_prior_level",
+    "robust": true,
+    "cells": 39,
+    "new_hours": 255,
+    "seen_hours": 289,
+    "new_coverage": 0.22135416666666666,
+    "seen_coverage": 0.2800387596899225,
+    "new_loss_B": 5.142581813645913,
+    "new_loss_H": 5.372822378766844,
+    "new_loss_change": 0.2302405651209307,
+    "new_actual": 95.35018721198156,
+    "seen_loss_B": 4.740674285248486,
+    "seen_loss_H": 4.370862556656834,
+    "seen_loss_change": -0.3698117285916527,
+    "seen_actual": 95.67923998044965,
+    "new_minus_seen_loss_change": 0.6000522937125834
+  },
+  "proceed_repetition_weights": true,
+  "limitation": "shared-cell standardization covers only a subset; labels use full evaluation day posthoc; no causal attribution",
+  "outputs_sha256": {
+    "month_overlap.csv": "7b62da7f2a78e51ff80a259e6be36cab309269f3b761feee9054fb72854ff6a1",
+    "month_state_shift.csv": "365d4de34e6a699c33341e27a1edd49c03cd8d8f2e2ca542d0fd2b12cf80e7ba",
+    "paired.csv": "7364dc3d571f923c0dff1bafcdf14914c1c3666d703ffa494b400933955d2bd2",
+    "standardized.csv": "218b70f1110fa7fa855a01696982b4af391b75295cc96dfcd9d6b8f9e6d1f40d",
+    "strata_cells.csv": "19e1d89bedba1172b01cfa9fded4d81a32b447342178142c53461e410c4163d8"
+  },
+  "new_fits": 0
+}

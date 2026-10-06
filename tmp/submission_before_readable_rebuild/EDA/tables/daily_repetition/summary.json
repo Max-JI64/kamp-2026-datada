@@ -1,0 +1,296 @@
+{
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "scope": {
+    "hours": 5784,
+    "normal_dates": 241,
+    "weekday": 171,
+    "weekend": 70,
+    "calendar_dates": 243,
+    "invalid_dates": [
+      "2021-07-13",
+      "2021-07-15"
+    ]
+  },
+  "groups": [
+    {
+      "group": "weekday",
+      "n": 171,
+      "drop": 164,
+      "rise": 150,
+      "both": 147,
+      "both_rate": 0.8596491228070176,
+      "median_drop": -64.0,
+      "median_rise": 61.0,
+      "ties_at_one_or_both": 21,
+      "returned_among_both": 51
+    },
+    {
+      "group": "weekend",
+      "n": 70,
+      "drop": 51,
+      "rise": 16,
+      "both": 13,
+      "both_rate": 0.18571428571428572,
+      "median_drop": -1.0,
+      "median_rise": 0.0,
+      "ties_at_one_or_both": 28,
+      "returned_among_both": 9
+    }
+  ],
+  "monthly": [
+    {
+      "group": "weekday",
+      "month": 1,
+      "n": 21,
+      "both": 12,
+      "both_rate": 0.5714285714285714,
+      "drop_median": -58.0,
+      "rise_median": 55.0,
+      "day_mean_median": 112.20833333333333,
+      "zero_production_days": 9
+    },
+    {
+      "group": "weekday",
+      "month": 2,
+      "n": 20,
+      "both": 16,
+      "both_rate": 0.8,
+      "drop_median": -61.0,
+      "rise_median": 59.0,
+      "day_mean_median": 128.16666666666669,
+      "zero_production_days": 2
+    },
+    {
+      "group": "weekday",
+      "month": 3,
+      "n": 23,
+      "both": 18,
+      "both_rate": 0.782608695652174,
+      "drop_median": -61.0,
+      "rise_median": 59.0,
+      "day_mean_median": 128.95833333333334,
+      "zero_production_days": 6
+    },
+    {
+      "group": "weekday",
+      "month": 4,
+      "n": 22,
+      "both": 22,
+      "both_rate": 1.0,
+      "drop_median": -68.0,
+      "rise_median": 64.0,
+      "day_mean_median": 122.02083333333334,
+      "zero_production_days": 0
+    },
+    {
+      "group": "weekday",
+      "month": 5,
+      "n": 21,
+      "both": 20,
+      "both_rate": 0.9523809523809523,
+      "drop_median": -66.0,
+      "rise_median": 61.0,
+      "day_mean_median": 117.16666666666667,
+      "zero_production_days": 0
+    },
+    {
+      "group": "weekday",
+      "month": 6,
+      "n": 22,
+      "both": 22,
+      "both_rate": 1.0,
+      "drop_median": -62.0,
+      "rise_median": 61.0,
+      "day_mean_median": 129.02083333333334,
+      "zero_production_days": 0
+    },
+    {
+      "group": "weekday",
+      "month": 7,
+      "n": 20,
+      "both": 20,
+      "both_rate": 1.0,
+      "drop_median": -73.5,
+      "rise_median": 65.0,
+      "day_mean_median": 135.125,
+      "zero_production_days": 0
+    },
+    {
+      "group": "weekday",
+      "month": 8,
+      "n": 22,
+      "both": 17,
+      "both_rate": 0.7727272727272727,
+      "drop_median": -65.5,
+      "rise_median": 60.5,
+      "day_mean_median": 129.27083333333334,
+      "zero_production_days": 5
+    },
+    {
+      "group": "weekend",
+      "month": 1,
+      "n": 10,
+      "both": 4,
+      "both_rate": 0.4,
+      "drop_median": -19.5,
+      "rise_median": 29.5,
+      "day_mean_median": 82.75,
+      "zero_production_days": 5
+    },
+    {
+      "group": "weekend",
+      "month": 2,
+      "n": 8,
+      "both": 0,
+      "both_rate": 0.0,
+      "drop_median": 0.5,
+      "rise_median": -1.5,
+      "day_mean_median": 35.10416666666667,
+      "zero_production_days": 5
+    },
+    {
+      "group": "weekend",
+      "month": 3,
+      "n": 8,
+      "both": 4,
+      "both_rate": 0.5,
+      "drop_median": -28.0,
+      "rise_median": 30.0,
+      "day_mean_median": 75.3125,
+      "zero_production_days": 4
+    },
+    {
+      "group": "weekend",
+      "month": 4,
+      "n": 8,
+      "both": 1,
+      "both_rate": 0.125,
+      "drop_median": -1.0,
+      "rise_median": 0.0,
+      "day_mean_median": 32.375,
+      "zero_production_days": 4
+    },
+    {
+      "group": "weekend",
+      "month": 5,
+      "n": 10,
+      "both": 2,
+      "both_rate": 0.2,
+      "drop_median": -1.0,
+      "rise_median": 0.0,
+      "day_mean_median": 42.79166666666667,
+      "zero_production_days": 5
+    },
+    {
+      "group": "weekend",
+      "month": 6,
+      "n": 8,
+      "both": 0,
+      "both_rate": 0.0,
+      "drop_median": -1.5,
+      "rise_median": 0.0,
+      "day_mean_median": 35.3125,
+      "zero_production_days": 4
+    },
+    {
+      "group": "weekend",
+      "month": 7,
+      "n": 9,
+      "both": 2,
+      "both_rate": 0.2222222222222222,
+      "drop_median": -2.0,
+      "rise_median": 0.0,
+      "day_mean_median": 24.541666666666668,
+      "zero_production_days": 5
+    },
+    {
+      "group": "weekend",
+      "month": 8,
+      "n": 9,
+      "both": 0,
+      "both_rate": 0.0,
+      "drop_median": 1.0,
+      "rise_median": -1.0,
+      "day_mean_median": 22.166666666666668,
+      "zero_production_days": 6
+    }
+  ],
+  "profile_sensitivity": [
+    {
+      "group": "weekday",
+      "all_days": 171,
+      "unique_profiles": 90,
+      "all_both_rate": 0.8596491228070176,
+      "unique_both": 78,
+      "unique_both_rate": 0.8666666666666667
+    },
+    {
+      "group": "weekend",
+      "all_days": 70,
+      "unique_profiles": 47,
+      "all_both_rate": 0.18571428571428572,
+      "unique_both": 12,
+      "unique_both_rate": 0.2553191489361702
+    }
+  ],
+  "production_context": [
+    {
+      "group": "weekday",
+      "any_positive_production": false,
+      "n": 22,
+      "both": 2,
+      "both_rate": 0.09090909090909091,
+      "median_drop": -1.0,
+      "median_rise": 0.0
+    },
+    {
+      "group": "weekday",
+      "any_positive_production": true,
+      "n": 149,
+      "both": 145,
+      "both_rate": 0.9731543624161074,
+      "median_drop": -65.0,
+      "median_rise": 62.0
+    },
+    {
+      "group": "weekend",
+      "any_positive_production": false,
+      "n": 38,
+      "both": 7,
+      "both_rate": 0.18421052631578946,
+      "median_drop": -1.0,
+      "median_rise": 0.0
+    },
+    {
+      "group": "weekend",
+      "any_positive_production": true,
+      "n": 32,
+      "both": 6,
+      "both_rate": 0.1875,
+      "median_drop": -2.0,
+      "median_rise": 0.0
+    }
+  ],
+  "unique_hourly_mean_profiles": 125,
+  "unique_96slot_profiles": 126,
+  "august_zero_production_dates": [
+    "2021-08-01",
+    "2021-08-02",
+    "2021-08-03",
+    "2021-08-04",
+    "2021-08-05",
+    "2021-08-06",
+    "2021-08-07",
+    "2021-08-08",
+    "2021-08-15",
+    "2021-08-22",
+    "2021-08-29"
+  ],
+  "figures": [],
+  "verification": "passed: original hash; 24 hours per valid date; exact rounding identity; all 48 group-hour means reconciled with 2.1; direct per-date sign count; missing dates preserved",
+  "quantile_band": "Across observed dates, linear-interpolated P10/P90, not a confidence interval or forecast interval.",
+  "manuscript_sha256_before": "3f93c6c3bd85021ca2950ab3aeaf23b4498d63aadd053aa4a7f727179d889f95",
+  "manuscript_sha256_after": "3f93c6c3bd85021ca2950ab3aeaf23b4498d63aadd053aa4a7f727179d889f95",
+  "manuscript_edited": false,
+  "visual_review": false
+}

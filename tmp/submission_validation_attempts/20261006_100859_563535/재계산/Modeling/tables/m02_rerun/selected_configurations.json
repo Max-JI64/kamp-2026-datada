@@ -1,0 +1,416 @@
+[
+  {
+    "split": "dev_apr",
+    "model": "HGB",
+    "best_trial": 27,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 12.441596228662478,
+    "inner_daily_maximum_MAE": 19.494657961533143,
+    "inner_balanced_score": 0.9165175455096279,
+    "parameters": {
+      "learning_rate": 0.030629453917788534,
+      "max_iter": 100,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 24,
+      "l2_regularization": 0.07460699686208686
+    },
+    "train_hours": 1992,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_apr",
+    "model": "XGBoost",
+    "best_trial": 33,
+    "trials": 50,
+    "extended": true,
+    "inner_overall_MAE": 11.87970870766936,
+    "inner_daily_maximum_MAE": 18.81184045608434,
+    "inner_balanced_score": 0.875125768913735,
+    "parameters": {
+      "learning_rate": 0.06218141172498477,
+      "n_estimators": 100,
+      "max_depth": 5,
+      "min_child_weight": 1.3551239377519961,
+      "subsample": 0.9518992098644288,
+      "colsample_bytree": 0.8475647936326245,
+      "reg_alpha": 0.11794169248505552,
+      "reg_lambda": 10.28813800307215
+    },
+    "train_hours": 1992,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_apr",
+    "model": "LightGBM",
+    "best_trial": 10,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 12.279682184689616,
+    "inner_daily_maximum_MAE": 21.243682697595577,
+    "inner_balanced_score": 0.9045900516866349,
+    "parameters": {
+      "learning_rate": 0.06514382276594655,
+      "n_estimators": 100,
+      "num_leaves": 31,
+      "min_child_samples": 77,
+      "subsample": 0.8507593653024389,
+      "colsample_bytree": 0.7843204658576869,
+      "reg_alpha": 3.235444438857017,
+      "reg_lambda": 3.6042369944981556
+    },
+    "train_hours": 1992,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_apr",
+    "model": "CatBoost",
+    "best_trial": 22,
+    "trials": 50,
+    "extended": true,
+    "inner_overall_MAE": 11.983325493362694,
+    "inner_daily_maximum_MAE": 23.978252595609703,
+    "inner_balanced_score": 0.8827587607221712,
+    "parameters": {
+      "learning_rate": 0.020077656915648476,
+      "iterations": 350,
+      "depth": 3,
+      "l2_leaf_reg": 18.693711815288413,
+      "random_strength": 0.3941437038625003
+    },
+    "train_hours": 1992,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_apr",
+    "model": "ExtraTrees",
+    "best_trial": 18,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 11.773266228786579,
+    "inner_daily_maximum_MAE": 19.378809855784166,
+    "inner_balanced_score": 0.8672846207450731,
+    "parameters": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 0.9091346613258848
+    },
+    "train_hours": 1992,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_apr",
+    "model": "mean5",
+    "members": [
+      "HGB",
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "ExtraTrees"
+    ],
+    "weights": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "inner_overall_MAE": 11.49509637939285,
+    "inner_daily_maximum_MAE": 20.179171485912867,
+    "inner_balanced_score": 0.8467930742493119
+  },
+  {
+    "split": "dev_apr",
+    "model": "weighted_top3",
+    "members": [
+      "ExtraTrees",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "weights": [
+      0.40532708527343303,
+      0.40749140979791787,
+      0.18718150492864916
+    ],
+    "inner_overall_MAE": 11.466825447224732,
+    "inner_daily_maximum_MAE": 19.66946201362774,
+    "inner_balanced_score": 0.8447104793086162
+  },
+  {
+    "split": "dev_may",
+    "model": "HGB",
+    "best_trial": 4,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 11.063564853817448,
+    "inner_daily_maximum_MAE": 17.522625913244152,
+    "inner_balanced_score": 0.8061325099012133,
+    "parameters": {
+      "learning_rate": 0.02649083634077794,
+      "max_iter": 200,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 24,
+      "l2_regularization": 0.16283124535115095
+    },
+    "train_hours": 2712,
+    "eval_hours": 744
+  },
+  {
+    "split": "dev_may",
+    "model": "XGBoost",
+    "best_trial": 6,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 10.969359604160438,
+    "inner_daily_maximum_MAE": 16.904531595884254,
+    "inner_balanced_score": 0.7992683648127817,
+    "parameters": {
+      "learning_rate": 0.06017761665213941,
+      "n_estimators": 150,
+      "max_depth": 6,
+      "min_child_weight": 13.962563737015762,
+      "subsample": 0.9818496824692567,
+      "colsample_bytree": 0.9684482051282947,
+      "reg_alpha": 0.0644932207737863,
+      "reg_lambda": 13.220877067405619
+    },
+    "train_hours": 2712,
+    "eval_hours": 744
+  },
+  {
+    "split": "dev_may",
+    "model": "LightGBM",
+    "best_trial": 47,
+    "trials": 50,
+    "extended": true,
+    "inner_overall_MAE": 11.081904682437454,
+    "inner_daily_maximum_MAE": 18.499691052996962,
+    "inner_balanced_score": 0.807468818068784,
+    "parameters": {
+      "learning_rate": 0.028426000618809066,
+      "n_estimators": 150,
+      "num_leaves": 31,
+      "min_child_samples": 18,
+      "subsample": 0.8038370481489951,
+      "colsample_bytree": 0.8283459080269155,
+      "reg_alpha": 0.1656786900722462,
+      "reg_lambda": 0.9605220063255229
+    },
+    "train_hours": 2712,
+    "eval_hours": 744
+  },
+  {
+    "split": "dev_may",
+    "model": "CatBoost",
+    "best_trial": 26,
+    "trials": 50,
+    "extended": true,
+    "inner_overall_MAE": 11.059721655772488,
+    "inner_daily_maximum_MAE": 20.449001789484424,
+    "inner_balanced_score": 0.8058524801886419,
+    "parameters": {
+      "learning_rate": 0.06116380695944907,
+      "iterations": 150,
+      "depth": 5,
+      "l2_leaf_reg": 6.373804226251141,
+      "random_strength": 0.13517644862202438
+    },
+    "train_hours": 2712,
+    "eval_hours": 744
+  },
+  {
+    "split": "dev_may",
+    "model": "ExtraTrees",
+    "best_trial": 13,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 10.674348282744619,
+    "inner_daily_maximum_MAE": 17.70524384813891,
+    "inner_balanced_score": 0.7777727420072491,
+    "parameters": {
+      "n_estimators": 200,
+      "max_depth": 16,
+      "min_samples_leaf": 8,
+      "max_features": 0.901858643908981
+    },
+    "train_hours": 2712,
+    "eval_hours": 744
+  },
+  {
+    "split": "dev_may",
+    "model": "mean5",
+    "members": [
+      "HGB",
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "ExtraTrees"
+    ],
+    "weights": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "inner_overall_MAE": 10.544547750204309,
+    "inner_daily_maximum_MAE": 17.903113985846588,
+    "inner_balanced_score": 0.7683149921349618
+  },
+  {
+    "split": "dev_may",
+    "model": "weighted_top3",
+    "members": [
+      "ExtraTrees",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "weights": [
+      0.5304100073470729,
+      0.4535074664867448,
+      0.016082526166182345
+    ],
+    "inner_overall_MAE": 10.437626360543547,
+    "inner_daily_maximum_MAE": 17.071457144297813,
+    "inner_balanced_score": 0.7605243017609079
+  },
+  {
+    "split": "dev_jun",
+    "model": "HGB",
+    "best_trial": 4,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 9.791788842890773,
+    "inner_daily_maximum_MAE": 15.40422118726671,
+    "inner_balanced_score": 0.7226412430177691,
+    "parameters": {
+      "learning_rate": 0.02649083634077794,
+      "max_iter": 200,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 24,
+      "l2_regularization": 0.16283124535115095
+    },
+    "train_hours": 3456,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_jun",
+    "model": "XGBoost",
+    "best_trial": 6,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 9.71041712032424,
+    "inner_daily_maximum_MAE": 15.021593008306292,
+    "inner_balanced_score": 0.7166359498394274,
+    "parameters": {
+      "learning_rate": 0.06017761665213941,
+      "n_estimators": 150,
+      "max_depth": 6,
+      "min_child_weight": 13.962563737015762,
+      "subsample": 0.9818496824692567,
+      "colsample_bytree": 0.9684482051282947,
+      "reg_alpha": 0.0644932207737863,
+      "reg_lambda": 13.220877067405619
+    },
+    "train_hours": 3456,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_jun",
+    "model": "LightGBM",
+    "best_trial": 17,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 9.713428037679014,
+    "inner_daily_maximum_MAE": 15.173907666052893,
+    "inner_balanced_score": 0.7168581577622888,
+    "parameters": {
+      "learning_rate": 0.06694878049501037,
+      "n_estimators": 100,
+      "num_leaves": 31,
+      "min_child_samples": 17,
+      "subsample": 0.9522781242028121,
+      "colsample_bytree": 0.7609524784084656,
+      "reg_alpha": 0.0005313867388561592,
+      "reg_lambda": 8.553440248964774
+    },
+    "train_hours": 3456,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_jun",
+    "model": "CatBoost",
+    "best_trial": 38,
+    "trials": 50,
+    "extended": true,
+    "inner_overall_MAE": 9.86738752904382,
+    "inner_daily_maximum_MAE": 15.671628961335909,
+    "inner_balanced_score": 0.7282204818482523,
+    "parameters": {
+      "learning_rate": 0.03244664696834518,
+      "iterations": 450,
+      "depth": 7,
+      "l2_leaf_reg": 13.133027133784852,
+      "random_strength": 0.13962255767463425
+    },
+    "train_hours": 3456,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_jun",
+    "model": "ExtraTrees",
+    "best_trial": 13,
+    "trials": 30,
+    "extended": false,
+    "inner_overall_MAE": 9.475958909540747,
+    "inner_daily_maximum_MAE": 14.963748025981538,
+    "inner_balanced_score": 0.6993327608517156,
+    "parameters": {
+      "n_estimators": 400,
+      "max_depth": null,
+      "min_samples_leaf": 8,
+      "max_features": 0.8865973728386163
+    },
+    "train_hours": 3456,
+    "eval_hours": 720
+  },
+  {
+    "split": "dev_jun",
+    "model": "mean5",
+    "members": [
+      "HGB",
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "ExtraTrees"
+    ],
+    "weights": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "inner_overall_MAE": 9.348503354688587,
+    "inner_daily_maximum_MAE": 14.980068672604288,
+    "inner_balanced_score": 0.6899264468404861
+  },
+  {
+    "split": "dev_jun",
+    "model": "weighted_top3",
+    "members": [
+      "ExtraTrees",
+      "XGBoost",
+      "LightGBM"
+    ],
+    "weights": [
+      0.5771085900862373,
+      0.41472770966406086,
+      0.00816370024970193
+    ],
+    "inner_overall_MAE": 9.279903036159359,
+    "inner_daily_maximum_MAE": 14.768600753580465,
+    "inner_balanced_score": 0.6848636927054877
+  }
+]

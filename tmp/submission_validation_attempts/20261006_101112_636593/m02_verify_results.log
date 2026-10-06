@@ -1,0 +1,1 @@
+{"status": "passed", "prediction_rows_checked": 122304, "metrics_recomputed": 224, "same_evaluation_timestamps": 2184, "daily_maximum_metrics_recomputed": 14, "daily_maximum_weighted_dates": 91, "later_period_absent": true, "baseline_predictions_checked": true, "errors_and_input_labels_checked": true, "outputs_and_model_hashes_checked": true}

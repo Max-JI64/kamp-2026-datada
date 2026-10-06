@@ -1,0 +1,50 @@
+{
+  "normal_forecast_development_candidate": "B",
+  "normal_confirmation_gates": {
+    "overall": false,
+    "daily_maximum": false,
+    "peak_under": false,
+    "lag1_overall": true,
+    "lag1_peak": true,
+    "monthly": false,
+    "profile_reweighted": true
+  },
+  "broad_last_slot_effect_confirmed": false,
+  "risk_confirmation_gates": {
+    "rank": true,
+    "pooled_recall": true,
+    "monthly_recall": false,
+    "false_positive": false,
+    "strict_gain": true
+  },
+  "G_risk_effect_confirmed": false,
+  "risk_summary": [
+    {
+      "group": "B_score",
+      "weighted_monthly_AP": 0.32756410256410257,
+      "events": 6,
+      "TP": 3,
+      "FP": 16,
+      "FN": 3,
+      "TN": 1322,
+      "recall": 0.5,
+      "precision": 0.15789473684210525,
+      "false_positive_fraction": 0.01195814648729447
+    },
+    {
+      "group": "G_HGB_score",
+      "weighted_monthly_AP": 0.48761174968071525,
+      "events": 6,
+      "TP": 4,
+      "FP": 14,
+      "FN": 2,
+      "TN": 1324,
+      "recall": 0.6666666666666666,
+      "precision": 0.2222222222222222,
+      "false_positive_fraction": 0.01046337817638266
+    }
+  ],
+  "no_automatic_retuning": true,
+  "later_period_already_observed": true,
+  "normal_forecast_not_replaced_by_G": true
+}

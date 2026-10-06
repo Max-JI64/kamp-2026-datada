@@ -1,0 +1,1 @@
+Invalid implementation attempt: aggregate metrics and gates were computed from refreshed errors, but paired/daily/low-case error columns referred to pre-rule B errors. Do not use these attempt files as valid results. Correct by selecting A/B/rule frames from the refreshed prediction table, then rerun and independently verify.

@@ -1,0 +1,25 @@
+{
+  "selected": {
+    "model": "HGB_initial",
+    "overall_MAE": 6.737973239313947,
+    "daily_maximum_MAE": 11.750641760429726,
+    "relative_overall_MAE": 0.4885052965961246,
+    "relative_daily_maximum_MAE": 0.32115266983948004,
+    "balanced_score": 0.4885052965961246,
+    "nondominated": true,
+    "preference": 3
+  },
+  "point_best": {
+    "model": "HGB_initial",
+    "overall_MAE": 6.737973239313947,
+    "daily_maximum_MAE": 11.750641760429726,
+    "relative_overall_MAE": 0.4885052965961246,
+    "relative_daily_maximum_MAE": 0.32115266983948004,
+    "balanced_score": 0.4885052965961246,
+    "nondominated": true
+  },
+  "M03_repeat_required": false,
+  "development_only": true,
+  "normalized_against": "previous_hour",
+  "selection_rule": "Two primary MAEs are published separately. Retain nondominated outer-development methods, select minimum max(overall MAE / previous-hour overall MAE, peak MAE / previous-hour peak MAE). Within 1 percent of best score among nondominated methods prefer existing HGB, then single models, then equal and weighted ensembles. A retrospective development redesign, not an independent final-test claim. Under/over, RMSE, monthly, profile and transition errors are diagnostics. Normalization is a transparent compromise, not a measured economic cost."
+}

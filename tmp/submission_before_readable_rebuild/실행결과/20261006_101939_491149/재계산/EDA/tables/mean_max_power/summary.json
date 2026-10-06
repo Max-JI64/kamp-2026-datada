@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "rows": 5784,
+  "days": 241,
+  "period": "2021-01 through 2021-08, valid hours only; weekdays and weekends",
+  "mean_definition": "CSV mean: floor(sum(four slots)/4 + 0.5)",
+  "maximum_definition": "maximum of four slots in the same row",
+  "gap_definition": "same-row maximum minus stored rounded hourly mean",
+  "mean_max_summary": {
+    "group": "all",
+    "hours": 5784,
+    "gap_mean": 7.268326417704011,
+    "gap_min": 0,
+    "gap_median": 5.0,
+    "gap_p90": 17.0,
+    "gap_p95": 22.849999999999454,
+    "gap_p99": 34.0,
+    "gap_max": 67,
+    "exact_gap_mean": 7.381180843706777,
+    "exact_gap_median": 5.25,
+    "all_four_equal": 558,
+    "stored_mean_equal_max": 884,
+    "maximum_unique": 4536,
+    "pearson": 0.9939167442901304,
+    "spearman": 0.9872657398660536
+  },
+  "widest_same_mean": {
+    "평균": 64,
+    "hours": 12,
+    "maximum_min": 66,
+    "maximum_max": 131,
+    "maximum_unique": 5,
+    "maximum_spread": 65
+  },
+  "global_highest_maximum": 222,
+  "mean_at_global_highest_maximum": [
+    199,
+    202
+  ],
+  "daily_highest_hour_comparison": {
+    "days": 241,
+    "overlapping_days": 151,
+    "different_days": 90,
+    "maximum_shortfall": 15,
+    "median_shortfall_on_different_days": 3.0
+  },
+  "largest_gap_days": 3,
+  "daily_max_gap_median": 26.0,
+  "plot": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_mean_max_power\\mean_max_power.png",
+  "plot_sha256": "884c1c1e9f00a7d5c0128aaa8ef6568082fce8fa93cf5a107340357f0e1dc9ce",
+  "independent_checked_rows": 5784,
+  "manuscript_edited": false,
+  "visual_review": {
+    "status": "passed",
+    "date": "2026-10-03",
+    "scale": 0.5,
+    "contact_sheet": "tmp/eda_mean_max_power/mean_max_power_50.png",
+    "figures_checked": 1,
+    "axes_legends_interpretation_checked": true,
+    "font_clipping": false,
+    "whole_figure_title": false,
+    "footer": false
+  },
+  "peak_threshold": null,
+  "rationale": "2.1-2.4 summarize hourly means; inspect information about four-slot maxima that means may omit."
+}

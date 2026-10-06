@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "verifier_sha256": "d4264a495fd96e48755c25409a990fdcaedfe1c5c5a794642f980a3d9a16696d",
+  "run_sha256": "4e2d018b05444c106049cfe2aa7a470224014e6f85f6c92412201dd68b3bde32",
+  "parent_models_hash_checked": 6,
+  "decision_rows_checked": 10920,
+  "daily_quotas_checked": 455,
+  "metrics_checked": 20,
+  "future_score_perturbation_cases": 45,
+  "bootstrap_resamples_per_reference": 2000,
+  "new_model_fits": 0,
+  "decision": {
+    "reportworthy_development_result": true,
+    "criteria": {
+      "at_least_five_more": true,
+      "at_least_twenty_percent_more": true,
+      "two_month_wins": true
+    },
+    "strongest_simple_TP": 20,
+    "not_automatic_warning_acceptance": true,
+    "not_independent_test": true
+  },
+  "limitations": "reused development, not plant effectiveness"
+}

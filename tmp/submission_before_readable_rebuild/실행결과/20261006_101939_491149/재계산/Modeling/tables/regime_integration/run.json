@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "entrypoint_sha256": "f1c58786e3c89409133a25a134b763ac72c13b5cff35dfbd0c4e3c9ba8733884",
+  "contract_sha256": "478bd8843d913573df90f2036e578124ca3b8c2d7efeaf666dabb02f7dc7a3dc",
+  "inputs_sha256": {
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling/config/m03_ab_contract.json": "b0d3325f9a35461dafda494872a2d594e59fd8585163a930f66038883f68bbfe",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m01/verification.json": "f6bb5c1bfec819dbb96560dd386c584b53101c0d7a5fffada07390ea2e8a4536",
+    "Modeling/tables/regime_diagnosis/hourly_labels.csv": "5b7a878ddae196bcb6d7bd085e0f68d07484d4838bf8d39c00a9d8a0682d53a1",
+    "Modeling/tables/regime_diagnosis/contract.json": "9e649b641cb6b3a82bc022f9875576bd7311581c5a48b554618a5657fc9ebc6e",
+    "Modeling/tables/regime_forecast/predictions.csv": "7dd9d767e04fa2c78c17fce0b76bb06a70a9e788099ad42b5f280cf24ec76488",
+    "Modeling/tables/regime_forecast/folds.csv": "a774da590a36808a10c9cda5e934acf130af6c2d28bf322e1a987edcd5d4c88a",
+    "Modeling/tables/regime_forecast/contract.json": "7cf736158a9e3f26c9a36e023f28ef9cce1285d198b84e6cc195a799e5f32066",
+    "Modeling/tables/regime_forecast/run.json": "a6cf19d69c8b7a9c9cf23d8623de20f19aa907830cfc8a18f7253c8d2786d9b8",
+    "Modeling/tables/regime_forecast/independent_verification.json": "d075f30fa51b9c866ebf53707940901705db5dcf18a57e3d1e359afd5b66b3ce"
+  },
+  "new_regression_fits": 15,
+  "new_classifier_fits": 0,
+  "outputs_sha256": {
+    "meta_features.csv": "078e288b5dc4b1772efd229bc3eba6a94c3fed6a22a31020f52ad1b06a1987b8",
+    "predictions.csv": "e8e210b1a05862b7c1a29042d6a7390074042a606d2b7292028f70f45844618b",
+    "metrics.csv": "3745df99282033fc515f3b35683f5f7c2b99d5a4eaa6c903937e8c6ff57a57f1",
+    "folds.csv": "9a81608bdd466f851e7e2527c4bf995a5ae48b0e5468e406ea6263f6d35fb2c4",
+    "model_manifest.csv": "00f365137d146148c09f47f41f0a6cd495eb6a80eb1b17a537f2512ba4974e3f",
+    "event_errors.csv": "a016c6c2aa9440682b5fe25378e184bf266c9608b41c43bf312eea7e2df25cd7",
+    "event_coverage.csv": "a25fa76052ab5ddc1bbc5c9d6f94884059c28b67e690bcb3c08d54ebf594d074",
+    "daily_peak_errors.csv": "65efd46f9ba8a4c22934874443f79da53bff604d123e195c3ef4797fef9c902d",
+    "paired_gains.csv": "8dd030cbb8d27a8e252be10b1c87b79e5c407c83006320edb94efceb464ff185",
+    "decision.json": "a3c3a21a2d62c88e27c8570cde92c83efc80c51d81bae96b02720f37f6ab7c7b"
+  },
+  "runtime": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]"
+}

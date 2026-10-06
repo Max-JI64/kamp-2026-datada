@@ -1,0 +1,1 @@
+{"status": "passed", "input_sha256": "b70be5789f700a7f6d98ce73ba421dad7bd8dd6bd356f2368998761ee1c802e1", "script_sha256": "3edb97d11ad5feb6c739f18d5342f7498ab42bd366e2c9a382795c1a16096389", "values": [30.21379705536964, 37.92081008833102], "actual_observations": true, "forecast_or_oracle": false, "visual_review": false}

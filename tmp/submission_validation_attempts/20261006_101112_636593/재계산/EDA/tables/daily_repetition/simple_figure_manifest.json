@@ -1,0 +1,12 @@
+{
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101112_636593\\재계산\\EDA\\figures\\daily_repetition\\04_daily_pattern_simple.png",
+  "change": "Removed all in-plot annotations, arrows, and outcome counts. Whole-period figure: mean, median and P10-P90 only. Monthly descriptive table retained for independent validation; the separate heatmap script generates the selected monthly plot.",
+  "period": "2021-01-01 through 2021-08-31 valid dates; holidays included by day of week",
+  "criterion": "M12<M11 and M13>M12, same date; no minimum amplitude cutoff",
+  "band": "P10-P90 across dates, not confidence or prediction interval",
+  "manuscript_edited": false,
+  "manuscript_sha256": "ef5babafb9f08ff4b18c1fcc8b7f651c04d5293123b31c89952acc01c7d2c834",
+  "visual_review": false,
+  "numeric_result_changed": false,
+  "warnings": []
+}

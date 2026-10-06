@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "raw_rows": 5784,
+  "high_episodes_checked": 320,
+  "outputs_sha256": {
+    "high_episodes.csv": "46afa03721180e87136ee9e2996c6e7a82754763678475bcafab64c02a7fee04",
+    "hourly_shapes.csv": "504de57cd86a89f2b27603a36cb6bbcf568b52990a539f69d19de784b7f7c08f",
+    "shape_counts.csv": "7a37b4267c33b3b4edc3961445aef163f73b2a372c10b05d72351a8eb517fa4f",
+    "shape_summary.csv": "269d8f2aa934eacf0ab6bbe3125c31ba55152a16e74a1f060c996dbb43e7d319"
+  }
+}

@@ -1,0 +1,10 @@
+﻿prior_state,state,hours,dates,median_delta_mean,median_delta_maximum,negative_delta_maximum_hours,positive_delta_maximum_hours,mean_abs_delta_maximum,share_total_abs_delta_maximum,minimum_delta_maximum,maximum_delta_maximum,production_zero_to_positive,production_positive_to_zero,prior_last_minus_mean_median
+above26,above26,3757,194,-2.0,-2.0,2043,1591,17.240617513973916,0.8113155554442176,-88.0,107.0,196,168,2.0
+above26,low,64,54,-47.75,-68.0,64,0,77.65625,0.06225183812016984,-163.0,-5.0,0,35,-27.875
+below20,low,7,6,0.25,0.0,1,2,3.5714285714285716,0.000313138018713128,-18.0,4.0,0,0,-0.25
+low,above26,64,56,39.5,72.0,0,63,78.3125,0.0627779099916079,0.0,182.0,5,0,0.0
+low,below20,6,6,-3.5,-5.0,5,0,4.0,0.0003006124979646029,-5.0,0.0,0,0,-2.75
+low,low,1865,119,0.0,0.0,715,709,2.6514745308310994,0.06193870010145672,-7.0,7.0,14,11,0.0
+low,zero,1,1,-22.0,-47.0,1,0,47.0,0.0005886994751806806,-47.0,-47.0,0,0,-22.0
+zero,below20,1,1,16.5,41.0,0,1,41.0,0.00051354635068953,41.0,41.0,0,0,0.0
+zero,zero,16,2,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0,0,0.0

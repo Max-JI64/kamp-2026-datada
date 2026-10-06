@@ -1,0 +1,9 @@
+﻿a,b,metric,weighting,matched_cells,n_a,n_b,eligible_a,eligible_b,days_a,days_b,adjusted_a,adjusted_b,difference,relative_difference
+zero_to_positive,zero_to_zero,prior_slot_trend,date_hour,38,121,217,215,2291,96,86,7.283925049309665,0.18670809795070145,7.097216951358964,38.01236812574095
+zero_to_positive,zero_to_zero,prior_slot_trend,profile_balanced,38,121,217,215,2291,96,86,4.668908374452116,-0.27212388642756374,4.9410322608796795,
+zero_to_positive,zero_to_zero,recent_level_delta,date_hour,38,121,217,215,2291,96,86,-13.228303747534515,-4.344620529864613,-8.883683217669901,
+zero_to_positive,zero_to_zero,recent_level_delta,profile_balanced,38,121,217,215,2291,96,86,-16.357769087818358,-3.614860884077451,-12.742908203740907,
+zero_to_positive,zero_to_zero,past_level,date_hour,38,121,217,215,2291,96,86,81.85087524654833,39.567421048708034,42.28345419784029,1.0686431684741038
+zero_to_positive,zero_to_zero,past_level,profile_balanced,38,121,217,215,2291,96,86,75.00093240772014,35.30640863847909,39.69452376924105,1.124286646531914
+zero_to_positive,zero_to_zero,power_delta,date_hour,38,121,217,215,2291,96,86,26.238498520710063,6.582103748486886,19.656394772223177,
+zero_to_positive,zero_to_zero,power_delta,profile_balanced,38,121,217,215,2291,96,86,27.452328269364305,7.336944696089194,20.11538357327511,

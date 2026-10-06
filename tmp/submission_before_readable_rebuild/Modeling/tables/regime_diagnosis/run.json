@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "contract_sha256": "9e649b641cb6b3a82bc022f9875576bd7311581c5a48b554618a5657fc9ebc6e",
+  "hours": 4344,
+  "eligible_onset_hours": 4338,
+  "events": 146,
+  "sustained3": 71,
+  "thresholds": {
+    "up": 59.5,
+    "down": 42.92499999999997
+  },
+  "new_fits": 0,
+  "later_evaluated": false,
+  "recorded_ranges": {
+    "mean_max": 202.0,
+    "maximum": 222.0
+  },
+  "outputs_sha256": {
+    "calendar_conditions.csv": "215d87f2ad09c57bcc4d3bf361365c2dee0e92e983f643d27af1ab778711816c",
+    "definition_sensitivity.csv": "5a055baaa2a31b47eebebdcfcad4ee10586a1fb94eb4782b03e6fbd3cf8d8daa",
+    "events.csv": "917ca8fbdac0494b7395482b756a3818580bd15e0aed102e14873131c07db252",
+    "event_summary.csv": "f23d3540aa40b53f3991fc40b5b0147b4483faba7e6cfe5fabacd5c7fbbb08c9",
+    "hourly_labels.csv": "5b7a878ddae196bcb6d7bd085e0f68d07484d4838bf8d39c00a9d8a0682d53a1",
+    "january_probe.csv": "d21ff590991c5073f2387de80579a2dcb056f815a955b6f9de405839f7008e08",
+    "matched_cells.csv": "06d28036e899f2ef35b1b5a480162d41bcfc5da52a6a5054c61ff4eeb6819ed7",
+    "matched_coverage.csv": "a7795729056af04632531cbd4c0e635159b5299989a691314c13c5c09744c093",
+    "precursor_summary.csv": "fbe778a70bd65aa58995f1786042b1ba927f814dda0916a101c1bf6e3924c7cd",
+    "representative_windows.csv": "f70823a64a01ca2778ae6b6c1aa3235b82e879744d444b28304ac9a7f5bba677",
+    "split_counts.csv": "08270fb51e46780abc8c07c4b7300679277ae511bd2d4219c796d454616ff204",
+    "precursor_contract.json": "52a99702358bcab0fa1adf4d9888c94481c3711fbd912ec5b7b66eda7a8d8812"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "script_sha256": "8696ecb395fada6287a8f6200c8a968021883c49a8ee0d69dcc614258a6a2138",
+  "run_sha256": "5c882e5ab3edb3a83e21b58b245d2b5a262c35d4ede49b51fc6777310debc4c0",
+  "documents_sha256": "586aeb7740a7ab503e97814a0c4be116b091ca512b8af49597a9d12957eac2d1",
+  "figures_manifest_sha256": "b51dc407a3b6f0df4e729a9b0b65a3517bb257b93ef5c067a34e72200a5339a8",
+  "classification_logit_identities": 1428,
+  "regression_predictions_checked": 4032,
+  "scalar_regression_metrics_checked": 6,
+  "historical_manuscript_preserved": true,
+  "compact_target_pages": 3,
+  "pagination_verified": false,
+  "compact_sections": 3,
+  "compact_figures": 2,
+  "links_checked": 362,
+  "visual_review": "passed",
+  "no_new_models_selected": true
+}

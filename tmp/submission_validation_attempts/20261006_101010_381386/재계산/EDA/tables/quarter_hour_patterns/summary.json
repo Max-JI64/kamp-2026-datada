@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "rows": 5784,
+  "days": 241,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "input_sha256": "6e254cdd51a232252c6ce51f234d8e85e4102303668522ced70f998c75cf9c33",
+  "range_summary": {
+    "mean": 15.82192254495159,
+    "median": 11.0,
+    "p90": 40.0,
+    "p95": 48.0,
+    "maximum": 105,
+    "all_equal": 558
+  },
+  "shape_counts": {
+    "mixed": 3448,
+    "nondecreasing": 921,
+    "nonincreasing": 857,
+    "all_equal": 558
+  },
+  "interior_above_both_ends": 1957,
+  "continuity": {
+    "within_pairs": 17352,
+    "within_median": 3.0,
+    "within_p90": 18.0,
+    "within_max": 68,
+    "boundary_pairs": 5781,
+    "skipped_hour_boundaries": 2,
+    "boundary_median": 5.0,
+    "boundary_p90": 37.0,
+    "boundary_max": 159
+  },
+  "selections": [
+    {
+      "example": "median_range",
+      "date": 20210101,
+      "center_hour": 2,
+      "first_hour": 0,
+      "last_hour": 4,
+      "range": 11,
+      "maximum": 107,
+      "mean": 104,
+      "shape": "mixed",
+      "slots": [
+        106,
+        96,
+        106,
+        107
+      ],
+      "tied_target_hours": 161
+    },
+    {
+      "example": "largest_range",
+      "date": 20210409,
+      "center_hour": 7,
+      "first_hour": 5,
+      "last_hour": 9,
+      "range": 105,
+      "maximum": 131,
+      "mean": 64,
+      "shape": "nondecreasing",
+      "slots": [
+        26,
+        34,
+        63,
+        131
+      ],
+      "tied_target_hours": 3
+    },
+    {
+      "example": "highest_power",
+      "date": 20210129,
+      "center_hour": 8,
+      "first_hour": 6,
+      "last_hour": 10,
+      "range": 33,
+      "maximum": 222,
+      "mean": 202,
+      "shape": "mixed",
+      "slots": [
+        190,
+        222,
+        207,
+        189
+      ],
+      "tied_target_hours": 4
+    }
+  ],
+  "selection_rule": "Range nearest global median with 2<=hour<=21, largest range, largest maximum; ties earliest date-hour. Five-hour windows only, full statistics include every hour.",
+  "figures": [
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_quarter_hour_patterns\\sequential_power_examples.png",
+      "sha256": "198a682ac70a4f51bcba88df82050f2cbe0bc98afc56529cb9547a031db9adf4"
+    },
+    {
+      "path": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\tmp\\eda_quarter_hour_patterns\\within_hour_range.png",
+      "sha256": "eaca3b298da9da1b1c726b77f18d29fb350e555352988e6fff493ba04f170ab2"
+    }
+  ],
+  "manuscript_edited": false,
+  "visual_review": {
+    "status": "passed",
+    "date": "2026-10-03",
+    "scale": 0.5,
+    "figures_checked": 2,
+    "contact_sheet": "tmp/eda_quarter_hour_patterns/contact_50.png",
+    "font_clipping": false,
+    "artificial_zero_edges_removed": true,
+    "manuscript_edited": false
+  }
+}

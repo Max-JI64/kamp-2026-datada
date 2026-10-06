@@ -1,0 +1,7 @@
+﻿month,group,days,hours,all_hours_average_power,all_hours_median_power,largest_hourly_average,largest_15minute_value,hours_with_average_ge_200
+7,all,29,696,101.48132183908046,106.0,208,222,5
+7,weekday,20,480,132.2875,128.5,208,222,5
+7,weekend,9,216,33.023148148148145,24.0,106,112,0
+8,all,31,744,81.22446236559139,88.0,203,218,1
+8,weekday,22,528,102.8465909090909,109.0,203,218,1
+8,weekend,9,216,28.37037037037037,22.0,111,119,0

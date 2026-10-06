@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "run_sha256": "a6cf19d69c8b7a9c9cf23d8623de20f19aa907830cfc8a18f7253c8d2786d9b8",
+  "verifier_sha256": "b8ca58a609af1573cea2c183a86db15f3199681ee77c7ce3e67f13931c9bf6db",
+  "prediction_rows_checked": 33148,
+  "folds_checked": 10,
+  "thresholds_checked": 30,
+  "models_reloaded": 16,
+  "independent_refits": 2,
+  "event_rows_checked": 165,
+  "forbidden_features_absent": true,
+  "mature_labels_only": true,
+  "extra_outputs_sha256": {
+    "verified_cases.csv": "7722cf23f026beb41baacac2b105ddea420925da7d8e339e8584f8f970b55333",
+    "verified_support.csv": "854d1a4bbf61cc5a72925e66ce3e49303767320dec55b57a0bd38649920cf133"
+  }
+}

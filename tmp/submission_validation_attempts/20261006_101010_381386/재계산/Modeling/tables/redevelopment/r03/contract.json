@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-10-05T18:03+09:00",
+  "direct_method": "fixed_HGB_B",
+  "hypothesis": "origin-anchored change may reduce level bias; same direct B parameters, no Optuna",
+  "r02_run_sha256": "133d7025abca81026a1985c71696bf129771146f2b9b8e6260d4f4b3f78ffbcc",
+  "later_not_used_in_selection": true
+}

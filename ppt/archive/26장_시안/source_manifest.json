@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-06T01:16:36.216Z",
+  "slides": 26,
+  "main_slides": 24,
+  "appendix_slides": 2,
+  "sources": {
+    "EDA/01_데이터_0.5페이지용_압축본.md": "44a885b06390387db0cf79e3e5789b245f4b529ef73ddd1ce9defa5a95d7ddbc",
+    "EDA/02_EDA_3페이지용_압축본.md": "27378fb30523a10a6f1b6439eeb80f7ed7ab63cee9ab381a4767b73bac83feac",
+    "Analysis/03_Analysis_3페이지용_압축본.md": "8194ccd770aa882c5397f8f21b2c8b198d480a6da2169bff1ad5700b1039da85",
+    "Modeling/04_Modeling_3페이지용_압축본.md": "493e015bac4fcbafbf4af15ed5be0542dfbdf38567546ce9dd43e0999c2758a6",
+    "Report/03_05_보고서_원고.md": "96f20fede1886a2130df152169e3620760fb088539476be573e5032ac0f43d98",
+    "대회개요/과제공개.md": "d85fe0b317e8ec107a85e17bf1eda8261b23f15e64d5a6305a742298e8f85203",
+    "경진대회 결과보고서 양식_일반국민,대학(원)생 부문.hwpx": "9a781cc1963000193199efd88ad92ac72eed875438b4e2727422aa01b12adedb"
+  },
+  "figures": {
+    "EDA/figures/report_compact/daily_pattern_distribution.png": {
+      "copy": "assets/EDA__figures__report_compact__daily_pattern_distribution.png",
+      "sha256": "50856ef91bfe93fc245e065f032a5266235921e7af538071403073f55edfbb7f"
+    },
+    "EDA/figures/daily_repetition/07_monthly_power_mean_heatmap.png": {
+      "copy": "assets/EDA__figures__daily_repetition__07_monthly_power_mean_heatmap.png",
+      "sha256": "aed2e0175c9a6abfd28caf108b0dd6882b1da8b0d9c4483bb9fbf34e1b7b1725"
+    },
+    "EDA/figures/weekday_power_levels.png": {
+      "copy": "assets/EDA__figures__weekday_power_levels.png",
+      "sha256": "d6e8b30853f84e6b693a598d08b7d145aff7154c721e2c60fae7a193c7a3332c"
+    },
+    "EDA/figures/restart_02_variable_relations.png": {
+      "copy": "assets/EDA__figures__restart_02_variable_relations.png",
+      "sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
+    },
+    "EDA/figures/slot_time_patterns.png": {
+      "copy": "assets/EDA__figures__slot_time_patterns.png",
+      "sha256": "ac4c66d60c810a09690767637706d86f1a66b77e813f36d24d64deb08f0d5820"
+    },
+    "Analysis/figures/a01_a02_transition_summary.png": {
+      "copy": "assets/Analysis__figures__a01_a02_transition_summary.png",
+      "sha256": "c09d0792fc6480bf52a597568c14a2c600801e3249bd8a3d699248847a1b7b60"
+    },
+    "Analysis/figures/a04_terminal_slots.png": {
+      "copy": "assets/Analysis__figures__a04_terminal_slots.png",
+      "sha256": "084d059d78724f5594f41d56cdc2131167d23569ec501dfa3acdfbe5b358ff6a"
+    },
+    "Modeling/figures/modeling_close/transition_cases.png": {
+      "copy": "assets/Modeling__figures__modeling_close__transition_cases.png",
+      "sha256": "d661d201578ecb42ba1460ee072db3084e662ae1e28b64e06c15226c588c6b90"
+    }
+  },
+  "scope": "HTML presentation draft only; existing results reused; no model execution"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T12:56+09:00",
+  "script_sha256": "4098184a6cd0ff035b32117bfc2a66dd095d16bdab2b34fc93bc26479c9f5dc8",
+  "contract_sha256": "4f86a5f3bd07c52893f3cec88b4de400b483fbdbd31a3a7e60271b3a5bdd3073",
+  "inputs_sha256": {
+    "Modeling/tables/m04_surge_risk/run.json": "6c55fdc47c847254fb942c0013cb0d00acda4e5b52272c8ca3b5dc579340710e",
+    "Modeling/tables/m04_surge_risk/independent_verification.json": "bd05f311c348ccb3a1a9bd482e4d2b491d865bfe2a3c78dd2c7819b98890019e",
+    "Modeling/tables/m04_surge_risk/predictions.csv": "54414b990e069c79d7256f75df6e5fad99c8dc3d75404b655284507e365db032",
+    "Modeling/tables/m04_surge_risk/inner_predictions.csv": "a1cc4bceccbff5261f8f168f7df6a4682a8f84036728f3e6598f4069455a6581",
+    "Modeling/tables/m04_surge_risk/selection_metrics.csv": "868108c22ac0d824a0401c2a521236e678ab2e6ee43ca39a4a4723c50ba9ef39",
+    "Modeling/config/m04_surge_risk_contract.json": "82efa2fe3a42ee417f39e7faf6dd417c09985f2a642a01f01fe30963d96572c4"
+  },
+  "outputs_sha256": {
+    "alarm_metrics.csv": "3ad8d55699a10f9360118821b916e2b41770fd8627591867fad48086b8abfb14",
+    "alarm_policies.csv": "a89f2cdb9bfbc1b5bff36c86b1b5dd71ed84821337012338a74468662a4a1ca7",
+    "predictions.csv": "11ef49b481144b008641aed8911420ff0ff77fae59866ee1a6ad4661f5d22f74",
+    "selection.json": "d5107ce544eb666fe1bd66de563a8de1ad26cd686b261d179c3cea9f4d951963",
+    "selection_metrics.csv": "5cddd551636e3a20d893493cf544f554502569d1b083c29f32cf835b1de0da4a"
+  },
+  "prediction_rows": 10920,
+  "normal_forecast_unchanged": true,
+  "selection_gates_unchanged": true,
+  "no_new_fitting": true,
+  "no_july_august_evaluation": true
+}

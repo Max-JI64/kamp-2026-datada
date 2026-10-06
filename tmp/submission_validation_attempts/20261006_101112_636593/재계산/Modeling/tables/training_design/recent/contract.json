@@ -1,0 +1,95 @@
+{
+  "version": "recent-v1",
+  "recorded_at": "2026-10-05T19:19+09:00",
+  "inputs_sha256": {
+    "Modeling/tables/training_design/diagnosis/run.json": "06c2056f9e02f8f02e8975a8bbb4812f32870fa0343c3e4993de8ae24f711f4c",
+    "Modeling/scripts/training_design_recent.py": "2cc5b243e10d052a0d5700d380e83d1d36c49b3857ae9a68fff49efd976ae565",
+    "Modeling/scripts/redevelopment_compare.py": "7bf529c6e7e5a3dcced37ca90cea3b02cbb47af3a5451d4c53dc0fa169093986",
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/profile_history/predictions.csv": "411662ef062925b7b19f18a8c6d2f639fe2117fb939179ff2125b5b4d1e14e9c",
+    "Modeling/tables/profile_history/inner_predictions.csv": "56a2b612a2d25484d26103b5a6bf4a26d3655e1ac64792643e5dc5092b468c49",
+    "Modeling/tables/profile_history/model_manifest.csv": "42ee8ca42a0047b1a2db4f35df55c211798f809db0109d3522f24d7fa29d47ab",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/training_design/weights/run.json": "f2da3dc3c2297edd8d911c0d09a94f9cabdc010f6022c56df192fcbdbc57d2d1"
+  },
+  "features": [
+    "hour_sin",
+    "hour_cos",
+    "month",
+    "weekend",
+    "dow_0",
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6",
+    "lag1_production",
+    "lag1_production_zero",
+    "lag1_mean",
+    "lag1_maximum",
+    "lag2_mean",
+    "lag2_maximum",
+    "lag1_last"
+  ],
+  "parameters": {
+    "max_leaf_nodes": 15,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "candidates": {
+    "all_history": null,
+    "recent_30d": 30,
+    "recent_60d": 60,
+    "recent_90d": 90
+  },
+  "reason": "Conditional month target means and B bias shifted; test limited training windows with uniform weights as separate factor",
+  "weight": "n=number of distinct eligible training dates sharing exact 96-slot daily profile, normalized n**(-exponent) to mean1; all training dates fully observed; not an inference input",
+  "window": "cutoff at evaluation month start; keep timestamps>=cutoff-days, lag history may precede window; compare on identical evaluation rows",
+  "outer_months": [
+    4,
+    5,
+    6
+  ],
+  "inner_months": {
+    "4": [
+      2,
+      3
+    ],
+    "5": [
+      2,
+      3,
+      4
+    ],
+    "6": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "selection": "min max(pooled inner MAE / lag1 MAE, pooled inner daily-peak MAE / lag1 daily-peak MAE); tie candidate declaration order; includes original training",
+  "maximum_new_fits": 15,
+  "outer_policy": "selected internally per outer month; fixed candidate outer scores are diagnostics only; not posthoc reselected",
+  "gates": {
+    "peak_ratio_max": 0.95,
+    "peak_under_ratio_max": 0.95,
+    "overall_ratio_max": 1.01,
+    "peak_over_increase_as_reference_peak_MAE": 0.05,
+    "month_overall_ratio_max": 1.05,
+    "month_peak_ratio_max": 1.05,
+    "comparison": [
+      "fixed_HGB_A",
+      "fixed_HGB_B"
+    ],
+    "jackknife_peak_improvement": true
+  },
+  "no_optuna": true,
+  "later": "only selected_policy eligible; Jan-Jun once then frozen July-Aug, no new independent-test claim",
+  "no_manuscript_edit": true
+}

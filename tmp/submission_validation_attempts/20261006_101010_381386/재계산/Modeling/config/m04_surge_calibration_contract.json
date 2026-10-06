@@ -1,0 +1,13 @@
+{
+  "version": "m04-surge-calibration-v1",
+  "recorded_at": "2026-10-05T12:55+09:00",
+  "reason": "Verified all-state/quantile ranking improves but recall-max/fewer-FP inner rule can choose no alarms when only two early inner events are detectable under neither cap. Test a negative-distribution cutoff independent of positive recall optimization, using the same trained scores and unchanged caps/selection gates.",
+  "parent_run_sha256": "6c55fdc47c847254fb942c0013cb0d00acda4e5b52272c8ca3b5dc579340710e",
+  "threshold": "Sort non-surge past-inner scores descending. For cap c, k=floor(c*n_negative). Threshold is nextafter(score at zero-based index k, +infinity), so at most k inner negatives alarm, including ties conservatively. For k>=n use nextafter(min,-infinity). No outer scores or labels choose threshold.",
+  "scope": "One deterministic cached calibration comparison, not another model search. Keep all five models/scores, normal B forecast, January boundaries, 1/5 percent caps and risk-channel selection gates unchanged.",
+  "primary": "delta>=93, cap=0.01",
+  "secondary": "delta>=61.6 sensitivity and cap=0.05 supplement; neither selects candidate",
+  "no_new_fitting": true,
+  "no_july_august_evaluation": true,
+  "stop": "After independent verification report all outcomes and stop this declared comparison without threshold sweeps or relaxing acceptance gates"
+}

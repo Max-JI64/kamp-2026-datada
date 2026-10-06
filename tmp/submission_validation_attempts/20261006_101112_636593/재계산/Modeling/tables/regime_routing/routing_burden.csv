@@ -1,0 +1,7 @@
+﻿variant,hours,routed_hours,routed_up_starts,routed_other_hours
+B0,1462,0,0,0
+B1_all,1462,1462,12,1450
+G1,1462,12,12,0
+G2,1462,12,12,0
+hour08,1462,61,12,49
+simple_gate,1462,0,0,0

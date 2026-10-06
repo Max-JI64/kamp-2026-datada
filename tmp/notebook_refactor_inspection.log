@@ -1,0 +1,56 @@
+data_overview imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import numpy as np', 'import pandas as pd']
+ function main arguments  body lines 65
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'EDA/tables'", "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "SHA = '8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'", "SLOTS = ['15분', '30분', '45분', '60분']"]
+eda_daily_pattern imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'import eda_figures as style']
+ function main arguments  body lines 68
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "REPORT = ROOT / 'EDA'", "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "SHA = '8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'"]
+eda_daily_repetition imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import numpy as np', 'import pandas as pd']
+ function main arguments  body lines 108
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "SHA = '8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'", "TAB = ROOT / 'EDA/tables/daily_repetition'", "FIG = ROOT / 'EDA/figures/daily_repetition'", "MANUSCRIPT = ROOT / 'EDA/02_EDA_원고.md'"]
+eda_variable_relations imports: ['from pathlib import Path', 'import argparse', 'import hashlib', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'from scipy import stats', 'import eda_figures as style']
+ top vars ['REPORT = Path(__file__).resolve().parents[1]', 'ROOT = REPORT.parent', "OUT = REPORT / 'tables'", "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "SHA = '8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'", "INPUTS = ['생산량', '기온', '풍속', '습도', '강수량']", "VARIABLES = ['평균 전력', *INPUTS]"]
+eda_weekday_power_levels imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'from eda_variable_relations import source_frame, SHA', 'import eda_figures as style']
+ function main arguments  body lines 46
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'EDA/tables/weekday_power_levels'", "FIGURE = ROOT / 'EDA/figures/weekday_power_levels.png'", "POWER = '평균 전력'"]
+eda_slot_time_patterns imports: ['from pathlib import Path', 'import csv', 'import argparse', 'import hashlib', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'from PIL import Image', 'from eda_variable_relations import SOURCE, SHA', 'import eda_figures as style']
+ function main arguments figures_only=False body lines 76
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'EDA/tables/slot_time_patterns'", "PREVIEW = ROOT / 'tmp/eda_slot_time_patterns'", "FIGURE = ROOT / 'EDA/figures/slot_time_patterns.png'", "SLOTS = ['15분', '30분', '45분', '60분']"]
+plot_daily_repetition_simple imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import warnings', 'import pandas as pd', 'import numpy as np', 'import matplotlib', 'import matplotlib.pyplot as plt']
+ function main arguments  body lines 55
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "TAB = ROOT / 'EDA/tables/daily_repetition'", "OUT = ROOT / 'EDA/figures/daily_repetition'", "MANUSCRIPT = ROOT / 'EDA/02_EDA_원고.md'"]
+plot_monthly_power_heatmap imports: ['from pathlib import Path', 'import argparse', 'import hashlib', 'import json', 'import warnings', 'import pandas as pd', 'import numpy as np', 'import matplotlib', 'import matplotlib.pyplot as plt', 'from matplotlib.colors import Normalize']
+ function main arguments statistic='mean' body lines 62
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "TAB = ROOT / 'EDA/tables/daily_repetition'", "OUT = ROOT / 'EDA/figures/daily_repetition'", "MANUSCRIPT = ROOT / 'EDA/02_EDA_원고.md'"]
+plot_report_daily_patterns imports: ['from pathlib import Path', 'import hashlib', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'from PIL import Image', 'import eda_figures as style']
+ function main arguments  body lines 20
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "BASE = ROOT / 'EDA'", "DETAIL = BASE / '02_EDA_원고.md'", "TARGET = BASE / 'figures/report_compact/daily_pattern_distribution.png'", "TABLES = [BASE / 'tables/daily_pattern_restart.csv', BASE / 'tables/daily_repetition/hourly_distribution.csv']"]
+eda_figures imports: ['from pathlib import Path', 'import json', 'import warnings', 'import numpy as np', 'import pandas as pd', 'import matplotlib', 'import matplotlib.pyplot as plt', 'from matplotlib import font_manager', 'from matplotlib.ticker import PercentFormatter']
+ top vars ['REPORT = Path(__file__).resolve().parents[1]', "TABLES, FIGURES = (REPORT / 'tables', REPORT / 'figures')", "BLUE, ORANGE, TEAL, GRAY = ('#285B8C', '#D07834', '#25857A', '#7B8794')", 'COLORS = [BLUE, ORANGE]', 'GENERATED = []', 'STYLE_CHECKS = []']
+p01_peak_shapes imports: ['import csv, hashlib, json, sys', 'from datetime import datetime, timedelta, timezone', 'from pathlib import Path', 'import numpy as np', 'import pandas as pd']
+ function main arguments  body lines 90
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "OUT = ROOT / 'EDA/tables/p01_peak_shapes'", "SLOTS = ['15분', '30분', '45분', '60분']"]
+m01_prepare imports: ['import csv', 'import hashlib', 'import importlib.metadata', 'import json', 'import platform', 'import sys', 'from collections import Counter', 'from datetime import datetime, timedelta, timezone', 'from pathlib import Path', 'import numpy as np', 'import pandas as pd']
+ function load_frame arguments contract=None body lines 51
+ function main arguments  body lines 96
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "CONTRACT = ROOT / 'Modeling/config/m01_contract.json'", "OUT = ROOT / 'Modeling/tables/m01'", "SLOTS = ['15분', '30분', '45분', '60분']", "WEATHER = {'temperature': '기온', 'wind': '풍속', 'humidity': '습도', 'rain': '강수량'}"]
+regime_diagnose imports: ['import argparse', 'import hashlib', 'import json', 'import sys', 'from datetime import datetime, timedelta, timezone', 'from pathlib import Path', 'import numpy as np', 'import pandas as pd']
+ function run arguments  body lines 54
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'Modeling/tables/regime_diagnosis'", "SLOTS = ['15분', '30분', '45분', '60분']", "SOURCE = ROOT / 'data/origin/okm_augumented_2021.csv'", "SOURCE_SHA = '8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830'", "FEATURES = ['prior_mean', 'past_median6', 'past_iqr6', 'past_range6', 'past_slope6', 'prior_delta', 'prior_last_minus_mean', 'prior_slot_range', 'prior_production', 'prior_production_delta', 'prior_state_age', 'prior_state_left_censored']"]
+regime_forecast imports: ['import os', 'import hashlib', 'import json', 'import math', 'import sys', 'from datetime import datetime, timezone, timedelta', 'from pathlib import Path', 'import joblib', 'import numpy as np', 'import pandas as pd', 'from sklearn.ensemble import HistGradientBoostingClassifier', 'from sklearn.linear_model import LogisticRegression', 'from sklearn.metrics import average_precision_score', 'from sklearn.pipeline import make_pipeline', 'from sklearn.preprocessing import StandardScaler']
+ function load_frame arguments  body lines 12
+ function model arguments method, contract body lines 4
+ function threshold arguments y, score body lines 14
+ function run arguments  body lines 109
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "PARENT = ROOT / 'Modeling/tables/regime_diagnosis'", "OUT = ROOT / 'Modeling/tables/regime_forecast'", "MODELS = ROOT / 'Modeling/models/regime_forecast'", "DYNAMIC = ['prior_mean', 'past_median6', 'past_iqr6', 'past_range6', 'past_slope6', 'prior_delta', 'prior_last_minus_mean', 'prior_slot_range', 'prior_production', 'prior_production_delta', 'prior_state_age', 'prior_state_left_censored', 'prior_state_direction']", "CALENDAR = ['hour_sin', 'hour_cos', 'month', 'weekend'] + [f'dow_{i}' for i in range(7)]", 'FEATURES = DYNAMIC + CALENDAR', "BASE = ['calendar', 'last_delta', 'slope6']", "ML = ['logistic', 'hgb']", 'METHODS = BASE + ML']
+regime_followup imports: ['import os', 'import hashlib', 'import json', 'import sys', 'from datetime import datetime, timedelta, timezone', 'from pathlib import Path', 'import joblib', 'import numpy as np', 'import pandas as pd', 'from sklearn.ensemble import HistGradientBoostingRegressor', 'from regime_diagnose import label', 'from regime_forecast import model, threshold, calendar_scores']
+ function extended arguments c body lines 26
+ function run arguments  body lines 116
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'Modeling/tables/regime_followup'", "MODELS = ROOT / 'Modeling/models/regime_followup'"]
+modeling_close_analysis imports: ['import os', 'import json', 'import io', 'import sys', 'from datetime import datetime, timezone, timedelta', 'from pathlib import Path', 'import joblib', 'import numpy as np', 'import pandas as pd', 'from sklearn.ensemble import HistGradientBoostingRegressor', 'from m01_prepare import load_frame', 'from regime_followup import extended', 'from regime_forecast import model, threshold, sha, save_json']
+ function run arguments  body lines 138
+ top vars ['ROOT = Path(__file__).resolve().parents[2]', "OUT = ROOT / 'Modeling/tables/modeling_close'", "AGE = ROOT / 'Modeling/tables/regime_age_ablation'"]
+nbclient 0.10.2
+nbformat 5.10.4
+jupyter_client 8.6.3
+ipykernel 6.29.5
+jupyterlab 4.3.4

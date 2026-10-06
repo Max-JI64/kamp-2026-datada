@@ -1,0 +1,165 @@
+{
+  "version": "m05-v1",
+  "recorded_at": "2026-10-05T15:57+09:00",
+  "reason": "Confirm M03 last-slot contribution and the post-M04 provisional G risk candidate; preserve fixed later split.",
+  "source": "data/origin/okm_augumented_2021.csv",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "inputs_sha256": {
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "Modeling/config/m03_ab_contract.json": "b0d3325f9a35461dafda494872a2d594e59fd8585163a930f66038883f68bbfe",
+    "Modeling/config/m04_rise_contract.json": "1d5844aecd870e7522d1cdfadb2d35b6515d151e6e7fcd83ee66b1eea6fa2ddc",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m01/evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "Modeling/tables/m01/split_counts.csv": "4236fd90853521efc701a5271e8ea2216cfaf9728cbdbb94acd8b2c7bae7dc56",
+    "Modeling/tables/m04_rise/selected_configurations.json": "fcdf93f5f5e95dc831d8a7bb47c5f1ee2d88941dfacf54fafdfc7cf73dcd4b54",
+    "Modeling/tables/m04_rise/feature_frame.csv": "ddac3c3580ffba459620f4ce126bcd86e32e3d9cb865c3ed9aa19ca808d1c09a",
+    "Modeling/tables/m04_surge_risk/predictions.csv": "54414b990e069c79d7256f75df6e5fad99c8dc3d75404b655284507e365db032",
+    "Modeling/tables/m01/independent_verification.json": "9a149de39217bf5ac1ec0a8308495d56616f4f42c3124ad8aaffd8ba6d47e8c7",
+    "Modeling/tables/m04_rise/independent_verification.json": "afe3cfa3f9a509c2a3f2f1d007ad72ff24eea1194b53f0e68ca5eb37f8bc169a",
+    "Modeling/tables/m04_rise/run.json": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+    "Modeling/tables/m04_surge_risk/independent_verification.json": "bd05f311c348ccb3a1a9bd482e4d2b491d865bfe2a3c78dd2c7819b98890019e",
+    "Modeling/tables/m04_surge_risk/run.json": "6c55fdc47c847254fb942c0013cb0d00acda4e5b52272c8ca3b5dc579340710e",
+    "Modeling/tables/m04_surge_calibration/independent_verification.json": "1ca5f432c93e2d600248d3b6aa4a1594c35abf04444bad6efee78422ae9fe120",
+    "Modeling/tables/m04_surge_calibration/run.json": "884b0205482558e841619cbab6fc8145f47a4e76fcb092eb57e5e02343d21c0f"
+  },
+  "training": {
+    "end": "2021-06-30 23:00:00",
+    "pool": "common",
+    "hours": 4176,
+    "fits": "A, B, weighted expert, prior-low HGB classifier each fitted once"
+  },
+  "evaluation": {
+    "start": "2021-07-01 00:00:00",
+    "end": "2021-08-31 23:00:00",
+    "common_hours": 1344,
+    "core_hours": 1436,
+    "information_time": "Observe t-1, predict t; update hourly observations but no model fitting or threshold updates in July-August.",
+    "core": "Inference-only A/B coverage extension with the same common-trained models; separate from main comparison.",
+    "history": "Period already observed in EDA; confirmation on a later internal period, not untouched independent test."
+  },
+  "target": "target_maximum",
+  "normal_groups": [
+    "lag1",
+    "lag24",
+    "lag168",
+    "A",
+    "B"
+  ],
+  "hgb_parameters": {
+    "max_leaf_nodes": 15,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "dynamic_features": [
+    "prev_slot_rise",
+    "prev_slot_range",
+    "prev_slot_slope",
+    "last_delta",
+    "mean_delta",
+    "maximum_delta",
+    "production_delta",
+    "low_run_length6",
+    "low_history_gap6"
+  ],
+  "G": {
+    "source_split": "dev_jun",
+    "reason": "Latest chronological development settings, not best later score.",
+    "event_weight": 1.7309054565025677,
+    "classifier_parameters": {
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 0.15527992824121747
+    },
+    "gate": {
+      "threshold": 0.37376584316322325,
+      "blend": 0.8223550937493006
+    },
+    "expert_label": "legacy low->above26",
+    "normal_output": "B; G is an auxiliary risk score, not a replacement point forecast."
+  },
+  "surge_boundary": 93.0,
+  "sensitivity_boundary": 61.60000000000002,
+  "alarms": {
+    "calibration": "Existing rolling outer April-June scores; negative-tail order statistic; no training resubstitution.",
+    "primary_cap": 0.01,
+    "secondary_cap": 0.05,
+    "thresholds": [
+      {
+        "group": "B_score",
+        "cap": 0.01,
+        "threshold": 56.267189251166634,
+        "hours": 2184,
+        "events": 8,
+        "negatives": 2176,
+        "budget": 21,
+        "calibration_FP": 21,
+        "calibration_start": "2021-04-01 00:00:00",
+        "calibration_end": "2021-06-30 23:00:00"
+      },
+      {
+        "group": "B_score",
+        "cap": 0.05,
+        "threshold": 40.83556616400782,
+        "hours": 2184,
+        "events": 8,
+        "negatives": 2176,
+        "budget": 108,
+        "calibration_FP": 108,
+        "calibration_start": "2021-04-01 00:00:00",
+        "calibration_end": "2021-06-30 23:00:00"
+      },
+      {
+        "group": "G_HGB_score",
+        "cap": 0.01,
+        "threshold": 58.080088435930556,
+        "hours": 2184,
+        "events": 8,
+        "negatives": 2176,
+        "budget": 21,
+        "calibration_FP": 21,
+        "calibration_start": "2021-04-01 00:00:00",
+        "calibration_end": "2021-06-30 23:00:00"
+      },
+      {
+        "group": "G_HGB_score",
+        "cap": 0.05,
+        "threshold": 41.45662303910802,
+        "hours": 2184,
+        "events": 8,
+        "negatives": 2176,
+        "budget": 108,
+        "calibration_FP": 108,
+        "calibration_start": "2021-04-01 00:00:00",
+        "calibration_end": "2021-06-30 23:00:00"
+      }
+    ],
+    "calibration_sha256": "149e1fc42b587d1b9501c91d77c301665dff1ce6436b19cf1ea836fe9471f2df",
+    "same_threshold_for_both_later_months": true
+  },
+  "normal_confirmation": {
+    "overall_ratio_max": 0.99,
+    "peak_ratio_max": 0.99,
+    "peak_under": "strictly less than A",
+    "lag1": "B overall and peak MAE strictly better than lag1",
+    "monthly_ratio_max": 1.01,
+    "profile_reweighted": "B overall MAE no worse than A",
+    "meaning": "All gates confirm broad last-slot contribution; 1% is numerical near-tie convention, not economic optimum. Failed gates limit claims and do not trigger automatic retuning."
+  },
+  "risk_confirmation": {
+    "rank_ratio_min": 1.05,
+    "metric": "event-count-weighted monthly non-interpolated AP",
+    "recall": "Pooled TP >= B and each nonempty month TP >= B",
+    "actual_false_positive_max": 0.01,
+    "strict_gain": "Positive TP and either additional TP or fewer FP",
+    "missing_events": "No events => not assessable; small/repeated samples restrict strength of claims.",
+    "secondary": "q90 and 5% are descriptive only, never select candidate"
+  },
+  "postprocessing": "none; no clipping or deletion of hard cases",
+  "new_optuna_trials": 0,
+  "stop": "Evaluate once, independently verify, report all outcomes and retain failure conditions; no later-driven optimization."
+}

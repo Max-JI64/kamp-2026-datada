@@ -1,0 +1,11 @@
+{
+  "reportworthy_development_result": true,
+  "criteria": {
+    "at_least_five_more": true,
+    "at_least_twenty_percent_more": true,
+    "two_month_wins": true
+  },
+  "strongest_simple_TP": 20,
+  "not_automatic_warning_acceptance": true,
+  "not_independent_test": true
+}

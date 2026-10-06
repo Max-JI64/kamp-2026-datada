@@ -1,0 +1,11 @@
+﻿boundary_name,boundary,role,hours,positive_increases,surge_hours,surge_dates,old_rise_hours,overlap_hours,outside_prior_low_surges,previous_zero_hours
+q95,93.0,calibration_jan,576,233,13,5,14,10,3,0
+q95,93.0,train_jan_mar,1992,825,15,7,31,12,3,0
+q95,93.0,dev_apr,720,283,2,2,8,1,1,0
+q95,93.0,dev_may,744,307,4,4,8,2,2,0
+q95,93.0,dev_jun,720,306,2,2,4,0,2,0
+q90,61.60000000000002,calibration_jan,576,233,24,11,14,14,10,0
+q90,61.60000000000002,train_jan_mar,1992,825,39,23,31,18,21,0
+q90,61.60000000000002,dev_apr,720,283,11,6,8,6,5,0
+q90,61.60000000000002,dev_may,744,307,13,8,8,7,6,0
+q90,61.60000000000002,dev_jun,720,306,14,9,4,4,10,0

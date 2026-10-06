@@ -1,0 +1,15 @@
+{
+  "previous": "Absolute matched mean changes37.9208 versus30.2138; user asked whether prior power levels influence interpretation.",
+  "scope": "Keep same717 matched records and46 month-hour-weekday/weekend conditions for primary comparison.",
+  "metric": "100*abs(current four-slot mean minus exact1h past mean)/past mean",
+  "zero_denominator": "Undefined, no epsilon imputation; count and retain separately in source observations.",
+  "primary": "Absolute change remains main; relative percent only checks conclusion.",
+  "low_denominator": "Use existing currentEDA low-power band20..26 as sensitivity; no new threshold search or peak definition. Prior mean>26 is supplementary.",
+  "fixed_tests": "Basic; profile balanced; same day; exclude each month; prior mean>26.",
+  "not_causal": true,
+  "forecast": false,
+  "manuscript": false,
+  "backup": false,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "observations_sha256": "188d98e8712063bd2a1b56f0e95ea7ffc23f587eff1444be92413905330a2b4c"
+}

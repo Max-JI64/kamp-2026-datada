@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-05T19:45+09:00",
+  "inputs_sha256": {
+    "Modeling/scripts/error_warning.py": "fcbc57bc15087cc4231a225e052e98ea0552d88f2c7c5624fbd0db0f2f25d709",
+    "Modeling/scripts/profile_history.py": "8e7366aa9831b873e282b105927ea226424c8664b6ed27988dcca8730948f28e",
+    "Modeling/tables/profile_history/run.json": "d1c9b25136f62c64b2b90fd5f0b89d0e7dd87ce52758e2acd8bad533297428a4",
+    "Modeling/tables/profile_history/independent_verification.json": "3668925fee581975e5bba8f2d8537873e34fc5f4f6681f7a633b17a0bf5f5c8e",
+    "Modeling/tables/profile_history/inner_predictions.csv": "56a2b612a2d25484d26103b5a6bf4a26d3655e1ac64792643e5dc5092b468c49",
+    "Modeling/tables/profile_history/predictions.csv": "411662ef062925b7b19f18a8c6d2f639fe2117fb939179ff2125b5b4d1e14e9c",
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/config/m01_contract.json": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+  },
+  "scope": "Jan-Jun only; full B and H6 exact groups including calendar, then past-only nearest20 diagnostic",
+  "neighbors": "training StandardScaler; Euclidean; exactly20 prior-month eligible rows; repeated neighbors retained and distinct-date/profile support recorded; no future evaluation outcomes",
+  "exact": "all input columns equal; report within-group target variation, empirical median absolute deviation; not a population irreducible-error bound",
+  "followup": "if full-input conflicts exist OR historical neighbor outcomes vary, test warning model; neither implies inevitable failure or guarantees error predictability"
+}

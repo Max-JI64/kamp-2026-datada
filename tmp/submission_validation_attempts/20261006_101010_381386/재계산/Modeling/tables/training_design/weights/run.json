@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T19:19+09:00",
+  "contract_sha256": "645dea76755cbd0b8b383c0ac567b8e08d18bc15bbdd4d4c8c44a2d9fb853209",
+  "new_fits": 10,
+  "models": 15,
+  "development_hours": 2184,
+  "selected": null,
+  "internal_choices": [
+    {
+      "outer_month": 4,
+      "candidate": "uniform"
+    },
+    {
+      "outer_month": 5,
+      "candidate": "uniform"
+    },
+    {
+      "outer_month": 6,
+      "candidate": "uniform"
+    }
+  ],
+  "later_evaluated": false,
+  "manuscripts_edited": false,
+  "outputs_sha256": {
+    "all_month_predictions.csv": "24197271d907eeb024d78553d130f9bd5c85ed44294fde2ef668f202f10958ce",
+    "comparison.csv": "f659bbbdf355d487c1573d168135f9772a3eaf2a6ed8a905070917f414f04617",
+    "leave_one_date_out.csv": "1f676d2d67359eee913a9ffdc83f1c7d0da3efb6bca5fdf0db9bd283a7b6fa20",
+    "metrics.csv": "8facc263d27a577d6b1243432fade6d1914dc4edc7f6df7f1f06a0007cda5840",
+    "model_manifest.csv": "b44e2d80ee46f2b3ff889a14ee0b6418545d83a8ebd455b38232131f7be92662",
+    "predictions.csv": "f37eeaffe041c1cb4b731a60e788177fbff31788d6049ce95d1a487c3eb92e5d",
+    "selection_scores.csv": "6af69143a97c4c4e4467fdef1718f0989ebcc68702e11cf1cb567c2cb9b728ab",
+    "training_audit.csv": "d4634d0da3425f66d85b8c17e99610e3a69d28b214370a3edc4f1bad8dae6b13",
+    "training_weights.csv": "d3c80e877f397ef7a79371b05e2758a9f448e4d3c22990ea3f130e7b971e25ae",
+    "selection.json": "144a835d33bb3c2d761669b00ca8e4e306324983819600843ef4ed2b329ce24f"
+  }
+}

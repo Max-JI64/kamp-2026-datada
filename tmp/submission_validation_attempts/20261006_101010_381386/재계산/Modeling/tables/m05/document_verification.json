@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-05T18:17+09:00",
+  "script_sha256": "54b23c681cc4fa0999705e9e1b5e80584aaa9b3e47b25399c5ef616c3783740d",
+  "manuscript_sha256": "6ff557eb244bea468ae7c599a7a944b9bd1a1ecedbb57496f7e231ccb0d750e9",
+  "execution_record_sha256": "9b9aa03d06ae63b0c2cb16d79849709d7b7fa18f7525c461d9c50872c4f5295d",
+  "comparison_rows": 6,
+  "monthly_rows": 2,
+  "alarm_rows": 6,
+  "no_fitting": true
+}

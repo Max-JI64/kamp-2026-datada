@@ -1,0 +1,34 @@
+{
+  "version": "m04-surge-risk-v1",
+  "recorded_at": "2026-10-05T12:47+09:00",
+  "reason": "Verified diagnosis: 5 of 8 delta>=93 surges lie outside prior-low support; April old-rise ranks 9-34 of 200 and expert itself underpredicts. Compare all-state surge classifiers and a fixed upper quantile, keep normal B prediction separate.",
+  "diagnosis_run_sha256": "a0324c13bf4bf7950b2598b9261f12975e426541be5f84295667b72571b90d29",
+  "boundary_primary": 93.0,
+  "boundary_sensitivity": 61.60000000000002,
+  "boundary_calibration": "Fixed January common positive increase quantiles, verified before fitting; never use future month to estimate boundaries",
+  "features": "All-state classifiers: verified existing 27 dynamic features. Upper quantile: B 18 features. No new input construction.",
+  "classifiers": {
+    "methods": ["Logistic_all", "HGB_all"],
+    "training": "All common past rows; event iff target maximum minus exact previous maximum >=93; no class weights, current production or low-state restriction",
+    "trials_per_method_per_outer": 20,
+    "objective": "maximize pooled past-inner non-interpolated AP, tie lower Brier then earlier trial",
+    "Logistic": {"C": [0.001, 100.0], "max_iter": 2000, "scaler": "training-only StandardScaler"},
+    "HGB": {"max_leaf_nodes": [3,7,15], "min_samples_leaf": [10,20,40], "l2_regularization": [0.1,10.0], "max_iter": 150, "learning_rate": 0.05, "early_stopping": false},
+    "single_class": "training positive fraction constant, recorded; no future fallback"
+  },
+  "upper_quantile": {"name": "Q90_upper", "quantile": 0.9, "parameters": "Same fixed B HGB settings except loss=quantile and quantile=0.9; no tuning. Predicted quantile is a separate risk output, not substituted for the normal B forecast.", "evaluation": "pinball loss, actual coverage, all/peak/surge under-over errors; coverage is measured, never guaranteed"},
+  "comparators": ["B_score", "G_HGB_score", "Logistic_all", "HGB_all", "Q90_upper"],
+  "time": {"outer": ["dev_apr", "dev_may", "dev_jun"], "inner_months": {"dev_apr": [2,3], "dev_may": [2,3,4], "dev_jun": [2,3,4,5]}, "hourly_inputs": "observed t-1, monthly refitting only"},
+  "alarms": {"primary_false_positive_cap": 0.01, "secondary_false_positive_cap": 0.05, "threshold_choice": "Same diagnosis policy: past-inner maximize TP subject to cap; fewer FP then higher threshold as ties. Report realized outer FP, not merely requested cap."},
+  "selection": {
+    "unit": "Additional risk channel only; normal point forecast remains B for every row",
+    "primary_rank_metric": "event-count-weighted mean of monthly AP, since scores from different models/months need not share calibration",
+    "eligible": "Compared with B_score: weighted monthly AP >=1.05 times baseline; primary-cap pooled TP >=baseline; each month TP >=baseline; primary-cap realized pooled FP fraction<=0.01; require either at least one extra pooled TP or fewer pooled FP. These are exploratory development criteria, not economic optima.",
+    "choice": "Among eligible largest weighted AP; within 1 percent prefer Logistic_all then HGB_all then Q90_upper. If none pass retain B_score risk baseline and disclose unmet gates. G_HGB_score remains a retrospective comparator, not eligible by this new selection.",
+    "secondary_boundary": "q90 sensitivity only, no candidate selection on it",
+    "not_final": "Post-diagnosis development, no claim of independent test or operational savings"
+  },
+  "sampler": {"seed":42, "jobs":1, "pruning":"none"},
+  "no_july_august_evaluation": true,
+  "stop": "One declared all-state and upper-quantile comparison then verify/report; no closed-gate retuning or acceptance relaxation"
+}

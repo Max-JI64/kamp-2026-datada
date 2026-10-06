@@ -1,0 +1,19 @@
+{
+  "status": "generated",
+  "script_sha256": "fb04456d22b876c43a54bd5b1cea574477f8be37fb0937c5125510e54fa64458",
+  "run_sha256": "5c882e5ab3edb3a83e21b58b245d2b5a262c35d4ede49b51fc6777310debc4c0",
+  "figures_sha256": {
+    "Modeling/figures/modeling_close/compact_evidence.png": "cbd85380dc6f6feb82f2c4e847f335cfaba9b80c9985d63bb3430515e6687396",
+    "Modeling/figures/modeling_close/compact_evidence.svg": "ec40e409928223f332918dd4d8e30a8f7d322baa6ccad5a49e8356dd7e46d42a",
+    "Modeling/figures/modeling_close/logit_contributions.png": "c5930a41df6c6794fdcd3af594b5f533078a558b93197092f1f2a001676dffe8",
+    "Modeling/figures/modeling_close/logit_contributions.svg": "395f348281de5023bc9bb1ff8c01f415fb9841ca05390ccbe033d5bc775a052d",
+    "Modeling/figures/modeling_close/performance_and_alarms.png": "24790e67e1f53b21a33ef22b90750fef03d4405196220472e367f815bd6ee60d",
+    "Modeling/figures/modeling_close/performance_and_alarms.svg": "7c7744525da6bfacef31dca526e3fb9e8b52369c04fd7fc494ae6bf10a008bc4",
+    "Modeling/figures/modeling_close/pipeline.png": "efaffec3a24648ed87d6662f2314227c28750f557d5a3c2d7619608f29add4f7",
+    "Modeling/figures/modeling_close/pipeline.svg": "f08fcef8ba89a3c6760f683d7ff1e6187ca58f908f13a67091e13f53cdc43c2f",
+    "Modeling/figures/modeling_close/transition_cases.png": "d661d201578ecb42ba1460ee072db3084e662ae1e28b64e06c15226c588c6b90",
+    "Modeling/figures/modeling_close/transition_cases.svg": "87fb5b703a7c59e986066d5552aa1ead7b2e622686be676e761729e7d019418f"
+  },
+  "visual_review": "pending",
+  "new_fits": 0
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "script_sha256": "df7d07af667b2e5a45c41c91af3cb3b604e71ceb4ff694c18ed6adefea47f86f",
+  "source_sha256": {
+    "Modeling/tables/regime_age_ablation/followup_metrics.csv": "87dc539d694b7d9c91c7ecfe177d0981e419f4b5b155cb69a92d3be8f237deca",
+    "Modeling/tables/regime_age_ablation/followup_detection.csv": "bf209e0221e042c7acffcffb29f03a926facf76ca4003030b646a692b08fd6a0",
+    "Modeling/tables/regime_age_ablation/development_detection.csv": "fe211883160481630fdc68e68cb3bcd595031977ab7b7daf82f14d0124ffe874",
+    "Modeling/tables/regime_age_ablation/decision.json": "e83b585f1e6bc1d3c0c203ade6e3e10b1c585577ed6c069cbd6b5553d3c601f3",
+    "Modeling/tables/regime_age_ablation/run.json": "d5dd17c56613afdee13a4d7efce0e1fc824e951eaf94ff526c5dfe2d0fb65805",
+    "Modeling/tables/regime_age_ablation/independent_verification.json": "d4a1bd8da260c15dc06a84db35d6290cd71e292ed35a5f57878e87a36b2ea8de",
+    "Modeling/tables/regime_age_ablation/calendar_control_metrics.csv": "f876f890a0352c46b3ec8ad441c50e026162d1ba3ed47624f2a6594f207bd650",
+    "Modeling/tables/regime_age_ablation/calendar_control_detection.csv": "fc707e3df98624dbdd237be810d01e37376dbf609bb2a626d8c1759b2287f6ef"
+  },
+  "documents_sha256": {
+    "Modeling/04_Modeling_원고.md": "1605f4d72e95158360257107cad3d56f47152b3bcdd141f8bb96f728bf023fe8",
+    "Modeling/README.md": "6cc970c62400cff00f04af955188b40532ba2985b5615771b9bda236d2274b73",
+    "README.md": "7b7afea6d6a0971ed6a634a1249de317c594d2c0a12b5778e8e586f944f17d4d"
+  },
+  "original_manuscript_sha256": "c81368f3d3e3a2fdcb2de33fad3c4ce0168a4245e67d35c7250ff2de03a23de6",
+  "historical_tables_preserved": true,
+  "historical_narrative_updated_as_declared": true,
+  "links_checked": 308,
+  "new_fits": 0
+}

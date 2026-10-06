@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T12:43+09:00",
+  "contract_sha256": "c89b53ea47f9b8ca3d0a59f23ff64a5bb68b3809c1e2ac23fd229fe33837c477",
+  "script_sha256": "ea8b6c3ebf251a130898f98e951957daac35e8cbd3e9ad8ba62eaf3f30134571",
+  "inputs_sha256": {
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "Modeling/tables/m04_rise/run.json": "39f7166966012f48dfc6fc3e1a3e4967ed79fe8b813420a4587b1788b118fed8",
+    "Modeling/tables/m04_rise/inner_predictions.csv": "16192597bb9071bad5a0d25e86f5d7b321d231caac90f0d12bd54148660dec84",
+    "Modeling/tables/m04_rise/selected_configurations.json": "fcdf93f5f5e95dc831d8a7bb47c5f1ee2d88941dfacf54fafdfc7cf73dcd4b54",
+    "Modeling/tables/m04_rise_gate/run.json": "9f9ac915e840903e4b03e5b952c6218f8972fffcbfe8ea7d33457a27d0e641b1",
+    "Modeling/tables/m04_rise_gate/predictions.csv": "fcbf2f16eef01bad704a58f1b32b43ed6ee78b67988cb27afb4f6d2e2b0d6afb"
+  },
+  "outputs_sha256": {
+    "alarm_metrics.csv": "bfbab3e362ca4d737723252dd896495bd9406d9ac847c19bb901493941c9d153",
+    "alarm_policies.csv": "a8d48ef5c0347836f37e767c455dd8148ba2992b5053078c9b946f70c2937dc8",
+    "april_legacy_cases.csv": "874798ad2f33f47599e70a01e48c8c7dda859cfdfa2f96cea2134d98e6219115",
+    "errors.csv": "0c372f30448c321573caba0c8c353b34e45d5994d7506babf1436f4a1ad9e3d1",
+    "event_counts.csv": "be19bf0797426c94bf6728dfa7b1b09de64c50842c5cf338d85303b31934553e",
+    "predictions.csv": "ce163d410d04916ecf8dba09b525f14b77dbb2615f65fc1b90e564a748df996c",
+    "summary.json": "5eecf1c742adccc6c09a180e799b3b42520c1bb74abff3114e9002225ac0bed7"
+  },
+  "prediction_rows": 15288,
+  "no_fitting": true,
+  "no_july_august_evaluation": true
+}

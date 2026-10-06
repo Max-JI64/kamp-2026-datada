@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-05T18:17+09:00",
+  "links_checked": 367,
+  "M03_numeric_rows_checked": 8,
+  "M03_reduction_rates_checked": {
+    "overall_MAE": 8.12482114183003,
+    "daily_maximum_MAE": 35.41858267624145,
+    "daily_maximum_under": 37.94844325768406
+  },
+  "documents_sha256": {
+    "README.md": "6f2377a14b33160404d169a06deeecda359386083d0aa81b8de4d9ecab80b34c",
+    "Modeling\\README.md": "6ac3988824241cce6d2a205a13d07ebb8aa03d8f6ad6cfeb298522709032a88f",
+    "Modeling\\04_Modeling_원고.md": "6ff557eb244bea468ae7c599a7a944b9bd1a1ecedbb57496f7e231ccb0d750e9",
+    "Modeling\\10.04_M03_마지막값추가와시차입력_실행기록.md": "921c44c6b389305c44e70f0be541bd6aec8e98959f9442d2af61d58ffe7353d6"
+  },
+  "no_fitting": true,
+  "script_sha256": "29384a683e32e77a7a699c985ac91343aadc4e1bf5f2fe41503b2713ff515dfc"
+}

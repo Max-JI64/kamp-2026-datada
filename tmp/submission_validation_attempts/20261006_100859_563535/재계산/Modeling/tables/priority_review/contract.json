@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-05T20:55+09:00",
+  "entrypoint_sha256": "a6f65e39925b386eb7c011cbf5a6352f175c3a4ae1b6ca1652db35ac0b75b0e7",
+  "inputs_sha256": {
+    "Modeling/tables/error_warning/predictions.csv": "1aaa0dccb0024787a5c0f81abe02dcd40e3df6ebc19bdcda03bf5323e422f8f2",
+    "Modeling/tables/error_warning/calibration_predictions.csv": "ab8e54b8b08e61944f807a27950bb194be9758aafdd9572417054e7168e7d14e",
+    "Modeling/tables/error_warning/selection.json": "f9f006c009381dc0275f43399d5bcc474fd0a45ccf735ec2f728bad1ddb712f3",
+    "Modeling/tables/error_warning/contract.json": "9a067e78183427d35ae3aa7d99770c3797bae9baba08ad69b852615d6d44f961",
+    "Modeling/tables/error_warning/run.json": "83630deeb974bb760dc104b020e87ebfc76b01b36dba24480b7b4b2b11869548",
+    "Modeling/tables/error_warning/independent_verification.json": "5377763407fcf4b9d7e939e6c08ba5601757833e88d0c6ad34ff80335e7f87fc"
+  },
+  "scope": "April-June 2021 reused development, not independent final test; no later-month evaluation",
+  "target": "Existing February-derived large-underprediction event >=9.73851536905958",
+  "daily_budget": 2,
+  "schedule": "24 hourly origins 00..23 on each date; planned availability, not future score/outcome",
+  "policy": "At hour h, b reviews remain and r=24-h origins remain. If b=0 skip. If b=r select to use quota. Otherwise select iff current score > previous-calendar-month score quantile 1-b/r (linear interpolation). Reset b=2 each date. No within-evaluation-month outcome or score update.",
+  "calibration": "Use original prior-month calibration scores from same frozen model; model selection remains frozen from parent AP, not reselected for new policy",
+  "methods": [
+    "high_prediction",
+    "prior_maximum",
+    "neighbor_std",
+    "selected_simple",
+    "selected_ML"
+  ],
+  "primary_reference": "selected_simple frozen in parent study",
+  "strong_baseline_check": "compare pooled TP against max of all three fixed simple rules and selected_simple; this is a conservative hurdle, not deployed future selection",
+  "reportworthy": "selected_ML pooled TP >= strongest simple TP+5 and >=1.20*strongest simple TP, and TP strictly exceeds selected_simple in at least 2 of 3 months. No all-month-win requirement. Report all monthly and severity results even if mixed.",
+  "secondary": "precision, recall, non-event reviews, missed events, captured underprediction amount, forced-end-of-day reviews, hourly allocation",
+  "uncertainty": "paired calendar-week cluster bootstrap, 2000 resamples, seed42, descriptive sensitivity only given reused development/repeated arrays; not selection gate",
+  "fits": 0,
+  "no_policy_search": true,
+  "interpretation": "Online replay of choosing which forecast to review, not correction, automatic plant action, cost saving, or forecasting the event after its outcome",
+  "report_scope": "If reportworthy preserve original then add bounded detailed manuscript result; otherwise keep research README only. No compressed manuscript edits."
+}

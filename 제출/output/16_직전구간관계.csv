@@ -1,0 +1,5 @@
+﻿feature,target,n,days,correlation
+prior_first,target_maximum,5778,241,0.030048222114305682
+prior_second,target_maximum,5778,241,-0.12670379304137486
+prior_third,target_maximum,5778,241,0.02996765477995199
+prior_last,target_maximum,5778,241,0.4337900466613988

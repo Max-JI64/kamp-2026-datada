@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-06T12:10+09:00",
+  "script_sha256": "25cbfa305be0339585e70040808263c1c27c80b1aaf25cb473893c9d609ce556",
+  "initial_contract_sha256": "90258e023921ae719b04c199972b0037750d252c5b5c464debeaced616faa16a",
+  "weather_run_sha256": "1ab099fc6bbb6fa2cf9ddd973200ce56a5db5dc7d7d343722c64aae6432ee422",
+  "previous_script": "feature_weather_audit_before_shap_fix.py.txt",
+  "reason": "Initial installed SHAP0.51 interventional TreeExplainer for original April B0 failed additivity. Converted model prediction matched sklearn exactly (max0); interventional reconstruction max error14.8738006837149. Same model tree_path_dependent max error2.6290081223123707e-13. Do not accept invalid attributions or disable check for production.",
+  "method": "Exact tree_path_dependent TreeSHAP. Background is recorded training path counts, no evaluation fitting. All explanations must pass built-in and direct additivity checks.",
+  "changes": "SHAP dependence assumption only; date-donor keys normalized to Timestamp. No input/model/weather/prediction/selection changes.",
+  "sensitivity": "Complement with same-hour donor-day grouped permutation. No numerical interpretation of failed interventional results.",
+  "diagnostic_script": "tmp/diagnose_hgb_shap.py"
+}

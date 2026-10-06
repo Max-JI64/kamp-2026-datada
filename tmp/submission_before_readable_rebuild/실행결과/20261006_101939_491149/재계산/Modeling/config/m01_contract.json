@@ -1,0 +1,51 @@
+{
+  "version": "m01-v1",
+  "source": "data/origin/okm_augumented_2021.csv",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "period": [20210101, 20210831],
+  "valid_hour": [0, 23],
+  "lags_hours": [1, 2, 24, 168],
+  "targets": {"primary": "target_maximum", "secondary": "target_mean", "mean": "arithmetic mean of four slots without rounding", "unit": "original recorded scale"},
+  "information_time": "after observation of t-1 hour; record availability without reporting delay assumed",
+  "retraining": "once per split; hourly observed inputs updated during evaluation; no fitting on evaluation labels",
+  "splits": [
+    {"name": "dev_apr", "train_end": "2021-03-31T23:00:00", "eval_start": "2021-04-01T00:00:00", "eval_end": "2021-04-30T23:00:00", "role": "development"},
+    {"name": "dev_may", "train_end": "2021-04-30T23:00:00", "eval_start": "2021-05-01T00:00:00", "eval_end": "2021-05-31T23:00:00", "role": "development"},
+    {"name": "dev_jun", "train_end": "2021-05-31T23:00:00", "eval_start": "2021-06-01T00:00:00", "eval_end": "2021-06-30T23:00:00", "role": "development"},
+    {"name": "later_jul_aug", "train_end": "2021-06-30T23:00:00", "eval_start": "2021-07-01T00:00:00", "eval_end": "2021-08-31T23:00:00", "role": "later evaluation after development freeze; already observed period"}
+  ],
+  "pools": {"core": [1, 2], "common": [1, 2, 24, 168]},
+  "calendar_features": ["hour_sin", "hour_cos", "month", "weekend", "dow_0", "dow_1", "dow_2", "dow_3", "dow_4", "dow_5", "dow_6"],
+  "feature_groups": {
+    "A": ["lag1_production", "lag1_production_zero", "lag1_mean", "lag1_maximum", "lag2_mean", "lag2_maximum"],
+    "B_add": ["lag1_last"],
+    "C_add": ["lag24_mean", "lag24_maximum", "lag168_mean", "lag168_maximum"],
+    "D_add": ["lag1_temperature", "lag1_wind", "lag1_humidity", "lag1_rain"]
+  },
+  "comparison": "primary cross-model and A/B/C comparisons use identical common training and evaluation rows; core A/B is supplementary coverage comparison, never mixed with common scores",
+  "missing_policy": {
+    "required_lag": "no imputation; exclude from corresponding comparison pool and record each reason",
+    "weather": "M03 D only: median and missing indicator fit on training rows, reused on same evaluation rows; all-missing training feature omitted with reason; no future interpolation",
+    "secondary_baseline_fallback": {"lag1": [1], "lag24": [24, 1], "lag168": [168, 24, 1]},
+    "no_core_history": "learned A/B require lag1 and lag2 and abstain if either missing; a historical baseline can still use its own available lag; abstain only if none of that baseline's allowed lags exists; fallback scores separated from common comparison"
+  },
+  "candidate_models": [
+    {"name": "ridge_1", "family": "Ridge", "alpha": 1.0, "preprocessing": "training StandardScaler"},
+    {"name": "ridge_10", "family": "Ridge", "alpha": 10.0, "preprocessing": "training StandardScaler"},
+    {"name": "hgb_7", "family": "HistGradientBoostingRegressor", "max_leaf_nodes": 7, "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42},
+    {"name": "hgb_15", "family": "HistGradientBoostingRegressor", "max_leaf_nodes": 15, "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42}
+  ],
+  "prediction_postprocessing": "none in initial comparison; negative predictions, if any, diagnosed rather than silently clipped",
+  "development_selection": {
+    "primary": "pooled MAE across three development evaluation months; report each month, RMSE and daily-maximum under/overprediction separately",
+    "near_tie": "within 1 percent of lowest pooled MAE, prefer simpler candidate (Ridge before HGB, ridge_10 before ridge_1, hgb_7 before hgb_15); numerical convention, not economic optimum",
+    "input_ablation": "fix model settings within each A/B comparison; no simultaneous tuning and feature changes",
+    "final_tradeoff": "set explicit MAE and overprediction tolerances using development evidence before later evaluation; not decided in M01",
+    "adaptation": "changes encouraged when supported by development results; version contract and record reason before next comparison"
+  },
+  "diagnostics_only": ["target_production", "production_transition", "target_profile", "train_profile_overlap", "daily_maximum_weight", "profile_weight"],
+  "repetition": "full daily 96-slot profile for posthoc overlap/weight only; no input, no global fitting or deletion; normalize inverse profile counts within each evaluation pool",
+  "daily_maximum": "only dates with 24 valid targets and 24 eligible evaluation hours; weight ties to sum 1 per date; report excluded dates",
+  "expected_scope": {"raw_rows": 6168, "scope_rows": 5832, "invalid_rows": 48, "valid_rows": 5784, "valid_days": 241, "lag1_rows": 5781, "lag1_and_lag2_rows": 5778, "unique_profiles": 126, "repeated_profile_days": 160},
+  "fit_performed": false
+}

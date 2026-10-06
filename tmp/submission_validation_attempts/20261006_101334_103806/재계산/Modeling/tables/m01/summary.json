@@ -1,0 +1,242 @@
+{
+  "valid_hours": 5784,
+  "lag_counts": {
+    "1": 5781,
+    "2": 5778,
+    "24": 5712,
+    "168": 5568
+  },
+  "core_hours": 5778,
+  "common_hours": 5520,
+  "split_counts": [
+    {
+      "split": "dev_apr",
+      "role": "development",
+      "pool": "core",
+      "train_hours": 2158,
+      "eval_hours": 720,
+      "train_dates": 90,
+      "eval_dates": 30,
+      "eval_available_target_hours": 720,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 30,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 45
+    },
+    {
+      "split": "dev_apr",
+      "role": "development",
+      "pool": "common",
+      "train_hours": 1992,
+      "eval_hours": 720,
+      "train_dates": 83,
+      "eval_dates": 30,
+      "eval_available_target_hours": 720,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 30,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 45
+    },
+    {
+      "split": "dev_may",
+      "role": "development",
+      "pool": "core",
+      "train_hours": 2878,
+      "eval_hours": 744,
+      "train_dates": 120,
+      "eval_dates": 31,
+      "eval_available_target_hours": 744,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 31,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 53
+    },
+    {
+      "split": "dev_may",
+      "role": "development",
+      "pool": "common",
+      "train_hours": 2712,
+      "eval_hours": 744,
+      "train_dates": 113,
+      "eval_dates": 31,
+      "eval_available_target_hours": 744,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 31,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 53
+    },
+    {
+      "split": "dev_jun",
+      "role": "development",
+      "pool": "core",
+      "train_hours": 3622,
+      "eval_hours": 720,
+      "train_dates": 151,
+      "eval_dates": 30,
+      "eval_available_target_hours": 720,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 30,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 39
+    },
+    {
+      "split": "dev_jun",
+      "role": "development",
+      "pool": "common",
+      "train_hours": 3456,
+      "eval_hours": 720,
+      "train_dates": 144,
+      "eval_dates": 30,
+      "eval_available_target_hours": 720,
+      "eval_excluded_hours": 0,
+      "complete_eval_days": 30,
+      "incomplete_eval_days": 0,
+      "daily_maximum_eval_hours": 39
+    },
+    {
+      "split": "later_jul_aug",
+      "role": "later evaluation after development freeze; already observed period",
+      "pool": "core",
+      "train_hours": 4342,
+      "eval_hours": 1436,
+      "train_dates": 181,
+      "eval_dates": 60,
+      "eval_available_target_hours": 1440,
+      "eval_excluded_hours": 4,
+      "complete_eval_days": 58,
+      "incomplete_eval_days": 2,
+      "daily_maximum_eval_hours": 80
+    },
+    {
+      "split": "later_jul_aug",
+      "role": "later evaluation after development freeze; already observed period",
+      "pool": "common",
+      "train_hours": 4176,
+      "eval_hours": 1344,
+      "train_dates": 174,
+      "eval_dates": 56,
+      "eval_available_target_hours": 1440,
+      "eval_excluded_hours": 96,
+      "complete_eval_days": 56,
+      "incomplete_eval_days": 4,
+      "daily_maximum_eval_hours": 77
+    }
+  ],
+  "profile_overlap": [
+    {
+      "split": "dev_apr",
+      "pool": "core",
+      "eval_days": 30,
+      "eval_profiles": 15,
+      "overlap_days": 0,
+      "overlap_hours": 0,
+      "new_profile_hours": 720
+    },
+    {
+      "split": "dev_apr",
+      "pool": "common",
+      "eval_days": 30,
+      "eval_profiles": 15,
+      "overlap_days": 0,
+      "overlap_hours": 0,
+      "new_profile_hours": 720
+    },
+    {
+      "split": "dev_may",
+      "pool": "core",
+      "eval_days": 31,
+      "eval_profiles": 30,
+      "overlap_days": 17,
+      "overlap_hours": 408,
+      "new_profile_hours": 336
+    },
+    {
+      "split": "dev_may",
+      "pool": "common",
+      "eval_days": 31,
+      "eval_profiles": 30,
+      "overlap_days": 17,
+      "overlap_hours": 408,
+      "new_profile_hours": 336
+    },
+    {
+      "split": "dev_jun",
+      "pool": "core",
+      "eval_days": 30,
+      "eval_profiles": 30,
+      "overlap_days": 28,
+      "overlap_hours": 672,
+      "new_profile_hours": 48
+    },
+    {
+      "split": "dev_jun",
+      "pool": "common",
+      "eval_days": 30,
+      "eval_profiles": 30,
+      "overlap_days": 26,
+      "overlap_hours": 624,
+      "new_profile_hours": 96
+    },
+    {
+      "split": "later_jul_aug",
+      "pool": "core",
+      "eval_days": 60,
+      "eval_profiles": 59,
+      "overlap_days": 0,
+      "overlap_hours": 0,
+      "new_profile_hours": 1436
+    },
+    {
+      "split": "later_jul_aug",
+      "pool": "common",
+      "eval_days": 56,
+      "eval_profiles": 55,
+      "overlap_days": 0,
+      "overlap_hours": 0,
+      "new_profile_hours": 1344
+    }
+  ],
+  "weather_missing": [
+    {
+      "feature": "lag1_temperature",
+      "pool": "core",
+      "missing_hours": 0
+    },
+    {
+      "feature": "lag1_wind",
+      "pool": "core",
+      "missing_hours": 3
+    },
+    {
+      "feature": "lag1_humidity",
+      "pool": "core",
+      "missing_hours": 0
+    },
+    {
+      "feature": "lag1_rain",
+      "pool": "core",
+      "missing_hours": 1
+    },
+    {
+      "feature": "lag1_temperature",
+      "pool": "common",
+      "missing_hours": 0
+    },
+    {
+      "feature": "lag1_wind",
+      "pool": "common",
+      "missing_hours": 3
+    },
+    {
+      "feature": "lag1_humidity",
+      "pool": "common",
+      "missing_hours": 0
+    },
+    {
+      "feature": "lag1_rain",
+      "pool": "common",
+      "missing_hours": 1
+    }
+  ],
+  "model_fitting_performed": false
+}

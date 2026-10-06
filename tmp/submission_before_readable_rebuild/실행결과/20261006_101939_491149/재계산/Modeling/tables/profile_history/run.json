@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "finished": "2026-10-05T18:51+09:00",
+  "contract_sha256": "473423bb6eb9170884ccbc22f8473d91cea8825a4a5c71cfa2cd08d2f10ea690",
+  "new_fits": 39,
+  "models": 45,
+  "full_common": 5520,
+  "history_common": 5520,
+  "development_hours": 2184,
+  "inner_selection": [
+    {
+      "outer_month": 4,
+      "group": "H6",
+      "score": 0.8097162133558994
+    },
+    {
+      "outer_month": 5,
+      "group": "H6",
+      "score": 0.7173072545476836
+    },
+    {
+      "outer_month": 6,
+      "group": "H6",
+      "score": 0.6448382042758386
+    }
+  ],
+  "selected": null,
+  "later_evaluated": false,
+  "manuscript_edited": false,
+  "outputs_sha256": {
+    "Modeling\\tables\\profile_history\\comparison.csv": "f4a8c3d8f0f0fe76349f20b276d58af33dee739f28b107c08190c04d28834e2a",
+    "Modeling\\tables\\profile_history\\coverage.csv": "4c010121472908857fca606355dd5a71333a403a658637574b76b67038739add",
+    "Modeling\\tables\\profile_history\\feature_audit.csv": "386ceaaca6062cf3d45f45763c5e36da0df5572a79401188d627a5a06b200170",
+    "Modeling\\tables\\profile_history\\inner_predictions.csv": "56a2b612a2d25484d26103b5a6bf4a26d3655e1ac64792643e5dc5092b468c49",
+    "Modeling\\tables\\profile_history\\inner_selection.csv": "56e272b189b82cb365aac0ee55c12298a1d6739933644f48d0ff6aaabcd229f2",
+    "Modeling\\tables\\profile_history\\leave_one_date_out.csv": "b1921ba920836514e8c7ec42b42b3ad18f178fd8037d3d667015995134ec0d3e",
+    "Modeling\\tables\\profile_history\\metrics.csv": "65bf661207b8dc46e37ca316ddc1033196b8c55d97f8fcfb87e0d7eb66518ee5",
+    "Modeling\\tables\\profile_history\\model_manifest.csv": "42ee8ca42a0047b1a2db4f35df55c211798f809db0109d3522f24d7fa29d47ab",
+    "Modeling\\tables\\profile_history\\predictions.csv": "411662ef062925b7b19f18a8c6d2f639fe2117fb939179ff2125b5b4d1e14e9c",
+    "Modeling\\tables\\profile_history\\slot_metrics.csv": "a9d986ef02094ab3076d33e7f39a2c5e83f4573829dedf27b527bae743972e30",
+    "Modeling\\tables\\profile_history\\slot_predictions.csv": "7a9b126d842e50628373a00df48f83c8f64d69f8b30d234e08f0e355f8deaee4",
+    "Modeling\\tables\\profile_history\\selection.json": "d8c2e50d3e3e8aaa7e146b9b947b0f90f14d74a36a7a0be824cc3143437957b0",
+    "Analysis\\tables\\p02_profile_history\\conditional_errors.csv": "7f44e4300dc40493a4cf361bfd6c63674065b949b410b7e240234c4105d3356d"
+  }
+}

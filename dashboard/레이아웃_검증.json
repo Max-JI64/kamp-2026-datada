@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "layout": "1600 x 900 design canvas (16:9), uniform viewport fitting",
+  "data_sha256": "0fb64d7c5ed1e703df9c5d0f44a56bb9f43bb11614c406d76032398709da7918",
+  "embedded_data_identical": true,
+  "model_runs": 0,
+  "source_files": {
+    "template": "template_wide.html",
+    "style": "style_wide.css",
+    "app": "app.js"
+  },
+  "html_bytes": 2372812,
+  "verification_scope": "Source/data identity; browser layout visual verification unavailable"
+}

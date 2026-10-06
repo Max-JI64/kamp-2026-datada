@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "rows": 5784,
+  "scope": "Restarted EDA 2.3 only",
+  "method": "Spearman",
+  "estimand": "ordinal monotonic co-movement; no proportional or causal effect",
+  "method_basis": [
+    "distribution: zero masses/ties and skewed production/rainfall",
+    "purpose: ordinal co-movement without proportional effect",
+    "sensitivity comparison is diagnostic only, not a method-selection rule"
+  ],
+  "normality_diagnostic": "D Agostino K2; naive iid p-values only, not calibrated for time dependence; not a selection switch",
+  "main_population": "All valid Jan-Aug hours; no tail exclusions",
+  "checked_rank_rows": 79,
+  "checked_independent_august_groups": 3,
+  "pvalue_inference": false,
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "font": "Malgun Gothic",
+  "warnings": [],
+  "image_analysis_performed": false,
+  "images": [
+    {
+      "file": "restart_02_variable_relations.png",
+      "bytes": 87627,
+      "sha256": "24082d1f6522b73d830de21570e585af718f732cd63464e86fa61122e89bbc6a"
+    },
+    {
+      "file": "restart_02_monthly_relations.png",
+      "bytes": 104088,
+      "sha256": "d41f7040ddc1342fba88b444a7f0f10af2bad3b9c1480a337169c1f7702fb233"
+    }
+  ],
+  "script_sha256": "25d1ba356c67983ea3302e09768a5d11a24f9fe4cfde5f83feb9be7266a07cda"
+}

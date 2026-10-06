@@ -1,0 +1,19 @@
+{
+  "status": "generated",
+  "visual_review": "passed: figure viewed at 50 percent; axes, legends, monthly comparison, peak under/over stack and denominators checked",
+  "no_fitting": true,
+  "input_sha256": {
+    "comparison.csv": "12b8d782457d6146e2f787e37592cc44eebe67317de6b629e3eea9fab4552096",
+    "condition_errors.csv": "918e78b02424b300ea5fe150afc5d4bb815e582dec36d5bb4522c4a08817fd49"
+  },
+  "figures": {
+    "Modeling\\figures\\m03\\last_slot_ablation.png": "e10e21db72914c546c0669a7a025d64e1562ae55684fc88bede0de51d6aff118"
+  },
+  "script_sha256": "5486acb697061fa4db8cb67dbdd0521b882b8392ea99b373395d8e35bf9fd28e",
+  "manuscript_sha256": "6ff557eb244bea468ae7c599a7a944b9bd1a1ecedbb57496f7e231ccb0d750e9",
+  "document_validation": {
+    "links_checked": 367,
+    "M03_numeric_rows_checked": 8,
+    "scope": "four current documents; historical root jsw section excluded"
+  }
+}

@@ -1,0 +1,328 @@
+"""Isolated weather ablation and HGB explanations; never writes old artifacts."""
+import os
+os.environ.setdefault('OMP_NUM_THREADS', '4')
+os.environ.setdefault('MKL_NUM_THREADS', '4')
+import json
+import hashlib
+import sys
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+import joblib
+import numpy as np
+import pandas as pd
+import shap
+import sklearn
+from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.impute import SimpleImputer
+
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'Modeling/tables/feature_weather_audit'
+WEATHER = ['lag1_temperature', 'lag1_wind', 'lag1_humidity', 'lag1_rain']
+
+def digest(p):
+    return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+def jsave(name, value):
+    (OUT / name).write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
+
+def read(name):
+    return pd.read_csv(ROOT / name, encoding='utf-8-sig', parse_dates=['timestamp'])
+
+def save(name, frame):
+    frame.to_csv(OUT / name, index=False, encoding='utf-8-sig', float_format='%.17g')
+
+def setup():
+    OUT.mkdir(parents=True, exist_ok=True)
+    assert not (OUT / 'contract.json').exists(), 'Use a new output folder for another analysis.'
+    fc = json.loads((ROOT / 'Modeling/tables/regime_followup/contract.json').read_text(encoding='utf-8'))
+    names = ['data/origin/okm_augumented_2021.csv', 'Modeling/tables/m01/hourly_frame.csv',
+             'Modeling/tables/regime_integration/meta_features.csv', 'Modeling/tables/regime_integration/predictions.csv',
+             'Modeling/tables/regime_followup/predictions.csv', 'Modeling/tables/regime_followup/contract.json',
+             'Modeling/tables/regime_age_ablation/development_classification.csv',
+             'Modeling/tables/regime_age_ablation/followup_classification.csv',
+             'Modeling/tables/regime_age_ablation/followup_predictions.csv']
+    for month in [4, 5, 6]:
+        names += [f'Modeling/models/regime_integration/{month:02d}_{v}.joblib' for v in ['B0', 'B1']]
+    names += [f'Modeling/models/regime_followup/{v}.joblib' for v in ['B0', 'B1']]
+    c = {'created_at': datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='minutes'),
+         'prior_evidence': ['Analysis 3.3: conditioned associations do not test forecast utility',
+                            'Modeling 4.3: weather D never run; 4.12 B0/B1; 4.13 only Logistic explained'],
+         'questions': ['Does prior-hour weather improve identical B0/B1 forecasts?',
+                       'Which feature groups and individual inputs influence the existing HGB forecasts?'],
+         'inputs_sha256': {n: digest(ROOT/n) for n in names}, 'script_sha256': digest(__file__),
+         'features': fc['regression_features'], 'parameters': fc['hgb_parameters'], 'weather_features': WEATHER,
+         'weather_policy': 'Exact t-1 weather only. Train-only median imputation, indicator for missing in train. Keep every baseline row. No target weather, interpolation, clipping, retuning, or classifier/gate changes.',
+         'folds': 'Existing Feb-to-prior-month training for Apr/May/Jun; matured labels only. Fixed Feb-Jun fit before July for July/August. Reuse eight original B0/B1 models and verify their predictions. Eight new weather fits.',
+         'decision_before_run': 'For each B0/B1: development pooled MAE reduction >=1%, peak MAE worsening <=1%, non-worse overall MAE in at least 2/3 months. Secondary fixed-gate system evaluated separately. Later period is exploratory corroboration, not selection or independent final test.',
+         'shap': {'method': 'interventional TreeExplainer, raw regression output, exact, 100 random training-only background rows seed42',
+                  'scope': 'All baseline development/follow-up hours; weather follow-up models. Rank by mean absolute SHAP. Record signed event/alarm contributions and background. Check sum+base=prediction.',
+                  'limitations': 'Attribution depends on background and dependence assumptions; correlated features share credit. No causal/equipment effect or performance importance claim.'},
+         'permutation': {'method': '10 same-month donor-day permutations at matched hour; entire feature group moves together. Missing donor hours retain original values. RNG42. All/up-start/fixed-alarm MAE increments.',
+                         'limitations': 'Sensitivity to perturbed combinations, not retrained removal effect. Cross-group dependence can break. SD measures permutation variability, not a confidence interval.'},
+         'protected_manuscripts_sha256': {n: digest(ROOT/n) for n in ['Modeling/04_Modeling_원고.md', 'Modeling/04_Modeling_3페이지용_압축본.md', 'Analysis/03_Analysis_원고.md']},
+         'packages': {'python': sys.version, 'numpy': np.__version__, 'pandas': pd.__version__, 'sklearn': sklearn.__version__, 'shap': shap.__version__},
+         'stop': 'One frozen weather set and settings; explain verified models; document all outcomes. No additional tuning to obtain improvement. Existing manuscripts/models/results untouched.'}
+    jsave('contract.json', c)
+    print('Contract frozen before comparative results.', flush=True)
+
+def frames(c):
+    m = read('Modeling/tables/m01/hourly_frame.csv')
+    # Independently verify that weather columns are exact prior-time raw readings.
+    raw = pd.read_csv(ROOT/'data/origin/okm_augumented_2021.csv', encoding='utf-8-sig')
+    raw = raw.loc[raw['날짜'].between(20210101,20210831) & raw['시간'].between(0,23)].copy()
+    raw['timestamp'] = pd.to_datetime(raw['날짜'].astype(str), format='%Y%m%d') + pd.to_timedelta(raw['시간'], unit='h')
+    assert raw.timestamp.is_unique
+    raw = raw.set_index('timestamp')
+    for col, source in zip(WEATHER, ['기온','풍속','습도','강수량']):
+        expected = raw[source].reindex(pd.DatetimeIndex(m.timestamp) - pd.Timedelta(hours=1)).to_numpy(float)
+        np.testing.assert_allclose(m[col], expected, equal_nan=True, atol=1e-12)
+    dev = read('Modeling/tables/regime_integration/meta_features.csv')
+    dev['label_confirmed_at'] = pd.to_datetime(dev.label_confirmed_at)
+    late = read('Modeling/tables/regime_followup/predictions.csv')
+    late = late.loc[late.variant.eq('B0')].copy()
+    for f in [dev, late]:
+        assert f.timestamp.is_unique
+        f['date'] = f.timestamp.dt.normalize()
+    dev = dev.merge(m[['timestamp']+WEATHER], on='timestamp', validate='one_to_one')
+    late = late.merge(m[['timestamp']+WEATHER], on='timestamp', validate='one_to_one')
+    for f, file in [(dev,'development_classification.csv'),(late,'followup_classification.csv')]:
+        cp = read('Modeling/tables/regime_age_ablation/'+file)
+        cp = cp.loc[cp.method.eq('noage')].set_index('timestamp')
+        alarms = cp.alarm.reindex(f.timestamp).fillna(0).astype(int).to_numpy()
+        f['fixed_alarm'] = alarms
+    assert len(dev) == 3598 and len(late) == 1344
+    return dev, late
+
+def groups(cols):
+    g = {'calendar':[], 'power':[], 'production':[], 'state':[], 'availability':[], 'weather':[]}
+    for n in cols:
+        if n in WEATHER or n.startswith('missingindicator_lag1_'): key = 'weather'
+        elif n.startswith(('dow_', 'hour_')) or n in ['month','weekend']: key='calendar'
+        elif 'production' in n: key='production'
+        elif 'classifier_available' in n: key='availability'
+        elif 'state_' in n: key='state'
+        else: key='power'
+        g[key].append(n)
+    return {k:v for k,v in g.items() if v}
+
+def peak_mask(f):
+    complete = f.groupby('date').timestamp.count().eq(24)
+    mask = f.date.map(complete).to_numpy() & f.target_maximum.eq(f.groupby('date').target_maximum.transform('max')).to_numpy()
+    w = np.zeros(len(f)); ix = np.flatnonzero(mask)
+    w[ix] = 1 / f.loc[mask].groupby('date').target_maximum.transform('count').to_numpy()
+    return mask, w
+
+def conditions(f):
+    pk, w = peak_mask(f)
+    return {'all': (np.ones(len(f),bool),np.ones(len(f))), 'daily_peak':(pk,w),
+            'up_start':(f.sustained_onset.eq(1).to_numpy(),np.ones(len(f))),
+            'fixed_alarm':(f.fixed_alarm.eq(1).to_numpy(),np.ones(len(f)))}
+
+def measure(f,pred):
+    rows=[]; err=np.asarray(pred)-f.target_maximum.to_numpy()
+    for condition,(mask,w) in conditions(f).items():
+        if not mask.any(): continue
+        rows.append({'condition':condition, 'hours':int(mask.sum()), 'weight_sum':float(w[mask].sum()),
+                     'mae':float(np.average(abs(err[mask]),weights=w[mask])),
+                     'under':float(np.average(np.maximum(-err[mask],0),weights=w[mask])),
+                     'over':float(np.average(np.maximum(err[mask],0),weights=w[mask])),
+                     'rmse':float(np.sqrt(np.average(err[mask]**2,weights=w[mask])))})
+    return rows
+
+def weather_inputs(train,test,base):
+    imputer=SimpleImputer(strategy='median',add_indicator=True,keep_empty_features=False)
+    a=imputer.fit_transform(train[WEATHER]); b=imputer.transform(test[WEATHER])
+    names=list(imputer.get_feature_names_out(WEATHER))
+    assert len(names)==a.shape[1] and np.isfinite(a).all() and np.isfinite(b).all()
+    x=train[base].reset_index(drop=True).copy(); y=test[base].reset_index(drop=True).copy()
+    for j,n in enumerate(names): x[n]=a[:,j]; y[n]=b[:,j]
+    return imputer,x,y
+
+def run():
+    c=json.loads((OUT/'contract.json').read_text(encoding='utf-8'))
+    assert not (OUT/'run.json').exists()
+    assert digest(__file__)==c['script_sha256']
+    for n,h in c['inputs_sha256'].items(): assert digest(ROOT/n)==h,n
+    dev,late=frames(c); rows=[]; manifests=[]; predictions=[]; missing=[]; jobs=[]; baseline_checks=[]
+    olddev=read('Modeling/tables/regime_integration/predictions.csv')
+    oldlate=read('Modeling/tables/regime_age_ablation/followup_predictions.csv')
+    for fold in [4,5,6,7]:
+        boundary=pd.Timestamp(2021,fold,1)
+        tr=dev.loc[(dev.timestamp<boundary)&(dev.label_confirmed_at<boundary)].copy().reset_index(drop=True)
+        te=(dev.loc[dev.timestamp.dt.month.eq(fold)] if fold<7 else late).copy().reset_index(drop=True)
+        assert tr.label_confirmed_at.max()<boundary and tr.timestamp.max()<boundary
+        period=f'{fold:02d}' if fold<7 else 'Jul-Aug'
+        save(f'train_{fold:02d}.csv',tr); save(f'eval_{fold:02d}.csv',te)
+        for n in WEATHER:
+            missing.append({'fold':fold,'feature':n,'train_missing':int(tr[n].isna().sum()),'eval_missing':int(te[n].isna().sum()),'train_median':float(tr[n].median())})
+        pred_by={}
+        for v in ['B0','B1']:
+            base=c['features'][v]
+            path=ROOT/(f'Modeling/models/regime_integration/{fold:02d}_{v}.joblib' if fold<7 else f'Modeling/models/regime_followup/{v}.joblib')
+            model=joblib.load(path); original=model.predict(te[base]); pred_by[v]=original
+            old=olddev if fold<7 else oldlate
+            ov=v if fold<7 or v=='B0' else 'B1_all'
+            expected=old.loc[old.variant.eq(ov)].set_index('timestamp').loc[te.timestamp].prediction.to_numpy()
+            np.testing.assert_allclose(original,expected,atol=1e-8,rtol=1e-9)
+            baseline_checks.append({'fold':fold,'model':v,'hours':len(te),'max_abs_diff':float(np.max(abs(original-expected)))})
+            imputer,wx,wy=weather_inputs(tr,te,base)
+            reg=HistGradientBoostingRegressor(**c['parameters']); reg.fit(wx,tr.target_maximum)
+            weather_pred=reg.predict(wy); pred_by[v+'_weather']=weather_pred
+            stem=f'{fold:02d}_{v}_weather'; joblib.dump({'model':reg,'imputer':imputer,'base':base,'columns':list(wx)},OUT/(stem+'.joblib'))
+            save(stem+'_train.csv',wx); save(stem+'_eval.csv',wy)
+            manifests.append({'fold':fold,'variant':v+'_weather','train_hours':len(tr),'eval_hours':len(te),'train_start':str(tr.timestamp.min()),'train_end':str(tr.timestamp.max()),'last_confirmed':str(tr.label_confirmed_at.max()),'model_file':stem+'.joblib','columns':'|'.join(wx),'sha256':digest(OUT/(stem+'.joblib'))})
+            jobs.append({'fold':fold,'variant':v,'model_path':str(path.relative_to(ROOT)),'train_file':f'train_{fold:02d}.csv','eval_file':f'eval_{fold:02d}.csv','columns':base,'weather':False})
+            if fold==7:
+                jobs.append({'fold':fold,'variant':v+'_weather','model_path':str((OUT/(stem+'.joblib')).relative_to(ROOT)),'train_file':stem+'_train.csv','eval_file':stem+'_eval.csv','columns':list(wx),'weather':True})
+        # Frozen current no-age Logistic gate; no weather enters classifier.
+        gate=te.fixed_alarm.to_numpy(bool)
+        pred_by['G1']=np.where(gate,pred_by['B1'],pred_by['B0'])
+        pred_by['G1_weather']=np.where(gate,pred_by['B1_weather'],pred_by['B0_weather'])
+        for v,p in pred_by.items():
+            pp=te[['timestamp','date','profile','sustained_onset','fixed_alarm','target_maximum']].copy()
+            pp['fold']=fold; pp['period']=period; pp['variant']=v; pp['prediction']=p
+            predictions.append(pp)
+        print(json.dumps({'fold':fold,'training':len(tr),'evaluation':len(te),'new_weather_fits':2}),flush=True)
+    p=pd.concat(predictions,ignore_index=True)
+    for variant,g in p.groupby('variant'):
+        scopes=[('Apr-Jun',g.loc[g.fold.lt(7)]),('May-Jun',g.loc[g.fold.between(5,6)]),('Jul-Aug',g.loc[g.fold.eq(7)])]
+        scopes += [(f'month_{month}',g.loc[g.timestamp.dt.month.eq(month)]) for month in range(4,9)]
+        for period,gg in scopes:
+            gg=gg.reset_index(drop=True)
+            for result in measure(gg,gg.prediction): rows.append({'variant':variant,'period':period,**result})
+    metrics=pd.DataFrame(rows); paired=[]
+    for variant in ['B0','B1','G1']:
+        a=metrics.loc[metrics.variant.eq(variant)]
+        b=metrics.loc[metrics.variant.eq(variant+'_weather')]
+        for row in a.itertuples():
+            match=b.loc[b.period.eq(row.period)&b.condition.eq(row.condition)].iloc[0]
+            paired.append({'variant':variant,'period':row.period,'condition':row.condition,'hours':row.hours,'mae_no_weather':row.mae,'mae_weather':match.mae,'mae_change':match.mae-row.mae,'mae_reduction_pct':100*(row.mae-match.mae)/row.mae if row.mae else 0,'under_no_weather':row.under,'under_weather':match.under})
+    paired=pd.DataFrame(paired)
+    save('predictions.csv',p); save('metrics.csv',metrics); save('paired_weather.csv',paired)
+    save('weather_missing.csv',pd.DataFrame(missing)); save('weather_models.csv',pd.DataFrame(manifests)); save('baseline_prediction_checks.csv',pd.DataFrame(baseline_checks))
+    decisions={}
+    for variant in ['B0','B1','G1']:
+        q=paired.loc[paired.variant.eq(variant)]
+        x=q.loc[q.period.eq('Apr-Jun')&q.condition.eq('all')].iloc[0]
+        y=q.loc[q.period.eq('Apr-Jun')&q.condition.eq('daily_peak')].iloc[0]
+        months=q.loc[q.period.isin(['month_4','month_5','month_6'])&q.condition.eq('all')]
+        nonworse=int(months.mae_change.le(0).sum())
+        passed=bool(x.mae_reduction_pct>=1 and y.mae_reduction_pct>=-1 and nonworse>=2)
+        decisions[variant]={'development_gate_passed':passed,'overall_reduction_pct':float(x.mae_reduction_pct),'peak_reduction_pct':float(y.mae_reduction_pct),'months_nonworse':nonworse,
+                            'interpretation':'weather candidate supported under frozen setting' if passed else 'no sufficient reason to replace existing variant under frozen criterion',
+                            'not_claimed':'weather has no value in other configurations; independent later validation; automatic adoption'}
+    jsave('decision.json',decisions); jsave('explanation_jobs.json',jobs)
+    jsave('run.json',{'new_fits':8,'reused_models':8,'baseline_prediction_checks':baseline_checks,'decisions':decisions,
+                       'outputs_sha256':{x.name:digest(x) for x in OUT.iterdir() if x.is_file() and x.name!='run.json'}})
+    print(json.dumps(decisions),flush=True)
+
+def donor_indices(f,seed):
+    rng=np.random.default_rng(seed); donor=np.arange(len(f)); changed=np.zeros(len(f),bool)
+    for month,part in f.groupby(f.timestamp.dt.month):
+        dates=np.sort(part.date.unique()); shuffled=rng.permutation(dates)
+        mapping={pd.Timestamp(a):pd.Timestamp(b) for a,b in zip(dates,shuffled)}; lookup={(r.date,r.timestamp.hour):i for i,r in part.iterrows()}
+        for i,r in part.iterrows():
+            d=lookup.get((mapping[r.date],r.timestamp.hour),i)
+            donor[i]=d; changed[i]=d!=i
+    return donor,float(changed.mean())
+
+def explain():
+    assert not (OUT/'explanations.json').exists()
+    c=json.loads((OUT/'contract.json').read_text(encoding='utf-8'))
+    revision=json.loads((OUT/'explanation_revision.json').read_text(encoding='utf-8'))
+    assert digest(__file__)==revision['script_sha256']
+    jobs=json.loads((OUT/'explanation_jobs.json').read_text(encoding='utf-8'))
+    sf=[]; sg=[]; perm=[]; checks=[]
+    for job in jobs:
+        fold=job['fold']; v=job['variant']; cols=job['columns']; weather=job['weather']
+        tr=pd.read_csv(OUT/job['train_file'],encoding='utf-8-sig',float_precision='round_trip')
+        ev=pd.read_csv(OUT/job['eval_file'],encoding='utf-8-sig',float_precision='round_trip')
+        meta=pd.read_csv(OUT/f'eval_{fold:02d}.csv',encoding='utf-8-sig',float_precision='round_trip',parse_dates=['timestamp','date'])
+        artifact=joblib.load(ROOT/job['model_path']); model=artifact['model'] if weather else artifact
+        X=ev[cols]; y=meta.target_maximum.to_numpy(); pred=model.predict(X)
+        ex=shap.TreeExplainer(model,feature_perturbation='tree_path_dependent',model_output='raw')
+        values=ex.shap_values(X,check_additivity=True); base=float(np.asarray(ex.expected_value).reshape(-1)[0])
+        np.testing.assert_allclose(values.sum(axis=1)+base,pred,rtol=1e-6,atol=1e-5)
+        maxdiff=float(np.max(abs(values.sum(axis=1)+base-pred)))
+        checks.append({'fold':fold,'variant':v,'hours':len(meta),'expected_value':base,'max_additivity_error':maxdiff})
+        phi=pd.DataFrame(values,columns=cols); phi.insert(0,'timestamp',meta.timestamp); phi.insert(1,'expected_value',base); phi.insert(2,'prediction',pred)
+        save(f'shap_{fold:02d}_{v}.csv',phi)
+        gr=groups(cols)
+        for condition,(mask,w) in conditions(meta).items():
+            if not mask.any(): continue
+            for j,n in enumerate(cols): sf.append({'fold':fold,'variant':v,'condition':condition,'feature':n,'hours':int(mask.sum()),'mean_abs_shap':float(np.average(abs(values[mask,j]),weights=w[mask])),'mean_signed_shap':float(np.average(values[mask,j],weights=w[mask]))})
+            for name,ns in gr.items():
+                vv=values[:,[cols.index(n) for n in ns]].sum(axis=1)
+                sg.append({'fold':fold,'variant':v,'condition':condition,'group':name,'hours':int(mask.sum()),'mean_abs_group_shap':float(np.average(abs(vv[mask]),weights=w[mask])),'mean_signed_group_shap':float(np.average(vv[mask],weights=w[mask]))})
+        for name,ns in gr.items():
+            for repeat in range(10):
+                donor,fraction=donor_indices(meta,42+repeat)
+                xx=X.copy(); xx[ns]=X[ns].iloc[donor].to_numpy()
+                altered=model.predict(xx)
+                for condition,(mask,w) in conditions(meta).items():
+                    if not mask.any(): continue
+                    increment=np.average(abs(altered[mask]-y[mask])-abs(pred[mask]-y[mask]),weights=w[mask])
+                    perm.append({'fold':fold,'variant':v,'condition':condition,'group':name,'repeat':repeat,'hours':int(mask.sum()),'changed_fraction':fraction,'mae_increment':float(increment)})
+        print(json.dumps({'explained':v,'fold':fold,'hours':len(meta),'max_additivity_error':maxdiff}),flush=True)
+    save('shap_features.csv',pd.DataFrame(sf)); save('shap_groups.csv',pd.DataFrame(sg)); save('permutation_repeats.csv',pd.DataFrame(perm))
+    save('shap_checks.csv',pd.DataFrame(checks))
+    jsave('explanations.json',{'models':len(jobs),'explained_hours':int(sum(x['hours'] for x in checks)),'shap_checks':checks,'outputs_sha256':{x.name:digest(x) for x in OUT.glob('*shap*.csv')}})
+
+def verify():
+    c=json.loads((OUT/'contract.json').read_text(encoding='utf-8'))
+    for n,h in c['inputs_sha256'].items(): assert digest(ROOT/n)==h,n
+    p=pd.read_csv(OUT/'predictions.csv',encoding='utf-8-sig',parse_dates=['timestamp','date'],float_precision='round_trip')
+    metric=pd.read_csv(OUT/'metrics.csv',encoding='utf-8-sig')
+    # Independent weighted error calculation from persisted predictions.
+    for r in metric.itertuples():
+        g=p.loc[p.variant.eq(r.variant)]
+        if r.period=='Apr-Jun': g=g.loc[g.fold.lt(7)]
+        elif r.period=='May-Jun': g=g.loc[g.fold.between(5,6)]
+        elif r.period=='Jul-Aug': g=g.loc[g.fold.eq(7)]
+        else: g=g.loc[g.timestamp.dt.month.eq(int(r.period.split('_')[1]))]
+        if r.condition=='up_start': g=g.loc[g.sustained_onset.eq(1)]
+        elif r.condition=='fixed_alarm': g=g.loc[g.fixed_alarm.eq(1)]
+        weights=np.ones(len(g))
+        if r.condition=='daily_peak':
+            g=g.loc[g.date.isin(g.groupby('date').size().loc[lambda x:x==24].index)]
+            g=g.loc[g.target_maximum.eq(g.groupby('date').target_maximum.transform('max'))]
+            weights=1/g.groupby('date').target_maximum.transform('size').to_numpy()
+        e=g.prediction.to_numpy()-g.target_maximum.to_numpy()
+        assert len(g)==r.hours
+        np.testing.assert_allclose([np.average(abs(e),weights=weights),np.average(np.maximum(-e,0),weights=weights),np.average(np.maximum(e,0),weights=weights)], [r.mae,r.under,r.over],atol=1e-10)
+    fit_checks=[]
+    for r in pd.read_csv(OUT/'weather_models.csv',encoding='utf-8-sig').itertuples():
+        artifact=joblib.load(OUT/r.model_file); cols=artifact['columns']
+        tr=pd.read_csv(OUT/f'train_{r.fold:02d}.csv',encoding='utf-8-sig',float_precision='round_trip')
+        ev=pd.read_csv(OUT/f'eval_{r.fold:02d}.csv',encoding='utf-8-sig',float_precision='round_trip')
+        # Recreate imputation from raw lag columns and check fit statistics/input.
+        im,x,y=weather_inputs(tr,ev,artifact['base'])
+        storedx=pd.read_csv(OUT/(r.model_file.replace('.joblib','_train.csv')),encoding='utf-8-sig',float_precision='round_trip')
+        storedy=pd.read_csv(OUT/(r.model_file.replace('.joblib','_eval.csv')),encoding='utf-8-sig',float_precision='round_trip')
+        np.testing.assert_allclose(x,storedx,atol=0,rtol=0); np.testing.assert_allclose(y,storedy,atol=0,rtol=0)
+        independent=HistGradientBoostingRegressor(**c['parameters']); independent.fit(x,tr.target_maximum)
+        pred=independent.predict(y)
+        expected=p.loc[p.fold.eq(r.fold)&p.variant.eq(r.variant)].prediction.to_numpy()
+        np.testing.assert_allclose(pred,expected,rtol=1e-9,atol=1e-8)
+        fit_checks.append({'fold':int(r.fold),'variant':r.variant,'hours':len(ev),'max_abs_diff':float(np.max(abs(pred-expected)))})
+    # Recompute per-hour SHAP additivity from saved values independently.
+    for job in json.loads((OUT/'explanation_jobs.json').read_text(encoding='utf-8')):
+        phi=pd.read_csv(OUT/f"shap_{job['fold']:02d}_{job['variant']}.csv",encoding='utf-8-sig',float_precision='round_trip')
+        np.testing.assert_allclose(phi[job['columns']].sum(axis=1)+phi.expected_value,phi.prediction,rtol=1e-6,atol=1e-5)
+    manuscript_state={n:('unchanged' if digest(ROOT/n)==h else 'changed_externally_during_analysis') for n,h in c['protected_manuscripts_sha256'].items()}
+    jsave('verification.json',{'status':'passed','metric_rows_checked':len(metric),'independent_weather_refits':8,'refit_checks':fit_checks,'input_hashes_unchanged':True,'protected_manuscripts':manuscript_state,'shap_additivity_checked':True,'run_sha256':digest(OUT/'run.json'),'explanations_sha256':digest(OUT/'explanations.json')})
+    print(json.dumps({'status':'passed','metric_rows':len(metric),'independent_refits':8,'manuscripts':manuscript_state}),flush=True)
+
+def revise_shap():
+    assert not (OUT/'explanation_revision.json').exists()
+    jsave('explanation_revision.json',{'created_at':datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='minutes'),
+           'script_sha256':digest(__file__),'initial_contract_sha256':digest(OUT/'contract.json'),'weather_run_sha256':digest(OUT/'run.json'),
+           'previous_script':'feature_weather_audit_before_shap_fix.py.txt',
+           'reason':'Initial installed SHAP0.51 interventional TreeExplainer for original April B0 failed additivity. Converted model prediction matched sklearn exactly (max0); interventional reconstruction max error14.8738006837149. Same model tree_path_dependent max error2.6290081223123707e-13. Do not accept invalid attributions or disable check for production.',
+           'method':'Exact tree_path_dependent TreeSHAP. Background is recorded training path counts, no evaluation fitting. All explanations must pass built-in and direct additivity checks.',
+           'changes':'SHAP dependence assumption only; date-donor keys normalized to Timestamp. No input/model/weather/prediction/selection changes.',
+           'sensitivity':'Complement with same-hour donor-day grouped permutation. No numerical interpretation of failed interventional results.',
+           'diagnostic_script':'tmp/diagnose_hgb_shap.py'})
+
+if __name__=='__main__':
+    {'freeze':setup,'run':run,'explain':explain,'verify':verify,'revise_shap':revise_shap}[sys.argv[1]]()

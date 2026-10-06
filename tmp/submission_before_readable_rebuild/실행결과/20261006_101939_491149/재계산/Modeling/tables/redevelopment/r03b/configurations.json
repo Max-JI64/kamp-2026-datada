@@ -1,0 +1,47 @@
+[
+  {
+    "split": "dev_apr",
+    "method": "peak_weighted_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "peak_weighted",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    },
+    "training_lambda": 1.0
+  },
+  {
+    "split": "dev_may",
+    "method": "peak_weighted_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "peak_weighted",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    },
+    "training_lambda": 1.0
+  },
+  {
+    "split": "dev_jun",
+    "method": "peak_weighted_HGB_B",
+    "family": "HGB",
+    "input": "B",
+    "variant": "peak_weighted",
+    "parameters": {
+      "max_leaf_nodes": 15,
+      "max_iter": 150,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0
+    },
+    "training_lambda": 1.5
+  }
+]

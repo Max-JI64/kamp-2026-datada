@@ -1,0 +1,27 @@
+{
+  "independent_source_rows": 6168,
+  "targets_checked": 5784,
+  "lag_feature_values_checked": 91356,
+  "source_time_lookup_checked": true,
+  "feature_allowlist_checked": true,
+  "profile_values_checked": 241,
+  "status": "passed",
+  "contract_sha256": "93b6695037f9741ec917e06f655b3df20683a551f5524acb23dac22ade6067f2",
+  "script_sha256": "ec6716743f8ac9b78adfadc701ddd5cbbbb374c29109d97a9918c3b7d48fe7ff",
+  "source_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "model_fitting_performed": false,
+  "timestamp": "2026-10-04T15:21+09:00",
+  "outputs_sha256": {
+    "baseline_fallback_coverage.csv": "012a8f99bda20d7fac30a591e101cd4fae64d549218f7ce8fcd3ef38127b40bf",
+    "daily_coverage.csv": "a88e4beda27a4c0b04c4365f3f2f6fb299710a860d506ec58c13e559881dd367",
+    "evaluation_diagnostics.csv": "84435d7f4c9013e747dac1d1211080f16b1806c0881a24b6fe3a1f46a9ca1085",
+    "excluded_rows.csv": "63dd3582d394a02dd02cf029d0a4783e4db56eb3ce4f6cc353bd4e0fe4c86873",
+    "feature_dictionary.csv": "a1671abfcdf34a36646eb6df2360fee5fdeb7e83e64d7d1da105d527a36036de",
+    "hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "lag_coverage.csv": "dfad7dc802c0a7f888f759c75521770831b15cd06164dd2324c752911300af7a",
+    "profile_overlap.csv": "467c6740160eedd51a6ef94d2548b30bf59de05bb531bbe435a50ed05db8cbc0",
+    "split_counts.csv": "4236fd90853521efc701a5271e8ea2216cfaf9728cbdbb94acd8b2c7bae7dc56",
+    "unavailable_lags.csv": "ec89737a589d5fab7a7cc71b67cd0f4fed84d86edfe9788a56283484f2be531c",
+    "weather_missing.csv": "7c4a4f6520e002fa159bb7b9882af0981778617de24bef56170aa063ed4a4080"
+  }
+}

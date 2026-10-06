@@ -1,0 +1,13 @@
+﻿scope,period,method,hours,events,tp,fp,fn,tn,recall,precision,fpr,ap
+six_history,May-Jun,noage,1462,12,12,0,0,1450,1.0,1.0,0.0,1.0
+six_history,May-Jun,original,1462,12,12,0,0,1450,1.0,1.0,0.0,1.0
+six_history,5,noage,744,8,8,0,0,736,1.0,1.0,0.0,1.0
+six_history,5,original,744,8,8,0,0,736,1.0,1.0,0.0,1.0
+six_history,6,noage,718,4,4,0,0,714,1.0,1.0,0.0,1.0
+six_history,6,original,718,4,4,0,0,714,1.0,1.0,0.0,1.0
+common_regression,May-Jun,noage,1462,12,12,0,0,1450,1.0,1.0,0.0,1.0
+common_regression,May-Jun,original,1462,12,12,0,0,1450,1.0,1.0,0.0,1.0
+common_regression,5,noage,744,8,8,0,0,736,1.0,1.0,0.0,1.0
+common_regression,5,original,744,8,8,0,0,736,1.0,1.0,0.0,1.0
+common_regression,6,noage,718,4,4,0,0,714,1.0,1.0,0.0,1.0
+common_regression,6,original,718,4,4,0,0,714,1.0,1.0,0.0,1.0

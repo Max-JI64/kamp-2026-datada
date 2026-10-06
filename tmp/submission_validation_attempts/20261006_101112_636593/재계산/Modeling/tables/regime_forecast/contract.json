@@ -1,0 +1,92 @@
+{
+  "stage": "S03",
+  "created_at": "2026-10-05T23:10+09:00",
+  "entrypoint_sha256": "2f424576b2c361baa1eb07cda973f1521ad424d558d1b18f5a9bc658e8d1d0d1",
+  "inputs_sha256": {
+    "Modeling/tables/regime_diagnosis/hourly_labels.csv": "5b7a878ddae196bcb6d7bd085e0f68d07484d4838bf8d39c00a9d8a0682d53a1",
+    "Modeling/tables/regime_diagnosis/contract.json": "9e649b641cb6b3a82bc022f9875576bd7311581c5a48b554618a5657fc9ebc6e",
+    "Modeling/tables/regime_diagnosis/run.json": "ac2fcd04e6f4c28df8dfbe0caeae31791d4b09746e2d4ef820ad97826e6c7440",
+    "Modeling/tables/regime_diagnosis/independent_verification.json": "2e6872b43c3f597b7aaebca4c241d4b8679bf24c55d9553a4752be9a8ca4c6e0"
+  },
+  "scope": "Jan-Jun only; Feb-Jun chronological predictions; Apr-Jun development ranking",
+  "targets": {
+    "up": 1,
+    "down": -1
+  },
+  "horizon": "t, t+1, t+2 sustained onset; predict at end of t-1",
+  "feature_names": [
+    "prior_mean",
+    "past_median6",
+    "past_iqr6",
+    "past_range6",
+    "past_slope6",
+    "prior_delta",
+    "prior_last_minus_mean",
+    "prior_slot_range",
+    "prior_production",
+    "prior_production_delta",
+    "prior_state_age",
+    "prior_state_left_censored",
+    "prior_state_direction",
+    "hour_sin",
+    "hour_cos",
+    "month",
+    "weekend",
+    "dow_0",
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6"
+  ],
+  "forbidden_inputs": [
+    "level",
+    "maximum",
+    "delta",
+    "deviation",
+    "onset",
+    "sustained_onset",
+    "profile"
+  ],
+  "training": "All earlier eligible known labels with label_confirmed_at strictly before evaluation-month boundary",
+  "minimum_fit_support": {
+    "positive_events": 8,
+    "positive_dates": 5
+  },
+  "logistic": {
+    "C": 1.0,
+    "max_iter": 3000,
+    "random_state": 42,
+    "class_weight": null,
+    "standardize": "training only"
+  },
+  "hgb": {
+    "max_leaf_nodes": 7,
+    "max_iter": 100,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 42
+  },
+  "calendar_baseline": "Jeffreys-smoothed hour x weekend event rate; cell n<20 falls back to hour; hour n<20 to global rate, using training only",
+  "other_baselines": {
+    "last_delta": "direction * prior_delta",
+    "slope6": "direction * past_slope6"
+  },
+  "calibration": "Earlier genuinely out-of-month predictions with matured labels, intersect available rows across all five methods, never in-sample rescoring. At least one positive required. No calibration means ranking only.",
+  "selection": "Separately choose ML and simple baseline by positive-event-weighted monthly AP on common past calibration rows; tie follows fixed method order. Each direction/month selected before evaluation labels are summarized.",
+  "threshold": "score >= threshold; calibration FPR <=1%; maximize TP then minimize FP then maximize threshold; include infinity for no alarms",
+  "primary_alarm_scope": "Selected ML vs past-selected simple baseline, Apr-Jun where common past calibration exists. Expected up May-Jun, down Apr-Jun.",
+  "development_gate": {
+    "extra_tp_at_least": 2,
+    "relative_extra_tp_at_least": 0.2,
+    "zero_baseline": "use absolute gain only",
+    "extra_fp_per_100_hours_at_most": 0.5
+  },
+  "metrics": "Monthly AP (undefined with zero events), precision, recall, TP/FN/FP/TN, false alarms per100 evaluated hours, negative FPR; no AUROC-only selection",
+  "posthoc": "Short-event false positives, late alarms, seen/new daily arrays are diagnostic only; labels/features/thresholds are not revised from these results",
+  "tuning_trials": 0,
+  "regression_integration": false
+}

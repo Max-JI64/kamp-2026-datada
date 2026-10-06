@@ -1,0 +1,5 @@
+﻿scope,feature,weighting,cells,n_negative,n_positive,days,next_delta_negative,next_delta_positive,next_rise_rate_negative,next_rise_rate_positive,prior_feature_negative,prior_feature_positive,past_level_negative,past_level_positive
+all,recent_level_delta,date_hour,3,7,6,13,-3.076923076923077,-1.8461538461538463,0.0,30.76923076923077,-25.243589743589745,0.40384615384615385,53.65384615384615,53.65384615384615
+all,recent_level_delta,profile_balanced,3,7,6,13,-1.7234957020057302,-0.4813753581661891,0.0,48.13753581661891,-41.22310768863419,0.409025787965616,38.30444126074498,38.30444126074498
+known_production_zero,recent_level_delta,date_hour,2,4,4,8,-0.3125,0.75,0.0,50.0,-36.125,0.5,21.875,21.875
+known_production_zero,recent_level_delta,profile_balanced,2,4,4,8,-0.2741935483870968,0.903225806451613,0.0,60.215053763440864,-49.60047043010753,0.44892473118279574,21.696236559139788,21.696236559139788

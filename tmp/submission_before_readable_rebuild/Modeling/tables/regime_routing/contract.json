@@ -1,0 +1,36 @@
+{
+  "stage": "S04 one diagnostic follow-up",
+  "created_at": "2026-10-05T23:53+09:00",
+  "entrypoint_sha256": "16597a16786ebfdfe792c1d0a91d635f4606d2755de759c2d825357e10ebb706",
+  "inputs_sha256": {
+    "Modeling/tables/regime_integration/predictions.csv": "e8e210b1a05862b7c1a29042d6a7390074042a606d2b7292028f70f45844618b",
+    "Modeling/tables/regime_integration/run.json": "ff3b12ee114c32a3926bdc6136f89d6b7f5e01e976995cb764bfab5f2bcd6b6e",
+    "Modeling/tables/regime_integration/independent_verification.json": "a022ab4e33edcd652fe769c868a41237b5fc949561bf0bee9ebc3ac846f78637",
+    "Modeling/tables/regime_integration/metrics.csv": "3745df99282033fc515f3b35683f5f7c2b99d5a4eaa6c903937e8c6ff57a57f1",
+    "Modeling/tables/regime_forecast/predictions.csv": "7dd9d767e04fa2c78c17fce0b76bb06a70a9e788099ad42b5f280cf24ec76488",
+    "Modeling/tables/regime_forecast/selection.csv": "f3500b85fb17ff300236d55aa6ffdf22031f02f19be9621de1d087735ba0a931",
+    "Modeling/tables/regime_forecast/independent_verification.json": "d075f30fa51b9c866ebf53707940901705db5dcf18a57e3d1e359afd5b66b3ce"
+  },
+  "reason": "Uniform B2_up reduced up underprediction but worsened global MAE by5.07% and daily peak MAE by4.74%. B1 lowered up-start MAE in both May and June. Restrict supplementary regression use to predicted upward onset, without changing fitted values or alarms.",
+  "scope": "May-Jun development only, same1462hours12sustainedup; analysis-selected follow-up, not independent confirmation",
+  "variants": {
+    "B0": "unchanged base",
+    "B1_all": "uniform raw-state input model",
+    "G1": "B1 when S03 past-selected up ML alarm, otherwise B0",
+    "G2": "B2_up when identical alarm, otherwise B0",
+    "hour08": "B1 at target hour08, otherwise B0",
+    "simple_gate": "B1 when S03 past-selected simple upward alarm, otherwise B0"
+  },
+  "primary": "G1",
+  "no_training": true,
+  "alarms": "Frozen S03 selection and 1% calibration FPR thresholds from earlier OOF only. No new boundary, top-k, oracle event mask, threshold tuning or production-origin assertion.",
+  "gate": {
+    "up_start_mae_reduction_vs_B0": 0.05,
+    "up_under_reduction_vs_B0": 0.05,
+    "overall_mae_worsening_vs_B0_at_most": 0.01,
+    "daily_peak_mae_worsening_vs_B0_at_most": 0.01,
+    "monthly_start_improvements_vs_B0_required": 2
+  },
+  "control_interpretation": "G1 vs B0 is combined routing/raw-input effect; numeric probability input remains unproven. G1/hour08 have identical values at08sustained event starts, so do not claim event-error improvement beyond calendar routing. Compare all1462hour errors and changed-hour burden too.",
+  "stop": "No further same-period routing/model/threshold search after this comparison; retain S03 detection separately from value integration."
+}

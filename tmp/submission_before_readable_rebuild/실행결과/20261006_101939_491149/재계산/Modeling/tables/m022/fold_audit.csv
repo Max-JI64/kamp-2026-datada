@@ -1,0 +1,3 @@
+﻿outer_split,kind,month,train_hours,validation_hours,train_last,validation_first,validation_last,outer_evaluation_first
+dev_apr,inner,2,576,672,2021-01-31 23:00:00,2021-02-01 00:00:00,2021-02-28 23:00:00,2021-04-01 00:00:00
+dev_apr,inner,3,1248,744,2021-02-28 23:00:00,2021-03-01 00:00:00,2021-03-31 23:00:00,2021-04-01 00:00:00

@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-06T01:21+09:00",
+  "script_sha256": "657a4a77332936ff97e755e70bd353135e7f6a6e5bdeb11ab86c6ab11aa767ea",
+  "inputs_sha256": {
+    "Modeling/tables/regime_age_ablation/contract.json": "fc965cc5281e71dd90b62feb00758921e0c20991872c813762b253d952ff5a69",
+    "Modeling/tables/regime_age_ablation/run.json": "d5dd17c56613afdee13a4d7efce0e1fc824e951eaf94ff526c5dfe2d0fb65805",
+    "Modeling/tables/regime_age_ablation/independent_verification.json": "d4a1bd8da260c15dc06a84db35d6290cd71e292ed35a5f57878e87a36b2ea8de",
+    "Modeling/tables/regime_followup/contract.json": "3f3feecb69bee5df50dc1b17916e294c89f4a407bda4e191e5d7b312a160d0d5",
+    "Modeling/tables/regime_followup/run.json": "c3fd9f5f43a03321a7b6d0387f6d1906592507c99f6e42ea4d7fadca17408b0a",
+    "Modeling/scripts/m01_prepare.py": "ec6716743f8ac9b78adfadc701ddd5cbbbb374c29109d97a9918c3b7d48fe7ff",
+    "Modeling/scripts/regime_followup.py": "f57890175916324fe1a6bb0e651c8f10986c35abe6154ab9d5a1eb1a47f79db2",
+    "Modeling/scripts/regime_diagnose.py": "765b3e42bc2da6ea2d587a64621d7c237681e30b219401d17be832e4542fc2a9",
+    "Modeling/scripts/regime_forecast.py": "2f424576b2c361baa1eb07cda973f1521ad424d558d1b18f5a9bc658e8d1d0d1",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830"
+  },
+  "question": "Calendar vs prior observed state contribution to fixed no-age Logistic; observed explanation only, no causal claims or new model choice.",
+  "method": "Exact standardized-feature times coefficient additive logit decomposition, grouped calendar/power/production/state; intercept retained. Not SHAP or probability percentage.",
+  "case_rule": "Among true detected onsets with positive absolute error gain choose middle sorted gain (tie timestamp); among missed onsets choose middle sorted actual maximum (tie timestamp). Both require complete t-4..t+5 common forecast windows. State selection counts explicitly.",
+  "reproduction": "Rebuild Jan-Aug exact-time features and causal labels from source; recreate train-only availability flags; refit April/May/June classifiers for OOF threshold, fixed June classifier and B0/B1; match stored predictions and gates. No retuning and no claim of clean environment.",
+  "stop": "Freeze current method as reporting candidate with limited exploratory scope; close model search after explanation, figures, deployment proposal and reproduction checks.",
+  "root_readme_sha256": "7b7afea6d6a0971ed6a634a1249de317c594d2c0a12b5778e8e586f944f17d4d"
+}

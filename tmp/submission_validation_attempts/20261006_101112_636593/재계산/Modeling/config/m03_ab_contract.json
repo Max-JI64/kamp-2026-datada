@@ -1,0 +1,17 @@
+{
+  "version": "m03-ab-v1",
+  "stage": "ab",
+  "parent": "Modeling/config/m02_contract.json",
+  "reason": "A04 conditional last-slot relation and M02 remaining rise underprediction / low-maintenance overprediction require a fixed-HGB single-input ablation.",
+  "pool": "common",
+  "splits": ["dev_apr", "dev_may", "dev_jun"],
+  "targets": ["target_maximum", "target_mean"],
+  "groups": ["A", "B"],
+  "new_groups": ["B"],
+  "comparisons": [["A", "B"]],
+  "reuse_stage": "m02",
+  "hgb_parameters": {"max_leaf_nodes": 15, "max_iter": 150, "learning_rate": 0.05, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false, "random_state": 42},
+  "selection": "Provisional lowest pooled development MAE per target; within 1 percent prefer fewer inputs. Report monthly directions, daily-maximum under/over, new profiles and transitions before adopting. M05 tradeoff freeze remains separate.",
+  "diagnostics": "same M02 posthoc conditions, paired hourly and daily changes; actual future power/production/profile never an input",
+  "prohibited": ["hyperparameter retuning", "July-August scoring", "prediction clipping", "weather input", "test-driven iteration"]
+}

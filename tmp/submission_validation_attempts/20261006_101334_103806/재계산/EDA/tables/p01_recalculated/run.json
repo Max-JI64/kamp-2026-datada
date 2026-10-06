@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "high_threshold_january_q95": 185.0,
+  "rows": 5784,
+  "days": 241,
+  "profiles": 126,
+  "high_hours": 360,
+  "high_slot_counts": {
+    "1": 136,
+    "2": 114,
+    "3": 82,
+    "4": 28
+  },
+  "high_episodes": 320,
+  "high_episode_slots_median": 2.0,
+  "high_episode_slots_max": 8,
+  "key_summaries": [
+    {
+      "scope": "all",
+      "hours": 5784,
+      "dates": 241,
+      "weight_sum": 5784.0,
+      "maximum": 99.82486168741356,
+      "range": 15.82192254495159,
+      "max_mean_gap": 7.381180843706777,
+      "top_margin": 4.207814661134163,
+      "max_ties": 1.434301521438451,
+      "high_slots": 0.12482710926694329,
+      "unique_max_fraction": 0.7842323651452282,
+      "slot_1_share": 0.2505186721991701,
+      "slot_2_share": 0.2011295527893038,
+      "slot_3_share": 0.22815813739050256,
+      "slot_4_share": 0.3201936376210235
+    },
+    {
+      "scope": "profile_weighted",
+      "hours": 5784,
+      "dates": 241,
+      "weight_sum": 3024.0,
+      "maximum": 99.14649470899471,
+      "range": 15.734788359788359,
+      "max_mean_gap": 7.359126984126984,
+      "top_margin": 4.244378306878307,
+      "max_ties": 1.441137566137566,
+      "high_slots": 0.1722883597883598,
+      "unique_max_fraction": 0.7784391534391535,
+      "slot_1_share": 0.2527832892416226,
+      "slot_2_share": 0.20555004409171074,
+      "slot_3_share": 0.22842261904761904,
+      "slot_4_share": 0.3132440476190476
+    },
+    {
+      "scope": "daily_peak",
+      "hours": 411,
+      "dates": 241,
+      "weight_sum": 241.0,
+      "maximum": 146.04564315352698,
+      "range": 24.20308239478364,
+      "max_mean_gap": 10.602877395771587,
+      "top_margin": 5.611025489033787,
+      "max_ties": 1.0425409998024107,
+      "high_slots": 0.7863070539419087,
+      "unique_max_fraction": 0.9616083777909505,
+      "slot_1_share": 0.13318514127642758,
+      "slot_2_share": 0.24149377593360996,
+      "slot_3_share": 0.32847263386682474,
+      "slot_4_share": 0.2968484489231377
+    },
+    {
+      "scope": "high",
+      "hours": 360,
+      "dates": 89,
+      "weight_sum": 360.0,
+      "maximum": 193.44166666666666,
+      "range": 27.002777777777776,
+      "max_mean_gap": 12.035416666666666,
+      "top_margin": 6.394444444444445,
+      "max_ties": 1.0444444444444445,
+      "high_slots": 2.0055555555555555,
+      "unique_max_fraction": 0.9583333333333334,
+      "slot_1_share": 0.1597222222222222,
+      "slot_2_share": 0.22592592592592592,
+      "slot_3_share": 0.27731481481481485,
+      "slot_4_share": 0.337037037037037
+    }
+  ],
+  "existing_low_zero_episodes": {
+    "low": {
+      "observed_runs": 71,
+      "complete_runs": 71,
+      "observed_hours": 1936,
+      "complete_duration_min": 1,
+      "complete_duration_median": 24.0,
+      "complete_duration_max": 223
+    },
+    "zero": {
+      "observed_runs": 1,
+      "complete_runs": 1,
+      "observed_hours": 17,
+      "complete_duration_min": 17,
+      "complete_duration_median": 17.0,
+      "complete_duration_max": 17
+    }
+  },
+  "contract_sha256": "a25d452f4633a64e5152439e7cc68806925cf59183340621f05835e5910ec43b",
+  "outputs_sha256": {
+    "high_episodes.csv": "46afa03721180e87136ee9e2996c6e7a82754763678475bcafab64c02a7fee04",
+    "hourly_shapes.csv": "504de57cd86a89f2b27603a36cb6bbcf568b52990a539f69d19de784b7f7c08f",
+    "shape_counts.csv": "7a37b4267c33b3b4edc3961445aef163f73b2a372c10b05d72351a8eb517fa4f",
+    "shape_summary.csv": "269d8f2aa934eacf0ab6bbe3125c31ba55152a16e74a1f060c996dbb43e7d319"
+  },
+  "verified": true,
+  "model_fit": false,
+  "manuscript_edited": false
+}

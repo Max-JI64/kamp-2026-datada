@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_hour_group_cells": 48,
+  "mean_series_match": true,
+  "input_tables_and_detailed_manuscript_unchanged": true,
+  "input_sha256": {
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101112_636593\\재계산\\EDA\\02_EDA_원고.md": "ef5babafb9f08ff4b18c1fcc8b7f651c04d5293123b31c89952acc01c7d2c834",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\EDA\\tables\\daily_pattern_restart.csv": "59f650bf4a6c09d07469fa6928a74215b136476f41e648a5fbbbfb6777cac50b",
+    "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\EDA\\tables\\daily_repetition\\hourly_distribution.csv": "de7264d94302a76d72e6c9b2ddabc024c7ca149f3f0ab3c30b968460b3d45a03"
+  },
+  "figure": "D:\\대회\\제6회 K-인공지능 제조데이터 분석 경진대회\\제출\\실행결과\\20261006_101112_636593\\재계산\\EDA\\figures\\report_compact\\daily_pattern_distribution.png",
+  "figure_sha256": "cea573aa2ae14ff318465e23774fb55154015a11f30358e6bd1f90bc9893ef82",
+  "visual_review": false,
+  "display": "Production means; separate weekday/weekend power means and P10-P90; no median lines"
+}

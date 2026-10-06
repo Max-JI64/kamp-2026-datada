@@ -1,0 +1,99 @@
+{
+  "scope": {
+    "hours": 5784,
+    "normal_dates": 241,
+    "weekday": 171,
+    "weekend": 70,
+    "calendar_dates": 243,
+    "invalid_dates": [
+      "2021-07-13",
+      "2021-07-15"
+    ]
+  },
+  "groups": [
+    {
+      "group": "weekday",
+      "n": 171,
+      "drop": 164,
+      "rise": 150,
+      "both": 147,
+      "both_rate": 0.8596491228070176,
+      "median_drop": -64.0,
+      "median_rise": 61.0,
+      "ties_at_one_or_both": 21,
+      "returned_among_both": 51
+    },
+    {
+      "group": "weekend",
+      "n": 70,
+      "drop": 51,
+      "rise": 16,
+      "both": 13,
+      "both_rate": 0.18571428571428572,
+      "median_drop": -1.0,
+      "median_rise": 0.0,
+      "ties_at_one_or_both": 28,
+      "returned_among_both": 9
+    }
+  ],
+  "production_context": [
+    {
+      "group": "weekday",
+      "any_positive_production": false,
+      "n": 22,
+      "both": 2,
+      "both_rate": 0.09090909090909091,
+      "median_drop": -1.0,
+      "median_rise": 0.0
+    },
+    {
+      "group": "weekday",
+      "any_positive_production": true,
+      "n": 149,
+      "both": 145,
+      "both_rate": 0.9731543624161074,
+      "median_drop": -65.0,
+      "median_rise": 62.0
+    },
+    {
+      "group": "weekend",
+      "any_positive_production": false,
+      "n": 38,
+      "both": 7,
+      "both_rate": 0.18421052631578946,
+      "median_drop": -1.0,
+      "median_rise": 0.0
+    },
+    {
+      "group": "weekend",
+      "any_positive_production": true,
+      "n": 32,
+      "both": 6,
+      "both_rate": 0.1875,
+      "median_drop": -2.0,
+      "median_rise": 0.0
+    }
+  ],
+  "profile_sensitivity": [
+    {
+      "group": "weekday",
+      "all_days": 171,
+      "unique_profiles": 90,
+      "all_both_rate": 0.8596491228070176,
+      "unique_both": 78,
+      "unique_both_rate": 0.8666666666666667
+    },
+    {
+      "group": "weekend",
+      "all_days": 70,
+      "unique_profiles": 47,
+      "all_both_rate": 0.18571428571428572,
+      "unique_both": 12,
+      "unique_both_rate": 0.2553191489361702
+    }
+  ],
+  "unique_hourly_mean_profiles": 125,
+  "unique_96slot_profiles": 126,
+  "verification": "passed: original hash; 24 hours per valid date; exact rounding identity; all 48 group-hour means reconciled with 2.1; direct per-date sign count; missing dates preserved",
+  "manuscript_edited": false
+}

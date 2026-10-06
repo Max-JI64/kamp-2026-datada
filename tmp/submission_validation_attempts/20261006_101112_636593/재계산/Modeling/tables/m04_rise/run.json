@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "started": "2026-10-05T12:05+09:00",
+  "contract_sha256": "1d5844aecd870e7522d1cdfadb2d35b6515d151e6e7fcd83ee66b1eea6fa2ddc",
+  "inputs_sha256": {
+    "Modeling/tables/m01/hourly_frame.csv": "277862b13f7937c2313613ac1c909e53449174b0a6723254b7db63bfc072f6ab",
+    "data/origin/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+    "Modeling/tables/m03/c/predictions.csv": "d1f2fc8062b84248bc2a9512d17563713368fc94a6b56dc127c93c56cbe2a5f8"
+  },
+  "features": {
+    "B": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last"
+    ],
+    "dynamic": [
+      "hour_sin",
+      "hour_cos",
+      "month",
+      "weekend",
+      "dow_0",
+      "dow_1",
+      "dow_2",
+      "dow_3",
+      "dow_4",
+      "dow_5",
+      "dow_6",
+      "lag1_production",
+      "lag1_production_zero",
+      "lag1_mean",
+      "lag1_maximum",
+      "lag2_mean",
+      "lag2_maximum",
+      "lag1_last",
+      "prev_slot_rise",
+      "prev_slot_range",
+      "prev_slot_slope",
+      "last_delta",
+      "mean_delta",
+      "maximum_delta",
+      "production_delta",
+      "low_run_length6",
+      "low_history_gap6"
+    ]
+  },
+  "no_july_august_evaluation": true,
+  "runtime": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]"
+  },
+  "script_sha256": "826560973de65df31860120021b17d15192c09d16423639a302f4a71c598e728",
+  "finished": "2026-10-05T12:06+09:00",
+  "seconds": 64.38190859998576,
+  "fits": {
+    "inner_regression": 288,
+    "inner_classifier": 540,
+    "outer": 12
+  },
+  "trials": 450,
+  "prediction_rows": 10920,
+  "metric_rows": 260,
+  "warnings": [],
+  "outputs_sha256": {
+    "classification.csv": "12aa7168f128226f4571cec45239dd735d970c36a3cc58303ec696d017c3c0e9",
+    "daily_errors.csv": "2cfb33417ba8397b2dfae8ba3cd80b3769e4ee7cc93d3078e727108648096855",
+    "feature_frame.csv": "ddac3c3580ffba459620f4ce126bcd86e32e3d9cb865c3ed9aa19ca808d1c09a",
+    "fold_audit.csv": "97af09f4dcffc3522cf18972c3056cf9fb851c8efa923ce6948f88cd81592f06",
+    "inner_predictions.csv": "16192597bb9071bad5a0d25e86f5d7b321d231caac90f0d12bd54148660dec84",
+    "metrics.csv": "0d97d086239c9d2332598d29ca6a295c7d95e45727c591aebdeffed3a13e392a",
+    "model_manifest.csv": "bae072ca016c8e5b90e9a5ef72a482cd7f8e4f958a42df1f1c5cdc94ca3e13a8",
+    "paired_predictions.csv": "770559797814ef0151392ab4e7fa0aad99fab37ecc985ea00b0e7ab3bcd7b9a7",
+    "predictions.csv": "5379e3e7eccbd6360ef1e742dd8f64452c523611f21d96526c5bd74f3305b2f8",
+    "sample_counts.csv": "4590bcf9c77888a16b2936b915ce4f07d4abfa798f282f47e93dc740b392fd8d",
+    "selected_configurations.json": "fcdf93f5f5e95dc831d8a7bb47c5f1ee2d88941dfacf54fafdfc7cf73dcd4b54",
+    "selection.json": "0a4b696884d154eb6741e033049f7758835a9bea508100a26445297c9b02dcaf",
+    "selection_metrics.csv": "3967a2cf9de594f532bb879d4b20fa68e80398b3f608aa3ed43b04f3cb4bb54d",
+    "trials.csv": "146adf070cb7a620a3e8f357ffd5f19125b893246e8f725f6b290ef5ddf9a827"
+  },
+  "helper_sha256": {
+    "m01_prepare.py": "ec6716743f8ac9b78adfadc701ddd5cbbbb374c29109d97a9918c3b7d48fe7ff",
+    "m02_compare.py": "555c73e2648c1454483df2dfdb3eac654b9c16cad27f7262daa21e2373df349d",
+    "m02_rerun.py": "8731bde1c5b984e64d09b79be696022097da5ea0d7028a4824ffceb1cc53a20b",
+    "m04_compare.py": "455fd0d1786e0f33cc545eb046067f674a7688ce2b21c2b00815b3ac456f7c2e"
+  }
+}
